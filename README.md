@@ -2,6 +2,10 @@
 
 Web pública para consultar los partidos de los jugadores asignados a cada colaborador en Madrid, Cataluña, Murcia y Comunitat Valenciana. El acceso es libre: elegir un colaborador filtra la agenda, sin identificación.
 
+**[Abrir agenda](https://antonio8aranda98-lang.github.io/rfhf-agenda/)**
+
+Piloto con cuatro jugadores y 124 partidos. La sincronización automática de Valencia y las estadísticas individuales de Cataluña y Murcia siguen pendientes de completar; la web señala los datos no disponibles.
+
 ## Uso
 
 1. Elige federación y colaborador.

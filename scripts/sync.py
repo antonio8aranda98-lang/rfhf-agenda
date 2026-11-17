@@ -292,7 +292,7 @@ def valencia(client, player):
         raise ValueError('Pendiente de consulta con navegador público')
     data = json.loads(path.read_text())
     # A failed/new run may not re-stamp an old browser snapshot as fresh.
-    checked = datetime.fromisoformat(data['checked_at'])
+    checked = datetime.fromisoformat(data['checked_at'].replace('Z', '+00:00'))
     if (datetime.now(timezone.utc) - checked).total_seconds() > 1800:
         raise ValueError('La captura del navegador tiene más de 30 minutos')
     result = data.get('players', {}).get(player['id'])
