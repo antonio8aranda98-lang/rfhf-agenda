@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T12:56:17+00:00",
+  "generated_at": "2026-11-17T13:00:40+00:00",
   "season": "2026-2027",
   "federations": [
     {
@@ -9,8 +9,8 @@
       "acronym": "RFFM",
       "source": "https://www.rffm.es/",
       "status": "ok",
-      "checked_at": "2026-11-17T12:56:54+00:00",
-      "last_success": "2026-11-17T12:56:54+00:00",
+      "checked_at": "2026-11-17T13:01:24+00:00",
+      "last_success": "2026-11-17T13:01:24+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -20,8 +20,8 @@
       "acronym": "FCF",
       "source": "https://www.fcf.cat/",
       "status": "ok",
-      "checked_at": "2026-11-17T12:56:55+00:00",
-      "last_success": "2026-11-17T12:56:55+00:00",
+      "checked_at": "2026-11-17T13:01:26+00:00",
+      "last_success": "2026-11-17T13:01:26+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -31,8 +31,8 @@
       "acronym": "FFRM",
       "source": "https://www.ffrm.es/pnfg/",
       "status": "ok",
-      "checked_at": "2026-11-17T12:56:59+00:00",
-      "last_success": "2026-11-17T12:56:59+00:00",
+      "checked_at": "2026-11-17T13:01:30+00:00",
+      "last_success": "2026-11-17T13:01:30+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -42,7 +42,7 @@
       "acronym": "FFCV",
       "source": "https://ffcv.es/competiciones/",
       "status": "error",
-      "checked_at": "2026-11-17T12:56:59+00:00",
+      "checked_at": "2026-11-17T13:01:30+00:00",
       "last_success": "2026-11-17T12:25:00+00:00",
       "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
       "failed_players": [
@@ -70,7 +70,7 @@
       },
       "logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
       "stats_note": "Resumen publicado por la federación. Minutos por partido calculados solo cuando el acta permite hacerlo con seguridad.",
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "aleix-camarasa-oros",
@@ -91,7 +91,7 @@
       },
       "logo": "https://files.fcf.cat/escudos/clubes/escudos/00100_0001021752_escut.png",
       "stats_note": "Calendario y resultados del equipo disponibles. Estadísticas individuales pendientes de validar en las actas; aparecer en el banquillo no implica haber jugado.",
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "iker-piqueras-mora",
@@ -112,7 +112,7 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "stats_note": "Resultados del equipo disponibles. La fecha sin hora es la referencia de jornada. Estadísticas individuales y campo pendientes de validar en las actas.",
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "daniel-otero-serrano",
@@ -170,7 +170,7 @@
           "red": null
         }
       },
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "madrid-5584305",
@@ -205,7 +205,7 @@
           "red": null
         }
       },
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "valencia-26479917",
@@ -256,7 +256,7 @@
       "score_away": 2,
       "round": 1,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "murcia-24069902-2",
@@ -281,7 +281,7 @@
       "score_away": 5,
       "round": 2,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4194872",
@@ -306,7 +306,7 @@
       "score_away": 2,
       "round": 1,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584314",
@@ -341,7 +341,7 @@
           "red": null
         }
       },
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "valencia-26479926",
@@ -418,7 +418,7 @@
       "score_away": 4,
       "round": 3,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "madrid-5584324",
@@ -453,7 +453,7 @@
           "red": null
         }
       },
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "catalunya-4194880",
@@ -478,7 +478,7 @@
       "score_away": 0,
       "round": 2,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "catalunya-4194887",
@@ -503,7 +503,7 @@
       "score_away": 0,
       "round": 3,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584333",
@@ -538,7 +538,7 @@
           "red": null
         }
       },
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-4",
@@ -563,7 +563,7 @@
       "score_away": 0,
       "round": 4,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4194895",
@@ -588,7 +588,7 @@
       "score_away": 4,
       "round": 4,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584343",
@@ -623,7 +623,7 @@
           "red": null
         }
       },
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-6",
@@ -648,7 +648,7 @@
       "score_away": 4,
       "round": 6,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "valencia-26479951",
@@ -699,7 +699,7 @@
       "score_away": 2,
       "round": 5,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584352",
@@ -724,7 +724,7 @@
       "score_away": 0,
       "round": 7,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-7",
@@ -749,7 +749,7 @@
       "score_away": 1,
       "round": 7,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "madrid-5584361",
@@ -784,7 +784,7 @@
           "red": null
         }
       },
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "valencia-26479960",
@@ -835,7 +835,7 @@
       "score_away": 2,
       "round": 6,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "murcia-24069902-8",
@@ -860,7 +860,7 @@
       "score_away": 2,
       "round": 8,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4194917",
@@ -885,7 +885,7 @@
       "score_away": 3,
       "round": 7,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584369",
@@ -920,7 +920,7 @@
           "red": null
         }
       },
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "valencia-26479968",
@@ -971,7 +971,7 @@
       "score_away": 0,
       "round": 9,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "madrid-5584378",
@@ -996,7 +996,7 @@
       "score_away": 2,
       "round": 10,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "catalunya-4194925",
@@ -1021,7 +1021,7 @@
       "score_away": 4,
       "round": 8,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26479976",
@@ -1124,7 +1124,7 @@
       "score_away": null,
       "round": 11,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "catalunya-4194933",
@@ -1149,7 +1149,7 @@
       "score_away": null,
       "round": 9,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "murcia-24069902-10",
@@ -1174,7 +1174,7 @@
       "score_away": null,
       "round": 10,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "madrid-5584395",
@@ -1199,7 +1199,7 @@
       "score_away": null,
       "round": 12,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "valencia-26479991",
@@ -1250,7 +1250,7 @@
       "score_away": null,
       "round": 10,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "murcia-24069902-11",
@@ -1275,7 +1275,7 @@
       "score_away": null,
       "round": 11,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "murcia-24069902-5",
@@ -1300,7 +1300,7 @@
       "score_away": null,
       "round": 5,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "valencia-26479998",
@@ -1351,7 +1351,7 @@
       "score_away": null,
       "round": 11,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584403",
@@ -1376,7 +1376,7 @@
       "score_away": null,
       "round": 13,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-12",
@@ -1401,7 +1401,7 @@
       "score_away": null,
       "round": 12,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4194959",
@@ -1426,7 +1426,7 @@
       "score_away": null,
       "round": 12,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26480006",
@@ -1477,7 +1477,7 @@
       "score_away": null,
       "round": 14,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-13",
@@ -1502,7 +1502,7 @@
       "score_away": null,
       "round": 13,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4194967",
@@ -1527,7 +1527,7 @@
       "score_away": null,
       "round": 13,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26480013",
@@ -1578,7 +1578,7 @@
       "score_away": null,
       "round": 14,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4194976",
@@ -1603,7 +1603,7 @@
       "score_away": null,
       "round": 14,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26480021",
@@ -1654,7 +1654,7 @@
       "score_away": null,
       "round": 15,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-15",
@@ -1679,7 +1679,7 @@
       "score_away": null,
       "round": 15,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "valencia-26480028",
@@ -1730,7 +1730,7 @@
       "score_away": null,
       "round": 15,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584429",
@@ -1755,7 +1755,7 @@
       "score_away": null,
       "round": 16,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-16",
@@ -1780,7 +1780,7 @@
       "score_away": null,
       "round": 16,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "valencia-26480037",
@@ -1831,7 +1831,7 @@
       "score_away": null,
       "round": 17,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "catalunya-4194992",
@@ -1856,7 +1856,7 @@
       "score_away": null,
       "round": 16,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26480046",
@@ -1907,7 +1907,7 @@
       "score_away": null,
       "round": 18,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-17",
@@ -1932,7 +1932,7 @@
       "score_away": null,
       "round": 17,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4195000",
@@ -1957,7 +1957,7 @@
       "score_away": null,
       "round": 17,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26480054",
@@ -2008,7 +2008,7 @@
       "score_away": null,
       "round": 19,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "valencia-26480063",
@@ -2059,7 +2059,7 @@
       "score_away": null,
       "round": 18,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584467",
@@ -2084,7 +2084,7 @@
       "score_away": null,
       "round": 20,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-18",
@@ -2109,7 +2109,7 @@
       "score_away": null,
       "round": 18,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "valencia-26480071",
@@ -2160,7 +2160,7 @@
       "score_away": null,
       "round": 19,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "murcia-24069902-19",
@@ -2185,7 +2185,7 @@
       "score_away": null,
       "round": 19,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "madrid-5584477",
@@ -2210,7 +2210,7 @@
       "score_away": null,
       "round": 21,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "valencia-26480080",
@@ -2261,7 +2261,7 @@
       "score_away": null,
       "round": 20,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584486",
@@ -2286,7 +2286,7 @@
       "score_away": null,
       "round": 22,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "valencia-26480088",
@@ -2337,7 +2337,7 @@
       "score_away": null,
       "round": 21,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584496",
@@ -2362,7 +2362,7 @@
       "score_away": null,
       "round": 23,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-20",
@@ -2387,7 +2387,7 @@
       "score_away": null,
       "round": 20,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4195037",
@@ -2412,7 +2412,7 @@
       "score_away": null,
       "round": 22,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584505",
@@ -2437,7 +2437,7 @@
       "score_away": null,
       "round": 24,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-21",
@@ -2462,7 +2462,7 @@
       "score_away": null,
       "round": 21,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "valencia-26480096",
@@ -2513,7 +2513,7 @@
       "score_away": null,
       "round": 23,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584514",
@@ -2538,7 +2538,7 @@
       "score_away": null,
       "round": 25,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-22",
@@ -2563,7 +2563,7 @@
       "score_away": null,
       "round": 22,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4195053",
@@ -2588,7 +2588,7 @@
       "score_away": null,
       "round": 24,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26480103",
@@ -2639,7 +2639,7 @@
       "score_away": null,
       "round": 26,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-23",
@@ -2664,7 +2664,7 @@
       "score_away": null,
       "round": 23,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "valencia-26480111",
@@ -2715,7 +2715,7 @@
       "score_away": null,
       "round": 25,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "murcia-24069902-24",
@@ -2740,7 +2740,7 @@
       "score_away": null,
       "round": 24,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "madrid-5584531",
@@ -2765,7 +2765,7 @@
       "score_away": null,
       "round": 27,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "valencia-26480118",
@@ -2816,7 +2816,7 @@
       "score_away": null,
       "round": 26,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584539",
@@ -2841,7 +2841,7 @@
       "score_away": null,
       "round": 28,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-25",
@@ -2866,7 +2866,7 @@
       "score_away": null,
       "round": 25,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "valencia-26480126",
@@ -2917,7 +2917,7 @@
       "score_away": null,
       "round": 27,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "madrid-5584548",
@@ -2942,7 +2942,7 @@
       "score_away": null,
       "round": 29,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-26",
@@ -2967,7 +2967,7 @@
       "score_away": null,
       "round": 26,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4195087",
@@ -2992,7 +2992,7 @@
       "score_away": null,
       "round": 28,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26480133",
@@ -3043,7 +3043,7 @@
       "score_away": null,
       "round": 30,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-27",
@@ -3068,7 +3068,7 @@
       "score_away": null,
       "round": 27,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4195096",
@@ -3093,7 +3093,7 @@
       "score_away": null,
       "round": 29,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26480141",
@@ -3144,7 +3144,7 @@
       "score_away": null,
       "round": 31,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-28",
@@ -3169,7 +3169,7 @@
       "score_away": null,
       "round": 28,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "catalunya-4195104",
@@ -3194,7 +3194,7 @@
       "score_away": null,
       "round": 30,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:55+00:00"
+      "updated_at": "2026-11-17T13:01:26+00:00"
     },
     {
       "id": "valencia-26480148",
@@ -3245,7 +3245,7 @@
       "score_away": null,
       "round": 32,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-29",
@@ -3270,7 +3270,7 @@
       "score_away": null,
       "round": 29,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "madrid-5584582",
@@ -3295,7 +3295,7 @@
       "score_away": null,
       "round": 33,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     },
     {
       "id": "murcia-24069902-30",
@@ -3320,7 +3320,7 @@
       "score_away": null,
       "round": 30,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:59+00:00"
+      "updated_at": "2026-11-17T13:01:30+00:00"
     },
     {
       "id": "madrid-5584590",
@@ -3345,7 +3345,7 @@
       "score_away": null,
       "round": 34,
       "participation": {},
-      "updated_at": "2026-11-17T12:56:54+00:00"
+      "updated_at": "2026-11-17T13:01:24+00:00"
     }
   ]
 }
