@@ -1,72 +1,51 @@
 # RFHF · Agenda de scouting
 
-Web pública para consultar los partidos de los jugadores asignados a cada colaborador en Madrid, Cataluña, Murcia y Comunitat Valenciana. El acceso es libre: elegir un colaborador filtra la agenda, sin identificación.
+[Agenda pública](https://antonio8aranda98-lang.github.io/rfhf-agenda/) · [Panel de Antonio](https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/)
 
-**[Abrir agenda](https://antonio8aranda98-lang.github.io/rfhf-agenda/)**
+Elige federación y colaborador para consultar los partidos del sábado y domingo. Las fichas y comparativas muestran partidos del equipo, convocatorias, titularidades, suplencias, minutos y goles. Los encuentros reprogramados entre semana siguen consultables. Un partido del equipo no confirma la convocatoria del jugador.
 
-Piloto con cuatro jugadores y 124 partidos. Cada ficha y la comparativa muestran partidos disputados del equipo, convocatorias, titularidades, suplencias, minutos y goles. La web indica la cobertura de actas y mantiene «—» cuando no se puede verificar un total.
+Los enfrentamientos entre jugadores activos producen un aviso destacado aunque pertenezcan a distintos colaboradores. Los equipos se vinculan por sus códigos oficiales cuando están disponibles; no se mezclan equipos A y B.
 
-## Uso
+## Gestión
 
-1. Elige federación y colaborador.
-2. Consulta el fin de semana completo, navega entre semanas o busca un jugador, equipo o campo.
-3. Abre la ficha de un jugador para consultar resultados del equipo y estadísticas individuales disponibles.
-4. Marca visitas (se guardan únicamente en ese navegador) o exporta partidos con horario publicado a un calendario `.ics`.
+Antonio inicia sesión en el panel, completa el formulario y pulsa **Guardar cambios**. El servidor autoriza únicamente la identidad vinculada a Antonio. Los visitantes consultan; no modifican la cartera.
 
-La web distingue horarios pendientes, estadísticas ausentes y problemas de actualización. Un partido del equipo no garantiza la convocatoria ni participación del jugador. Las comparativas usan datos publicados; un guion nunca equivale a cero.
+Las altas se identifican en la plantilla federativa y se comprueba su calendario antes de activarlas. Las bajas y asignaciones se leen en la agenda cada 30 segundos. Las altas y reactivaciones se procesan automáticamente mediante Actions cada cinco minutos, sujetos a retrasos de GitHub y disponibilidad de la fuente. Los errores aparecen en el panel y se reintentan cada 30 minutos. No hay incidencias que gestionar en GitHub.
+
+El registro deseado se guarda en D1. Su endpoint de lectura contiene solo datos deportivos y asignaciones que el propietario autorizó como públicos. `scripts/registry_remote.py` genera el registro federativo validado en `data/roster.json`, retira inactivos de partidos compartidos y publica estados en `docs/data/registry-status.json`. Un fallo de red conserva la última cartera válida. El código del panel vive en el checkout independiente e ignorado `admin-site/`, enlazado a su repositorio de Sites; las credenciales no se guardan en los repositorios.
+
+[Guía de gestión](documentation/gestion.md).
+
+## Datos y cobertura
+
+Los conectores usan las páginas y consultas públicas de las federaciones, con peticiones limitadas a los equipos seguidos. Guardan fuente, fecha y cobertura. Un dato ausente se muestra como «—», nunca como cero. Las asistencias no están validadas.
+
+- Madrid: calendario, campos, escudos, resumen y actas individuales.
+- Cataluña: calendario y actas de convocatorias, titulares, suplentes y goles. Falta un total de minutos cuando no se publican intervalos de sustitución verificables.
+- Murcia: calendario y actas públicas; algunas rutas antiguas responden vacías. Se conserva la última participación comprobada con su fecha y se señala la cobertura.
+- Valencia: consulta HTTP de los mismos endpoints públicos que usa FFCV, incluido su token público de página y cookies normales. Se fija competición, grupo y temporada. Los totales se calculan con las actas del equipo seguido para evitar mezclar apariciones en equipos A/B. No se publican respuestas completas, fotografías de jugadores ni datos de contacto.
+
+Convocado incluye titulares y suplentes, aunque no jueguen. Los minutos calculados usan sustituciones, expulsiones y duración reglamentaria, sin añadido. Una amarilla no elimina los minutos. Solo se suman actas completas para presentar un total; las fichas indican cuántas se han comprobado. Un resumen oficial puede abarcar más competiciones que el calendario de un equipo: no se usa como sustituto de otro ámbito.
 
 ## Desarrollo
 
 ```sh
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
-npm ci
-npx playwright install chromium
-PYTHON=.venv/bin/python .venv/bin/python scripts/sync.py --browser
+.venv/bin/python scripts/registry_remote.py
+.venv/bin/python scripts/sync.py
 npm start
 ```
 
-Abrir `http://localhost:8765`. La web no requiere compilación ni claves. Los archivos servidos están en `docs/`; los datos publicados son un JSON normalizado, sin contactos, fechas de nacimiento ni HTML completo de las federaciones.
+Abrir `http://localhost:8765`. La agenda es HTML/JS sin compilación y no requiere claves. `docs/` contiene los archivos publicados. Las consultas automáticas actuales usan HTTP; los scripts de navegador del primer piloto quedan solo como referencia de investigación.
 
 ```sh
 npm test
 .venv/bin/python -m unittest discover -s tests
 ```
 
-## Jugadores y colaboradores
+## Publicación y operación
 
-[Abrir el formulario de gestión](https://antonio8aranda98-lang.github.io/rfhf-agenda/gestion.html). Permite altas, desactivaciones, reactivaciones y cambio de colaborador. Se completa la solicitud iniciando sesión como propietario en GitHub; la consulta de la agenda sigue siendo libre. No utiliza tokens en el navegador ni permite escrituras de visitantes.
+GitHub Pages sirve `docs/`. `agenda.yml` actualiza las fuentes cada cuatro horas de lunes a jueves y cada hora de viernes a domingo; `cartera.yml` comprueba cambios del panel cada cinco minutos y solo valida/publica si hay trabajo. Los cron se interpretan en UTC y pueden retrasarse o desactivarse tras inactividad prolongada del repositorio.
 
-Las altas requieren nombre y apellidos completos, colaborador, federación, enlace oficial del equipo/categoría y duración reglamentaria. El conector resuelve identificadores y comprueba plantilla y calendario antes de activar al jugador. Para equipos murcianos nuevos se necesita además el enlace de una jornada con competición/grupo/temporada. No se usan coincidencias parciales ni se escoge el primer homónimo.
-
-El workflow `gestion.yml` procesa únicamente incidencias `[RFHF]` creadas y reabiertas por el propietario del repositorio. También valida la autoría en Python; nunca ejecuta el contenido de la solicitud. Las solicitudes sin identidad/fuente verificable permanecen pendientes, con explicación, sin modificar el registro. Corregir la solicitud y cerrarla/reabrirla permite reintentar. **Las altas FFCV quedan pendientes por ahora**, porque su sincronización desatendida no está validada.
-
-Las bajas marcan `active: false` en `data/roster.json` y eliminan al jugador del feed servido, incluidos partidos compartidos, estadísticas y avisos, incluso si falla la siguiente consulta de la federación. La reactivación vuelve a comprobar el equipo. Las asignaciones se aplican a las carteras sin cambiar la identidad. El historial del repositorio público conserva cambios; desactivar no borra ese historial.
-
-También se puede editar `data/roster.json` directamente. Los datos federativos deben corresponder al equipo y categoría correctos.
-
-Estos datos son **públicos** por decisión del propietario. No añadir datos de contacto ni otra información ajena al seguimiento deportivo.
-
-## Actualización y publicación
-
-El workflow de GitHub Actions consulta las fuentes cada cuatro horas de lunes a jueves y cada hora de viernes a domingo. Los cron se interpretan en UTC; son ejecuciones programadas que pueden retrasarse, no un servicio de tiempo real. En repositorios públicos GitHub puede desactivar los cron tras periodos prolongados sin actividad; revisar Actions si deja de actualizarse.
-
-Para GitHub Pages, elegir **Settings → Pages → Source → GitHub Actions**. El mismo workflow publica `docs/` tras la consulta. Se puede ejecutar manualmente desde Actions.
-
-Si una fuente falla o cambia de formato se conserva su última captura válida, sin actualizar falsamente su fecha de éxito. El estado aparece en la web. El HTML temporal y las respuestas completas permanecen en `.cache/`, fuera de Git. Cada conector solicita solo los equipos seguidos y limita la frecuencia de peticiones. No se utilizan credenciales federativas, plugins de evasión ni resolución automática de CAPTCHA.
-
-## Cobertura
-
-- Madrid: calendario, campo, escudos, resumen individual y participación del acta cuando se puede verificar.
-- Cataluña: calendario, resultados, campos, coordenadas, escudos, convocatorias, titularidades, suplencias y goles de actas verificadas. Minutos sin total mientras falten intervalos de sustitución verificables.
-- Murcia: calendario, resultados y actas públicas con convocatorias, titulares, suplentes, goles y minutos calculados cuando hay datos completos. Algunos accesos devuelven una respuesta vacía; se conserva la última participación verificada con su fecha. Fecha sin hora = referencia de jornada.
-- Valencia: conector de navegador público; mantiene datos anteriores si la fuente rechaza la consulta o cambia de formato. Su estado exacto se muestra en la agenda.
-- Asistencias: no disponibles por ahora. No se sustituyen por ceros.
-
-Los cruces se detectan entre los equipos de todos los jugadores activos de la federación, aunque pertenezcan a distintos colaboradores. Se muestra un aviso destacado para el fin de semana elegido, independiente de los filtros de colaborador y búsqueda. Se cotejan códigos oficiales de equipo cuando existen; no se confunden equipos A y B. Es un enfrentamiento entre sus equipos, no una convocatoria confirmada.
-
-Convocado significa figurar como titular o suplente en un acta cerrada; suplente no equivale a haber participado. Los minutos calculados excluyen el añadido y usan sustituciones y expulsiones, sin descartar partidos por amarillas. Solo se suman actas completas para obtener un total; se puede conservar un resumen oficial publicado cuando falta un dato por partido. Los partidos del equipo se cuentan a partir del calendario de la competición seguida; si un resumen federativo abarca otro ámbito puede no coincidir con sus apariciones.
-
-Los escudos identifican a los clubes y pertenecen a sus titulares. Cada partido enlaza a su fuente oficial. Los resultados y horarios pueden ser corregidos por las federaciones.
-
-Más detalles en [la comprobación de fuentes](documentation/fuentes.md).
+Los dos procesos comparten exclusión de publicación para evitar escrituras simultáneas. Una baja se aplica al feed antes de consultar las fuentes, por lo que un fallo posterior no vuelve a publicar al jugador. Las nuevas altas nunca se activan solo por parecido de nombre. Los escudos pertenecen a sus clubes y los horarios pueden ser corregidos por las federaciones: comprueba el enlace oficial antes de desplazarte.

@@ -1,7 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T14:24:24+00:00",
+  "generated_at": "2026-11-17T15:20:51+00:00",
   "season": "2026-2027",
+  "registry_revision": 2,
   "federations": [
     {
       "id": "madrid",
@@ -9,8 +10,8 @@
       "acronym": "RFFM",
       "source": "https://www.rffm.es/",
       "status": "ok",
-      "checked_at": "2026-11-17T14:24:54+00:00",
-      "last_success": "2026-11-17T14:24:54+00:00",
+      "checked_at": "2026-11-17T15:21:18+00:00",
+      "last_success": "2026-11-17T15:21:18+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -20,8 +21,8 @@
       "acronym": "FCF",
       "source": "https://www.fcf.cat/",
       "status": "ok",
-      "checked_at": "2026-11-17T14:25:02+00:00",
-      "last_success": "2026-11-17T14:25:02+00:00",
+      "checked_at": "2026-11-17T15:21:27+00:00",
+      "last_success": "2026-11-17T15:21:27+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -30,24 +31,24 @@
       "label": "Murcia",
       "acronym": "FFRM",
       "source": "https://www.ffrm.es/pnfg/",
-      "status": "ok",
-      "checked_at": "2026-11-17T14:25:13+00:00",
+      "status": "error",
+      "checked_at": "2026-11-17T15:21:30+00:00",
       "last_success": "2026-11-17T14:25:13+00:00",
-      "message": "Consulta automática completada",
-      "failed_players": []
+      "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
+      "failed_players": [
+        "iker-piqueras-mora"
+      ]
     },
     {
       "id": "valencia",
       "label": "Comunitat Valenciana",
       "acronym": "FFCV",
       "source": "https://ffcv.es/competiciones/",
-      "status": "error",
-      "checked_at": "2026-11-17T14:25:13+00:00",
-      "last_success": "2026-11-17T12:25:00+00:00",
-      "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
-      "failed_players": [
-        "daniel-otero-serrano"
-      ]
+      "status": "ok",
+      "checked_at": "2026-11-17T15:22:01+00:00",
+      "last_success": "2026-11-17T15:22:01+00:00",
+      "message": "Consulta automática completada",
+      "failed_players": []
     }
   ],
   "players": [
@@ -73,7 +74,7 @@
       },
       "logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
       "stats_note": "Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.",
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "coverage": {
         "team_played": 10,
         "acts_checked": 10,
@@ -103,7 +104,7 @@
       },
       "logo": "https://files.fcf.cat/escudos/clubes/escudos/00100_0001021752_escut.png",
       "stats_note": "Convocatorias, titulares, suplentes y goles según actas. Los minutos quedan sin dato cuando la FCF no publica intervalos de sustitución verificables.",
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "coverage": {
         "team_played": 8,
         "acts_checked": 8,
@@ -150,24 +151,24 @@
       "competition_label": "Primera FFCV Juvenil · Grupo 2",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=14347",
       "stats": {
-        "played": 8,
-        "starts": 7,
-        "minutes": null,
-        "goals": 2,
-        "assists": null,
-        "yellow": 1,
-        "red": 0,
         "team_played": 7,
-        "called_up": null,
-        "bench": null
+        "called_up": 7,
+        "starts": 6,
+        "bench": 1,
+        "minutes": 485,
+        "goals": 2,
+        "played": 7,
+        "assists": null,
+        "yellow": null,
+        "red": null
       },
       "logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "stats_note": "Resumen verificado en la ficha pública de FFCV el 17/11/2026. La consulta automática aún está pendiente de completar.",
-      "updated_at": "2026-11-17T12:25:00+00:00",
+      "stats_note": "Estadísticas calculadas con las actas de este equipo y competición. No se mezclan otras participaciones del jugador en equipos A/B. Minutos reglamentarios sin añadido.",
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "coverage": {
         "team_played": 7,
-        "acts_checked": 0,
-        "minutes_checked": 0,
+        "acts_checked": 7,
+        "minutes_checked": 7,
         "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
       }
     }
@@ -211,9 +212,9 @@
       "home_team_id": "2023",
       "away_team_id": "3347198",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -258,9 +259,9 @@
       "home_team_id": "6",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -273,31 +274,46 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "Torre Levante B",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.F. Torre Levante 'B'",
       "date": "2026-09-19",
-      "time": null,
+      "time": "19:00",
       "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479917",
-      "venue": null,
+      "venue": "Campo Mpal. de Guadasuar F-11",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/anterior/1213/DOCS/20136/26/466c2e6dc4c03166fca4274704fdfa38_glz2XH8R.jpg",
       "score_home": 0,
       "score_away": 4,
       "round": 1,
-      "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
+      "participation": {
+        "daniel-otero-serrano": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 74,
+          "goals": 0
+        }
+      },
+      "home_team_id": "14347",
+      "away_team_id": "10711",
+      "participation_checked_at": {
+        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+      },
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-1",
@@ -431,9 +447,9 @@
       "home_team_id": "15545946",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T14:25:02+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
       },
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -478,9 +494,9 @@
       "home_team_id": "2023",
       "away_team_id": "75",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -493,31 +509,46 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "C.D. Malilla A",
-      "away": "EAF Valencia C.F. A",
+      "home": "C.D. Malilla 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2026-09-26",
-      "time": null,
+      "time": "19:30",
       "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479926",
-      "venue": null,
+      "venue": "Campo de Futbol Mpal. Malilla F-11",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/2021/DOCS/20215/24/cd4b3797a3a4355936914a0e0849d40d.jpg",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": 0,
       "score_away": 1,
       "round": 2,
-      "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
+      "participation": {
+        "daniel-otero-serrano": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
+        }
+      },
+      "home_team_id": "24652",
+      "away_team_id": "14347",
+      "participation_checked_at": {
+        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+      },
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479934",
@@ -525,31 +556,46 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "Ribarroja C.F. A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "Ribarroja C.F. 'A'",
       "date": "2026-10-03",
-      "time": null,
+      "time": "19:00",
       "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479934",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074812130_Imagen_1.png",
       "score_home": 2,
       "score_away": 3,
       "round": 3,
-      "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
+      "participation": {
+        "daniel-otero-serrano": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 58,
+          "goals": 0
+        }
+      },
+      "home_team_id": "14347",
+      "away_team_id": "14107",
+      "participation_checked_at": {
+        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+      },
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-3",
@@ -636,9 +682,9 @@
       "home_team_id": "1312",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -683,9 +729,9 @@
       "home_team_id": "44581",
       "away_team_id": "19642975",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T14:25:02+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
       },
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -730,9 +776,9 @@
       "home_team_id": "50600672",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T14:25:02+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
       },
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -777,9 +823,9 @@
       "home_team_id": "2023",
       "away_team_id": "410",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -871,9 +917,9 @@
       "home_team_id": "44581",
       "away_team_id": "34021",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T14:25:02+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
       },
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -918,9 +964,9 @@
       "home_team_id": "466507",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -967,31 +1013,46 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "C.F. Benicarló B.F. B",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.F. Benicarló B.F. 'B'",
       "date": "2026-10-24",
-      "time": null,
+      "time": "19:05",
       "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479951",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/usr/local/projects/weblogic/repository/AS400/02/DOCS/201211/27/12046265.jpg",
       "score_home": 1,
       "score_away": 2,
       "round": 5,
-      "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
+      "participation": {
+        "daniel-otero-serrano": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 30,
+          "goals": 1
+        }
+      },
+      "home_team_id": "14347",
+      "away_team_id": "19231",
+      "participation_checked_at": {
+        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+      },
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194902",
@@ -1031,9 +1092,9 @@
       "home_team_id": "34471",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T14:25:02+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
       },
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -1078,9 +1139,9 @@
       "home_team_id": "1794",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -1122,6 +1183,53 @@
       "is_internal_matchup": false
     },
     {
+      "id": "valencia-26479960",
+      "federation": "valencia",
+      "player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "home": "C.F.B. Ciutat de València 'A'",
+      "away": "EAF Valencia C.F. 'A'",
+      "date": "2026-10-31",
+      "time": "17:10",
+      "status": "finished",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479960",
+      "venue": "Campo Mpal. La Exposicion F-11",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074533615_escudo.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
+      "score_home": 4,
+      "score_away": 3,
+      "round": 6,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
+      "participation": {
+        "daniel-otero-serrano": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 70,
+          "goals": 1
+        }
+      },
+      "home_team_id": "19963",
+      "away_team_id": "14347",
+      "participation_checked_at": {
+        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+      },
+      "updated_at": "2026-11-17T15:22:01+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5584361",
       "federation": "madrid",
       "player_ids": [
@@ -1159,46 +1267,14 @@
       "home_team_id": "2023",
       "away_team_id": "3353458",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
-    },
-    {
-      "id": "valencia-26479960",
-      "federation": "valencia",
-      "player_ids": [
-        "daniel-otero-serrano"
-      ],
-      "home": "C.F.B. Ciutat de València A",
-      "away": "EAF Valencia C.F. A",
-      "date": "2026-10-31",
-      "time": null,
-      "status": "finished",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479960",
-      "venue": null,
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": null,
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "score_home": 4,
-      "score_away": 3,
-      "round": 6,
-      "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
-      "home_player_ids": [],
-      "away_player_ids": [
-        "daniel-otero-serrano"
-      ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4194910",
@@ -1238,9 +1314,9 @@
       "home_team_id": "44581",
       "away_team_id": "35883",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T14:25:02+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
       },
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -1319,12 +1395,59 @@
       "home_team_id": "38207",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T14:25:02+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
       },
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "valencia-26479968",
+      "federation": "valencia",
+      "player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "home": "U.D. Paterna 'A'",
+      "away": "EAF Valencia C.F. 'A'",
+      "date": "2026-11-07",
+      "time": "18:30",
+      "status": "finished",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479968",
+      "venue": "Ciudad Dptva. Mpal. Viña del Andaluz F-11 Paterna Campo 1",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074529980_OIP.jpg",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
+      "score_home": 1,
+      "score_away": 1,
+      "round": 7,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
+      "participation": {
+        "daniel-otero-serrano": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 73,
+          "goals": 0
+        }
+      },
+      "home_team_id": "15752",
+      "away_team_id": "14347",
+      "participation_checked_at": {
+        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+      },
+      "updated_at": "2026-11-17T15:22:01+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
       ],
       "is_internal_matchup": false
     },
@@ -1366,46 +1489,14 @@
       "home_team_id": "599",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
       ],
       "is_internal_matchup": false
-    },
-    {
-      "id": "valencia-26479968",
-      "federation": "valencia",
-      "player_ids": [
-        "daniel-otero-serrano"
-      ],
-      "home": "U.D. Paterna A",
-      "away": "EAF Valencia C.F. A",
-      "date": "2026-11-07",
-      "time": null,
-      "status": "finished",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479968",
-      "venue": null,
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": null,
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "score_home": 1,
-      "score_away": 1,
-      "round": 7,
-      "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
-      "home_player_ids": [],
-      "away_player_ids": [
-        "daniel-otero-serrano"
-      ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
     },
     {
       "id": "murcia-24069902-9",
@@ -1479,11 +1570,58 @@
       "home_team_id": "2023",
       "away_team_id": "920",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T14:24:54+00:00"
+        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
       },
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "valencia-26479976",
+      "federation": "valencia",
+      "player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.D. Serranos Valencia 'A'",
+      "date": "2026-11-15",
+      "time": "12:00",
+      "status": "finished",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479976",
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074644299_escudonuevocds_removebg_preview.png",
+      "score_home": 1,
+      "score_away": 1,
+      "round": 8,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
+      "participation": {
+        "daniel-otero-serrano": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
+        }
+      },
+      "home_team_id": "14347",
+      "away_team_id": "15769",
+      "participation_checked_at": {
+        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+      },
+      "updated_at": "2026-11-17T15:22:01+00:00",
+      "home_player_ids": [
+        "daniel-otero-serrano"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -1526,9 +1664,9 @@
       "home_team_id": "44581",
       "away_team_id": "21219888",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T14:25:02+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
       },
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -1536,68 +1674,40 @@
       "is_internal_matchup": false
     },
     {
-      "id": "valencia-26479976",
-      "federation": "valencia",
-      "player_ids": [
-        "daniel-otero-serrano"
-      ],
-      "home": "EAF Valencia C.F. A",
-      "away": "C.D. Serranos Valencia A",
-      "date": "2026-11-15",
-      "time": null,
-      "status": "finished",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479976",
-      "venue": null,
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
-      "score_home": 1,
-      "score_away": 1,
-      "round": 8,
-      "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
-      "home_player_ids": [
-        "daniel-otero-serrano"
-      ],
-      "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
-    },
-    {
       "id": "valencia-26574802",
       "federation": "valencia",
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "Col. Salgui E.D.E. B",
-      "away": "EAF Valencia C.F. A",
+      "home": "Col. Salgui E.D.E. 'B'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2026-11-19",
       "time": "19:30",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26574802",
-      "venue": null,
+      "venue": "Campo Futbol San Marcelino F-11",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074600357_escudo.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 4,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "22701",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479983",
@@ -1605,14 +1715,14 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "C.D. Buñol A",
-      "away": "EAF Valencia C.F. A",
+      "home": "C.D. Buñol 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2026-11-21",
       "time": "12:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479983",
-      "venue": "Campo Beltrán Báguena Buñol F-11",
-      "locality": "Buñol",
+      "venue": "Campo Beltran Baguena Buñol F-11",
+      "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
@@ -1621,15 +1731,19 @@
       "score_home": null,
       "score_away": null,
       "round": 9,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14488",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584386",
@@ -1660,7 +1774,7 @@
       "home_team_id": "21492710",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -1696,7 +1810,7 @@
       "home_team_id": "44581",
       "away_team_id": "15558236",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -1766,7 +1880,7 @@
       "home_team_id": "2023",
       "away_team_id": "548",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -1779,31 +1893,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "Godella C.F. A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "Godella C.F. 'A'",
       "date": "2026-11-28",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479991",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074491478_logo.jpg",
       "score_home": null,
       "score_away": null,
       "round": 10,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "14593",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194942",
@@ -1834,7 +1952,7 @@
       "home_team_id": "35378723",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -1915,31 +2033,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "C.D. San Marcelino A",
-      "away": "EAF Valencia C.F. A",
+      "home": "C.D. San Marcelino 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2026-12-12",
       "time": "19:30",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479998",
-      "venue": null,
+      "venue": "Campo Futbol San Marcelino F-11",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074784637_CDA_San_Marcelino.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 11,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "16360",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194950",
@@ -1970,7 +2092,7 @@
       "home_team_id": "44581",
       "away_team_id": "35238",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -2006,7 +2128,7 @@
       "home_team_id": "481",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -2076,7 +2198,7 @@
       "home_team_id": "34172",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -2089,31 +2211,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "C.D. Utiel A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.D. Utiel 'A'",
       "date": "2026-12-19",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480006",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074811932_Escudo_CDUTIEL_Vector_page_0001.jpg",
       "score_home": null,
       "score_away": null,
       "round": 12,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "15024",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584412",
@@ -2144,7 +2270,7 @@
       "home_team_id": "2023",
       "away_team_id": "15294614",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -2214,7 +2340,7 @@
       "home_team_id": "44581",
       "away_team_id": "35537",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -2227,31 +2353,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "C.F. At. Bº La Luz - Xirivella A",
-      "away": "EAF Valencia C.F. A",
+      "home": "C.F. At. Bº La Luz - Xirivella 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2027-01-10",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480013",
-      "venue": null,
+      "venue": "Campo Mpal. Barrio La Luz F-11 Valencia ",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074697105_Escudo_Barrio_granate_removebg_preview.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 13,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14352",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-14",
@@ -2316,7 +2446,7 @@
       "home_team_id": "35950",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -2329,31 +2459,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "S.C. Requena A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "S.C. Requena 'A'",
       "date": "2027-01-16",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480021",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074502505_SC_Requena.png",
       "score_home": null,
       "score_away": null,
       "round": 14,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "18417",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584420",
@@ -2384,7 +2518,7 @@
       "home_team_id": "2453",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -2431,31 +2565,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "C.F. Atletico Cabañal A",
-      "away": "EAF Valencia C.F. A",
+      "home": "C.F. Atletico Cabañal 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2027-01-23",
       "time": "18:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480028",
-      "venue": null,
+      "venue": "Campo Futbol Mpal. La Torre-Faitanar F-11 Valencia",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074744569_foto_de_perfil_de_LinkedIn_moderno_oficina.PNG",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 15,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "297201",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194984",
@@ -2486,7 +2624,7 @@
       "home_team_id": "44581",
       "away_team_id": "37800",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -2522,7 +2660,7 @@
       "home_team_id": "2023",
       "away_team_id": "1175",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -2569,31 +2707,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "Torre Levante B",
-      "away": "EAF Valencia C.F. A",
+      "home": "C.F. Torre Levante 'B'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2027-01-30",
       "time": "16:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480037",
-      "venue": null,
+      "venue": "Campo Torre Levante-Orriols F-11",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/anterior/1213/DOCS/20136/26/466c2e6dc4c03166fca4274704fdfa38_glz2XH8R.jpg",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 16,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "10711",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584437",
@@ -2624,7 +2766,7 @@
       "home_team_id": "1402",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -2660,7 +2802,7 @@
       "home_team_id": "44581",
       "away_team_id": "15545946",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -2673,31 +2815,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "C.D. Malilla A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.D. Malilla 'A'",
       "date": "2027-02-06",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480046",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/2021/DOCS/20215/24/cd4b3797a3a4355936914a0e0849d40d.jpg",
       "score_home": null,
       "score_away": null,
       "round": 17,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "24652",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584448",
@@ -2728,7 +2874,7 @@
       "home_team_id": "3347198",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -2798,7 +2944,7 @@
       "home_team_id": "19642975",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -2811,31 +2957,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "Ribarroja C.F. A",
-      "away": "EAF Valencia C.F. A",
+      "home": "Ribarroja C.F. 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2027-02-13",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480054",
-      "venue": null,
+      "venue": "Campo Futbol Mpal. Roberto Gil F-11 Riba-roja ",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074812130_Imagen_1.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 18,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14107",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584458",
@@ -2866,7 +3016,7 @@
       "home_team_id": "2023",
       "away_team_id": "6",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -2879,31 +3029,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "Col. Salgui E.D.E. B",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "Col. Salgui E.D.E. 'B'",
       "date": "2027-02-20",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480063",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074600357_escudo.png",
       "score_home": null,
       "score_away": null,
       "round": 19,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "22701",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195007",
@@ -2934,7 +3088,7 @@
       "home_team_id": "44581",
       "away_team_id": "50600672",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -2970,7 +3124,7 @@
       "home_team_id": "75",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -3017,31 +3171,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "C.F. Benicarló B.F. B",
-      "away": "EAF Valencia C.F. A",
+      "home": "C.F. Benicarló B.F. 'B'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2027-02-27",
       "time": "18:45",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480071",
-      "venue": null,
+      "venue": "Estadio Angel Pichi Alonso F-11 Benicarló ",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/usr/local/projects/weblogic/repository/AS400/02/DOCS/201211/27/12046265.jpg",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 20,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "19231",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195015",
@@ -3072,7 +3230,7 @@
       "home_team_id": "34021",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -3142,7 +3300,7 @@
       "home_team_id": "2023",
       "away_team_id": "1312",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -3155,31 +3313,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "C.F.B. Ciutat de València A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.F.B. Ciutat de València 'A'",
       "date": "2027-03-06",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480080",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074533615_escudo.png",
       "score_home": null,
       "score_away": null,
       "round": 21,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "19963",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195022",
@@ -3210,7 +3372,7 @@
       "home_team_id": "44581",
       "away_team_id": "34471",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -3246,7 +3408,7 @@
       "home_team_id": "410",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -3259,31 +3421,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "U.D. Paterna A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "U.D. Paterna 'A'",
       "date": "2027-03-13",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480088",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074529980_OIP.jpg",
       "score_home": null,
       "score_away": null,
       "round": 22,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "15752",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195030",
@@ -3314,7 +3480,7 @@
       "home_team_id": "35883",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -3350,7 +3516,7 @@
       "home_team_id": "2023",
       "away_team_id": "466507",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -3420,7 +3586,7 @@
       "home_team_id": "44581",
       "away_team_id": "38207",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -3456,7 +3622,7 @@
       "home_team_id": "2023",
       "away_team_id": "1794",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -3503,31 +3669,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "C.D. Serranos Valencia A",
-      "away": "EAF Valencia C.F. A",
+      "home": "C.D. Serranos Valencia 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2027-04-03",
       "time": "17:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480096",
-      "venue": null,
+      "venue": "Instalaciones Mpales. Serranos F-11",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074644299_escudonuevocds_removebg_preview.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 23,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "15769",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195045",
@@ -3558,7 +3728,7 @@
       "home_team_id": "21219888",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -3594,7 +3764,7 @@
       "home_team_id": "3353458",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -3664,7 +3834,7 @@
       "home_team_id": "15558236",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -3677,31 +3847,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "C.D. Buñol A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.D. Buñol 'A'",
       "date": "2027-04-10",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480103",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074520544_CD_Bu_ol.png",
       "score_home": null,
       "score_away": null,
       "round": 24,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "14488",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584522",
@@ -3732,7 +3906,7 @@
       "home_team_id": "2023",
       "away_team_id": "599",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -3779,31 +3953,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "Godella C.F. A",
-      "away": "EAF Valencia C.F. A",
+      "home": "Godella C.F. 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2027-04-18",
       "time": "12:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480111",
-      "venue": null,
+      "venue": "Campo Mpal. de Godella F-11",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074491478_logo.jpg",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 25,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14593",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195062",
@@ -3834,7 +4012,7 @@
       "home_team_id": "44581",
       "away_team_id": "35378723",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -3904,7 +4082,7 @@
       "home_team_id": "920",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -3917,31 +4095,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "C.D. San Marcelino A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.D. San Marcelino 'A'",
       "date": "2027-04-24",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480118",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074784637_CDA_San_Marcelino.png",
       "score_home": null,
       "score_away": null,
       "round": 26,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "16360",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195070",
@@ -3972,7 +4154,7 @@
       "home_team_id": "35238",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -4008,7 +4190,7 @@
       "home_team_id": "2023",
       "away_team_id": "21492710",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -4055,31 +4237,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "C.D. Utiel A",
-      "away": "EAF Valencia C.F. A",
+      "home": "C.D. Utiel 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2027-05-02",
       "time": "12:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480126",
-      "venue": null,
+      "venue": "Estadio Mpal. La Celadilla F-11 Utiel ",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074811932_Escudo_CDUTIEL_Vector_page_0001.jpg",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 27,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "15024",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195079",
@@ -4110,7 +4296,7 @@
       "home_team_id": "44581",
       "away_team_id": "34172",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -4146,7 +4332,7 @@
       "home_team_id": "548",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -4216,7 +4402,7 @@
       "home_team_id": "35537",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -4229,31 +4415,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "C.F. At. Bº La Luz - Xirivella A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.F. At. Bº La Luz - Xirivella 'A'",
       "date": "2027-05-08",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480133",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074697105_Escudo_Barrio_granate_removebg_preview.png",
       "score_home": null,
       "score_away": null,
       "round": 28,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "14352",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584556",
@@ -4284,7 +4474,7 @@
       "home_team_id": "2023",
       "away_team_id": "481",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -4354,7 +4544,7 @@
       "home_team_id": "44581",
       "away_team_id": "35950",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -4367,31 +4557,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "S.C. Requena A",
-      "away": "EAF Valencia C.F. A",
+      "home": "S.C. Requena 'A'",
+      "away": "EAF Valencia C.F. 'A'",
       "date": "2027-05-16",
       "time": "17:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480141",
-      "venue": null,
+      "venue": "Estadio Mpal. Tomas Berlanga F-11 Requena ",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074502505_SC_Requena.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "score_home": null,
       "score_away": null,
       "round": 29,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "18417",
+      "away_team_id": "14347",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584565",
@@ -4422,7 +4616,7 @@
       "home_team_id": "15294614",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -4492,7 +4686,7 @@
       "home_team_id": "37800",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:02+00:00",
+      "updated_at": "2026-11-17T15:21:27+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -4505,31 +4699,35 @@
       "player_ids": [
         "daniel-otero-serrano"
       ],
-      "home": "EAF Valencia C.F. A",
-      "away": "C.F. Atletico Cabañal A",
+      "home": "EAF Valencia C.F. 'A'",
+      "away": "C.F. Atletico Cabañal 'A'",
       "date": "2027-05-22",
       "time": "19:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480148",
-      "venue": null,
+      "venue": "Instalaciones Mpales. El Terç F-11 Alaquás Campo 1",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "away_logo": null,
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074744569_foto_de_perfil_de_LinkedIn_moderno_oficina.PNG",
       "score_home": null,
       "score_away": null,
       "round": 30,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
       "participation": {},
-      "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified",
+      "home_team_id": "14347",
+      "away_team_id": "297201",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T15:22:01+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_checked_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584573",
@@ -4560,7 +4758,7 @@
       "home_team_id": "2023",
       "away_team_id": "2453",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -4630,7 +4828,7 @@
       "home_team_id": "1175",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -4700,7 +4898,7 @@
       "home_team_id": "2023",
       "away_team_id": "1402",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:24:54+00:00",
+      "updated_at": "2026-11-17T15:21:18+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],

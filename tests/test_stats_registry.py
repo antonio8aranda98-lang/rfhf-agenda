@@ -8,7 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from player_stats import minute, participation, absent, summarize
-from federation_acts import parse_murcia_act, parse_catalunya_act, flight_players
+from federation_acts import parse_murcia_act, parse_catalunya_act, flight_players, public_digits, parse_murcia_calendar
 from sync import apply_roster
 from registry import change, request_from_event, official_url, unique_name
 import registry
@@ -53,6 +53,13 @@ class ParticipationTests(unittest.TestCase):
         html='<main>FINALITZAT<div><div><h3>GOLS</h3></div><div><span>JUGADOR 1</span></div></div></main><script>self.__next_f.push('+json.dumps([1,payload])+')</script>'
         stats=parse_catalunya_act(html, {'official_name':'JUGADOR 1'})
         self.assertEqual(stats['starts'],1);self.assertEqual(stats['bench'],0);self.assertEqual(stats['goals'],1);self.assertIsNone(stats['minutes'])
+
+    def test_murcia_displayed_scores_ignore_hidden_decoys(self):
+        from bs4 import BeautifulSoup
+        mapping=[2,5,9,4,1,0,8,6,3,7]*4
+        html='<script>const ntype='+json.dumps(mapping)+'</script><div class="card-body"><h5 class="card-title">Jornada 1</h5><div class="row"><table><tr><td>CLUB A</td><td><strong><i id="home"><script>ntype("home",4,0,"fa-9");</script><span style="display:none">9</span></i></strong> - <strong><style>#away:before{content:"\\0032"}</style><span id="away"><span style="display:none">8</span></span></strong></td><td>CLUB B</td></tr></table><div class="right">CAMPO OFICIAL 21-11-2026 - 12:00</div></div></div>'
+        matches=parse_murcia_calendar(html,{'id':'p','team_id':'1','team':'CLUB A'},'https://www.ffrm.es/')
+        self.assertEqual((matches[0]['score_home'],matches[0]['score_away']),(1,2));self.assertEqual(matches[0]['venue'],'CAMPO OFICIAL');self.assertEqual(matches[0]['time'],'12:00')
 
 
 class RegistryTests(unittest.TestCase):

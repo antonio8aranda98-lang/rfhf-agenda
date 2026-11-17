@@ -52,7 +52,8 @@ def resolve_player(request, roster, client=None):
         raise ValueError('Selecciona la duración reglamentaria de la categoría')
     client = client or Client(FEDERATIONS[fid][2])
     try:
-        client.get(FEDERATIONS[fid][2])
+        if fid != 'murcia':
+            client.get(FEDERATIONS[fid][2])
     except Exception:
         pass
     q = parse_qs(u.query)
@@ -108,7 +109,8 @@ def resolve_player(request, roster, client=None):
         team_id = q.get('Codigo_Equipo', [''])[0]
         if not team_id.isdigit():
             raise ValueError('El enlace no incluye el código oficial del equipo')
-        soup = BeautifulSoup(client.get(u.geturl()), 'html.parser')
+        canonical = 'https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=' + team_id + '&cod_primaria=3001860'
+        soup = BeautifulSoup(client.get(canonical), 'html.parser')
         header = soup.find(string=re.compile(r'Jugadores\s*\('))
         table = header.find_parent('table') if header else None
         if not table:
@@ -134,11 +136,10 @@ def resolve_player(request, roster, client=None):
             group_name = comp_soup.select_one('select[name="grupo"] option[selected]')
             result = {'team_id': team_id, 'team': link.get_text(' ', strip=True), 'competition_id': values[0], 'group_id': values[1], 'season_id': values[2],
                       'competition_label': ' · '.join(x.get_text(' ', strip=True) for x in (comp_name, group_name) if x)}
-        result.update(official_name=official_name, source=u.geturl())
+        result.update(official_name=official_name, source=canonical)
     else:
-        # FFCV currently rejects unattended public sessions. Never activate an
-        # unverified identity or silently attach it to the pilot club.
-        raise ValueError('La sincronización desatendida de FFCV sigue pendiente de validación. Se necesita comprobar esta alta antes de publicarla.')
+        from valencia_data import PublicFFCV, resolve_ffcv
+        result = resolve_ffcv(PublicFFCV(client), request, roster['season'], name_key)
     result.update(id=re.sub(r'[^a-z0-9]+', '-', normalized(name).lower()).strip('-') + '-' + fid + '-' + result.get('player_id', result['team_id']),
                   name=name, federation=fid, collaborator=collaborator, match_duration=duration, active=True)
     if any(p['id'] == result['id'] or (p['federation'] == fid and name_key(p['official_name']) == name_key(result['official_name'])) for p in roster['players']):

@@ -73,3 +73,10 @@ Investigación inicial y notas de implementación. La aplicación se sirve desde
 - No se han validado asistencias. No se publican ceros sustitutivos.
 - Cada participación conserva su fecha de lectura en `participation_checked_at`. Un fallo temporal del acta no elimina la participación previa si siguen iguales el encuentro, estado y resultado. La ficha muestra cobertura; el calendario y las actas pueden tener distinta fecha de lectura.
 - Gestión: formulario público de preparación y autorización mediante la cuenta propietaria en GitHub. Alta activada solo tras verificar identidad, plantilla y calendario; FFCV permanece pendiente. Ver [gestión](gestion.md).
+
+## Revisión de conectores y gestión
+
+- FFCV: consultas HTTP públicas con el token `ffcv-pt` que su web envía en `X-FFCV-Page-Token`. Se verifican plantilla, identidad, competición, grupo y temporada; el calendario se obtiene por jornadas del grupo, evitando el endpoint de calendario de equipo que devuelve una lista vacía. Siete actas del equipo A de Daniel verificadas: 7 convocatorias, 6 titularidades, 1 suplencia, 485 minutos y 2 goles. El resumen general del jugador incluye otro equipo y no se mezcla con estos totales.
+- Administración: panel en Sites con identidad de Antonio vinculada durante una activación privada. Después se autoriza lectura pública del registro deportivo; las escrituras requieren la identidad fijada en el servidor. Las pruebas reales de escritura anónima y de identidad falsificada respondieron 401.
+- Se sustituye el flujo de incidencias por Guardar y comprobación automática; el estado de validación se publica en `registry-status.json`.
+- La agenda de fin de semana contiene sábado y domingo. Los partidos de lunes a viernes permanecen consultables fuera de esa vista principal.

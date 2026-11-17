@@ -16,7 +16,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 from player_stats import participation, absent, summarize, STAT_FIELDS
-from federation_acts import murcia_round, parse_murcia_act, parse_catalunya_act
+from federation_acts import murcia_round, parse_murcia_act, parse_catalunya_act, parse_murcia_calendar
 
 ROOT = Path(__file__).resolve().parents[1]
 MADRID = ZoneInfo('Europe/Madrid')
@@ -71,16 +71,19 @@ class Client:
         self.last_request = 0
         self.cache = {}
 
-    def get(self, url):
+    def get(self, url, headers=None):
         if url in self.cache:
             return self.cache[url]
-        time.sleep(max(0, .45 - (time.monotonic() - self.last_request)))
+        interval = 2 if 'ffrm.es' in self.base else .65
+        time.sleep(max(0, interval - (time.monotonic() - self.last_request)))
         self.last_request = time.monotonic()
-        request = urllib.request.Request(url, headers={'Referer': self.base})
+        request = urllib.request.Request(url, headers={'Referer': self.base, **(headers or {})})
         with self.opener.open(request, timeout=35) as response:
             if '/NLogin' in response.url or ('ffcv.es/wp/' in response.url and '/competiciones/' in url):
                 raise ValueError('La fuente redirige fuera de la consulta deportiva pública')
             raw = response.read(8_000_000)
+            if not raw:
+                raise ValueError('La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido')
             charset = response.headers.get_content_charset()
             if not charset:
                 match = re.search(br'charset\s*=\s*["\x27]?([a-zA-Z0-9-]+)', raw[:4000])
@@ -283,11 +286,12 @@ def parse_murcia(html, player, source):
 
 
 def murcia(client, player):
-    team = BeautifulSoup(client.get(player['source']), 'html.parser')
+    team_url = 'https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?' + urllib.parse.urlencode({'Codigo_Equipo':player['team_id'], 'cod_primaria':'3001860'})
+    team = BeautifulSoup(client.get(team_url), 'html.parser')
     if normalized(player['official_name']) not in normalized(team.get_text(' ', strip=True)):
         raise ValueError('El jugador ya no figura en la plantilla configurada; revisar asignación')
-    url = 'https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?' + urllib.parse.urlencode({'cod_primaria': '1000123', 'codequipo': player['team_id'], 'codgrupo': player['group_id']})
-    matches = parse_murcia(client.get(url), player, url)
+    url = 'https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?' + urllib.parse.urlencode({'cod_primaria':'1000120','codcompeticion':player['competition_id'],'codgrupo':player['group_id'],'codtemporada':player['season_id'],'CDetalle':'1'})
+    matches = parse_murcia_calendar(client.get(url), player, url)
     image = team.select_one('img[src*="/Clubes/"]')
     logo = urllib.parse.urljoin(player['source'], image['src']) if image else None
     if logo:
@@ -318,18 +322,8 @@ def murcia(client, player):
 
 
 def valencia(client, player):
-    path = ROOT / '.cache' / 'valencia.json'
-    if not path.exists():
-        raise ValueError('Pendiente de consulta con navegador público')
-    data = json.loads(path.read_text())
-    # A failed/new run may not re-stamp an old browser snapshot as fresh.
-    checked = datetime.fromisoformat(data['checked_at'].replace('Z', '+00:00'))
-    if (datetime.now(timezone.utc) - checked).total_seconds() > 1800:
-        raise ValueError('La captura del navegador tiene más de 30 minutos')
-    result = data.get('players', {}).get(player['id'])
-    if not result or result.get('error'):
-        raise ValueError((result or {}).get('error', 'El navegador no devolvió el jugador'))
-    return result
+    from valencia_data import load_valencia
+    return load_valencia(client, player)
 
 
 ADAPTERS = {'madrid': madrid, 'catalunya': catalunya, 'murcia': murcia, 'valencia': valencia}
@@ -343,14 +337,14 @@ def sync(browser=False):
         run = subprocess.run(['node', 'scripts/valencia.mjs'], cwd=ROOT, timeout=360, check=False)
         if run.returncode:
             print('::warning::Valencia: consulta de navegador incompleta; se conservarán datos anteriores')
-    feed = {'schema_version': 1, 'generated_at': now(), 'season': roster['season'], 'federations': [], 'players': [], 'matches': []}
+    feed = {'schema_version': 1, 'generated_at': now(), 'season': roster['season'], 'registry_revision': roster.get('registry_revision', 0), 'federations': [], 'players': [], 'matches': []}
     old_matches = previous.get('matches', [])
     total_success = 0
     for fid, (label, acronym, base) in FEDERATIONS.items():
         client = Client(base)
         # Normal public landing establishes the same public session as website navigation.
         try:
-            if fid != 'valencia':
+            if fid not in ('valencia', 'murcia'):
                 client.get(base)
         except Exception:
             pass

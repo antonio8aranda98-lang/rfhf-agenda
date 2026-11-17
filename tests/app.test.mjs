@@ -1,11 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { weekend, madridToday, filterMatches, calendarICS, overlaps, matchups, displayStat, escapeHTML, safeURL } from '../docs/model.mjs';
+import { weekend, madridToday, filterMatches, calendarICS, overlaps, matchups, applyPublicRegistry, displayStat, escapeHTML, safeURL } from '../docs/model.mjs';
 
-test('Friday, Saturday and Sunday stay in the same weekend, including Sunday',()=>{
-  for(const day of ['2026-11-17','2026-11-20','2026-11-21','2026-11-22'])assert.deepEqual(weekend(day),['2026-11-20','2026-11-21','2026-11-22']);
-  assert.deepEqual(weekend('2026-11-23'),['2026-11-27','2026-11-28','2026-11-29']);
-  assert.deepEqual(weekend('2026-12-31'),['2027-01-01','2027-01-02','2027-01-03']);
+test('the weekend contains Saturday and Sunday only, including while browsing on Sunday',()=>{
+  for(const day of ['2026-11-17','2026-11-20','2026-11-21','2026-11-22'])assert.deepEqual(weekend(day),['2026-11-21','2026-11-22']);
+  assert.deepEqual(weekend('2026-11-23'),['2026-11-28','2026-11-29']);
+  assert.deepEqual(weekend('2026-12-31'),['2027-01-02','2027-01-03']);
 });
 test('Madrid date is independent of browser or runner timezone',()=>{
   assert.equal(madridToday(new Date('2026-11-21T23:30:00Z')),'2026-11-22');
@@ -47,4 +47,10 @@ test('opponent alert ignores collaborator filter, while excluding inactive and p
   assert.equal(matchups([m],players.map(p=>({...p,active:p.id!=='b'})),['2026-11-21']).length,0);
   assert.equal(matchups([{...m,status:'postponed'}],players,['2026-11-21']).length,0);
   assert.equal(matchups([{...m,away_player_ids:[]}],players,['2026-11-21']).length,0);
+});
+test('public registry removes players and crossings immediately without publishing unverified additions',()=>{
+  const feed={season:'2026-2027',registry_revision:1,players:[{id:'a',collaborator:'Uno'},{id:'b',collaborator:'Dos'}],matches:[{id:'m',player_ids:['a','b'],home_player_ids:['a'],away_player_ids:['b'],participation:{a:{minutes:90},b:{minutes:20}}}]};
+  const registry={initialized:true,season:feed.season,revision:2,players:[{id:'a',collaborator:'Nuevo'},{id:'b',collaborator:'Dos',active:false},{id:'new',name:'Unverified'}]};
+  const next=applyPublicRegistry(feed,registry);assert.deepEqual(next.players,[{id:'a',collaborator:'Nuevo'}]);assert.deepEqual(next.matches[0].away_player_ids,[]);assert.equal(next.matches[0].participation.b,undefined);assert.equal(feed.players.length,2);
+  registry.players[1]={id:'b',active:true,_activation_revision:3};assert.equal(applyPublicRegistry(feed,registry).players.length,1);
 });

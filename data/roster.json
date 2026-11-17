@@ -16,7 +16,8 @@
       "source": "https://www.rffm.es/fichajugador/7998819",
       "id": "jorge-martin-andres",
       "competition_label": "Primera Autonómica Juvenil · Grupo 2",
-      "match_duration": 90
+      "match_duration": 90,
+      "active": true
     },
     {
       "name": "Daniel Otero Serrano",
@@ -32,7 +33,8 @@
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=14347",
       "id": "daniel-otero-serrano",
       "competition_label": "Primera FFCV Juvenil · Grupo 2",
-      "match_duration": 90
+      "match_duration": 90,
+      "active": true
     },
     {
       "name": "Iker Piqueras Mora",
@@ -44,10 +46,11 @@
       "competition_id": "24032708",
       "group_id": "24032710",
       "season_id": "22",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?cod_primaria=3001860&Codigo_Equipo=24069902",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=24069902&cod_primaria=3001860",
       "id": "iker-piqueras-mora",
       "competition_label": "Primera Cadete · Grupo 2",
-      "match_duration": 80
+      "match_duration": 80,
+      "active": true
     },
     {
       "name": "Aleix Camarasa Oros",
@@ -65,7 +68,9 @@
       "id": "aleix-camarasa-oros",
       "competition_label": "Juvenil Primera Divisió · Grup 8",
       "match_duration": 90,
-      "team_id": "44581"
+      "team_id": "44581",
+      "active": true
     }
-  ]
+  ],
+  "registry_revision": 2
 }

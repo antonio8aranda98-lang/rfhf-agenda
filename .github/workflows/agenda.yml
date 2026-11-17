@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: main
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
@@ -27,21 +29,22 @@ jobs:
           node-version: '22'
           cache: npm
       - run: pip install -r requirements.txt
-      - run: npm ci
-      - run: npx playwright install --with-deps chromium
       - name: Verificar reglas de fechas y datos
         run: |
           npm test
           python -m unittest discover -s tests
+      - name: Aplicar cartera guardada por Antonio
+        continue-on-error: true
+        run: python scripts/registry_remote.py
       - name: Consultar federaciones
         id: sync
         continue-on-error: true
-        run: python scripts/sync.py --browser
+        run: python scripts/sync.py
       - name: Conservar solo datos públicos normalizados
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/data/feed.json
+          git add data/roster.json docs/data/feed.json docs/data/registry-status.json
           if ! git diff --cached --quiet; then
             git commit -m 'Actualizar partidos y estado de las fuentes'
             git push

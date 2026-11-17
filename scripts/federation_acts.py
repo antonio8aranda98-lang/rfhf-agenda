@@ -2,9 +2,81 @@
 import json
 import re
 import unicodedata
-from urllib.parse import urljoin, urlparse, parse_qs
+from urllib.parse import urljoin, urlparse, parse_qs, urlencode
 from bs4 import BeautifulSoup
 from player_stats import participation, absent
+
+
+def public_digits(element, document):
+    """Read displayed score glyphs, excluding hidden decoy text; never eval JS."""
+    import copy
+    node = copy.deepcopy(element)
+    source = str(document)
+    for script in list(node.find_all('script')):
+        for id, number, block in re.findall(r'ntype\(["\x27]([^"\x27]+)["\x27],\s*(\d+),\s*(\d+),', script.get_text()):
+            arrays = [re.search(r'\[(?:\s*\d+\s*,){39}\s*\d+\s*\]', s.get_text()) for s in document.find_all('script') if 'ntype' in s.get_text()]
+            encoded = next((m[0] for m in arrays if m), None)
+            if not encoded:
+                raise ValueError('Ha cambiado la representación de los marcadores de Murcia')
+            mapping = json.loads(encoded)
+            index = int(block)*10+int(number)
+            if not 0 <= index < len(mapping) or not all(type(v) is int and 0 <= v <= 9 for v in mapping):
+                raise ValueError('Marcador de Murcia no verificable')
+            target = node.find(id=id)
+            if target:
+                target.clear(); target.append(str(mapping[index]))
+    for target in node.select('[id]'):
+        for side, declarations in re.findall(r'#'+re.escape(target['id'])+r'::?(before|after)\s*\{([^}]+)\}', source):
+            if re.search(r'display\s*:\s*none', declarations, re.I):
+                continue
+            content = re.search(r'content\s*:\s*["\x27]([^"\x27]*)["\x27]', declarations)
+            if content:
+                value = re.sub(r'\\([0-9a-fA-F]{1,6})\s?', lambda m:chr(int(m[1],16)), content[1])
+                if not re.fullmatch(r'\d*', value):
+                    raise ValueError('Glifo de marcador no reconocido')
+                if side == 'before': target.insert(0,value)
+                else: target.append(value)
+    for hidden in list(node.select('[style]')):
+        if re.search(r'display\s*:\s*none', hidden.get('style',''), re.I):
+            hidden.decompose()
+    for removable in list(node.find_all(['script','style'])):
+        removable.decompose()
+    value = node.get_text('',strip=True)
+    return int(value) if value.isdigit() else None
+
+
+def parse_murcia_calendar(html, player, source):
+    from sync import fixture, normalized, iso_date, http_time
+    soup = BeautifulSoup(html,'html.parser'); matches=[]
+    for card in soup.select('.card-body'):
+        title = card.select_one('h5.card-title')
+        rnd = re.search(r'Jornada\s+(\d+)', title.get_text() if title else '')
+        if not rnd:
+            continue
+        for row in card.select('div.row'):
+            teams = row.select('.font_responsive')
+            team_cells = row.select('table tr td')
+            if len(team_cells)!=3:
+                continue
+            home,away = (team_cells[i].get_text(' ',strip=True) for i in (0,2))
+            if normalized(player['team']) not in (normalized(home),normalized(away)):
+                continue
+            details = row.select_one('.right')
+            text = details.get_text(' ',strip=True) if details else ''
+            dt = re.search(r'(\d{2}-\d{2}-\d{4})(?:\s*-\s*(\d{1,2}:\d{2}))?',text)
+            if not dt:
+                raise ValueError('Partido de Murcia sin fecha verificable')
+            blocks = team_cells[1].find_all('strong')
+            scores = [public_digits(s,soup) for s in blocks] if len(blocks)==2 else [None,None]
+            closed = all(s is not None for s in scores)
+            hour = http_time(dt[2])
+            venue = text[:dt.start()].strip(' -\xa0') or None
+            matches.append(fixture('murcia',player,player['team_id']+'-'+rnd[1],home,away,iso_date(dt[1]),hour,source,
+                round=int(rnd[1]),status='finished' if closed else 'scheduled' if hour else 'time_pending',
+                venue=venue,score_home=scores[0] if closed else None,score_away=scores[1] if closed else None))
+    if not matches:
+        raise ValueError('Calendario extendido de Murcia sin partidos verificables')
+    return matches
 
 
 def norm(value):
@@ -75,7 +147,9 @@ def parse_murcia_act(html, player):
 
 def murcia_round(client, player, round_number):
     base = 'https://www.ffrm.es/pnfg/'
-    url = base + 'NPcd/NFG_CmpJornada?cod_primaria=1000120&CodCompeticion=' + player['competition_id'] + '&CodGrupo=' + player['group_id'] + '&CodTemporada=' + player['season_id'] + '&CodJornada=' + str(round_number)
+    # Match the public calendar's VerResultados navigation. Older URL ordering
+    # is intermittently served as an empty HTTP 200 response by this portal.
+    url = base + 'NPcd/NFG_CmpJornada?cod_primaria=1000120&CodTemporada=' + player['season_id'] + '&CodGrupo=' + player['group_id'] + '&CodCompeticion=' + player['competition_id'] + '&CodJornada=' + str(round_number)
     soup = BeautifulSoup(client.get(url), 'html.parser')
     for anchor in soup.select('a[href*="NFG_CmpPartido"]'):
         row = anchor.find_parent('tr')
@@ -83,7 +157,11 @@ def murcia_round(client, player, round_number):
         ids = [parse_qs(urlparse(a['href']).query).get('Codigo_Equipo', [''])[0] for a in teams]
         if player['team_id'] not in ids:
             continue
-        return {'url': urljoin(url, anchor['href']), 'home_team_id': ids[0], 'away_team_id': ids[1],
+        report = urlparse(urljoin(url, anchor['href']))
+        params = parse_qs(report.query)
+        act = params.get('CodActa', params.get('cod_acta', ['']))[0]
+        canonical = base + 'NPcd/NFG_CmpPartido?' + urlencode({'CodActa':act, 'cod_acta':act, 'cod_primaria':'1000120'})
+        return {'url': canonical, 'home_team_id': ids[0], 'away_team_id': ids[1],
                 'home_logo': (row.select_one('.escudo_widgetL img') or {}).get('src'),
                 'away_logo': (row.select_one('.escudo_widgetV img') or {}).get('src')}
     raise ValueError('No se encuentra el partido del equipo en la jornada')

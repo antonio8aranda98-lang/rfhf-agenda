@@ -1,6 +1,6 @@
-import { madridToday, shiftDate, weekend, filterMatches, overlaps, matchups, displayStat, escapeHTML as e, safeURL, calendarICS } from './model.mjs';
+import { madridToday, shiftDate, weekend, filterMatches, overlaps, matchups, applyPublicRegistry, displayStat, escapeHTML as e, safeURL, calendarICS } from './model.mjs';
 const $ = s => document.querySelector(s);
-let data, region = 'madrid', collaborator = '', view = 'agenda', offset = 0, query = '', planOnly = false, sort = 'name';
+let data, rawData, registryData, settings, region = 'madrid', collaborator = '', view = 'agenda', offset = 0, query = '', planOnly = false, sort = 'name';
 let planned = new Set();
 try { planned = new Set(JSON.parse(localStorage.getItem('rfhf-visits') || '[]')); } catch {}
 const dialog = $('#player-dialog');
@@ -57,11 +57,11 @@ function matchCard(m, games) {
   return `<article class="match ${planned.has(m.id)?'planned':''}" data-match="${e(m.id)}"><div class="match-time"><strong class="clock ${!m.time?'pending':''}">${e(score||m.time||'Por confirmar')}</strong><small>${score?'RESULTADO':m.time?'HORA LOCAL':'JORNADA'}</small></div><div class="match-body"><div class="opponents"><span class="team">${logo(m.home_logo,m.home)}${e(m.home)}</span><span class="versus">vs</span><span class="team">${logo(m.away_logo,m.away)}${e(m.away)}</span></div><div class="venue"><svg viewBox="0 0 16 20" aria-hidden="true"><path d="M14 7c0 5-6 11-6 11S2 12 2 7a6 6 0 0 1 12 0Z"/><circle cx="8" cy="7" r="2"/></svg>${maps(m)?urlLink(maps(m),e(location)):e(location)}</div><div class="match-players">${players.map(p=>`<button class="player-chip" data-player="${e(p.id)}">↗ ${e(p.name)}</button>`).join('')}</div>${conflict?'<div class="conflict">↔ Se solapa con otro partido de esta agenda</div>':''}</div><div class="match-actions"><span class="match-badge">${e(dayStatus)}${m.round?' · J'+m.round:''}</span><button class="star-button" data-plan="${e(m.id)}" aria-pressed="${planned.has(m.id)}">${planned.has(m.id)?'★ Visita guardada':'☆ Planificar visita'}</button><div class="links">${maps(m)?urlLink(maps(m),'Cómo llegar ↗'):''}${urlLink(m.source,'Fuente ↗')}</div></div></article>`;
 }
 function renderAgenda(days,games) {
-  $('#week-title').textContent=`${dateText(days[0],{month:undefined})}–${dateText(days[2])}`;
-  $('#agenda').innerHTML=days.map((day,i)=>{const list=games.filter(m=>m.date===day).sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99'));return `<section class="day"><div class="day-header"><h3>${['Viernes','Sábado','Domingo'][i]}</h3><span class="date">${dateText(day,{month:'short'})}</span><span class="day-count">${list.length} ${list.length===1?'partido':'partidos'}</span></div>${list.length?list.map(m=>matchCard(m,games)).join(''):`<div class="empty-day"><span>—</span> ${query||planOnly?'No hay partidos con estos filtros.':'Sin partidos publicados de tus jugadores para este día.'}</div>`}</section>`}).join('');
+  $('#week-title').textContent=`${dateText(days[0],{month:undefined})}–${dateText(days.at(-1))}`;
+  $('#agenda').innerHTML=days.map((day,i)=>{const list=games.filter(m=>m.date===day).sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99'));return `<section class="day"><div class="day-header"><h3>${['Sábado','Domingo'][i]}</h3><span class="date">${dateText(day,{month:'short'})}</span><span class="day-count">${list.length} ${list.length===1?'partido':'partidos'}</span></div>${list.length?list.map(m=>matchCard(m,games)).join(''):`<div class="empty-day"><span>—</span> ${query||planOnly?'No hay partidos con estos filtros.':'Sin partidos publicados de tus jugadores para este día.'}</div>`}</section>`}).join('');
   // Rearranged fixtures on weekdays stay discoverable, especially when a weekend game moves.
-  const monday=shiftDate(days[0],-4); const weekdays=[0,1,2,3].map(n=>shiftDate(monday,n)); const other=matches(weekdays);
-  $('#midweek').innerHTML=other.length?`<h3 class="mini-heading">También entre semana</h3><p class="subtle">Partidos de la misma semana fuera del viernes–domingo.</p>${other.map(m=>`<p class="subtle">${dateText(m.date,{weekday:'long'})}</p>${matchCard(m,other)}`).join('')}`:'';
+  const monday=shiftDate(days[0],-5); const weekdays=[0,1,2,3,4].map(n=>shiftDate(monday,n)); const other=matches(weekdays);
+  $('#midweek').innerHTML=other.length?`<h3 class="mini-heading">También entre semana</h3><p class="subtle">Partidos de la misma semana fuera del sábado y domingo.</p>${other.map(m=>`<p class="subtle">${dateText(m.date,{weekday:'long'})}</p>${matchCard(m,other)}`).join('')}`:'';
 }
 function renderPlayers() {
   const people=visiblePlayers();
@@ -104,9 +104,13 @@ $('#export').addEventListener('click',()=>{
 dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close()}});
 document.addEventListener('error',event=>{if(event.target instanceof HTMLImageElement){event.target.replaceWith(Object.assign(document.createElement('span'),{className:'logo-fallback',textContent:'⚽'}))}},true);
 try {
-  const response=await fetch(new URL('data/feed.json',import.meta.url),{cache:'no-cache'});if(!response.ok)throw new Error('No se han podido cargar los partidos.');data=await response.json();
+  const response=await fetch(new URL('data/feed.json',import.meta.url),{cache:'no-cache'});if(!response.ok)throw new Error('No se han podido cargar los partidos.');rawData=await response.json();
+  try{const r=await fetch('data/settings.json',{cache:'no-cache'});settings=await r.json();const reg=await fetch(settings.registry_url,{cache:'no-store',signal:AbortSignal.timeout(4000)});if(reg.ok)registryData=await reg.json()}catch{}
+  data=applyPublicRegistry(rawData,registryData);
   data.matches=data.matches.map(m=>({...m,search_names:data.players.filter(p=>m.player_ids.includes(p.id)).map(p=>p.name)}));
   const allowed=new Set(data.matches.map(m=>m.id));planned=new Set([...planned].filter(id=>allowed.has(id)));
   setupCollaborators();render();
-  setInterval(async()=>{try{const r=await fetch(new URL('data/feed.json',import.meta.url),{cache:'no-cache'});if(!r.ok)return;const next=await r.json();if(next.generated_at!==data.generated_at){data=next;data.matches=data.matches.map(m=>({...m,search_names:data.players.filter(p=>m.player_ids.includes(p.id)).map(p=>p.name)}));setupCollaborators();render()}}catch{}},300000);
+  async function refresh(){try{const r=await fetch(new URL('data/feed.json',import.meta.url),{cache:'no-cache'});if(r.ok)rawData=await r.json();if(settings?.registry_url){const reg=await fetch(settings.registry_url,{cache:'no-store',signal:AbortSignal.timeout(4000)});if(reg.ok)registryData=await reg.json()}data=applyPublicRegistry(rawData,registryData);data.matches=data.matches.map(m=>({...m,search_names:data.players.filter(p=>m.player_ids.includes(p.id)).map(p=>p.name)}));setupCollaborators();render()}catch{}}
+  setInterval(refresh,30000);
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh()});
 } catch(error) {$('#agenda').innerHTML=`<div class="fatal">${e(error.message)} Recarga la página dentro de unos minutos.</div>`;$('#source-status').textContent='No se ha podido cargar la agenda.';}

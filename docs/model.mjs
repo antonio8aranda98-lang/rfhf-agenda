@@ -9,8 +9,8 @@ export function shiftDate(iso, days) {
 export function weekend(today = madridToday(), offset = 0) {
   const dow = new Date(`${today}T12:00:00Z`).getUTCDay();
   const monday = shiftDate(today, -(dow === 0 ? 6 : dow - 1));
-  const friday = shiftDate(monday, 4 + offset * 7);
-  return [friday, shiftDate(friday, 1), shiftDate(friday, 2)];
+  const saturday = shiftDate(monday, 5 + offset * 7);
+  return [saturday, shiftDate(saturday, 1)];
 }
 export function filterMatches(matches, playerIds, dates, query = '', planned = null) {
   const ids = new Set(playerIds); const days = dates && new Set(dates);
@@ -23,6 +23,18 @@ export function overlaps(a, b) {
   return Math.abs(minutes(a.time) - minutes(b.time)) < 120;
 }
 export function displayStat(value) { return value === null || value === undefined ? '—' : String(value); }
+export function applyPublicRegistry(feed, registry) {
+  if(!registry?.initialized||!Array.isArray(registry.players)||registry.season!==feed.season||(registry.revision||0)<(feed.registry_revision||0))return feed;
+  const desired=new Map(registry.players.map(p=>[p.id,p]));
+  // Only players already verified into the feed may appear. Removals and new
+  // assignments can take effect immediately; new identities wait for validation.
+  const players=feed.players.filter(p=>{
+    const d=desired.get(p.id);return d&&d.active!==false&&(!d._activation_revision||(feed.registry_revision||0)>=d._activation_revision);
+  }).map(p=>({...p,collaborator:desired.get(p.id).collaborator}));
+  const active=new Set(players.map(p=>p.id));
+  const matches=feed.matches.map(m=>({...m,player_ids:m.player_ids.filter(id=>active.has(id)),home_player_ids:(m.home_player_ids||[]).filter(id=>active.has(id)),away_player_ids:(m.away_player_ids||[]).filter(id=>active.has(id)),participation:Object.fromEntries(Object.entries(m.participation||{}).filter(([id])=>active.has(id)))})).filter(m=>m.player_ids.length);
+  return {...feed,players,matches};
+}
 export function matchups(matches, players, dates) {
   const active = new Map(players.filter(p=>p.active!==false).map(p=>[p.id,p]));
   const days = new Set(dates);

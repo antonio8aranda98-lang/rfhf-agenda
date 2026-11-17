@@ -1,19 +1,16 @@
 # Gestión de la cartera
 
-1. Abre **Gestionar jugadores** al pie de la agenda.
-2. Elige alta, desactivación, cambio de colaborador o reactivación.
-3. Completa los campos y pulsa **Revisar solicitud en GitHub**.
-4. Con tu cuenta `antonio8aranda98-lang`, revisa y confirma la creación de la incidencia. Preparar el formulario por sí solo no modifica nada.
-5. Espera a la comprobación y publicación. La incidencia recibe una confirmación y se cierra al publicarse, o permanece abierta indicando qué falta comprobar.
+[Panel de Antonio](https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/).
 
-Para un alta, usa la ficha del **equipo exacto y categoría**, no la portada del club. El nombre debe incluir todos los apellidos federativos. El conector comprueba que figure en esa plantilla y que exista un calendario antes de incorporarlo. Un colaborador nuevo se puede escribir directamente y aparecerá en su federación al publicarse.
+1. Inicia sesión con la cuenta de Antonio vinculada al panel.
+2. Elige **Añadir jugador**, **Dar de baja**, **Cambiar colaborador** o **Reactivar jugador**.
+3. Completa los campos y pulsa **Guardar cambios**. No hay incidencias ni confirmaciones en GitHub.
+4. Consulta el estado del jugador en el propio panel.
 
-En Murcia, para un equipo que aún no figura en la cartera, copia también la URL de una jornada de su grupo (la que contiene `NFG_CmpJornada`). Evita seleccionar una competición distinta al copiarla.
+Una nueva alta necesita nombre y apellidos completos, federación, colaborador, enlace de la ficha oficial del equipo/categoría y duración reglamentaria. Para equipos murcianos nuevos se pide también el enlace de una jornada de su competición. Se verifica la plantilla y el calendario antes de mostrar una identidad nueva. Si falta información o falla la fuente, el panel explica qué revisar; se vuelve a intentar automáticamente.
 
-Las altas de Valencia permanecen pendientes mientras su consulta automática no esté validada. Las fuentes que fallen tampoco producen altas aparentes ni datos inventados. Puedes corregir el cuerpo de la incidencia, cerrarla y volver a abrirla para reintentar cuando se resuelva el problema.
+Las bajas y asignaciones se reflejan al refrescar la agenda (cada 30 segundos o al volver a la pestaña). Las altas y reactivaciones requieren comprobación y publicación: se comprueban cambios cada cinco minutos mediante GitHub Actions, cuya ejecución puede retrasarse. No se promete una hora exacta de incorporación.
 
-Una baja desactiva al jugador en el registro y lo retira de la agenda y los avisos. Se puede recuperar con **Reactivar**, que vuelve a comprobar su equipo. Su nombre y cambios previos siguen en el historial público de GitHub; no incluyas razones contractuales ni datos de contacto.
+Solo Antonio puede escribir: el servidor coteja la identidad autenticada con la cuenta vinculada durante la activación privada. Ser visitante, conocer un nombre de colaborador o intentar falsificar cabeceras no concede permisos. La lectura de los datos deportivos es pública, autorizada por el propietario. No hay tokens para pegar ni una contraseña compartida.
 
-Los visitantes pueden ver la agenda y el formulario, pero el proceso solo acepta solicitudes cuyo autor y usuario que las abre sean el propietario. La autenticación la gestiona GitHub. No hay una contraseña compartida ni un token que pegar en la web.
-
-Si la publicación falla después de validar un cambio, el registro queda guardado. Abre Actions y ejecuta **Actualizar agenda y publicar**. Consulta siempre el estado de la solicitud para distinguir un cambio preparado, pendiente y publicado.
+Dar de baja desactiva el registro; se puede recuperar con **Reactivar**. La baja no borra el historial del repositorio público. No añadas motivos contractuales ni datos de contacto: el registro contiene únicamente información deportiva y asignaciones públicas.
