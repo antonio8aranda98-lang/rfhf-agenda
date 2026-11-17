@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T15:20:51+00:00",
+  "generated_at": "2026-11-17T15:27:38+00:00",
   "season": "2026-2027",
   "registry_revision": 2,
   "federations": [
@@ -10,8 +10,8 @@
       "acronym": "RFFM",
       "source": "https://www.rffm.es/",
       "status": "ok",
-      "checked_at": "2026-11-17T15:21:18+00:00",
-      "last_success": "2026-11-17T15:21:18+00:00",
+      "checked_at": "2026-11-17T15:28:06+00:00",
+      "last_success": "2026-11-17T15:28:06+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -21,8 +21,8 @@
       "acronym": "FCF",
       "source": "https://www.fcf.cat/",
       "status": "ok",
-      "checked_at": "2026-11-17T15:21:27+00:00",
-      "last_success": "2026-11-17T15:21:27+00:00",
+      "checked_at": "2026-11-17T15:28:17+00:00",
+      "last_success": "2026-11-17T15:28:17+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -31,13 +31,11 @@
       "label": "Murcia",
       "acronym": "FFRM",
       "source": "https://www.ffrm.es/pnfg/",
-      "status": "error",
-      "checked_at": "2026-11-17T15:21:30+00:00",
-      "last_success": "2026-11-17T14:25:13+00:00",
-      "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
-      "failed_players": [
-        "iker-piqueras-mora"
-      ]
+      "status": "ok",
+      "checked_at": "2026-11-17T15:28:48+00:00",
+      "last_success": "2026-11-17T15:28:48+00:00",
+      "message": "Consulta automática completada",
+      "failed_players": []
     },
     {
       "id": "valencia",
@@ -45,8 +43,8 @@
       "acronym": "FFCV",
       "source": "https://ffcv.es/competiciones/",
       "status": "ok",
-      "checked_at": "2026-11-17T15:22:01+00:00",
-      "last_success": "2026-11-17T15:22:01+00:00",
+      "checked_at": "2026-11-17T15:29:18+00:00",
+      "last_success": "2026-11-17T15:29:18+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     }
@@ -74,7 +72,7 @@
       },
       "logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
       "stats_note": "Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.",
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "coverage": {
         "team_played": 10,
         "acts_checked": 10,
@@ -104,7 +102,7 @@
       },
       "logo": "https://files.fcf.cat/escudos/clubes/escudos/00100_0001021752_escut.png",
       "stats_note": "Convocatorias, titulares, suplentes y goles según actas. Los minutos quedan sin dato cuando la FCF no publica intervalos de sustitución verificables.",
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "coverage": {
         "team_played": 8,
         "acts_checked": 8,
@@ -119,7 +117,7 @@
       "collaborator": "Iván Macià",
       "team": "UNION MOLINENSE C.F.",
       "competition_label": "Primera Cadete · Grupo 2",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?cod_primaria=3001860&Codigo_Equipo=24069902",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=24069902&cod_primaria=3001860",
       "stats": {
         "team_played": 8,
         "called_up": null,
@@ -134,7 +132,7 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "coverage": {
         "team_played": 8,
         "acts_checked": 4,
@@ -164,7 +162,7 @@
       },
       "logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "stats_note": "Estadísticas calculadas con las actas de este equipo y competición. No se mezclan otras participaciones del jugador en equipos A/B. Minutos reglamentarios sin añadido.",
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "coverage": {
         "team_played": 7,
         "acts_checked": 7,
@@ -212,9 +210,9 @@
       "home_team_id": "2023",
       "away_team_id": "3347198",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -259,9 +257,9 @@
       "home_team_id": "6",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -306,9 +304,9 @@
       "home_team_id": "14347",
       "away_team_id": "10711",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+        "daniel-otero-serrano": "2026-11-17T15:29:18+00:00"
       },
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -326,7 +324,7 @@
       "date": "2026-09-20",
       "time": "12:15",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=592744&cod_acta=592744",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?CodActa=592744&cod_acta=592744&cod_primaria=1000120",
       "venue": null,
       "locality": null,
       "address": null,
@@ -353,9 +351,9 @@
       "home_team_id": "7882963",
       "away_team_id": "24069902",
       "participation_checked_at": {
-        "iker-piqueras-mora": "2026-11-17T14:25:13+00:00"
+        "iker-piqueras-mora": "2026-11-17T15:28:48+00:00"
       },
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -373,7 +371,7 @@
       "date": "2026-09-26",
       "time": "12:15",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=592752&cod_acta=592752",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?CodActa=592752&cod_acta=592752&cod_primaria=1000120",
       "venue": null,
       "locality": null,
       "address": null,
@@ -400,9 +398,9 @@
       "home_team_id": "24069902",
       "away_team_id": "48987",
       "participation_checked_at": {
-        "iker-piqueras-mora": "2026-11-17T14:25:13+00:00"
+        "iker-piqueras-mora": "2026-11-17T15:28:48+00:00"
       },
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -447,9 +445,9 @@
       "home_team_id": "15545946",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:28:17+00:00"
       },
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -494,9 +492,9 @@
       "home_team_id": "2023",
       "away_team_id": "75",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -541,9 +539,9 @@
       "home_team_id": "24652",
       "away_team_id": "14347",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+        "daniel-otero-serrano": "2026-11-17T15:29:18+00:00"
       },
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -588,9 +586,9 @@
       "home_team_id": "14347",
       "away_team_id": "14107",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+        "daniel-otero-serrano": "2026-11-17T15:29:18+00:00"
       },
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -608,7 +606,7 @@
       "date": "2026-10-04",
       "time": "12:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=592759&cod_acta=592759",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?CodActa=592759&cod_acta=592759&cod_primaria=1000120",
       "venue": null,
       "locality": null,
       "address": null,
@@ -635,9 +633,9 @@
       "home_team_id": "34741",
       "away_team_id": "24069902",
       "participation_checked_at": {
-        "iker-piqueras-mora": "2026-11-17T14:25:13+00:00"
+        "iker-piqueras-mora": "2026-11-17T15:28:48+00:00"
       },
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -682,9 +680,9 @@
       "home_team_id": "1312",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -729,9 +727,9 @@
       "home_team_id": "44581",
       "away_team_id": "19642975",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:28:17+00:00"
       },
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -776,9 +774,9 @@
       "home_team_id": "50600672",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:28:17+00:00"
       },
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -823,9 +821,9 @@
       "home_team_id": "2023",
       "away_team_id": "410",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -843,7 +841,7 @@
       "date": "2026-10-11",
       "time": "18:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=592887&cod_acta=592887",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?CodActa=592887&cod_acta=592887&cod_primaria=1000120",
       "venue": null,
       "locality": null,
       "address": null,
@@ -870,9 +868,9 @@
       "home_team_id": "56726",
       "away_team_id": "24069902",
       "participation_checked_at": {
-        "iker-piqueras-mora": "2026-11-17T14:25:13+00:00"
+        "iker-piqueras-mora": "2026-11-17T15:28:48+00:00"
       },
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -917,9 +915,9 @@
       "home_team_id": "44581",
       "away_team_id": "34021",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:28:17+00:00"
       },
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -964,9 +962,9 @@
       "home_team_id": "466507",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -984,14 +982,14 @@
       "date": "2026-10-24",
       "time": "11:30",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?CodActa=592782&cod_acta=592782&cod_primaria=1000120",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
-      "away_logo": null,
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000651449_ESCUDO_PROMISES_ROJO.png.png",
       "score_home": 0,
       "score_away": 4,
       "round": 6,
@@ -999,8 +997,10 @@
       "group_id": "24032710",
       "season": "2026-2027",
       "participation": {},
+      "home_team_id": "24069902",
+      "away_team_id": "5787923",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -1045,9 +1045,9 @@
       "home_team_id": "14347",
       "away_team_id": "19231",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+        "daniel-otero-serrano": "2026-11-17T15:29:18+00:00"
       },
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -1092,9 +1092,9 @@
       "home_team_id": "34471",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:28:17+00:00"
       },
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -1139,9 +1139,9 @@
       "home_team_id": "1794",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -1159,8 +1159,8 @@
       "date": "2026-10-31",
       "time": "12:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "POLIDEPORTIVO MPAL. ALMARJAL",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -1175,7 +1175,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -1220,9 +1220,9 @@
       "home_team_id": "19963",
       "away_team_id": "14347",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+        "daniel-otero-serrano": "2026-11-17T15:29:18+00:00"
       },
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -1267,9 +1267,9 @@
       "home_team_id": "2023",
       "away_team_id": "3353458",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -1314,9 +1314,9 @@
       "home_team_id": "44581",
       "away_team_id": "35883",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:28:17+00:00"
       },
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -1334,8 +1334,8 @@
       "date": "2026-11-07",
       "time": "11:45",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -1350,7 +1350,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -1395,9 +1395,9 @@
       "home_team_id": "38207",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:28:17+00:00"
       },
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -1442,9 +1442,9 @@
       "home_team_id": "15752",
       "away_team_id": "14347",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+        "daniel-otero-serrano": "2026-11-17T15:29:18+00:00"
       },
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -1489,9 +1489,9 @@
       "home_team_id": "599",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -1509,8 +1509,8 @@
       "date": "2026-11-13",
       "time": "19:45",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "CAMPO DE FÚTBOL EL ROMERAL - ELIA MARTÍNEZ",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -1525,7 +1525,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -1570,9 +1570,9 @@
       "home_team_id": "2023",
       "away_team_id": "920",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-17T15:21:18+00:00"
+        "jorge-martin-andres": "2026-11-17T15:28:06+00:00"
       },
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -1617,9 +1617,9 @@
       "home_team_id": "14347",
       "away_team_id": "15769",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-17T15:22:01+00:00"
+        "daniel-otero-serrano": "2026-11-17T15:29:18+00:00"
       },
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -1664,9 +1664,9 @@
       "home_team_id": "44581",
       "away_team_id": "21219888",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-17T15:21:27+00:00"
+        "aleix-camarasa-oros": "2026-11-17T15:28:17+00:00"
       },
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -1702,7 +1702,7 @@
       "home_team_id": "22701",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -1738,7 +1738,7 @@
       "home_team_id": "14488",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -1774,7 +1774,7 @@
       "home_team_id": "21492710",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -1810,7 +1810,7 @@
       "home_team_id": "44581",
       "away_team_id": "15558236",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -1828,8 +1828,8 @@
       "date": "2026-11-22",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -1844,7 +1844,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -1880,7 +1880,7 @@
       "home_team_id": "2023",
       "away_team_id": "548",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -1916,7 +1916,7 @@
       "home_team_id": "14347",
       "away_team_id": "14593",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -1952,7 +1952,7 @@
       "home_team_id": "35378723",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -1970,8 +1970,8 @@
       "date": "2026-11-29",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "MPAL. DE ARCHENA \"ANDRES ABENZA\"",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -1986,7 +1986,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -2004,8 +2004,8 @@
       "date": "2026-12-04",
       "time": "19:00",
       "status": "scheduled",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "POLIDEPORTIVO MPAL.\"JUAN PALAO AZORIN\" LAS POZAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -2020,7 +2020,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -2056,7 +2056,7 @@
       "home_team_id": "16360",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -2092,7 +2092,7 @@
       "home_team_id": "44581",
       "away_team_id": "35238",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -2128,7 +2128,7 @@
       "home_team_id": "481",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -2146,8 +2146,8 @@
       "date": "2026-12-13",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -2162,7 +2162,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -2198,7 +2198,7 @@
       "home_team_id": "34172",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -2234,7 +2234,7 @@
       "home_team_id": "14347",
       "away_team_id": "15024",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -2270,7 +2270,7 @@
       "home_team_id": "2023",
       "away_team_id": "15294614",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -2288,8 +2288,8 @@
       "date": "2026-12-20",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "30 CAMPO MPAL. \"LOS PINOS\" (CEA)",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -2304,7 +2304,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -2340,7 +2340,7 @@
       "home_team_id": "44581",
       "away_team_id": "35537",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -2376,7 +2376,7 @@
       "home_team_id": "14352",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -2394,8 +2394,8 @@
       "date": "2027-01-10",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "POLIDEPORTIVO MPAL.\"JUAN PALAO AZORIN\" LAS POZAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -2410,7 +2410,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -2446,7 +2446,7 @@
       "home_team_id": "35950",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -2482,7 +2482,7 @@
       "home_team_id": "14347",
       "away_team_id": "18417",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -2518,7 +2518,7 @@
       "home_team_id": "2453",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -2536,8 +2536,8 @@
       "date": "2027-01-17",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -2552,7 +2552,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -2588,7 +2588,7 @@
       "home_team_id": "297201",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -2624,7 +2624,7 @@
       "home_team_id": "44581",
       "away_team_id": "37800",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -2660,7 +2660,7 @@
       "home_team_id": "2023",
       "away_team_id": "1175",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -2678,8 +2678,8 @@
       "date": "2027-01-24",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -2694,7 +2694,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -2730,7 +2730,7 @@
       "home_team_id": "10711",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -2766,7 +2766,7 @@
       "home_team_id": "1402",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -2802,7 +2802,7 @@
       "home_team_id": "44581",
       "away_team_id": "15545946",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -2838,7 +2838,7 @@
       "home_team_id": "14347",
       "away_team_id": "24652",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -2874,7 +2874,7 @@
       "home_team_id": "3347198",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -2892,8 +2892,8 @@
       "date": "2027-02-07",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "CAMPO DE FÚTBOL EL CHINARRAL (CEA)",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -2908,7 +2908,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -2944,7 +2944,7 @@
       "home_team_id": "19642975",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -2980,7 +2980,7 @@
       "home_team_id": "14107",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -3016,7 +3016,7 @@
       "home_team_id": "2023",
       "away_team_id": "6",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -3052,7 +3052,7 @@
       "home_team_id": "14347",
       "away_team_id": "22701",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -3088,7 +3088,7 @@
       "home_team_id": "44581",
       "away_team_id": "50600672",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -3124,7 +3124,7 @@
       "home_team_id": "75",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -3142,8 +3142,8 @@
       "date": "2027-02-21",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -3158,7 +3158,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -3194,7 +3194,7 @@
       "home_team_id": "19231",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -3230,7 +3230,7 @@
       "home_team_id": "34021",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -3248,8 +3248,8 @@
       "date": "2027-02-28",
       "time": "20:00",
       "status": "scheduled",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "CAMPO DE FÚTBOL EL ROMERAL - ELIA MARTÍNEZ",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -3264,7 +3264,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -3300,7 +3300,7 @@
       "home_team_id": "2023",
       "away_team_id": "1312",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -3336,7 +3336,7 @@
       "home_team_id": "14347",
       "away_team_id": "19963",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -3372,7 +3372,7 @@
       "home_team_id": "44581",
       "away_team_id": "34471",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -3408,7 +3408,7 @@
       "home_team_id": "410",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -3444,7 +3444,7 @@
       "home_team_id": "14347",
       "away_team_id": "15752",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -3480,7 +3480,7 @@
       "home_team_id": "35883",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -3516,7 +3516,7 @@
       "home_team_id": "2023",
       "away_team_id": "466507",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -3534,8 +3534,8 @@
       "date": "2027-03-14",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -3550,7 +3550,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -3586,7 +3586,7 @@
       "home_team_id": "44581",
       "away_team_id": "38207",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -3622,7 +3622,7 @@
       "home_team_id": "2023",
       "away_team_id": "1794",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -3640,8 +3640,8 @@
       "date": "2027-03-21",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "CAMPUS UNIVERSITARIO (CEA)",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -3656,7 +3656,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -3692,7 +3692,7 @@
       "home_team_id": "15769",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -3728,7 +3728,7 @@
       "home_team_id": "21219888",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -3764,7 +3764,7 @@
       "home_team_id": "3353458",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -3782,8 +3782,8 @@
       "date": "2027-04-04",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -3798,7 +3798,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -3834,7 +3834,7 @@
       "home_team_id": "15558236",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -3870,7 +3870,7 @@
       "home_team_id": "14347",
       "away_team_id": "14488",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -3906,7 +3906,7 @@
       "home_team_id": "2023",
       "away_team_id": "599",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -3924,8 +3924,8 @@
       "date": "2027-04-11",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "CAMPO MPAL. \"NICOLAS DE LAS PEÑAS\"",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -3940,7 +3940,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -3976,7 +3976,7 @@
       "home_team_id": "14593",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -4012,7 +4012,7 @@
       "home_team_id": "44581",
       "away_team_id": "35378723",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -4030,8 +4030,8 @@
       "date": "2027-04-18",
       "time": "16:45",
       "status": "scheduled",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "CAMPO MPAL. \"JOAQUIN SANCHEZ\" CESPED ARTIFICIAL (CEA)",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -4046,7 +4046,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -4082,7 +4082,7 @@
       "home_team_id": "920",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -4118,7 +4118,7 @@
       "home_team_id": "14347",
       "away_team_id": "16360",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -4154,7 +4154,7 @@
       "home_team_id": "35238",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -4190,7 +4190,7 @@
       "home_team_id": "2023",
       "away_team_id": "21492710",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -4208,8 +4208,8 @@
       "date": "2027-04-25",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "CAMPO DE FÚTBOL EL ROMERAL - ELIA MARTÍNEZ",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -4224,7 +4224,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -4260,7 +4260,7 @@
       "home_team_id": "15024",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -4296,7 +4296,7 @@
       "home_team_id": "44581",
       "away_team_id": "34172",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -4332,7 +4332,7 @@
       "home_team_id": "548",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -4350,8 +4350,8 @@
       "date": "2027-05-02",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -4366,7 +4366,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -4402,7 +4402,7 @@
       "home_team_id": "35537",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -4438,7 +4438,7 @@
       "home_team_id": "14347",
       "away_team_id": "14352",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -4474,7 +4474,7 @@
       "home_team_id": "2023",
       "away_team_id": "481",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -4492,8 +4492,8 @@
       "date": "2027-05-09",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "CAMPO MPAL \"MULA DEPORTIVA JOSE SORIANO CHACON\" (CEA)",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -4508,7 +4508,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -4544,7 +4544,7 @@
       "home_team_id": "44581",
       "away_team_id": "35950",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [
         "aleix-camarasa-oros"
       ],
@@ -4580,7 +4580,7 @@
       "home_team_id": "18417",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
@@ -4616,7 +4616,7 @@
       "home_team_id": "15294614",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -4634,8 +4634,8 @@
       "date": "2027-05-16",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -4650,7 +4650,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -4686,7 +4686,7 @@
       "home_team_id": "37800",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:27+00:00",
+      "updated_at": "2026-11-17T15:28:17+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "aleix-camarasa-oros"
@@ -4722,7 +4722,7 @@
       "home_team_id": "14347",
       "away_team_id": "297201",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:22:01+00:00",
+      "updated_at": "2026-11-17T15:29:18+00:00",
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
@@ -4758,7 +4758,7 @@
       "home_team_id": "2023",
       "away_team_id": "2453",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
@@ -4776,8 +4776,8 @@
       "date": "2027-05-23",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "SANCHEZ CANOVAS",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -4792,7 +4792,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
       ],
@@ -4828,7 +4828,7 @@
       "home_team_id": "1175",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "jorge-martin-andres"
@@ -4846,8 +4846,8 @@
       "date": "2027-05-30",
       "time": null,
       "status": "time_pending",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
-      "venue": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "venue": "POLIDEPORTIVO MPAL. TORRES DE COTILLAS (CES)",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -4862,7 +4862,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T14:25:13+00:00",
+      "updated_at": "2026-11-17T15:28:48+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "iker-piqueras-mora"
@@ -4898,7 +4898,7 @@
       "home_team_id": "2023",
       "away_team_id": "1402",
       "participation_checked_at": {},
-      "updated_at": "2026-11-17T15:21:18+00:00",
+      "updated_at": "2026-11-17T15:28:06+00:00",
       "home_player_ids": [
         "jorge-martin-andres"
       ],
