@@ -1,0 +1,22 @@
+{
+  "name": "rfhf-agenda",
+  "version": "1.0.0",
+  "description": "Agenda p\u00fablica de seguimiento de jugadores de cuatro federaciones",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "python3 -m http.server 8765 --directory docs",
+    "test": "node --test tests/app.test.mjs",
+    "scrape:valencia": "node scripts/valencia.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "playwright": "^1.65.1"
+  },
+  "private": true
+}

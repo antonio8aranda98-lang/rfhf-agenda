@@ -1,0 +1,65 @@
+name: Actualizar agenda y publicar
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */4 * * 1-4'
+    - cron: '23 * * * 5,6,0'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: agenda-production
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: pip install -r requirements.txt
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Verificar reglas de fechas y datos
+        run: |
+          npm test
+          python -m unittest discover -s tests
+      - name: Consultar federaciones
+        id: sync
+        continue-on-error: true
+        run: python scripts/sync.py --browser
+      - name: Conservar solo datos públicos normalizados
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data/feed.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Actualizar partidos y estado de las fuentes'
+            git push
+          fi
+      - name: Avisar si ninguna fuente pudo actualizarse
+        if: steps.sync.outcome == 'failure'
+        run: echo '::warning::No se pudo actualizar ninguna fuente; se publica la última agenda válida con su estado visible.'
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar agenda
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,69 @@
+{
+  "verified_on": "2026-11-17",
+  "season": "2026-2027",
+  "players": [
+    {
+      "name": "Jorge Martín Andrés",
+      "federation": "madrid",
+      "collaborator": "Rafael Fernández",
+      "official_name": "MARTIN ANDRES, JORGE",
+      "team": "E.F. CIUDAD DE GETAFE B",
+      "team_id": "2023",
+      "player_id": "7998819",
+      "competition_id": "26737715",
+      "group_id": "26737716",
+      "season_id": "22",
+      "source": "https://www.rffm.es/fichajugador/7998819",
+      "id": "jorge-martin-andres",
+      "competition_label": "Primera Autonómica Juvenil · Grupo 2",
+      "match_duration": 90
+    },
+    {
+      "name": "Daniel Otero Serrano",
+      "federation": "valencia",
+      "collaborator": "Carlos Baena",
+      "official_name": "OTERO SERRANO, DANIEL",
+      "team": "EAF Valencia C.F. A",
+      "team_id": "14347",
+      "player_id": "9820597",
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season_id": "22",
+      "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=14347",
+      "id": "daniel-otero-serrano",
+      "competition_label": "Primera FFCV Juvenil · Grupo 2",
+      "match_duration": 90
+    },
+    {
+      "name": "Iker Piqueras Mora",
+      "federation": "murcia",
+      "collaborator": "Iván Macià",
+      "official_name": "PIQUERAS MORA, IKER",
+      "team": "UNION MOLINENSE C.F.",
+      "team_id": "24069902",
+      "competition_id": "24032708",
+      "group_id": "24032710",
+      "season_id": "22",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?cod_primaria=3001860&Codigo_Equipo=24069902",
+      "id": "iker-piqueras-mora",
+      "competition_label": "Primera Cadete · Grupo 2",
+      "match_duration": 80
+    },
+    {
+      "name": "Aleix Camarasa Oros",
+      "federation": "catalunya",
+      "collaborator": "Adrián Martín",
+      "official_name": "CAMARASA OROS, ALEIX",
+      "team": "UNIO F. BASE JABAC I TERRASSA A",
+      "club_id": "6218",
+      "category_id": "44581",
+      "competition": "Juvenil Primera Divisió",
+      "group": "8",
+      "source": "https://www.fcf.cat/ca/clubs/unio-f-base-jabac-i-terrassa/categories/unio-f-base-jabac-i-terrassa-a-1j",
+      "id": "aleix-camarasa-oros",
+      "competition_label": "Juvenil Primera Divisió · Grup 8",
+      "match_duration": 90,
+      "team_id": "44581"
+    }
+  ]
+}

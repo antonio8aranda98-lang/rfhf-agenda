@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070d18">
+  <meta name="description" content="Los próximos partidos de tus jugadores, en un solo lugar. Agenda de scouting de Madrid, Cataluña, Murcia y Comunitat Valenciana.">
+  <title>RFHF · Agenda de scouting</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="./" aria-label="RFHF Agenda de scouting, inicio"><span class="brand-symbol">R<span>F</span></span><span>RFHF<small>SCOUTING AGENDA</small></span></a>
+    <div class="side-label">TU TERRITORIO</div>
+    <nav id="federations" aria-label="Federaciones"></nav>
+    <div class="side-bottom"><span class="live-dot"></span><span>Cuatro federaciones.<br>Una sola agenda.</span></div>
+    <a id="repo-link" class="repo-link" href="https://github.com/antonio8aranda98-lang/rfhf-agenda" target="_blank" rel="noopener noreferrer">Ver proyecto en GitHub ↗</a>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">Scouting <span>/</span> <strong id="region-title">Madrid</strong></div><div class="top-right"><span class="access-tag">ACCESO LIBRE</span><span id="season">2026 / 27</span></div></header>
+    <main id="main">
+      <div class="intro"><div><p class="eyebrow"><span></span> MENOS BÚSQUEDAS. MÁS FÚTBOL.</p><h1>El próximo partido,<br><span>a un vistazo.</span></h1><p class="intro-copy">Elige tu nombre y organiza el fin de semana de tus jugadores.</p></div><div class="pitch" aria-hidden="true"><div class="pitch-half"></div><div class="pitch-circle"></div><span class="pitch-dot one"></span><span class="pitch-dot two"></span><span class="pitch-dot three"></span><span class="pitch-path"></span><span class="pitch-number">01 — 04</span></div></div>
+      <div class="filters"><div class="field collaborator-field"><label for="collaborator">COLABORADOR</label><select id="collaborator"></select></div><div class="field search-field"><label for="search">BUSCAR EN TU CARTERA</label><div class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Jugador, equipo o campo…" autocomplete="off"></div></div><button class="secondary plan-filter" id="plan-filter" aria-pressed="false">☆ Mis visitas <span id="plan-count">0</span></button></div>
+      <div id="source-status" class="source-status" role="status"></div>
+      <div class="metrics" id="metrics"></div>
+      <div class="section-nav"><nav id="views" aria-label="Vista de la cartera"><button class="active" data-view="agenda" aria-current="page">Agenda <span id="agenda-count"></span></button><button data-view="players">Jugadores</button><button data-view="compare">Comparativa</button></nav><button class="text-button" id="export">↓ Exportar calendario</button></div>
+      <section id="agenda-view" aria-label="Agenda del fin de semana"><div class="week-controls"><div><p class="eyebrow">FIN DE SEMANA</p><h2 id="week-title"></h2></div><div class="week-buttons"><button class="icon-button" id="prev-week" aria-label="Fin de semana anterior">←</button><button class="secondary" id="this-week">Próximo finde</button><button class="icon-button" id="next-week" aria-label="Fin de semana siguiente">→</button></div></div><p class="subtle agenda-hint">Partidos de sus equipos. La participación del jugador depende de la convocatoria.</p><div id="agenda" aria-live="polite"></div><div id="midweek"></div></section>
+      <section id="players-view" hidden aria-label="Jugadores asignados"><div class="section-heading"><h2>Tu cartera</h2><p class="subtle">Abre una ficha para consultar sus partidos y estadísticas.</p></div><div id="players" class="players-grid"></div></section>
+      <section id="compare-view" hidden aria-label="Comparativa de jugadores"><div class="section-heading"><h2>Los datos, frente a frente.</h2><p class="subtle">Ordena por una estadística. «—» significa que el dato no está disponible.</p></div><div id="comparison"></div></section>
+      <footer><span>RFHF <b>·</b> Agenda de scouting</span><p>Datos de las federaciones oficiales. Los horarios pueden cambiar. Comprueba la fuente antes de desplazarte.</p><span class="footer-note">Hecho para llegar al campo.</span></footer>
+    </main>
+  </div>
+</div>
+<dialog id="player-dialog"><div id="player-detail"></div></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+<noscript><div class="fatal">Necesitas activar JavaScript para filtrar los partidos. Puedes consultar las webs oficiales desde los enlaces de este proyecto.</div></noscript>
+<script type="module" src="app.js"></script>
+</body>
+</html>
