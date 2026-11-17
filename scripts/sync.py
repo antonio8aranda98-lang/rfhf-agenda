@@ -75,8 +75,8 @@ class Client:
     def get(self, url, headers=None):
         if url in self.cache:
             return self.cache[url]
-        # Murcia returns empty HTTP 200 responses after a short burst instead of
-        # a normal 429. Stay below ten requests/minute and back off once.
+        # The legacy Murcia portal sometimes returns empty HTTP 200 responses.
+        # Keep a conservative request rate and pause once before giving up.
         interval = 8 if 'ffrm.es' in self.base else .65
         time.sleep(max(0, interval - (time.monotonic() - self.last_request)))
         self.last_request = time.monotonic()
@@ -313,15 +313,30 @@ def murcia(client, player):
             continue
         try:
             report = murcia_round(client, player, match['round'])
-            match.update({k: v for k, v in report.items() if k != 'url' and v})
+            match.update({k: v for k, v in report.items() if k not in ('url','alternate_url') and v})
             match['source'] = report['url']
-            html = client.get(report['url'])
+            try:
+                html = client.get(report['url'])
+            except ValueError as error:
+                if 'respuesta vacía' not in str(error) or report['alternate_url']==report['url']:
+                    raise
+                html = client.get(report['alternate_url'])
+                match['source'] = report['alternate_url']
             if match['status'] == 'finished':
                 match['participation'][player['id']] = parse_murcia_act(html, player)
             soup = BeautifulSoup(html, 'html.parser')
             field = soup.find(string=re.compile(r'^\s*Estadio:'))
             if field:
-                match['venue'] = field.parent.get_text(' ', strip=True).removeprefix('Estadio:').strip() or None
+                container = field.parent.parent if field.parent.name == 'strong' else field.parent
+                venue = container.get_text(' ', strip=True).removeprefix('Estadio:').strip()
+                if venue and len(venue) <= 250:
+                    match['venue'] = venue
+            city = soup.find(string=re.compile(r'^\s*Ciudad:'))
+            if city:
+                container = city.parent.parent if city.parent.name == 'strong' else city.parent
+                locality = container.get_text(' ', strip=True).removeprefix('Ciudad:').strip()
+                if locality and len(locality) <= 100:
+                    match['locality'] = locality
         except Exception as error:
             print('::warning::Murcia acta J' + str(match['round']) + ': ' + type(error).__name__ + ': ' + str(error)[:160])
     return {'matches': matches, 'stats': new_stats(), 'logo': logo,

@@ -8,7 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from player_stats import minute, participation, absent, summarize
-from federation_acts import parse_murcia_act, parse_catalunya_act, flight_players, public_digits, parse_murcia_calendar
+from federation_acts import parse_murcia_act, parse_catalunya_act, flight_players, public_digits, parse_murcia_calendar, murcia_round
 from sync import apply_roster
 from registry import change, request_from_event, official_url, unique_name
 import registry
@@ -60,6 +60,16 @@ class ParticipationTests(unittest.TestCase):
         html='<script>const ntype='+json.dumps(mapping)+'</script><div class="card-body"><h5 class="card-title">Jornada 1</h5><div class="row"><table><tr><td>CLUB A</td><td><strong><i id="home"><script>ntype("home",4,0,"fa-9");</script><span style="display:none">9</span></i></strong> - <strong><style>#away:before{content:"\\0032"}</style><span id="away"><span style="display:none">8</span></span></strong></td><td>CLUB B</td></tr></table><div class="right">CAMPO OFICIAL 21-11-2026 - 12:00</div></div></div>'
         matches=parse_murcia_calendar(html,{'id':'p','team_id':'1','team':'CLUB A'},'https://www.ffrm.es/')
         self.assertEqual((matches[0]['score_home'],matches[0]['score_away']),(1,2));self.assertEqual(matches[0]['venue'],'CAMPO OFICIAL');self.assertEqual(matches[0]['time'],'12:00')
+
+    def test_murcia_recovers_using_its_public_filter_link_when_calendar_link_is_empty(self):
+        class Client:
+            calls=[]
+            def get(self,url):
+                self.calls.append(url)
+                if len(self.calls)==1:raise ValueError('La fuente ha devuelto una respuesta vacía')
+                return '<h3>Jornada 7</h3><table><tr><td><a href="NFG_VisEquipos?Codigo_Equipo=1">CLUB A</a><a href="NFG_VisEquipos?Codigo_Equipo=2">CLUB B</a><a href="NFG_CmpPartido?cod_primaria=1000120&CodActa=42&cod_acta=42">Acta</a></td></tr></table>'
+        c=Client();report=murcia_round(c,{'team_id':'1','competition_id':'10','group_id':'11','season_id':'22'},7)
+        self.assertEqual(len(c.calls),2);self.assertIn('Sch_Tipo_Juego=',c.calls[1]);self.assertIn('CodActa=42',report['url']);self.assertEqual(report['home_team_id'],'1')
 
 
 class RegistryTests(unittest.TestCase):

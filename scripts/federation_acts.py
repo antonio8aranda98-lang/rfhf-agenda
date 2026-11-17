@@ -150,20 +150,35 @@ def murcia_round(client, player, round_number):
     # Match the public calendar's VerResultados navigation. Older URL ordering
     # is intermittently served as an empty HTTP 200 response by this portal.
     url = base + 'NPcd/NFG_CmpJornada?cod_primaria=1000120&CodTemporada=' + player['season_id'] + '&CodGrupo=' + player['group_id'] + '&CodCompeticion=' + player['competition_id'] + '&CodJornada=' + str(round_number)
-    soup = BeautifulSoup(client.get(url), 'html.parser')
-    for anchor in soup.select('a[href*="NFG_CmpPartido"]'):
-        row = anchor.find_parent('tr')
-        teams = row.select('a[href*="NFG_VisEquipos"]')
-        ids = [parse_qs(urlparse(a['href']).query).get('Codigo_Equipo', [''])[0] for a in teams]
-        if player['team_id'] not in ids:
+    # The filter form's IrA() and the calendar's VerResultados() generate two
+    # public URL forms. Keep both bounded routes; neither uses authentication.
+    filter_url = base + 'NPcd/NFG_CmpJornada?' + urlencode({'cod_primaria':'1000120','CodCompeticion':player['competition_id'],'CodGrupo':player['group_id'],'CodTemporada':player['season_id'],'CodJornada':str(round_number),'Sch_Codigo_Delegacion':'','Sch_Tipo_Juego':''})
+    for candidate in (url, filter_url):
+        try:
+            soup = BeautifulSoup(client.get(candidate), 'html.parser')
+        except ValueError as error:
+            if 'respuesta vacía' in str(error):
+                continue
+            raise
+        if not re.search(r'Jornada\s+'+str(round_number)+r'\b', soup.get_text(' ',strip=True)):
             continue
-        report = urlparse(urljoin(url, anchor['href']))
-        params = parse_qs(report.query)
-        act = params.get('CodActa', params.get('cod_acta', ['']))[0]
-        canonical = base + 'NPcd/NFG_CmpPartido?' + urlencode({'CodActa':act, 'cod_acta':act, 'cod_primaria':'1000120'})
-        return {'url': canonical, 'home_team_id': ids[0], 'away_team_id': ids[1],
-                'home_logo': (row.select_one('.escudo_widgetL img') or {}).get('src'),
-                'away_logo': (row.select_one('.escudo_widgetV img') or {}).get('src')}
+        for anchor in soup.select('a[href*="NFG_CmpPartido"]'):
+            row = anchor.find_parent('tr')
+            if not row:
+                continue
+            teams = row.select('a[href*="NFG_VisEquipos"]')
+            ids = [parse_qs(urlparse(a['href']).query).get('Codigo_Equipo', [''])[0] for a in teams]
+            if len(ids)!=2 or player['team_id'] not in ids:
+                continue
+            report = urlparse(urljoin(candidate, anchor['href']))
+            params = parse_qs(report.query)
+            act = params.get('CodActa', params.get('cod_acta', ['']))[0]
+            if report.scheme!='https' or report.hostname!='www.ffrm.es' or not act.isdigit():
+                continue
+            canonical = base + 'NPcd/NFG_CmpPartido?' + urlencode({'CodActa':act, 'cod_acta':act, 'cod_primaria':'1000120'})
+            return {'url':report.geturl(), 'alternate_url':canonical, 'home_team_id':ids[0], 'away_team_id':ids[1],
+                    'home_logo':(row.select_one('.escudo_widgetL img') or {}).get('src'),
+                    'away_logo':(row.select_one('.escudo_widgetV img') or {}).get('src')}
     raise ValueError('No se encuentra el partido del equipo en la jornada')
 
 
