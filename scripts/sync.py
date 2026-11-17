@@ -70,11 +70,14 @@ class Client:
         self.opener.addheaders = [('User-Agent', 'RFHF-Agenda/1.0 (public football fixtures; github.com/antonio8aranda98-lang/rfhf-agenda)'), ('Accept', 'text/html,application/json')]
         self.last_request = 0
         self.cache = {}
+        self.empty_cooldown_used = False
 
     def get(self, url, headers=None):
         if url in self.cache:
             return self.cache[url]
-        interval = 2 if 'ffrm.es' in self.base else .65
+        # Murcia returns empty HTTP 200 responses after a short burst instead of
+        # a normal 429. Stay below ten requests/minute and back off once.
+        interval = 8 if 'ffrm.es' in self.base else .65
         time.sleep(max(0, interval - (time.monotonic() - self.last_request)))
         self.last_request = time.monotonic()
         request = urllib.request.Request(url, headers={'Referer': self.base, **(headers or {})})
@@ -83,6 +86,10 @@ class Client:
                 raise ValueError('La fuente redirige fuera de la consulta deportiva pública')
             raw = response.read(8_000_000)
             if not raw:
+                if 'ffrm.es' in self.base and not self.empty_cooldown_used:
+                    self.empty_cooldown_used = True
+                    time.sleep(55)
+                    return self.get(url, headers)
                 raise ValueError('La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido')
             charset = response.headers.get_content_charset()
             if not charset:
@@ -315,8 +322,8 @@ def murcia(client, player):
             field = soup.find(string=re.compile(r'^\s*Estadio:'))
             if field:
                 match['venue'] = field.parent.get_text(' ', strip=True).removeprefix('Estadio:').strip() or None
-        except Exception:
-            pass
+        except Exception as error:
+            print('::warning::Murcia acta J' + str(match['round']) + ': ' + type(error).__name__ + ': ' + str(error)[:160])
     return {'matches': matches, 'stats': new_stats(), 'logo': logo,
             'stats_note': 'Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.'}
 
