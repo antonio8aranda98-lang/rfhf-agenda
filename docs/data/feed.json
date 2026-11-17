@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T13:00:40+00:00",
+  "generated_at": "2026-11-17T14:18:17+00:00",
   "season": "2026-2027",
   "federations": [
     {
@@ -9,8 +9,8 @@
       "acronym": "RFFM",
       "source": "https://www.rffm.es/",
       "status": "ok",
-      "checked_at": "2026-11-17T13:01:24+00:00",
-      "last_success": "2026-11-17T13:01:24+00:00",
+      "checked_at": "2026-11-17T14:18:36+00:00",
+      "last_success": "2026-11-17T14:18:36+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -20,8 +20,8 @@
       "acronym": "FCF",
       "source": "https://www.fcf.cat/",
       "status": "ok",
-      "checked_at": "2026-11-17T13:01:26+00:00",
-      "last_success": "2026-11-17T13:01:26+00:00",
+      "checked_at": "2026-11-17T14:18:43+00:00",
+      "last_success": "2026-11-17T14:18:43+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -31,8 +31,8 @@
       "acronym": "FFRM",
       "source": "https://www.ffrm.es/pnfg/",
       "status": "ok",
-      "checked_at": "2026-11-17T13:01:30+00:00",
-      "last_success": "2026-11-17T13:01:30+00:00",
+      "checked_at": "2026-11-17T14:18:50+00:00",
+      "last_success": "2026-11-17T14:18:50+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -42,7 +42,7 @@
       "acronym": "FFCV",
       "source": "https://ffcv.es/competiciones/",
       "status": "error",
-      "checked_at": "2026-11-17T13:01:30+00:00",
+      "checked_at": "2026-11-17T14:18:50+00:00",
       "last_success": "2026-11-17T12:25:00+00:00",
       "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
       "failed_players": [
@@ -60,17 +60,26 @@
       "competition_label": "Primera Autonómica Juvenil · Grupo 2",
       "source": "https://www.rffm.es/fichajugador/7998819",
       "stats": {
-        "played": 8,
+        "team_played": 10,
+        "called_up": 8,
         "starts": 8,
+        "bench": 0,
         "minutes": 665,
         "goals": 1,
+        "played": 8,
         "assists": null,
         "yellow": 2,
         "red": 0
       },
       "logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
-      "stats_note": "Resumen publicado por la federación. Minutos por partido calculados solo cuando el acta permite hacerlo con seguridad.",
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "stats_note": "Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.",
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "coverage": {
+        "team_played": 10,
+        "acts_checked": 10,
+        "minutes_checked": 10,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
     },
     {
       "id": "aleix-camarasa-oros",
@@ -81,17 +90,26 @@
       "competition_label": "Juvenil Primera Divisió · Grup 8",
       "source": "https://www.fcf.cat/ca/clubs/unio-f-base-jabac-i-terrassa/categories/unio-f-base-jabac-i-terrassa-a-1j",
       "stats": {
-        "played": null,
-        "starts": null,
+        "team_played": 8,
+        "called_up": 6,
+        "starts": 2,
+        "bench": 4,
         "minutes": null,
-        "goals": null,
+        "goals": 0,
+        "played": null,
         "assists": null,
         "yellow": null,
         "red": null
       },
       "logo": "https://files.fcf.cat/escudos/clubes/escudos/00100_0001021752_escut.png",
-      "stats_note": "Calendario y resultados del equipo disponibles. Estadísticas individuales pendientes de validar en las actas; aparecer en el banquillo no implica haber jugado.",
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "stats_note": "Convocatorias, titulares, suplentes y goles según actas. Los minutos quedan sin dato cuando la FCF no publica intervalos de sustitución verificables.",
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "coverage": {
+        "team_played": 8,
+        "acts_checked": 8,
+        "minutes_checked": 2,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
     },
     {
       "id": "iker-piqueras-mora",
@@ -102,17 +120,26 @@
       "competition_label": "Primera Cadete · Grupo 2",
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?cod_primaria=3001860&Codigo_Equipo=24069902",
       "stats": {
-        "played": null,
+        "team_played": 8,
+        "called_up": null,
         "starts": null,
+        "bench": null,
         "minutes": null,
         "goals": null,
+        "played": null,
         "assists": null,
         "yellow": null,
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
-      "stats_note": "Resultados del equipo disponibles. La fecha sin hora es la referencia de jornada. Estadísticas individuales y campo pendientes de validar en las actas.",
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "coverage": {
+        "team_played": 8,
+        "acts_checked": 4,
+        "minutes_checked": 4,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
     },
     {
       "id": "daniel-otero-serrano",
@@ -129,11 +156,20 @@
         "goals": 2,
         "assists": null,
         "yellow": 1,
-        "red": 0
+        "red": 0,
+        "team_played": 7,
+        "called_up": null,
+        "bench": null
       },
       "logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "stats_note": "Resumen verificado en la ficha pública de FFCV el 17/11/2026. La consulta automática aún está pendiente de completar.",
-      "updated_at": "2026-11-17T12:25:00+00:00"
+      "updated_at": "2026-11-17T12:25:00+00:00",
+      "coverage": {
+        "team_played": 7,
+        "acts_checked": 0,
+        "minutes_checked": 0,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
     }
   ],
   "matches": [
@@ -161,16 +197,25 @@
       "round": 1,
       "participation": {
         "jorge-martin-andres": {
-          "played": 1,
+          "called_up": 1,
           "starts": 1,
-          "minutes": null,
-          "goals": null,
-          "assists": null,
-          "yellow": null,
-          "red": null
+          "bench": 0,
+          "played": 1,
+          "minutes": 62,
+          "goals": null
         }
       },
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "3347198",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584305",
@@ -196,16 +241,25 @@
       "round": 2,
       "participation": {
         "jorge-martin-andres": {
-          "played": 1,
+          "called_up": 1,
           "starts": 1,
+          "bench": 0,
+          "played": 1,
           "minutes": 90,
-          "goals": 0,
-          "assists": null,
-          "yellow": null,
-          "red": null
+          "goals": 0
         }
       },
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "6",
+      "away_team_id": "2023",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479917",
@@ -231,7 +285,13 @@
       "round": 1,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "murcia-24069902-1",
@@ -244,19 +304,38 @@
       "date": "2026-09-20",
       "time": "12:15",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=592744&cod_acta=592744",
       "venue": null,
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
-      "away_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128648_escudo.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "score_home": 1,
       "score_away": 2,
       "round": 1,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation": {
+        "iker-piqueras-mora": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 61,
+          "goals": 0
+        }
+      },
+      "home_team_id": "7882963",
+      "away_team_id": "24069902",
+      "participation_checked_at": {
+        "iker-piqueras-mora": "2026-11-17T14:18:50+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-2",
@@ -269,19 +348,38 @@
       "date": "2026-09-26",
       "time": "12:15",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=592752&cod_acta=592752",
       "venue": null,
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
-      "away_logo": null,
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128734_escudo.jpg",
       "score_home": 1,
       "score_away": 5,
       "round": 2,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation": {
+        "iker-piqueras-mora": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 65,
+          "goals": 0
+        }
+      },
+      "home_team_id": "24069902",
+      "away_team_id": "48987",
+      "participation_checked_at": {
+        "iker-piqueras-mora": "2026-11-17T14:18:50+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194872",
@@ -294,7 +392,7 @@
       "date": "2026-09-26",
       "time": "18:15",
       "status": "finished",
-      "source": "https://www.fcf.cat/ca/competicio/acta/4194872",
+      "source": "https://www.fcf.cat/ca/partit/2026-2027/juvenil-primera-divisio/grup-8/jornada-1/escola-futbol-can-boada-a-1j-vs-unio-f-base-jabac-i-terrassa-a-1j",
       "venue": "CAMP DE FUTBOL MPAL. CAN BOADA",
       "locality": null,
       "address": null,
@@ -305,8 +403,27 @@
       "score_home": 3,
       "score_away": 2,
       "round": 1,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "participation": {
+        "aleix-camarasa-oros": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": null,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "15545946",
+      "away_team_id": "44581",
+      "participation_checked_at": {
+        "aleix-camarasa-oros": "2026-11-17T14:18:43+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584314",
@@ -332,16 +449,25 @@
       "round": 3,
       "participation": {
         "jorge-martin-andres": {
-          "played": 1,
+          "called_up": 1,
           "starts": 1,
+          "bench": 0,
+          "played": 1,
           "minutes": 90,
-          "goals": 0,
-          "assists": null,
-          "yellow": null,
-          "red": null
+          "goals": 0
         }
       },
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "75",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479926",
@@ -367,7 +493,13 @@
       "round": 2,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "valencia-26479934",
@@ -393,7 +525,13 @@
       "round": 3,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "murcia-24069902-3",
@@ -406,19 +544,38 @@
       "date": "2026-10-04",
       "time": "12:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=592759&cod_acta=592759",
       "venue": null,
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
-      "away_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000640064_Javal_____ora.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "score_home": 0,
       "score_away": 4,
       "round": 3,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation": {
+        "iker-piqueras-mora": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 27,
+          "goals": 0
+        }
+      },
+      "home_team_id": "34741",
+      "away_team_id": "24069902",
+      "participation_checked_at": {
+        "iker-piqueras-mora": "2026-11-17T14:18:50+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584324",
@@ -444,16 +601,25 @@
       "round": 4,
       "participation": {
         "jorge-martin-andres": {
-          "played": 1,
+          "called_up": 1,
           "starts": 1,
-          "minutes": null,
-          "goals": 0,
-          "assists": null,
-          "yellow": null,
-          "red": null
+          "bench": 0,
+          "played": 1,
+          "minutes": 74,
+          "goals": 0
         }
       },
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "1312",
+      "away_team_id": "2023",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194880",
@@ -466,7 +632,7 @@
       "date": "2026-10-04",
       "time": "18:15",
       "status": "finished",
-      "source": "https://www.fcf.cat/ca/competicio/acta/4194880",
+      "source": "https://www.fcf.cat/ca/partit/2026-2027/juvenil-primera-divisio/grup-8/jornada-2/unio-f-base-jabac-i-terrassa-a-1j-vs-callus-cf-a-1j",
       "venue": "CAMP DE FUTBOL ZEM CAN JOFRESA",
       "locality": null,
       "address": null,
@@ -477,8 +643,27 @@
       "score_home": 7,
       "score_away": 0,
       "round": 2,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "participation": {
+        "aleix-camarasa-oros": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": null,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "44581",
+      "away_team_id": "19642975",
+      "participation_checked_at": {
+        "aleix-camarasa-oros": "2026-11-17T14:18:43+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194887",
@@ -491,7 +676,7 @@
       "date": "2026-10-10",
       "time": "18:15",
       "status": "finished",
-      "source": "https://www.fcf.cat/ca/competicio/acta/4194887",
+      "source": "https://www.fcf.cat/ca/partit/2026-2027/juvenil-primera-divisio/grup-8/jornada-3/gimnastic-manresa-cf-c-1j-vs-unio-f-base-jabac-i-terrassa-a-1j",
       "venue": "CAMP DE FUTBOL CLUB GIMNÀSTIC PARC",
       "locality": null,
       "address": null,
@@ -502,8 +687,27 @@
       "score_home": 1,
       "score_away": 0,
       "round": 3,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "participation": {
+        "aleix-camarasa-oros": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": null,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "50600672",
+      "away_team_id": "44581",
+      "participation_checked_at": {
+        "aleix-camarasa-oros": "2026-11-17T14:18:43+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584333",
@@ -529,16 +733,25 @@
       "round": 5,
       "participation": {
         "jorge-martin-andres": {
-          "played": 1,
+          "called_up": 1,
           "starts": 1,
+          "bench": 0,
+          "played": 1,
           "minutes": 86,
-          "goals": 0,
-          "assists": null,
-          "yellow": null,
-          "red": null
+          "goals": 0
         }
       },
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "410",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-4",
@@ -551,19 +764,38 @@
       "date": "2026-10-11",
       "time": "18:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCompeticiones_Grupo?cod_primaria=1000123&codequipo=24069902&codgrupo=24032710",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=592887&cod_acta=592887",
       "venue": null,
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
-      "away_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000648982_ESCUDO_CIUDAD_DE_CALASPARRA_24_25.jpeg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "score_home": 1,
       "score_away": 0,
       "round": 4,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation": {
+        "iker-piqueras-mora": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 74,
+          "goals": 0
+        }
+      },
+      "home_team_id": "56726",
+      "away_team_id": "24069902",
+      "participation_checked_at": {
+        "iker-piqueras-mora": "2026-11-17T14:18:50+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194895",
@@ -576,7 +808,7 @@
       "date": "2026-10-18",
       "time": "13:15",
       "status": "finished",
-      "source": "https://www.fcf.cat/ca/competicio/acta/4194895",
+      "source": "https://www.fcf.cat/ca/partit/2026-2027/juvenil-primera-divisio/grup-8/jornada-4/unio-f-base-jabac-i-terrassa-a-1j-vs-igualada-cf-a-1j",
       "venue": "CAMP DE FUTBOL ZEM CAN JOFRESA",
       "locality": null,
       "address": null,
@@ -587,8 +819,27 @@
       "score_home": 0,
       "score_away": 4,
       "round": 4,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "participation": {
+        "aleix-camarasa-oros": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": null,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "44581",
+      "away_team_id": "34021",
+      "participation_checked_at": {
+        "aleix-camarasa-oros": "2026-11-17T14:18:43+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584343",
@@ -614,16 +865,25 @@
       "round": 6,
       "participation": {
         "jorge-martin-andres": {
-          "played": 1,
+          "called_up": 1,
           "starts": 1,
+          "bench": 0,
+          "played": 1,
           "minutes": 90,
-          "goals": 0,
-          "assists": null,
-          "yellow": null,
-          "red": null
+          "goals": 0
         }
       },
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "466507",
+      "away_team_id": "2023",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-6",
@@ -648,7 +908,13 @@
       "score_away": 4,
       "round": 6,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479951",
@@ -674,7 +940,13 @@
       "round": 5,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4194902",
@@ -687,7 +959,7 @@
       "date": "2026-10-25",
       "time": "13:30",
       "status": "finished",
-      "source": "https://www.fcf.cat/ca/competicio/acta/4194902",
+      "source": "https://www.fcf.cat/ca/partit/2026-2027/juvenil-primera-divisio/grup-8/jornada-5/natacio-terrassa-c-a-1j-vs-unio-f-base-jabac-i-terrassa-a-1j",
       "venue": "CAMP DE FUTBOL CLUB NATACIÓ TERRASSA",
       "locality": null,
       "address": null,
@@ -698,8 +970,27 @@
       "score_home": 2,
       "score_away": 2,
       "round": 5,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "participation": {
+        "aleix-camarasa-oros": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        }
+      },
+      "home_team_id": "34471",
+      "away_team_id": "44581",
+      "participation_checked_at": {
+        "aleix-camarasa-oros": "2026-11-17T14:18:43+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584352",
@@ -723,8 +1014,27 @@
       "score_home": 1,
       "score_away": 0,
       "round": 7,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "participation": {
+        "jorge-martin-andres": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        }
+      },
+      "home_team_id": "1794",
+      "away_team_id": "2023",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-7",
@@ -749,7 +1059,13 @@
       "score_away": 1,
       "round": 7,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584361",
@@ -775,16 +1091,25 @@
       "round": 8,
       "participation": {
         "jorge-martin-andres": {
-          "played": 1,
+          "called_up": 1,
           "starts": 1,
+          "bench": 0,
+          "played": 1,
           "minutes": 90,
-          "goals": 0,
-          "assists": null,
-          "yellow": null,
-          "red": null
+          "goals": 0
         }
       },
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "3353458",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479960",
@@ -810,7 +1135,13 @@
       "round": 6,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4194910",
@@ -823,7 +1154,7 @@
       "date": "2026-11-01",
       "time": "13:30",
       "status": "finished",
-      "source": "https://www.fcf.cat/ca/competicio/acta/4194910",
+      "source": "https://www.fcf.cat/ca/partit/2026-2027/juvenil-primera-divisio/grup-8/jornada-6/unio-f-base-jabac-i-terrassa-a-1j-vs-junior-cf-b-1j",
       "venue": "CAMP DE FUTBOL ZEM CAN JOFRESA",
       "locality": null,
       "address": null,
@@ -834,8 +1165,27 @@
       "score_home": 1,
       "score_away": 2,
       "round": 6,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "participation": {
+        "aleix-camarasa-oros": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        }
+      },
+      "home_team_id": "44581",
+      "away_team_id": "35883",
+      "participation_checked_at": {
+        "aleix-camarasa-oros": "2026-11-17T14:18:43+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-8",
@@ -860,7 +1210,13 @@
       "score_away": 2,
       "round": 8,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194917",
@@ -873,7 +1229,7 @@
       "date": "2026-11-07",
       "time": "18:30",
       "status": "finished",
-      "source": "https://www.fcf.cat/ca/competicio/acta/4194917",
+      "source": "https://www.fcf.cat/ca/partit/2026-2027/juvenil-primera-divisio/grup-8/jornada-7/pirinaica-fc-a-1j-vs-unio-f-base-jabac-i-terrassa-a-1j",
       "venue": "CAMP DE FUTBOL MPAL. MION-PUIGBERENGUER",
       "locality": null,
       "address": null,
@@ -884,8 +1240,27 @@
       "score_home": 5,
       "score_away": 3,
       "round": 7,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "participation": {
+        "aleix-camarasa-oros": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": null,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "38207",
+      "away_team_id": "44581",
+      "participation_checked_at": {
+        "aleix-camarasa-oros": "2026-11-17T14:18:43+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584369",
@@ -911,16 +1286,25 @@
       "round": 9,
       "participation": {
         "jorge-martin-andres": {
-          "played": 1,
+          "called_up": 1,
           "starts": 1,
+          "bench": 0,
+          "played": 1,
           "minutes": 83,
-          "goals": 0,
-          "assists": null,
-          "yellow": null,
-          "red": null
+          "goals": 0
         }
       },
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "599",
+      "away_team_id": "2023",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479968",
@@ -946,7 +1330,13 @@
       "round": 7,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "murcia-24069902-9",
@@ -971,7 +1361,13 @@
       "score_away": 0,
       "round": 9,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584378",
@@ -995,8 +1391,27 @@
       "score_home": 1,
       "score_away": 2,
       "round": 10,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "participation": {
+        "jorge-martin-andres": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        }
+      },
+      "home_team_id": "2023",
+      "away_team_id": "920",
+      "participation_checked_at": {
+        "jorge-martin-andres": "2026-11-17T14:18:36+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194925",
@@ -1009,7 +1424,7 @@
       "date": "2026-11-15",
       "time": "13:30",
       "status": "finished",
-      "source": "https://www.fcf.cat/ca/competicio/acta/4194925",
+      "source": "https://www.fcf.cat/ca/partit/2026-2027/juvenil-primera-divisio/grup-8/jornada-8/unio-f-base-jabac-i-terrassa-a-1j-vs-sant-cugat-futbol-club-c-1j",
       "venue": "CAMP DE FUTBOL ZEM CAN JOFRESA",
       "locality": null,
       "address": null,
@@ -1020,8 +1435,27 @@
       "score_home": 2,
       "score_away": 4,
       "round": 8,
-      "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "participation": {
+        "aleix-camarasa-oros": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": null,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "44581",
+      "away_team_id": "21219888",
+      "participation_checked_at": {
+        "aleix-camarasa-oros": "2026-11-17T14:18:43+00:00"
+      },
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479976",
@@ -1047,7 +1481,13 @@
       "round": 8,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "valencia-26574802",
@@ -1073,7 +1513,13 @@
       "round": 4,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "valencia-26479983",
@@ -1099,7 +1545,13 @@
       "round": 9,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584386",
@@ -1124,7 +1576,15 @@
       "score_away": null,
       "round": 11,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "21492710",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194933",
@@ -1149,7 +1609,15 @@
       "score_away": null,
       "round": 9,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "15558236",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-10",
@@ -1174,7 +1642,13 @@
       "score_away": null,
       "round": 10,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584395",
@@ -1199,7 +1673,15 @@
       "score_away": null,
       "round": 12,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "548",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479991",
@@ -1225,7 +1707,13 @@
       "round": 10,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4194942",
@@ -1250,7 +1738,15 @@
       "score_away": null,
       "round": 10,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "35378723",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-11",
@@ -1275,7 +1771,13 @@
       "score_away": null,
       "round": 11,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-5",
@@ -1300,7 +1802,13 @@
       "score_away": null,
       "round": 5,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479998",
@@ -1326,7 +1834,13 @@
       "round": 11,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4194950",
@@ -1351,7 +1865,15 @@
       "score_away": null,
       "round": 11,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "35238",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584403",
@@ -1376,7 +1898,15 @@
       "score_away": null,
       "round": 13,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "481",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-12",
@@ -1401,7 +1931,13 @@
       "score_away": null,
       "round": 12,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194959",
@@ -1426,7 +1962,15 @@
       "score_away": null,
       "round": 12,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "34172",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480006",
@@ -1452,7 +1996,13 @@
       "round": 12,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584412",
@@ -1477,7 +2027,15 @@
       "score_away": null,
       "round": 14,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "15294614",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-13",
@@ -1502,7 +2060,13 @@
       "score_away": null,
       "round": 13,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194967",
@@ -1527,7 +2091,15 @@
       "score_away": null,
       "round": 13,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "35537",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480013",
@@ -1553,7 +2125,13 @@
       "round": 13,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "murcia-24069902-14",
@@ -1578,7 +2156,13 @@
       "score_away": null,
       "round": 14,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194976",
@@ -1603,7 +2187,15 @@
       "score_away": null,
       "round": 14,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "35950",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480021",
@@ -1629,7 +2221,13 @@
       "round": 14,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584420",
@@ -1654,7 +2252,15 @@
       "score_away": null,
       "round": 15,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2453",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-15",
@@ -1679,7 +2285,13 @@
       "score_away": null,
       "round": 15,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480028",
@@ -1705,7 +2317,13 @@
       "round": 15,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4194984",
@@ -1730,7 +2348,15 @@
       "score_away": null,
       "round": 15,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "37800",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584429",
@@ -1755,7 +2381,15 @@
       "score_away": null,
       "round": 16,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "1175",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-16",
@@ -1780,7 +2414,13 @@
       "score_away": null,
       "round": 16,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480037",
@@ -1806,7 +2446,13 @@
       "round": 16,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584437",
@@ -1831,7 +2477,15 @@
       "score_away": null,
       "round": 17,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "1402",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194992",
@@ -1856,7 +2510,15 @@
       "score_away": null,
       "round": 16,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "15545946",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480046",
@@ -1882,7 +2544,13 @@
       "round": 17,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584448",
@@ -1907,7 +2575,15 @@
       "score_away": null,
       "round": 18,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "3347198",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-17",
@@ -1932,7 +2608,13 @@
       "score_away": null,
       "round": 17,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195000",
@@ -1957,7 +2639,15 @@
       "score_away": null,
       "round": 17,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "19642975",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480054",
@@ -1983,7 +2673,13 @@
       "round": 18,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584458",
@@ -2008,7 +2704,15 @@
       "score_away": null,
       "round": 19,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "6",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480063",
@@ -2034,7 +2738,13 @@
       "round": 19,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4195007",
@@ -2059,7 +2769,15 @@
       "score_away": null,
       "round": 18,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "50600672",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584467",
@@ -2084,7 +2802,15 @@
       "score_away": null,
       "round": 20,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "75",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-18",
@@ -2109,7 +2835,13 @@
       "score_away": null,
       "round": 18,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480071",
@@ -2135,7 +2867,13 @@
       "round": 20,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4195015",
@@ -2160,7 +2898,15 @@
       "score_away": null,
       "round": 19,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "34021",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-19",
@@ -2185,7 +2931,13 @@
       "score_away": null,
       "round": 19,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584477",
@@ -2210,7 +2962,15 @@
       "score_away": null,
       "round": 21,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "1312",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480080",
@@ -2236,7 +2996,13 @@
       "round": 21,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4195022",
@@ -2261,7 +3027,15 @@
       "score_away": null,
       "round": 20,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "34471",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584486",
@@ -2286,7 +3060,15 @@
       "score_away": null,
       "round": 22,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "410",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480088",
@@ -2312,7 +3094,13 @@
       "round": 22,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4195030",
@@ -2337,7 +3125,15 @@
       "score_away": null,
       "round": 21,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "35883",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584496",
@@ -2362,7 +3158,15 @@
       "score_away": null,
       "round": 23,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "466507",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-20",
@@ -2387,7 +3191,13 @@
       "score_away": null,
       "round": 20,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195037",
@@ -2412,7 +3222,15 @@
       "score_away": null,
       "round": 22,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "38207",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584505",
@@ -2437,7 +3255,15 @@
       "score_away": null,
       "round": 24,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "1794",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-21",
@@ -2462,7 +3288,13 @@
       "score_away": null,
       "round": 21,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480096",
@@ -2488,7 +3320,13 @@
       "round": 23,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4195045",
@@ -2513,7 +3351,15 @@
       "score_away": null,
       "round": 23,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "21219888",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584514",
@@ -2538,7 +3384,15 @@
       "score_away": null,
       "round": 25,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "3353458",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-22",
@@ -2563,7 +3417,13 @@
       "score_away": null,
       "round": 22,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195053",
@@ -2588,7 +3448,15 @@
       "score_away": null,
       "round": 24,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "15558236",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480103",
@@ -2614,7 +3482,13 @@
       "round": 24,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584522",
@@ -2639,7 +3513,15 @@
       "score_away": null,
       "round": 26,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "599",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-23",
@@ -2664,7 +3546,13 @@
       "score_away": null,
       "round": 23,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480111",
@@ -2690,7 +3578,13 @@
       "round": 25,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4195062",
@@ -2715,7 +3609,15 @@
       "score_away": null,
       "round": 25,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "35378723",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-24",
@@ -2740,7 +3642,13 @@
       "score_away": null,
       "round": 24,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584531",
@@ -2765,7 +3673,15 @@
       "score_away": null,
       "round": 27,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "920",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480118",
@@ -2791,7 +3707,13 @@
       "round": 26,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4195070",
@@ -2816,7 +3738,15 @@
       "score_away": null,
       "round": 26,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "35238",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584539",
@@ -2841,7 +3771,15 @@
       "score_away": null,
       "round": 28,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "21492710",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-25",
@@ -2866,7 +3804,13 @@
       "score_away": null,
       "round": 25,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480126",
@@ -2892,7 +3836,13 @@
       "round": 27,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "catalunya-4195079",
@@ -2917,7 +3867,15 @@
       "score_away": null,
       "round": 27,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "34172",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584548",
@@ -2942,7 +3900,15 @@
       "score_away": null,
       "round": 29,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "548",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-26",
@@ -2967,7 +3933,13 @@
       "score_away": null,
       "round": 26,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195087",
@@ -2992,7 +3964,15 @@
       "score_away": null,
       "round": 28,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "35537",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480133",
@@ -3018,7 +3998,13 @@
       "round": 28,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584556",
@@ -3043,7 +4029,15 @@
       "score_away": null,
       "round": 30,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "481",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-27",
@@ -3068,7 +4062,13 @@
       "score_away": null,
       "round": 27,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195096",
@@ -3093,7 +4093,15 @@
       "score_away": null,
       "round": 29,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "44581",
+      "away_team_id": "35950",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480141",
@@ -3119,7 +4127,13 @@
       "round": 29,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584565",
@@ -3144,7 +4158,15 @@
       "score_away": null,
       "round": 31,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "15294614",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-28",
@@ -3169,7 +4191,13 @@
       "score_away": null,
       "round": 28,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4195104",
@@ -3194,7 +4222,15 @@
       "score_away": null,
       "round": 30,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:26+00:00"
+      "home_team_id": "37800",
+      "away_team_id": "44581",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:43+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "aleix-camarasa-oros"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26480148",
@@ -3220,7 +4256,13 @@
       "round": 30,
       "participation": {},
       "updated_at": "2026-11-17T12:55:00+00:00",
-      "capture_method": "browser_verified"
+      "capture_method": "browser_verified",
+      "home_player_ids": [
+        "daniel-otero-serrano"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "participation_checked_at": {}
     },
     {
       "id": "madrid-5584573",
@@ -3245,7 +4287,15 @@
       "score_away": null,
       "round": 32,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "2453",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-29",
@@ -3270,7 +4320,13 @@
       "score_away": null,
       "round": 29,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584582",
@@ -3295,7 +4351,15 @@
       "score_away": null,
       "round": 33,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "1175",
+      "away_team_id": "2023",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-30",
@@ -3320,7 +4384,13 @@
       "score_away": null,
       "round": 30,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:30+00:00"
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:50+00:00",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "iker-piqueras-mora"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584590",
@@ -3345,7 +4415,15 @@
       "score_away": null,
       "round": 34,
       "participation": {},
-      "updated_at": "2026-11-17T13:01:24+00:00"
+      "home_team_id": "2023",
+      "away_team_id": "1402",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-17T14:18:36+00:00",
+      "home_player_ids": [
+        "jorge-martin-andres"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     }
   ]
 }

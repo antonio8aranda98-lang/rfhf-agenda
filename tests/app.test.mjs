@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { weekend, madridToday, filterMatches, calendarICS, overlaps, displayStat, escapeHTML, safeURL } from '../docs/model.mjs';
+import { weekend, madridToday, filterMatches, calendarICS, overlaps, matchups, displayStat, escapeHTML, safeURL } from '../docs/model.mjs';
 
 test('Friday, Saturday and Sunday stay in the same weekend, including Sunday',()=>{
   for(const day of ['2026-11-17','2026-11-20','2026-11-21','2026-11-22'])assert.deepEqual(weekend(day),['2026-11-20','2026-11-21','2026-11-22']);
@@ -38,4 +38,13 @@ test('federation text and links cannot inject markup or script schemes',()=>{
   assert.equal(escapeHTML('<script>"'), '&lt;script&gt;&quot;');
   assert.equal(safeURL('javascript:alert(1)'), '');
   assert.equal(safeURL('https://www.fcf.cat/'),'https://www.fcf.cat/');
+});
+test('opponent alert ignores collaborator filter, while excluding inactive and postponed players',()=>{
+  const players=[{id:'a',collaborator:'Uno'},{id:'b',collaborator:'Dos'}];
+  const m={id:'fixture',federation:'madrid',date:'2026-11-21',home:'Club A',away:'Club B',home_player_ids:['a'],away_player_ids:['b'],status:'scheduled'};
+  const found=matchups([m,{...m,id:'duplicate'}],players,['2026-11-21']);
+  assert.equal(found.length,1);assert.equal(found[0].away_players[0].collaborator,'Dos');
+  assert.equal(matchups([m],players.map(p=>({...p,active:p.id!=='b'})),['2026-11-21']).length,0);
+  assert.equal(matchups([{...m,status:'postponed'}],players,['2026-11-21']).length,0);
+  assert.equal(matchups([{...m,away_player_ids:[]}],players,['2026-11-21']).length,0);
 });

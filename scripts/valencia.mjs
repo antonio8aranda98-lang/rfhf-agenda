@@ -5,7 +5,7 @@ const roster = JSON.parse(await readFile(new URL('../data/roster.json', import.m
 const browser = await chromium.launch({ headless: true });
 const result = { checked_at: new Date().toISOString(), players: {} };
 try {
-  for (const p of roster.players.filter(p => p.federation === 'valencia')) {
+  for (const p of roster.players.filter(p => p.federation === 'valencia' && p.active !== false)) {
     const page = await browser.newPage({ locale: 'es-ES', timezoneId: 'Europe/Madrid' });
     try {
       const base = 'https://ffcv.es/competiciones/';

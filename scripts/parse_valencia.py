@@ -53,7 +53,7 @@ def parse_player(html, p):
     if not area:
         raise ValueError('La ficha no publica el bloque de estadísticas esperado')
     tokens = list(area.stripped_strings)
-    mapping = {'Jugados':'played','Titular':'starts','Goles':'goals','Amarillas':'yellow','Rojas':'red'}
+    mapping = {'Convocados':'called_up','Suplente':'bench','Jugados':'played','Titular':'starts','Goles':'goals','Amarillas':'yellow','Rojas':'red'}
     stats = new_stats()
     for i, token in enumerate(tokens):
         if token in mapping and i:

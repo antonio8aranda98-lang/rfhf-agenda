@@ -23,6 +23,18 @@ export function overlaps(a, b) {
   return Math.abs(minutes(a.time) - minutes(b.time)) < 120;
 }
 export function displayStat(value) { return value === null || value === undefined ? '—' : String(value); }
+export function matchups(matches, players, dates) {
+  const active = new Map(players.filter(p=>p.active!==false).map(p=>[p.id,p]));
+  const days = new Set(dates);
+  const seen = new Set();
+  return matches.filter(m=>days.has(m.date)&&!['cancelled','postponed'].includes(m.status)).flatMap(m=>{
+    const home=(m.home_player_ids||[]).filter(id=>active.has(id));
+    const away=(m.away_player_ids||[]).filter(id=>active.has(id));
+    const key=[m.federation,m.date,m.home,m.away].join('|');
+    if(!home.length||!away.length||seen.has(key))return [];
+    seen.add(key);return [{...m,home_players:home.map(id=>active.get(id)),away_players:away.map(id=>active.get(id))}];
+  });
+}
 export function escapeHTML(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
 export function safeURL(url) { try { const u = new URL(url); return u.protocol === 'https:' ? u.href : ''; } catch { return ''; } }
 export function icsEscape(s) { return String(s ?? '').replace(/\\/g, '\\\\').replace(/\r?\n/g, '\\n').replace(/,/g, '\\,').replace(/;/g, '\\;'); }

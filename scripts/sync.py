@@ -15,6 +15,8 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
+from player_stats import participation, absent, summarize, STAT_FIELDS
+from federation_acts import murcia_round, parse_murcia_act, parse_catalunya_act
 
 ROOT = Path(__file__).resolve().parents[1]
 MADRID = ZoneInfo('Europe/Madrid')
@@ -58,7 +60,7 @@ def http_time(value):
 
 
 def new_stats():
-    return {k: None for k in ('played', 'starts', 'minutes', 'goals', 'assists', 'yellow', 'red')}
+    return {k: None for k in (*STAT_FIELDS, 'played', 'assists', 'yellow', 'red')}
 
 
 class Client:
@@ -131,7 +133,8 @@ def fixture(fid, player, key, home, away, date, hour, source, **extra):
             'status': 'scheduled' if hour else 'time_pending', 'source': source,
             'venue': None, 'locality': None, 'address': None, 'latitude': None, 'longitude': None,
             'home_logo': None, 'away_logo': None, 'score_home': None, 'score_away': None,
-            'round': None, 'participation': {}, **extra}
+            'round': None, 'competition_id': player.get('competition_id'), 'group_id': player.get('group_id'),
+            'season': player.get('season'), 'participation': {}, **extra}
 
 
 def madrid(client, player):
@@ -151,7 +154,7 @@ def madrid(client, player):
     competition = next((c for c in pdata.get('competiciones_participa', []) if str(c.get('codigo_competicion')) == player['competition_id']), {})
     visible = competition.get('ver_estadisticas') == '1'
     if visible:
-        mapping = {'Jugados': 'played', 'Titular': 'starts', 'Total Goles': 'goals'}
+        mapping = {'Convocados': 'called_up', 'Jugados': 'played', 'Titular': 'starts', 'Suplente': 'bench', 'Total Goles': 'goals'}
         for item in pdata.get('partidos', []):
             if item.get('nombre') in mapping:
                 if item.get('nombre') == 'Total Goles' and competition.get('vis_goles') != '1':
@@ -175,7 +178,7 @@ def madrid(client, player):
                             round=integer(rnd.get('codjornada')), venue=m.get('campo') or None,
                             home_logo=urllib.parse.urljoin(host, m.get('escudo_equipo_local', '')),
                             away_logo=urllib.parse.urljoin(host, m.get('escudo_equipo_visitante', '')),
-                            score_home=sh, score_away=sa)
+                            score_home=sh, score_away=sa, home_team_id=str(m['codigo_equipo_local']), away_team_id=str(m['codigo_equipo_visitante']))
             if sh is not None and sa is not None:
                 match['status'] = 'finished'
             if date and today <= date and m.get('codigo_campo'):
@@ -194,30 +197,32 @@ def madrid(client, player):
             side = 'local' if str(game['codigo_equipo_local']) == player['team_id'] else 'visitante'
             rows = game.get('jugadores_equipo_' + side, [])
             row = next((r for r in rows if str(r.get('codjugador')) == player['player_id']), None)
-            if not row or game.get('acta_cerrada') != '1' or row.get('ver_estadisiticas_jugador') != '1':
+            if game.get('acta_cerrada') != '1' or len(rows) < 7:
+                continue
+            if not row:
+                m['participation'][player['id']] = absent()
+                continue
+            if row.get('ver_estadisiticas_jugador') != '1':
                 continue
             starter = row.get('titular') == '1'
             subs = game.get('sustituciones_equipo_' + side, [])
-            entry = next((integer(s.get('minuto')) for s in subs if str(s.get('codjugador_entra')) == player['player_id']), None)
-            departure = next((integer(s.get('minuto')) for s in subs if str(s.get('codjugador_sale')) == player['player_id']), None)
-            played = starter or entry is not None
-            stats = new_stats()
-            stats.update({'played': int(played), 'starts': int(starter)})
+            entries = [s.get('minuto') for s in subs if str(s.get('codjugador_entra')) == player['player_id']]
+            exits = [s.get('minuto') for s in subs if str(s.get('codjugador_sale')) == player['player_id']]
+            goals = None
             # Require both competition visibility switches before publishing derived data.
             if competition.get('vis_goles') == '1':
                 target_goals = [g for g in game.get('goles_equipo_' + side, []) if str(g.get('codjugador')) == player['player_id']]
                 # Type 100 was verified as a regular goal. Do not guess other enum values.
-                stats['goals'] = len(target_goals) if all(str(g.get('tipo_gol')) == '100' for g in target_goals) else None
-            # Red cards and stoppage-time notation make naive minute inference unsafe.
+                goals = len(target_goals) if all(str(g.get('tipo_gol')) == '100' for g in target_goals) else None
             cards = [c for c in game.get('tarjetas_equipo_' + side, []) if str(c.get('codjugador')) == player['player_id']]
-            if competition.get('vis_minutos') == '1' and not cards and played:
-                stats['minutes'] = max(0, min(player['match_duration'], departure if departure is not None else player['match_duration']) - (0 if starter else entry))
-            elif not played and competition.get('vis_minutos') == '1':
-                stats['minutes'] = 0
+            reds = [c.get('minuto') for c in cards if str(c.get('codigo_tipo_amonestacion')) == '101' or str(c.get('segunda_amarilla')) == '1']
+            stats = participation(starter, player['match_duration'], entries, exits, reds, goals)
+            if competition.get('vis_minutos') != '1':
+                stats['minutes'] = None
             m['participation'][player['id']] = stats
         except Exception:
             continue
-    return {'matches': matches, 'stats': summary, 'logo': logo, 'stats_note': 'Resumen publicado por la federación. Minutos por partido calculados solo cuando el acta permite hacerlo con seguridad.'}
+    return {'matches': matches, 'stats': summary, 'logo': logo, 'stats_note': 'Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.'}
 
 
 def catalunya(client, player):
@@ -239,9 +244,18 @@ def catalunya(client, player):
             home_logo=escudos + m['ESCUDO_CASA'] if m.get('ESCUDO_CASA') else None,
             away_logo=escudos + m['ESCUDO_FUERA'] if m.get('ESCUDO_FUERA') else None,
             score_home=integer(m.get('GOLES_CASA')) if closed else None, score_away=integer(m.get('GOLES_FUERA')) if closed else None,
-            round=integer(m.get('JORNADA'))))
+            round=integer(m.get('JORNADA')), home_team_id=str(m['CODEQUIPO_CASA']), away_team_id=str(m['CODEQUIPO_FUERA'])))
+        if closed:
+            slug = lambda text: re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode().lower()).strip('-')
+            path = f"ca/partit/{player.get('season', '2026-2027')}/{slug(m['NOMBRE_COMPETICION'])}/{slug(m['GRUPO'])}/jornada-{m['JORNADA']}/{m['SLUG_CASA']}-vs-{m['SLUG_FUERA']}"
+            try:
+                html = client.get('https://www.fcf.cat/' + path)
+                matches[-1]['participation'][player['id']] = parse_catalunya_act(html, player)
+                matches[-1]['source'] = 'https://www.fcf.cat/' + path
+            except Exception:
+                pass
     return {'matches': matches, 'stats': new_stats(), 'logo': escudos + data['info']['FICHERO'],
-            'stats_note': 'Calendario y resultados del equipo disponibles. Estadísticas individuales pendientes de validar en las actas; aparecer en el banquillo no implica haber jugado.'}
+            'stats_note': 'Convocatorias, titulares, suplentes y goles según actas. Los minutos quedan sin dato cuando la FCF no publica intervalos de sustitución verificables.'}
 
 
 def parse_murcia(html, player, source):
@@ -282,8 +296,25 @@ def murcia(client, player):
                 match['home_logo'] = logo
             if normalized(match['away']) == normalized(player['team']):
                 match['away_logo'] = logo
+    today = datetime.now(MADRID).date().isoformat()
+    for match in matches:
+        if match['status'] != 'finished' and (not match.get('date') or abs((datetime.fromisoformat(match['date']).date() - datetime.now(MADRID).date()).days) > 7):
+            continue
+        try:
+            report = murcia_round(client, player, match['round'])
+            match.update({k: v for k, v in report.items() if k != 'url' and v})
+            match['source'] = report['url']
+            html = client.get(report['url'])
+            if match['status'] == 'finished':
+                match['participation'][player['id']] = parse_murcia_act(html, player)
+            soup = BeautifulSoup(html, 'html.parser')
+            field = soup.find(string=re.compile(r'^\s*Estadio:'))
+            if field:
+                match['venue'] = field.parent.get_text(' ', strip=True).removeprefix('Estadio:').strip() or None
+        except Exception:
+            pass
     return {'matches': matches, 'stats': new_stats(), 'logo': logo,
-            'stats_note': 'Resultados del equipo disponibles. La fecha sin hora es la referencia de jornada. Estadísticas individuales y campo pendientes de validar en las actas.'}
+            'stats_note': 'Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.'}
 
 
 def valencia(client, player):
@@ -326,7 +357,9 @@ def sync(browser=False):
         old_fed = next((f for f in previous.get('federations', []) if f['id'] == fid), {})
         errors = []
         successes = 0
-        for config in [p for p in roster['players'] if p['federation'] == fid]:
+        configs = [p for p in roster['players'] if p['federation'] == fid and p.get('active', True)]
+        for config in configs:
+            config = {**config, 'season': roster['season']}
             old_player = next((p for p in previous.get('players', []) if p['id'] == config['id']), {})
             public = {k: config[k] for k in ('id', 'name', 'federation', 'collaborator', 'team', 'competition_label', 'source')}
             try:
@@ -336,6 +369,17 @@ def sync(browser=False):
                 public.update({k: result.get(k) for k in ('stats', 'logo', 'stats_note')})
                 public['updated_at'] = now()
                 for m in result['matches']:
+                    checked = m.setdefault('participation_checked_at', {})
+                    for player_id in m.get('participation', {}):
+                        checked[player_id] = public['updated_at']
+                    previous_match = next((old for old in old_matches if old['id'] == m['id']), None)
+                    # A temporary act failure must not erase a previously verified
+                    # record. Retain its original date, only for an unchanged result.
+                    if previous_match and m['status'] == previous_match['status'] == 'finished' and (m['score_home'], m['score_away']) == (previous_match['score_home'], previous_match['score_away']):
+                        old_record = previous_match.get('participation', {}).get(config['id'])
+                        if config['id'] not in m['participation'] and old_record is not None:
+                            m['participation'][config['id']] = copy.deepcopy(old_record)
+                            checked[config['id']] = previous_match.get('participation_checked_at', {}).get(config['id'], previous_match.get('updated_at'))
                     m['updated_at'] = public['updated_at']
                     feed['matches'].append(m)
                 successes += 1
@@ -345,31 +389,69 @@ def sync(browser=False):
                 message = f'{type(error).__name__}: {str(error)[:180]}'
                 print('::warning::' + fid + ': ' + message)
                 errors.append(config['id'])
-                public.update({k: old_player.get(k) for k in ('stats', 'logo', 'stats_note', 'updated_at')})
+                public.update({k: old_player.get(k) for k in ('stats', 'logo', 'stats_note', 'updated_at', 'coverage')})
                 public['stats'] = public.get('stats') or new_stats()
                 feed['matches'].extend(copy.deepcopy(m) for m in old_matches if config['id'] in m['player_ids'])
             feed['players'].append(public)
         feed['federations'].append({'id': fid, 'label': label, 'acronym': acronym, 'source': base,
-            'status': 'ok' if successes and not errors else 'partial' if successes else 'error',
+            'status': 'empty' if not configs else 'ok' if successes and not errors else 'partial' if successes else 'error',
             'checked_at': now(), 'last_success': now() if successes and not errors else old_fed.get('last_success'),
-            'message': 'Consulta automática completada' if successes and not errors else 'No se pudo completar la consulta. Se conserva el último dato válido.', 'failed_players': errors})
-    # Merge shared fixtures so two assigned players in the same match are one visit.
-    merged = {}
-    for m in feed['matches']:
-        if m['id'] in merged:
-            old = merged[m['id']]
-            old['player_ids'] = sorted(set(old['player_ids'] + m['player_ids']))
-            old['participation'].update(m['participation'])
-        else:
-            merged[m['id']] = m
-    feed['matches'] = sorted(merged.values(), key=lambda m: (m['date'] or '9999', m['time'] or '99:99', m['id']))
+            'message': 'Sin jugadores activos' if not configs else 'Consulta automática completada' if successes and not errors else 'No se pudo completar la consulta. Se conserva el último dato válido.', 'failed_players': errors})
+    feed = apply_roster(feed, roster)
+    for player in feed['players']:
+        own = [m for m in feed['matches'] if player['id'] in m['player_ids']]
+        if own:
+            player['stats'], player['coverage'] = summarize(own, player['id'], player.get('stats'))
     path.parent.mkdir(exist_ok=True, parents=True)
     temp = path.with_suffix('.tmp')
     temp.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + '\n')
     temp.replace(path)
-    print(f'Actualizadas {total_success}/{len(roster["players"])} fichas; {len(feed["matches"])} partidos publicados.')
-    if not total_success:
+    print(f'Actualizadas {total_success}/{sum(p.get("active", True) for p in roster["players"])} fichas; {len(feed["matches"])} partidos publicados.')
+    if not total_success and feed['players']:
         raise SystemExit(1)
+
+
+def apply_roster(feed, roster):
+    """Remove inactive players even from stale/shared fixtures and detect both sides."""
+    configs = [p for p in roster['players'] if p.get('active', True)]
+    active = {p['id'] for p in configs}
+    feed['players'] = [p for p in feed['players'] if p['id'] in active]
+    merged = {}
+    for m in feed['matches']:
+        m['player_ids'] = [id for id in m['player_ids'] if id in active]
+        m['participation'] = {id: stats for id, stats in m.get('participation', {}).items() if id in active}
+        m['participation_checked_at'] = {id: stamp for id, stamp in m.get('participation_checked_at', {}).items() if id in active}
+        if not m['player_ids']:
+            continue
+        if m['federation'] == 'murcia':
+            config = next((p for p in configs if p['id'] in m['player_ids']), {})
+            key = ('murcia', m.get('group_id') or config.get('group_id'), m.get('round'), normalized(m['home']), normalized(m['away']))
+        else:
+            key = (m['federation'], m['id'])
+        if key in merged:
+            old = merged[key]
+            # Prefer the latest fixture details when one player's refresh failed.
+            older, newer = (old, m) if (m.get('updated_at') or '') >= (old.get('updated_at') or '') else (m, old)
+            combined = copy.deepcopy(newer)
+            combined['player_ids'] = sorted(set(old['player_ids'] + m['player_ids']))
+            if (older.get('status'), older.get('score_home'), older.get('score_away')) == (newer.get('status'), newer.get('score_home'), newer.get('score_away')):
+                combined['participation'] = {**older['participation'], **newer['participation']}
+                combined['participation_checked_at'] = {**older['participation_checked_at'], **newer['participation_checked_at']}
+            merged[key] = combined
+        else:
+            merged[key] = m
+    for match in merged.values():
+        for side in ('home', 'away'):
+            def same_team(p):
+                if p.get('team_id') and match.get(side + '_team_id'):
+                    return str(p['team_id']) == str(match[side + '_team_id'])
+                return normalized(p['team']) == normalized(match[side])
+            players = [p['id'] for p in configs if p['federation'] == match['federation'] and same_team(p)]
+            match[side + '_player_ids'] = players
+        match['player_ids'] = sorted(set(match['player_ids'] + match['home_player_ids'] + match['away_player_ids']))
+        match['is_internal_matchup'] = bool(match['home_player_ids'] and match['away_player_ids'])
+    feed['matches'] = sorted(merged.values(), key=lambda m: (m['date'] or '9999', m['time'] or '99:99', m['id']))
+    return feed
 
 
 if __name__ == '__main__':

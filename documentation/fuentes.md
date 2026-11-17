@@ -67,4 +67,9 @@ Investigación inicial y notas de implementación. La aplicación se sirve desde
 - Madrid, Cataluña y Murcia: sincronización HTTP pública probada; 34, 30 y 30 partidos respectivamente.
 - Valencia: 30 partidos verificados con navegación pública; el navegador de extracción local no logra completar la consulta. Se conserva una captura verificada, marcada con aviso y con fecha propia. No se considera validada su sincronización desatendida hasta que una ejecución real la complete.
 - El nuevo calendario valenciano muestra algunos nombres de día que no corresponden a su fecha numérica. La aplicación utiliza día/mes/año y calcula el día de la semana por sí misma.
-- Faltan estadísticas individuales de Cataluña y Murcia; tampoco se han validado asistencias. No se publican ceros sustitutivos.
+- Cataluña: comprobadas 8/8 actas del piloto; 6 convocatorias, 2 titularidades y 4 suplencias. No se obtiene un total de minutos sin intervalos de sustitución verificables.
+- Murcia: se han verificado participaciones de 4/8 partidos finalizados del piloto. Las jornadas restantes devolvieron HTTP 200 con cuerpo vacío en esta revisión; por eso sus totales siguen sin dato. El acceso por jornada requiere `CodCompeticion`, `CodGrupo`, `CodTemporada` y `CodJornada` con esa capitalización.
+- Madrid: 10 actas comprobadas, 8 convocatorias/titularidades y 665 minutos reglamentarios. Una amarilla no impide calcular minutos. Se conserva el resumen oficial de goles si el tipo de un gol del acta no está validado.
+- No se han validado asistencias. No se publican ceros sustitutivos.
+- Cada participación conserva su fecha de lectura en `participation_checked_at`. Un fallo temporal del acta no elimina la participación previa si siguen iguales el encuentro, estado y resultado. La ficha muestra cobertura; el calendario y las actas pueden tener distinta fecha de lectura.
+- Gestión: formulario público de preparación y autorización mediante la cuenta propietaria en GitHub. Alta activada solo tras verificar identidad, plantilla y calendario; FFCV permanece pendiente. Ver [gestión](gestion.md).
