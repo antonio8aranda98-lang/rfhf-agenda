@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T15:58:32+00:00",
+  "generated_at": "2026-11-17T16:07:01+00:00",
   "season": "2026-2027",
   "registry_revision": 2,
   "federations": [
@@ -135,8 +135,8 @@
       "updated_at": "2026-11-17T16:02:55+00:00",
       "coverage": {
         "team_played": 8,
-        "acts_checked": 4,
-        "minutes_checked": 4,
+        "acts_checked": 6,
+        "minutes_checked": 6,
         "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
       }
     },
@@ -996,10 +996,21 @@
       "competition_id": "24032708",
       "group_id": "24032710",
       "season": "2026-2027",
-      "participation": {},
+      "participation": {
+        "iker-piqueras-mora": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 58,
+          "goals": 0
+        }
+      },
       "home_team_id": "24069902",
       "away_team_id": "5787923",
-      "participation_checked_at": {},
+      "participation_checked_at": {
+        "iker-piqueras-mora": "2026-11-17"
+      },
       "updated_at": "2026-11-17T16:02:55+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -1509,7 +1520,7 @@
       "date": "2026-11-13",
       "time": "19:45",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24032708&codgrupo=24032710&codtemporada=22&CDetalle=1",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?CodActa=592924&cod_acta=592924&cod_primaria=1000120",
       "venue": "CAMPO DE FÚTBOL EL ROMERAL - ELIA MARTÍNEZ",
       "locality": null,
       "address": null,
@@ -1523,8 +1534,19 @@
       "competition_id": "24032708",
       "group_id": "24032710",
       "season": "2026-2027",
-      "participation": {},
-      "participation_checked_at": {},
+      "participation": {
+        "iker-piqueras-mora": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 40,
+          "goals": 0
+        }
+      },
+      "participation_checked_at": {
+        "iker-piqueras-mora": "2026-11-17T15:14:21+00:00"
+      },
       "updated_at": "2026-11-17T16:02:55+00:00",
       "home_player_ids": [
         "iker-piqueras-mora"

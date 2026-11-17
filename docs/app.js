@@ -7,7 +7,7 @@ const dialog = $('#player-dialog');
 const statNames = { team_played:'Partidos del equipo', called_up:'Convocado', starts:'Titular', bench:'Suplente', minutes:'Minutos', goals:'Goles' };
 const fedIcons = { madrid:'MAD', catalunya:'CAT', murcia:'MUR', valencia:'VAL' };
 const dateText = (iso, opts = {}) => new Intl.DateTimeFormat('es-ES', { timeZone:'Europe/Madrid', day:'numeric', month:'long', ...opts }).format(new Date(`${iso}T12:00:00Z`));
-const timestamp = iso => iso ? new Intl.DateTimeFormat('es-ES', { timeZone:'Europe/Madrid', day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' }).format(new Date(iso)) : 'sin actualización';
+const timestamp = iso => iso ? new Intl.DateTimeFormat('es-ES', { timeZone:'Europe/Madrid', day:'2-digit', month:'2-digit', ...(iso.length>10?{hour:'2-digit',minute:'2-digit'}:{}) }).format(new Date(iso)) : 'sin actualización';
 function urlLink(url, text, cls = '') { const href = safeURL(url); return href ? `<a class="${cls}" href="${e(href)}" target="_blank" rel="noopener noreferrer">${text}</a>` : `<span>${text}</span>`; }
 function initials(name) { return name.split(/\s+/).filter(Boolean).slice(0,2).map(s=>s[0]).join(''); }
 function logo(src, name) { const url = safeURL(src); return url ? `<img class="club-logo" src="${e(url)}" alt="Escudo de ${e(name)}" loading="lazy" referrerpolicy="no-referrer">` : `<span class="logo-fallback" aria-hidden="true">${e(initials(name))}</span>`; }
