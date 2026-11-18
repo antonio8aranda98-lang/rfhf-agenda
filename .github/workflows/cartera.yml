@@ -1,68 +1,31 @@
-name: Aplicar cambios de Antonio
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '*/5 * * * *'
+name: Comprobar respuesta publica de BeSoccer
+on: workflow_dispatch
 permissions:
-  contents: write
-  pages: write
-  id-token: write
-concurrency:
-  group: agenda-production
-  cancel-in-progress: false
+  contents: read
 jobs:
   check:
     runs-on: ubuntu-latest
-    outputs:
-      changed: ${{ steps.check.outputs.changed }}
+    timeout-minutes: 3
     steps:
-      - uses: actions/checkout@v6
-        with:
-          ref: main
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - run: pip install -r requirements.txt
-      - id: check
-        run: python scripts/registry_remote.py --check
-  update:
-    needs: check
-    if: needs.check.outputs.changed == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          ref: main
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.12'
-      - run: pip install -r requirements.txt
-      - run: python -m unittest discover -s tests
-      - name: Validar cambios de cartera
-        run: python scripts/registry_remote.py
-      - name: Actualizar agenda
-        continue-on-error: true
-        run: python scripts/sync.py
-      - name: Guardar registro y datos publicados
+      - name: Leer metadatos publicos sin ejecutar JavaScript
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/roster.json docs/data/feed.json docs/data/registry-status.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'Aplicar cambios guardados por Antonio'
-            git push
-          fi
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs
-  deploy:
-    needs: update
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          python -u - <<'PY'
+          import json,re,urllib.request,http.cookiejar,time
+          base='https://es.besoccer.com'
+          opener=urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+          opener.addheaders=[('User-Agent','RFHF-Agenda/1.0 (public football fixtures; github.com/antonio8aranda98-lang/rfhf-agenda)'),('Accept','text/html')]
+          paths=['/equipo/plantilla/ad-sporting-hortaleza-a-juvenil','/jugador/t-arzeno-3867422','/equipo/partidos/ad-sporting-hortaleza-a-juvenil']
+          for path in paths:
+            time.sleep(2)
+            try:
+              req=urllib.request.Request(base+path,headers={'Referer':base,'Accept':'text/html'})
+              with opener.open(req,timeout=30) as r:
+                html=r.read(8000000).decode('utf-8',errors='replace')
+                title=re.search(r'<title[^>]*>(.*?)</title>',html,re.S|re.I)
+                canonical=re.search(r'<link[^>]*canonical[^>]*>',html,re.I)
+                print(json.dumps({'path':path,'status':r.status,'url':r.url,'bytes':len(html),'title':title[1] if title else None,'canonical':canonical[0] if canonical else None,'has_team':'SportsTeam' in html,'has_season':'id="season"' in html,'has_matches':'match-link' in html},ensure_ascii=False))
+            except Exception as e:print(json.dumps({'path':path,'error':type(e).__name__,'message':str(e)[:150]}))
+          PY
