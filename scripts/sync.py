@@ -10,6 +10,8 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
+import urllib.error
+from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -80,17 +82,42 @@ class Client:
         self.last_request = 0
         self.cache = {}
         self.empty_cooldown_used = False
+        self.retry_after = None
+        if urllib.parse.urlparse(base).hostname == 'ffcv.es':
+            try:
+                previous = json.loads((ROOT / 'docs/data/feed.json').read_text())
+                self.retry_after = next((f.get('retry_after') for f in previous.get('federations', []) if f['id'] == 'valencia'), None)
+            except (OSError, ValueError, KeyError):
+                pass
 
     def get(self, url, headers=None):
         if url in self.cache:
             return self.cache[url]
+        if self.retry_after and datetime.fromisoformat(self.retry_after) > datetime.now(timezone.utc):
+            label = datetime.fromisoformat(self.retry_after).astimezone(MADRID).strftime('%d/%m %H:%M')
+            raise ValueError('La FFCV ha solicitado una pausa hasta ' + label + ' (hora de Madrid); se reintentará automáticamente.')
         # The legacy Murcia portal sometimes returns empty HTTP 200 responses.
         # Keep a conservative request rate and pause once before giving up.
-        interval = 8 if 'ffrm.es' in self.base else 2 if 'besoccer.com' in self.base else .65
+        interval = 8 if 'ffrm.es' in self.base else 2 if any(host in self.base for host in ('besoccer.com', 'ffcv.es')) else .65
         time.sleep(max(0, interval - (time.monotonic() - self.last_request)))
         self.last_request = time.monotonic()
         request = urllib.request.Request(url, headers={'Referer': self.base, **(headers or {})})
-        with self.opener.open(request, timeout=35) as response:
+        try:
+            response = self.opener.open(request, timeout=35)
+        except urllib.error.HTTPError as error:
+            if urllib.parse.urlparse(self.base).hostname != 'ffcv.es' or error.code != 429:
+                raise
+            value = error.headers.get('Retry-After', '')
+            try:
+                until = datetime.fromtimestamp(time.time() + max(0, int(value)), timezone.utc) if value.isdigit() else parsedate_to_datetime(value)
+                if until.tzinfo is None: until = until.replace(tzinfo=timezone.utc)
+            except (ValueError, TypeError, OverflowError):
+                until = datetime.fromtimestamp(time.time() + 3600, timezone.utc)
+            self.retry_after = until.astimezone(timezone.utc).isoformat(timespec='seconds')
+            error.close()
+            label = until.astimezone(MADRID).strftime('%d/%m %H:%M')
+            raise ValueError('La FFCV ha solicitado una pausa hasta ' + label + ' (hora de Madrid); se reintentará automáticamente.') from error
+        with response:
             if '/NLogin' in response.url or ('ffcv.es/wp/' in response.url and '/competiciones/' in url):
                 raise ValueError('La fuente redirige fuera de la consulta deportiva pública')
             raw = response.read(8_000_000)
@@ -463,6 +490,9 @@ def sync(browser=False, registry_changes=False):
     for fid, (label, acronym, base) in FEDERATIONS.items():
         client = Client(base)
         configs = [p for p in roster['players'] if p['federation'] == fid and p.get('active', True)]
+        if fid == 'valencia':
+            dates = {p['id']: p.get('updated_at') or '' for p in previous.get('players', [])}
+            configs.sort(key=lambda p: dates.get(p['id'], ''))
         # Normal public landing establishes the same public session as website navigation.
         try:
             if fid not in ('valencia', 'murcia') and (focus is None or any(p['id'] in focus for p in configs)):
@@ -523,6 +553,8 @@ def sync(browser=False, registry_changes=False):
             'status': 'empty' if not configs else 'ok' if successes and not errors else 'partial' if successes else 'error',
             'checked_at': now(), 'last_success': now() if successes and not errors else old_fed.get('last_success'),
             'message': 'Sin jugadores activos' if not configs else 'Consulta automática completada' if successes and not errors else 'No se pudo completar la consulta. Se conserva el último dato válido.', 'failed_players': errors}
+        if getattr(client, 'retry_after', None):
+            meta['retry_after'] = client.retry_after
         if focus is not None and configs and all(p['id'] not in focus for p in configs):
             meta = copy.deepcopy(old_fed)
         elif focus is not None and any(p['id'] not in focus for p in configs):

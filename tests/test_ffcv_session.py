@@ -1,4 +1,5 @@
 import json
+import io
 import sys
 import unittest
 from unittest.mock import patch
@@ -9,6 +10,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from valencia_data import PublicFFCV, BASE, resolve_ffcv, load_valencia
 from registry import name_key
 from categories import team_category
+from sync import Client
+from urllib.error import HTTPError
+from datetime import datetime, timezone
 
 
 class StatefulPublicPortal:
@@ -41,6 +45,17 @@ class FFCVSessionTests(unittest.TestCase):
         api = PublicFFCV(StatefulPublicPortal(wrong_team=True))
         with self.assertRaisesRegex(ValueError, 'otro equipo'):
             api.get('equipos/plantilla_home.php', cod_equipo='14347')
+
+    def test_rate_limit_stops_further_network_requests_until_retry_after(self):
+        client = Client(BASE)
+        client.retry_after = None
+        with patch.object(client.opener, 'open', side_effect=HTTPError(BASE, 429, 'Limit', {'Retry-After': '3600'}, io.BytesIO(b'limit'))) as request, patch('sync.time.sleep'):
+            with self.assertRaisesRegex(ValueError, 'pausa'):
+                client.get(BASE + 'api/first')
+            with self.assertRaisesRegex(ValueError, 'pausa'):
+                client.get(BASE + 'api/second')
+        self.assertEqual(request.call_count, 1)
+        self.assertGreater((datetime.fromisoformat(client.retry_after) - datetime.now(timezone.utc)).total_seconds(), 3500)
 
 
 class SportingAPI:

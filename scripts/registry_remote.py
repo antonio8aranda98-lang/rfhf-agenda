@@ -105,7 +105,10 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
         if p['id'] not in desired_ids:
             p['active'] = False
     updated['registry_revision'] = desired['revision']
-    return updated, {'schema_version':1,'resolver_version':RESOLVER_VERSION,'revision':desired['revision'],'checked_at':now(),'players':results}
+    status = {'schema_version':1,'resolver_version':RESOLVER_VERSION,'revision':desired['revision'],'checked_at':now(),'players':results}
+    if getattr(clients.get('valencia'), 'retry_after', None):
+        status['valencia_retry_after'] = clients['valencia'].retry_after
+    return updated, status
 
 
 def needed(desired, status):
@@ -154,6 +157,9 @@ def main(check=False):
         p['collaborator'] = assignments[p['id']]
     feed['registry_revision'] = desired['revision']
     feed['generated_at'] = now()
+    if status.get('valencia_retry_after'):
+        for federation in feed.get('federations', []):
+            if federation['id'] == 'valencia': federation['retry_after'] = status['valencia_retry_after']
     atomic_json(ROOT/'data/roster.json', updated)
     atomic_json(feed_path, feed)
     atomic_json(path, status)
