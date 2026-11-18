@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T10:23:40+00:00",
+  "generated_at": "2026-11-18T11:06:34+00:00",
   "season": "2026-2027",
   "registry_revision": 3,
   "federations": [
@@ -10,8 +10,8 @@
       "acronym": "RFFM",
       "source": "https://www.rffm.es/",
       "status": "ok",
-      "checked_at": "2026-11-18T10:24:07+00:00",
-      "last_success": "2026-11-18T10:24:07+00:00",
+      "checked_at": "2026-11-18T11:06:55+00:00",
+      "last_success": "2026-11-18T11:06:55+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -21,8 +21,8 @@
       "acronym": "FCF",
       "source": "https://www.fcf.cat/",
       "status": "ok",
-      "checked_at": "2026-11-18T10:24:14+00:00",
-      "last_success": "2026-11-18T10:24:14+00:00",
+      "checked_at": "2026-11-18T11:07:03+00:00",
+      "last_success": "2026-11-18T11:07:03+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -32,8 +32,8 @@
       "acronym": "FFRM",
       "source": "https://www.ffrm.es/pnfg/",
       "status": "ok",
-      "checked_at": "2026-11-18T10:27:50+00:00",
-      "last_success": "2026-11-18T10:27:50+00:00",
+      "checked_at": "2026-11-18T11:10:38+00:00",
+      "last_success": "2026-11-18T11:10:38+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     },
@@ -43,8 +43,8 @@
       "acronym": "FFCV",
       "source": "https://ffcv.es/competiciones/",
       "status": "ok",
-      "checked_at": "2026-11-18T10:28:17+00:00",
-      "last_success": "2026-11-18T10:28:17+00:00",
+      "checked_at": "2026-11-18T11:11:08+00:00",
+      "last_success": "2026-11-18T11:11:08+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
     }
@@ -73,7 +73,7 @@
       },
       "logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
       "stats_note": "Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.",
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "coverage": {
         "team_played": 10,
         "acts_checked": 10,
@@ -104,7 +104,7 @@
       },
       "logo": "https://files.fcf.cat/escudos/clubes/escudos/00100_0001021752_escut.png",
       "stats_note": "Convocatorias, titulares, suplentes y goles según actas. Los minutos quedan sin dato cuando la FCF no publica intervalos de sustitución verificables.",
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "coverage": {
         "team_played": 8,
         "acts_checked": 8,
@@ -135,7 +135,7 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "coverage": {
         "team_played": 8,
         "acts_checked": 6,
@@ -166,7 +166,7 @@
       },
       "logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
       "stats_note": "Estadísticas calculadas con las actas de este equipo y competición. No se mezclan otras participaciones del jugador en equipos A/B. Minutos reglamentarios sin añadido.",
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "coverage": {
         "team_played": 7,
         "acts_checked": 7,
@@ -216,7 +216,7 @@
       "participation_checked_at": {
         "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -264,7 +264,7 @@
       "participation_checked_at": {
         "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -310,9 +310,9 @@
       "home_team_id": "14347",
       "away_team_id": "10711",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-18T10:28:17+00:00"
+        "daniel-otero-serrano": "2026-11-18T11:11:08+00:00"
       },
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -358,9 +358,9 @@
       "home_team_id": "7882963",
       "away_team_id": "24069902",
       "participation_checked_at": {
-        "iker-piqueras-mora": "2026-11-18T10:27:50+00:00"
+        "iker-piqueras-mora": "2026-11-18T11:10:38+00:00"
       },
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -406,9 +406,9 @@
       "home_team_id": "24069902",
       "away_team_id": "48987",
       "participation_checked_at": {
-        "iker-piqueras-mora": "2026-11-18T10:27:50+00:00"
+        "iker-piqueras-mora": "2026-11-18T11:10:38+00:00"
       },
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -454,9 +454,9 @@
       "home_team_id": "15545946",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-18T10:24:14+00:00"
+        "aleix-camarasa-oros": "2026-11-18T11:07:03+00:00"
       },
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -504,7 +504,7 @@
       "participation_checked_at": {
         "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -550,9 +550,9 @@
       "home_team_id": "24652",
       "away_team_id": "14347",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-18T10:28:17+00:00"
+        "daniel-otero-serrano": "2026-11-18T11:11:08+00:00"
       },
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -598,9 +598,9 @@
       "home_team_id": "14347",
       "away_team_id": "14107",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-18T10:28:17+00:00"
+        "daniel-otero-serrano": "2026-11-18T11:11:08+00:00"
       },
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -646,9 +646,9 @@
       "home_team_id": "34741",
       "away_team_id": "24069902",
       "participation_checked_at": {
-        "iker-piqueras-mora": "2026-11-18T10:27:50+00:00"
+        "iker-piqueras-mora": "2026-11-18T11:10:38+00:00"
       },
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -696,7 +696,7 @@
       "participation_checked_at": {
         "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -742,9 +742,9 @@
       "home_team_id": "44581",
       "away_team_id": "19642975",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-18T10:24:14+00:00"
+        "aleix-camarasa-oros": "2026-11-18T11:07:03+00:00"
       },
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -790,9 +790,9 @@
       "home_team_id": "50600672",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-18T10:24:14+00:00"
+        "aleix-camarasa-oros": "2026-11-18T11:07:03+00:00"
       },
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -840,7 +840,7 @@
       "participation_checked_at": {
         "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -886,9 +886,9 @@
       "home_team_id": "56726",
       "away_team_id": "24069902",
       "participation_checked_at": {
-        "iker-piqueras-mora": "2026-11-18T10:27:50+00:00"
+        "iker-piqueras-mora": "2026-11-18T11:10:38+00:00"
       },
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -934,9 +934,9 @@
       "home_team_id": "44581",
       "away_team_id": "34021",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-18T10:24:14+00:00"
+        "aleix-camarasa-oros": "2026-11-18T11:07:03+00:00"
       },
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -984,7 +984,7 @@
       "participation_checked_at": {
         "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1032,7 +1032,7 @@
       "participation_checked_at": {
         "iker-piqueras-mora": "2026-11-17"
       },
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -1078,9 +1078,9 @@
       "home_team_id": "14347",
       "away_team_id": "19231",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-18T10:28:17+00:00"
+        "daniel-otero-serrano": "2026-11-18T11:11:08+00:00"
       },
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -1126,9 +1126,9 @@
       "home_team_id": "34471",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-18T10:24:14+00:00"
+        "aleix-camarasa-oros": "2026-11-18T11:07:03+00:00"
       },
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1176,7 +1176,7 @@
       "participation_checked_at": {
         "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1211,7 +1211,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1257,9 +1257,9 @@
       "home_team_id": "19963",
       "away_team_id": "14347",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-18T10:28:17+00:00"
+        "daniel-otero-serrano": "2026-11-18T11:11:08+00:00"
       },
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1307,7 +1307,7 @@
       "participation_checked_at": {
         "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -1353,9 +1353,9 @@
       "home_team_id": "44581",
       "away_team_id": "35883",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-18T10:24:14+00:00"
+        "aleix-camarasa-oros": "2026-11-18T11:07:03+00:00"
       },
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -1390,7 +1390,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -1436,9 +1436,9 @@
       "home_team_id": "38207",
       "away_team_id": "44581",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-18T10:24:14+00:00"
+        "aleix-camarasa-oros": "2026-11-18T11:07:03+00:00"
       },
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1484,9 +1484,9 @@
       "home_team_id": "15752",
       "away_team_id": "14347",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-18T10:28:17+00:00"
+        "daniel-otero-serrano": "2026-11-18T11:11:08+00:00"
       },
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1532,9 +1532,9 @@
       "home_team_id": "599",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
+        "jorge-martin-andres": "2026-11-18T11:06:55+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1580,7 +1580,7 @@
       "participation_checked_at": {
         "iker-piqueras-mora": "2026-11-17T15:14:21+00:00"
       },
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -1626,9 +1626,9 @@
       "home_team_id": "2023",
       "away_team_id": "920",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
+        "jorge-martin-andres": "2026-11-18T11:06:55+00:00"
       },
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -1674,9 +1674,9 @@
       "home_team_id": "14347",
       "away_team_id": "15769",
       "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-18T10:28:17+00:00"
+        "daniel-otero-serrano": "2026-11-18T11:11:08+00:00"
       },
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -1722,9 +1722,9 @@
       "home_team_id": "44581",
       "away_team_id": "21219888",
       "participation_checked_at": {
-        "aleix-camarasa-oros": "2026-11-18T10:24:14+00:00"
+        "aleix-camarasa-oros": "2026-11-18T11:07:03+00:00"
       },
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -1761,7 +1761,7 @@
       "home_team_id": "22701",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1796,7 +1796,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -1833,7 +1833,7 @@
       "home_team_id": "14488",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1870,7 +1870,7 @@
       "home_team_id": "21492710",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -1907,7 +1907,7 @@
       "home_team_id": "44581",
       "away_team_id": "15558236",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -1944,7 +1944,7 @@
       "home_team_id": "2023",
       "away_team_id": "548",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -1981,7 +1981,7 @@
       "home_team_id": "14347",
       "away_team_id": "14593",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -2018,7 +2018,7 @@
       "home_team_id": "35378723",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2053,7 +2053,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2088,7 +2088,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2125,7 +2125,7 @@
       "home_team_id": "481",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2162,7 +2162,7 @@
       "home_team_id": "16360",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2199,7 +2199,7 @@
       "home_team_id": "44581",
       "away_team_id": "35238",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -2234,7 +2234,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -2271,7 +2271,7 @@
       "home_team_id": "34172",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2308,7 +2308,7 @@
       "home_team_id": "14347",
       "away_team_id": "15024",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -2345,7 +2345,7 @@
       "home_team_id": "2023",
       "away_team_id": "15294614",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -2380,7 +2380,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2417,7 +2417,7 @@
       "home_team_id": "44581",
       "away_team_id": "35537",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -2454,7 +2454,7 @@
       "home_team_id": "14352",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2489,7 +2489,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2526,7 +2526,7 @@
       "home_team_id": "35950",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2563,7 +2563,7 @@
       "home_team_id": "14347",
       "away_team_id": "18417",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -2600,7 +2600,7 @@
       "home_team_id": "2453",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2635,7 +2635,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -2672,7 +2672,7 @@
       "home_team_id": "297201",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2709,7 +2709,7 @@
       "home_team_id": "44581",
       "away_team_id": "37800",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -2746,7 +2746,7 @@
       "home_team_id": "2023",
       "away_team_id": "1175",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -2781,7 +2781,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -2818,7 +2818,7 @@
       "home_team_id": "10711",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2855,7 +2855,7 @@
       "home_team_id": "1402",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -2892,7 +2892,7 @@
       "home_team_id": "44581",
       "away_team_id": "15545946",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -2929,7 +2929,7 @@
       "home_team_id": "14347",
       "away_team_id": "24652",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -2966,7 +2966,7 @@
       "home_team_id": "3347198",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3001,7 +3001,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3038,7 +3038,7 @@
       "home_team_id": "19642975",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3075,7 +3075,7 @@
       "home_team_id": "14107",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3112,7 +3112,7 @@
       "home_team_id": "2023",
       "away_team_id": "6",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -3149,7 +3149,7 @@
       "home_team_id": "14347",
       "away_team_id": "22701",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -3186,7 +3186,7 @@
       "home_team_id": "44581",
       "away_team_id": "50600672",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -3223,7 +3223,7 @@
       "home_team_id": "75",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3258,7 +3258,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -3295,7 +3295,7 @@
       "home_team_id": "19231",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3332,7 +3332,7 @@
       "home_team_id": "34021",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3367,7 +3367,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -3404,7 +3404,7 @@
       "home_team_id": "2023",
       "away_team_id": "1312",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -3441,7 +3441,7 @@
       "home_team_id": "14347",
       "away_team_id": "19963",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -3478,7 +3478,7 @@
       "home_team_id": "44581",
       "away_team_id": "34471",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -3515,7 +3515,7 @@
       "home_team_id": "410",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3552,7 +3552,7 @@
       "home_team_id": "14347",
       "away_team_id": "15752",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -3589,7 +3589,7 @@
       "home_team_id": "35883",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3626,7 +3626,7 @@
       "home_team_id": "2023",
       "away_team_id": "466507",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -3661,7 +3661,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -3698,7 +3698,7 @@
       "home_team_id": "44581",
       "away_team_id": "38207",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -3735,7 +3735,7 @@
       "home_team_id": "2023",
       "away_team_id": "1794",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -3770,7 +3770,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3807,7 +3807,7 @@
       "home_team_id": "15769",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3844,7 +3844,7 @@
       "home_team_id": "21219888",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3881,7 +3881,7 @@
       "home_team_id": "3353458",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3916,7 +3916,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -3953,7 +3953,7 @@
       "home_team_id": "15558236",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -3990,7 +3990,7 @@
       "home_team_id": "14347",
       "away_team_id": "14488",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -4027,7 +4027,7 @@
       "home_team_id": "2023",
       "away_team_id": "599",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -4062,7 +4062,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4099,7 +4099,7 @@
       "home_team_id": "14593",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4136,7 +4136,7 @@
       "home_team_id": "44581",
       "away_team_id": "35378723",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -4171,7 +4171,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4208,7 +4208,7 @@
       "home_team_id": "920",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4245,7 +4245,7 @@
       "home_team_id": "14347",
       "away_team_id": "16360",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -4282,7 +4282,7 @@
       "home_team_id": "35238",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4319,7 +4319,7 @@
       "home_team_id": "2023",
       "away_team_id": "21492710",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -4354,7 +4354,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4391,7 +4391,7 @@
       "home_team_id": "15024",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4428,7 +4428,7 @@
       "home_team_id": "44581",
       "away_team_id": "34172",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -4465,7 +4465,7 @@
       "home_team_id": "548",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4500,7 +4500,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -4537,7 +4537,7 @@
       "home_team_id": "35537",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4574,7 +4574,7 @@
       "home_team_id": "14347",
       "away_team_id": "14352",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -4611,7 +4611,7 @@
       "home_team_id": "2023",
       "away_team_id": "481",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -4646,7 +4646,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4683,7 +4683,7 @@
       "home_team_id": "44581",
       "away_team_id": "35950",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [
         "aleix-camarasa-oros"
@@ -4720,7 +4720,7 @@
       "home_team_id": "18417",
       "away_team_id": "14347",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4757,7 +4757,7 @@
       "home_team_id": "15294614",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4792,7 +4792,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -4829,7 +4829,7 @@
       "home_team_id": "37800",
       "away_team_id": "44581",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:14+00:00",
+      "updated_at": "2026-11-18T11:07:03+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -4866,7 +4866,7 @@
       "home_team_id": "14347",
       "away_team_id": "297201",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:28:17+00:00",
+      "updated_at": "2026-11-18T11:11:08+00:00",
       "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
@@ -4903,7 +4903,7 @@
       "home_team_id": "2023",
       "away_team_id": "2453",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
@@ -4938,7 +4938,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
@@ -4975,7 +4975,7 @@
       "home_team_id": "1175",
       "away_team_id": "2023",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -5010,7 +5010,7 @@
       "season": "2026-2027",
       "participation": {},
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:27:50+00:00",
+      "updated_at": "2026-11-18T11:10:38+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
@@ -5047,7 +5047,7 @@
       "home_team_id": "2023",
       "away_team_id": "1402",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T10:24:07+00:00",
+      "updated_at": "2026-11-18T11:06:55+00:00",
       "participation_source": {},
       "home_player_ids": [
         "jorge-martin-andres"
