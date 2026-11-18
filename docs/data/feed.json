@@ -1921,39 +1921,39 @@
       "team_age_category": "juvenil",
       "stats": {
         "team_played": 9,
-        "called_up": null,
-        "starts": null,
-        "bench": null,
-        "minutes": null,
-        "goals": null,
-        "played": null,
+        "called_up": 2,
+        "starts": 1,
+        "bench": 1,
+        "minutes": 55,
+        "goals": 0,
+        "played": 2,
         "assists": null,
         "yellow": null,
         "red": null
       },
       "logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012184056_Escudo_Uni__n_Adarve.jpg",
       "stats_note": "Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.",
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "coverage": {
         "team_played": 9,
-        "acts_checked": 8,
-        "minutes_checked": 8,
+        "acts_checked": 9,
+        "minutes_checked": 9,
         "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
         "confirmed": {
-          "called_up": 1,
+          "called_up": 2,
           "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 45,
+          "bench": 1,
+          "played": 2,
+          "minutes": 55,
           "goals": 0
         },
         "field_checked": {
-          "called_up": 8,
-          "starts": 8,
-          "bench": 8,
-          "played": 8,
-          "minutes": 8,
-          "goals": 8
+          "called_up": 9,
+          "starts": 9,
+          "bench": 9,
+          "played": 9,
+          "minutes": 9,
+          "goals": 9
         }
       }
     },
@@ -9145,7 +9145,8 @@
         "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": "2026-11-18T11:22:10+00:00",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00"
       },
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "updated_at": "2026-11-18T21:16:06+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
@@ -9155,8 +9156,7 @@
         "p-32d2dfc7-11bf-4956-a267-59fda04aae64",
         "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd"
       ],
-      "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "is_internal_matchup": true
     },
     {
       "id": "valencia-26478941",
@@ -12296,15 +12296,15 @@
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-18T11:21:31+00:00",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00"
       },
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "updated_at": "2026-11-18T21:16:06+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578617",
@@ -13251,15 +13251,15 @@
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-18T11:21:31+00:00",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00"
       },
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "updated_at": "2026-11-18T21:16:06+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14472340-3",
@@ -20309,7 +20309,8 @@
         "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": "2026-11-18T11:22:42+00:00",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00"
       },
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "updated_at": "2026-11-18T21:16:06+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
@@ -20318,8 +20319,7 @@
       "away_player_ids": [
         "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f"
       ],
-      "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-5580958",
@@ -22618,15 +22618,15 @@
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-18T11:21:31+00:00",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00"
       },
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "updated_at": "2026-11-18T21:16:06+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584639",
@@ -26948,7 +26948,8 @@
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00",
         "p-85788fbf-28ec-422a-bb16-b627987f3fb4": "2026-11-18T16:27:38+00:00"
       },
-      "updated_at": "2026-11-18T16:27:38+00:00",
+      "updated_at": "2026-11-18T21:16:06+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
@@ -26958,8 +26959,7 @@
         "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f",
         "p-85788fbf-28ec-422a-bb16-b627987f3fb4"
       ],
-      "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-5578352",
@@ -37338,15 +37338,15 @@
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-18T11:21:31+00:00",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00"
       },
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "updated_at": "2026-11-18T21:16:06+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5738841",
@@ -38342,9 +38342,12 @@
       "participation_checked_at": {
         "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-18T11:21:14+00:00",
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-18T11:21:31+00:00",
-        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00"
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T21:16:06+00:00"
       },
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T21:16:01+00:00"
+      },
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-2fb0301e-10cd-4e1d-9e61-4671ba184626"
@@ -38353,8 +38356,7 @@
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-5584366",
@@ -42969,19 +42971,32 @@
       "competition_id": "26738130",
       "group_id": "26738131",
       "season": "2026-2027",
-      "participation": {},
+      "participation": {
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 10,
+          "goals": 0
+        }
+      },
       "home_team_id": "1594",
       "away_team_id": "295",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T21:16:01+00:00"
+      },
+      "participation_checked_at": {
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T21:16:04+00:00"
+      },
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5594678",
@@ -46357,16 +46372,16 @@
       "participation": {},
       "home_team_id": "563",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5582545",
@@ -49067,16 +49082,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "2733676",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4154411",
@@ -50523,6 +50538,51 @@
       "participation_attempted_at": {}
     },
     {
+      "id": "madrid-5578405",
+      "federation": "madrid",
+      "player_ids": [
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4",
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b",
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2",
+        "p-e4dd0824-491d-4f64-80e4-1c355db22405"
+      ],
+      "home": "A.D. UNION ADARVE 'B'",
+      "away": "ARAVACA C.F. - CEIBA 'A'",
+      "date": "2026-11-29",
+      "time": "19:30",
+      "status": "scheduled",
+      "source": "https://www.rffm.es/acta-partido/5578405",
+      "venue": "VEREDA GANAPANES 1 (HA)",
+      "locality": "0",
+      "address": "CALLE BECERREÁ 4",
+      "latitude": "40.470661",
+      "longitude": "-3.713515",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012184056_Escudo_Uni__n_Adarve.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012083236_logo.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 12,
+      "competition_id": "26738130",
+      "group_id": "26738131",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "1594",
+      "away_team_id": "107",
+      "updated_at": "2026-11-18T21:16:06+00:00",
+      "participation_checked_at": {},
+      "participation_attempted_at": {},
+      "participation_source": {},
+      "home_player_ids": [
+        "p-e4dd0824-491d-4f64-80e4-1c355db22405",
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
+      ],
+      "away_player_ids": [
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4",
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b"
+      ],
+      "is_internal_matchup": true
+    },
+    {
       "id": "catalunya-4194942",
       "federation": "catalunya",
       "player_ids": [
@@ -50598,51 +50658,6 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
-    },
-    {
-      "id": "madrid-5578405",
-      "federation": "madrid",
-      "player_ids": [
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b",
-        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2",
-        "p-e4dd0824-491d-4f64-80e4-1c355db22405"
-      ],
-      "home": "A.D. UNION ADARVE 'B'",
-      "away": "ARAVACA C.F. - CEIBA 'A'",
-      "date": "2026-11-29",
-      "time": null,
-      "status": "time_pending",
-      "source": "https://www.rffm.es/acta-partido/5578405",
-      "venue": "VEREDA GANAPANES 2 (HA)(HA)",
-      "locality": "Madrid",
-      "address": "CALLE BECERREÁ 4",
-      "latitude": "40.470647",
-      "longitude": "-3.713545",
-      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012184056_Escudo_Uni__n_Adarve.jpg",
-      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012083236_logo.png",
-      "score_home": null,
-      "score_away": null,
-      "round": 12,
-      "competition_id": "26738130",
-      "group_id": "26738131",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "1594",
-      "away_team_id": "107",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
-      "participation_source": {},
-      "home_player_ids": [
-        "p-e4dd0824-491d-4f64-80e4-1c355db22405",
-        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
-      ],
-      "away_player_ids": [
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b"
-      ],
-      "is_internal_matchup": true,
       "participation_attempted_at": {}
     },
     {
@@ -54320,16 +54335,16 @@
       "participation": {},
       "home_team_id": "96",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578414",
@@ -58005,16 +58020,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "21",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578423",
@@ -62224,16 +62239,16 @@
       "participation": {},
       "home_team_id": "846484",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578431",
@@ -65484,16 +65499,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "282",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578440",
@@ -68776,16 +68791,16 @@
       "participation": {},
       "home_team_id": "5",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578448",
@@ -71657,8 +71672,9 @@
       "participation": {},
       "home_team_id": "73",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-32d2dfc7-11bf-4956-a267-59fda04aae64",
@@ -71668,8 +71684,7 @@
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-5578768",
@@ -74882,16 +74897,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "846481",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578770",
@@ -77875,16 +77890,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "2173",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578787",
@@ -81065,8 +81080,9 @@
       "participation": {},
       "home_team_id": "60",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f"
@@ -81075,8 +81091,7 @@
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-5578788",
@@ -84173,16 +84188,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "48",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578499",
@@ -87390,8 +87405,9 @@
       "participation": {},
       "home_team_id": "2365",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:27:38+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f",
@@ -87401,8 +87417,7 @@
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-5578508",
@@ -90455,16 +90470,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "680081",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578516",
@@ -93796,16 +93811,16 @@
       "participation": {},
       "home_team_id": "2733676",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578525",
@@ -96944,8 +96959,9 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "2128",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
@@ -96954,8 +96970,7 @@
       "away_player_ids": [
         "p-2fb0301e-10cd-4e1d-9e61-4671ba184626"
       ],
-      "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-5578533",
@@ -100245,16 +100260,16 @@
       "participation": {},
       "home_team_id": "295",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578542",
@@ -103552,16 +103567,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "563",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578550",
@@ -106694,8 +106709,9 @@
       "participation": {},
       "home_team_id": "107",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-3a3f813a-e798-41d3-af09-98ced829fef4",
@@ -106705,8 +106721,7 @@
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-5578559",
@@ -110104,16 +110119,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "96",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578567",
@@ -113130,16 +113145,16 @@
       "participation": {},
       "home_team_id": "21",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578576",
@@ -115952,16 +115967,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "846484",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578584",
@@ -117937,16 +117952,16 @@
       "participation": {},
       "home_team_id": "282",
       "away_team_id": "1594",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578593",
@@ -119762,16 +119777,16 @@
       "participation": {},
       "home_team_id": "1594",
       "away_team_id": "5",
+      "updated_at": "2026-11-18T21:16:06+00:00",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T11:22:43+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-e4dd0824-491d-4f64-80e4-1c355db22405",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5578601",
