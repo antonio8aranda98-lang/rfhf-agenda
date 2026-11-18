@@ -11,6 +11,7 @@ from sync import ROOT, ADAPTERS, FEDERATIONS, Client, apply_roster, now
 from besoccer_data import FIELDS, PublicBeSoccer, resolve as resolve_besoccer
 
 REGISTRY = 'https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/api/registry'
+RESOLVER_VERSION = 2
 
 
 def fetch_registry():
@@ -53,7 +54,8 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
                         if not verified.get('matches'):
                             raise ValueError('No se ha podido volver a verificar el calendario')
                 links_changed = entry.get('besoccer_team_source', '') != existing.get('besoccer_team_source', '') or entry.get('besoccer_player_source', '') != existing.get('besoccer_requested_player_source', existing.get('besoccer_player_source', ''))
-                if links_changed:
+                migrated = existing.get('source_request') == entry.get('source')
+                if links_changed and not migrated:
                     if entry.get('besoccer_team_source'):
                         linked = resolve_besoccer(PublicBeSoccer(Client('https://es.besoccer.com')), entry, current['season'])
                         existing.update({k:v for k,v in linked.items() if k.startswith('besoccer_')})
@@ -88,10 +90,12 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
         if p['id'] not in desired_ids:
             p['active'] = False
     updated['registry_revision'] = desired['revision']
-    return updated, {'schema_version':1,'revision':desired['revision'],'checked_at':now(),'players':results}
+    return updated, {'schema_version':1,'resolver_version':RESOLVER_VERSION,'revision':desired['revision'],'checked_at':now(),'players':results}
 
 
 def needed(desired, status):
+    if status.get('resolver_version') != RESOLVER_VERSION:
+        return True
     if desired['revision'] != status.get('revision'):
         return True
     pending = any(p['state']=='pending' for p in status.get('players', []))

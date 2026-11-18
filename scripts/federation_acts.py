@@ -11,11 +11,17 @@ def public_digits(element, document):
     """Read displayed score glyphs, excluding hidden decoy text; never eval JS."""
     import copy
     node = copy.deepcopy(element)
-    source = str(document)
+    source = document.__dict__.get('_rfhf_score_source')
+    if source is None:
+        source = str(document)
+        document.__dict__['_rfhf_score_source'] = source
     for script in list(node.find_all('script')):
         for id, number, block in re.findall(r'ntype\(["\x27]([^"\x27]+)["\x27],\s*(\d+),\s*(\d+),', script.get_text()):
-            arrays = [re.search(r'\[(?:\s*\d+\s*,){39}\s*\d+\s*\]', s.get_text()) for s in document.find_all('script') if 'ntype' in s.get_text()]
-            encoded = next((m[0] for m in arrays if m), None)
+            encoded = document.__dict__.get('_rfhf_score_mapping')
+            if encoded is None:
+                arrays = [re.search(r'\[(?:\s*\d+\s*,){39}\s*\d+\s*\]', s.get_text()) for s in document.find_all('script') if 'ntype' in s.get_text()]
+                encoded = next((m[0] for m in arrays if m), None)
+                document.__dict__['_rfhf_score_mapping'] = encoded
             if not encoded:
                 raise ValueError('Ha cambiado la representación de los marcadores de Murcia')
             mapping = json.loads(encoded)

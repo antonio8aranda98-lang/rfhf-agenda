@@ -36,10 +36,10 @@ function render() {
   const stale=!fed.last_success || Date.now()-new Date(fed.last_success).getTime()>12*3600*1000;
   const partialStats=people.filter(p=>Object.keys(statNames).some(k=>p.stats?.[k]==null));
   const detail=partialStats.length===1&&partialStats[0].coverage?.acts_checked<(partialStats[0].stats?.team_played||0)?`Participación verificada en ${partialStats[0].coverage.acts_checked}/${partialStats[0].stats.team_played} partidos.`:'Algunos datos individuales siguen pendientes.';
-  const providers=people.some(p=>p.provider==='besoccer')?(people.every(p=>p.provider==='besoccer')?'BeSoccer':fed.acronym+' y BeSoccer'):fed.acronym;
+  const providers=[...new Set(people.map(p=>p.source_acronym||(p.provider==='besoccer'?'BeSoccer':fed.acronym)))].join(', ');
   const sourceText=!people.length?'No hay jugadores publicados con este filtro.':fed.status==='ok'&&!stale?`Calendario de ${providers} · Actualizado el ${timestamp(fed.last_success)}${partialStats.length?' · '+detail:''}`:`${fed.status==='ok'?'Datos antiguos':'Consulta automática incompleta'} · Último dato válido: ${timestamp(fed.last_success)}. Comprueba la fuente.`;
   $('#source-status').classList.toggle('warning',!!people.length&&(fed.status!=='ok'||stale||!!partialStats.length));
-  $('#source-status').innerHTML=`<span class="dot"></span><span>${e(sourceText)} ${urlLink(fed.source,'Fuente oficial ↗')}</span>`;
+  $('#source-status').innerHTML=`<span class="dot"></span><span>${e(sourceText)} ${people.some(p=>p.source_acronym)?'Consulta la fuente en cada jugador.':urlLink(fed.source,'Fuente oficial ↗')}</span>`;
   const countPending=games.filter(m=>m.status==='time_pending').length;
   const metric=(label,val,small='',highlight=false)=>`<div class="metric ${highlight?'highlight':''}"><div class="metric-label">${label}</div><div class="metric-value">${val}${small?`<small>${small}</small>`:''}</div></div>`;
   $('#metrics').innerHTML=metric('JUGADORES ASIGNADOS',String(people.length).padStart(2,'0'))+metric('PARTIDOS ESTE FINDE',String(games.length).padStart(2,'0'),'',true)+metric('VISITAS PLANIFICADAS',String(games.filter(m=>planned.has(m.id)).length).padStart(2,'0'))+metric('HORARIOS PENDIENTES',String(countPending).padStart(2,'0'));
@@ -58,7 +58,7 @@ function matchCard(m, games) {
   const conflict=games.some(other=>overlaps(m,other));
   const score=m.status==='finished'?`${m.score_home} – ${m.score_away}`:null;
   const location=m.venue?[m.venue,m.locality].filter(Boolean).join(' · '):'Campo pendiente de publicación';
-  const dayStatus={scheduled:'Horario publicado',time_pending:'Horario pendiente',finished:'Finalizado',postponed:'Aplazado',cancelled:'Cancelado'}[m.status]||'Pendiente';
+  const dayStatus=m.date_precision==='round'?'Fecha de jornada · día y hora por confirmar':({scheduled:'Horario publicado',time_pending:'Horario pendiente',finished:'Finalizado',postponed:'Aplazado',cancelled:'Cancelado'}[m.status]||'Pendiente');
   return `<article class="match ${planned.has(m.id)?'planned':''}" data-match="${e(m.id)}"><div class="match-time"><strong class="clock ${!m.time?'pending':''}">${e(score||m.time||'Por confirmar')}</strong><small>${score?'RESULTADO':m.time?'HORA LOCAL':'JORNADA'}</small></div><div class="match-body"><div class="opponents"><span class="team">${logo(m.home_logo,m.home)}${e(m.home)}</span><span class="versus">vs</span><span class="team">${logo(m.away_logo,m.away)}${e(m.away)}</span></div><div class="venue"><svg viewBox="0 0 16 20" aria-hidden="true"><path d="M14 7c0 5-6 11-6 11S2 12 2 7a6 6 0 0 1 12 0Z"/><circle cx="8" cy="7" r="2"/></svg>${maps(m)?urlLink(maps(m),e(location)):e(location)}</div><div class="match-players">${players.map(p=>`<button class="player-chip" data-player="${e(p.id)}">↗ ${e(p.name)}</button>`).join('')}</div>${conflict?'<div class="conflict">↔ Se solapa con otro partido de esta agenda</div>':''}</div><div class="match-actions"><span class="match-badge">${e(dayStatus)}${m.round?' · J'+m.round:''}</span><button class="star-button" data-plan="${e(m.id)}" aria-pressed="${planned.has(m.id)}">${planned.has(m.id)?'★ Visita guardada':'☆ Planificar visita'}</button><div class="links">${maps(m)?urlLink(maps(m),'Cómo llegar ↗'):''}${urlLink(m.source,'Fuente ↗')}</div></div></article>`;
 }
 function renderAgenda(days,games) {

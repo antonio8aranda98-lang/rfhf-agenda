@@ -53,6 +53,10 @@ def resolve_player(request, roster, client=None):
     duration = request.get('match_duration')
     if type(duration) is not int or duration not in (60, 70, 80, 90):
         raise ValueError('Selecciona la duración reglamentaria de la categoría')
+    from official_sources import resolve as resolve_official
+    alternative = resolve_official(client or Client('https://es.besoccer.com'), request, roster['season'])
+    if alternative:
+        return alternative
     if is_besoccer(request.get('source')):
         linked = resolve_besoccer(PublicBeSoccer(client or Client('https://es.besoccer.com')), request, roster['season'])
         result = {**linked, 'provider':'besoccer', 'source':linked['besoccer_team_source'],

@@ -371,6 +371,9 @@ ADAPTERS = {'madrid': madrid, 'catalunya': catalunya, 'murcia': murcia, 'valenci
 
 
 def collect_player(client, secondary_client, player, previous=()):
+    from official_sources import PROVIDERS, client_for, adapter as official_adapter
+    if player.get('provider') in PROVIDERS:
+        return official_adapter(client_for(secondary_client,player['provider']),player,previous)
     from besoccer_data import PublicBeSoccer, adapter, enrich_official
     api = PublicBeSoccer(secondary_client)
     if player.get('provider') == 'besoccer':
@@ -442,7 +445,7 @@ def sync(browser=False, registry_changes=False):
             old_player = next((p for p in previous.get('players', []) if p['id'] == config['id']), {})
             public = {k: config[k] for k in ('id', 'name', 'federation', 'collaborator', 'team', 'competition_label', 'source')}
             public['provider'] = config.get('provider', 'federation')
-            public.update({k:config[k] for k in ('age_category','team_age_category') if config.get(k)})
+            public.update({k:config[k] for k in ('age_category','team_age_category','source_acronym') if config.get(k)})
             public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source') if config.get(k)})
             if focus is not None and config['id'] not in focus:
                 public.update({k:old_player[k] for k in ('stats','logo','stats_note','updated_at','coverage','secondary_stats','secondary_warning') if k in old_player})

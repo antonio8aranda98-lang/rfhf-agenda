@@ -3,7 +3,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from registry_remote import reconcile, needed
+from registry_remote import reconcile, needed, RESOLVER_VERSION
 from valencia_data import act_participation
 
 
@@ -42,7 +42,17 @@ class RemoteRegistryTests(unittest.TestCase):
         self.assertEqual(len(updated['players']),1);self.assertFalse(updated['players'][0]['active'])
 
     def test_checks_skip_unchanged_revision_without_pending_players(self):
-        self.assertFalse(needed(self.desired,{'revision':2,'players':[{'state':'verified'}]}));self.assertTrue(needed(self.desired,{'revision':1}))
+        self.assertFalse(needed(self.desired,{'resolver_version':RESOLVER_VERSION,'revision':2,'players':[{'state':'verified'}]}));self.assertTrue(needed(self.desired,{'revision':1}))
+
+    def test_new_resolver_rechecks_unchanged_registry(self):
+        self.assertTrue(needed(self.desired,{'revision':2,'players':[{'state':'verified'}]}))
+
+    def test_official_migration_does_not_reenable_blocked_secondary_source(self):
+        self.current['players'][0].update(source_request='https://es.besoccer.com/equipo/cd-alfaro',provider='frf')
+        self.desired['players'][0].update(source='https://es.besoccer.com/equipo/cd-alfaro',besoccer_team_source='https://es.besoccer.com/equipo/cd-alfaro')
+        updated,status=reconcile(self.current,self.desired)
+        self.assertEqual(status['players'][0]['state'],'verified')
+        self.assertNotIn('besoccer_team_source',updated['players'][0])
 
 
 class FFCVParticipationTests(unittest.TestCase):
