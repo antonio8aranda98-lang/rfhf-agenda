@@ -98,3 +98,14 @@ class RegistryRefreshTests(unittest.TestCase):
             calls.append(True);return {'matches':[copy.deepcopy(game)],'stats':{}}
         result=self.run_refresh(roster,baseline,refresh)
         self.assertEqual(len(calls),1);self.assertEqual(len(result['matches']),1)
+
+    def test_opponent_fixture_does_not_replace_first_successful_player_read(self):
+        import copy
+        roster,baseline=self.fixture();baseline['players'][0]['updated_at']=None;calls=[]
+        game=baseline['matches'][0]
+        def refresh(*args):
+            calls.append(True)
+            return {'matches':[copy.deepcopy(game)],'stats':{},'checked_at':'2026-11-18T12:15:52+00:00'}
+        result=self.run_refresh(roster,baseline,refresh)
+        self.assertEqual(len(calls),1)
+        self.assertEqual(result['players'][0]['updated_at'],'2026-11-18T12:15:52+00:00')

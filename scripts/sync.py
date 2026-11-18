@@ -420,7 +420,7 @@ def sync(browser=False, registry_changes=False):
     if registry_changes:
         identity_fields = ('source','besoccer_team_source','besoccer_player_source','official_adapter_version')
         with_matches={id for m in previous.get('matches',[]) for id in m['player_ids']}
-        focus = {p['id'] for p in roster['players'] if p.get('active',True) and (p['id'] not in old_players or p['id'] not in with_matches or any(p.get(k) != old_players[p['id']].get(k) for k in identity_fields))}
+        focus = {p['id'] for p in roster['players'] if p.get('active',True) and (p['id'] not in old_players or not old_players[p['id']].get('updated_at') or p['id'] not in with_matches or any(p.get(k) != old_players[p['id']].get(k) for k in identity_fields))}
     if browser:
         run = subprocess.run(['node', 'scripts/valencia.mjs'], cwd=ROOT, timeout=360, check=False)
         if run.returncode:
