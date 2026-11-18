@@ -1082,7 +1082,24 @@
       "match_duration": 80,
       "active": true,
       "age_category": "cadete"
+    },
+    {
+      "team_id": "34788204",
+      "club_id": "3422",
+      "group_id": "58161927",
+      "player_id": "27724157",
+      "team": "FUNDACIÓ P. F.BASE REUS \"A\"",
+      "source": "https://www.fcf.cat/ca/clubs/fundacio-p-fbase-reus/categories/fundacio-p-fbase-reus-a-nj",
+      "official_name": "DIAZ CENTELLES, ANDREU",
+      "competition_label": "LLIGA NACIONAL JUVENIL · GRUP 7",
+      "id": "p-241a5873-e1ac-4408-ac98-e2d44219156a",
+      "name": "Andreu Diaz Centelles",
+      "federation": "catalunya",
+      "collaborator": "Miquel Mayor",
+      "match_duration": 90,
+      "active": true,
+      "age_category": "juvenil"
     }
   ],
-  "registry_revision": 6
+  "registry_revision": 8
 }

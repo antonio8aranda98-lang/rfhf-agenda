@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "revision": 6,
-  "checked_at": "2026-11-18T12:11:01+00:00",
+  "revision": 8,
+  "checked_at": "2026-11-18T12:22:32+00:00",
   "players": [
     {
       "id": "jorge-martin-andres",
@@ -381,8 +381,7 @@
     },
     {
       "id": "p-660db819-7d2f-43b2-8c7c-1cfc148c322d",
-      "state": "pending",
-      "message": "BeSoccer solicita una verificación al actualizador y no ha entregado datos deportivos. El alta queda pendiente."
+      "state": "inactive"
     },
     {
       "id": "p-dd36db37-f4e0-4936-98b9-0dcdff256637",
@@ -404,6 +403,10 @@
       "id": "p-47bbeba1-c04c-42b3-be12-9c4834885cbd",
       "state": "pending",
       "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-241a5873-e1ac-4408-ac98-e2d44219156a",
+      "state": "verified"
     }
   ]
 }
