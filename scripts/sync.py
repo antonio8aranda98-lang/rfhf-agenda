@@ -89,13 +89,20 @@ class Client:
                 self.retry_after = next((f.get('retry_after') for f in previous.get('federations', []) if f['id'] == 'valencia'), None)
             except (OSError, ValueError, KeyError):
                 pass
+            try:
+                settings = json.loads((ROOT / 'docs/data/settings.json').read_text())
+                deadline = settings.get('source_pauses', {}).get('valencia')
+                if deadline and (not self.retry_after or datetime.fromisoformat(deadline) > datetime.fromisoformat(self.retry_after)):
+                    self.retry_after = deadline
+            except (OSError, ValueError, TypeError):
+                pass
 
     def get(self, url, headers=None):
         if url in self.cache:
             return self.cache[url]
         if self.retry_after and datetime.fromisoformat(self.retry_after) > datetime.now(timezone.utc):
             label = datetime.fromisoformat(self.retry_after).astimezone(MADRID).strftime('%d/%m %H:%M')
-            raise ValueError('La FFCV ha solicitado una pausa hasta ' + label + ' (hora de Madrid); se reintentará automáticamente.')
+            raise ValueError('Las consultas a la FFCV están pausadas hasta ' + label + ' (hora de Madrid); se reintentará automáticamente.')
         # The legacy Murcia portal sometimes returns empty HTTP 200 responses.
         # Keep a conservative request rate and pause once before giving up.
         interval = 8 if 'ffrm.es' in self.base else 2 if any(host in self.base for host in ('besoccer.com', 'ffcv.es')) else .65
@@ -294,7 +301,7 @@ def team_matches(matches,scope):
 def madrid(client, player):
     result=_madrid_team(client,player)
     extras=[]
-    for scope in player.get('additional_teams',[]):
+    for scope in (player.get('additional_teams') or []):
         derived={**player,**scope,'additional_teams':[]}
         item=copy.deepcopy(scope)
         try:
@@ -545,7 +552,8 @@ def sync(browser=False, registry_changes=False):
                 if old_player.get('besoccer_player_source') != config.get('besoccer_player_source'):
                     public.pop('secondary_stats', None)
                 public['stats'] = public.get('stats') or new_stats()
-                if not any(config['id'] in m['player_ids'] for m in old_matches):
+                if public.get('additional_teams') is None: public.pop('additional_teams', None)
+                if not old_player.get('updated_at') or not any(config['id'] in m['player_ids'] for m in old_matches):
                     continue  # A failed first refresh must not publish an empty profile.
                 feed['matches'].extend(copy.deepcopy(m) for m in old_matches if config['id'] in m['player_ids'])
             feed['players'].append(public)
@@ -567,7 +575,7 @@ def sync(browser=False, registry_changes=False):
         if own:
             primary=team_matches(own,player) if player.get('additional_teams') else own
             player['stats'], player['coverage'] = summarize(primary, player['id'], player.get('stats'))
-            for scope in player.get('additional_teams',[]):
+            for scope in (player.get('additional_teams') or []):
                 scope['stats'],scope['coverage']=summarize(team_matches(own,scope),player['id'])
     path.parent.mkdir(exist_ok=True, parents=True)
     temp = path.with_suffix('.tmp')
@@ -615,7 +623,7 @@ def apply_roster(feed, roster):
     for match in merged.values():
         for side in ('home', 'away'):
             def same_team(p):
-                for scope in [p,*p.get('additional_teams',[])]:
+                for scope in [p,*(p.get('additional_teams') or [])]:
                     if scope.get('besoccer_team_id') and match.get(side+'_besoccer_team_id'):
                         if str(scope['besoccer_team_id'])==str(match[side+'_besoccer_team_id']):return True
                     elif scope.get('team_id') and match.get(side+'_team_id'):

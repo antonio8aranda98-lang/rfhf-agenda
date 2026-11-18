@@ -3,7 +3,8 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from registry_remote import reconcile, needed, RESOLVER_VERSION
+from registry_remote import reconcile, needed, calendars_due, RESOLVER_VERSION
+from datetime import datetime, timezone
 from valencia_data import act_participation
 
 
@@ -46,6 +47,21 @@ class RemoteRegistryTests(unittest.TestCase):
 
     def test_new_resolver_rechecks_unchanged_registry(self):
         self.assertTrue(needed(self.desired,{'revision':2,'players':[{'state':'verified'}]}))
+
+    def test_missing_verified_calendar_resumes_after_the_source_pause(self):
+        desired={'players':[{'id':'new','federation':'valencia','active':True}]}
+        status={'checked_at':'2026-11-18T17:00:00+00:00','players':[{'id':'new','state':'verified'}]}
+        feed={'players':[],'federations':[{'id':'valencia','retry_after':'2026-11-18T18:00:00+00:00'}]}
+        before=datetime(2026,11,18,17,30,tzinfo=timezone.utc)
+        after=datetime(2026,11,18,18,1,tzinfo=timezone.utc)
+        self.assertFalse(calendars_due(desired,status,feed,at=before))
+        self.assertTrue(calendars_due(desired,status,feed,at=after))
+        self.assertFalse(calendars_due(desired,status,feed,{'source_pauses':{'valencia':'2026-11-18T19:00:00+00:00'}},after))
+
+    def test_missing_calendar_does_not_revalidate_pending_or_already_published_identity(self):
+        desired={'players':[{'id':'new','federation':'valencia'}]}
+        self.assertFalse(calendars_due(desired,{'players':[{'id':'new','state':'pending'}]},{'players':[]}))
+        self.assertFalse(calendars_due(desired,{'players':[{'id':'new','state':'verified'}]},{'players':[{'id':'new','updated_at':'2026-11-18T17:00:00+00:00'}]}))
 
     def test_official_migration_does_not_reenable_blocked_secondary_source(self):
         self.current['players'][0].update(source_request='https://es.besoccer.com/equipo/cd-alfaro',provider='frf',official_adapter_version=2)

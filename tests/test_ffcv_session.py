@@ -1,5 +1,6 @@
 import json
 import io
+import tempfile
 import sys
 import unittest
 from unittest.mock import patch
@@ -56,6 +57,20 @@ class FFCVSessionTests(unittest.TestCase):
                 client.get(BASE + 'api/second')
         self.assertEqual(request.call_count, 1)
         self.assertGreater((datetime.fromisoformat(client.retry_after) - datetime.now(timezone.utc)).total_seconds(), 3500)
+
+    def test_persisted_pause_survives_a_new_process_and_uses_later_deadline(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'docs/data').mkdir(parents=True)
+            (root / 'docs/data/feed.json').write_text(json.dumps({'federations': [{'id': 'valencia', 'retry_after': '2099-01-01T10:00:00+00:00'}]}))
+            (root / 'docs/data/settings.json').write_text(json.dumps({'source_pauses': {'valencia': '2099-01-01T11:00:00+00:00'}}))
+            with patch('sync.ROOT', root):
+                client = Client(BASE)
+            with patch.object(client.opener, 'open') as request:
+                with self.assertRaisesRegex(ValueError, 'pausadas'):
+                    client.get(BASE)
+                request.assert_not_called()
+            self.assertEqual(client.retry_after, '2099-01-01T11:00:00+00:00')
 
 
 class SportingAPI:

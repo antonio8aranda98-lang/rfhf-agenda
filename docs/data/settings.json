@@ -1,4 +1,7 @@
 {
   "admin_url": "https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/",
-  "registry_url": "https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/api/registry"
+  "registry_url": "https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/api/registry",
+  "source_pauses": {
+    "valencia": "2026-11-18T18:56:00+00:00"
+  }
 }

@@ -72,7 +72,7 @@ class RegistryRefreshTests(unittest.TestCase):
         feed={'season':'2026-2027','players':[{**player,'updated_at':stamp,'stats':{}}],'matches':[game],'federations':[{'id':'madrid','status':'ok','last_success':stamp,'checked_at':stamp}]}
         return roster,feed
 
-    def run_refresh(self,roster,baseline,collector):
+    def run_refresh(self,roster,baseline,collector,registry_changes=True,expected_failure=False):
         import json,tempfile
         from unittest.mock import patch
         import sync as module
@@ -80,7 +80,9 @@ class RegistryRefreshTests(unittest.TestCase):
             root=Path(folder);(root/'data').mkdir();(root/'docs/data').mkdir(parents=True)
             (root/'data/roster.json').write_text(json.dumps(roster));(root/'docs/data/feed.json').write_text(json.dumps(baseline))
             with patch.object(module,'ROOT',root),patch.object(module,'FEDERATIONS',{'madrid':module.FEDERATIONS['madrid']}),patch.object(module.Client,'get',side_effect=AssertionError('No network')),patch.object(module,'collect_player',side_effect=collector):
-                module.sync(registry_changes=True)
+                if expected_failure:
+                    with self.assertRaises(SystemExit):module.sync(registry_changes=registry_changes)
+                else:module.sync(registry_changes=registry_changes)
             return json.loads((root/'docs/data/feed.json').read_text())
 
     def test_unchanged_sporting_sources_keep_their_dates_and_skip_network(self):
@@ -109,6 +111,30 @@ class RegistryRefreshTests(unittest.TestCase):
         result=self.run_refresh(roster,baseline,refresh)
         self.assertEqual(len(calls),1)
         self.assertEqual(result['players'][0]['updated_at'],'2026-11-18T12:15:52+00:00')
+
+    def test_failed_legacy_profile_cannot_discard_another_players_success(self):
+        import copy
+        roster,baseline=self.fixture()
+        second={**roster['players'][0],'id':'two','name':'Jugador Dos','team':'Otro equipo','team_id':'22'}
+        roster['players'].append(second)
+        game={**copy.deepcopy(baseline['matches'][0]),'id':'second-match','player_ids':['two']}
+        def refresh(client,secondary,player,previous):
+            if player['id']=='one':raise ValueError('Fuente temporalmente no disponible')
+            return {'matches':[game],'stats':{}}
+        result=self.run_refresh(roster,baseline,refresh,registry_changes=False)
+        self.assertEqual(len(result['players']),2)
+        self.assertEqual(len(result['matches']),2)
+        old=next(p for p in result['players'] if p['id']=='one')
+        self.assertEqual(old['updated_at'],baseline['players'][0]['updated_at'])
+        self.assertNotIn('additional_teams',old)
+
+    def test_opponent_only_fixture_does_not_publish_an_unread_profile_on_failure(self):
+        roster,baseline=self.fixture()
+        roster['players'].append({**roster['players'][0],'id':'two','name':'Jugador Dos','team':'Rival','team_id':'22'})
+        baseline['matches'][0]['player_ids'].append('two')
+        def fail(*args):raise ValueError('La fuente ha solicitado una pausa')
+        result=self.run_refresh(roster,baseline,fail,expected_failure=True)
+        self.assertEqual([p['id'] for p in result['players']],['one'])
 
 class LinkedTeamRefreshTests(unittest.TestCase):
     def test_formal_roster_can_differ_but_tracked_team_scope_and_visibility_remain_required(self):

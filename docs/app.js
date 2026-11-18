@@ -17,11 +17,12 @@ function maps(m) {
   return m.venue ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([m.venue,m.locality,m.address].filter(Boolean).join(', '))}` : '';
 }
 function selectedPlayers() { return data.players.filter(p => p.federation === region && (!collaborator || p.collaborator === collaborator)); }
+function portfolioPlayers() { const rows=registryData?.initialized===true&&registryData?.season===data.season&&Array.isArray(registryData.players)?registryData.players:data.players; return rows.filter(p=>p.active!==false&&p.federation===region); }
 function visiblePlayers() { const q = query.normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase(); return selectedPlayers().filter(p=>[p.name,p.team].join(' ').normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase().includes(q)); }
 function matches(dates=null) { return filterMatches(data.matches, selectedPlayers().map(p=>p.id), dates, query, planOnly ? planned : null); }
 function toast(text) { $('#toast').textContent=text; $('#toast').hidden=false; clearTimeout(toast.timer); toast.timer=setTimeout(()=>$('#toast').hidden=true,4500); }
 function setupCollaborators() {
-  const people = [...new Set(data.players.filter(p=>p.federation===region).map(p=>p.collaborator))].sort((a,b)=>a.localeCompare(b,'es'));
+  const people = [...new Set(portfolioPlayers().map(p=>p.collaborator))].sort((a,b)=>a.localeCompare(b,'es'));
   if ((collaborator && !people.includes(collaborator)) || people.length===1) collaborator=people[0]||'';
   $('#collaborator').innerHTML=(people.length>1 ? `<option value="" ${!collaborator?'selected':''}>Todos los colaboradores</option>` : '') + people.map(name=>`<option value="${e(name)}" ${name===collaborator?'selected':''}>${e(name)}</option>`).join('');
 }
@@ -33,16 +34,22 @@ function render() {
   $('#matchups').hidden=!crosses.length;
   $('#matchups').innerHTML=crosses.length?`<p class="eyebrow">CRUCE ENTRE JUGADORES DE LA CARTERA</p><h2>¡Nuestros jugadores se enfrentan!</h2><p>Detectado en toda la federación, incluidos otros colaboradores. Cruces entre sus equipos; consulta el acta para confirmar la participación.</p>${crosses.map(m=>`<div class="matchup-row"><div>${m.home_players.map(p=>`<button data-player="${e(p.id)}">${e(p.name)}</button><small>${e(p.collaborator)}</small>`).join('')}<b>vs</b>${m.away_players.map(p=>`<button data-player="${e(p.id)}">${e(p.name)}</button><small>${e(p.collaborator)}</small>`).join('')}</div><span>${dateText(m.date)} · ${e(m.time||'Hora pendiente')}</span><button class="secondary" data-jump="${e(m.id)}">Ver partido →</button></div>`).join('')}`:'';
   const fed=data.federations.find(f=>f.id===region);
+  const assigned=portfolioPlayers().filter(p=>!collaborator||p.collaborator===collaborator);
+  const published=new Set(people.filter(p=>p.updated_at).map(p=>p.id));
+  const waiting=assigned.filter(p=>!published.has(p.id)).length;
+  const pause=[fed.retry_after,settings.source_pauses?.[region]].filter(Boolean).sort().at(-1);
+  const cooling=pause&&new Date(pause).getTime()>Date.now();
   const stale=!fed.last_success || Date.now()-new Date(fed.last_success).getTime()>12*3600*1000;
   const partialStats=people.filter(p=>Object.keys(statNames).some(k=>p.stats?.[k]==null));
   const detail=partialStats.length===1&&partialStats[0].coverage?.acts_checked<(partialStats[0].stats?.team_played||0)?`Participación verificada en ${partialStats[0].coverage.acts_checked}/${partialStats[0].stats.team_played} partidos.`:'Algunos datos individuales siguen pendientes.';
   const providers=[...new Set(people.map(p=>p.source_acronym||(p.provider==='besoccer'?'BeSoccer':fed.acronym)))].join(', ');
-  const sourceText=!people.length?'No hay jugadores publicados con este filtro.':fed.status==='ok'&&!stale?`Calendario de ${providers} · Actualizado el ${timestamp(fed.last_success)}${partialStats.length?' · '+detail:''}`:`${fed.status==='ok'?'Datos antiguos':'Consulta automática incompleta'} · Último dato válido: ${timestamp(fed.last_success)}. Comprueba la fuente.`;
-  $('#source-status').classList.toggle('warning',!!people.length&&(fed.status!=='ok'||stale||!!partialStats.length));
+  let sourceText=cooling?`Consultas a la FFCV pausadas hasta ${timestamp(pause)} para respetar su límite. Las consultas se retomarán automáticamente después; se conserva el último dato válido.`:!people.length?'No hay jugadores publicados con este filtro.':fed.status==='ok'&&!stale?`Calendario de ${providers} · Actualizado el ${timestamp(fed.last_success)}${partialStats.length?' · '+detail:''}`:`${fed.status==='ok'?'Datos antiguos':'Consulta automática incompleta'} · Último dato válido: ${timestamp(fed.last_success)}. Comprueba la fuente.`;
+  if(waiting)sourceText+=` ${waiting} ${waiting===1?'jugador de tu cartera está pendiente':'jugadores de tu cartera están pendientes'} de ficha deportiva publicada.`;
+  $('#source-status').classList.toggle('warning',!!cooling||!!waiting||!!people.length&&(fed.status!=='ok'||stale||!!partialStats.length));
   $('#source-status').innerHTML=`<span class="dot"></span><span>${e(sourceText)} ${people.some(p=>p.source_acronym)?'Consulta la fuente en cada jugador.':urlLink(fed.source,'Fuente oficial ↗')}</span>`;
   const countPending=games.filter(m=>m.status==='time_pending').length;
   const metric=(label,val,small='',highlight=false)=>`<div class="metric ${highlight?'highlight':''}"><div class="metric-label">${label}</div><div class="metric-value">${val}${small?`<small>${small}</small>`:''}</div></div>`;
-  $('#metrics').innerHTML=metric('JUGADORES ASIGNADOS',String(people.length).padStart(2,'0'))+metric('PARTIDOS ESTE FINDE',String(games.length).padStart(2,'0'),'',true)+metric('VISITAS PLANIFICADAS',String(games.filter(m=>planned.has(m.id)).length).padStart(2,'0'))+metric('HORARIOS PENDIENTES',String(countPending).padStart(2,'0'));
+  $('#metrics').innerHTML=metric('JUGADORES ASIGNADOS',String(assigned.length).padStart(2,'0'))+metric('PARTIDOS ESTE FINDE',String(games.length).padStart(2,'0'),'',true)+metric('VISITAS PLANIFICADAS',String(games.filter(m=>planned.has(m.id)).length).padStart(2,'0'))+metric('HORARIOS PENDIENTES',String(countPending).padStart(2,'0'));
   $('#plan-count').textContent=planned.size;
   $('#plan-filter').setAttribute('aria-pressed',String(planOnly));
   $('#agenda-count').textContent=games.length;

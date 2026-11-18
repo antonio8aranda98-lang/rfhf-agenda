@@ -126,6 +126,29 @@ def needed(desired, status):
         return True
 
 
+def calendars_due(desired, status, feed, settings=None, at=None):
+    """Resume a verified registration whose first calendar is still missing."""
+    at = at or datetime.now(timezone.utc)
+    try:
+        if (at - datetime.fromisoformat(status['checked_at'])).total_seconds() < 300:
+            return False
+    except (KeyError, ValueError):
+        pass
+    verified = {p['id'] for p in status.get('players', []) if p['state'] == 'verified'}
+    published = {p['id'] for p in feed.get('players', []) if p.get('updated_at')}
+    pauses = {f['id']: f.get('retry_after') for f in feed.get('federations', [])}
+    for region, deadline in (settings or {}).get('source_pauses', {}).items():
+        if not pauses.get(region) or datetime.fromisoformat(deadline) > datetime.fromisoformat(pauses[region]):
+            pauses[region] = deadline
+    for player in desired['players']:
+        if player.get('active', True) is False or player['id'] not in verified or player['id'] in published:
+            continue
+        deadline = pauses.get(player['federation'])
+        if not deadline or datetime.fromisoformat(deadline) <= at:
+            return True
+    return False
+
+
 def atomic_json(path, data):
     temporary = path.with_suffix('.tmp')
     temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n')
@@ -136,7 +159,11 @@ def main(check=False):
     desired = fetch_registry()
     path = ROOT/'docs/data/registry-status.json'
     status = json.loads(path.read_text()) if path.exists() else {}
-    changed = needed(desired, status)
+    feed_path = ROOT/'docs/data/feed.json'
+    previous = json.loads(feed_path.read_text())
+    settings_path = ROOT/'docs/data/settings.json'
+    settings = json.loads(settings_path.read_text()) if settings_path.exists() else {}
+    changed = needed(desired, status) or calendars_due(desired, status, previous, settings)
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as output:
             output.write('changed='+str(changed).lower()+'\n')
@@ -145,8 +172,6 @@ def main(check=False):
         return
     current = json.loads((ROOT/'data/roster.json').read_text())
     updated, status = reconcile(current, desired)
-    feed_path = ROOT/'docs/data/feed.json'
-    previous=json.loads(feed_path.read_text())
     by_id={p['id']:p for p in current['players']}
     corrected={p['id'] for p in desired['players'] if p.get('_identity_revision') and p['id'] in by_id and p['_identity_revision']!=by_id[p['id']].get('identity_revision')}
     if corrected:
