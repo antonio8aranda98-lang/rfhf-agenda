@@ -28,6 +28,7 @@ def refresh_one(feed, roster, desired):
         missing=[m for m in own if m['status']=='finished' and m.get('participation',{}).get(public['id']) is None]
         if missing:candidates.append((public,config,own))
     if not candidates:return False
+    candidates.sort(key=lambda row:any(row[0].get('stats',{}).get(k) is None for k in ('called_up','starts','bench','minutes','goals')),reverse=True)
     public,config,previous=candidates[0]
     result=madrid(Client('https://www.rffm.es/'),{**config,'season':roster['season'],'_previous':previous})
     if not result.get('matches'):raise ValueError('La fuente no devuelve un calendario verificable')

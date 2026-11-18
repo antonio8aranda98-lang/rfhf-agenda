@@ -90,11 +90,14 @@ class DirectedRefreshTests(unittest.TestCase):
         from improve_data import refresh_one,recompute
         profile=dict(id='p',name='Jugador',federation='madrid',team='A',team_id='1',collaborator='Uno',stats={})
         match={**game('m','2026-11-01'), 'federation':'madrid','player_ids':['p'],'home':'A','away':'B','home_team_id':'1','away_team_id':'2','time':'12:00'}
-        feed=dict(season='2026-2027',players=[profile],matches=[match],federations=[])
-        roster=dict(season='2026-2027',players=[profile])
+        known={**profile,'id':'q','name':'Totales oficiales disponibles','team':'C','team_id':'22','stats':{'called_up':1,'starts':1,'bench':0,'minutes':90,'goals':0}}
+        other={**copy.deepcopy(match),'id':'other','player_ids':['q'],'home':'C','home_team_id':'22'}
+        feed=dict(season='2026-2027',players=[known,profile],matches=[other,match],federations=[])
+        roster=dict(season='2026-2027',players=[known,profile])
         fresh=copy.deepcopy(match);fresh['participation']={'p':participation(True,90,goals=0)}
-        with patch('improve_data.madrid',return_value={'matches':[fresh],'stats':{}}):
-            self.assertTrue(refresh_one(feed,roster,{'players':[profile]}))
+        with patch('improve_data.madrid',return_value={'matches':[fresh],'stats':{}}) as reader:
+            self.assertTrue(refresh_one(feed,roster,{'players':[known,profile]}))
+            self.assertEqual(reader.call_args.args[1]['id'],'p')
         recompute(feed)
-        self.assertEqual(feed['season'],'2026-2027');self.assertEqual(len(feed['matches']),1)
-        self.assertEqual(feed['players'][0]['stats']['minutes'],90)
+        self.assertEqual(feed['season'],'2026-2027');self.assertEqual(len(feed['matches']),2)
+        self.assertEqual(next(p for p in feed['players'] if p['id']=='p')['stats']['minutes'],90)
