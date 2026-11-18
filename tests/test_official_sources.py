@@ -134,3 +134,32 @@ class OfficialSourcesTests(unittest.TestCase):
 
 
 if __name__=='__main__':unittest.main()
+
+class DirectOfficialSourcesTests(unittest.TestCase):
+    def test_official_team_url_rejects_extra_queries_credentials_and_duplicates(self):
+        from official_sources import source_team
+        good='https://www.ffcm.es/pnfg/NPcd/NFG_VisEquipos?cod_primaria=1000119&Codigo_Equipo=33266'
+        self.assertEqual(source_team(good),('ffcm','33266'))
+        for bad in [good+'&url=http://localhost',good+'&Codigo_Equipo=123',good.replace('https:','http:'),good.replace('www.ffcm.es','user@www.ffcm.es'),good.replace('1000119','1000120')]:
+            with self.assertRaises(ValueError):source_team(bad)
+        self.assertIsNone(source_team(good.replace('www.ffcm.es','evil.test')))
+
+    def test_direct_discovery_uses_current_team_and_own_competition_in_madrid(self):
+        from official_sources import discover_direct,calendar_url,stable_id
+        source='https://www.ffcm.es/pnfg/NPcd/NFG_VisEquipos?cod_primaria=1000119&Codigo_Equipo=33266'
+        roster='<table><tr><th>Jugadores (1)</th></tr><tr><td>RIOJA PIZARRO, GIANCARLO</td></tr></table><a href="NFG_VisCompeticiones_Equipo?codequipo=33266&amp;codtemporada=22">Competición</a>'
+        history='<h4>2026-2027</h4><table><tr><td><a href="NFG_VisCompeticiones_Vis?codcompeticion=22916201">Juvenil Preferente</a></td><td><a href="NFG_VisCompeticiones_Grupo?codequipo=33266&amp;codgrupo=22916203">Ficha</a></td></tr></table><h4>2025-2026</h4><table><tr><td><a href="NFG_VisCompeticiones_Vis?codcompeticion=old">Anterior</a><a href="NFG_VisCompeticiones_Grupo?codequipo=33266&amp;codgrupo=old">Anterior</a></td></tr></table>'
+        class Client:
+            def get(self,url):
+                if 'NFG_VisEquipos?' in url:return roster
+                if 'NFG_VisCompeticiones_Equipo?' in url:return history
+                if 'NFG_VisCompeticiones_Grupo?' in url:return '<h4>C.D. GUADALAJARA "B"</h4>'
+                raise AssertionError(url)
+        with patch('official_sources.client_for',return_value=Client()):
+            p=discover_direct(None,{'name':'Giancarlo Rioja','source':source},'2026-2027')
+            self.assertEqual(p['official_name'],'RIOJA PIZARRO, GIANCARLO')
+            self.assertEqual(p['official_group_id'],'22916203')
+            p.update(federation='madrid')
+            self.assertIn('codgrupo=22916203',calendar_url('ffcm',True,p))
+            self.assertIn('madrid-ffcm-22916203',stable_id(p,1,'A','B'))
+            with self.assertRaises(ValueError):discover_direct(None,{'name':'Giancarlo Rioja','source':source},'2027-2028')

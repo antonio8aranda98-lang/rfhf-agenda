@@ -54,6 +54,62 @@ def alternative(request, season):
             'source_acronym':PROVIDERS[provider]['label'],'official_season':season}
 
 
+def source_team(value):
+    """Accept only public team fiches on the supported official Nova portals."""
+    u=urlparse(str(value));hosts={urlparse(p['base']).hostname:k for k,p in PROVIDERS.items() if k!='rfef'}
+    provider=hosts.get(u.hostname)
+    q=parse_qs(u.query)
+    if not provider:return None
+    if (u.scheme!='https' or u.username or u.password or u.port not in (None,443) or u.fragment or
+        u.path!='/pnfg/NPcd/NFG_VisEquipos' or len(str(value))>600 or
+        set(q)-{'Codigo_Equipo','cod_primaria'} or len(q.get('Codigo_Equipo',[]))!=1 or
+        not q['Codigo_Equipo'][0].isdigit() or q.get('cod_primaria',['1000119'])!=['1000119']):
+        raise ValueError('Usa la ficha pública oficial del equipo, sin filtros adicionales')
+    return provider,q['Codigo_Equipo'][0]
+
+
+def settings(player):
+    p=PROVIDERS[player['provider']]
+    return {**p,**{key:player['official_'+key+'_id'] for key in ('competition','group','season') if player.get('official_'+key+'_id')}}
+
+
+def discover_direct(shared,request,season):
+    target=source_team(request.get('source'))
+    if not target:return None
+    provider,team_id=target;client=client_for(shared,provider)
+    soup=BeautifulSoup(page(client,request['source']),'html.parser')
+    table=next((t for t in soup.select('table') if re.search(r'Jugadores\s*\(\d+\)',t.get_text())),None)
+    if table is None:raise ValueError('La fuente no devuelve una plantilla verificable; alta pendiente')
+    tokens=set(norm(request['name']).split())
+    names={td.get_text(' ',strip=True) for td in table.select('td') if len(tokens)>=2 and tokens<=set(norm(td.get_text(' ',strip=True)).split())}
+    if len(names)!=1:raise ValueError('No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo')
+    official_name=names.pop()
+    history_link=next((a for a in soup.select('a[href*="NFG_VisCompeticiones_Equipo"]') if parse_qs(urlparse(a['href']).query).get('codequipo')==[team_id]),None)
+    if history_link is None:raise ValueError('Falta una competición oficial del equipo; alta pendiente')
+    history_url=urljoin(request['source'],history_link['href']);hu=urlparse(history_url)
+    if hu.hostname!=urlparse(PROVIDERS[provider]['base']).hostname or hu.path!='/pnfg/NPcd/NFG_VisCompeticiones_Equipo':raise ValueError('Ficha de competición fuera de la fuente oficial')
+    season_id=parse_qs(hu.query).get('codtemporada',[''])[0]
+    if not season_id.isdigit():raise ValueError('No se confirma la temporada oficial del equipo')
+    history=BeautifulSoup(page(client,history_url),'html.parser');scopes=[]
+    for row in history.select('tr'):
+        table=row.find_parent('table');heading=table.find_previous('h4') if table else None
+        if not heading or heading.get_text(' ',strip=True)!=season:continue
+        group=row.select_one('a[href*="NFG_VisCompeticiones_Grupo"]');competition=row.select_one('a[href*="NFG_VisCompeticiones_Vis"]')
+        if not group or not competition:continue
+        g=parse_qs(urlparse(group['href']).query);c=parse_qs(urlparse(competition['href']).query)
+        if g.get('codequipo')==[team_id] and g.get('codgrupo',[''])[0].isdigit() and c.get('codcompeticion',[''])[0].isdigit():
+            scopes.append((c['codcompeticion'][0],g['codgrupo'][0],urljoin(history_url,group['href'])))
+    if len(scopes)!=1:raise ValueError('No se identifica una única competición y grupo de la temporada actual')
+    competition_id,group_id,group_url=scopes[0];gu=urlparse(group_url)
+    if gu.hostname!=hu.hostname or gu.path!='/pnfg/NPcd/NFG_VisCompeticiones_Grupo':raise ValueError('Grupo fuera de la fuente oficial')
+    group=BeautifulSoup(page(client,group_url),'html.parser')
+    teams=[h.get_text(' ',strip=True) for h in group.select('h4') if h.get_text(' ',strip=True) and 'Temporada' not in h.get_text()]
+    if len(teams)!=1:raise ValueError('No se identifica un único equipo en la ficha oficial de grupo')
+    return {'provider':provider,'external_team_id':team_id,'team_id':provider+'-'+team_id,'team':teams[0],
+        'official_name':official_name,'source_request':request['source'],'source_acronym':PROVIDERS[provider]['label'],
+        'official_season':season,'official_competition_id':competition_id,'official_group_id':group_id,'official_season_id':season_id}
+
+
 def client_for(shared, provider):
     from sync import Client
     if not hasattr(shared,'official_clients'):shared.official_clients={}
@@ -101,8 +157,8 @@ def page(client, url):
         return html
 
 
-def round_url(provider, number):
-    p=PROVIDERS[provider]
+def round_url(provider, number, player=None):
+    p=settings(player) if player else PROVIDERS[provider]
     if provider=='rfef':
         return p['base']+'/es/resultados?'+urlencode({'competition':p['competition'],'group':p['group'],'journey':number,'season':p['season']})
     return p['base']+'/pnfg/NPcd/NFG_CmpJornada?'+urlencode({'cod_primaria':'1000120','CodCompeticion':p['competition'],'CodGrupo':p['group'],'CodTemporada':p['season'],'CodJornada':number})
@@ -172,14 +228,14 @@ def parse_round(html, player, number, source):
     return result
 
 
-def calendar_url(provider, extended=True):
-    p=PROVIDERS[provider]
+def calendar_url(provider, extended=True, player=None):
+    p=settings(player) if player else PROVIDERS[provider]
     url=p.get('reports',p['base'])+'/pnfg/NPcd/NFG_VisCalendario_Vis?'+urlencode({'cod_primaria':'1000120','codcompeticion':p['competition'],'codgrupo':p['group'],'codtemporada':p['season']})
     return url+('&CDetalle=1' if extended else '')
 
 
 def stable_id(player, number, home, away):
-    return player['federation']+'-'+player['provider']+'-'+PROVIDERS[player['provider']]['group']+'-'+str(number)+'-'+norm(home).replace(' ','-')+'-'+norm(away).replace(' ','-')
+    return player['federation']+'-'+player['provider']+'-'+settings(player)['group']+'-'+str(number)+'-'+norm(home).replace(' ','-')+'-'+norm(away).replace(' ','-')
 
 
 def parse_calendar(html, player, source, extended=True):
@@ -225,11 +281,11 @@ def parse_calendar(html, player, source, extended=True):
 def calendar(client, player):
     failure=None
     for extended in (True,False):
-        source=calendar_url(player['provider'],extended)
+        source=calendar_url(player['provider'],extended,player)
         try:return parse_calendar(page(client,source),player,source,extended)
         except Exception as error:failure=error
     if player['provider']!='rfef':
-        p=PROVIDERS[player['provider']]
+        p=settings(player)
         source=p['base']+'/pnfg/NPcd/NFG_VisCompeticiones_Grupo?'+urlencode({'cod_primaria':'1000123','codequipo':player['external_team_id'],'codgrupo':p['group']})
         try:return parse_team_calendar(page(client,source),player,source)
         except Exception as error:failure=error
@@ -362,7 +418,7 @@ def adapter(client, player, previous=()):
         # links and refresh upcoming details; an unavailable report is not zero.
         if game['status']=='finished' or abs((datetime.fromisoformat(game['date']).date()-today).days)<=7:
             try:
-                refs=parse_round(page(client,round_url(player['provider'],game['round'])),player,game['round'],round_url(player['provider'],game['round']))
+                refs=parse_round(page(client,round_url(player['provider'],game['round'],player)),player,game['round'],round_url(player['provider'],game['round'],player))
                 ref=next((r for r in refs if norm(r['home'])==norm(game['home']) and norm(r['away'])==norm(game['away'])),None)
                 if ref:
                     identity_id=game['id'];game.update(ref);game['id']=identity_id;game['date_precision']='match'
@@ -404,11 +460,11 @@ def adapter(client, player, previous=()):
 
 
 def resolve(shared, request, season):
-    config=alternative(request,season)
+    config=discover_direct(shared,request,season) or alternative(request,season)
     if not config:return None
     from categories import verify_category,team_category
     config.update(id='verify',federation=request['federation'],name=request['name'],collaborator=request['collaborator'],season=season,match_duration=90)
-    config['source']=round_url(config['provider'],1)
+    config['source']=round_url(config['provider'],1,config)
     try:result=adapter(client_for(shared,config['provider']),{**config,'_verify_identity':True})
     except Exception:
         result=reviewed_bootstrap(config)
