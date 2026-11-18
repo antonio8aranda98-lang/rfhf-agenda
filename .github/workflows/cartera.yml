@@ -5,23 +5,22 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 3
     steps:
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install playwright@1.65.1
-      - run: npx playwright install --with-deps chromium
-      - name: Navegacion normal sin ocultacion ni interaccion con verificaciones
+      - name: Navegacion normal con Chrome instalado en el runner
         run: |
           node <<'JS'
           const {chromium}=require('playwright');
           (async()=>{
-           const browser=await chromium.launch({headless:true});
+           const browser=await chromium.launch({channel:'chrome',headless:true});
            const page=await browser.newPage({locale:'es-ES'});
            await page.goto('https://es.besoccer.com/equipo/plantilla/ad-sporting-hortaleza-a-juvenil',{waitUntil:'domcontentloaded',timeout:45000});
            try{await page.locator('#season').waitFor({timeout:20000});}catch{}
-           console.log(JSON.stringify({url:page.url(),title:await page.title(),season:await page.locator('#season').count(),challenge:(await page.locator('body').innerText()).slice(0,180)}));
+           console.log(JSON.stringify({url:page.url(),title:await page.title(),season:await page.locator('#season').count(),bodyPreview:(await page.locator('body').innerText()).slice(0,180)}));
            await browser.close();
           })().catch(e=>{console.error(e.message);process.exit(1)});
           JS
