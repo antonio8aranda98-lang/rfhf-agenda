@@ -189,3 +189,19 @@ class RFFMLinkedIdentityTests(unittest.TestCase):
         self.assertTrue(registry.rffm_identity_matches(*args))
         self.assertFalse(registry.rffm_identity_matches(*args[:-1],'2027-2028'))
         self.assertFalse(registry.rffm_identity_matches(args[0],args[1],'another',args[3],args[4]))
+
+    def test_second_calendar_comes_from_participation_even_when_profile_header_is_primary(self):
+        client=self.client();original=client.next_props
+        def props(url):
+            result=original(url)
+            if '/fichajugador/' in url:
+                p=result['player'];p['codigo_equipo']='11';p['equipo']='Equipo A'
+                p['competiciones_participa'][0]['nombre_club']='Club Uno'
+                p['competiciones_participa'].append({'codequipo':'12','codigo_competicion':'300','codgrupo':'400','nombre_competicion':'PRIMERA AFICIONADO','nombre_grupo':'Grupo 2','nombre_equipo':'Equipo B','nombre_club':'Club Uno'})
+            return result
+        client.next_props=props
+        game={'status':'finished','date':'2026-11-01','source':'https://www.rffm.es/acta-partido/42'}
+        with patch.dict(registry.ADAPTERS,{'madrid':lambda *args:{'matches':[game]}}):
+            p=registry.resolve_player(self.request(),{'season':'2026-2027','players':[]},client)
+        self.assertEqual(p['additional_teams'][0]['team_id'],'12')
+        self.assertEqual(p['additional_teams'][0]['role'],'additional')

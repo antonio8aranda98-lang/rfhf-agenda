@@ -126,3 +126,36 @@ class LinkedTeamRefreshTests(unittest.TestCase):
         r=madrid(client(),p);stats,_=summarize(r['matches'],'one',r['stats']);self.assertEqual(stats['minutes'],90)
         r=madrid(client(minutes='0'),p);self.assertIsNone(r['matches'][0]['participation']['one']['minutes'])
         with self.assertRaises(ValueError):madrid(client(scope='12'),p)
+
+class DualCalendarTests(RegistryRefreshTests):
+    def test_both_calendars_keep_independent_totals_and_team_membership(self):
+        from unittest.mock import patch
+        import sync as module
+        roster,baseline=self.fixture();p=roster['players'][0]
+        p.update(team_id='11',group_id='g1',additional_teams=[{'team_id':'22','team':'Equipo B','competition_label':'Otra liga','group_id':'g2','role':'registration'}])
+        baseline['players']=[];baseline['matches']=[]
+        def scoped(client,player):
+            minutes=90 if player['team_id']=='11' else 15
+            return {'stats':{},'matches':[{'id':'game-'+player['team_id'],'federation':'madrid','player_ids':['one'],'home':player['team'],'away':'Rival','home_team_id':player['team_id'],'away_team_id':'99','group_id':player['group_id'],'date':'2026-11-01','time':'12:00','status':'finished','score_home':1,'score_away':0,'participation':{'one':{'called_up':1,'starts':1 if minutes==90 else 0,'bench':0 if minutes==90 else 1,'played':1,'minutes':minutes,'goals':1 if minutes==90 else 0}}}]}
+        with patch.object(module,'_madrid_team',side_effect=scoped):
+            result=self.run_refresh(roster,baseline,lambda client,secondary,player,previous:module.madrid(client,player))
+        player=result['players'][0]
+        self.assertEqual(player['stats']['minutes'],90)
+        self.assertEqual(player['additional_teams'][0]['stats']['minutes'],15)
+        self.assertEqual(player['stats']['team_played'],1)
+        self.assertEqual(player['additional_teams'][0]['stats']['team_played'],1)
+        self.assertEqual(len(result['matches']),2)
+        self.assertTrue(all(m['home_player_ids']==['one'] for m in result['matches']))
+
+    def test_secondary_failure_keeps_its_last_calendar_and_own_read_date(self):
+        from unittest.mock import patch
+        import sync as module
+        old={'id':'old','home_team_id':'22','away_team_id':'99','group_id':'g2','updated_at':'2026-11-17T10:00:00+00:00'}
+        p={'id':'one','team_id':'11','additional_teams':[{'team_id':'22','team':'Equipo B','group_id':'g2'}],'_previous':[old]}
+        def scoped(client,player):
+            if player['team_id']=='22':raise ValueError('Fuente vacía')
+            return {'matches':[{'id':'primary'}]}
+        with patch.object(module,'_madrid_team',side_effect=scoped):result=module.madrid(None,p)
+        self.assertTrue(result['source_warning']);self.assertEqual(result['matches'][1]['id'],'old')
+        self.assertEqual(result['additional_teams'][0]['updated_at'],old['updated_at'])
+        self.assertEqual(result['additional_teams'][0]['calendar_status'],'pending')

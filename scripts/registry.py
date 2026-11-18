@@ -148,6 +148,10 @@ def resolve_player(request, roster, client=None):
                   'competition_label': c['nombre_competicion'] + ' · ' + c['nombre_grupo'], 'team_age_category':category}
         if player_source:
             result.update(player_source=source,team_source=u.geturl(),registration_team=pdata.get('equipo'),requires_participation=not listed)
+            other=[x for x in pdata.get('competiciones_participa',[]) if str(x.get('codequipo'))!=team_id and x.get('nombre_club') and normalized(x['nombre_club'])==normalized(c.get('nombre_club'))]
+            if len(other)==1 and str(other[0].get('codequipo') or '').isdigit():
+                x=other[0];registered=str(x['codequipo']);other_category=team_category(x['nombre_competicion'])
+                result['additional_teams']=[{'team_id':registered,'team':x['nombre_equipo'],'competition_id':str(x['codigo_competicion']),'group_id':str(x['codgrupo']),'season_id':str(pdata['codigo_temporada']),'competition_label':x['nombre_competicion']+' · '+x['nombre_grupo'],'team_age_category':other_category,'match_duration':verify_category(request.get('age_category'),other_category),'team_source':'https://www.rffm.es/fichaequipo/'+registered,'role':'additional'}]
     elif fid == 'catalunya':
         data = initial_data(client.get(u.geturl()))
         member_name = unique_name([p['NOMBRE'] for p in data.get('players', [])], name)

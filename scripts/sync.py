@@ -156,7 +156,7 @@ def fixture(fid, player, key, home, away, date, hour, source, **extra):
             'season': player.get('season'), 'participation': {}, **extra}
 
 
-def madrid(client, player):
+def _madrid_team(client, player):
     base = FEDERATIONS['madrid'][2]
     team = client.next_props(base + 'fichaequipo/' + player['team_id'])['team']
     listed=any(str(p['cod_jugador'])==player['player_id'] for p in team.get('jugadores_equipo',[]))
@@ -257,6 +257,32 @@ def madrid(client, player):
         except Exception:
             continue
     return {'matches': matches, 'stats': summary, 'logo': logo, 'stats_note': 'Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.'+(' Ficha federativa: '+str(player.get('registration_team') or 'otro equipo')+'. Calendario y estadísticas limitados al equipo seguido: '+player['team']+'.' if player.get('player_source') else '')}
+
+
+def team_matches(matches,scope):
+    tid=str(scope.get('team_id') or '')
+    return [m for m in matches if tid in (str(m.get('home_team_id')),str(m.get('away_team_id'))) and (not m.get('group_id') or not scope.get('group_id') or str(m['group_id'])==str(scope['group_id']))]
+
+
+def madrid(client, player):
+    result=_madrid_team(client,player)
+    extras=[]
+    for scope in player.get('additional_teams',[]):
+        derived={**player,**scope,'additional_teams':[]}
+        item=copy.deepcopy(scope)
+        try:
+            extra=_madrid_team(client,derived)
+            if not extra['matches']:raise ValueError('Calendario del segundo equipo vacío')
+            result['matches'].extend(extra['matches'])
+            item.update(calendar_status='ok',updated_at=now())
+        except Exception:
+            previous=team_matches(player.get('_previous',[]),scope)
+            result['matches'].extend(copy.deepcopy(previous))
+            item.update(calendar_status='pending',updated_at=max((m.get('updated_at') or '' for m in previous),default=None))
+            result['source_warning']=True
+        extras.append(item)
+    if extras:result['additional_teams']=extras
+    return result
 
 
 def catalunya(client, player):
@@ -451,10 +477,11 @@ def sync(browser=False, registry_changes=False):
             old_player = next((p for p in previous.get('players', []) if p['id'] == config['id']), {})
             public = {k: config[k] for k in ('id', 'name', 'federation', 'collaborator', 'team', 'competition_label', 'source')}
             public['provider'] = config.get('provider', 'federation')
+            public.update({k:copy.deepcopy(config[k]) for k in ('team_id','competition_id','group_id','additional_teams') if config.get(k)})
             public.update({k:config[k] for k in ('age_category','team_age_category','source_acronym','official_adapter_version') if config.get(k)})
             public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source','player_source','team_source','registration_team','participation_evidence') if config.get(k)})
             if focus is not None and config['id'] not in focus:
-                public.update({k:old_player[k] for k in ('stats','logo','stats_note','updated_at','coverage','secondary_stats','secondary_warning') if k in old_player})
+                public.update({k:old_player[k] for k in ('stats','logo','stats_note','updated_at','coverage','secondary_stats','secondary_warning','additional_teams') if k in old_player})
                 feed['players'].append(public)
                 feed['matches'].extend(copy.deepcopy(m) for m in old_matches if config['id'] in m['player_ids'])
                 continue
@@ -464,7 +491,7 @@ def sync(browser=False, registry_changes=False):
                 if not result['matches']:
                     raise ValueError('Calendario vacío inesperado; se conservan los datos anteriores')
                 public.update({k: result.get(k) for k in ('stats', 'logo', 'stats_note')})
-                public.update({k:result[k] for k in ('secondary_stats','secondary_warning') if k in result})
+                public.update({k:result[k] for k in ('secondary_stats','secondary_warning','additional_teams') if k in result})
                 if result.get('secondary_warning') and same_secondary and old_player.get('secondary_stats'):
                     public['secondary_stats'] = old_player['secondary_stats']
                 public['updated_at'] = result.get('checked_at') or now()
@@ -484,7 +511,7 @@ def sync(browser=False, registry_changes=False):
                 message = f'{type(error).__name__}: {str(error)[:180]}'
                 print('::warning::' + fid + ': ' + message)
                 errors.append(config['id'])
-                public.update({k: old_player.get(k) for k in ('stats', 'logo', 'stats_note', 'updated_at', 'coverage', 'secondary_stats')})
+                public.update({k: old_player.get(k) for k in ('stats', 'logo', 'stats_note', 'updated_at', 'coverage', 'secondary_stats','additional_teams')})
                 if old_player.get('besoccer_player_source') != config.get('besoccer_player_source'):
                     public.pop('secondary_stats', None)
                 public['stats'] = public.get('stats') or new_stats()
@@ -506,7 +533,10 @@ def sync(browser=False, registry_changes=False):
     for player in feed['players']:
         own = [m for m in feed['matches'] if player['id'] in m['player_ids']]
         if own:
-            player['stats'], player['coverage'] = summarize(own, player['id'], player.get('stats'))
+            primary=team_matches(own,player) if player.get('additional_teams') else own
+            player['stats'], player['coverage'] = summarize(primary, player['id'], player.get('stats'))
+            for scope in player.get('additional_teams',[]):
+                scope['stats'],scope['coverage']=summarize(team_matches(own,scope),player['id'])
     path.parent.mkdir(exist_ok=True, parents=True)
     temp = path.with_suffix('.tmp')
     temp.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + '\n')
@@ -553,11 +583,13 @@ def apply_roster(feed, roster):
     for match in merged.values():
         for side in ('home', 'away'):
             def same_team(p):
-                if p.get('besoccer_team_id') and match.get(side + '_besoccer_team_id'):
-                    return str(p['besoccer_team_id']) == str(match[side + '_besoccer_team_id'])
-                if p.get('team_id') and match.get(side + '_team_id'):
-                    return str(p['team_id']) == str(match[side + '_team_id'])
-                return normalized(p['team']) == normalized(match[side])
+                for scope in [p,*p.get('additional_teams',[])]:
+                    if scope.get('besoccer_team_id') and match.get(side+'_besoccer_team_id'):
+                        if str(scope['besoccer_team_id'])==str(match[side+'_besoccer_team_id']):return True
+                    elif scope.get('team_id') and match.get(side+'_team_id'):
+                        if str(scope['team_id'])==str(match[side+'_team_id']):return True
+                    elif normalized(scope['team'])==normalized(match[side]):return True
+                return False
             players = [p['id'] for p in configs if p['federation'] == match['federation'] and same_team(p)]
             match[side + '_player_ids'] = players
         match['player_ids'] = sorted(set(match['player_ids'] + match['home_player_ids'] + match['away_player_ids']))

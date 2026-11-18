@@ -29,7 +29,7 @@ export function applyPublicRegistry(feed, registry) {
   // Only players already verified into the feed may appear. Removals and new
   // assignments can take effect immediately; new identities wait for validation.
   const players=feed.players.filter(p=>{
-    const d=desired.get(p.id);return d&&d.active!==false&&(!d._activation_revision||(feed.registry_revision||0)>=d._activation_revision);
+    const d=desired.get(p.id);return d&&d.active!==false&&(!d._activation_revision||(feed.registry_revision||0)>=d._activation_revision)&&(!d._identity_revision||(feed.registry_revision||0)>=d._identity_revision);
   }).map(p=>({...p,collaborator:desired.get(p.id).collaborator}));
   const active=new Set(players.map(p=>p.id));
   const matches=feed.matches.map(m=>({...m,player_ids:m.player_ids.filter(id=>active.has(id)),home_player_ids:(m.home_player_ids||[]).filter(id=>active.has(id)),away_player_ids:(m.away_player_ids||[]).filter(id=>active.has(id)),participation:Object.fromEntries(Object.entries(m.participation||{}).filter(([id])=>active.has(id))),participation_source:Object.fromEntries(Object.entries(m.participation_source||{}).filter(([id])=>active.has(id)))})).filter(m=>m.player_ids.length);
@@ -43,7 +43,7 @@ export function matchups(matches, players, dates) {
     const home=(m.home_player_ids||[]).filter(id=>active.has(id));
     const away=(m.away_player_ids||[]).filter(id=>active.has(id));
     const key=[m.federation,m.date,m.home,m.away].join('|');
-    if(!home.length||!away.length||seen.has(key))return [];
+    if(!home.length||!away.length||!home.some(h=>away.some(a=>a!==h))||seen.has(key))return [];
     seen.add(key);return [{...m,home_players:home.map(id=>active.get(id)),away_players:away.map(id=>active.get(id))}];
   });
 }

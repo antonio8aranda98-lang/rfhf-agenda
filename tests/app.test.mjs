@@ -54,3 +54,9 @@ test('public registry removes players and crossings immediately without publishi
   const next=applyPublicRegistry(feed,registry);assert.deepEqual(next.players,[{id:'a',collaborator:'Nuevo'}]);assert.deepEqual(next.matches[0].away_player_ids,[]);assert.equal(next.matches[0].participation.b,undefined);assert.equal(feed.players.length,2);
   registry.players[1]={id:'b',active:true,_activation_revision:3};assert.equal(applyPublicRegistry(feed,registry).players.length,1);
 });
+
+test('two teams belonging to the same followed player never create a self matchup',()=>{
+ const player={id:'one',name:'Jugador Uno',active:true};
+ const games=[{id:'same',date:'2026-11-21',home:'A',away:'B',federation:'madrid',home_player_ids:['one'],away_player_ids:['one'],status:'scheduled'}];
+ assert.equal(matchups(games,[player],['2026-11-21']).length,0);
+});

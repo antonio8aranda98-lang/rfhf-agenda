@@ -55,3 +55,9 @@ Si la ficha individual RFFM no devuelve competición, se puede añadir el enlace
 En Madrid se pueden guardar el enlace del equipo seguido y la ficha individual RFFM. El calendario pertenece al equipo indicado; no se sustituye por el de la inscripción principal. Se verifican nombre, identificador individual, temporada y competición de ese equipo. Cuando no figura en su plantilla, se exige además un acta cerrada del equipo seguido que lo incluya. Las estadísticas se calculan únicamente con esas actas y sus indicadores de visibilidad; los resúmenes acumulados de varios filiales no se mezclan.
 
 «Corregir lista existente» admite las cinco columnas habituales o seis añadiendo la ficha individual entre el enlace del equipo y el colaborador. Conserva los identificadores, no crea altas y vuelve a validar las identidades. Un nombre abreviado solo se amplía a un único registro existente; las coincidencias ambiguas se rechazan. La corrección de «Jesús Alejandro Rosales Barrios» con la grafía oficial «JESUS ALEJADRO» fue confirmada por Antonio y queda limitada al identificador, equipo y temporada comprobados.
+
+## Dos calendarios para el mismo jugador
+
+Si la ficha oficial confirma participación en otro equipo del mismo club, la agenda incorpora también ese segundo calendario. La cabecera de la ficha individual no se interpreta como prueba de inscripción principal. La tarjeta y el perfil muestran «Dos equipos» y cada cita distingue «Equipo seguido» y «Equipo adicional», con convocatoria por confirmar. La ficha muestra estadísticas separadas por equipo; los indicadores principales y la comparativa mantienen el ámbito del equipo seguido. No se suman partidos ni minutos de los dos calendarios.
+
+Las alertas de cruces consideran ambos equipos y los otros colaboradores, excluyendo enfrentamientos del jugador consigo mismo. Si falla un segundo calendario, se conserva su lectura anterior con su propia fecha y se indica la consulta incompleta.
