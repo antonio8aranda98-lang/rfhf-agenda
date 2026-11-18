@@ -8,6 +8,7 @@ from urllib.parse import urlparse, parse_qs
 
 from bs4 import BeautifulSoup
 from sync import ROOT, Client, FEDERATIONS, ADAPTERS, initial_data, normalized, now, apply_roster
+from besoccer_data import is_besoccer, PublicBeSoccer, resolve as resolve_besoccer
 
 
 def text(value, label, limit=100):
@@ -44,12 +45,25 @@ def unique_name(names, requested):
 
 def resolve_player(request, roster, client=None):
     fid = request.get('federation')
-    u = official_url(request.get('source'), fid)
+    if fid not in FEDERATIONS:
+        raise ValueError('Selecciona una federación de la agenda')
     name = text(request.get('name'), 'Nombre completo')
     collaborator = text(request.get('collaborator'), 'Colaborador')
     duration = request.get('match_duration')
     if type(duration) is not int or duration not in (60, 70, 80, 90):
         raise ValueError('Selecciona la duración reglamentaria de la categoría')
+    if is_besoccer(request.get('source')):
+        linked = resolve_besoccer(PublicBeSoccer(client or Client('https://es.besoccer.com')), request, roster['season'])
+        result = {**linked, 'provider':'besoccer', 'source':linked['besoccer_team_source'],
+                  'team':linked['besoccer_team'], 'team_id':'besoccer-'+linked['besoccer_team_id'],
+                  'player_id':'besoccer-'+linked['besoccer_player_source'].rsplit('-',1)[1],
+                  'competition_label':linked['besoccer_competition_label']}
+        result.update(id=re.sub(r'[^a-z0-9]+', '-', normalized(name).lower()).strip('-')+'-'+fid+'-'+result['player_id'],
+                      name=name, federation=fid, collaborator=collaborator, match_duration=duration, active=True)
+        if any(p['federation']==fid and name_key(p['name'])==name_key(name) for p in roster['players']):
+            raise ValueError('El jugador ya está registrado. Utiliza reactivar o cambiar sus fuentes.')
+        return result
+    u = official_url(request.get('source'), fid)
     client = client or Client(FEDERATIONS[fid][2])
     try:
         if fid != 'murcia':
@@ -148,6 +162,11 @@ def resolve_player(request, roster, client=None):
     verified = ADAPTERS[fid](client, {**result, 'season': roster['season']})
     if not verified.get('matches'):
         raise ValueError('No se ha verificado el calendario; el alta permanece pendiente')
+    if request.get('besoccer_team_source'):
+        linked = resolve_besoccer(PublicBeSoccer(Client('https://es.besoccer.com')), request, roster['season'])
+        result.update({k:v for k,v in linked.items() if k.startswith('besoccer_')})
+    elif request.get('besoccer_player_source'):
+        raise ValueError('Incluye también el enlace del equipo en BeSoccer')
     return result
 
 

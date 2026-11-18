@@ -63,10 +63,19 @@ def new_stats():
     return {k: None for k in (*STAT_FIELDS, 'played', 'assists', 'yellow', 'red')}
 
 
+class PublicRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        if urllib.parse.urlparse(req.full_url).hostname == 'es.besoccer.com':
+            u = urllib.parse.urlparse(newurl)
+            if u.scheme != 'https' or u.hostname != 'es.besoccer.com' or u.username or u.password or u.port not in (None,443):
+                raise ValueError('BeSoccer ha redirigido fuera de la fuente pública autorizada')
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
 class Client:
     def __init__(self, base):
         self.base = base
-        self.opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+        self.opener = urllib.request.build_opener(PublicRedirect(), urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
         self.opener.addheaders = [('User-Agent', 'RFHF-Agenda/1.0 (public football fixtures; github.com/antonio8aranda98-lang/rfhf-agenda)'), ('Accept', 'text/html,application/json')]
         self.last_request = 0
         self.cache = {}
@@ -77,7 +86,7 @@ class Client:
             return self.cache[url]
         # The legacy Murcia portal sometimes returns empty HTTP 200 responses.
         # Keep a conservative request rate and pause once before giving up.
-        interval = 8 if 'ffrm.es' in self.base else .65
+        interval = 8 if 'ffrm.es' in self.base else 2 if 'besoccer.com' in self.base else .65
         time.sleep(max(0, interval - (time.monotonic() - self.last_request)))
         self.last_request = time.monotonic()
         request = urllib.request.Request(url, headers={'Referer': self.base, **(headers or {})})
@@ -351,6 +360,24 @@ def valencia(client, player):
 ADAPTERS = {'madrid': madrid, 'catalunya': catalunya, 'murcia': murcia, 'valencia': valencia}
 
 
+def collect_player(client, secondary_client, player, previous=()):
+    from besoccer_data import PublicBeSoccer, adapter, enrich_official
+    api = PublicBeSoccer(secondary_client)
+    if player.get('provider') == 'besoccer':
+        return adapter(api, player, previous)
+    result = ADAPTERS[player['federation']](client, player)
+    if player.get('besoccer_team_source'):
+        try:
+            secondary = adapter(api, player)
+            result = enrich_official(result, secondary, player)
+            result['secondary_stats'] = {'provider':'besoccer', 'source':player['besoccer_player_source'],
+                'team':player['besoccer_team'], 'competition':player['besoccer_competition_label'],
+                'season':player['season'], 'stats':secondary['stats'], 'checked_at':now()}
+        except Exception:
+            result['secondary_warning'] = 'BeSoccer no está disponible o no confirma la plantilla; se conservan los datos de la federación.'
+    return result
+
+
 def sync(browser=False):
     roster = json.loads((ROOT / 'data/roster.json').read_text())
     path = ROOT / 'docs/data/feed.json'
@@ -362,6 +389,7 @@ def sync(browser=False):
     feed = {'schema_version': 1, 'generated_at': now(), 'season': roster['season'], 'registry_revision': roster.get('registry_revision', 0), 'federations': [], 'players': [], 'matches': []}
     old_matches = previous.get('matches', [])
     total_success = 0
+    secondary_client = Client('https://es.besoccer.com')
     for fid, (label, acronym, base) in FEDERATIONS.items():
         client = Client(base)
         # Normal public landing establishes the same public session as website navigation.
@@ -378,16 +406,19 @@ def sync(browser=False):
             config = {**config, 'season': roster['season']}
             old_player = next((p for p in previous.get('players', []) if p['id'] == config['id']), {})
             public = {k: config[k] for k in ('id', 'name', 'federation', 'collaborator', 'team', 'competition_label', 'source')}
+            public['provider'] = config.get('provider', 'federation')
+            public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source') if config.get(k)})
             try:
-                result = ADAPTERS[fid](client, config)
+                result = collect_player(client, secondary_client, config, old_matches)
                 if not result['matches']:
                     raise ValueError('Calendario vacío inesperado; se conservan los datos anteriores')
                 public.update({k: result.get(k) for k in ('stats', 'logo', 'stats_note')})
+                public.update({k:result[k] for k in ('secondary_stats','secondary_warning') if k in result})
                 public['updated_at'] = now()
                 for m in result['matches']:
                     checked = m.setdefault('participation_checked_at', {})
                     for player_id in m.get('participation', {}):
-                        checked[player_id] = public['updated_at']
+                        checked.setdefault(player_id, public['updated_at'])
                     previous_match = next((old for old in old_matches if old['id'] == m['id']), None)
                     # A temporary act failure must not erase a previously verified
                     # record. Retain its original date, only for an unchanged result.
@@ -396,6 +427,8 @@ def sync(browser=False):
                         if config['id'] not in m['participation'] and old_record is not None:
                             m['participation'][config['id']] = copy.deepcopy(old_record)
                             checked[config['id']] = previous_match.get('participation_checked_at', {}).get(config['id'], previous_match.get('updated_at'))
+                            previous_source = previous_match.get('participation_source', {}).get(config['id'])
+                            if previous_source: m.setdefault('participation_source', {})[config['id']] = previous_source
                     m['updated_at'] = public['updated_at']
                     feed['matches'].append(m)
                 successes += 1
@@ -405,7 +438,7 @@ def sync(browser=False):
                 message = f'{type(error).__name__}: {str(error)[:180]}'
                 print('::warning::' + fid + ': ' + message)
                 errors.append(config['id'])
-                public.update({k: old_player.get(k) for k in ('stats', 'logo', 'stats_note', 'updated_at', 'coverage')})
+                public.update({k: old_player.get(k) for k in ('stats', 'logo', 'stats_note', 'updated_at', 'coverage', 'secondary_stats')})
                 public['stats'] = public.get('stats') or new_stats()
                 feed['matches'].extend(copy.deepcopy(m) for m in old_matches if config['id'] in m['player_ids'])
             feed['players'].append(public)
@@ -437,9 +470,12 @@ def apply_roster(feed, roster):
         m['player_ids'] = [id for id in m['player_ids'] if id in active]
         m['participation'] = {id: stats for id, stats in m.get('participation', {}).items() if id in active}
         m['participation_checked_at'] = {id: stamp for id, stamp in m.get('participation_checked_at', {}).items() if id in active}
+        m['participation_source'] = {id: source for id, source in m.get('participation_source', {}).items() if id in active}
         if not m['player_ids']:
             continue
-        if m['federation'] == 'murcia':
+        if m.get('besoccer_match_id'):
+            key = (m['federation'], 'besoccer', m['besoccer_match_id'])
+        elif m['federation'] == 'murcia':
             config = next((p for p in configs if p['id'] in m['player_ids']), {})
             key = ('murcia', m.get('group_id') or config.get('group_id'), m.get('round'), normalized(m['home']), normalized(m['away']))
         else:
@@ -448,17 +484,21 @@ def apply_roster(feed, roster):
             old = merged[key]
             # Prefer the latest fixture details when one player's refresh failed.
             older, newer = (old, m) if (m.get('updated_at') or '') >= (old.get('updated_at') or '') else (m, old)
-            combined = copy.deepcopy(newer)
+            preferred = next((x for x in (newer,older) if x.get('provider') != 'besoccer'), newer)
+            combined = copy.deepcopy(preferred)
             combined['player_ids'] = sorted(set(old['player_ids'] + m['player_ids']))
             if (older.get('status'), older.get('score_home'), older.get('score_away')) == (newer.get('status'), newer.get('score_home'), newer.get('score_away')):
                 combined['participation'] = {**older['participation'], **newer['participation']}
                 combined['participation_checked_at'] = {**older['participation_checked_at'], **newer['participation_checked_at']}
+                combined['participation_source'] = {**older['participation_source'], **newer['participation_source']}
             merged[key] = combined
         else:
             merged[key] = m
     for match in merged.values():
         for side in ('home', 'away'):
             def same_team(p):
+                if p.get('besoccer_team_id') and match.get(side + '_besoccer_team_id'):
+                    return str(p['besoccer_team_id']) == str(match[side + '_besoccer_team_id'])
                 if p.get('team_id') and match.get(side + '_team_id'):
                     return str(p['team_id']) == str(match[side + '_team_id'])
                 return normalized(p['team']) == normalized(match[side])

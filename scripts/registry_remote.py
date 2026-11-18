@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from registry import resolve_player, text
 from sync import ROOT, ADAPTERS, FEDERATIONS, Client, apply_roster, now
+from besoccer_data import FIELDS, PublicBeSoccer, resolve as resolve_besoccer
 
 REGISTRY = 'https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/api/registry'
 
@@ -45,14 +46,25 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
                     if revalidate:
                         revalidate(existing, current['season'])
                     else:
+                        from sync import collect_player
                         fid = existing['federation']
-                        verified = ADAPTERS[fid](Client(FEDERATIONS[fid][2]), {**existing, 'season':current['season']})
+                        verified = collect_player(Client(FEDERATIONS[fid][2]), Client('https://es.besoccer.com'), {**existing, 'season':current['season']})
                         if not verified.get('matches'):
                             raise ValueError('No se ha podido volver a verificar el calendario')
+                links_changed = entry.get('besoccer_team_source', '') != existing.get('besoccer_team_source', '') or entry.get('besoccer_player_source', '') != existing.get('besoccer_requested_player_source', existing.get('besoccer_player_source', ''))
+                if links_changed:
+                    if entry.get('besoccer_team_source'):
+                        linked = resolve_besoccer(PublicBeSoccer(Client('https://es.besoccer.com')), entry, current['season'])
+                        existing.update({k:v for k,v in linked.items() if k.startswith('besoccer_')})
+                    elif existing.get('provider') == 'besoccer':
+                        raise ValueError('El jugador usa BeSoccer como fuente principal; conserva su enlace del equipo')
+                    else:
+                        for k in list(existing):
+                            if k.startswith('besoccer_'): existing.pop(k)
                 existing['collaborator'] = text(entry.get('collaborator'), 'Colaborador')
                 existing['active'] = True
             else:
-                request = {k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','competition_source') if entry.get(k) is not None}
+                request = {k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','competition_source',*FIELDS) if entry.get(k) is not None}
                 # Never trust identifiers supplied by a browser for a new player.
                 verified = resolver(request, updated)
                 verified['id'] = id

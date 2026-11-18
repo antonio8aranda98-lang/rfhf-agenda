@@ -20,6 +20,10 @@ El registro deseado se guarda en D1. Su endpoint de lectura contiene solo datos 
 
 Los conectores usan las páginas y consultas públicas de las federaciones, con peticiones limitadas a los equipos seguidos. Guardan fuente, fecha y cobertura. Un dato ausente se muestra como «—», nunca como cero. Las asistencias no están validadas.
 
+BeSoccer está integrado como fuente principal alternativa o complemento opcional de una ficha federativa. El panel acepta enlaces del equipo y del jugador, y permite añadirlos a registros existentes. Se verifica el nombre completo con la ficha, la pertenencia a la plantilla y el ámbito de temporada y competición. Los partidos se filtran por equipo, competición, año e intervalo de temporada, y los horarios con zona se convierten a Europe/Madrid. Se leen páginas HTML públicas con identificador de aplicación, ritmo limitado y caché por ejecución; no se ejecuta JavaScript remoto. Las redirecciones fuera de es.besoccer.com se rechazan.
+
+Las convocatorias de BeSoccer proceden de alineaciones verificables, incluidas suplencias sin minutos. «PS» no se utiliza para inferir convocatorias. Se consultan como máximo diez alineaciones por jugador y ejecución, conservando las anteriores del mismo resultado con su fecha, y se revisan las dos más recientes. Los campos federativos prevalecen; un complemento solo completa ausencias en un encuentro idéntico. El resumen complementario de BeSoccer queda separado para no sumar totales o temporadas. Las identidades de equipo de ambas fuentes se usan para detectar cruces entre colaboradores.
+
 - Madrid: calendario, campos, escudos, resumen y actas individuales.
 - Cataluña: calendario y actas de convocatorias, titulares, suplentes y goles. Falta un total de minutos cuando no se publican intervalos de sustitución verificables.
 - Murcia: calendario y actas públicas; algunas rutas antiguas responden vacías. Se conserva la última participación comprobada con su fecha y se señala la cobertura.

@@ -32,7 +32,7 @@ export function applyPublicRegistry(feed, registry) {
     const d=desired.get(p.id);return d&&d.active!==false&&(!d._activation_revision||(feed.registry_revision||0)>=d._activation_revision);
   }).map(p=>({...p,collaborator:desired.get(p.id).collaborator}));
   const active=new Set(players.map(p=>p.id));
-  const matches=feed.matches.map(m=>({...m,player_ids:m.player_ids.filter(id=>active.has(id)),home_player_ids:(m.home_player_ids||[]).filter(id=>active.has(id)),away_player_ids:(m.away_player_ids||[]).filter(id=>active.has(id)),participation:Object.fromEntries(Object.entries(m.participation||{}).filter(([id])=>active.has(id)))})).filter(m=>m.player_ids.length);
+  const matches=feed.matches.map(m=>({...m,player_ids:m.player_ids.filter(id=>active.has(id)),home_player_ids:(m.home_player_ids||[]).filter(id=>active.has(id)),away_player_ids:(m.away_player_ids||[]).filter(id=>active.has(id)),participation:Object.fromEntries(Object.entries(m.participation||{}).filter(([id])=>active.has(id))),participation_source:Object.fromEntries(Object.entries(m.participation_source||{}).filter(([id])=>active.has(id)))})).filter(m=>m.player_ids.length);
   return {...feed,players,matches};
 }
 export function matchups(matches, players, dates) {
