@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T16:23:22+00:00",
+  "generated_at": "2026-11-18T16:38:17+00:00",
   "season": "2026-2027",
   "registry_revision": 13,
   "federations": [
@@ -10,7 +10,7 @@
       "acronym": "RFFM",
       "source": "https://www.rffm.es/",
       "status": "partial",
-      "checked_at": "2026-11-18T16:32:13+00:00",
+      "checked_at": "2026-11-18T16:39:31+00:00",
       "last_success": "2026-11-18T11:25:47+00:00",
       "message": "Consulta automática completada",
       "failed_players": []
@@ -2927,6 +2927,114 @@
       }
     },
     {
+      "id": "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+      "name": "Alejandro Martin Martinez",
+      "federation": "madrid",
+      "collaborator": "Sergio Martín",
+      "team": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
+      "competition_label": "PREFERENTE JUVENIL · Grupo 4",
+      "source": "https://www.rffm.es/fichajugador/5518110",
+      "provider": "federation",
+      "team_id": "12325489",
+      "competition_id": "26737718",
+      "group_id": "26737722",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "stats": {
+        "team_played": 10,
+        "called_up": 10,
+        "starts": 9,
+        "bench": 1,
+        "minutes": 845,
+        "goals": 5,
+        "played": 10,
+        "assists": null,
+        "yellow": 3,
+        "red": 0
+      },
+      "logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011715402_logo_M__xico_FC_rN.png",
+      "stats_note": "Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.",
+      "updated_at": "2026-11-18T16:38:58+00:00",
+      "coverage": {
+        "team_played": 10,
+        "acts_checked": 9,
+        "minutes_checked": 9,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
+    },
+    {
+      "id": "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3",
+      "name": "Gonzalo Oliva Olive",
+      "federation": "madrid",
+      "collaborator": "Sergio Martín",
+      "team": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
+      "competition_label": "PREFERENTE JUVENIL · Grupo 4",
+      "source": "https://www.rffm.es/fichajugador/9649030",
+      "provider": "federation",
+      "team_id": "12325489",
+      "competition_id": "26737718",
+      "group_id": "26737722",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "stats": {
+        "team_played": 10,
+        "called_up": 9,
+        "starts": 5,
+        "bench": 4,
+        "minutes": 533,
+        "goals": 4,
+        "played": 9,
+        "assists": null,
+        "yellow": 1,
+        "red": 0
+      },
+      "logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011715402_logo_M__xico_FC_rN.png",
+      "stats_note": "Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.",
+      "updated_at": "2026-11-18T16:39:01+00:00",
+      "coverage": {
+        "team_played": 10,
+        "acts_checked": 9,
+        "minutes_checked": 9,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
+    },
+    {
+      "id": "p-b2f9fc89-652e-4862-8d30-f973dcec5215",
+      "name": "Hector Gutierrez Sevillano",
+      "federation": "madrid",
+      "collaborator": "Rafa Mancheño",
+      "team": "C.D.B. COSLADA 'A'",
+      "competition_label": "PREFERENTE CADETE · Grupo 4",
+      "source": "https://www.rffm.es/fichajugador/14205619",
+      "provider": "federation",
+      "team_id": "689",
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "age_category": "cadete",
+      "team_age_category": "cadete",
+      "stats": {
+        "team_played": 8,
+        "called_up": 7,
+        "starts": 3,
+        "bench": 4,
+        "minutes": null,
+        "goals": 0,
+        "played": 3,
+        "assists": null,
+        "yellow": 0,
+        "red": 0
+      },
+      "logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "stats_note": "Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.",
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "coverage": {
+        "team_played": 8,
+        "acts_checked": 8,
+        "minutes_checked": 1,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
+    },
+    {
       "id": "aleix-camarasa-oros",
       "name": "Aleix Camarasa Oros",
       "federation": "catalunya",
@@ -4264,8 +4372,10 @@
       "id": "madrid-5583378",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "C.D. SAMPER - MADRID CITY COSLADA 'A'",
@@ -4302,19 +4412,39 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
         }
       },
       "home_team_id": "12325489",
       "away_team_id": "4926357",
       "participation_checked_at": {
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
       },
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -8172,8 +8302,10 @@
       "id": "madrid-5583388",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "ESCUELA DE FUTBOL. RIVAS VACIAMADRID 'A'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -8210,20 +8342,40 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 86,
+          "goals": 1
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
         }
       },
       "home_team_id": "1668",
       "away_team_id": "12325489",
       "participation_checked_at": {
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
       },
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -9774,6 +9926,54 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594629",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "S.A.D. FUNDACION ESCUELA DE FUTBOL AFE 'A'",
+      "date": "2026-09-26",
+      "time": "17:30",
+      "status": "finished",
+      "source": "https://www.rffm.es/acta-partido/5594629",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011230707_unnamed.jpg",
+      "score_home": 2,
+      "score_away": 3,
+      "round": 1,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "689",
+      "away_team_id": "15294615",
+      "participation_checked_at": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": "2026-11-18T16:39:31+00:00"
+      },
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5572728",
       "federation": "madrid",
       "player_ids": [
@@ -10416,8 +10616,10 @@
       "id": "madrid-5583397",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "S.A.D. A.D.C. PARQUE SURESTE 'A'",
@@ -10462,11 +10664,13 @@
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00"
       },
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -12268,6 +12472,54 @@
         "p-30526fbe-539f-4f16-8ac4-d0411f729499"
       ],
       "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-5594630",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "A.D. SAN PASCUAL-MONTPELLIER 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2026-10-03",
+      "time": "12:00",
+      "status": "finished",
+      "source": "https://www.rffm.es/acta-partido/5594630",
+      "venue": "PVO. SAN JUAN BAUTISTA - ANTIGÜO GARCIA DE LA MATA (HA)(HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011075319_ESCUDO_SPM.png",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": 5,
+      "score_away": 2,
+      "round": 2,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "6819551",
+      "away_team_id": "689",
+      "participation_checked_at": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": "2026-11-18T16:39:31+00:00"
+      },
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
       "is_internal_matchup": false
     },
     {
@@ -15082,8 +15334,10 @@
       "id": "madrid-5583407",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "ESC. MUN. FUT. VILLAREJO",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -15120,20 +15374,40 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 60,
+          "goals": 0
         }
       },
       "home_team_id": "1618",
       "away_team_id": "12325489",
       "participation_checked_at": {
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
       },
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -15906,8 +16180,10 @@
       "id": "madrid-5583416",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "ESCUELA DE FUTBOL DE VICALVARO 'A'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -15944,20 +16220,40 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 75,
+          "goals": 1
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 34,
+          "goals": 0
         }
       },
       "home_team_id": "1148",
       "away_team_id": "12325489",
       "participation_checked_at": {
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
       },
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -16770,6 +17066,54 @@
       "participation_source": {},
       "home_player_ids": [
         "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-5594645",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "C.D. DOSA 'A'",
+      "date": "2026-10-10",
+      "time": "17:15",
+      "status": "finished",
+      "source": "https://www.rffm.es/acta-partido/5594645",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258150_ESC_C.D._DOSA__1_.png",
+      "score_home": 1,
+      "score_away": 3,
+      "round": 3,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "689",
+      "away_team_id": "659",
+      "participation_checked_at": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": "2026-11-18T16:39:31+00:00"
+      },
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -19340,6 +19684,54 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594646",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D. OLIMPICO LAS ROSAS 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2026-10-17",
+      "time": "12:05",
+      "status": "finished",
+      "source": "https://www.rffm.es/acta-partido/5594646",
+      "venue": "CENTRO DEP. MUN. PEPU HERNANDEZ (HA)(HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011014521_AF_ESCUDO_CDOR_COLOR_page_001.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": 2,
+      "score_away": 1,
+      "round": 4,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        }
+      },
+      "home_team_id": "2730084",
+      "away_team_id": "689",
+      "participation_checked_at": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": "2026-11-18T16:39:31+00:00"
+      },
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5572752",
       "federation": "madrid",
       "player_ids": [
@@ -20345,8 +20737,10 @@
       "id": "madrid-5583425",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "A.D. COMPLUTENSE ALCALA 'D'",
@@ -20383,19 +20777,39 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 72,
+          "goals": 0
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "12325489",
       "away_team_id": "10654858",
       "participation_checked_at": {
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
       },
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -22911,6 +23325,54 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594661",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "C.D. SAMPER - MADRID CITY COSLADA 'A'",
+      "date": "2026-10-24",
+      "time": "13:30",
+      "status": "finished",
+      "source": "https://www.rffm.es/acta-partido/5594661",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011147840_logo_samper.png",
+      "score_home": 3,
+      "score_away": 1,
+      "round": 5,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "689",
+      "away_team_id": "2732900",
+      "participation_checked_at": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": "2026-11-18T16:39:31+00:00"
+      },
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5584658",
       "federation": "madrid",
       "player_ids": [
@@ -25155,8 +25617,10 @@
       "id": "madrid-5583433",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "PERISO CLUB DE FUTBOL 'B'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -25193,20 +25657,40 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 2
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 33,
+          "goals": 0
         }
       },
       "home_team_id": "10677658",
       "away_team_id": "12325489",
       "participation_checked_at": {
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
       },
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -26330,6 +26814,54 @@
       "home_player_ids": [],
       "away_player_ids": [
         "p-03234e3c-6d9f-4b31-9419-37a847dbb87f"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-5594662",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "A.D. COMPLUTENSE ALCALA 'C'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2026-10-31",
+      "time": "13:40",
+      "status": "finished",
+      "source": "https://www.rffm.es/acta-partido/5594662",
+      "venue": "ALCALA - RECINTO FERIAL (HA)(HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000080565_Escudo.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": 1,
+      "score_away": 2,
+      "round": 6,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "2456",
+      "away_team_id": "689",
+      "participation_checked_at": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": "2026-11-18T16:39:31+00:00"
+      },
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
       ],
       "is_internal_matchup": false
     },
@@ -27598,8 +28130,10 @@
       "id": "madrid-5583442",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "C.D. ASOC RETIRO SUR 'A'",
@@ -27636,19 +28170,39 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 75,
+          "goals": 0
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 50,
+          "goals": 0
         }
       },
       "home_team_id": "12325489",
       "away_team_id": "13523515",
       "participation_checked_at": {
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
       },
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -29809,6 +30363,54 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594677",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "C.D. SAN FERNANDO 'C'",
+      "date": "2026-11-07",
+      "time": "13:30",
+      "status": "finished",
+      "source": "https://www.rffm.es/acta-partido/5594677",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187001_1016_C.D._San_Fernando_2026_2027_Federacion.png",
+      "score_home": 4,
+      "score_away": 2,
+      "round": 7,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "689",
+      "away_team_id": "124",
+      "participation_checked_at": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": "2026-11-18T16:39:31+00:00"
+      },
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5634491",
       "federation": "madrid",
       "player_ids": [
@@ -31208,8 +31810,10 @@
       "id": "madrid-5583450",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "E.D. MORATALAZ 'C'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -31246,20 +31850,40 @@
           "played": 1,
           "minutes": 13,
           "goals": 0
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 1
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 20,
+          "goals": 1
         }
       },
       "home_team_id": "627",
       "away_team_id": "12325489",
       "participation_checked_at": {
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
       },
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -33854,8 +34478,10 @@
       "id": "madrid-5583459",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "AD A.TOLEDO OLIVOS C.F. 'A'",
@@ -33876,15 +34502,37 @@
       "competition_id": "26737718",
       "group_id": "26737722",
       "season": "2026-2027",
-      "participation": {},
+      "participation": {
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 87,
+          "goals": 0
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 66,
+          "goals": 1
+        }
+      },
       "home_team_id": "12325489",
       "away_team_id": "334202",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "participation_checked_at": {
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
+      },
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -34118,6 +34766,54 @@
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2"
       ],
       "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-5594678",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "E.D. MORATALAZ 'B'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2026-11-14",
+      "time": "18:30",
+      "status": "finished",
+      "source": "https://www.rffm.es/acta-partido/5594678",
+      "venue": "PVO. LILI ALVAREZ (HA)(HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": 1,
+      "score_away": 7,
+      "round": 8,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": null,
+          "goals": 0
+        }
+      },
+      "home_team_id": "630",
+      "away_team_id": "689",
+      "participation_checked_at": {
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215": "2026-11-18T16:39:31+00:00"
+      },
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
       "is_internal_matchup": false
     },
     {
@@ -36466,6 +37162,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594693",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "C.D. TAJAMAR 'A'",
+      "date": "2026-11-21",
+      "time": "12:00",
+      "status": "scheduled",
+      "source": "https://www.rffm.es/acta-partido/5594693",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010921189_3528_TAJAMAR.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 9,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "1556",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5634508",
       "federation": "madrid",
       "player_ids": [
@@ -38242,8 +38975,10 @@
       "id": "madrid-5583467",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "A.D. LA PLATA-TR82 'B'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -38268,12 +39003,14 @@
       "home_team_id": "4913863",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -39745,6 +40482,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594694",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D. VICALVARO 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2026-11-28",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594694",
+      "venue": "CAMPO VALDEBERNARDO 1 (HA) (HA)",
+      "locality": "Madrid",
+      "address": "AVDA. DE LA AURORA BOREAL, 4",
+      "latitude": "40.4002411",
+      "longitude": "-3.6108976",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011122324_FONDO_BLANCO.png",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 10,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "600",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595656",
       "federation": "madrid",
       "player_ids": [
@@ -40619,8 +41393,10 @@
       "id": "madrid-5583476",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "VILLALBILLA C.F.",
@@ -40645,11 +41421,13 @@
       "home_team_id": "12325489",
       "away_team_id": "846518",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -42919,6 +43697,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594709",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "ESC.F. JUVENTUD MADRID 'A'",
+      "date": "2026-12-13",
+      "time": "09:00",
+      "status": "scheduled",
+      "source": "https://www.rffm.es/acta-partido/5594709",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011741131_ESCUDO_JOTA_25ANV4.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 11,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "974",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "catalunya-4193736",
       "federation": "catalunya",
       "player_ids": [
@@ -43644,8 +44459,10 @@
       "id": "madrid-5583484",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "ESCUELA DE FUTBOL ARGANDA 'A'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -43670,12 +44487,14 @@
       "home_team_id": "1545",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -45562,6 +46381,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594710",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "E.D.M. SAN BLAS 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2026-12-19",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594710",
+      "venue": "MUNICIPAL SAN BLAS 1 (HA)(HA)",
+      "locality": "Madrid",
+      "address": "AVDA. DE GUADALAJARA 16",
+      "latitude": "40.4197334",
+      "longitude": "-3.6192439",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 12,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "1762",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595671",
       "federation": "madrid",
       "player_ids": [
@@ -46586,8 +47442,10 @@
       "id": "madrid-5583493",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "ESC. DEP. DE FUTBOL DE TORRES",
@@ -46612,11 +47470,13 @@
       "home_team_id": "12325489",
       "away_team_id": "1926",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -48950,6 +49810,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594725",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "A.D. ESPERANZA 'B'",
+      "date": "2027-01-16",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594725",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010880112_ESPERANZA.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 13,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "466610",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5605960",
       "federation": "madrid",
       "player_ids": [
@@ -49743,8 +50640,10 @@
       "id": "madrid-5583501",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "A.D. TORREJON C.F. 'C'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -49769,12 +50668,14 @@
       "home_team_id": "2366",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -51554,6 +52455,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594726",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "C.D. UNION VALDEBERNARDO 'A'",
+      "date": "2027-01-23",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594726",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010931511_Escudo_ValdeBernardo_Union.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 14,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "3359719",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595686",
       "federation": "madrid",
       "player_ids": [
@@ -52421,8 +53359,10 @@
       "id": "madrid-5583510",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "C.D. VICALVARO 'B'",
@@ -52447,11 +53387,13 @@
       "home_team_id": "12325489",
       "away_team_id": "598",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -54159,6 +55101,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594741",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "SAD PROMESAS FUNDACION R.S.D. ALCALA 'B'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2027-01-30",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594741",
+      "venue": "ALCALA - ATLETICO DE MADRID C.D. (HA)(HA)",
+      "locality": "Alcalá De Henares",
+      "address": "AVDA. GUSTAVO ADOLFO BECQUER 64",
+      "latitude": "40.5082938",
+      "longitude": "-3.3608554",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014267396_PROMESAS_FUND_ALCALA.png",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 15,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "13561243",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595694",
       "federation": "madrid",
       "player_ids": [
@@ -55100,8 +56079,10 @@
       "id": "madrid-5583518",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "C.D. UNION VALDEBERNARDO 'A'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -55126,12 +56107,14 @@
       "home_team_id": "4928298",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -56612,6 +57595,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594749",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "S.A.D. FUNDACION ESCUELA DE FUTBOL AFE 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2027-02-06",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594749",
+      "venue": "PVO. LA ELIPA (HA)(HA)",
+      "locality": "Madrid",
+      "address": "CALLE ALCALDE GARRIDO JUARISTI 17",
+      "latitude": "40.41603310000001",
+      "longitude": "-3.6560731",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011230707_unnamed.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 16,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "15294615",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595708",
       "federation": "madrid",
       "player_ids": [
@@ -57297,8 +58317,10 @@
       "id": "madrid-5583531",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "C.D. SAMPER - MADRID CITY COSLADA 'A'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -57323,12 +58345,14 @@
       "home_team_id": "4926357",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -58998,6 +60022,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594750",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "A.D. SAN PASCUAL-MONTPELLIER 'A'",
+      "date": "2027-02-13",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594750",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011075319_ESCUDO_SPM.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 17,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "6819551",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595716",
       "federation": "madrid",
       "player_ids": [
@@ -59941,8 +61002,10 @@
       "id": "madrid-5583541",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "ESCUELA DE FUTBOL. RIVAS VACIAMADRID 'A'",
@@ -59967,11 +61030,13 @@
       "home_team_id": "12325489",
       "away_team_id": "1668",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -61642,6 +62707,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594765",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D. DOSA 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2027-02-20",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594765",
+      "venue": "COLEGIO SANTO DOMINGO SAVIO (HA)(HA)",
+      "locality": "Madrid",
+      "address": "CALLE SANTO DOMINGO SAVIO 2",
+      "latitude": "40.430426",
+      "longitude": "-3.6342289",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258150_ESC_C.D._DOSA__1_.png",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 18,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "659",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595723",
       "federation": "madrid",
       "player_ids": [
@@ -62511,8 +63613,10 @@
       "id": "madrid-5583550",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "S.A.D. A.D.C. PARQUE SURESTE 'A'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -62537,12 +63641,14 @@
       "home_team_id": "2805",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -64179,6 +65285,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594766",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "C.D. OLIMPICO LAS ROSAS 'A'",
+      "date": "2027-02-27",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594766",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011014521_AF_ESCUDO_CDOR_COLOR_page_001.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 19,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "2730084",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595731",
       "federation": "madrid",
       "player_ids": [
@@ -65123,8 +66266,10 @@
       "id": "madrid-5583560",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "ESC. MUN. FUT. VILLAREJO",
@@ -65149,11 +66294,13 @@
       "home_team_id": "12325489",
       "away_team_id": "1618",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -66755,6 +67902,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594781",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D. SAMPER - MADRID CITY COSLADA 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2027-03-06",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594781",
+      "venue": "COSLADA - BARRIO DEL PUERTO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL PUERTO DE BILBAO 1",
+      "latitude": "40.41733",
+      "longitude": "-3.57545",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011147840_logo_samper.png",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 20,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "2732900",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595738",
       "federation": "madrid",
       "player_ids": [
@@ -67695,8 +68879,10 @@
       "id": "madrid-5583569",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "ESCUELA DE FUTBOL DE VICALVARO 'A'",
@@ -67721,11 +68907,13 @@
       "home_team_id": "12325489",
       "away_team_id": "1148",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -69396,6 +70584,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594782",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "A.D. COMPLUTENSE ALCALA 'C'",
+      "date": "2027-03-13",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594782",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000080565_Escudo.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 21,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "2456",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595746",
       "federation": "madrid",
       "player_ids": [
@@ -70376,8 +71601,10 @@
       "id": "madrid-5583578",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "A.D. COMPLUTENSE ALCALA 'D'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -70402,12 +71629,14 @@
       "home_team_id": "10654858",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -72153,6 +73382,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594797",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D. SAN FERNANDO 'C'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2027-03-20",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594797",
+      "venue": "SAN FERNANDO - SANTIAGO DEL PINO (HA)(HA)",
+      "locality": "San Fernando De Henares",
+      "address": "PASEO DE LOS PINOS S/N",
+      "latitude": "40.4334703",
+      "longitude": "-3.5260942",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187001_1016_C.D._San_Fernando_2026_2027_Federacion.png",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 22,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "124",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595753",
       "federation": "madrid",
       "player_ids": [
@@ -72949,8 +74215,10 @@
       "id": "madrid-5583586",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "PERISO CLUB DE FUTBOL 'B'",
@@ -72975,11 +74243,13 @@
       "home_team_id": "12325489",
       "away_team_id": "10677658",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -74651,6 +75921,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594798",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "E.D. MORATALAZ 'B'",
+      "date": "2027-04-03",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594798",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 23,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "630",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595761",
       "federation": "madrid",
       "player_ids": [
@@ -75591,8 +76898,10 @@
       "id": "madrid-5583595",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "C.D. ASOC RETIRO SUR 'A'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -75617,12 +76926,14 @@
       "home_team_id": "13523515",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -77443,6 +78754,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594813",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D. TAJAMAR 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2027-04-10",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594813",
+      "venue": "COLEGIO TAJAMAR (HA)(HA)",
+      "locality": "Madrid",
+      "address": "CALLE DE PÍO FELIPE 12",
+      "latitude": "40.3968947",
+      "longitude": "-3.6504425",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010921189_3528_TAJAMAR.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 24,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "1556",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595768",
       "federation": "madrid",
       "player_ids": [
@@ -78238,8 +79586,10 @@
       "id": "madrid-5583603",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "E.D. MORATALAZ 'C'",
@@ -78264,11 +79614,13 @@
       "home_team_id": "12325489",
       "away_team_id": "627",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -79937,6 +81289,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594814",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "C.D. VICALVARO 'A'",
+      "date": "2027-04-17",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594814",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011122324_FONDO_BLANCO.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 25,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "600",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595776",
       "federation": "madrid",
       "player_ids": [
@@ -80844,8 +82233,10 @@
       "id": "madrid-5583612",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "AD A.TOLEDO OLIVOS C.F. 'A'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -80870,12 +82261,14 @@
       "home_team_id": "334202",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -82704,6 +84097,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594829",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "ESC.F. JUVENTUD MADRID 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2027-04-25",
+      "time": "15:00",
+      "status": "scheduled",
+      "source": "https://www.rffm.es/acta-partido/5594829",
+      "venue": "PVO. ENTREVIAS 1 (HA)(HA)",
+      "locality": "Madrid",
+      "address": "RONDA DEL SUR 4",
+      "latitude": "40.3776941",
+      "longitude": "-3.673897",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011741131_ESCUDO_JOTA_25ANV4.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 26,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "974",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5630916",
       "federation": "madrid",
       "player_ids": [
@@ -83568,8 +84998,10 @@
       "id": "madrid-5583620",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "A.D. LA PLATA-TR82 'B'",
@@ -83594,11 +85026,13 @@
       "home_team_id": "12325489",
       "away_team_id": "4913863",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -85192,6 +86626,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594830",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "E.D.M. SAN BLAS 'A'",
+      "date": "2027-05-01",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594830",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 27,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "1762",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595791",
       "federation": "madrid",
       "player_ids": [
@@ -86102,8 +87573,10 @@
       "id": "madrid-5583629",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "VILLALBILLA C.F.",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -86128,12 +87601,14 @@
       "home_team_id": "846518",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -88017,6 +89492,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594845",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "A.D. ESPERANZA 'B'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2027-05-08",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594845",
+      "venue": "ESPERANZA (HA)(HA)",
+      "locality": "Madrid",
+      "address": "CALLE DE ANDORRA 28",
+      "latitude": "40.4595144",
+      "longitude": "-3.6431368",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010880112_ESPERANZA.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 28,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "466610",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595798",
       "federation": "madrid",
       "player_ids": [
@@ -88891,8 +90403,10 @@
       "id": "madrid-5583637",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "ESCUELA DE FUTBOL ARGANDA 'A'",
@@ -88917,11 +90431,13 @@
       "home_team_id": "12325489",
       "away_team_id": "1545",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -90543,6 +92059,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594846",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D. UNION VALDEBERNARDO 'A'",
+      "away": "C.D.B. COSLADA 'A'",
+      "date": "2027-05-15",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594846",
+      "venue": "PVO. VALDEBERNARDO (HA)(HA)",
+      "locality": "Madrid",
+      "address": "CALLE DE LADERA DE LOS ALMENDROS 2",
+      "latitude": "40.4044306",
+      "longitude": "-3.6232051",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010931511_Escudo_ValdeBernardo_Union.png",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 29,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "3359719",
+      "away_team_id": "689",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595806",
       "federation": "madrid",
       "player_ids": [
@@ -91375,8 +92928,10 @@
       "id": "madrid-5583646",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "ESC. DEP. DE FUTBOL DE TORRES",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -91401,12 +92956,14 @@
       "home_team_id": "1926",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -92947,6 +94504,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-5594861",
+      "federation": "madrid",
+      "player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "home": "C.D.B. COSLADA 'A'",
+      "away": "SAD PROMESAS FUNDACION R.S.D. ALCALA 'B'",
+      "date": "2027-05-22",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://www.rffm.es/acta-partido/5594861",
+      "venue": "COSLADA - ESTADIO EL OLIVO (HA)(HA)",
+      "locality": "Coslada",
+      "address": "CALLE DEL MAR CANTÁBRICO S/N",
+      "latitude": "40.41870189999999",
+      "longitude": "-3.5720452",
+      "home_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+      "away_logo": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014267396_PROMESAS_FUND_ALCALA.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 30,
+      "competition_id": "26737742",
+      "group_id": "26737745",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "689",
+      "away_team_id": "13561243",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T16:39:31+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5595814",
       "federation": "madrid",
       "player_ids": [
@@ -93705,8 +95299,10 @@
       "id": "madrid-5583654",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "A.D. TORREJON C.F. 'C'",
@@ -93731,11 +95327,13 @@
       "home_team_id": "12325489",
       "away_team_id": "2366",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -95406,8 +97004,10 @@
       "id": "madrid-5583663",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "C.D. VICALVARO 'B'",
       "away": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
@@ -95432,12 +97032,14 @@
       "home_team_id": "598",
       "away_team_id": "12325489",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "is_internal_matchup": false
     },
@@ -97032,8 +98634,10 @@
       "id": "madrid-5583671",
       "federation": "madrid",
       "player_ids": [
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "home": "MEXICO F.C. S.A.D. - PARACUELLOS 'B'",
       "away": "C.D. UNION VALDEBERNARDO 'A'",
@@ -97058,11 +98662,13 @@
       "home_team_id": "12325489",
       "away_team_id": "4928298",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T16:25:19+00:00",
+      "updated_at": "2026-11-18T16:39:01+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b"
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
