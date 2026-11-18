@@ -1118,7 +1118,8 @@
       "competition_label": "TERCERA FEDERACIÓN, Grupo 16",
       "team_age_category": "senior",
       "active": true,
-      "age_category": "senior"
+      "age_category": "senior",
+      "official_adapter_version": 2
     },
     {
       "provider": "ffcm",
@@ -1138,7 +1139,8 @@
       "competition_label": "LIGA NACIONAL JUVENIL, GRUPO XV",
       "team_age_category": "juvenil",
       "active": true,
-      "age_category": "juvenil"
+      "age_category": "juvenil",
+      "official_adapter_version": 2
     },
     {
       "provider": "rfef",
@@ -1158,7 +1160,8 @@
       "competition_label": "Division de Honor Juvenil, Grupo 5",
       "team_age_category": "juvenil",
       "active": true,
-      "age_category": "juvenil"
+      "age_category": "juvenil",
+      "official_adapter_version": 2
     },
     {
       "provider": "rfef",
@@ -1178,7 +1181,8 @@
       "competition_label": "Division de Honor Juvenil, Grupo 5",
       "team_age_category": "juvenil",
       "active": true,
-      "age_category": "juvenil"
+      "age_category": "juvenil",
+      "official_adapter_version": 2
     },
     {
       "provider": "rfef",
@@ -1198,7 +1202,8 @@
       "competition_label": "Division de Honor Juvenil, Grupo 5",
       "team_age_category": "juvenil",
       "active": true,
-      "age_category": "juvenil"
+      "age_category": "juvenil",
+      "official_adapter_version": 2
     },
     {
       "provider": "frf",
@@ -1218,7 +1223,8 @@
       "competition_label": "TERCERA FEDERACIÓN, Grupo 16",
       "team_age_category": "senior",
       "active": true,
-      "age_category": "senior"
+      "age_category": "senior",
+      "official_adapter_version": 2
     },
     {
       "provider": "rfcylf",
@@ -1238,7 +1244,8 @@
       "competition_label": "Liga Nacional Juvenil, Primera - III",
       "team_age_category": "juvenil",
       "active": true,
-      "age_category": "juvenil"
+      "age_category": "juvenil",
+      "official_adapter_version": 2
     }
   ],
   "registry_revision": 8
