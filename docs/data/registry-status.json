@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "resolver_version": 8,
-  "revision": 10,
-  "checked_at": "2026-11-18T14:06:26+00:00",
+  "resolver_version": 9,
+  "revision": 12,
+  "checked_at": "2026-11-18T15:06:13+00:00",
   "players": [
     {
       "id": "jorge-martin-andres",
@@ -34,8 +34,7 @@
     },
     {
       "id": "p-3f37360a-53c2-4b7b-8e13-e012a8a6773c",
-      "state": "pending",
-      "message": "La ficha no identifica una única competición para ese equipo"
+      "state": "verified"
     },
     {
       "id": "p-e7620d39-386d-43eb-b30e-e829a98186ca",
@@ -319,8 +318,7 @@
     },
     {
       "id": "p-c62c99d8-afe4-4010-a0ef-53fc084ed921",
-      "state": "pending",
-      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+      "state": "verified"
     },
     {
       "id": "p-632261c9-319a-4e34-ad8e-3b293b900f19",

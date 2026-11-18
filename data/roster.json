@@ -1355,7 +1355,47 @@
       "active": true,
       "age_category": "juvenil",
       "official_adapter_version": 2
+    },
+    {
+      "team_id": "12377643",
+      "player_id": "28885128",
+      "team": "RAYO VALLECANO DE MADRID S.A.D. 'C'",
+      "source": "https://www.rffm.es/fichajugador/28885128",
+      "competition_id": "26737706",
+      "group_id": "26737711",
+      "season_id": "22",
+      "official_name": "SANDOVAL ROSENDE, DANIEL",
+      "competition_label": "PRIMERA AFICIONADO · Grupo 5",
+      "team_age_category": "senior",
+      "id": "p-3f37360a-53c2-4b7b-8e13-e012a8a6773c",
+      "name": "Daniel Sandoval Rosende",
+      "federation": "madrid",
+      "collaborator": "Rafael Fernández",
+      "match_duration": 90,
+      "active": true,
+      "age_category": "senior",
+      "identity_revision": 11
+    },
+    {
+      "team_id": "13562968",
+      "player_id": "15094419",
+      "team": "A.D. VILLAVICIOSA DE ODON - AMISTAD 'C'",
+      "source": "https://www.rffm.es/fichajugador/15094419",
+      "competition_id": "26738300",
+      "group_id": "26738312",
+      "season_id": "22",
+      "official_name": "FERNÁNDEZ GIL, GONZALO",
+      "competition_label": "SEGUNDA AFICIONADO · Grupo 12",
+      "team_age_category": "senior",
+      "id": "p-c62c99d8-afe4-4010-a0ef-53fc084ed921",
+      "name": "Gonzalo Fernández Gil",
+      "federation": "madrid",
+      "collaborator": "Rafael Fernández",
+      "match_duration": 90,
+      "active": true,
+      "age_category": "senior",
+      "identity_revision": 12
     }
   ],
-  "registry_revision": 10
+  "registry_revision": 12
 }
