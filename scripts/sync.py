@@ -19,9 +19,11 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from player_stats import participation, absent, summarize, STAT_FIELDS
 from report_refresh import report_plan, checked as report_checked
+from intake_priority import IntakeYield, IntakeWatch
 from federation_acts import murcia_round, parse_murcia_act, parse_catalunya_act, parse_murcia_calendar
 
 ROOT = Path(__file__).resolve().parents[1]
+REQUEST_GUARD = None
 MADRID = ZoneInfo('Europe/Madrid')
 FEDERATIONS = {
     'madrid': ('Madrid', 'RFFM', 'https://www.rffm.es/'),
@@ -101,6 +103,7 @@ class Client:
     def get(self, url, headers=None):
         if url in self.cache:
             return self.cache[url]
+        if REQUEST_GUARD:REQUEST_GUARD()
         if self.retry_after and datetime.fromisoformat(self.retry_after) > datetime.now(timezone.utc):
             label = datetime.fromisoformat(self.retry_after).astimezone(MADRID).strftime('%d/%m %H:%M')
             raise ValueError('Las consultas a la FFCV están pausadas hasta ' + label + ' (hora de Madrid); se reintentará automáticamente.')
@@ -251,7 +254,7 @@ def _madrid_team(client, player):
     # Only closed acts yield individual participation; bench is never assumed played.
     completed = sorted([m for m in matches if m['status'] == 'finished'], key=lambda m: m['date'] or '', reverse=True)
     if player.get('_calendar_only'):
-        return {'matches':matches}
+        return {'matches':matches,'stats':summary,'logo':logo,'stats_note':'Calendario verificado. Las actas individuales se completan en las actualizaciones deportivas.'}
     selected_reports = report_plan(matches, player, player.get('_previous', []))
     for m in completed:
         if m['id'] not in selected_reports:
@@ -455,7 +458,7 @@ def collect_player(client, secondary_client, player, previous=()):
     if player.get('provider') == 'besoccer':
         return adapter(api, player, previous)
     result = ADAPTERS[player['federation']](client, {**player, '_previous':previous})
-    if player.get('besoccer_team_source'):
+    if player.get('besoccer_team_source') and not player.get('_calendar_only'):
         try:
             secondary = adapter(api, player)
             result = enrich_official(result, secondary, player)
@@ -487,16 +490,20 @@ def retain_participation(match, previous, player_id, allow_secondary=True):
         if old_source: match.setdefault('participation_source', {})[player_id] = old_source
 
 
-def sync(browser=False, registry_changes=False):
+def _sync(browser=False, registry_changes=False, intake=False):
     roster = json.loads((ROOT / 'data/roster.json').read_text())
     path = ROOT / 'docs/data/feed.json'
     previous = json.loads(path.read_text()) if path.exists() else {}
     old_players = {p['id']:p for p in previous.get('players', [])}
+    status_path=ROOT/'docs/data/registry-status.json'
+    status=json.loads(status_path.read_text()) if status_path.exists() else {}
+    status_rows={p['id']:p for p in status.get('players',[])}
     focus = None
     if registry_changes:
         identity_fields = ('source','player_source','besoccer_team_source','besoccer_player_source','official_adapter_version')
         with_matches={id for m in previous.get('matches',[]) for id in m['player_ids']}
         focus = {p['id'] for p in roster['players'] if p.get('active',True) and (p['id'] not in old_players or not old_players[p['id']].get('updated_at') or p['id'] not in with_matches or any(p.get(k) != old_players[p['id']].get(k) for k in identity_fields))}
+    if intake:focus=set(status.get('intake_ids',[]))
     if browser:
         run = subprocess.run(['node', 'scripts/valencia.mjs'], cwd=ROOT, timeout=360, check=False)
         if run.returncode:
@@ -504,6 +511,7 @@ def sync(browser=False, registry_changes=False):
     feed = {'schema_version': 1, 'generated_at': now(), 'season': roster['season'], 'registry_revision': roster.get('registry_revision', 0), 'federations': [], 'players': [], 'matches': []}
     old_matches = previous.get('matches', [])
     total_success = 0
+    preempted = False
     secondary_client = Client('https://es.besoccer.com')
     for fid, (label, acronym, base) in FEDERATIONS.items():
         client = Client(base)
@@ -513,8 +521,10 @@ def sync(browser=False, registry_changes=False):
             configs.sort(key=lambda p: dates.get(p['id'], ''))
         # Normal public landing establishes the same public session as website navigation.
         try:
-            if fid not in ('valencia', 'murcia') and (focus is None or any(p['id'] in focus for p in configs)):
+            if not preempted and fid not in ('valencia', 'murcia') and (focus is None or any(p['id'] in focus for p in configs)):
                 client.get(base)
+        except IntakeYield:
+            preempted=True
         except Exception:
             pass
         old_fed = next((f for f in previous.get('federations', []) if f['id'] == fid), {})
@@ -528,11 +538,14 @@ def sync(browser=False, registry_changes=False):
             public.update({k:copy.deepcopy(config[k]) for k in ('team_id','competition_id','group_id','additional_teams') if config.get(k)})
             public.update({k:config[k] for k in ('age_category','team_age_category','source_acronym','official_adapter_version','official_display_name') if config.get(k)})
             public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source','player_source','team_source','registration_team','participation_evidence') if config.get(k)})
-            if focus is not None and config['id'] not in focus:
-                public.update({k:old_player[k] for k in ('stats','logo','stats_note','updated_at','coverage','secondary_stats','secondary_warning','additional_teams') if k in old_player})
-                feed['players'].append(public)
+            if preempted or (focus is not None and config['id'] not in focus):
+                public.update({k:old_player[k] for k in ('stats','logo','stats_note','updated_at','coverage','secondary_stats','secondary_warning','additional_teams','calendar_complete') if k in old_player})
+                if old_player.get('updated_at'):feed['players'].append(public)
                 feed['matches'].extend(copy.deepcopy(m) for m in old_matches if config['id'] in m['player_ids'])
                 continue
+            if intake:
+                config.update(_calendar_only=True,_intake=True)
+                if config['id'] in status_rows:status_rows[config['id']]['calendar_attempted_at']=now()
             try:
                 same_secondary = old_player.get('besoccer_player_source') == config.get('besoccer_player_source')
                 result = collect_player(client, secondary_client, config, old_matches if same_secondary else ())
@@ -540,6 +553,7 @@ def sync(browser=False, registry_changes=False):
                     raise ValueError('Calendario vacío inesperado; se conservan los datos anteriores')
                 public.update({k: result.get(k) for k in ('stats', 'logo', 'stats_note')})
                 public.update({k:result[k] for k in ('secondary_stats','secondary_warning','additional_teams') if k in result})
+                public['calendar_complete']=result.get('calendar_complete',True)
                 if result.get('secondary_warning') and same_secondary and old_player.get('secondary_stats'):
                     public['secondary_stats'] = old_player['secondary_stats']
                 public['updated_at'] = result.get('checked_at') or now()
@@ -553,13 +567,15 @@ def sync(browser=False, registry_changes=False):
                     feed['matches'].append(m)
                 successes += 1
                 total_success += 1
+                if intake and config['id'] in status_rows:status_rows[config['id']]['priority_calendar']=False
                 if result.get('source_warning'):errors.append(config['id'])
                 print(fid + ': ' + str(len(result['matches'])) + ' partidos verificados')
-            except Exception as error:
+            except (Exception, IntakeYield) as error:
+                if isinstance(error,IntakeYield):preempted=True
                 message = f'{type(error).__name__}: {str(error)[:180]}'
                 print('::warning::' + fid + ': ' + message)
                 errors.append(config['id'])
-                public.update({k: old_player.get(k) for k in ('stats', 'logo', 'stats_note', 'updated_at', 'coverage', 'secondary_stats','additional_teams')})
+                public.update({k: old_player.get(k) for k in ('stats', 'logo', 'stats_note', 'updated_at', 'coverage', 'secondary_stats','additional_teams','calendar_complete')})
                 if old_player.get('besoccer_player_source') != config.get('besoccer_player_source'):
                     public.pop('secondary_stats', None)
                 public['stats'] = public.get('stats') or new_stats()
@@ -574,7 +590,9 @@ def sync(browser=False, registry_changes=False):
             'message': 'Sin jugadores activos' if not configs else 'Consulta automática completada' if successes and not errors else 'No se pudo completar la consulta. Se conserva el último dato válido.', 'failed_players': errors}
         if getattr(client, 'retry_after', None):
             meta['retry_after'] = client.retry_after
-        if focus is not None and configs and all(p['id'] not in focus for p in configs):
+        if preempted and not successes and old_fed:
+            meta=copy.deepcopy(old_fed)
+        elif focus is not None and configs and all(p['id'] not in focus for p in configs):
             meta = copy.deepcopy(old_fed)
         elif focus is not None and any(p['id'] not in focus for p in configs):
             meta['last_success'] = old_fed.get('last_success')
@@ -585,16 +603,34 @@ def sync(browser=False, registry_changes=False):
         own = [m for m in feed['matches'] if player['id'] in m['player_ids']]
         if own:
             primary=team_matches(own,player) if player.get('additional_teams') else own
-            player['stats'], player['coverage'] = summarize(primary, player['id'], player.get('stats'))
+            player['stats'], player['coverage'] = summarize(primary, player['id'], player.get('stats'),calendar_complete=player.get('calendar_complete') is not False)
             for scope in (player.get('additional_teams') or []):
                 scope['stats'],scope['coverage']=summarize(team_matches(own,scope),player['id'])
     path.parent.mkdir(exist_ok=True, parents=True)
     temp = path.with_suffix('.tmp')
     temp.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + '\n')
     temp.replace(path)
+    if intake and status_path.exists():
+        status['intake_mode']='processed'
+        status_path.write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n')
     print(f'Actualizadas {total_success}/{sum(p.get("active", True) for p in roster["players"])} fichas; {len(feed["matches"])} partidos publicados.')
-    if not total_success and feed['players'] and (focus is None or focus):
+    if preempted:print('Avance guardado. Se cede el turno a las nuevas altas de Antonio.')
+    if not total_success and not preempted and feed['players'] and (focus is None or focus):
         raise SystemExit(1)
+
+
+def sync(browser=False, registry_changes=False, intake=False, watch_intake=False):
+    global REQUEST_GUARD
+    original=REQUEST_GUARD
+    if watch_intake:
+        from registry_remote import fetch_registry
+        roster=json.loads((ROOT/'data/roster.json').read_text())
+        REQUEST_GUARD=IntakeWatch(fetch_registry,roster.get('registry_revision',0))
+        status_path=ROOT/'docs/data/registry-status.json'
+        status=json.loads(status_path.read_text()) if status_path.exists() else {}
+        intake=intake or status.get('intake_mode') in ('priority','controls')
+    try:return _sync(browser,registry_changes,intake)
+    finally:REQUEST_GUARD=original
 
 
 def apply_roster(feed, roster):
@@ -658,5 +694,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--browser', action='store_true', help='Recoger Valencia con Chromium estándar')
     parser.add_argument('--registry-changes', action='store_true', help='Actualizar solo altas y cambios de fuentes, conservando fechas de las demás fichas')
+    parser.add_argument('--intake',action='store_true',help='Publicar primero calendarios de altas y tandas pequeñas de pendientes')
+    parser.add_argument('--watch-intake',action='store_true',help='Guardar el avance y ceder el turno si Antonio registra un cambio nuevo')
     args = parser.parse_args()
-    sync(args.browser, args.registry_changes)
+    sync(args.browser, args.registry_changes,args.intake,args.watch_intake)

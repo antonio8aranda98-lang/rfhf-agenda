@@ -9,6 +9,7 @@ from pathlib import Path
 from registry import resolve_player, text
 from sync import ROOT, ADAPTERS, FEDERATIONS, Client, apply_roster, now
 from besoccer_data import FIELDS, PublicBeSoccer, resolve as resolve_besoccer
+from intake_priority import plan as intake_plan, fingerprint, IntakeWatch, IntakeYield
 
 REGISTRY = 'https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/api/registry'
 RESOLVER_VERSION = 11
@@ -28,14 +29,17 @@ def fetch_registry():
     return data
 
 
-def reconcile(current, desired, resolver=resolve_player, revalidate=None):
+def reconcile(current, desired, resolver=resolve_player, revalidate=None, selected_ids=None, previous_status=None):
     if current['season'] != desired['season']:
         raise ValueError('El registro remoto tiene otra temporada; revisar la configuración')
     updated = copy.deepcopy(current)
     known = {p['id']:p for p in updated['players']}
     results = []
     clients = {}
-    for entry in desired['players']:
+    previous_rows={p['id']:p for p in (previous_status or {}).get('players',[])}
+    stop_network=False
+    ordered=sorted(desired['players'],key=lambda p:selected_ids is not None and p['id'] not in selected_ids)
+    for entry in ordered:
         id = entry['id']; existing = known.get(id)
         if entry.get('active', True) is False:
             if existing:
@@ -43,6 +47,22 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
             results.append({'id':id,'state':'inactive'})
             continue
         try:
+            before=previous_rows.get(id,{})
+            if selected_ids is not None and (id not in selected_ids or stop_network):
+                corrected=existing and entry.get('_identity_revision') and entry['_identity_revision']!=existing.get('identity_revision')
+                if corrected:existing['active']=False
+                if existing and existing.get('active',True) and not corrected:
+                    existing['collaborator']=text(entry.get('collaborator'),'Colaborador')
+                    if entry.get('age_category'):existing['age_category']=entry['age_category']
+                state='verified' if existing and existing.get('active',True) and not corrected else 'pending'
+                if before.get('state')=='pending':state='pending'
+                row={**before,'id':id,'state':state}
+                if state=='pending':row.setdefault('message','Comprobación automática pendiente; se procesan primero las altas nuevas.')
+                if not before or corrected or entry.get('_activation_revision',0)>(previous_status or {}).get('revision',0):row['waiting_priority']=True
+                if before.get('state')=='pending' and not row.get('checked_at'):
+                    row['checked_at']=(previous_status or {}).get('checked_at')
+                results.append(row)
+                continue
             if existing and entry.get('_identity_revision') and entry['_identity_revision']!=existing.get('identity_revision'):
                 existing['active']=False
                 request={k:entry.get(k) for k in ('name','federation','collaborator','source','player_source','match_duration','competition_source','age_category',*FIELDS) if entry.get(k) is not None}
@@ -64,7 +84,7 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
                     else:
                         from sync import collect_player
                         fid = existing['federation']
-                        verified = collect_player(Client(FEDERATIONS[fid][2]), Client('https://es.besoccer.com'), {**existing, 'season':current['season']})
+                        verified = collect_player(Client(FEDERATIONS[fid][2]), Client('https://es.besoccer.com'), {**existing, 'season':current['season'], **({'_calendar_only':True,'_intake':True} if selected_ids is not None else {})})
                         if not verified.get('matches'):
                             raise ValueError('No se ha podido volver a verificar el calendario')
                 links_changed = entry.get('besoccer_team_source', '') != existing.get('besoccer_team_source', '') or entry.get('besoccer_player_source', '') != existing.get('besoccer_requested_player_source', existing.get('besoccer_player_source', ''))
@@ -96,10 +116,15 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
                 if entry.get('_identity_revision'):verified['identity_revision']=entry['_identity_revision']
                 updated['players'].append(verified)
                 known[id] = verified
-            results.append({'id':id,'state':'verified'})
+            results.append({'id':id,'state':'verified','checked_at':now(),'control_fingerprint':fingerprint(entry),
+                            'priority_calendar':bool(before.get('priority_calendar')) or (selected_ids is not None and id in selected_ids)})
+        except IntakeYield:
+            stop_network=True
+            results.append({**previous_rows.get(id,{}),'id':id,'state':'pending','waiting_priority':True,
+                            'message':'Una nueva alta tiene prioridad. Esta comprobación continuará automáticamente.'})
         except Exception as error:
             message = str(error)[:350] if isinstance(error, ValueError) else 'La fuente oficial no está disponible. Volveremos a intentarlo automáticamente.'
-            results.append({'id':id,'state':'pending','message':message})
+            results.append({'id':id,'state':'pending','message':message,'checked_at':now(),'control_fingerprint':fingerprint(entry)})
     desired_ids = {p['id'] for p in desired['players']}
     for p in updated['players']:
         if p['id'] not in desired_ids:
@@ -155,7 +180,7 @@ def atomic_json(path, data):
     temporary.replace(path)
 
 
-def main(check=False):
+def main(check=False, priority=False, watch_intake=False):
     desired = fetch_registry()
     path = ROOT/'docs/data/registry-status.json'
     status = json.loads(path.read_text()) if path.exists() else {}
@@ -163,7 +188,8 @@ def main(check=False):
     previous = json.loads(feed_path.read_text())
     settings_path = ROOT/'docs/data/settings.json'
     settings = json.loads(settings_path.read_text()) if settings_path.exists() else {}
-    changed = needed(desired, status) or calendars_due(desired, status, previous, settings)
+    intake=intake_plan(desired,status,previous,settings)
+    changed = needed(desired, status) or calendars_due(desired, status, previous, settings) or intake['mode']=='priority'
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as output:
             output.write('changed='+str(changed).lower()+'\n')
@@ -171,7 +197,16 @@ def main(check=False):
     if check or not changed:
         return
     current = json.loads((ROOT/'data/roster.json').read_text())
-    updated, status = reconcile(current, desired)
+    selected=set(intake['resolve_ids']) if priority else None
+    import sync as sync_module
+    guard=sync_module.REQUEST_GUARD
+    if watch_intake:sync_module.REQUEST_GUARD=IntakeWatch(fetch_registry,desired['revision'])
+    try:
+        updated, status = reconcile(current, desired, selected_ids=selected, previous_status=status)
+    finally:sync_module.REQUEST_GUARD=guard
+    if priority:
+        verified={p['id'] for p in status['players'] if p['state']=='verified'}
+        status.update(intake_mode=intake['mode'],intake_ids=[id for id in intake['calendar_ids'] if id in verified])
     by_id={p['id']:p for p in current['players']}
     corrected={p['id'] for p in desired['players'] if p.get('_identity_revision') and p['id'] in by_id and p['_identity_revision']!=by_id[p['id']].get('identity_revision')}
     if corrected:
@@ -191,4 +226,6 @@ def main(check=False):
 
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--check',action='store_true');args=parser.parse_args();main(args.check)
+    parser=argparse.ArgumentParser();parser.add_argument('--check',action='store_true')
+    parser.add_argument('--priority',action='store_true');parser.add_argument('--watch-intake',action='store_true')
+    args=parser.parse_args();main(args.check,args.priority,args.watch_intake)

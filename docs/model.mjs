@@ -25,8 +25,10 @@ export function overlaps(a, b) {
 export function displayStat(value) { return value === null || value === undefined ? '—' : String(value); }
 export function statEvidence(player, key) {
   const full=player.stats?.[key];
-  if(typeof full==='number'&&Number.isFinite(full))return {value:full,partial:false};
+  if(player.calendar_complete!==false&&typeof full==='number'&&Number.isFinite(full))return {value:full,partial:false};
   const value=player.coverage?.confirmed?.[key],checked=player.coverage?.field_checked?.[key],total=player.coverage?.team_played;
+  if(player.calendar_complete===false&&typeof value==='number'&&Number.isFinite(value)&&value>=0)
+    return {value,partial:true,calendarIncomplete:true};
   if(typeof value==='number'&&Number.isFinite(value)&&value>=0&&Number.isInteger(checked)&&checked>0&&Number.isInteger(total)&&total>=checked)
     return {value,partial:checked<total,checked,total};
   return {value:null,partial:false};

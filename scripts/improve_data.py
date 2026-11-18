@@ -10,7 +10,7 @@ def recompute(feed):
     for player in feed['players']:
         own = [m for m in feed['matches'] if player['id'] in m['player_ids']]
         primary = team_matches(own,player) if player.get('additional_teams') else own
-        player['stats'],player['coverage'] = summarize(primary,player['id'],player.get('stats'))
+        player['stats'],player['coverage'] = summarize(primary,player['id'],player.get('stats'),calendar_complete=player.get('calendar_complete') is not False)
         for scope in player.get('additional_teams') or []:
             scope['stats'],scope['coverage'] = summarize(team_matches(own,scope),player['id'])
     return feed

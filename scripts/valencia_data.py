@@ -129,9 +129,20 @@ def load_valencia(client, player):
     rounds = api.get('filtros/jornadas_fetch.php', cod_grupo=player['group_id']).get('jornadas', [])
     if not rounds:
         raise ValueError('Calendario FFCV sin jornadas verificables')
-    if player.get('_calendar_only'):
-        # Registration confirms a real team calendar; the subsequent refresh
-        # downloads every round before the new profile is published.
+    initial_calendar=bool(player.get('_intake'))
+    if initial_calendar:
+        from datetime import datetime
+        from sync import MADRID
+        today=datetime.now(MADRID).date()
+        def distance(r):
+            date=iso_date(r.get('fecha_jornada'))
+            if not date:return (10**9, int(r['codjornada']))
+            delta=(datetime.fromisoformat(date).date()-today).days
+            return (abs(delta),delta<0)
+        rounds=sorted(rounds,key=distance)[:3]
+    elif player.get('_calendar_only'):
+        # Identity validation samples the season; the first publication reads
+        # nearby rounds and the periodic sports refresh completes the history.
         rounds = list({str(r['codjornada']): r for r in [*rounds[:2], *rounds[-2:]]}.values())
     matches = []
     for rnd in rounds:
@@ -154,7 +165,7 @@ def load_valencia(client, player):
         raise ValueError('El calendario FFCV está incompleto; se conserva el último válido')
     # Finish the calendar before spending the source's quota on older reports.
     # The retry plan persists evidence and rotates gaps instead of rereading all.
-    if not player.get('_calendar_only'):
+    if not player.get('_calendar_only') and not initial_calendar:
         from report_refresh import report_plan, checked
         selected = report_plan(matches, player, player.get('_previous', []))
         for match in matches:
@@ -168,4 +179,5 @@ def load_valencia(client, player):
             except Exception:
                 pass
     return {'matches': matches, 'stats': new_stats(), 'logo': urljoin(FILES, scope.get('escudo_equipo') or ''),
-            'stats_note': 'Estadísticas calculadas con las actas de este equipo y competición. No se mezclan otras participaciones del jugador en equipos A/B. Minutos reglamentarios sin añadido.'}
+            'calendar_complete':not initial_calendar,
+            'stats_note': 'Calendario inicial de próximas jornadas. El histórico y las estadísticas se completan en las actualizaciones deportivas.' if initial_calendar else 'Estadísticas calculadas con las actas de este equipo y competición. No se mezclan otras participaciones del jugador en equipos A/B. Minutos reglamentarios sin añadido.'}

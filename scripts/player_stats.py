@@ -33,7 +33,7 @@ def absent():
     return {k: 0 for k in ('called_up', 'starts', 'bench', 'played', 'minutes', 'goals')}
 
 
-def summarize(matches, player_id, published=None):
+def summarize(matches, player_id, published=None, calendar_complete=True):
     """Keep season totals separate from field-by-field confirmed partial sums."""
     completed = [m for m in matches if m.get('status') == 'finished']
     records = [m.get('participation', {}).get(player_id) for m in completed]
@@ -44,6 +44,7 @@ def summarize(matches, player_id, published=None):
                 'minutes_method': 'Tiempo reglamentario según acta; no incluye añadido.'}
     coverage['confirmed'] = {}
     coverage['field_checked'] = {}
+    coverage['calendar_complete'] = calendar_complete
     for key in ('called_up', 'starts', 'bench', 'played', 'minutes', 'goals'):
         values = [r[key] for r in records if r is not None and r.get(key) is not None]
         coverage['field_checked'][key] = len(values)
@@ -54,6 +55,9 @@ def summarize(matches, player_id, published=None):
                 stats[key] = sum(r[key] for r in records)
     for key in STAT_FIELDS:
         stats.setdefault(key, None)
+    if not calendar_complete:
+        for key in (*STAT_FIELDS,'played'):stats[key]=None
+        coverage['confirmed']['team_played']=len(completed) if completed else None
     if stats.get('called_up') is not None and stats.get('starts') is not None:
         if stats['called_up'] >= stats['starts'] and stats.get('bench') is None:
             stats['bench'] = stats['called_up'] - stats['starts']

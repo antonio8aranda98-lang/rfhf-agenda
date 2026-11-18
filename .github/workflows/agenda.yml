@@ -36,11 +36,11 @@ jobs:
           python -m unittest discover -s tests
       - name: Aplicar cartera guardada por Antonio
         continue-on-error: true
-        run: python scripts/registry_remote.py
+        run: python scripts/registry_remote.py --priority --watch-intake
       - name: Consultar federaciones
         id: sync
         continue-on-error: true
-        run: python scripts/sync.py
+        run: python scripts/sync.py --watch-intake
       - name: Conservar solo datos públicos normalizados
         run: |
           git config user.name 'github-actions[bot]'
@@ -48,6 +48,8 @@ jobs:
           git add data/roster.json docs/data/feed.json docs/data/registry-status.json
           if ! git diff --cached --quiet; then
             git commit -m 'Actualizar partidos y estado de las fuentes'
+            git fetch origin main
+            git rebase origin/main
             git push
           fi
       - name: Avisar si ninguna fuente pudo actualizarse

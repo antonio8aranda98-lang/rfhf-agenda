@@ -70,3 +70,9 @@ test('partial evidence shows a confirmed zero and coverage without becoming a fu
   player.stats.minutes=500;
   assert.deepEqual(statEvidence(player,'minutes'),{value:500,partial:false});
 });
+
+test('a first calendar cannot present a few known games as a season total',async()=>{
+  const {statEvidence}=await import('../docs/model.mjs');
+  const player={calendar_complete:false,stats:{team_played:1},coverage:{confirmed:{team_played:1},field_checked:{},team_played:1}};
+  assert.deepEqual(statEvidence(player,'team_played'),{value:1,partial:true,calendarIncomplete:true});
+});

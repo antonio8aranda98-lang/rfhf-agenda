@@ -17,6 +17,8 @@ Los datos federativos mantienen prioridad. Las participaciones de BeSoccer solo 
 
 Las bajas y asignaciones se reflejan al refrescar la agenda (cada 30 segundos o al volver a la pestaña). Las altas y reactivaciones requieren comprobación y publicación: se comprueban cambios cada cinco minutos mediante GitHub Actions, cuya ejecución puede retrasarse. No se promete una hora exacta de incorporación.
 
+Las altas nuevas, correcciones y reactivaciones se atienden primero. Su calendario se publica antes de leer las actas históricas. Si una actualización deportiva está en marcha cuando Antonio guarda cambios, conserva el avance válido y cede el turno entre consultas. Sin altas nuevas se revisan tandas pequeñas de pendientes antiguos: hasta dos identidades y hasta tres primeros calendarios contando esas identidades. Un fallo respeta la pausa indicada por la fuente y los intervalos de reintento; no obliga a repetir las comprobaciones del resto de la cartera.
+
 Solo Antonio puede escribir: el servidor coteja la identidad autenticada con la cuenta vinculada durante la activación privada. Ser visitante, conocer un nombre de colaborador o intentar falsificar cabeceras no concede permisos. La lectura de los datos deportivos es pública, autorizada por el propietario. No hay tokens para pegar ni una contraseña compartida.
 
 Dar de baja desactiva el registro; se puede recuperar con **Reactivar**. La baja no borra el historial del repositorio público. No añadas motivos contractuales ni datos de contacto: el registro contiene únicamente información deportiva y asignaciones públicas.
@@ -66,7 +68,7 @@ Las alertas de cruces consideran ambos equipos y los otros colaboradores, excluy
 
 La consulta de plantilla selecciona antes el equipo en el portal público y verifica su código. Cuando la ficha incluye liga y copa con el mismo equipo, se elige la competición que coincide con la categoría de la ficha del equipo; una selección ambigua queda pendiente. La duración corresponde a la categoría oficial del equipo (incluida la denominación valenciana Cadet), y se mantiene separada de la categoría por año facilitada por Antonio.
 
-Durante la comprobación de una nueva identidad se contrastan jornadas del principio y del final del calendario; el refresco posterior descarga todas las jornadas antes de publicar la nueva ficha. Esta comprobación no consulta actas individuales por duplicado. No cambia el tratamiento de totales incompletos ni la política de revisión de actas antiguas.
+Durante la comprobación de una nueva identidad se contrastan jornadas del principio y del final del calendario. Para publicar antes la agenda, la primera ficha consulta solo las tres jornadas más cercanas a la fecha actual y deja señalado el calendario incompleto. La actualización deportiva posterior descarga todas las jornadas y las actas pendientes. Mientras tanto, los encuentros conocidos no se presentan como el total de temporada. La comprobación inicial no consulta actas individuales por duplicado.
 
 Las consultas FFCV se espacian al menos dos segundos. Si el portal responde con un límite de frecuencia, se guarda el plazo `Retry-After` y se suspenden las nuevas consultas hasta ese momento, incluso en la siguiente ejecución. Las fichas valencianas con lectura más antigua tienen prioridad para que el límite no deje siempre al mismo jugador al final de la cola. Las identidades deportivas de Blake Liu / Liu Peigeng y Álvaro Sandoval / Álvaro fueron confirmadas por Antonio y se vinculan únicamente a su identificador, equipo y temporada revisados.
 

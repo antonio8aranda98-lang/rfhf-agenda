@@ -18,7 +18,7 @@ function maps(m) {
 }
 function playerStat(player,key) {
   const evidence=statEvidence(player,key);
-  return `${displayStat(evidence.value)}${evidence.partial?`<span class="partial-stat" title="Suma confirmada de las actas con este dato; faltan partidos por comprobar">Parcial · ${evidence.checked}/${evidence.total} actas</span>`:''}`;
+  return `${displayStat(evidence.value)}${evidence.partial?`<span class="partial-stat" title="Suma confirmada de las actas con este dato; faltan partidos por comprobar">${evidence.calendarIncomplete?'Calendario en carga':`Parcial · ${evidence.checked}/${evidence.total} actas`}</span>`:''}`;
 }
 function selectedPlayers() { return data.players.filter(p => p.federation === region && (!collaborator || p.collaborator === collaborator)); }
 function portfolioPlayers() { const rows=registryData?.initialized===true&&registryData?.season===data.season&&Array.isArray(registryData.players)?registryData.players:data.players; return rows.filter(p=>p.active!==false&&p.federation===region); }

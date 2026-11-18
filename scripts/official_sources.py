@@ -414,11 +414,11 @@ def adapter(client, player, previous=()):
     calendar_source=games[0]['source'];identity=False;logo=None;warnings=[]
     from sync import MADRID
     today=datetime.now(MADRID).date()
-    selected_reports = {g['id'] for g in games} if player.get('_verify_identity') else report_plan(games, player, previous)
+    selected_reports = {g['id'] for g in games} if player.get('_verify_identity') else set() if player.get('_calendar_only') else report_plan(games, player, previous)
     for game in games:
         # Calendar gives the real date/field when extended. Journals supply report
         # links and refresh upcoming details; an unavailable report is not zero.
-        if (game['status']=='finished' and game['id'] in selected_reports) or (game['status']!='finished' and abs((datetime.fromisoformat(game['date']).date()-today).days)<=7):
+        if not player.get('_calendar_only') and ((game['status']=='finished' and game['id'] in selected_reports) or (game['status']!='finished' and abs((datetime.fromisoformat(game['date']).date()-today).days)<=7)):
             try:
                 refs=parse_round(page(client,round_url(player['provider'],game['round'],player)),player,game['round'],round_url(player['provider'],game['round'],player))
                 ref=next((r for r in refs if norm(r['home'])==norm(game['home']) and norm(r['away'])==norm(game['away'])),None)

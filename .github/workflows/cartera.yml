@@ -57,11 +57,11 @@ jobs:
       - run: npm ci
       - name: Validar cambios de cartera
         if: inputs.publish_only != true
-        run: python scripts/registry_remote.py
+        run: python scripts/registry_remote.py --priority --watch-intake
       - name: Actualizar agenda
         if: inputs.publish_only != true
         continue-on-error: true
-        run: python scripts/sync.py --registry-changes
+        run: python scripts/sync.py --intake --watch-intake
       - name: Actualizar sumas parciales confirmadas
         env:
           RFHF_REFRESH_EVIDENCE: ${{ inputs.refresh_evidence }}
@@ -73,6 +73,8 @@ jobs:
           git add data/roster.json docs/data/feed.json docs/data/registry-status.json
           if ! git diff --cached --quiet; then
             git commit -m 'Aplicar cambios guardados por Antonio'
+            git fetch origin main
+            git rebase origin/main
             git push
           fi
       - uses: actions/configure-pages@v5

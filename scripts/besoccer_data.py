@@ -299,7 +299,7 @@ def adapter(api, player, previous=()):
     completed = sorted((m for m in matches if m['status']=='finished'), key=lambda m:m['date'], reverse=True)
     latest = {m['id'] for m in completed[:2]}
     budget = 10
-    for m in completed:
+    for m in ([] if player.get('_calendar_only') else completed):
         before = old.get(m['id'], {})
         if before.get('status')=='finished' and (before.get('score_home'), before.get('score_away')) == (m['score_home'], m['score_away']) and before.get('participation', {}).get(player['id']) is not None:
             m['participation'][player['id']] = copy.deepcopy(before['participation'][player['id']])
@@ -320,7 +320,7 @@ def adapter(api, player, previous=()):
             pass
     # Fetch a small number of upcoming match pages for an actual published ground.
     upcoming = sorted((m for m in matches if m['status'] in ('scheduled', 'time_pending')), key=lambda m:m['date'])[:3]
-    for m in upcoming:
+    for m in ([] if player.get('_calendar_only') else upcoming):
         try:
             soup = BeautifulSoup(api.get(m['source'], 'match', 'informe'), 'html.parser')
             for event in jsonld(soup, 'SportsEvent'):
