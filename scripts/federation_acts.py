@@ -65,6 +65,8 @@ def parse_murcia_calendar(html, player, source):
             if len(team_cells)!=3:
                 continue
             home,away = (team_cells[i].get_text(' ',strip=True) for i in (0,2))
+            if 'DESCANSA' in (normalized(home), normalized(away)):
+                continue
             if normalized(player['team']) not in (normalized(home),normalized(away)):
                 continue
             details = row.select_one('.right')
@@ -79,6 +81,8 @@ def parse_murcia_calendar(html, player, source):
             venue = text[:dt.start()].strip(' -\xa0') or None
             matches.append(fixture('murcia',player,player['team_id']+'-'+rnd[1],home,away,iso_date(dt[1]),hour,source,
                 round=int(rnd[1]),status='finished' if closed else 'scheduled' if hour else 'time_pending',
+                home_team_id=player['team_id'] if normalized(home)==normalized(player['team']) else None,
+                away_team_id=player['team_id'] if normalized(away)==normalized(player['team']) else None,
                 venue=venue,score_home=scores[0] if closed else None,score_away=scores[1] if closed else None))
     if not matches:
         raise ValueError('Calendario extendido de Murcia sin partidos verificables')

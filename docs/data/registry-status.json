@@ -2,7 +2,7 @@
   "schema_version": 1,
   "resolver_version": 11,
   "revision": 16,
-  "checked_at": "2026-11-18T19:42:26+00:00",
+  "checked_at": "2026-11-18T19:48:50+00:00",
   "players": [
     {
       "id": "jorge-martin-andres",
@@ -577,8 +577,7 @@
     },
     {
       "id": "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5",
-      "state": "pending",
-      "message": "Partido de Murcia sin fecha verificable"
+      "state": "verified"
     },
     {
       "id": "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814",
@@ -590,28 +589,23 @@
     },
     {
       "id": "p-1a5c323c-3034-463b-b521-cc92f2681b37",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-093e1f03-53b8-4c04-8315-c64a44760528",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-a7f65893-119e-475d-87f0-28a139edc33d",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     }
   ]
 }

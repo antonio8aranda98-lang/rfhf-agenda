@@ -381,7 +381,9 @@ def murcia(client, player):
     team = BeautifulSoup(client.get(team_url), 'html.parser')
     if normalized(player['official_name']) not in normalized(team.get_text(' ', strip=True)):
         raise ValueError('El jugador ya no figura en la plantilla configurada; revisar asignación')
-    url = 'https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?' + urllib.parse.urlencode({'cod_primaria':'1000120','codcompeticion':player['competition_id'],'codgrupo':player['group_id'],'codtemporada':player['season_id'],'CDetalle':'1'})
+    # Keep the public calendar form's season and journey filters. Without
+    # CodJornada this portal can return an empty HTTP 200 for a new group.
+    url = 'https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?' + urllib.parse.urlencode({'cod_primaria':'1000120','codtemporada':player['season_id'],'codcompeticion':player['competition_id'],'codgrupo':player['group_id'],'CodJornada':'1','CDetalle':'1'})
     matches = parse_murcia_calendar(client.get(url), player, url)
     image = team.select_one('img[src*="/Clubes/"]')
     logo = urllib.parse.urljoin(player['source'], image['src']) if image else None
@@ -630,7 +632,10 @@ def apply_roster(feed, roster):
                         if str(scope['besoccer_team_id'])==str(match[side+'_besoccer_team_id']):return True
                     elif scope.get('team_id') and match.get(side+'_team_id'):
                         if str(scope['team_id'])==str(match[side+'_team_id']):return True
-                    elif normalized(scope['team'])==normalized(match[side]):return True
+                    elif normalized(scope['team'])==normalized(match[side]):
+                        if scope.get('group_id') and match.get('group_id') and str(scope['group_id'])!=str(match['group_id']):
+                            continue
+                        return True
                 return False
             players = [p['id'] for p in configs if p['federation'] == match['federation'] and same_team(p)]
             match[side + '_player_ids'] = players
