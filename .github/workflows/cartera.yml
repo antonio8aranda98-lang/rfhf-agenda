@@ -1,6 +1,12 @@
 name: Aplicar cambios de Antonio
 on:
   workflow_dispatch:
+    inputs:
+      publish_only:
+        description: Publicar los datos ya verificados sin consultar federaciones
+        required: false
+        type: boolean
+        default: false
   schedule:
     - cron: '*/5 * * * *'
 permissions:
@@ -45,8 +51,10 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Validar cambios de cartera
+        if: inputs.publish_only != true
         run: python scripts/registry_remote.py
       - name: Actualizar agenda
+        if: inputs.publish_only != true
         continue-on-error: true
         run: python scripts/sync.py --registry-changes
       - name: Guardar registro y datos publicados
