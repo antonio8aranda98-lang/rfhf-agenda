@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T19:48:51+00:00",
+  "generated_at": "2026-11-18T21:39:51+00:00",
   "season": "2026-2027",
-  "registry_revision": 16,
+  "registry_revision": 17,
   "federations": [
     {
       "id": "madrid",
@@ -134,7 +134,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -186,7 +187,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -238,7 +240,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -290,7 +293,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -342,7 +346,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -394,7 +399,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -446,7 +452,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -498,7 +505,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -550,7 +558,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -602,7 +611,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -654,7 +664,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -706,7 +717,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -758,7 +770,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -810,7 +823,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -862,7 +876,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -914,7 +929,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -966,7 +982,8 @@
           "played": 7,
           "minutes": 1,
           "goals": 7
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1018,7 +1035,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1070,7 +1088,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1122,7 +1141,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1174,7 +1194,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1226,7 +1247,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1278,7 +1300,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1330,7 +1353,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1382,7 +1406,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1434,7 +1459,8 @@
           "played": 8,
           "minutes": 8,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1486,7 +1512,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1538,7 +1565,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1590,7 +1618,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1642,7 +1671,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1694,7 +1724,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1746,7 +1777,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1798,7 +1830,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1850,7 +1883,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1902,7 +1936,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -1954,7 +1989,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2006,7 +2042,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2058,7 +2095,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2110,7 +2148,8 @@
           "played": 8,
           "minutes": 2,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2162,7 +2201,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2214,7 +2254,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2266,7 +2307,8 @@
           "played": 5,
           "minutes": 0,
           "goals": 5
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2318,7 +2360,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2370,7 +2413,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2422,7 +2466,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2474,7 +2519,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2526,7 +2572,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2578,7 +2625,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2630,7 +2678,8 @@
           "played": 5,
           "minutes": 5,
           "goals": 5
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2682,7 +2731,8 @@
           "played": 1,
           "minutes": 1,
           "goals": 1
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2734,7 +2784,8 @@
           "played": 1,
           "minutes": 1,
           "goals": 1
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2786,7 +2837,8 @@
           "played": 1,
           "minutes": 1,
           "goals": 1
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2838,7 +2890,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2890,7 +2943,8 @@
           "played": 5,
           "minutes": 5,
           "goals": 5
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2942,7 +2996,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -2994,7 +3049,8 @@
           "played": 5,
           "minutes": 5,
           "goals": 5
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3046,7 +3102,8 @@
           "played": 2,
           "minutes": 2,
           "goals": 2
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3098,7 +3155,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3150,7 +3208,8 @@
           "played": 2,
           "minutes": 2,
           "goals": 3
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3202,7 +3261,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3254,7 +3314,8 @@
           "played": 8,
           "minutes": 8,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3312,7 +3373,8 @@
               "played": 8,
               "minutes": 8,
               "goals": 8
-            }
+            },
+            "calendar_complete": true
           }
         }
       ],
@@ -3357,7 +3419,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3409,7 +3472,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3464,7 +3528,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3516,7 +3581,8 @@
           "played": 7,
           "minutes": 7,
           "goals": 7
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3568,7 +3634,8 @@
           "played": 7,
           "minutes": 7,
           "goals": 7
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3620,7 +3687,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3677,7 +3745,8 @@
               "played": 9,
               "minutes": 9,
               "goals": 9
-            }
+            },
+            "calendar_complete": true
           }
         }
       ],
@@ -3722,7 +3791,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 10
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3779,7 +3849,8 @@
               "played": 7,
               "minutes": 7,
               "goals": 7
-            }
+            },
+            "calendar_complete": true
           }
         }
       ],
@@ -3824,7 +3895,8 @@
           "played": 8,
           "minutes": 8,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3876,7 +3948,8 @@
           "played": 10,
           "minutes": 10,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -3934,7 +4007,8 @@
               "played": 7,
               "minutes": 2,
               "goals": 7
-            }
+            },
+            "calendar_complete": true
           }
         }
       ],
@@ -3979,7 +4053,8 @@
           "played": 8,
           "minutes": 7,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4031,7 +4106,8 @@
           "played": 8,
           "minutes": 0,
           "goals": 7
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4083,7 +4159,8 @@
           "played": 7,
           "minutes": 7,
           "goals": 7
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4135,7 +4212,8 @@
           "played": 7,
           "minutes": 7,
           "goals": 7
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4187,7 +4265,8 @@
           "played": 8,
           "minutes": 2,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4239,7 +4318,8 @@
           "played": 8,
           "minutes": 0,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4291,7 +4371,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4343,7 +4424,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4395,7 +4477,8 @@
           "played": 8,
           "minutes": 1,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4445,7 +4528,8 @@
           "played": 2,
           "minutes": 2,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4495,7 +4579,8 @@
           "played": 2,
           "minutes": 2,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4545,7 +4630,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4595,7 +4681,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4645,7 +4732,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4695,7 +4783,8 @@
           "played": 2,
           "minutes": 2,
           "goals": 7
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4745,7 +4834,8 @@
           "played": 1,
           "minutes": 1,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4795,7 +4885,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4845,7 +4936,8 @@
           "played": 5,
           "minutes": 5,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4895,7 +4987,8 @@
           "played": 2,
           "minutes": 2,
           "goals": 8
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4946,7 +5039,8 @@
           "played": 6,
           "minutes": 6,
           "goals": 6
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -4998,7 +5092,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5050,7 +5145,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5102,7 +5198,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5154,7 +5251,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5206,7 +5304,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5258,7 +5357,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5310,7 +5410,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5362,7 +5463,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5414,7 +5516,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5466,7 +5569,8 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5517,7 +5621,8 @@
           "played": 7,
           "minutes": 7,
           "goals": 7
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5569,7 +5674,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5621,7 +5727,8 @@
           "played": 9,
           "minutes": 9,
           "goals": 9
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5673,7 +5780,8 @@
           "played": 7,
           "minutes": 7,
           "goals": 7
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5725,7 +5833,8 @@
           "played": 11,
           "minutes": 11,
           "goals": 11
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5777,7 +5886,8 @@
           "played": 11,
           "minutes": 11,
           "goals": 11
-        }
+        },
+        "calendar_complete": true
       }
     },
     {
@@ -5829,7 +5939,8 @@
           "played": 11,
           "minutes": 11,
           "goals": 11
-        }
+        },
+        "calendar_complete": true
       }
     }
   ],
