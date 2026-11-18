@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T19:28:28+00:00",
+  "generated_at": "2026-11-18T19:42:26+00:00",
   "season": "2026-2027",
-  "registry_revision": 15,
+  "registry_revision": 16,
   "federations": [
     {
       "id": "madrid",
@@ -31,19 +31,24 @@
       "label": "Murcia",
       "acronym": "FFRM",
       "source": "https://www.ffrm.es/pnfg/",
-      "status": "ok",
-      "checked_at": "2026-11-18T11:29:31+00:00",
+      "status": "error",
+      "checked_at": "2026-11-18T19:43:46+00:00",
       "last_success": "2026-11-18T11:29:31+00:00",
-      "message": "Consulta automática completada",
-      "failed_players": []
+      "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
+      "failed_players": [
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624",
+        "p-b2dd7482-24e2-4895-b761-d6e63264da85",
+        "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814",
+        "p-787af8bf-494e-43a7-8f50-97c240e4efd6"
+      ]
     },
     {
       "id": "valencia",
       "label": "Comunitat Valenciana",
       "acronym": "FFCV",
       "source": "https://ffcv.es/competiciones/",
-      "status": "partial",
-      "checked_at": "2026-11-18T19:38:31+00:00",
+      "status": "error",
+      "checked_at": "2026-11-18T19:43:46+00:00",
       "last_success": "2026-11-18T11:30:01+00:00",
       "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
       "failed_players": [
@@ -3446,6 +3451,41 @@
       }
     },
     {
+      "id": "daniel-otero-serrano",
+      "name": "Daniel Otero Serrano",
+      "federation": "valencia",
+      "collaborator": "Carlos Baena",
+      "team": "EAF Valencia C.F. A",
+      "competition_label": "Primera FFCV Juvenil · Grupo 2",
+      "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=14347",
+      "provider": "federation",
+      "team_id": "14347",
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "age_category": "juvenil",
+      "stats": {
+        "team_played": 7,
+        "called_up": 7,
+        "starts": 6,
+        "bench": 1,
+        "minutes": 485,
+        "goals": 2,
+        "played": 7,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
+      "stats_note": "Estadísticas calculadas con las actas de este equipo y competición. No se mezclan otras participaciones del jugador en equipos A/B. Minutos reglamentarios sin añadido.",
+      "updated_at": "2026-11-18T11:30:01+00:00",
+      "coverage": {
+        "team_played": 7,
+        "acts_checked": 7,
+        "minutes_checked": 7,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
+    },
+    {
       "id": "p-14fe2d86-4679-4291-b2b2-ea2219f875bd",
       "name": "Pablo Calatayud Garcia",
       "federation": "valencia",
@@ -3658,41 +3698,6 @@
         "team_played": 11,
         "acts_checked": 11,
         "minutes_checked": 11,
-        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
-      }
-    },
-    {
-      "id": "daniel-otero-serrano",
-      "name": "Daniel Otero Serrano",
-      "federation": "valencia",
-      "collaborator": "Carlos Baena",
-      "team": "EAF Valencia C.F. A",
-      "competition_label": "Primera FFCV Juvenil · Grupo 2",
-      "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=14347",
-      "provider": "federation",
-      "team_id": "14347",
-      "competition_id": "905431880",
-      "group_id": "905431882",
-      "age_category": "juvenil",
-      "stats": {
-        "team_played": 7,
-        "called_up": 7,
-        "starts": 6,
-        "bench": 1,
-        "minutes": 485,
-        "goals": 2,
-        "played": 7,
-        "assists": null,
-        "yellow": null,
-        "red": null
-      },
-      "logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074532714_logotipo_asociacio__n_color_vertical.png",
-      "stats_note": "Estadísticas calculadas con las actas de este equipo y competición. No se mezclan otras participaciones del jugador en equipos A/B. Minutos reglamentarios sin añadido.",
-      "updated_at": "2026-11-18T11:30:01+00:00",
-      "coverage": {
-        "team_played": 7,
-        "acts_checked": 7,
-        "minutes_checked": 7,
         "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
       }
     }

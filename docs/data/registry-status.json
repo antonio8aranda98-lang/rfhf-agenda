@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "resolver_version": 11,
-  "revision": 15,
-  "checked_at": "2026-11-18T19:28:27+00:00",
+  "revision": 16,
+  "checked_at": "2026-11-18T19:42:26+00:00",
   "players": [
     {
       "id": "jorge-martin-andres",
@@ -388,7 +388,7 @@
     {
       "id": "p-88cbc730-9eb2-4db3-a8c0-704eb44834fc",
       "state": "pending",
-      "message": "La fuente no permite completar la consulta pública de navegador"
+      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo"
     },
     {
       "id": "p-13f88727-f0e1-4050-a4d9-36b1bc6e5527",
@@ -401,7 +401,7 @@
     {
       "id": "p-caa0133b-9b5f-4165-961a-2349bf6e02e5",
       "state": "pending",
-      "message": "La fuente no permite completar la consulta pública de navegador"
+      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo"
     },
     {
       "id": "p-b6864476-e8c9-4d54-a220-e80ffa5a5361",
@@ -569,28 +569,24 @@
     },
     {
       "id": "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-b2dd7482-24e2-4895-b761-d6e63264da85",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5",
       "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "message": "Partido de Murcia sin fecha verificable"
     },
     {
       "id": "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-787af8bf-494e-43a7-8f50-97c240e4efd6",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-1a5c323c-3034-463b-b521-cc92f2681b37",
@@ -609,6 +605,11 @@
     },
     {
       "id": "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83",
+      "state": "pending",
+      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+    },
+    {
+      "id": "p-a7f65893-119e-475d-87f0-28a139edc33d",
       "state": "pending",
       "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
     }
