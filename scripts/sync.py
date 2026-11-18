@@ -393,6 +393,8 @@ def murcia(client, player):
                 match['away_logo'] = logo
     today = datetime.now(MADRID).date().isoformat()
     for match in matches:
+        if player.get('_calendar_only'):
+            continue
         if match['status'] != 'finished' and (not match.get('date') or abs((datetime.fromisoformat(match['date']).date() - datetime.now(MADRID).date()).days) > 7):
             continue
         try:

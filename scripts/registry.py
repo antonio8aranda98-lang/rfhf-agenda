@@ -196,6 +196,9 @@ def resolve_player(request, roster, client=None):
         known = next((p for p in roster['players'] if p['federation'] == fid and p.get('team_id') == team_id), None)
         if known:
             result = {k: known[k] for k in ('team_id', 'team', 'competition_id', 'group_id', 'season_id', 'competition_label')}
+        elif not request.get('competition_source'):
+            from murcia_registration import discover_scope
+            result = discover_scope(client, soup, canonical, team_id, roster['season'])
         else:
             comp = official_url(request.get('competition_source'), fid, competition=True)
             params = parse_qs(comp.query)
@@ -212,7 +215,9 @@ def resolve_player(request, roster, client=None):
             group_name = comp_soup.select_one('select[name="grupo"] option[selected]')
             result = {'team_id': team_id, 'team': link.get_text(' ', strip=True), 'competition_id': values[0], 'group_id': values[1], 'season_id': values[2],
                       'competition_label': ' · '.join(x.get_text(' ', strip=True) for x in (comp_name, group_name) if x)}
-        result.update(official_name=official_name, source=canonical)
+        category = team_category(result['competition_label'])
+        duration = verify_category(request.get('age_category'), category)
+        result.update(official_name=official_name, source=canonical, team_age_category=category)
     else:
         from valencia_data import PublicFFCV, resolve_ffcv
         result = resolve_ffcv(PublicFFCV(client), request, roster['season'], name_key)
