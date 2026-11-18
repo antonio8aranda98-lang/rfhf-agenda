@@ -1288,7 +1288,50 @@
       "active": true,
       "age_category": "juvenil",
       "official_adapter_version": 2
+    },
+    {
+      "provider": "ffcm",
+      "external_team_id": "229284",
+      "team_id": "ffcm-229284",
+      "team": "C.D. GUADALAJARA \"C\"",
+      "official_name": "ONDO NKENE, FELIPE MARTIN",
+      "source_request": "https://www.ffcm.es/pnfg/NPcd/NFG_VisEquipos?cod_primaria=1000119&Codigo_Equipo=229284",
+      "source_acronym": "FFCM",
+      "official_season": "2026-2027",
+      "official_competition_id": "22916222",
+      "official_group_id": "23077218",
+      "official_season_id": "22",
+      "id": "p-13f88727-f0e1-4050-a4d9-36b1bc6e5527",
+      "federation": "madrid",
+      "name": "Felipe Martin Ondo Nkene",
+      "collaborator": "Rafa Mancheño",
+      "match_duration": 90,
+      "source": "https://www.ffcm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=22916222&codgrupo=23077218&codtemporada=22",
+      "competition_label": "JUVENIL TERRITORIAL, GRUPO 11",
+      "team_age_category": "juvenil",
+      "active": true,
+      "age_category": "juvenil",
+      "official_adapter_version": 2
+    },
+    {
+      "team_id": "1075",
+      "player_id": "22525302",
+      "team": "C.D. CARRANZA 'A'",
+      "source": "https://www.rffm.es/fichajugador/22525302",
+      "competition_id": "26737718",
+      "group_id": "26737720",
+      "season_id": "22",
+      "official_name": "LEE , YU TING",
+      "competition_label": "PREFERENTE JUVENIL · Grupo 2",
+      "team_age_category": "juvenil",
+      "id": "p-b6864476-e8c9-4d54-a220-e80ffa5a5361",
+      "name": "Yu Ting Lee",
+      "federation": "madrid",
+      "collaborator": "Sergio Monroy",
+      "match_duration": 90,
+      "active": true,
+      "age_category": "juvenil"
     }
   ],
-  "registry_revision": 8
+  "registry_revision": 9
 }
