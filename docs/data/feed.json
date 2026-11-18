@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T12:54:44+00:00",
+  "generated_at": "2026-11-18T13:06:27+00:00",
   "season": "2026-2027",
   "registry_revision": 8,
   "federations": [
@@ -9,11 +9,16 @@
       "label": "Madrid",
       "acronym": "RFFM",
       "source": "https://www.rffm.es/",
-      "status": "ok",
-      "checked_at": "2026-11-18T11:25:47+00:00",
+      "status": "partial",
+      "checked_at": "2026-11-18T13:06:49+00:00",
       "last_success": "2026-11-18T11:25:47+00:00",
-      "message": "Consulta automática completada",
-      "failed_players": []
+      "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
+      "failed_players": [
+        "p-a1bb9309-65b3-451b-96ee-080aa8537660",
+        "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b",
+        "p-4756c9a7-0982-40ff-b10f-f4cc5d1511ed",
+        "p-5ae2cf0b-fdcb-4ab3-91cd-8ee188983405"
+      ]
     },
     {
       "id": "catalunya",
@@ -1601,6 +1606,228 @@
       }
     },
     {
+      "id": "p-a1bb9309-65b3-451b-96ee-080aa8537660",
+      "name": "Timoteo Mba Edu Masa",
+      "federation": "madrid",
+      "collaborator": "Jesús Sánchez",
+      "team": "ALFARO",
+      "competition_label": "TERCERA FEDERACIÓN, Grupo 16",
+      "source": "https://www.frfutbol.com/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=21959328&codgrupo=21959329&codtemporada=22&CDetalle=1",
+      "provider": "frf",
+      "age_category": "senior",
+      "team_age_category": "senior",
+      "source_acronym": "FRF",
+      "stats": {
+        "team_played": null,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": null,
+      "stats_note": null,
+      "updated_at": null,
+      "coverage": null,
+      "secondary_stats": null
+    },
+    {
+      "id": "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b",
+      "name": "Alex Silva Lareu",
+      "federation": "madrid",
+      "collaborator": "Rafa Mancheño",
+      "team": "C.D. ALAMEDA DE LA SAGRA E.M.F.",
+      "competition_label": "LIGA NACIONAL JUVENIL, GRUPO XV",
+      "source": "https://www.ffcm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=22916199&codgrupo=22916200&codtemporada=22&CDetalle=1",
+      "provider": "ffcm",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "source_acronym": "FFCM",
+      "stats": {
+        "team_played": null,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": null,
+      "stats_note": null,
+      "updated_at": null,
+      "coverage": null,
+      "secondary_stats": null
+    },
+    {
+      "id": "p-9258719a-7296-44bf-9a09-41eb00107cda",
+      "name": "Sidi Neculae Sinayoko Budaca",
+      "federation": "madrid",
+      "collaborator": "Jesús Sánchez",
+      "team": "CF Trival Valderas Alcorcón",
+      "competition_label": "Division de Honor Juvenil, Grupo 5",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "provider": "rfef",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "source_acronym": "RFEF",
+      "stats": {
+        "team_played": 9,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://rfef.es/themes/custom/rfef/img/novanet/50x50/23289692_50x50.png",
+      "stats_note": "Datos de RFEF. Convocatorias, titulares, suplentes, minutos reglamentarios y goles según actas verificadas. Sin añadido. Hay actas pendientes de lectura.",
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "coverage": {
+        "team_played": 9,
+        "acts_checked": 1,
+        "minutes_checked": 1,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
+    },
+    {
+      "id": "p-ee275004-f785-42ef-99df-be2df81d225e",
+      "name": "Tiago Arzeno Rosso",
+      "federation": "madrid",
+      "collaborator": "Jesús Sánchez",
+      "team": "AD Sporting Hortaleza",
+      "competition_label": "Division de Honor Juvenil, Grupo 5",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "provider": "rfef",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "source_acronym": "RFEF",
+      "stats": {
+        "team_played": 9,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://rfef.es/themes/custom/rfef/img/novanet/50x50/23289693_50x50.png",
+      "stats_note": "Datos de RFEF. Convocatorias, titulares, suplentes, minutos reglamentarios y goles según actas verificadas. Sin añadido. Hay actas pendientes de lectura.",
+      "updated_at": "2026-11-18T13:06:44+00:00",
+      "coverage": {
+        "team_played": 9,
+        "acts_checked": 1,
+        "minutes_checked": 1,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
+    },
+    {
+      "id": "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+      "name": "Brodie David Briceno",
+      "federation": "madrid",
+      "collaborator": "Jesús Sánchez",
+      "team": "AD Sporting Hortaleza",
+      "competition_label": "Division de Honor Juvenil, Grupo 5",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "provider": "rfef",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "source_acronym": "RFEF",
+      "stats": {
+        "team_played": 9,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://rfef.es/themes/custom/rfef/img/novanet/50x50/23289693_50x50.png",
+      "stats_note": "Datos de RFEF. Convocatorias, titulares, suplentes, minutos reglamentarios y goles según actas verificadas. Sin añadido. Hay actas pendientes de lectura.",
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "coverage": {
+        "team_played": 9,
+        "acts_checked": 1,
+        "minutes_checked": 1,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      }
+    },
+    {
+      "id": "p-4756c9a7-0982-40ff-b10f-f4cc5d1511ed",
+      "name": "Jordi Julia Urchaga",
+      "federation": "madrid",
+      "collaborator": "Jesús Sánchez",
+      "team": "ALFARO",
+      "competition_label": "TERCERA FEDERACIÓN, Grupo 16",
+      "source": "https://www.frfutbol.com/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=21959328&codgrupo=21959329&codtemporada=22&CDetalle=1",
+      "provider": "frf",
+      "age_category": "senior",
+      "team_age_category": "senior",
+      "source_acronym": "FRF",
+      "stats": {
+        "team_played": null,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": null,
+      "stats_note": null,
+      "updated_at": null,
+      "coverage": null,
+      "secondary_stats": null
+    },
+    {
+      "id": "p-5ae2cf0b-fdcb-4ab3-91cd-8ee188983405",
+      "name": "Tihago Edu Uribe Faiffer",
+      "federation": "madrid",
+      "collaborator": "Jesús Sánchez",
+      "team": "C.D. Isoba",
+      "competition_label": "Liga Nacional Juvenil, Primera - III",
+      "source": "https://www.rfcylf.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24218934&codgrupo=24218935&codtemporada=22&CDetalle=1",
+      "provider": "rfcylf",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "source_acronym": "RFCYLF",
+      "stats": {
+        "team_played": null,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": null,
+      "stats_note": null,
+      "updated_at": null,
+      "coverage": null,
+      "secondary_stats": null
+    },
+    {
       "id": "aleix-camarasa-oros",
       "name": "Aleix Camarasa Oros",
       "federation": "catalunya",
@@ -1984,6 +2211,84 @@
     }
   ],
   "matches": [
+    {
+      "id": "madrid-rfef-33836121-1-AD-SPORTING-HORTALEZA-RAYO-CIUDAD-ALCOBENDAS-C-F",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "Rayo Ciudad Alcobendas C.F.",
+      "date": "2026-09-05",
+      "time": "19:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 3,
+      "score_away": 1,
+      "round": 1,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-1-CF-TRIVAL-VALDERAS-ALCORCON-C-D-LEGANES",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "C.D. Leganés",
+      "date": "2026-09-05",
+      "time": "19:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 2,
+      "score_away": 2,
+      "round": 1,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
     {
       "id": "madrid-5722081",
       "federation": "madrid",
@@ -2987,6 +3292,84 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-2-AD-ALCORCON-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Alcorcón",
+      "away": "AD Sporting Hortaleza",
+      "date": "2026-09-13",
+      "time": "12:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Anexo F3 Santo Domingo - Iker Casillas (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 3,
+      "score_away": 1,
+      "round": 2,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-2-CF-RAYO-MAJADAHONDA-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Rayo Majadahonda",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2026-09-13",
+      "time": "12:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Campos Municipales Valle de la Oliva (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 4,
+      "score_away": 1,
+      "round": 2,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5584293",
       "federation": "madrid",
       "player_ids": [
@@ -3665,6 +4048,44 @@
       "away_player_ids": [
         "p-11f72ff7-a013-4711-b466-df8127bec80d"
       ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-3-CF-TRIVAL-VALDERAS-ALCORCON-CF-TALAVERA-DE-LA-REINA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "CF Talavera de la Reina",
+      "date": "2026-09-19",
+      "time": "16:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 2,
+      "score_away": 0,
+      "round": 3,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
       "is_internal_matchup": false
     },
     {
@@ -4952,6 +5373,46 @@
       "home_player_ids": [],
       "away_player_ids": [
         "p-c4f6e06a-8aa5-4de8-af1b-1c3422bdf226"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-3-RAYO-VALLECANO-DE-MADRID-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "Rayo Vallecano de Madrid",
+      "away": "AD Sporting Hortaleza",
+      "date": "2026-09-20",
+      "time": "12:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "C.Dep. Fundacion Rayo Vallecano - Campo 4 (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 2,
+      "score_away": 0,
+      "round": 3,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
       ],
       "is_internal_matchup": false
     },
@@ -8087,6 +8548,46 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-4-AD-SPORTING-HORTALEZA-AD-MERIDA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "AD Mérida",
+      "date": "2026-10-03",
+      "time": "17:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 3,
+      "score_away": 2,
+      "round": 4,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "catalunya-4153190",
       "federation": "catalunya",
       "player_ids": [
@@ -9403,6 +9904,44 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-4-GETAFE-CF-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "Getafe CF",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2026-10-04",
+      "time": "16:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Ciudad Deportiva Fernando Santos de la Parra (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 3,
+      "score_away": 0,
+      "round": 4,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5582182",
       "federation": "madrid",
       "player_ids": [
@@ -10428,6 +10967,84 @@
       "away_player_ids": [
         "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f"
       ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-5-CD-TOLEDO-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "CD Toledo",
+      "away": "AD Sporting Hortaleza",
+      "date": "2026-10-10",
+      "time": "16:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Anexo Salto del Caballo - Paulino Lorenzo (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 2,
+      "score_away": 2,
+      "round": 5,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-5-CF-TRIVAL-VALDERAS-ALCORCON-RAYO-CIUDAD-ALCOBENDAS-C-F",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "Rayo Ciudad Alcobendas C.F.",
+      "date": "2026-10-10",
+      "time": "16:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 1,
+      "score_away": 2,
+      "round": 5,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
       "is_internal_matchup": false
     },
     {
@@ -12459,6 +13076,44 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-6-AD-ALCORCON-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "AD Alcorcón",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2026-10-17",
+      "time": "12:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Anexo F3 Santo Domingo - Iker Casillas (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 2,
+      "score_away": 0,
+      "round": 6,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5572752",
       "federation": "madrid",
       "player_ids": [
@@ -12742,6 +13397,46 @@
       "participation_source": {},
       "home_player_ids": [
         "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-6-AD-SPORTING-HORTALEZA-REAL-MADRID-CF",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "Real Madrid CF",
+      "date": "2026-10-17",
+      "time": "17:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 0,
+      "score_away": 3,
+      "round": 6,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -14947,6 +15642,79 @@
       "is_internal_matchup": true
     },
     {
+      "id": "madrid-rfef-33836121-7-CF-TRIVAL-VALDERAS-ALCORCON-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "AD Sporting Hortaleza",
+      "date": "2026-10-24",
+      "time": "16:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=70693569",
+      "venue": "Polideportivo La Canaleja",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://rfef.es/themes/custom/rfef/img/novanet/50x50/23289692_50x50.png",
+      "away_logo": "https://rfef.es/themes/custom/rfef/img/novanet/50x50/23289693_50x50.png",
+      "score_home": 1,
+      "score_away": 2,
+      "round": 7,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {
+        "p-9258719a-7296-44bf-9a09-41eb00107cda": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 68,
+          "goals": 0
+        },
+        "p-ee275004-f785-42ef-99df-be2df81d225e": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 22,
+          "goals": 0
+        },
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 80,
+          "goals": 0
+        }
+      },
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {
+        "p-9258719a-7296-44bf-9a09-41eb00107cda": "2026-11-18T13:06:43+00:00",
+        "p-ee275004-f785-42ef-99df-be2df81d225e": "2026-11-18T13:06:44+00:00",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68": "2026-11-18T13:06:45+00:00"
+      },
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "is_internal_matchup": true
+    },
+    {
       "id": "catalunya-4194666",
       "federation": "catalunya",
       "player_ids": [
@@ -17110,6 +17878,44 @@
       "is_internal_matchup": true
     },
     {
+      "id": "madrid-rfef-33836121-8-AD-MERIDA-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "AD Mérida",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2026-10-31",
+      "time": "16:30",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Campo Federativo Miguel Patón - 2 (HN)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 3,
+      "score_away": 2,
+      "round": 8,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "catalunya-4194675",
       "federation": "catalunya",
       "player_ids": [
@@ -17262,6 +18068,46 @@
         "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3",
         "p-aff68b7c-2a35-4445-b3d4-359e57a188d8"
       ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-8-AD-SPORTING-HORTALEZA-LAS-ROZAS-CF",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "Las Rozas CF",
+      "date": "2026-10-31",
+      "time": "17:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 1,
+      "score_away": 0,
+      "round": 8,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
       "is_internal_matchup": false
     },
     {
@@ -19583,6 +20429,44 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-9-CF-TRIVAL-VALDERAS-ALCORCON-CD-TOLEDO",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "CD Toledo",
+      "date": "2026-11-07",
+      "time": "16:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 2,
+      "score_away": 1,
+      "round": 9,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5578379",
       "federation": "madrid",
       "player_ids": [
@@ -20138,6 +21022,46 @@
         "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d"
       ],
       "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-9-CLUB-ATLETICO-DE-MADRID-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "Club Atlético de Madrid",
+      "away": "AD Sporting Hortaleza",
+      "date": "2026-11-07",
+      "time": "18:00",
+      "status": "finished",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Estadio Atletico de Madrid CD Alcala de Henares (HN)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": 3,
+      "score_away": 2,
+      "round": 9,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
       "is_internal_matchup": false
     },
     {
@@ -23741,6 +24665,44 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-10-REAL-MADRID-CF-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "Real Madrid CF",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2026-11-20",
+      "time": "18:30",
+      "status": "scheduled",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Ciudad Real Madrid (HN)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 10,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "murcia-24069902-10",
       "federation": "murcia",
       "player_ids": [
@@ -24419,6 +25381,46 @@
       "away_player_ids": [
         "p-074fd601-5fdb-412c-b493-564bb61f64d0"
       ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-10-AD-SPORTING-HORTALEZA-A-D-UNION-ADARVE",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "A.D. Union Adarve",
+      "date": "2026-11-21",
+      "time": "17:00",
+      "status": "scheduled",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 10,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
       "is_internal_matchup": false
     },
     {
@@ -25579,6 +26581,46 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-11-ALBACETE-BALOMPIE-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "Albacete Balompié",
+      "away": "AD Sporting Hortaleza",
+      "date": "2026-11-28",
+      "time": "12:30",
+      "status": "scheduled",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Ciudad Deportiva Andrés Iniesta (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 11,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "catalunya-4151039",
       "federation": "catalunya",
       "player_ids": [
@@ -26094,6 +27136,44 @@
         "p-241a5873-e1ac-4408-ac98-e2d44219156a"
       ],
       "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-11-RAYO-VALLECANO-DE-MADRID-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "Rayo Vallecano de Madrid",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2026-11-29",
+      "time": "12:30",
+      "status": "scheduled",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "C.Dep. Fundacion Rayo Vallecano - Campo 4 (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 11,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
       "is_internal_matchup": false
     },
     {
@@ -27411,6 +28491,84 @@
       "participation_source": {},
       "home_player_ids": [
         "p-632261c9-319a-4e34-ad8e-3b293b900f19"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-12-AD-SPORTING-HORTALEZA-C-D-LEGANES",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "C.D. Leganés",
+      "date": "2026-12-06",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 12,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-12-CF-TRIVAL-VALDERAS-ALCORCON-LAS-ROZAS-CF",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "Las Rozas CF",
+      "date": "2026-12-06",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 12,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -29115,6 +30273,84 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-13-CF-RAYO-MAJADAHONDA-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "CF Rayo Majadahonda",
+      "away": "AD Sporting Hortaleza",
+      "date": "2026-12-13",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Campos Municipales Valle de la Oliva (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 13,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-13-CLUB-ATLETICO-DE-MADRID-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "Club Atlético de Madrid",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2026-12-13",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Estadio Atletico de Madrid CD Alcala de Henares (HN)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 13,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "murcia-24069902-12",
       "federation": "murcia",
       "player_ids": [
@@ -29145,6 +30381,84 @@
       "participation_source": {},
       "home_player_ids": [
         "iker-piqueras-mora"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-14-AD-SPORTING-HORTALEZA-CF-TALAVERA-DE-LA-REINA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "CF Talavera de la Reina",
+      "date": "2026-12-16",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 14,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-14-CF-TRIVAL-VALDERAS-ALCORCON-A-D-UNION-ADARVE",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "A.D. Union Adarve",
+      "date": "2026-12-16",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 14,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -29667,6 +30981,46 @@
         "p-241a5873-e1ac-4408-ac98-e2d44219156a"
       ],
       "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-15-GETAFE-CF-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "Getafe CF",
+      "away": "AD Sporting Hortaleza",
+      "date": "2026-12-20",
+      "time": "12:00",
+      "status": "scheduled",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Ciudad Deportiva Fernando Santos de la Parra (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 15,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
       "is_internal_matchup": false
     },
     {
@@ -30911,6 +32265,44 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-15-ALBACETE-BALOMPIE-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "Albacete Balompié",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2026-12-20",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Ciudad Deportiva Andrés Iniesta (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 15,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "murcia-24069902-13",
       "federation": "murcia",
       "player_ids": [
@@ -31314,6 +32706,84 @@
       "home_player_ids": [],
       "away_player_ids": [
         "p-f0996160-75ef-4861-813b-4e2c2d6313c1"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-16-C-D-LEGANES-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "C.D. Leganés",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2027-01-10",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Instalación Deportiva Butarque (HN)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 16,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-16-RAYO-CIUDAD-ALCOBENDAS-C-F-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "Rayo Ciudad Alcobendas C.F.",
+      "away": "AD Sporting Hortaleza",
+      "date": "2027-01-10",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo Municipal Ciudad Deportiva Valdelasfuentes (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 16,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
       ],
       "is_internal_matchup": false
     },
@@ -34774,6 +36244,84 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-17-AD-SPORTING-HORTALEZA-AD-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "AD Alcorcón",
+      "date": "2027-01-24",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 17,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-17-CF-TRIVAL-VALDERAS-ALCORCON-CF-RAYO-MAJADAHONDA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "CF Rayo Majadahonda",
+      "date": "2027-01-24",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 17,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "murcia-24069902-16",
       "federation": "murcia",
       "player_ids": [
@@ -36536,6 +38084,84 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-18-AD-SPORTING-HORTALEZA-RAYO-VALLECANO-DE-MADRID",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "Rayo Vallecano de Madrid",
+      "date": "2027-01-31",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 18,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-18-CF-TALAVERA-DE-LA-REINA-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Talavera de la Reina",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2027-01-31",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Ciudad Deportiva Ebora Formación (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 18,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "valencia-26480046",
       "federation": "valencia",
       "player_ids": [
@@ -37824,6 +39450,84 @@
         "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592"
       ],
       "is_internal_matchup": true
+    },
+    {
+      "id": "madrid-rfef-33836121-19-AD-MERIDA-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Mérida",
+      "away": "AD Sporting Hortaleza",
+      "date": "2027-02-07",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Campo Federativo Miguel Patón - 1 (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 19,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-19-CF-TRIVAL-VALDERAS-ALCORCON-GETAFE-CF",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "Getafe CF",
+      "date": "2027-02-07",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 19,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-24069902-17",
@@ -39554,6 +41258,84 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-20-AD-SPORTING-HORTALEZA-CD-TOLEDO",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "CD Toledo",
+      "date": "2027-02-14",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 20,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-20-RAYO-CIUDAD-ALCOBENDAS-C-F-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "Rayo Ciudad Alcobendas C.F.",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2027-02-14",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo Municipal Ciudad Deportiva Valdelasfuentes (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 20,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "catalunya-4154516",
       "federation": "catalunya",
       "player_ids": [
@@ -41172,6 +42954,84 @@
       "home_player_ids": [],
       "away_player_ids": [
         "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-21-CF-TRIVAL-VALDERAS-ALCORCON-AD-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "AD Alcorcón",
+      "date": "2027-02-21",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 21,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-21-REAL-MADRID-CF-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "Real Madrid CF",
+      "away": "AD Sporting Hortaleza",
+      "date": "2027-02-21",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Ciudad Real Madrid (HN)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 21,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
       ],
       "is_internal_matchup": false
     },
@@ -42871,6 +44731,49 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-22-AD-SPORTING-HORTALEZA-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2027-02-28",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 22,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": true
+    },
+    {
       "id": "catalunya-4154531",
       "federation": "catalunya",
       "player_ids": [
@@ -44560,6 +46463,84 @@
       "home_player_ids": [],
       "away_player_ids": [
         "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-23-CF-TRIVAL-VALDERAS-ALCORCON-AD-MERIDA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "AD Mérida",
+      "date": "2027-03-07",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 23,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-23-LAS-ROZAS-CF-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "Las Rozas CF",
+      "away": "AD Sporting Hortaleza",
+      "date": "2027-03-07",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo Municipal Navalcarbón (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 23,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
       ],
       "is_internal_matchup": false
     },
@@ -46257,6 +48238,84 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-24-AD-SPORTING-HORTALEZA-CLUB-ATLETICO-DE-MADRID",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "Club Atlético de Madrid",
+      "date": "2027-03-14",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 24,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-24-CD-TOLEDO-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CD Toledo",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2027-03-14",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Anexo Salto del Caballo - Paulino Lorenzo (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 24,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "murcia-24069902-20",
       "federation": "murcia",
       "player_ids": [
@@ -47877,6 +49936,84 @@
       "away_player_ids": [
         "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592"
       ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-25-A-D-UNION-ADARVE-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "A.D. Union Adarve",
+      "away": "AD Sporting Hortaleza",
+      "date": "2027-03-21",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Instalación deportiva Vereda de Ganapanes",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 25,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-25-CF-TRIVAL-VALDERAS-ALCORCON-REAL-MADRID-CF",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "Real Madrid CF",
+      "date": "2027-03-21",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 25,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
       "is_internal_matchup": false
     },
     {
@@ -49603,6 +51740,84 @@
       "participation_source": {},
       "home_player_ids": [
         "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-26-AD-SPORTING-HORTALEZA-ALBACETE-BALOMPIE",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "Albacete Balompié",
+      "date": "2027-04-04",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 26,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-26-CF-TRIVAL-VALDERAS-ALCORCON-RAYO-VALLECANO-DE-MADRID",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "Rayo Vallecano de Madrid",
+      "date": "2027-04-04",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 26,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -51370,6 +53585,84 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-27-C-D-LEGANES-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "C.D. Leganés",
+      "away": "AD Sporting Hortaleza",
+      "date": "2027-04-11",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Instalación Deportiva Butarque (HN)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 27,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-27-LAS-ROZAS-CF-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "Las Rozas CF",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2027-04-11",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo Municipal Navalcarbón (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 27,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "murcia-24069902-23",
       "federation": "murcia",
       "player_ids": [
@@ -53026,6 +55319,84 @@
       "participation_source": {},
       "home_player_ids": [
         "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-28-AD-SPORTING-HORTALEZA-CF-RAYO-MAJADAHONDA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "CF Rayo Majadahonda",
+      "date": "2027-04-18",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 28,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-28-CF-TRIVAL-VALDERAS-ALCORCON-CLUB-ATLETICO-DE-MADRID",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "Club Atlético de Madrid",
+      "date": "2027-04-18",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 28,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -54758,6 +57129,84 @@
       "is_internal_matchup": false
     },
     {
+      "id": "madrid-rfef-33836121-29-A-D-UNION-ADARVE-CF-TRIVAL-VALDERAS-ALCORCON",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "A.D. Union Adarve",
+      "away": "CF Trival Valderas Alcorcón",
+      "date": "2027-04-25",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Instalación deportiva Vereda de Ganapanes",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 29,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-29-CF-TALAVERA-DE-LA-REINA-AD-SPORTING-HORTALEZA",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "CF Talavera de la Reina",
+      "away": "AD Sporting Hortaleza",
+      "date": "2027-04-25",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Ciudad Deportiva Ebora Formación (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 29,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "away_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "murcia-24069902-25",
       "federation": "murcia",
       "player_ids": [
@@ -56483,6 +58932,84 @@
       "away_player_ids": [
         "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592"
       ],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-30-AD-SPORTING-HORTALEZA-GETAFE-CF",
+      "federation": "madrid",
+      "player_ids": [
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+        "p-ee275004-f785-42ef-99df-be2df81d225e"
+      ],
+      "home": "AD Sporting Hortaleza",
+      "away": "Getafe CF",
+      "date": "2027-05-02",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "IDB Municipal de Monóvar (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 30,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289693",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:45+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-ee275004-f785-42ef-99df-be2df81d225e",
+        "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "madrid-rfef-33836121-30-CF-TRIVAL-VALDERAS-ALCORCON-ALBACETE-BALOMPIE",
+      "federation": "madrid",
+      "player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "home": "CF Trival Valderas Alcorcón",
+      "away": "Albacete Balompié",
+      "date": "2027-05-02",
+      "time": null,
+      "status": "time_pending",
+      "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
+      "venue": "Polideportivo La Canaleja (HA)",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": null,
+      "away_logo": null,
+      "score_home": null,
+      "score_away": null,
+      "round": 30,
+      "competition_id": null,
+      "group_id": null,
+      "season": "2026-2027",
+      "participation": {},
+      "provider": "rfef",
+      "date_precision": "match",
+      "home_team_id": "rfef-23289692",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-18T13:06:43+00:00",
+      "participation_source": {},
+      "home_player_ids": [
+        "p-9258719a-7296-44bf-9a09-41eb00107cda"
+      ],
+      "away_player_ids": [],
       "is_internal_matchup": false
     },
     {

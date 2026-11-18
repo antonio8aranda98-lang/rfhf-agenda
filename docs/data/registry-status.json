@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "resolver_version": 2,
+  "resolver_version": 3,
   "revision": 8,
-  "checked_at": "2026-11-18T12:54:44+00:00",
+  "checked_at": "2026-11-18T13:06:27+00:00",
   "players": [
     {
       "id": "jorge-martin-andres",
@@ -47,8 +47,7 @@
     },
     {
       "id": "p-a1bb9309-65b3-451b-96ee-080aa8537660",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f",
@@ -68,8 +67,7 @@
     },
     {
       "id": "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-4eb8c0b4-9a99-48de-adf7-175894e34b52",
@@ -82,7 +80,7 @@
     {
       "id": "p-a53947ba-45d7-4e5a-962f-26696e074f29",
       "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "message": "La fuente no permite completar la consulta pública de navegador"
     },
     {
       "id": "p-c263c5a6-b2b8-446a-b380-55d530629551",
@@ -95,13 +93,11 @@
     },
     {
       "id": "p-9258719a-7296-44bf-9a09-41eb00107cda",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-ee275004-f785-42ef-99df-be2df81d225e",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b",
@@ -113,8 +109,7 @@
     },
     {
       "id": "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be",
@@ -148,8 +143,7 @@
     },
     {
       "id": "p-4756c9a7-0982-40ff-b10f-f4cc5d1511ed",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-5caca805-bf45-40ee-8c28-624512fe640c",
@@ -193,7 +187,7 @@
     {
       "id": "p-d31e3297-f329-4af6-a3ef-04b33c70887e",
       "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "message": "La fuente no permite completar la consulta pública de navegador"
     },
     {
       "id": "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3",
@@ -213,8 +207,7 @@
     },
     {
       "id": "p-5ae2cf0b-fdcb-4ab3-91cd-8ee188983405",
-      "state": "pending",
-      "message": "La fuente ha devuelto una respuesta vacía; no se guarda como calendario válido"
+      "state": "verified"
     },
     {
       "id": "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
