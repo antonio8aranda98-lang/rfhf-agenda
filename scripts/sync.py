@@ -378,6 +378,26 @@ def collect_player(client, secondary_client, player, previous=()):
     return result
 
 
+def retain_participation(match, previous, player_id, allow_secondary=True):
+    """Retain missing fields only while the result and known identity facts agree."""
+    if not previous or match.get('status') != previous.get('status') or match.get('status') != 'finished' or (match.get('score_home'),match.get('score_away')) != (previous.get('score_home'),previous.get('score_away')):
+        return
+    before = previous.get('participation', {}).get(player_id)
+    if before is None:
+        return
+    old_source = previous.get('participation_source', {}).get(player_id)
+    if old_source and 'besoccer.com' in old_source and not allow_secondary:
+        return
+    current = match.setdefault('participation', {}).get(player_id) or {}
+    if any(current.get(k) is not None and before.get(k) is not None and current[k] != before[k] for k in ('called_up','starts','bench','played')):
+        return
+    missing = {k:v for k,v in before.items() if current.get(k) is None and v is not None}
+    if not current or missing:
+        match['participation'][player_id] = {**current, **missing}
+        match.setdefault('participation_checked_at', {})[player_id] = previous.get('participation_checked_at', {}).get(player_id, previous.get('updated_at'))
+        if old_source: match.setdefault('participation_source', {})[player_id] = old_source
+
+
 def sync(browser=False):
     roster = json.loads((ROOT / 'data/roster.json').read_text())
     path = ROOT / 'docs/data/feed.json'
@@ -409,26 +429,21 @@ def sync(browser=False):
             public['provider'] = config.get('provider', 'federation')
             public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source') if config.get(k)})
             try:
-                result = collect_player(client, secondary_client, config, old_matches)
+                same_secondary = old_player.get('besoccer_player_source') == config.get('besoccer_player_source')
+                result = collect_player(client, secondary_client, config, old_matches if same_secondary else ())
                 if not result['matches']:
                     raise ValueError('Calendario vacío inesperado; se conservan los datos anteriores')
                 public.update({k: result.get(k) for k in ('stats', 'logo', 'stats_note')})
                 public.update({k:result[k] for k in ('secondary_stats','secondary_warning') if k in result})
+                if result.get('secondary_warning') and same_secondary and old_player.get('secondary_stats'):
+                    public['secondary_stats'] = old_player['secondary_stats']
                 public['updated_at'] = now()
                 for m in result['matches']:
                     checked = m.setdefault('participation_checked_at', {})
                     for player_id in m.get('participation', {}):
                         checked.setdefault(player_id, public['updated_at'])
                     previous_match = next((old for old in old_matches if old['id'] == m['id']), None)
-                    # A temporary act failure must not erase a previously verified
-                    # record. Retain its original date, only for an unchanged result.
-                    if previous_match and m['status'] == previous_match['status'] == 'finished' and (m['score_home'], m['score_away']) == (previous_match['score_home'], previous_match['score_away']):
-                        old_record = previous_match.get('participation', {}).get(config['id'])
-                        if config['id'] not in m['participation'] and old_record is not None:
-                            m['participation'][config['id']] = copy.deepcopy(old_record)
-                            checked[config['id']] = previous_match.get('participation_checked_at', {}).get(config['id'], previous_match.get('updated_at'))
-                            previous_source = previous_match.get('participation_source', {}).get(config['id'])
-                            if previous_source: m.setdefault('participation_source', {})[config['id']] = previous_source
+                    retain_participation(m, previous_match, config['id'], allow_secondary=bool(config.get('besoccer_team_source')) and same_secondary)
                     m['updated_at'] = public['updated_at']
                     feed['matches'].append(m)
                 successes += 1
@@ -439,6 +454,8 @@ def sync(browser=False):
                 print('::warning::' + fid + ': ' + message)
                 errors.append(config['id'])
                 public.update({k: old_player.get(k) for k in ('stats', 'logo', 'stats_note', 'updated_at', 'coverage', 'secondary_stats')})
+                if old_player.get('besoccer_player_source') != config.get('besoccer_player_source'):
+                    public.pop('secondary_stats', None)
                 public['stats'] = public.get('stats') or new_stats()
                 feed['matches'].extend(copy.deepcopy(m) for m in old_matches if config['id'] in m['player_ids'])
             feed['players'].append(public)

@@ -9,7 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from besoccer_data import BASE, url, parse_roster, parse_profile, parse_calendar, parse_lineup, enrich_official, PublicBeSoccer
 from registry import resolve_player
 from registry_remote import reconcile
-from sync import apply_roster, PublicRedirect
+from sync import apply_roster, PublicRedirect, retain_participation
 
 TEAM = BASE + '/equipo/equipo-juvenil'
 PLAYER = BASE + '/jugador/j-ejemplo-123'
@@ -130,6 +130,23 @@ class BeSoccerTests(unittest.TestCase):
         roster['players'][1]['active']=False
         result=apply_roster(result,roster)
         self.assertFalse(result['matches'][0]['is_internal_matchup'])
+
+    def test_temporary_secondary_failure_preserves_known_minutes_with_original_date(self):
+        m=parse_calendar(card(finished=True),player())[0]
+        previous=copy.deepcopy(m)
+        previous['participation']={'one':{'called_up':1,'starts':1,'bench':0,'minutes':74}}
+        previous['participation_checked_at']={'one':'2026-11-17'}
+        previous['participation_source']={'one':MATCH+'/alineaciones'}
+        m['participation']={'one':{'called_up':1,'starts':1,'bench':0,'minutes':None}}
+        retain_participation(m,previous,'one')
+        self.assertEqual(m['participation']['one']['minutes'],74)
+        self.assertEqual(m['participation_checked_at']['one'],'2026-11-17')
+        m['participation']['one']['minutes']=None
+        retain_participation(m,previous,'one',allow_secondary=False)
+        self.assertIsNone(m['participation']['one']['minutes'])
+        m['participation']['one']['starts']=0
+        retain_participation(m,previous,'one')
+        self.assertIsNone(m['participation']['one']['minutes'])
 
 
 if __name__=='__main__':unittest.main()
