@@ -28,6 +28,7 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - run: npm ci
       - run: pip install -r requirements.txt
       - name: Verificar reglas de fechas y datos
         run: |

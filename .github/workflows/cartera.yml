@@ -39,6 +39,11 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
       - name: Validar cambios de cartera
         run: python scripts/registry_remote.py
       - name: Actualizar agenda

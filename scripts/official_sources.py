@@ -5,6 +5,9 @@ untrusted URLs select an endpoint: mappings are reviewed, identities are recheck
 """
 import copy
 import re
+import json
+import subprocess
+import atexit
 from datetime import datetime
 from urllib.parse import urlencode, urljoin, urlparse, parse_qs
 
@@ -52,12 +55,44 @@ def client_for(shared, provider):
     return shared.official_clients[provider]
 
 
+_browser=None
+
+
+def browser_page(url):
+    """One ordinary Chrome process per sync, only for empty public responses."""
+    global _browser
+    from sync import ROOT
+    if _browser is None or _browser.poll() is not None:
+        _browser=subprocess.Popen(['node',str(ROOT/'scripts/official-browser.mjs')],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL,text=True,bufsize=1)
+    _browser.stdin.write(json.dumps({'url':url})+'\n');_browser.stdin.flush()
+    line=_browser.stdout.readline(12_000_000)
+    if not line:raise ValueError('No se ha podido iniciar el lector público de navegador')
+    result=json.loads(line)
+    if not isinstance(result.get('html'),str):raise ValueError(result.get('error','Consulta de navegador incompleta'))
+    return result['html']
+
+
+def close_browser():
+    global _browser
+    if _browser is not None:
+        try:_browser.stdin.close()
+        except OSError:pass
+        try:_browser.wait(timeout=8)
+        except subprocess.TimeoutExpired:_browser.terminate()
+        _browser=None
+
+
+atexit.register(close_browser)
+
+
 def page(client, url):
-    """A bounded retry for an empty public response, never for an access denial."""
+    """No browser retry for a denied request or an authentication challenge."""
     try:return client.get(url)
     except ValueError as error:
         if 'respuesta vacía' not in str(error):raise
-        return client.get(url)
+        html=browser_page(url)
+        client.cache[url]=html
+        return html
 
 
 def round_url(provider, number):
@@ -187,7 +222,40 @@ def calendar(client, player):
         source=calendar_url(player['provider'],extended)
         try:return parse_calendar(page(client,source),player,source,extended)
         except Exception as error:failure=error
+    if player['provider']!='rfef':
+        p=PROVIDERS[player['provider']]
+        source=p['base']+'/pnfg/NPcd/NFG_VisCompeticiones_Grupo?'+urlencode({'cod_primaria':'1000123','codequipo':player['external_team_id'],'codgrupo':p['group']})
+        try:return parse_team_calendar(page(client,source),player,source)
+        except Exception as error:failure=error
     raise failure
+
+
+def parse_team_calendar(html, player, source):
+    from sync import fixture,iso_date,http_time
+    soup=BeautifulSoup(html,'html.parser');games=[]
+    title=next((h for h in soup.select('h5') if 'Temporada' in h.get_text() and player['season'] in h.get_text()),None)
+    team=next((h for h in soup.select('h4') if norm(h.get_text(' ',strip=True))==norm(player['team'])),None)
+    if not title or not team:raise ValueError('Ficha de grupo sin equipo y temporada verificables')
+    label=re.sub(r'\s*Temporada.*$','',title.get_text(' ',strip=True)).replace('Grupo:','·')
+    for row in soup.select('tr'):
+        cells=row.find_all('td',recursive=False)
+        if len(cells)!=3:continue
+        number=cells[0].get_text(strip=True);lines=[h.get_text(' ',strip=True) for h in cells[1].select('h5')]
+        if not number.isdigit() or len(lines)!=3:continue
+        dt=re.search(r'(\d{2}-\d{2}-\d{4})(?:\s+(\d{1,2}:\d{2}))?',lines[2])
+        if not dt:raise ValueError('Ficha de grupo con partido sin fecha')
+        home,away=lines[:2]
+        if norm(player['team']) not in (norm(home),norm(away)):raise ValueError('La ficha de grupo mezcla otro equipo')
+        values=cells[2].select('b');score=[public_digits(n,soup) for n in values] if len(values)==2 else [None,None]
+        closed=all(n is not None for n in score);hour=http_time(dt[2])
+        m=fixture(player['federation'],player,'temporary',home,away,iso_date(dt[1]),hour,source,provider=player['provider'],round=int(number),
+            status='finished' if closed else 'scheduled' if hour else 'time_pending',score_home=score[0] if closed else None,score_away=score[1] if closed else None,date_precision='match' if hour else 'round')
+        m['id']=stable_id(player,int(number),home,away)
+        for side in ('home','away'):
+            if norm(m[side])==norm(player['team']):m[side+'_team_id']=player['team_id']
+        games.append(m)
+    if len(games)<20:raise ValueError('Ficha de grupo sin calendario completo')
+    return games,label
 
 
 def sides_in_act(soup):

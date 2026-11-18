@@ -1,10 +1,11 @@
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 from bs4 import BeautifulSoup
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from official_sources import alternative, parse_act, parse_round, parse_calendar, round_url, calendar_url
+from official_sources import alternative, parse_act, parse_round, parse_calendar, parse_team_calendar, round_url, calendar_url, page
 
 FIXTURES=Path(__file__).parent/'fixtures'
 def html(name):return (FIXTURES/name).read_text()
@@ -14,6 +15,22 @@ def config(name='Tiago Arzeno Rosso',slug='ad-sporting-hortaleza-a-juvenil'):
 
 
 class OfficialSourcesTests(unittest.TestCase):
+    def test_empty_http_can_use_ordinary_browser_and_cache_the_response(self):
+        class Client:
+            cache={}
+            def get(self,url):raise ValueError('La fuente ha devuelto una respuesta vacía')
+        client=Client();url=calendar_url('frf')
+        with patch('official_sources.browser_page',return_value='<h4>Calendario público</h4>') as browser:
+            self.assertIn('Calendario',page(client,url));browser.assert_called_once_with(url)
+        self.assertIn(url,client.cache)
+
+    def test_denial_or_challenge_never_triggers_browser_fallback(self):
+        class Client:
+            def get(self,url):raise ValueError('La fuente solicita una verificación')
+        with patch('official_sources.browser_page') as browser:
+            with self.assertRaises(ValueError):page(Client(),calendar_url('frf'))
+            browser.assert_not_called()
+
     def test_only_reviewed_full_identity_and_season_get_an_alternative(self):
         self.assertIsNotNone(alternative({'name':'Timoteo Mba Edu Masa','source':'https://es.besoccer.com/equipo/cd-alfaro'},'2026-2027'))
         for request in [{'name':'Otro Jugador','source':'https://es.besoccer.com/equipo/cd-alfaro'}, {'name':'Timoteo Mba Edu Masa','source':'https://es.besoccer.com.evil.test/equipo/cd-alfaro'}, {'name':'Timoteo Mba Edu Masa','source':'https://es.besoccer.com/equipo/cd-alfaro?url=http://localhost'}]:
@@ -56,6 +73,12 @@ class OfficialSourcesTests(unittest.TestCase):
         games,label=parse_calendar(html('frf-calendar.html'),config('Timoteo Mba Edu Masa','cd-alfaro'),calendar_url('frf',False),False)
         self.assertEqual(len(games),34);self.assertTrue(all(m['date_precision']=='round' and m['time'] is None for m in games))
         self.assertIn('TERCERA',label)
+
+    def test_castilla_mancha_group_calendar_has_real_match_dates(self):
+        p=config('Alvaro Contera Gil','cd-azuqueca')
+        games,label=parse_team_calendar(html('ffcm-team-calendar.html'),p,'https://www.ffcm.es/')
+        self.assertEqual(len(games),34);self.assertEqual((games[0]['date'],games[0]['time']),('2026-09-05','18:00'))
+        self.assertIn('LIGA NACIONAL',label)
 
     def test_extended_rfef_calendar_has_actual_times_and_venues(self):
         games,label=parse_calendar(html('rfef-calendar.html'),config(),calendar_url('rfef'),True)
