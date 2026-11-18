@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "resolver_version": 11,
-  "revision": 13,
-  "checked_at": "2026-11-18T16:34:29+00:00",
+  "revision": 14,
+  "checked_at": "2026-11-18T17:47:58+00:00",
   "players": [
     {
       "id": "jorge-martin-andres",
@@ -405,6 +405,166 @@
     },
     {
       "id": "p-b6864476-e8c9-4d54-a220-e80ffa5a5361",
+      "state": "verified"
+    },
+    {
+      "id": "p-14fe2d86-4679-4291-b2b2-ea2219f875bd",
+      "state": "verified"
+    },
+    {
+      "id": "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
+      "state": "verified"
+    },
+    {
+      "id": "p-46a95a14-de56-43c3-b119-3d0f567ef0f5",
+      "state": "verified"
+    },
+    {
+      "id": "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08",
+      "state": "verified"
+    },
+    {
+      "id": "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b",
+      "state": "verified"
+    },
+    {
+      "id": "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
+      "state": "verified"
+    },
+    {
+      "id": "p-d1691aca-5ba3-48d7-b3c2-86a72f1ca7a2",
+      "state": "verified"
+    },
+    {
+      "id": "p-17c0205a-e138-40a1-bd73-de4bbfa284b5",
+      "state": "verified"
+    },
+    {
+      "id": "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81",
+      "state": "verified"
+    },
+    {
+      "id": "p-2e054d93-4996-4773-9233-841b558819ee",
+      "state": "verified"
+    },
+    {
+      "id": "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36",
+      "state": "verified"
+    },
+    {
+      "id": "p-7c257627-9142-4627-91ff-676d4c0d9540",
+      "state": "verified"
+    },
+    {
+      "id": "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2",
+      "state": "verified"
+    },
+    {
+      "id": "p-8f5b0309-8c77-4269-a3bc-644f1c3228e1",
+      "state": "verified"
+    },
+    {
+      "id": "p-d293de07-f3e2-4508-8fc8-a32c0164a831",
+      "state": "verified"
+    },
+    {
+      "id": "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad",
+      "state": "verified"
+    },
+    {
+      "id": "p-7a5540e3-e152-4958-abff-a4afc28a3312",
+      "state": "verified"
+    },
+    {
+      "id": "p-85e4ec27-a204-4f0c-b8d6-2a406a976be1",
+      "state": "verified"
+    },
+    {
+      "id": "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e",
+      "state": "verified"
+    },
+    {
+      "id": "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e",
+      "state": "verified"
+    },
+    {
+      "id": "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7",
+      "state": "verified"
+    },
+    {
+      "id": "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0",
+      "state": "verified"
+    },
+    {
+      "id": "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026",
+      "state": "verified"
+    },
+    {
+      "id": "p-ee685f02-2c5a-4cac-966f-764f2f32c108",
+      "state": "verified"
+    },
+    {
+      "id": "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279",
+      "state": "verified"
+    },
+    {
+      "id": "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5",
+      "state": "verified"
+    },
+    {
+      "id": "p-173f9809-d590-4818-9f53-8156605bc3c5",
+      "state": "verified"
+    },
+    {
+      "id": "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a",
+      "state": "verified"
+    },
+    {
+      "id": "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952",
+      "state": "verified"
+    },
+    {
+      "id": "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
+      "state": "verified"
+    },
+    {
+      "id": "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a",
+      "state": "verified"
+    },
+    {
+      "id": "p-49513978-5e9a-460f-941a-fbca921333c7",
+      "state": "verified"
+    },
+    {
+      "id": "p-7dc51770-5927-40f9-befc-2363e018466e",
+      "state": "verified"
+    },
+    {
+      "id": "p-2e23b123-ae10-4212-b2f8-d8627a97b6b9",
+      "state": "verified"
+    },
+    {
+      "id": "p-a8f2c383-0c07-4afd-9402-926a2a17e524",
+      "state": "verified"
+    },
+    {
+      "id": "p-857a7e7d-5b48-4b68-bd28-756a8134827b",
+      "state": "verified"
+    },
+    {
+      "id": "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
+      "state": "verified"
+    },
+    {
+      "id": "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea",
+      "state": "verified"
+    },
+    {
+      "id": "p-5fc13294-34e2-440c-aabf-c8a7881268ac",
+      "state": "verified"
+    },
+    {
+      "id": "p-5de13299-c87f-4714-9b5b-30446d39a579",
       "state": "verified"
     }
   ]

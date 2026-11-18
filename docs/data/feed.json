@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T16:38:17+00:00",
+  "generated_at": "2026-11-18T17:47:59+00:00",
   "season": "2026-2027",
-  "registry_revision": 13,
+  "registry_revision": 14,
   "federations": [
     {
       "id": "madrid",
@@ -37018,7 +37018,8 @@
       "id": "valencia-26574802",
       "federation": "valencia",
       "player_ids": [
-        "daniel-otero-serrano"
+        "daniel-otero-serrano",
+        "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
       "home": "Col. Salgui E.D.E. 'B'",
       "away": "EAF Valencia C.F. 'A'",
@@ -37045,11 +37046,13 @@
       "participation_checked_at": {},
       "updated_at": "2026-11-18T11:30:01+00:00",
       "participation_source": {},
-      "home_player_ids": [],
+      "home_player_ids": [
+        "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
+      ],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-rfef-33836121-10-REAL-MADRID-CF-CF-TRIVAL-VALDERAS-ALCORCON",
@@ -48986,7 +48989,8 @@
       "id": "valencia-26480013",
       "federation": "valencia",
       "player_ids": [
-        "daniel-otero-serrano"
+        "daniel-otero-serrano",
+        "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
       ],
       "home": "C.F. At. Bº La Luz - Xirivella 'A'",
       "away": "EAF Valencia C.F. 'A'",
@@ -49013,11 +49017,13 @@
       "participation_checked_at": {},
       "updated_at": "2026-11-18T11:30:01+00:00",
       "participation_source": {},
-      "home_player_ids": [],
+      "home_player_ids": [
+        "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
+      ],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": true
     },
     {
       "id": "catalunya-4194728",
@@ -62488,7 +62494,8 @@
       "id": "valencia-26480063",
       "federation": "valencia",
       "player_ids": [
-        "daniel-otero-serrano"
+        "daniel-otero-serrano",
+        "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
       "home": "EAF Valencia C.F. 'A'",
       "away": "Col. Salgui E.D.E. 'B'",
@@ -62518,8 +62525,10 @@
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
-      "away_player_ids": [],
-      "is_internal_matchup": false
+      "away_player_ids": [
+        "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
+      ],
+      "is_internal_matchup": true
     },
     {
       "id": "catalunya-4153314",
@@ -89310,7 +89319,8 @@
       "id": "valencia-26480133",
       "federation": "valencia",
       "player_ids": [
-        "daniel-otero-serrano"
+        "daniel-otero-serrano",
+        "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
       ],
       "home": "EAF Valencia C.F. 'A'",
       "away": "C.F. At. Bº La Luz - Xirivella 'A'",
@@ -89340,8 +89350,10 @@
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
-      "away_player_ids": [],
-      "is_internal_matchup": false
+      "away_player_ids": [
+        "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
+      ],
+      "is_internal_matchup": true
     },
     {
       "id": "catalunya-4153399",
