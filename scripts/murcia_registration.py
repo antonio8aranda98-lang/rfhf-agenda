@@ -21,6 +21,9 @@ def discover_scope(client, soup, source, team_id, season):
     links = list(dict.fromkeys(links))
     if len(links) != 1:
         raise ValueError('No se identifica una ficha de competición y temporada del equipo; alta pendiente')
+    teams = {h.get_text(' ', strip=True) for h in soup.select('span.la_roja_regular_titulo1') if h.get_text(' ',strip=True)}
+    if len(teams) != 1:
+        raise ValueError('No se identifica un único equipo en la ficha oficial')
     history_url, season_id = links[0]
     history = BeautifulSoup(client.get(history_url), 'html.parser')
     scopes = []
@@ -41,14 +44,9 @@ def discover_scope(client, soup, source, team_id, season):
                 and g['codgrupo'][0].isdigit() and l.get('codgrupo') == g['codgrupo']
                 and len(c.get('codcompeticion', [])) == 1 and c['codcompeticion'][0].isdigit()):
             scopes.append({'competition_id':c['codcompeticion'][0], 'group_id':g['codgrupo'][0],
-                           'season_id':season_id, 'competition_label':comp.get_text(' ',strip=True)+' · '+label.get_text(' ',strip=True),
-                           'group_url':group_url})
+                           'season_id':season_id, 'competition_label':comp.get_text(' ',strip=True)+' · '+label.get_text(' ',strip=True)})
     if len(scopes) != 1:
         raise ValueError('No se identifica una única competición del equipo en la temporada actual; alta pendiente')
     result = scopes[0]
-    group = BeautifulSoup(client.get(result.pop('group_url')), 'html.parser')
-    teams = [h.get_text(' ', strip=True) for h in group.select('h4') if h.get_text(' ',strip=True) and 'Temporada' not in h.get_text()]
-    if len(teams) != 1:
-        raise ValueError('No se identifica un único equipo en la ficha oficial del grupo')
-    result.update(team_id=team_id, team=teams[0])
+    result.update(team_id=team_id, team=teams.pop())
     return result

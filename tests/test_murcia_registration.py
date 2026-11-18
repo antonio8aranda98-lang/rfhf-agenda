@@ -9,7 +9,7 @@ from registry import resolve_player
 from sync import murcia
 
 SOURCE='https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=7&cod_primaria=3001860'
-TEAM='<table><tr><th>Jugadores (1)</th></tr><tr><td>MARIN MOYA, SALVADOR</td></tr></table><a href="NFG_VisCompeticiones_Equipo?codequipo=7&codtemporada=22">Ficha de Competición</a>'
+TEAM='<span class="la_roja_regular_titulo1">UCAM</span><table><tr><th>Jugadores (1)</th></tr><tr><td>MARIN MOYA, SALVADOR</td></tr></table><a href="NFG_VisCompeticiones_Equipo?codequipo=7&codtemporada=22">Ficha de Competición</a>'
 def row(comp='10',group='11',team='7'):
     return f'<tr><td><a href="NFG_VisCompeticiones_Vis?codcompeticion={comp}">LIGA NACIONAL JUVENIL</a></td><td><a href="NFG_VisGrupos_Vis?codgrupo={group}">GRUPO X</a></td><td><a href="NFG_VisCompeticiones_Grupo?codequipo={team}&codgrupo={group}">Ficha</a></td></tr>'
 HISTORY='<h4>2026-2027</h4><table>'+row()+'</table><h4>2025-2026</h4><table>'+row('20','21')+'</table>'
