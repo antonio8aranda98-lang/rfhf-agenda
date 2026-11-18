@@ -11,7 +11,7 @@ from sync import ROOT, ADAPTERS, FEDERATIONS, Client, apply_roster, now
 from besoccer_data import FIELDS, PublicBeSoccer, resolve as resolve_besoccer
 
 REGISTRY = 'https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/api/registry'
-RESOLVER_VERSION = 3
+RESOLVER_VERSION = 4
 
 
 def fetch_registry():
@@ -43,6 +43,13 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
             results.append({'id':id,'state':'inactive'})
             continue
         try:
+            from official_sources import PROVIDERS,ADAPTER_VERSION
+            if existing and existing.get('provider') in PROVIDERS and existing.get('official_adapter_version')!=ADAPTER_VERSION:
+                request={k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','age_category') if entry.get(k) is not None}
+                fid='official-upgrade'
+                if fid not in clients:clients[fid]=Client('https://es.besoccer.com')
+                verified=resolver(request,updated,client=clients[fid]);verified['id']=id
+                existing.clear();existing.update(verified)
             if existing:
                 if existing.get('active', True) is False:
                     if revalidate:

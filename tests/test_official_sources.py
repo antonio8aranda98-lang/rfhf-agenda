@@ -1,11 +1,13 @@
 import sys
 import unittest
+import tempfile
+import json
 from unittest.mock import patch
 from pathlib import Path
 from bs4 import BeautifulSoup
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from official_sources import alternative, parse_act, parse_round, parse_calendar, parse_team_calendar, round_url, calendar_url, page
+from official_sources import alternative, parse_act, parse_round, parse_calendar, parse_team_calendar, round_url, calendar_url, page, save_initial_snapshot, initial_snapshot, snapshot_path
 
 FIXTURES=Path(__file__).parent/'fixtures'
 def html(name):return (FIXTURES/name).read_text()
@@ -15,6 +17,17 @@ def config(name='Tiago Arzeno Rosso',slug='ad-sporting-hortaleza-a-juvenil'):
 
 
 class OfficialSourcesTests(unittest.TestCase):
+    def test_verified_snapshot_is_scoped_rekeyed_and_expires(self):
+        p=config();game={'player_ids':['tracked'],'participation':{'tracked':{'minutes':22}}}
+        with tempfile.TemporaryDirectory() as directory,patch('sync.ROOT',Path(directory)):
+            save_initial_snapshot(p,{'matches':[game]})
+            result=initial_snapshot({**p,'id':'real-registry-id'})
+            self.assertEqual(result['matches'][0]['participation'],{'real-registry-id':{'minutes':22}})
+            self.assertEqual(result['matches'][0]['player_ids'],['real-registry-id'])
+            self.assertIsNone(initial_snapshot({**p,'team_id':'another-club'}))
+            path=snapshot_path(p);data=json.loads(path.read_text());data['read_at']='2020-01-01T00:00:00+00:00';path.write_text(json.dumps(data))
+            self.assertIsNone(initial_snapshot(p))
+
     def test_empty_http_can_use_ordinary_browser_and_cache_the_response(self):
         class Client:
             cache={}

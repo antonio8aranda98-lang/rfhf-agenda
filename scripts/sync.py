@@ -418,8 +418,9 @@ def sync(browser=False, registry_changes=False):
     old_players = {p['id']:p for p in previous.get('players', [])}
     focus = None
     if registry_changes:
-        identity_fields = ('source','besoccer_team_source','besoccer_player_source')
-        focus = {p['id'] for p in roster['players'] if p.get('active',True) and (p['id'] not in old_players or any(p.get(k) != old_players[p['id']].get(k) for k in identity_fields))}
+        identity_fields = ('source','besoccer_team_source','besoccer_player_source','official_adapter_version')
+        with_matches={id for m in previous.get('matches',[]) for id in m['player_ids']}
+        focus = {p['id'] for p in roster['players'] if p.get('active',True) and (p['id'] not in old_players or p['id'] not in with_matches or any(p.get(k) != old_players[p['id']].get(k) for k in identity_fields))}
     if browser:
         run = subprocess.run(['node', 'scripts/valencia.mjs'], cwd=ROOT, timeout=360, check=False)
         if run.returncode:
@@ -445,7 +446,7 @@ def sync(browser=False, registry_changes=False):
             old_player = next((p for p in previous.get('players', []) if p['id'] == config['id']), {})
             public = {k: config[k] for k in ('id', 'name', 'federation', 'collaborator', 'team', 'competition_label', 'source')}
             public['provider'] = config.get('provider', 'federation')
-            public.update({k:config[k] for k in ('age_category','team_age_category','source_acronym') if config.get(k)})
+            public.update({k:config[k] for k in ('age_category','team_age_category','source_acronym','official_adapter_version') if config.get(k)})
             public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source') if config.get(k)})
             if focus is not None and config['id'] not in focus:
                 public.update({k:old_player[k] for k in ('stats','logo','stats_note','updated_at','coverage','secondary_stats','secondary_warning') if k in old_player})
@@ -461,7 +462,7 @@ def sync(browser=False, registry_changes=False):
                 public.update({k:result[k] for k in ('secondary_stats','secondary_warning') if k in result})
                 if result.get('secondary_warning') and same_secondary and old_player.get('secondary_stats'):
                     public['secondary_stats'] = old_player['secondary_stats']
-                public['updated_at'] = now()
+                public['updated_at'] = result.get('checked_at') or now()
                 for m in result['matches']:
                     checked = m.setdefault('participation_checked_at', {})
                     for player_id in m.get('participation', {}):
@@ -481,6 +482,8 @@ def sync(browser=False, registry_changes=False):
                 if old_player.get('besoccer_player_source') != config.get('besoccer_player_source'):
                     public.pop('secondary_stats', None)
                 public['stats'] = public.get('stats') or new_stats()
+                if not any(config['id'] in m['player_ids'] for m in old_matches):
+                    continue  # A failed first refresh must not publish an empty profile.
                 feed['matches'].extend(copy.deepcopy(m) for m in old_matches if config['id'] in m['player_ids'])
             feed['players'].append(public)
         meta = {'id': fid, 'label': label, 'acronym': acronym, 'source': base,

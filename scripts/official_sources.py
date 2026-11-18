@@ -8,7 +8,8 @@ import re
 import json
 import subprocess
 import atexit
-from datetime import datetime
+import hashlib
+from datetime import datetime,timezone
 from urllib.parse import urlencode, urljoin, urlparse, parse_qs
 
 from bs4 import BeautifulSoup
@@ -31,6 +32,11 @@ TEAMS = {
     'cd-alfaro': ('frf','2007200301','ALFARO', {'Timoteo Mba Edu Masa':'MBA EDU MASA, TIMOTEO','Jordi Julia Urchaga':'JULIA I URCHAGA, JORDI'}),
     'cdfc-calzada': ('frf','2007214201','LA CALZADA', {'Javier Rullan Serrano':'RULLAN SERRANO, JAVIER'}),
 }
+IDENTITY_REPORTS = {
+    'RULLAN SERRANO JAVIER':'https://www.frfutbol.com/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=258627&cod_acta=258627',
+    'CONTERA GIL ALVARO':'https://www.ffcm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=592872&cod_acta=592872',
+}
+ADAPTER_VERSION=2
 
 
 def alternative(request, season):
@@ -339,6 +345,9 @@ def parse_act(html, player):
 
 def adapter(client, player, previous=()):
     if player.get('official_season')!=player['season']:raise ValueError('Revisar la fuente oficial para la nueva temporada')
+    if not player.get('_verify_identity') and not any(player['id'] in m.get('player_ids',[]) for m in previous):
+        cached=initial_snapshot(player)
+        if cached:return cached
     games,label=calendar(client,player);calendar_source=games[0]['source'];identity=False;logo=None;warnings=[]
     from sync import MADRID
     today=datetime.now(MADRID).date()
@@ -368,6 +377,13 @@ def adapter(client, player, previous=()):
         # Membership at the exact official club is also enough when the player
         # has not yet been called up. It never supplies appearance/minute totals.
         provider=player['provider']
+        anchor=IDENTITY_REPORTS.get(norm(player['official_name']))
+        if anchor and not identity:
+            try:
+                html=page(client,anchor);soup=BeautifulSoup(html,'html.parser')
+                if any(re.search(r'Temporada\s*'+re.escape(player['season']),h.get_text(' ',strip=True)) for h in soup.select('h4,h5')):
+                    identity=parse_act(html,player)['called_up']==1
+            except Exception:pass
         if provider!='rfef' and not identity:
             u=PROVIDERS[provider]['base']+'/pnfg/NPcd/NFG_VisEquipos?'+urlencode({'cod_primaria':'1000119','Codigo_Equipo':player['external_team_id']})
             soup=BeautifulSoup(page(client,u),'html.parser')
@@ -391,5 +407,37 @@ def resolve(shared, request, season):
     config.update(source=result['source'],competition_label=result['competition_label'],team_age_category=team_category(result['competition_label']),active=True)
     config['match_duration']=verify_category(request.get('age_category'),config['team_age_category'])
     if request.get('age_category'):config['age_category']=request['age_category']
+    config['official_adapter_version']=ADAPTER_VERSION
+    save_initial_snapshot(config,result)
     config.pop('season')
     return config
+
+
+def snapshot_path(player):
+    from sync import ROOT
+    identity=[player['provider'],player['team_id'],player['official_name'],player.get('season') or player['official_season'],player['source_request']]
+    key=hashlib.sha256(json.dumps(identity,ensure_ascii=False).encode()).hexdigest()
+    return ROOT/'.cache'/'official-initial'/(key+'.json')
+
+
+def save_initial_snapshot(player,result):
+    from sync import now
+    path=snapshot_path(player);path.parent.mkdir(parents=True,exist_ok=True)
+    path.write_text(json.dumps({'read_at':now(),'player_id':player['id'],'result':result},ensure_ascii=False))
+
+
+def initial_snapshot(player):
+    path=snapshot_path(player)
+    if not path.exists():return None
+    try:
+        snapshot=json.loads(path.read_text());stamp=datetime.fromisoformat(snapshot['read_at'])
+        age=(datetime.now(timezone.utc)-stamp).total_seconds()
+        if not 0<=age<1800:return None
+        result=snapshot['result'];old=snapshot['player_id'];new=player['id']
+        for match in result['matches']:
+            match['player_ids']=[new if id==old else id for id in match['player_ids']]
+            for field in ('participation','participation_checked_at','participation_source'):
+                if old in match.get(field,{}):match[field][new]=match[field].pop(old)
+        result['checked_at']=snapshot['read_at']
+        return result
+    except (ValueError,KeyError,TypeError):return None

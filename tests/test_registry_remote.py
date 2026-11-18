@@ -48,7 +48,7 @@ class RemoteRegistryTests(unittest.TestCase):
         self.assertTrue(needed(self.desired,{'revision':2,'players':[{'state':'verified'}]}))
 
     def test_official_migration_does_not_reenable_blocked_secondary_source(self):
-        self.current['players'][0].update(source_request='https://es.besoccer.com/equipo/cd-alfaro',provider='frf')
+        self.current['players'][0].update(source_request='https://es.besoccer.com/equipo/cd-alfaro',provider='frf',official_adapter_version=2)
         self.desired['players'][0].update(source='https://es.besoccer.com/equipo/cd-alfaro',besoccer_team_source='https://es.besoccer.com/equipo/cd-alfaro')
         updated,status=reconcile(self.current,self.desired)
         self.assertEqual(status['players'][0]['state'],'verified')
