@@ -172,7 +172,7 @@ def madrid(client, player):
     pdata = client.next_props(player['source'])['player']
     competition = next((c for c in pdata.get('competiciones_participa', []) if str(c.get('codigo_competicion')) == player['competition_id']), {})
     visible = competition.get('ver_estadisticas') == '1'
-    if visible:
+    if visible and len(pdata.get('competiciones_participa', [])) == 1:
         mapping = {'Convocados': 'called_up', 'Jugados': 'played', 'Titular': 'starts', 'Suplente': 'bench', 'Total Goles': 'goals'}
         for item in pdata.get('partidos', []):
             if item.get('nombre') in mapping:
@@ -200,7 +200,7 @@ def madrid(client, player):
                             score_home=sh, score_away=sa, home_team_id=str(m['codigo_equipo_local']), away_team_id=str(m['codigo_equipo_visitante']))
             if sh is not None and sa is not None:
                 match['status'] = 'finished'
-            if date and today <= date and m.get('codigo_campo'):
+            if not player.get('_calendar_only') and date and today <= date and m.get('codigo_campo'):
                 try:
                     field = client.next_props(base + 'campo/' + m['codigo_campo'])['field']
                     for dest, src in [('address', 'direccion'), ('locality', 'localidad'), ('latitude', 'latitud'), ('longitude', 'longitud')]:
@@ -210,7 +210,17 @@ def madrid(client, player):
             matches.append(match)
     # Only closed acts yield individual participation; bench is never assumed played.
     completed = sorted([m for m in matches if m['status'] == 'finished'], key=lambda m: m['date'] or '', reverse=True)
+    if player.get('_calendar_only'):
+        return {'matches':matches}
+    previous = {m['id']:m for m in player.get('_previous', [])}
+    latest = {m['id'] for m in completed[:2]}
     for m in completed:
+        before = previous.get(m['id'])
+        if m['id'] not in latest and before and before.get('status')=='finished' and (before.get('score_home'),before.get('score_away')) == (m['score_home'],m['score_away']) and before.get('participation',{}).get(player['id']) is not None:
+            m['participation'][player['id']] = copy.deepcopy(before['participation'][player['id']])
+            m['participation_checked_at'] = {player['id']:before.get('participation_checked_at',{}).get(player['id'],before.get('updated_at'))}
+            if before.get('participation_source',{}).get(player['id']):m['participation_source']={player['id']:before['participation_source'][player['id']]}
+            continue
         try:
             game = client.next_props(m['source'])['game']
             side = 'local' if str(game['codigo_equipo_local']) == player['team_id'] else 'visitante'
@@ -365,7 +375,7 @@ def collect_player(client, secondary_client, player, previous=()):
     api = PublicBeSoccer(secondary_client)
     if player.get('provider') == 'besoccer':
         return adapter(api, player, previous)
-    result = ADAPTERS[player['federation']](client, player)
+    result = ADAPTERS[player['federation']](client, {**player, '_previous':previous})
     if player.get('besoccer_team_source'):
         try:
             secondary = adapter(api, player)
@@ -427,6 +437,7 @@ def sync(browser=False):
             old_player = next((p for p in previous.get('players', []) if p['id'] == config['id']), {})
             public = {k: config[k] for k in ('id', 'name', 'federation', 'collaborator', 'team', 'competition_label', 'source')}
             public['provider'] = config.get('provider', 'federation')
+            public.update({k:config[k] for k in ('age_category','team_age_category') if config.get(k)})
             public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source') if config.get(k)})
             try:
                 same_secondary = old_player.get('besoccer_player_source') == config.get('besoccer_player_source')

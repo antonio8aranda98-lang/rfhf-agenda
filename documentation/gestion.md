@@ -20,3 +20,11 @@ Las bajas y asignaciones se reflejan al refrescar la agenda (cada 30 segundos o 
 Solo Antonio puede escribir: el servidor coteja la identidad autenticada con la cuenta vinculada durante la activación privada. Ser visitante, conocer un nombre de colaborador o intentar falsificar cabeceras no concede permisos. La lectura de los datos deportivos es pública, autorizada por el propietario. No hay tokens para pegar ni una contraseña compartida.
 
 Dar de baja desactiva el registro; se puede recuperar con **Reactivar**. La baja no borra el historial del repositorio público. No añadas motivos contractuales ni datos de contacto: el registro contiene únicamente información deportiva y asignaciones públicas.
+
+## Importar una lista
+
+Antonio puede elegir **Importar lista de jugadores**, seleccionar la federación y pegar las filas desde su hoja o subir un archivo TSV. Se usan cinco columnas sin cabecera: nombre completo, año de nacimiento, equipo, enlace y colaborador. Las filas sin enlace se omiten; una fila con formato inválido impide guardar el lote entero. Se muestran las altas, los registros existentes actualizados y los omitidos al guardar. No se borran otros territorios y un jugador ya registrado conserva su identidad y fuente. Se actualiza su colaborador y categoría por edad.
+
+El año sirve para clasificar la edad y no se conserva en el registro público. En 2026–2027: 2008–2010 juvenil, 2011–2012 cadete, 2013–2014 infantil y 2007 o anteriores sénior. La duración para calcular minutos corresponde a la categoría del equipo: 90 minutos sénior/juvenil, 80 cadete y 70 infantil. Un jugador joven puede figurar en un equipo de mayor edad; una edad indicada superior a la del equipo requiere revisión antes de activar el registro.
+
+El nombre de la hoja puede ampliarse al nombre completo de una identidad única de la plantilla verificada. Si el nombre no aparece o la ficha no confirma su competición actual, el alta permanece pendiente y se reintenta sin publicar una identidad por parecido. En Madrid, las estadísticas de varias competiciones de una ficha individual no se mezclan: se calculan con las actas del equipo seguido. Las alineaciones históricas ya verificadas se conservan para el mismo resultado y se revisan las dos últimas en cada consulta.

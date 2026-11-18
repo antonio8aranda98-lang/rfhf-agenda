@@ -36,3 +36,29 @@ class FederationTests(unittest.TestCase):
         with self.assertRaises(ValueError):parse_team('<h1>Portada</h1>',{'id':'daniel'})
 
 if __name__=='__main__':unittest.main()
+
+class MadridScopeTests(unittest.TestCase):
+    def client(self):
+        from sync import Client
+        class Fake:
+            def __init__(self):self.calls=[]
+            def next_props(self,url):
+                self.calls.append(url)
+                if '/fichaequipo/' in url:return {'team':{'nombre_equipo':'Equipo','jugadores_equipo':[{'cod_jugador':'3'}],'escudo_club':'','host':'https://www.rffm.es/'}}
+                if '/fichajugador/' in url:return {'player':{'competiciones_participa':[{'codigo_competicion':'1','ver_estadisticas':'1','vis_goles':'1','vis_minutos':'1'},{'codigo_competicion':'2'}],'partidos':[{'nombre':'Convocados','valor':'99'}],'minutos_totales_jugados':'999'}}
+                if '/calendario?' in url:return {'calendar':{'rounds':[{'codjornada':'1','equipos':[{'codacta':'9','codigo_equipo_local':'11','codigo_equipo_visitante':'12','equipo_local':'Equipo','equipo_visitante':'Rival','fecha':'01-11-2026','hora':'12:00','goles_casa':'0','goles_visitante':'1'}]}]}}
+                if '/acta-partido/' in url:return {'game':{'codigo_equipo_local':'11','acta_cerrada':'1','jugadores_equipo_local':[{'codjugador':str(i),'titular':'1','ver_estadisiticas_jugador':'1'} for i in range(1,12)]}}
+                raise AssertionError(url)
+        return Fake()
+    def player(self):return {'id':'one','name':'Jugador Uno','team_id':'11','player_id':'3','competition_id':'1','group_id':'2','season_id':'22','source':'https://www.rffm.es/fichajugador/3','match_duration':90}
+    def test_multi_team_summary_is_not_mixed_with_the_followed_team(self):
+        from sync import madrid
+        from player_stats import summarize
+        client=self.client();p=self.player();r=madrid(client,p)
+        self.assertIsNone(r['stats']['called_up']);self.assertIsNone(r['stats']['minutes'])
+        stats,_=summarize(r['matches'],'one',r['stats'])
+        self.assertEqual((stats['called_up'],stats['minutes']),(1,90))
+    def test_identity_validation_checks_calendar_without_reading_every_historical_act(self):
+        from sync import madrid
+        client=self.client();r=madrid(client,{**self.player(),'_calendar_only':True})
+        self.assertEqual(len(r['matches']),1);self.assertFalse(any('/acta-partido/' in u for u in client.calls))

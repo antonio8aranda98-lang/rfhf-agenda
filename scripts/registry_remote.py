@@ -33,6 +33,7 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
     updated = copy.deepcopy(current)
     known = {p['id']:p for p in updated['players']}
     results = []
+    clients = {}
     for entry in desired['players']:
         id = entry['id']; existing = known.get(id)
         if entry.get('active', True) is False:
@@ -62,11 +63,19 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
                         for k in list(existing):
                             if k.startswith('besoccer_'): existing.pop(k)
                 existing['collaborator'] = text(entry.get('collaborator'), 'Colaborador')
+                if entry.get('age_category') in ('senior','juvenil','cadete','infantil'):
+                    existing['age_category'] = entry['age_category']
                 existing['active'] = True
             else:
-                request = {k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','competition_source',*FIELDS) if entry.get(k) is not None}
+                request = {k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','competition_source','age_category',*FIELDS) if entry.get(k) is not None}
                 # Never trust identifiers supplied by a browser for a new player.
-                verified = resolver(request, updated)
+                if resolver is resolve_player:
+                    from besoccer_data import is_besoccer
+                    fid = 'besoccer' if is_besoccer(request.get('source')) else request['federation']
+                    if fid not in clients: clients[fid] = Client('https://es.besoccer.com' if fid=='besoccer' else FEDERATIONS[fid][2])
+                    verified = resolver(request, updated, client=clients[fid])
+                else:
+                    verified = resolver(request, updated)
                 verified['id'] = id
                 updated['players'].append(verified)
                 known[id] = verified

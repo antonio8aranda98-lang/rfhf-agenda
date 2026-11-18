@@ -9,6 +9,7 @@ from urllib.parse import urlparse, parse_qs
 from bs4 import BeautifulSoup
 from sync import ROOT, Client, FEDERATIONS, ADAPTERS, initial_data, normalized, now, apply_roster
 from besoccer_data import is_besoccer, PublicBeSoccer, resolve as resolve_besoccer
+from categories import team_category, verify_category
 
 
 def text(value, label, limit=100):
@@ -58,6 +59,10 @@ def resolve_player(request, roster, client=None):
                   'team':linked['besoccer_team'], 'team_id':'besoccer-'+linked['besoccer_team_id'],
                   'player_id':'besoccer-'+linked['besoccer_player_source'].rsplit('-',1)[1],
                   'competition_label':linked['besoccer_competition_label']}
+        category = team_category(linked['besoccer_team']+' '+linked['besoccer_competition_label'])
+        duration = verify_category(request.get('age_category'), category)
+        result['team_age_category'] = category
+        if request.get('age_category'): result['age_category'] = request['age_category']
         result.update(id=re.sub(r'[^a-z0-9]+', '-', normalized(name).lower()).strip('-')+'-'+fid+'-'+result['player_id'],
                       name=name, federation=fid, collaborator=collaborator, match_duration=duration, active=True)
         if any(p['federation']==fid and name_key(p['name'])==name_key(name) for p in roster['players']):
@@ -86,10 +91,12 @@ def resolve_player(request, roster, client=None):
         if len(scopes) != 1:
             raise ValueError('La ficha no identifica una única competición para ese equipo')
         c = scopes[0]
+        category = team_category(team.get('categoria', '')+' '+c['nombre_competicion'])
+        duration = verify_category(request.get('age_category'), category)
         result = {'team_id': team_id, 'player_id': player_id, 'team': team['nombre_equipo'], 'source': source,
                   'competition_id': str(c['codigo_competicion']), 'group_id': str(c['codgrupo']),
                   'season_id': str(pdata['codigo_temporada']), 'official_name': official_name,
-                  'competition_label': c['nombre_competicion'] + ' · ' + c['nombre_grupo']}
+                  'competition_label': c['nombre_competicion'] + ' · ' + c['nombre_grupo'], 'team_age_category':category}
     elif fid == 'catalunya':
         data = initial_data(client.get(u.geturl()))
         member_name = unique_name([p['NOMBRE'] for p in data.get('players', [])], name)
@@ -156,10 +163,11 @@ def resolve_player(request, roster, client=None):
         result = resolve_ffcv(PublicFFCV(client), request, roster['season'], name_key)
     result.update(id=re.sub(r'[^a-z0-9]+', '-', normalized(name).lower()).strip('-') + '-' + fid + '-' + result.get('player_id', result['team_id']),
                   name=name, federation=fid, collaborator=collaborator, match_duration=duration, active=True)
+    if request.get('age_category'): result['age_category'] = request['age_category']
     if any(p['id'] == result['id'] or (p['federation'] == fid and name_key(p['official_name']) == name_key(result['official_name'])) for p in roster['players']):
         raise ValueError('El jugador ya está registrado. Utiliza cambiar colaborador o reactivar, según corresponda.')
     # A roster name alone is insufficient: check its real normalized calendar.
-    verified = ADAPTERS[fid](client, {**result, 'season': roster['season']})
+    verified = ADAPTERS[fid](client, {**result, 'season': roster['season'], '_calendar_only':True})
     if not verified.get('matches'):
         raise ValueError('No se ha verificado el calendario; el alta permanece pendiente')
     if request.get('besoccer_team_source'):

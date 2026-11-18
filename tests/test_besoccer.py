@@ -150,3 +150,13 @@ class BeSoccerTests(unittest.TestCase):
 
 
 if __name__=='__main__':unittest.main()
+
+class CategoryTests(unittest.TestCase):
+    def test_player_group_and_team_duration_are_distinct(self):
+        from categories import team_category, verify_category
+        self.assertEqual(team_category('Primera Autonómica Infantil'),'infantil')
+        self.assertEqual(team_category('Preferente Femenino Cadete'),'cadete')
+        self.assertEqual(team_category('División de Honor Sporting Hortaleza U19'),'juvenil')
+        self.assertEqual(team_category('Tercera Federación'),'senior')
+        self.assertEqual(verify_category('cadete','juvenil'),90)
+        with self.assertRaises(ValueError):verify_category('senior','juvenil')
