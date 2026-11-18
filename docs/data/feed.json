@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T13:17:50+00:00",
+  "generated_at": "2026-11-18T13:26:54+00:00",
   "season": "2026-2027",
   "registry_revision": 8,
   "federations": [
@@ -9,11 +9,14 @@
       "label": "Madrid",
       "acronym": "RFFM",
       "source": "https://www.rffm.es/",
-      "status": "partial",
-      "checked_at": "2026-11-18T13:18:02+00:00",
+      "status": "error",
+      "checked_at": "2026-11-18T13:27:01+00:00",
       "last_success": "2026-11-18T11:25:47+00:00",
-      "message": "Consulta automática completada",
-      "failed_players": []
+      "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
+      "failed_players": [
+        "p-a53947ba-45d7-4e5a-962f-26696e074f29",
+        "p-d31e3297-f329-4af6-a3ef-04b33c70887e"
+      ]
     },
     {
       "id": "catalunya",
@@ -1844,6 +1847,78 @@
         "minutes_checked": 5,
         "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
       }
+    },
+    {
+      "id": "p-a53947ba-45d7-4e5a-962f-26696e074f29",
+      "name": "Javier Rullan Serrano",
+      "federation": "madrid",
+      "collaborator": "Jesús Sánchez",
+      "team": "LA CALZADA",
+      "competition_label": "TERCERA FEDERACIÓN, Grupo 16",
+      "source": "https://www.frfutbol.com/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=21959328&codgrupo=21959329&codtemporada=22&CDetalle=1",
+      "provider": "frf",
+      "age_category": "senior",
+      "team_age_category": "senior",
+      "source_acronym": "FRF",
+      "official_adapter_version": 2,
+      "stats": {
+        "team_played": 0,
+        "called_up": 0,
+        "starts": 0,
+        "bench": 0,
+        "minutes": 0,
+        "goals": 0,
+        "played": 0,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": null,
+      "stats_note": null,
+      "updated_at": null,
+      "coverage": {
+        "team_played": 0,
+        "acts_checked": 0,
+        "minutes_checked": 0,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      },
+      "secondary_stats": null
+    },
+    {
+      "id": "p-d31e3297-f329-4af6-a3ef-04b33c70887e",
+      "name": "Alvaro Contera Gil",
+      "federation": "madrid",
+      "collaborator": "Rafa Mancheño",
+      "team": "C.D. AZUQUECA SAD",
+      "competition_label": "LIGA NACIONAL JUVENIL, GRUPO XV",
+      "source": "https://www.ffcm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=22916199&codgrupo=22916200&codtemporada=22&CDetalle=1",
+      "provider": "ffcm",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "source_acronym": "FFCM",
+      "official_adapter_version": 2,
+      "stats": {
+        "team_played": 1,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": null,
+      "stats_note": null,
+      "updated_at": null,
+      "coverage": {
+        "team_played": 1,
+        "acts_checked": 0,
+        "minutes_checked": 0,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido."
+      },
+      "secondary_stats": null
     },
     {
       "id": "aleix-camarasa-oros",
@@ -25217,7 +25292,8 @@
       "id": "madrid-ffcm-22916200-11-C-D-AZUQUECA-SAD-C-D-ALAMEDA-DE-LA-SAGRA-E-M-F",
       "federation": "madrid",
       "player_ids": [
-        "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b"
+        "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b",
+        "p-d31e3297-f329-4af6-a3ef-04b33c70887e"
       ],
       "home": "C.D. AZUQUECA SAD",
       "away": "C.D. ALAMEDA DE LA SAGRA E.M.F.",
@@ -25245,11 +25321,13 @@
       "participation_checked_at": {},
       "updated_at": "2026-11-18T13:16:57+00:00",
       "participation_source": {},
-      "home_player_ids": [],
+      "home_player_ids": [
+        "p-d31e3297-f329-4af6-a3ef-04b33c70887e"
+      ],
       "away_player_ids": [
         "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": true
     },
     {
       "id": "valencia-26479976",
@@ -32249,7 +32327,8 @@
       "federation": "madrid",
       "player_ids": [
         "p-4756c9a7-0982-40ff-b10f-f4cc5d1511ed",
-        "p-a1bb9309-65b3-451b-96ee-080aa8537660"
+        "p-a1bb9309-65b3-451b-96ee-080aa8537660",
+        "p-a53947ba-45d7-4e5a-962f-26696e074f29"
       ],
       "home": "ALFARO",
       "away": "LA CALZADA",
@@ -32281,8 +32360,10 @@
         "p-a1bb9309-65b3-451b-96ee-080aa8537660",
         "p-4756c9a7-0982-40ff-b10f-f4cc5d1511ed"
       ],
-      "away_player_ids": [],
-      "is_internal_matchup": false
+      "away_player_ids": [
+        "p-a53947ba-45d7-4e5a-962f-26696e074f29"
+      ],
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-rfcylf-24218935-14-C-D-INTERNACIONAL-VISTA-ALEGRE-C-D-ISOBA",
@@ -55154,7 +55235,8 @@
       "id": "madrid-ffcm-22916200-28-C-D-ALAMEDA-DE-LA-SAGRA-E-M-F-C-D-AZUQUECA-SAD",
       "federation": "madrid",
       "player_ids": [
-        "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b"
+        "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b",
+        "p-d31e3297-f329-4af6-a3ef-04b33c70887e"
       ],
       "home": "C.D. ALAMEDA DE LA SAGRA E.M.F.",
       "away": "C.D. AZUQUECA SAD",
@@ -55185,8 +55267,10 @@
       "home_player_ids": [
         "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b"
       ],
-      "away_player_ids": [],
-      "is_internal_matchup": false
+      "away_player_ids": [
+        "p-d31e3297-f329-4af6-a3ef-04b33c70887e"
+      ],
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-frf-21959329-29-ALFARO-CENICERO",
@@ -60925,7 +61009,8 @@
       "federation": "madrid",
       "player_ids": [
         "p-4756c9a7-0982-40ff-b10f-f4cc5d1511ed",
-        "p-a1bb9309-65b3-451b-96ee-080aa8537660"
+        "p-a1bb9309-65b3-451b-96ee-080aa8537660",
+        "p-a53947ba-45d7-4e5a-962f-26696e074f29"
       ],
       "home": "LA CALZADA",
       "away": "ALFARO",
@@ -60953,12 +61038,14 @@
       "participation_checked_at": {},
       "updated_at": "2026-11-18T13:17:14+00:00",
       "participation_source": {},
-      "home_player_ids": [],
+      "home_player_ids": [
+        "p-a53947ba-45d7-4e5a-962f-26696e074f29"
+      ],
       "away_player_ids": [
         "p-a1bb9309-65b3-451b-96ee-080aa8537660",
         "p-4756c9a7-0982-40ff-b10f-f4cc5d1511ed"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": true
     },
     {
       "id": "madrid-rfcylf-24218935-28-C-D-COLEGIOS-DIOCESANOS-C-D-ISOBA",
