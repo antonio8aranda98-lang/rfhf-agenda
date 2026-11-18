@@ -11,7 +11,7 @@ from sync import ROOT, ADAPTERS, FEDERATIONS, Client, apply_roster, now
 from besoccer_data import FIELDS, PublicBeSoccer, resolve as resolve_besoccer
 
 REGISTRY = 'https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/api/registry'
-RESOLVER_VERSION = 8
+RESOLVER_VERSION = 9
 
 
 def fetch_registry():
@@ -43,6 +43,13 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
             results.append({'id':id,'state':'inactive'})
             continue
         try:
+            if existing and entry.get('_identity_revision') and entry['_identity_revision']!=existing.get('identity_revision'):
+                existing['active']=False
+                request={k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','competition_source','age_category',*FIELDS) if entry.get(k) is not None}
+                without_self={**updated,'players':[p for p in updated['players'] if p['id']!=id]}
+                verified=resolver(request,without_self)
+                verified.update(id=id,identity_revision=entry['_identity_revision'])
+                existing.clear();existing.update(verified)
             from official_sources import PROVIDERS,ADAPTER_VERSION
             if existing and existing.get('provider') in PROVIDERS and existing.get('official_adapter_version')!=ADAPTER_VERSION:
                 request={k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','age_category') if entry.get(k) is not None}
@@ -86,6 +93,7 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
                 else:
                     verified = resolver(request, updated)
                 verified['id'] = id
+                if entry.get('_identity_revision'):verified['identity_revision']=entry['_identity_revision']
                 updated['players'].append(verified)
                 known[id] = verified
             results.append({'id':id,'state':'verified'})
@@ -135,7 +143,12 @@ def main(check=False):
     current = json.loads((ROOT/'data/roster.json').read_text())
     updated, status = reconcile(current, desired)
     feed_path = ROOT/'docs/data/feed.json'
-    feed = apply_roster(json.loads(feed_path.read_text()), updated)
+    previous=json.loads(feed_path.read_text())
+    by_id={p['id']:p for p in current['players']}
+    corrected={p['id'] for p in desired['players'] if p.get('_identity_revision') and p['id'] in by_id and p['_identity_revision']!=by_id[p['id']].get('identity_revision')}
+    if corrected:
+        previous=apply_roster(previous,{**updated,'players':[p for p in updated['players'] if p['id'] not in corrected]})
+    feed = apply_roster(previous, updated)
     assignments = {p['id']:p['collaborator'] for p in updated['players']}
     for p in feed['players']:
         p['collaborator'] = assignments[p['id']]

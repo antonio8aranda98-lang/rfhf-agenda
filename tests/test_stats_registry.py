@@ -142,3 +142,21 @@ class RegistryTests(unittest.TestCase):
 
 
 if __name__=='__main__':unittest.main()
+
+
+class MadridCalendarScopeTests(unittest.TestCase):
+    def test_missing_player_competition_can_use_verified_team_calendar(self):
+        from registry import resolve_player
+        source='https://www.rffm.es/competicion/calendario?competicion=100&grupo=200&temporada=22&tipojuego=1'
+        class Client:
+            def get(self,url):return ''
+            def next_props(self,url):
+                if '/fichaequipo/' in url:return {'team':{'nombre_equipo':'Equipo C','categoria':'PRIMERA AFICIONADO','jugadores_equipo':[{'nombre':'APELLIDO, JUGADOR','cod_jugador':'3'}]}}
+                if '/fichajugador/' in url:return {'player':{'nombre_temporada':'2026-2027','codigo_temporada':'22','competiciones_participa':[]}}
+                return {'calendar':{'temporada':'2026-2027','competicion':'PRIMERA AFICIONADO','grupo':'Grupo 5','rounds':[{'equipos':[{'codigo_equipo_local':'11','codigo_equipo_visitante':'12'}]}]}}
+        request={'name':'Jugador Apellido','federation':'madrid','source':'https://www.rffm.es/fichaequipo/11','collaborator':'Persona Uno','match_duration':90,'age_category':'senior','competition_source':source}
+        with patch.dict(registry.ADAPTERS,{'madrid':lambda *args:{'matches':[{}]}}):
+            p=resolve_player(request,{'season':'2026-2027','players':[]},Client())
+            self.assertEqual((p['competition_id'],p['group_id'],p['season_id']),('100','200','22'))
+            with self.assertRaises(ValueError):resolve_player({**request,'source':'https://www.rffm.es/fichaequipo/99'},{'season':'2026-2027','players':[]},Client())
+            with self.assertRaises(ValueError):resolve_player({**request,'competition_source':source.replace('temporada=22','temporada=21')},{'season':'2026-2027','players':[]},Client())

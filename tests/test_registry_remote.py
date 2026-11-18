@@ -54,6 +54,26 @@ class RemoteRegistryTests(unittest.TestCase):
         self.assertEqual(status['players'][0]['state'],'verified')
         self.assertNotIn('besoccer_team_source',updated['players'][0])
 
+    def test_identity_correction_revalidates_without_self_and_preserves_id(self):
+        self.desired['players'][0].update(name='Jugador Corregido',_identity_revision=3)
+        def resolve(request,current):
+            self.assertFalse(any(p['id']=='a' for p in current['players']))
+            return {**request,'id':'generated','official_name':'CORREGIDO, JUGADOR','active':True}
+        updated,status=reconcile(self.current,self.desired,resolver=resolve)
+        self.assertEqual(len(updated['players']),1)
+        self.assertEqual(updated['players'][0]['id'],'a')
+        self.assertEqual(updated['players'][0]['identity_revision'],3)
+        self.assertEqual(updated['players'][0]['official_name'],'CORREGIDO, JUGADOR')
+        self.assertEqual(status['players'][0]['state'],'verified')
+
+    def test_failed_correction_hides_previous_identity_until_validated(self):
+        self.desired['players'][0]['_identity_revision']=3
+        def reject(*args):raise ValueError('Identidad pendiente')
+        updated,status=reconcile(self.current,self.desired,resolver=reject)
+        self.assertFalse(updated['players'][0]['active'])
+        self.assertEqual(updated['players'][0]['official_name'],'UNO, JUGADOR')
+        self.assertEqual(status['players'][0]['state'],'pending')
+
 
 class FFCVParticipationTests(unittest.TestCase):
     def game(self):

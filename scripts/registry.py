@@ -27,7 +27,7 @@ def official_url(value, federation, competition=False):
         raise ValueError('Usa un enlace HTTPS de la federación seleccionada')
     patterns = {'madrid': r'/fichaequipo/\d+', 'catalunya': r'/ca/clubs/[a-z0-9-]+/categories/[a-z0-9-]+',
                 'murcia': r'/pnfg/NPcd/NFG_VisEquipos', 'valencia': r'/competiciones/equipos/equipo.php'}
-    pattern = r'/pnfg/NPcd/NFG_CmpJornada' if competition and federation == 'murcia' else patterns[federation]
+    pattern = r'/competicion/calendario' if competition and federation == 'madrid' else r'/pnfg/NPcd/NFG_CmpJornada' if competition and federation == 'murcia' else patterns[federation]
     if not re.fullmatch(pattern, u.path) or len(str(value)) > 600:
         raise ValueError('El enlace debe ser la ficha oficial del equipo y categoría concretos')
     return u
@@ -92,6 +92,16 @@ def resolve_player(request, roster, client=None):
         if pdata.get('nombre_temporada') != roster['season']:
             raise ValueError('La ficha no corresponde a la temporada de la agenda')
         scopes = [c for c in pdata.get('competiciones_participa', []) if str(c.get('codequipo')) == team_id]
+        if not scopes and request.get('competition_source'):
+            scope=official_url(request['competition_source'],fid,competition=True)
+            params=parse_qs(scope.query)
+            if set(params)-{'competicion','grupo','temporada','tipojuego'} or any(len(params.get(k,[]))!=1 or not params[k][0].isdigit() for k in ('competicion','grupo','temporada','tipojuego')) or params['tipojuego']!=['1']:
+                raise ValueError('Revisa los filtros del calendario oficial RFFM')
+            cal=client.next_props(scope.geturl())['calendar']
+            present=any(team_id in (str(m.get('codigo_equipo_local')),str(m.get('codigo_equipo_visitante'))) for rnd in cal.get('rounds',[]) for m in rnd.get('equipos',[]))
+            if cal.get('temporada')!=roster['season'] or params['temporada'][0]!=str(pdata['codigo_temporada']) or not present:
+                raise ValueError('El calendario no confirma ese equipo y temporada')
+            scopes=[{'codigo_competicion':params['competicion'][0],'codgrupo':params['grupo'][0],'nombre_competicion':cal['competicion'],'nombre_grupo':cal['grupo']}]
         if len(scopes) != 1:
             raise ValueError('La ficha no identifica una única competición para ese equipo')
         c = scopes[0]

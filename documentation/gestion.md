@@ -43,3 +43,9 @@ El calendario extendido aporta fecha y campo del encuentro; si solo está dispon
 Cuando el portal público devuelve un cuerpo HTTP vacío, el actualizador intenta la navegación ordinaria con Chrome. El respaldo se limita a los cinco dominios oficiales y rutas deportivas permitidas. No actúa ante denegaciones ni interacciona con verificaciones o accesos privados. La ficha de grupo del equipo es otra alternativa oficial al calendario general.
 
 Para Rullán y Contera se incluye una lectura deportiva inicial contrastada el 18/11/2026, con actas de identidad y calendarios oficiales. Solo puede activar su correspondencia exacta durante las 24 horas siguientes a esa lectura. Si se utiliza porque la consulta actual falla, conserva la fecha original y un aviso de actualización incompleta; no se etiqueta como lectura en vivo. Después de la activación se aplica el mismo refresco automático y conservación del último dato válido que al resto.
+
+## Corregir un registro existente
+
+Antonio puede elegir «Corregir nombre o equipo», seleccionar el jugador y guardar nombre, ficha oficial, categoría, duración y colaborador sin generar otra alta. El servidor conserva su identificador y marca la revisión para verificar otra vez la identidad. Una corrección no hereda estadísticas de la identidad anterior: si no se puede validar, el jugador queda pendiente y se retira la ficha deportiva hasta resolverla.
+
+Si la ficha individual RFFM no devuelve competición, se puede añadir el enlace del calendario oficial como apoyo. Se exige que el calendario confirme el equipo y la temporada; no sirve otro filial ni otra temporada. Sus estadísticas se calculan con las actas disponibles y respetando su visibilidad, sin inventar un resumen individual que no devuelve la federación.
