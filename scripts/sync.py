@@ -408,10 +408,15 @@ def retain_participation(match, previous, player_id, allow_secondary=True):
         if old_source: match.setdefault('participation_source', {})[player_id] = old_source
 
 
-def sync(browser=False):
+def sync(browser=False, registry_changes=False):
     roster = json.loads((ROOT / 'data/roster.json').read_text())
     path = ROOT / 'docs/data/feed.json'
     previous = json.loads(path.read_text()) if path.exists() else {}
+    old_players = {p['id']:p for p in previous.get('players', [])}
+    focus = None
+    if registry_changes:
+        identity_fields = ('source','besoccer_team_source','besoccer_player_source')
+        focus = {p['id'] for p in roster['players'] if p.get('active',True) and (p['id'] not in old_players or any(p.get(k) != old_players[p['id']].get(k) for k in identity_fields))}
     if browser:
         run = subprocess.run(['node', 'scripts/valencia.mjs'], cwd=ROOT, timeout=360, check=False)
         if run.returncode:
@@ -422,16 +427,16 @@ def sync(browser=False):
     secondary_client = Client('https://es.besoccer.com')
     for fid, (label, acronym, base) in FEDERATIONS.items():
         client = Client(base)
+        configs = [p for p in roster['players'] if p['federation'] == fid and p.get('active', True)]
         # Normal public landing establishes the same public session as website navigation.
         try:
-            if fid not in ('valencia', 'murcia'):
+            if fid not in ('valencia', 'murcia') and (focus is None or any(p['id'] in focus for p in configs)):
                 client.get(base)
         except Exception:
             pass
         old_fed = next((f for f in previous.get('federations', []) if f['id'] == fid), {})
         errors = []
         successes = 0
-        configs = [p for p in roster['players'] if p['federation'] == fid and p.get('active', True)]
         for config in configs:
             config = {**config, 'season': roster['season']}
             old_player = next((p for p in previous.get('players', []) if p['id'] == config['id']), {})
@@ -439,6 +444,11 @@ def sync(browser=False):
             public['provider'] = config.get('provider', 'federation')
             public.update({k:config[k] for k in ('age_category','team_age_category') if config.get(k)})
             public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source') if config.get(k)})
+            if focus is not None and config['id'] not in focus:
+                public.update({k:old_player[k] for k in ('stats','logo','stats_note','updated_at','coverage','secondary_stats','secondary_warning') if k in old_player})
+                feed['players'].append(public)
+                feed['matches'].extend(copy.deepcopy(m) for m in old_matches if config['id'] in m['player_ids'])
+                continue
             try:
                 same_secondary = old_player.get('besoccer_player_source') == config.get('besoccer_player_source')
                 result = collect_player(client, secondary_client, config, old_matches if same_secondary else ())
@@ -470,10 +480,16 @@ def sync(browser=False):
                 public['stats'] = public.get('stats') or new_stats()
                 feed['matches'].extend(copy.deepcopy(m) for m in old_matches if config['id'] in m['player_ids'])
             feed['players'].append(public)
-        feed['federations'].append({'id': fid, 'label': label, 'acronym': acronym, 'source': base,
+        meta = {'id': fid, 'label': label, 'acronym': acronym, 'source': base,
             'status': 'empty' if not configs else 'ok' if successes and not errors else 'partial' if successes else 'error',
             'checked_at': now(), 'last_success': now() if successes and not errors else old_fed.get('last_success'),
-            'message': 'Sin jugadores activos' if not configs else 'Consulta automática completada' if successes and not errors else 'No se pudo completar la consulta. Se conserva el último dato válido.', 'failed_players': errors})
+            'message': 'Sin jugadores activos' if not configs else 'Consulta automática completada' if successes and not errors else 'No se pudo completar la consulta. Se conserva el último dato válido.', 'failed_players': errors}
+        if focus is not None and configs and all(p['id'] not in focus for p in configs):
+            meta = copy.deepcopy(old_fed)
+        elif focus is not None and any(p['id'] not in focus for p in configs):
+            meta['last_success'] = old_fed.get('last_success')
+            if old_fed.get('status') not in ('ok','empty') and meta['status']=='ok':meta['status']='partial'
+        feed['federations'].append(meta)
     feed = apply_roster(feed, roster)
     for player in feed['players']:
         own = [m for m in feed['matches'] if player['id'] in m['player_ids']]
@@ -484,7 +500,7 @@ def sync(browser=False):
     temp.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + '\n')
     temp.replace(path)
     print(f'Actualizadas {total_success}/{sum(p.get("active", True) for p in roster["players"])} fichas; {len(feed["matches"])} partidos publicados.')
-    if not total_success and feed['players']:
+    if not total_success and feed['players'] and (focus is None or focus):
         raise SystemExit(1)
 
 
@@ -541,5 +557,6 @@ def apply_roster(feed, roster):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--browser', action='store_true', help='Recoger Valencia con Chromium estándar')
+    parser.add_argument('--registry-changes', action='store_true', help='Actualizar solo altas y cambios de fuentes, conservando fechas de las demás fichas')
     args = parser.parse_args()
-    sync(args.browser)
+    sync(args.browser, args.registry_changes)

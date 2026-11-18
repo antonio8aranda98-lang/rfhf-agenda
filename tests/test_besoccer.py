@@ -160,3 +160,10 @@ class CategoryTests(unittest.TestCase):
         self.assertEqual(team_category('Tercera Federación'),'senior')
         self.assertEqual(verify_category('cadete','juvenil'),90)
         with self.assertRaises(ValueError):verify_category('senior','juvenil')
+
+class SourceChallengeTests(unittest.TestCase):
+    def test_browser_verification_page_is_pending_and_never_sporting_data(self):
+        class Fake:
+            def get(self,*args,**kwargs):return '<html><title>Client Challenge</title><body>Verification</body></html>'
+        with self.assertRaisesRegex(ValueError,'verificación'):
+            PublicBeSoccer(Fake()).get(TEAM,section='plantilla')

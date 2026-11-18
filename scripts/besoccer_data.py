@@ -76,6 +76,8 @@ class PublicBeSoccer:
             canonical += '/' + section
         html = self.client.get(canonical, headers={'Accept': 'text/html'})
         soup = BeautifulSoup(html, 'html.parser')
+        if soup.title and key(soup.title.get_text(' ', strip=True)) == 'CLIENT CHALLENGE':
+            raise ValueError('BeSoccer solicita una verificación al actualizador y no ha entregado datos deportivos. El alta queda pendiente.')
         link = soup.select_one('link[rel="canonical"]')
         if not link or url(link.get('href'), kind) != url(value, kind):
             raise ValueError('BeSoccer ha devuelto otra ficha; no se incorpora el dato')

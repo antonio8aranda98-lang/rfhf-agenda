@@ -43,7 +43,7 @@ jobs:
         run: python scripts/registry_remote.py
       - name: Actualizar agenda
         continue-on-error: true
-        run: python scripts/sync.py
+        run: python scripts/sync.py --registry-changes
       - name: Guardar registro y datos publicados
         run: |
           git config user.name 'github-actions[bot]'

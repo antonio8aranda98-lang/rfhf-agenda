@@ -62,3 +62,22 @@ class MadridScopeTests(unittest.TestCase):
         from sync import madrid
         client=self.client();r=madrid(client,{**self.player(),'_calendar_only':True})
         self.assertEqual(len(r['matches']),1);self.assertFalse(any('/acta-partido/' in u for u in client.calls))
+
+class RegistryRefreshTests(unittest.TestCase):
+    def test_unchanged_sporting_sources_keep_their_dates_and_skip_network(self):
+        import json,tempfile,copy
+        from unittest.mock import patch
+        import sync as module
+        baseline=json.loads((module.ROOT/'docs/data/feed.json').read_text())
+        roster=json.loads((module.ROOT/'data/roster.json').read_text())
+        roster['players'][0]['collaborator']='Persona de prueba'
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);(root/'data').mkdir();(root/'docs/data').mkdir(parents=True)
+            (root/'data/roster.json').write_text(json.dumps(roster));(root/'docs/data/feed.json').write_text(json.dumps(baseline))
+            with patch.object(module,'ROOT',root),patch.object(module.Client,'get',side_effect=AssertionError('No network for unchanged identities')),patch.object(module,'collect_player',side_effect=AssertionError('No sporting refresh required')):
+                module.sync(registry_changes=True)
+            result=json.loads((root/'docs/data/feed.json').read_text())
+        expected={p['id']:p for p in baseline['players']}
+        for p in result['players']:self.assertEqual(p.get('updated_at'),expected[p['id']].get('updated_at'))
+        self.assertEqual(result['federations'],baseline['federations'])
+        self.assertEqual(next(p for p in result['players'] if p['id']==roster['players'][0]['id'])['collaborator'],'Persona de prueba')
