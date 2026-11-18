@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "revision": 3,
-  "checked_at": "2026-11-18T10:23:40+00:00",
+  "revision": 5,
+  "checked_at": "2026-11-18T11:13:53+00:00",
   "players": [
     {
       "id": "jorge-martin-andres",
@@ -18,6 +18,350 @@
     {
       "id": "aleix-camarasa-oros",
       "state": "verified"
+    },
+    {
+      "id": "p-77a08f82-34fb-41ad-b85f-9352b3d85c33",
+      "state": "verified"
+    },
+    {
+      "id": "p-8acf6ddf-05eb-4793-bb03-cba682fff94a",
+      "state": "verified"
+    },
+    {
+      "id": "p-d6faacef-21ed-421e-a5bb-93e15b1afbf8",
+      "state": "verified"
+    },
+    {
+      "id": "p-3f37360a-53c2-4b7b-8e13-e012a8a6773c",
+      "state": "pending",
+      "message": "La ficha no identifica una única competición para ese equipo"
+    },
+    {
+      "id": "p-e7620d39-386d-43eb-b30e-e829a98186ca",
+      "state": "verified"
+    },
+    {
+      "id": "p-65971a4f-9d48-44c7-aa06-8273b332add7",
+      "state": "verified"
+    },
+    {
+      "id": "p-a1bb9309-65b3-451b-96ee-080aa8537660",
+      "state": "pending",
+      "message": "BeSoccer ha devuelto otra ficha; no se incorpora el dato"
+    },
+    {
+      "id": "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f",
+      "state": "verified"
+    },
+    {
+      "id": "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592",
+      "state": "verified"
+    },
+    {
+      "id": "p-3a3f813a-e798-41d3-af09-98ced829fef4",
+      "state": "verified"
+    },
+    {
+      "id": "p-cc73b2c6-de51-4596-882d-434c906d5b40",
+      "state": "verified"
+    },
+    {
+      "id": "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b",
+      "state": "pending",
+      "message": "BeSoccer ha devuelto otra ficha; no se incorpora el dato"
+    },
+    {
+      "id": "p-4eb8c0b4-9a99-48de-adf7-175894e34b52",
+      "state": "verified"
+    },
+    {
+      "id": "p-f083c4a1-1267-41ee-a0be-c55b97288c2d",
+      "state": "verified"
+    },
+    {
+      "id": "p-a53947ba-45d7-4e5a-962f-26696e074f29",
+      "state": "pending",
+      "message": "BeSoccer ha devuelto otra ficha; no se incorpora el dato"
+    },
+    {
+      "id": "p-c263c5a6-b2b8-446a-b380-55d530629551",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-01ac3a21-0ef4-4ec6-a54d-f7e88384342c",
+      "state": "verified"
+    },
+    {
+      "id": "p-9258719a-7296-44bf-9a09-41eb00107cda",
+      "state": "pending",
+      "message": "BeSoccer ha devuelto otra ficha; no se incorpora el dato"
+    },
+    {
+      "id": "p-ee275004-f785-42ef-99df-be2df81d225e",
+      "state": "pending",
+      "message": "BeSoccer ha devuelto otra ficha; no se incorpora el dato"
+    },
+    {
+      "id": "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b",
+      "state": "verified"
+    },
+    {
+      "id": "p-1255ccf7-2c7b-4cfe-92cc-661106c088ee",
+      "state": "verified"
+    },
+    {
+      "id": "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
+      "state": "pending",
+      "message": "BeSoccer ha devuelto otra ficha; no se incorpora el dato"
+    },
+    {
+      "id": "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be",
+      "state": "verified"
+    },
+    {
+      "id": "p-3b53f8a0-f6e4-4a0e-b23c-3e0d8538c882",
+      "state": "verified"
+    },
+    {
+      "id": "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d",
+      "state": "verified"
+    },
+    {
+      "id": "p-8f643924-4932-457d-839f-dd3b87cd5722",
+      "state": "verified"
+    },
+    {
+      "id": "p-175248e0-3648-49fb-9f69-aa3b1765bbcd",
+      "state": "verified"
+    },
+    {
+      "id": "p-4756c9a7-0982-40ff-b10f-f4cc5d1511ed",
+      "state": "pending",
+      "message": "BeSoccer ha devuelto otra ficha; no se incorpora el dato"
+    },
+    {
+      "id": "p-5caca805-bf45-40ee-8c28-624512fe640c",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-b2f9fc89-652e-4862-8d30-f973dcec5215",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491",
+      "state": "verified"
+    },
+    {
+      "id": "p-62526250-46ee-4948-ac5f-35fc000dd68f",
+      "state": "verified"
+    },
+    {
+      "id": "p-c3f8744b-e903-474d-bd75-020ef59745a3",
+      "state": "verified"
+    },
+    {
+      "id": "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f",
+      "state": "verified"
+    },
+    {
+      "id": "p-2fb0301e-10cd-4e1d-9e61-4671ba184626",
+      "state": "verified"
+    },
+    {
+      "id": "p-e4dd0824-491d-4f64-80e4-1c355db22405",
+      "state": "verified"
+    },
+    {
+      "id": "p-d31e3297-f329-4af6-a3ef-04b33c70887e",
+      "state": "pending",
+      "message": "BeSoccer ha devuelto otra ficha; no se incorpora el dato"
+    },
+    {
+      "id": "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3",
+      "state": "verified"
+    },
+    {
+      "id": "p-327c7b24-937c-4dd7-919d-5cf271aea7ef",
+      "state": "verified"
+    },
+    {
+      "id": "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b",
+      "state": "verified"
+    },
+    {
+      "id": "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d",
+      "state": "verified"
+    },
+    {
+      "id": "p-5ae2cf0b-fdcb-4ab3-91cd-8ee188983405",
+      "state": "pending",
+      "message": "BeSoccer ha devuelto otra ficha; no se incorpora el dato"
+    },
+    {
+      "id": "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-32d2dfc7-11bf-4956-a267-59fda04aae64",
+      "state": "verified"
+    },
+    {
+      "id": "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd",
+      "state": "verified"
+    },
+    {
+      "id": "p-0add7609-8c81-415e-950f-0c75cb5eadb1",
+      "state": "verified"
+    },
+    {
+      "id": "p-7d9db757-0ff4-4832-8e47-1861287d0b0f",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-85788fbf-28ec-422a-bb16-b627987f3fb4",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-403930cf-154c-4985-a680-97a768fbd595",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f",
+      "state": "verified"
+    },
+    {
+      "id": "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b",
+      "state": "verified"
+    },
+    {
+      "id": "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2",
+      "state": "verified"
+    },
+    {
+      "id": "p-c4f6e06a-8aa5-4de8-af1b-1c3422bdf226",
+      "state": "verified"
+    },
+    {
+      "id": "p-d00b693d-cc6d-4fe3-9bc9-8c20db3c6f0c",
+      "state": "verified"
+    },
+    {
+      "id": "p-61e89fc6-9ca1-492e-9e6f-f8eece8acc8f",
+      "state": "verified"
+    },
+    {
+      "id": "p-23a8ba0a-896b-4390-9573-76a4d215ac4e",
+      "state": "verified"
+    },
+    {
+      "id": "p-882f5095-1c86-47c9-b30f-070a59fb5964",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-656e6179-91f8-4da3-93fb-a37034ed52d6",
+      "state": "verified"
+    },
+    {
+      "id": "p-e3e6662d-a256-47f4-b837-48158d44512f",
+      "state": "verified"
+    },
+    {
+      "id": "p-30526fbe-539f-4f16-8ac4-d0411f729499",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-f2a6ecbf-8bbe-4936-8d7f-c7b48388ac0e",
+      "state": "pending",
+      "message": "La ficha no corresponde a la temporada de la agenda"
+    },
+    {
+      "id": "p-074fd601-5fdb-412c-b493-564bb61f64d0",
+      "state": "verified"
+    },
+    {
+      "id": "p-95d2dae8-8136-41cc-af8a-60447bb2281a",
+      "state": "verified"
+    },
+    {
+      "id": "p-4cdaa4af-82f2-4025-b34e-574c80a10f9f",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-11f72ff7-a013-4711-b466-df8127bec80d",
+      "state": "verified"
+    },
+    {
+      "id": "p-c62c99d8-afe4-4010-a0ef-53fc084ed921",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-632261c9-319a-4e34-ad8e-3b293b900f19",
+      "state": "verified"
+    },
+    {
+      "id": "p-89e40494-578f-4315-bb91-4100ba2f6929",
+      "state": "verified"
+    },
+    {
+      "id": "p-14f0efbb-4d12-45c2-98b6-b11bed4f8405",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-b5b862b3-35b6-4a3b-87bc-602409f340f8",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-605583af-e24e-4b4c-a1ef-df4d57883159",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-ba3838cf-b999-4764-b449-d9d73912bb02",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-b26a4868-f958-4714-b575-feeeadd6de2b",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
     }
   ]
 }
