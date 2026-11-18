@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "revision": 5,
-  "checked_at": "2026-11-18T11:56:04+00:00",
+  "revision": 6,
+  "checked_at": "2026-11-18T12:11:01+00:00",
   "players": [
     {
       "id": "jorge-martin-andres",
@@ -360,6 +360,48 @@
     },
     {
       "id": "p-b26a4868-f958-4714-b575-feeeadd6de2b",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
+    },
+    {
+      "id": "p-72d92a3a-e17a-4855-81e9-1a68effac7d5",
+      "state": "verified"
+    },
+    {
+      "id": "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3",
+      "state": "verified"
+    },
+    {
+      "id": "p-aff68b7c-2a35-4445-b3d4-359e57a188d8",
+      "state": "verified"
+    },
+    {
+      "id": "p-4fb1ed37-b9b6-4449-b6c9-38e8c743c5e7",
+      "state": "verified"
+    },
+    {
+      "id": "p-660db819-7d2f-43b2-8c7c-1cfc148c322d",
+      "state": "pending",
+      "message": "BeSoccer solicita una verificación al actualizador y no ha entregado datos deportivos. El alta queda pendiente."
+    },
+    {
+      "id": "p-dd36db37-f4e0-4936-98b9-0dcdff256637",
+      "state": "verified"
+    },
+    {
+      "id": "p-f0996160-75ef-4861-813b-4e2c2d6313c1",
+      "state": "verified"
+    },
+    {
+      "id": "p-d1cf2c76-74bc-40f9-8d4a-3986fe4dacc1",
+      "state": "verified"
+    },
+    {
+      "id": "p-03234e3c-6d9f-4b31-9419-37a847dbb87f",
+      "state": "verified"
+    },
+    {
+      "id": "p-47bbeba1-c04c-42b3-be12-9c4834885cbd",
       "state": "pending",
       "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente."
     }
