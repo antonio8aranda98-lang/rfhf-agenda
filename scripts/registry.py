@@ -216,6 +216,8 @@ def resolve_player(request, roster, client=None):
     else:
         from valencia_data import PublicFFCV, resolve_ffcv
         result = resolve_ffcv(PublicFFCV(client), request, roster['season'], name_key)
+        from categories import DURATION
+        duration = DURATION[result['team_age_category']]
     result.update(id=re.sub(r'[^a-z0-9]+', '-', normalized(name).lower()).strip('-') + '-' + fid + '-' + result.get('player_id', result['team_id']),
                   name=name, federation=fid, collaborator=collaborator, match_duration=duration, active=True)
     if request.get('age_category'): result['age_category'] = request['age_category']

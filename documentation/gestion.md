@@ -61,3 +61,9 @@ En Madrid se pueden guardar el enlace del equipo seguido y la ficha individual R
 Si la ficha oficial confirma participación en otro equipo del mismo club, la agenda incorpora también ese segundo calendario. La cabecera de la ficha individual no se interpreta como prueba de inscripción principal. La tarjeta y el perfil muestran «Dos equipos» y cada cita distingue «Equipo seguido» y «Equipo adicional», con convocatoria por confirmar. La ficha muestra estadísticas separadas por equipo; los indicadores principales y la comparativa mantienen el ámbito del equipo seguido. No se suman partidos ni minutos de los dos calendarios.
 
 Las alertas de cruces consideran ambos equipos y los otros colaboradores, excluyendo enfrentamientos del jugador consigo mismo. Si falla un segundo calendario, se conserva su lectura anterior con su propia fecha y se indica la consulta incompleta.
+
+## Incorporaciones de la FFCV
+
+La consulta de plantilla selecciona antes el equipo en el portal público y verifica su código. Cuando la ficha incluye liga y copa con el mismo equipo, se elige la competición que coincide con la categoría de la ficha del equipo; una selección ambigua queda pendiente. La duración corresponde a la categoría oficial del equipo (incluida la denominación valenciana Cadet), y se mantiene separada de la categoría por año facilitada por Antonio.
+
+Durante la comprobación de una nueva identidad se contrastan jornadas del principio y del final del calendario; el refresco posterior descarga todas las jornadas antes de publicar la nueva ficha. Esta comprobación no consulta actas individuales por duplicado. No cambia el tratamiento de totales incompletos ni la política de revisión de actas antiguas.

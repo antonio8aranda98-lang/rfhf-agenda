@@ -8,6 +8,13 @@ from player_stats import participation, absent
 BASE = 'https://ffcv.es/competiciones/'
 FILES = 'https://appwebffcv.novanet.es/'
 
+# Antonio confirmed these public sporting identities on 18/11/2026.
+# Keep the association restricted to the verified season, team and licence.
+CONFIRMED_ALIASES = {
+    ('2026-2027', '22701', 'BLAKE LIU'): ('901434497', 'PEIGENG, LIU'),
+    ('2026-2027', '17876', 'ALVARO SANDOVAL'): ('9826356', 'ALVARO'),
+}
+
 
 class PublicFFCV:
     def __init__(self, client):
@@ -21,6 +28,11 @@ class PublicFFCV:
     def get(self, route, **params):
         # Same header injected by the public site's fetch wrapper. No login,
         # private credentials, CAPTCHA handling or browser fingerprint changes.
+        if route == 'equipos/plantilla_home.php':
+            team_id = str(params.get('cod_equipo', ''))
+            selected = self.get('equipos/ver_equipo.php', codequipo=team_id)
+            if str(selected.get('codigo_equipo')) != team_id:
+                raise ValueError('La selección pública FFCV devuelve otro equipo; no se usa su plantilla')
         url = BASE + 'api/' + route + '?' + urlencode(params)
         data = json.loads(self.client.get(url, headers={'X-FFCV-Page-Token': self.token}))
         if not isinstance(data, dict) or str(data.get('estado', '1')) == '0':
@@ -58,6 +70,8 @@ def act_participation(game, player, visibility):
 
 def resolve_ffcv(api, request, season, name_key):
     from registry import official_url, unique_name
+    from sync import normalized
+    from categories import team_category
     from urllib.parse import parse_qs
     team_id = parse_qs(official_url(request['source'], 'valencia').query).get('cod_equipo', [''])[0]
     if not team_id.isdigit():
@@ -66,19 +80,38 @@ def resolve_ffcv(api, request, season, name_key):
     members = roster.get('jugadores_equipo', [])
     def member_name(p):
         return p.get('nombre_jugador') or p.get('nombre') or ''
-    official_name = unique_name([member_name(p) for p in members], request['name'])
+    alias = CONFIRMED_ALIASES.get((season, team_id, normalized(request['name'])))
+    if alias:
+        candidates = [p for p in members
+                      if str(p.get('cod_jugador') or p.get('codjugador') or p.get('codigo_jugador')) == alias[0]
+                      and name_key(member_name(p)) == name_key(alias[1])]
+        if len(candidates) != 1:
+            raise ValueError('La plantilla ya no confirma la identidad FFCV validada por Antonio')
+        official_name = member_name(candidates[0])
+    else:
+        official_name = unique_name([member_name(p) for p in members], request['name'])
     member = next(p for p in members if member_name(p) == official_name)
     player_id = str(member.get('cod_jugador') or member.get('codjugador') or member.get('codigo_jugador') or '')
     if not player_id.isdigit():
         raise ValueError('No se identifica el código federativo del jugador')
     data = api.get('jugadores/jugador_api.php', codigo=player_id)
+    if name_key(data.get('nombre_jugador', '')) != name_key(official_name):
+        raise ValueError('La ficha individual FFCV no confirma el nombre de la plantilla')
     scopes = [c for c in data.get('competiciones_participa', []) if str(c.get('codequipo')) == team_id]
+    if len(scopes) > 1:
+        selected = api.get('equipos/ver_equipo.php', codequipo=team_id)
+        if str(selected.get('codigo_equipo')) != team_id:
+            raise ValueError('La selección pública FFCV corresponde a otro equipo')
+        category = normalized(selected.get('categoria', ''))
+        scopes = [c for c in scopes if category and normalized(c.get('nombre_competicion', '')) == category]
     if data.get('nombre_temporada') != season or len(scopes) != 1:
         raise ValueError('No se verifica una única competición del equipo en esta temporada')
     c = scopes[0]
     return {'team_id': team_id, 'team': c['nombre_equipo'], 'player_id': player_id, 'official_name': official_name,
             'competition_id': str(c['codigo_competicion']), 'group_id': str(c['codgrupo']), 'season_id': str(data['codigo_temporada']),
-            'competition_label': c['nombre_competicion'] + ' · ' + c['nombre_grupo'], 'source': request['source']}
+            'competition_label': c['nombre_competicion'] + ' · ' + c['nombre_grupo'],
+            'team_age_category': team_category(c['nombre_competicion']), 'source': request['source'],
+            **({'official_display_name': ' '.join(reversed(official_name.split(',', 1))).strip().title()} if alias else {})}
 
 
 def load_valencia(client, player):
@@ -96,6 +129,10 @@ def load_valencia(client, player):
     rounds = api.get('filtros/jornadas_fetch.php', cod_grupo=player['group_id']).get('jornadas', [])
     if not rounds:
         raise ValueError('Calendario FFCV sin jornadas verificables')
+    if player.get('_calendar_only'):
+        # Registration confirms a real team calendar; the subsequent refresh
+        # downloads every round before the new profile is published.
+        rounds = list({str(r['codjornada']): r for r in [*rounds[:2], *rounds[-2:]]}.values())
     matches = []
     for rnd in rounds:
         data = api.get('partidos/resultados_por_grupo_jornada_data.php', cod_temporada=player['season_id'], cod_competicion=player['competition_id'], cod_grupo=player['group_id'], cod_jornada=rnd['codjornada'])
@@ -112,7 +149,7 @@ def load_valencia(client, player):
                 home_team_id=str(m['cod_equipo_local']), away_team_id=str(m['cod_equipo_visitante']), venue=m.get('campo') or None,
                 home_logo=urljoin(FILES, m.get('escudo_local') or ''), away_logo=urljoin(FILES, m.get('escudo_visitante') or ''),
                 score_home=int(score[1]) if finished else None, score_away=int(score[2]) if finished else None)
-            if finished:
+            if finished and not player.get('_calendar_only'):
                 try:
                     game = api.get('partidos/ficha_partido_ajax.php', cod_partido=m['codacta'])
                     stats = act_participation(game, player, scope)

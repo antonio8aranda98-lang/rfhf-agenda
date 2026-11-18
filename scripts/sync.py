@@ -478,7 +478,7 @@ def sync(browser=False, registry_changes=False):
             public = {k: config[k] for k in ('id', 'name', 'federation', 'collaborator', 'team', 'competition_label', 'source')}
             public['provider'] = config.get('provider', 'federation')
             public.update({k:copy.deepcopy(config[k]) for k in ('team_id','competition_id','group_id','additional_teams') if config.get(k)})
-            public.update({k:config[k] for k in ('age_category','team_age_category','source_acronym','official_adapter_version') if config.get(k)})
+            public.update({k:config[k] for k in ('age_category','team_age_category','source_acronym','official_adapter_version','official_display_name') if config.get(k)})
             public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source','player_source','team_source','registration_team','participation_evidence') if config.get(k)})
             if focus is not None and config['id'] not in focus:
                 public.update({k:old_player[k] for k in ('stats','logo','stats_note','updated_at','coverage','secondary_stats','secondary_warning','additional_teams') if k in old_player})

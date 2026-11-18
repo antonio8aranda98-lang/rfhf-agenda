@@ -9,7 +9,7 @@ DURATION = {'infantil':70,'cadete':80,'juvenil':90,'senior':90}
 def team_category(value):
     value = unicodedata.normalize('NFKD', value).encode('ascii','ignore').decode().upper()
     if 'INFANTIL' in value or re.search(r'\b(?:U|SUB\s*)1[34]\b',value):return 'infantil'
-    if 'CADETE' in value or re.search(r'\b(?:U|SUB\s*)1[56]\b',value):return 'cadete'
+    if 'CADET' in value or re.search(r'\b(?:U|SUB\s*)1[56]\b',value):return 'cadete'
     if 'JUVENIL' in value or re.search(r'\b(?:U|SUB\s*)1[789]\b',value):return 'juvenil'
     return 'senior'
 
