@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "resolver_version": 8,
-  "revision": 9,
-  "checked_at": "2026-11-18T14:02:14+00:00",
+  "revision": 10,
+  "checked_at": "2026-11-18T14:06:26+00:00",
   "players": [
     {
       "id": "jorge-martin-andres",
@@ -416,8 +416,7 @@
     },
     {
       "id": "p-6326a3bb-e873-41f8-8f01-d6e5e810d15d",
-      "state": "pending",
-      "message": "La fuente no permite completar la consulta pública de navegador"
+      "state": "verified"
     },
     {
       "id": "p-caa0133b-9b5f-4165-961a-2349bf6e02e5",

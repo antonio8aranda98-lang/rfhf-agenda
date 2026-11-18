@@ -1331,7 +1331,31 @@
       "match_duration": 90,
       "active": true,
       "age_category": "juvenil"
+    },
+    {
+      "provider": "ffcm",
+      "external_team_id": "33266",
+      "team_id": "ffcm-33266",
+      "team": "C.D. GUADALAJARA \"B\"",
+      "official_name": "RIOJA PIZARRO, GIANCARLO",
+      "source_request": "https://www.ffcm.es/pnfg/NPcd/NFG_VisEquipos?cod_primaria=1000119&Codigo_Equipo=33266",
+      "source_acronym": "FFCM",
+      "official_season": "2026-2027",
+      "official_competition_id": "22916201",
+      "official_group_id": "22916203",
+      "official_season_id": "22",
+      "id": "p-6326a3bb-e873-41f8-8f01-d6e5e810d15d",
+      "federation": "madrid",
+      "name": "Giancarlo Rioja Pizarro",
+      "collaborator": "Rafa Mancheño",
+      "match_duration": 90,
+      "source": "https://www.ffcm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=22916201&codgrupo=22916203&codtemporada=22&CDetalle=1",
+      "competition_label": "JUVENIL PREFERENTE, GRUPO 2",
+      "team_age_category": "juvenil",
+      "active": true,
+      "age_category": "juvenil",
+      "official_adapter_version": 2
     }
   ],
-  "registry_revision": 9
+  "registry_revision": 10
 }
