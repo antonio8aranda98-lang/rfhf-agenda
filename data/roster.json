@@ -52,7 +52,8 @@
       "id": "iker-piqueras-mora",
       "competition_label": "Primera Cadete · Grupo 2",
       "match_duration": 80,
-      "active": true
+      "active": true,
+      "age_category": "cadete"
     },
     {
       "name": "Aleix Camarasa Oros",
@@ -2600,5 +2601,5 @@
       "age_category": "cadete"
     }
   ],
-  "registry_revision": 14
+  "registry_revision": 15
 }
