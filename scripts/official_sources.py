@@ -345,10 +345,16 @@ def parse_act(html, player):
 
 def adapter(client, player, previous=()):
     if player.get('official_season')!=player['season']:raise ValueError('Revisar la fuente oficial para la nueva temporada')
-    if not player.get('_verify_identity') and not any(player['id'] in m.get('player_ids',[]) for m in previous):
+    if not player.get('_verify_identity'):
         cached=initial_snapshot(player)
         if cached:return cached
-    games,label=calendar(client,player);calendar_source=games[0]['source'];identity=False;logo=None;warnings=[]
+    try:games,label=calendar(client,player)
+    except Exception:
+        if not player.get('_verify_identity'):
+            reading=reviewed_bootstrap(player)
+            if reading is not None:return reading
+        raise
+    calendar_source=games[0]['source'];identity=False;logo=None;warnings=[]
     from sync import MADRID
     today=datetime.now(MADRID).date()
     for game in games:
@@ -463,5 +469,9 @@ def reviewed_bootstrap(player):
         if not 0<=age<86400:return None
         result=copy.deepcopy(entry['result'])
         if len(result['matches'])<20 or result.get('checked_at')!=entry['verified_at'] or result.get('source_warning') is not True:return None
+        for match in result['matches']:
+            match['player_ids']=[player['id'] if id=='verify' else id for id in match.get('player_ids',[])]
+            for field in ('participation','participation_checked_at','participation_source'):
+                if 'verify' in match.get(field,{}):match[field][player['id']]=match[field].pop('verify')
         return result
     except (ValueError,KeyError,TypeError):return None

@@ -11,7 +11,7 @@ from sync import ROOT, ADAPTERS, FEDERATIONS, Client, apply_roster, now
 from besoccer_data import FIELDS, PublicBeSoccer, resolve as resolve_besoccer
 
 REGISTRY = 'https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/api/registry'
-RESOLVER_VERSION = 5
+RESOLVER_VERSION = 6
 
 
 def fetch_registry():

@@ -7,7 +7,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from official_sources import alternative, parse_act, parse_round, parse_calendar, parse_team_calendar, round_url, calendar_url, page, save_initial_snapshot, initial_snapshot, snapshot_path,reviewed_bootstrap
+from official_sources import alternative, parse_act, parse_round, parse_calendar, parse_team_calendar, round_url, calendar_url, page, save_initial_snapshot, initial_snapshot, snapshot_path,reviewed_bootstrap,adapter
 
 FIXTURES=Path(__file__).parent/'fixtures'
 def html(name):return (FIXTURES/name).read_text()
@@ -17,6 +17,16 @@ def config(name='Tiago Arzeno Rosso',slug='ad-sporting-hortaleza-a-juvenil'):
 
 
 class OfficialSourcesTests(unittest.TestCase):
+    def test_fresh_validation_is_reused_when_player_already_appears_as_opponent(self):
+        cached={'matches':[{'player_ids':['tracked']}],'checked_at':'2026-11-18T12:00:00+00:00'}
+        with patch('official_sources.initial_snapshot',return_value=cached),patch('official_sources.calendar',side_effect=AssertionError('Do not repeat a verified read')):
+            self.assertEqual(adapter(None,config(),previous=[{'player_ids':['tracked']}]),cached)
+
+    def test_reviewed_reading_can_publish_a_verified_profile_when_refresh_fails(self):
+        reading={'matches':[{'player_ids':['tracked']}],'source_warning':True}
+        with patch('official_sources.initial_snapshot',return_value=None),patch('official_sources.calendar',side_effect=ValueError('Fuente no disponible')),patch('official_sources.reviewed_bootstrap',return_value=reading):
+            self.assertEqual(adapter(None,config()),reading)
+
     def test_verified_snapshot_is_scoped_rekeyed_and_expires(self):
         p=config();game={'player_ids':['tracked'],'participation':{'tracked':{'minutes':22}}}
         with tempfile.TemporaryDirectory() as directory,patch('sync.ROOT',Path(directory)):
