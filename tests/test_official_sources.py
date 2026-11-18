@@ -7,7 +7,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from official_sources import alternative, parse_act, parse_round, parse_calendar, parse_team_calendar, round_url, calendar_url, page, save_initial_snapshot, initial_snapshot, snapshot_path
+from official_sources import alternative, parse_act, parse_round, parse_calendar, parse_team_calendar, round_url, calendar_url, page, save_initial_snapshot, initial_snapshot, snapshot_path,reviewed_bootstrap
 
 FIXTURES=Path(__file__).parent/'fixtures'
 def html(name):return (FIXTURES/name).read_text()
@@ -25,8 +25,20 @@ class OfficialSourcesTests(unittest.TestCase):
             self.assertEqual(result['matches'][0]['participation'],{'real-registry-id':{'minutes':22}})
             self.assertEqual(result['matches'][0]['player_ids'],['real-registry-id'])
             self.assertIsNone(initial_snapshot({**p,'team_id':'another-club'}))
-            path=snapshot_path(p);data=json.loads(path.read_text());data['read_at']='2020-01-01T00:00:00+00:00';path.write_text(json.dumps(data))
+            path=snapshot_path(p);data=json.loads(path.read_text());data['saved_at']='2020-01-01T00:00:00+00:00';path.write_text(json.dumps(data))
             self.assertIsNone(initial_snapshot(p))
+
+    def test_reviewed_reading_keeps_source_date_and_rejects_another_team(self):
+        from datetime import datetime,timezone
+        p=config('Alvaro Contera Gil','cd-azuqueca');stamp=datetime.now(timezone.utc).isoformat()
+        result={'matches':[{}]*34,'checked_at':stamp,'source_warning':True}
+        entry={'team_id':p['team_id'],'source_request':p['source_request'],'season':p['season'],'verified_at':stamp,'result':result}
+        with tempfile.TemporaryDirectory() as directory,patch('sync.ROOT',Path(directory)):
+            path=Path(directory)/'data/official-bootstrap.json';path.parent.mkdir();path.write_text(json.dumps({'entries':{p['official_name']:entry}}))
+            self.assertEqual(reviewed_bootstrap(p)['checked_at'],stamp)
+            self.assertIsNone(reviewed_bootstrap({**p,'team_id':'another-club'}))
+            entry['verified_at']='2020-01-01T00:00:00+00:00';path.write_text(json.dumps({'entries':{p['official_name']:entry}}))
+            self.assertIsNone(reviewed_bootstrap(p))
 
     def test_empty_http_can_use_ordinary_browser_and_cache_the_response(self):
         class Client:

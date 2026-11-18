@@ -473,6 +473,7 @@ def sync(browser=False, registry_changes=False):
                     feed['matches'].append(m)
                 successes += 1
                 total_success += 1
+                if result.get('source_warning'):errors.append(config['id'])
                 print(fid + ': ' + str(len(result['matches'])) + ' partidos verificados')
             except Exception as error:
                 message = f'{type(error).__name__}: {str(error)[:180]}'

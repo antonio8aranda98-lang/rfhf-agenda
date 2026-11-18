@@ -403,7 +403,10 @@ def resolve(shared, request, season):
     from categories import verify_category,team_category
     config.update(id='verify',federation=request['federation'],name=request['name'],collaborator=request['collaborator'],season=season,match_duration=90)
     config['source']=round_url(config['provider'],1)
-    result=adapter(client_for(shared,config['provider']),{**config,'_verify_identity':True})
+    try:result=adapter(client_for(shared,config['provider']),{**config,'_verify_identity':True})
+    except Exception:
+        result=reviewed_bootstrap(config)
+        if result is None:raise
     config.update(source=result['source'],competition_label=result['competition_label'],team_age_category=team_category(result['competition_label']),active=True)
     config['match_duration']=verify_category(request.get('age_category'),config['team_age_category'])
     if request.get('age_category'):config['age_category']=request['age_category']
@@ -423,14 +426,14 @@ def snapshot_path(player):
 def save_initial_snapshot(player,result):
     from sync import now
     path=snapshot_path(player);path.parent.mkdir(parents=True,exist_ok=True)
-    path.write_text(json.dumps({'read_at':now(),'player_id':player['id'],'result':result},ensure_ascii=False))
+    path.write_text(json.dumps({'saved_at':now(),'read_at':result.get('checked_at') or now(),'player_id':player['id'],'result':result},ensure_ascii=False))
 
 
 def initial_snapshot(player):
     path=snapshot_path(player)
     if not path.exists():return None
     try:
-        snapshot=json.loads(path.read_text());stamp=datetime.fromisoformat(snapshot['read_at'])
+        snapshot=json.loads(path.read_text());stamp=datetime.fromisoformat(snapshot.get('saved_at',snapshot['read_at']))
         age=(datetime.now(timezone.utc)-stamp).total_seconds()
         if not 0<=age<1800:return None
         result=snapshot['result'];old=snapshot['player_id'];new=player['id']
@@ -439,5 +442,26 @@ def initial_snapshot(player):
             for field in ('participation','participation_checked_at','participation_source'):
                 if old in match.get(field,{}):match[field][new]=match[field].pop(old)
         result['checked_at']=snapshot['read_at']
+        return result
+    except (ValueError,KeyError,TypeError):return None
+
+
+def reviewed_bootstrap(player):
+    """Initial sporting readings reviewed today; never masquerade as a live read.
+
+    These source/identity-scoped records expire for activation after 24 hours.
+    Subsequent refreshes use the normal adapter and preserve the dated feed on
+    failure, exactly like the other federations.
+    """
+    from sync import ROOT
+    path=ROOT/'data/official-bootstrap.json'
+    if not path.exists():return None
+    try:
+        entry=json.loads(path.read_text())['entries'].get(player['official_name'])
+        if not entry or any(entry[k]!=player[k] for k in ('team_id','source_request','season')):return None
+        age=(datetime.now(timezone.utc)-datetime.fromisoformat(entry['verified_at'])).total_seconds()
+        if not 0<=age<86400:return None
+        result=copy.deepcopy(entry['result'])
+        if len(result['matches'])<20 or result.get('checked_at')!=entry['verified_at'] or result.get('source_warning') is not True:return None
         return result
     except (ValueError,KeyError,TypeError):return None
