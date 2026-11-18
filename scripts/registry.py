@@ -44,6 +44,32 @@ def unique_name(names, requested):
     return found[0]
 
 
+def rffm_player_url(value):
+    u=urlparse(str(value))
+    if u.scheme!='https' or u.hostname not in {'www.rffm.es','rffm.es'} or u.username or u.password or u.port not in (None,443) or u.query or u.fragment or not re.fullmatch(r'/fichajugador/\d+',u.path):
+        raise ValueError('Usa la ficha individual HTTPS de la RFFM, sin filtros')
+    return 'https://www.rffm.es'+u.path
+
+
+def rffm_identity_matches(requested, official, player_id, team_id, season):
+    if name_key(requested)==name_key(official):return True
+    # Antonio confirmed this exact official spelling error on 18/11/2026.
+    return (str(player_id)=='27492835' and str(team_id)=='12325489' and season=='2026-2027'
+        and name_key(requested)==name_key('Jesus Alejandro Rosales Barrios')
+        and name_key(official)==name_key('ROSALES BARRIOS, JESUS ALEJADRO'))
+
+
+def prove_rffm_participation(client,player,matches):
+    for match in sorted((m for m in matches if m['status']=='finished'),key=lambda m:m.get('date') or '',reverse=True):
+        try:game=client.next_props(match['source'])['game']
+        except Exception:continue
+        if game.get('acta_cerrada')!='1':continue
+        side='local' if str(game.get('codigo_equipo_local'))==player['team_id'] else 'visitante' if str(game.get('codigo_equipo_visitante'))==player['team_id'] else None
+        if side and any(str(row.get('codjugador'))==player['player_id'] for row in game.get('jugadores_equipo_'+side,[])):
+            return match['source']
+    raise ValueError('La ficha identifica al jugador, pero aún no se confirma participación con el equipo seguido en sus actas')
+
+
 def resolve_player(request, roster, client=None):
     fid = request.get('federation')
     if fid not in FEDERATIONS:
@@ -84,11 +110,20 @@ def resolve_player(request, roster, client=None):
         team_id = u.path.rsplit('/', 1)[1]
         team = client.next_props(u.geturl())['team']
         members = team.get('jugadores_equipo', [])
-        official_name = unique_name([p['nombre'] for p in members], name)
-        member = next(p for p in members if p['nombre'] == official_name)
-        player_id = str(member['cod_jugador'])
-        source = 'https://www.rffm.es/fichajugador/' + player_id
-        pdata = client.next_props(source)['player']
+        player_source=request.get('player_source')
+        if player_source:
+            source=rffm_player_url(player_source);player_id=source.rsplit('/',1)[1]
+            pdata=client.next_props(source)['player'];official_name=pdata.get('nombre_jugador','')
+            if not rffm_identity_matches(name,official_name,player_id,team_id,roster['season']):
+                raise ValueError('El nombre facilitado no coincide con la ficha individual RFFM')
+            if str(pdata.get('codigo_jugador'))!=player_id:raise ValueError('La ficha no confirma el identificador individual')
+        else:
+            official_name = unique_name([p['nombre'] for p in members], name)
+            member = next(p for p in members if p['nombre'] == official_name)
+            player_id = str(member['cod_jugador'])
+            source = 'https://www.rffm.es/fichajugador/' + player_id
+            pdata = client.next_props(source)['player']
+        listed=any(str(p['cod_jugador'])==player_id for p in members)
         if pdata.get('nombre_temporada') != roster['season']:
             raise ValueError('La ficha no corresponde a la temporada de la agenda')
         scopes = [c for c in pdata.get('competiciones_participa', []) if str(c.get('codequipo')) == team_id]
@@ -111,6 +146,8 @@ def resolve_player(request, roster, client=None):
                   'competition_id': str(c['codigo_competicion']), 'group_id': str(c['codgrupo']),
                   'season_id': str(pdata['codigo_temporada']), 'official_name': official_name,
                   'competition_label': c['nombre_competicion'] + ' · ' + c['nombre_grupo'], 'team_age_category':category}
+        if player_source:
+            result.update(player_source=source,team_source=u.geturl(),registration_team=pdata.get('equipo'),requires_participation=not listed)
     elif fid == 'catalunya':
         data = initial_data(client.get(u.geturl()))
         member_name = unique_name([p['NOMBRE'] for p in data.get('players', [])], name)
@@ -184,6 +221,8 @@ def resolve_player(request, roster, client=None):
     verified = ADAPTERS[fid](client, {**result, 'season': roster['season'], '_calendar_only':True})
     if not verified.get('matches'):
         raise ValueError('No se ha verificado el calendario; el alta permanece pendiente')
+    if fid=='madrid' and result.get('requires_participation'):
+        result['participation_evidence']=prove_rffm_participation(client,{**result,'season':roster['season']},verified['matches'])
     if request.get('besoccer_team_source'):
         linked = resolve_besoccer(PublicBeSoccer(Client('https://es.besoccer.com')), request, roster['season'])
         result.update({k:v for k,v in linked.items() if k.startswith('besoccer_')})

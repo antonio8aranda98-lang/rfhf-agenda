@@ -109,3 +109,20 @@ class RegistryRefreshTests(unittest.TestCase):
         result=self.run_refresh(roster,baseline,refresh)
         self.assertEqual(len(calls),1)
         self.assertEqual(result['players'][0]['updated_at'],'2026-11-18T12:15:52+00:00')
+
+class LinkedTeamRefreshTests(unittest.TestCase):
+    def test_formal_roster_can_differ_but_tracked_team_scope_and_visibility_remain_required(self):
+        from sync import madrid
+        from player_stats import summarize
+        def client(scope='11',minutes='1'):
+            class Client:
+                def next_props(self,url):
+                    if '/fichaequipo/' in url:return {'team':{'nombre_equipo':'Equipo A','jugadores_equipo':[{'cod_jugador':'99'}]}}
+                    if '/fichajugador/' in url:return {'player':{'codigo_jugador':'3','nombre_temporada':'2026-2027','competiciones_participa':[{'codequipo':scope,'codigo_competicion':'100','codgrupo':'200','ver_estadisticas':'1','vis_minutos':minutes,'vis_goles':'1'},{'codequipo':'12','codigo_competicion':'300'}],'minutos_totales_jugados':'9999'}}
+                    if '/calendario?' in url:return {'calendar':{'rounds':[{'codjornada':'1','equipos':[{'codacta':'42','codigo_equipo_local':'11','codigo_equipo_visitante':'12','equipo_local':'Equipo A','equipo_visitante':'Equipo B','fecha':'01-11-2026','goles_casa':'0','goles_visitante':'1'}]}]}}
+                    return {'game':{'acta_cerrada':'1','codigo_equipo_local':'11','jugadores_equipo_local':[{'codjugador':str(i),'titular':'1','ver_estadisiticas_jugador':'1'} for i in range(1,12)]}}
+            return Client()
+        p={'id':'one','name':'Jugador Uno','team':'Equipo A','team_id':'11','player_id':'3','competition_id':'100','group_id':'200','season_id':'22','season':'2026-2027','source':'https://www.rffm.es/fichajugador/3','player_source':'https://www.rffm.es/fichajugador/3','match_duration':90}
+        r=madrid(client(),p);stats,_=summarize(r['matches'],'one',r['stats']);self.assertEqual(stats['minutes'],90)
+        r=madrid(client(minutes='0'),p);self.assertIsNone(r['matches'][0]['participation']['one']['minutes'])
+        with self.assertRaises(ValueError):madrid(client(scope='12'),p)

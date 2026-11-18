@@ -159,8 +159,13 @@ def fixture(fid, player, key, home, away, date, hour, source, **extra):
 def madrid(client, player):
     base = FEDERATIONS['madrid'][2]
     team = client.next_props(base + 'fichaequipo/' + player['team_id'])['team']
-    if not any(str(p['cod_jugador']) == player['player_id'] for p in team.get('jugadores_equipo', [])):
-        raise ValueError('El jugador ya no figura en la plantilla configurada; revisar asignación')
+    listed=any(str(p['cod_jugador'])==player['player_id'] for p in team.get('jugadores_equipo',[]))
+    if not listed:
+        if not player.get('player_source'):raise ValueError('El jugador ya no figura en la plantilla configurada; revisar asignación')
+        linked=client.next_props(player['source'])['player']
+        scopes=[c for c in linked.get('competiciones_participa',[]) if str(c.get('codequipo'))==player['team_id'] and str(c.get('codigo_competicion'))==player['competition_id'] and str(c.get('codgrupo'))==player['group_id']]
+        if linked.get('nombre_temporada')!=player['season'] or str(linked.get('codigo_jugador'))!=player['player_id'] or len(scopes)!=1:
+            raise ValueError('La ficha individual ya no confirma al jugador con el equipo y competición seguidos')
     url = base + 'competicion/calendario?' + urllib.parse.urlencode({'competicion': player['competition_id'], 'grupo': player['group_id'], 'temporada': player['season_id'], 'tipojuego': 1})
     cal = client.next_props(url)['calendar']
     matches = []
@@ -170,7 +175,7 @@ def madrid(client, player):
     logo = urllib.parse.urljoin(host, team.get('escudo_club', ''))
     summary = new_stats()
     pdata = client.next_props(player['source'])['player']
-    competition = next((c for c in pdata.get('competiciones_participa', []) if str(c.get('codigo_competicion')) == player['competition_id']), {})
+    competition = next((c for c in pdata.get('competiciones_participa', []) if str(c.get('codigo_competicion')) == player['competition_id'] and str(c.get('codequipo',player['team_id']))==player['team_id']), {})
     visible = competition.get('ver_estadisticas') == '1'
     if visible and len(pdata.get('competiciones_participa', [])) == 1:
         mapping = {'Convocados': 'called_up', 'Jugados': 'played', 'Titular': 'starts', 'Suplente': 'bench', 'Total Goles': 'goals'}
@@ -251,7 +256,7 @@ def madrid(client, player):
             m['participation'][player['id']] = stats
         except Exception:
             continue
-    return {'matches': matches, 'stats': summary, 'logo': logo, 'stats_note': 'Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.'}
+    return {'matches': matches, 'stats': summary, 'logo': logo, 'stats_note': 'Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.'+(' Ficha federativa: '+str(player.get('registration_team') or 'otro equipo')+'. Calendario y estadísticas limitados al equipo seguido: '+player['team']+'.' if player.get('player_source') else '')}
 
 
 def catalunya(client, player):
@@ -418,7 +423,7 @@ def sync(browser=False, registry_changes=False):
     old_players = {p['id']:p for p in previous.get('players', [])}
     focus = None
     if registry_changes:
-        identity_fields = ('source','besoccer_team_source','besoccer_player_source','official_adapter_version')
+        identity_fields = ('source','player_source','besoccer_team_source','besoccer_player_source','official_adapter_version')
         with_matches={id for m in previous.get('matches',[]) for id in m['player_ids']}
         focus = {p['id'] for p in roster['players'] if p.get('active',True) and (p['id'] not in old_players or not old_players[p['id']].get('updated_at') or p['id'] not in with_matches or any(p.get(k) != old_players[p['id']].get(k) for k in identity_fields))}
     if browser:
@@ -447,7 +452,7 @@ def sync(browser=False, registry_changes=False):
             public = {k: config[k] for k in ('id', 'name', 'federation', 'collaborator', 'team', 'competition_label', 'source')}
             public['provider'] = config.get('provider', 'federation')
             public.update({k:config[k] for k in ('age_category','team_age_category','source_acronym','official_adapter_version') if config.get(k)})
-            public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source') if config.get(k)})
+            public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source','player_source','team_source','registration_team','participation_evidence') if config.get(k)})
             if focus is not None and config['id'] not in focus:
                 public.update({k:old_player[k] for k in ('stats','logo','stats_note','updated_at','coverage','secondary_stats','secondary_warning') if k in old_player})
                 feed['players'].append(public)

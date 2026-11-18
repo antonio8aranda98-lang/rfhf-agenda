@@ -11,7 +11,7 @@ from sync import ROOT, ADAPTERS, FEDERATIONS, Client, apply_roster, now
 from besoccer_data import FIELDS, PublicBeSoccer, resolve as resolve_besoccer
 
 REGISTRY = 'https://rfhf-control-antonio.opalescentpaper1.chatgpt.site/api/registry'
-RESOLVER_VERSION = 9
+RESOLVER_VERSION = 10
 
 
 def fetch_registry():
@@ -45,14 +45,14 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
         try:
             if existing and entry.get('_identity_revision') and entry['_identity_revision']!=existing.get('identity_revision'):
                 existing['active']=False
-                request={k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','competition_source','age_category',*FIELDS) if entry.get(k) is not None}
+                request={k:entry.get(k) for k in ('name','federation','collaborator','source','player_source','match_duration','competition_source','age_category',*FIELDS) if entry.get(k) is not None}
                 without_self={**updated,'players':[p for p in updated['players'] if p['id']!=id]}
                 verified=resolver(request,without_self)
                 verified.update(id=id,identity_revision=entry['_identity_revision'])
                 existing.clear();existing.update(verified)
             from official_sources import PROVIDERS,ADAPTER_VERSION
             if existing and existing.get('provider') in PROVIDERS and existing.get('official_adapter_version')!=ADAPTER_VERSION:
-                request={k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','age_category') if entry.get(k) is not None}
+                request={k:entry.get(k) for k in ('name','federation','collaborator','source','player_source','match_duration','age_category') if entry.get(k) is not None}
                 fid='official-upgrade'
                 if fid not in clients:clients[fid]=Client('https://es.besoccer.com')
                 verified=resolver(request,updated,client=clients[fid]);verified['id']=id
@@ -83,7 +83,7 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None):
                     existing['age_category'] = entry['age_category']
                 existing['active'] = True
             else:
-                request = {k:entry.get(k) for k in ('name','federation','collaborator','source','match_duration','competition_source','age_category',*FIELDS) if entry.get(k) is not None}
+                request = {k:entry.get(k) for k in ('name','federation','collaborator','source','player_source','match_duration','competition_source','age_category',*FIELDS) if entry.get(k) is not None}
                 # Never trust identifiers supplied by a browser for a new player.
                 if resolver is resolve_player:
                     from besoccer_data import is_besoccer

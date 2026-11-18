@@ -49,3 +49,9 @@ Para Rullán y Contera se incluye una lectura deportiva inicial contrastada el 1
 Antonio puede elegir «Corregir nombre o equipo», seleccionar el jugador y guardar nombre, ficha oficial, categoría, duración y colaborador sin generar otra alta. El servidor conserva su identificador y marca la revisión para verificar otra vez la identidad. Una corrección no hereda estadísticas de la identidad anterior: si no se puede validar, el jugador queda pendiente y se retira la ficha deportiva hasta resolverla.
 
 Si la ficha individual RFFM no devuelve competición, se puede añadir el enlace del calendario oficial como apoyo. Se exige que el calendario confirme el equipo y la temporada; no sirve otro filial ni otra temporada. Sus estadísticas se calculan con las actas disponibles y respetando su visibilidad, sin inventar un resumen individual que no devuelve la federación.
+
+## Jugador inscrito en otro filial
+
+En Madrid se pueden guardar el enlace del equipo seguido y la ficha individual RFFM. El calendario pertenece al equipo indicado; no se sustituye por el de la inscripción principal. Se verifican nombre, identificador individual, temporada y competición de ese equipo. Cuando no figura en su plantilla, se exige además un acta cerrada del equipo seguido que lo incluya. Las estadísticas se calculan únicamente con esas actas y sus indicadores de visibilidad; los resúmenes acumulados de varios filiales no se mezclan.
+
+«Corregir lista existente» admite las cinco columnas habituales o seis añadiendo la ficha individual entre el enlace del equipo y el colaborador. Conserva los identificadores, no crea altas y vuelve a validar las identidades. Un nombre abreviado solo se amplía a un único registro existente; las coincidencias ambiguas se rechazan. La corrección de «Jesús Alejandro Rosales Barrios» con la grafía oficial «JESUS ALEJADRO» fue confirmada por Antonio y queda limitada al identificador, equipo y temporada comprobados.

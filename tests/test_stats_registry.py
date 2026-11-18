@@ -160,3 +160,32 @@ class MadridCalendarScopeTests(unittest.TestCase):
             self.assertEqual((p['competition_id'],p['group_id'],p['season_id']),('100','200','22'))
             with self.assertRaises(ValueError):resolve_player({**request,'source':'https://www.rffm.es/fichaequipo/99'},{'season':'2026-2027','players':[]},Client())
             with self.assertRaises(ValueError):resolve_player({**request,'competition_source':source.replace('temporada=22','temporada=21')},{'season':'2026-2027','players':[]},Client())
+
+class RFFMLinkedIdentityTests(unittest.TestCase):
+    def request(self):
+        return {'name':'Jugador Uno','federation':'madrid','collaborator':'Persona Uno','source':'https://www.rffm.es/fichaequipo/11','player_source':'https://www.rffm.es/fichajugador/3','match_duration':90,'age_category':'senior'}
+    def client(self,participates=True,scoped=True):
+        class Client:
+            def get(self,url):return ''
+            def next_props(self,url):
+                if '/fichaequipo/' in url:return {'team':{'nombre_equipo':'Equipo A','categoria':'PRIMERA AFICIONADO','jugadores_equipo':[{'nombre':'OTRO, JUGADOR','cod_jugador':'99'}]}}
+                if '/fichajugador/' in url:return {'player':{'codigo_jugador':'3','nombre_jugador':'UNO, JUGADOR','equipo':'Equipo B','nombre_temporada':'2026-2027','codigo_temporada':'22','competiciones_participa':[{'codequipo':'11' if scoped else '12','codigo_competicion':'100','codgrupo':'200','nombre_competicion':'PRIMERA AFICIONADO','nombre_grupo':'Grupo 1'}]}}
+                return {'game':{'acta_cerrada':'1','codigo_equipo_local':'11','codigo_equipo_visitante':'12','jugadores_equipo_local':[{'codjugador':'3' if participates else '99'}]}}
+        return Client()
+    def test_player_link_requires_membership_in_tracked_team_competition_and_act(self):
+        game={'status':'finished','date':'2026-11-01','source':'https://www.rffm.es/acta-partido/42'}
+        with patch.dict(registry.ADAPTERS,{'madrid':lambda *args:{'matches':[game]}}):
+            p=registry.resolve_player(self.request(),{'season':'2026-2027','players':[]},self.client())
+            self.assertEqual(p['team_id'],'11');self.assertEqual(p['player_id'],'3')
+            self.assertEqual(p['registration_team'],'Equipo B');self.assertEqual(p['participation_evidence'],game['source'])
+            for client in [self.client(False),self.client(scoped=False)]:
+                with self.assertRaises(ValueError):registry.resolve_player(self.request(),{'season':'2026-2027','players':[]},client)
+    def test_wrong_individual_identity_and_unsafe_urls_are_rejected(self):
+        with self.assertRaises(ValueError):registry.resolve_player({**self.request(),'name':'Otra Persona'},{'season':'2026-2027','players':[]},self.client())
+        for url in ['http://www.rffm.es/fichajugador/3','https://evil.test/fichajugador/3','https://user@www.rffm.es/fichajugador/3','https://www.rffm.es/fichajugador/3?url=http://localhost']:
+            with self.assertRaises(ValueError):registry.rffm_player_url(url)
+    def test_confirmed_rosales_spelling_is_scoped_to_exact_identity(self):
+        args=('Jesus Alejandro Rosales Barrios','ROSALES BARRIOS, JESUS ALEJADRO','27492835','12325489','2026-2027')
+        self.assertTrue(registry.rffm_identity_matches(*args))
+        self.assertFalse(registry.rffm_identity_matches(*args[:-1],'2027-2028'))
+        self.assertFalse(registry.rffm_identity_matches(args[0],args[1],'another',args[3],args[4]))
