@@ -60,3 +60,13 @@ test('two teams belonging to the same followed player never create a self matchu
  const games=[{id:'same',date:'2026-11-21',home:'A',away:'B',federation:'madrid',home_player_ids:['one'],away_player_ids:['one'],status:'scheduled'}];
  assert.equal(matchups(games,[player],['2026-11-21']).length,0);
 });
+
+test('partial evidence shows a confirmed zero and coverage without becoming a full season total',async()=>{
+  const {statEvidence}=await import('../docs/model.mjs');
+  const player={stats:{minutes:null},coverage:{team_played:8,confirmed:{minutes:0},field_checked:{minutes:6}}};
+  assert.deepEqual(statEvidence(player,'minutes'),{value:0,partial:true,checked:6,total:8});
+  player.coverage.field_checked.minutes=0;
+  assert.equal(statEvidence(player,'minutes').value,null);
+  player.stats.minutes=500;
+  assert.deepEqual(statEvidence(player,'minutes'),{value:500,partial:false});
+});

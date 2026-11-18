@@ -11,3 +11,5 @@
 .source-summary{margin:24px 0;padding:20px;border:1px solid var(--line,#263a58);border-radius:8px;background:#101c2d}.source-summary .mini-stats{display:flex;gap:25px;flex-wrap:wrap}
 
 .dual-badge{display:inline-block;margin:7px 0;padding:5px 9px;border:1px solid #648ec7;border-radius:5px;background:#1d3759;color:#d7e9ff;font-size:10px;font-weight:700}.dual-match-label{display:block;margin-top:5px;font-size:9px;line-height:1.6;color:#c1d9ff;max-width:100%;white-space:normal}.dual-notice{margin:22px 0;padding:16px;border:1px solid #648ec7;border-left:4px solid #72a6ee;border-radius:6px;background:#142943;color:#dceaff;font-size:11px;line-height:1.8}.source-summary .mini-stats{gap:18px}.player-card .dual-badge{margin:4px 0 10px}
+
+.partial-stat{display:block;margin-top:5px;font-size:10px;font-weight:500;line-height:1.4;letter-spacing:0;color:#f1c46a;white-space:normal}.comparison-note{max-width:90ch}

@@ -400,6 +400,7 @@ def parse_act(html, player):
 
 
 def adapter(client, player, previous=()):
+    from report_refresh import report_plan, checked as report_checked
     if player.get('official_season')!=player['season']:raise ValueError('Revisar la fuente oficial para la nueva temporada')
     if not player.get('_verify_identity'):
         cached=initial_snapshot(player)
@@ -413,10 +414,11 @@ def adapter(client, player, previous=()):
     calendar_source=games[0]['source'];identity=False;logo=None;warnings=[]
     from sync import MADRID
     today=datetime.now(MADRID).date()
+    selected_reports = {g['id'] for g in games} if player.get('_verify_identity') else report_plan(games, player, previous)
     for game in games:
         # Calendar gives the real date/field when extended. Journals supply report
         # links and refresh upcoming details; an unavailable report is not zero.
-        if game['status']=='finished' or abs((datetime.fromisoformat(game['date']).date()-today).days)<=7:
+        if (game['status']=='finished' and game['id'] in selected_reports) or (game['status']!='finished' and abs((datetime.fromisoformat(game['date']).date()-today).days)<=7):
             try:
                 refs=parse_round(page(client,round_url(player['provider'],game['round'],player)),player,game['round'],round_url(player['provider'],game['round'],player))
                 ref=next((r for r in refs if norm(r['home'])==norm(game['home']) and norm(r['away'])==norm(game['away'])),None)
@@ -426,12 +428,14 @@ def adapter(client, player, previous=()):
         if game.get('home_team_id')==player['team_id']:logo=game.get('home_logo') or logo
         else:logo=game.get('away_logo') or logo
         if game['status']!='finished':continue
+        if game['id'] not in selected_reports:continue
         try:
             if '/NFG_CmpPartido' not in game['source']:raise ValueError('Acta no disponible en la jornada')
             html=page(client,game['source']);soup=BeautifulSoup(html,'html.parser')
             if not any(re.search(r'Temporada\s*'+re.escape(player['season']),h.get_text(' ',strip=True)) for h in soup.select('h4,h5')):
                 raise ValueError('Acta de otra temporada')
             record=parse_act(html,player);game['participation'][player['id']]=record
+            report_checked(game, player['id'])
             if record['called_up']==1:identity=True
         except Exception:
             warnings.append(game['round'])

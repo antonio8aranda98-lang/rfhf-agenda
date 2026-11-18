@@ -23,6 +23,14 @@ export function overlaps(a, b) {
   return Math.abs(minutes(a.time) - minutes(b.time)) < 120;
 }
 export function displayStat(value) { return value === null || value === undefined ? '—' : String(value); }
+export function statEvidence(player, key) {
+  const full=player.stats?.[key];
+  if(typeof full==='number'&&Number.isFinite(full))return {value:full,partial:false};
+  const value=player.coverage?.confirmed?.[key],checked=player.coverage?.field_checked?.[key],total=player.coverage?.team_played;
+  if(typeof value==='number'&&Number.isFinite(value)&&value>=0&&Number.isInteger(checked)&&checked>0&&Number.isInteger(total)&&total>=checked)
+    return {value,partial:checked<total,checked,total};
+  return {value:null,partial:false};
+}
 export function applyPublicRegistry(feed, registry) {
   if(!registry?.initialized||!Array.isArray(registry.players)||registry.season!==feed.season||(registry.revision||0)<(feed.registry_revision||0))return feed;
   const desired=new Map(registry.players.map(p=>[p.id,p]));

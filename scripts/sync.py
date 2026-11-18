@@ -18,6 +18,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 from player_stats import participation, absent, summarize, STAT_FIELDS
+from report_refresh import report_plan, checked as report_checked
 from federation_acts import murcia_round, parse_murcia_act, parse_catalunya_act, parse_murcia_calendar
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -251,14 +252,9 @@ def _madrid_team(client, player):
     completed = sorted([m for m in matches if m['status'] == 'finished'], key=lambda m: m['date'] or '', reverse=True)
     if player.get('_calendar_only'):
         return {'matches':matches}
-    previous = {m['id']:m for m in player.get('_previous', [])}
-    latest = {m['id'] for m in completed[:2]}
+    selected_reports = report_plan(matches, player, player.get('_previous', []))
     for m in completed:
-        before = previous.get(m['id'])
-        if m['id'] not in latest and before and before.get('status')=='finished' and (before.get('score_home'),before.get('score_away')) == (m['score_home'],m['score_away']) and before.get('participation',{}).get(player['id']) is not None:
-            m['participation'][player['id']] = copy.deepcopy(before['participation'][player['id']])
-            m['participation_checked_at'] = {player['id']:before.get('participation_checked_at',{}).get(player['id'],before.get('updated_at'))}
-            if before.get('participation_source',{}).get(player['id']):m['participation_source']={player['id']:before['participation_source'][player['id']]}
+        if m['id'] not in selected_reports:
             continue
         try:
             game = client.next_props(m['source'])['game']
@@ -269,6 +265,7 @@ def _madrid_team(client, player):
                 continue
             if not row:
                 m['participation'][player['id']] = absent()
+                report_checked(m, player['id'])
                 continue
             if row.get('ver_estadisiticas_jugador') != '1':
                 continue
@@ -288,6 +285,7 @@ def _madrid_team(client, player):
             if competition.get('vis_minutos') != '1':
                 stats['minutes'] = None
             m['participation'][player['id']] = stats
+            report_checked(m, player['id'])
         except Exception:
             continue
     return {'matches': matches, 'stats': summary, 'logo': logo, 'stats_note': 'Convocado = titular o suplente en el acta. Los minutos calculados usan tiempo reglamentario, sin añadido.'+(' Ficha federativa: '+str(player.get('registration_team') or 'otro equipo')+'. Calendario y estadísticas limitados al equipo seguido: '+player['team']+'.' if player.get('player_source') else '')}
@@ -326,6 +324,7 @@ def catalunya(client, player):
         raise ValueError('El jugador ya no figura en la plantilla configurada; revisar asignación')
     escudos = 'https://files.fcf.cat/escudos/clubes/escudos/'
     matches = []
+    reports = {}
     for m in data.get('matches', []):
         start = str(m.get('COMIENZO1') or '').split(' ')
         date = iso_date(start[0])
@@ -339,15 +338,19 @@ def catalunya(client, player):
             away_logo=escudos + m['ESCUDO_FUERA'] if m.get('ESCUDO_FUERA') else None,
             score_home=integer(m.get('GOLES_CASA')) if closed else None, score_away=integer(m.get('GOLES_FUERA')) if closed else None,
             round=integer(m.get('JORNADA')), home_team_id=str(m['CODEQUIPO_CASA']), away_team_id=str(m['CODEQUIPO_FUERA'])))
-        if closed:
+        if closed and not player.get('_calendar_only'):
             slug = lambda text: re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode().lower()).strip('-')
             path = f"ca/partit/{player.get('season', '2026-2027')}/{slug(m['NOMBRE_COMPETICION'])}/{slug(m['GRUPO'])}/jornada-{m['JORNADA']}/{m['SLUG_CASA']}-vs-{m['SLUG_FUERA']}"
-            try:
-                html = client.get('https://www.fcf.cat/' + path)
-                matches[-1]['participation'][player['id']] = parse_catalunya_act(html, player)
-                matches[-1]['source'] = 'https://www.fcf.cat/' + path
-            except Exception:
-                pass
+            reports[matches[-1]['id']] = 'https://www.fcf.cat/' + path
+    selected_reports = set() if player.get('_calendar_only') else report_plan(matches, player, player.get('_previous', []))
+    for match in matches:
+        if match['id'] not in selected_reports:continue
+        try:
+            match['participation'][player['id']] = parse_catalunya_act(client.get(reports[match['id']]), player)
+            match['source'] = reports[match['id']]
+            report_checked(match, player['id'])
+        except Exception:
+            pass
     return {'matches': matches, 'stats': new_stats(), 'logo': escudos + data['info']['FICHERO'],
             'stats_note': 'Convocatorias, titulares, suplentes y goles según actas. Los minutos quedan sin dato cuando la FCF no publica intervalos de sustitución verificables.'}
 
@@ -394,8 +397,11 @@ def murcia(client, player):
             if normalized(match['away']) == normalized(player['team']):
                 match['away_logo'] = logo
     today = datetime.now(MADRID).date().isoformat()
+    selected_reports = set() if player.get('_calendar_only') else report_plan(matches, player, player.get('_previous', []))
     for match in matches:
         if player.get('_calendar_only'):
+            continue
+        if match['status']=='finished' and match['id'] not in selected_reports:
             continue
         if match['status'] != 'finished' and (not match.get('date') or abs((datetime.fromisoformat(match['date']).date() - datetime.now(MADRID).date()).days) > 7):
             continue
@@ -412,6 +418,7 @@ def murcia(client, player):
                 match['source'] = report['alternate_url']
             if match['status'] == 'finished':
                 match['participation'][player['id']] = parse_murcia_act(html, player)
+                report_checked(match, player['id'])
             soup = BeautifulSoup(html, 'html.parser')
             field = soup.find(string=re.compile(r'^\s*Estadio:'))
             if field:
@@ -600,6 +607,7 @@ def apply_roster(feed, roster):
         m['player_ids'] = [id for id in m['player_ids'] if id in active]
         m['participation'] = {id: stats for id, stats in m.get('participation', {}).items() if id in active}
         m['participation_checked_at'] = {id: stamp for id, stamp in m.get('participation_checked_at', {}).items() if id in active}
+        m['participation_attempted_at'] = {id: stamp for id, stamp in m.get('participation_attempted_at', {}).items() if id in active}
         m['participation_source'] = {id: source for id, source in m.get('participation_source', {}).items() if id in active}
         if not m['player_ids']:
             continue
@@ -621,6 +629,7 @@ def apply_roster(feed, roster):
                 combined['participation'] = {**older['participation'], **newer['participation']}
                 combined['participation_checked_at'] = {**older['participation_checked_at'], **newer['participation_checked_at']}
                 combined['participation_source'] = {**older['participation_source'], **newer['participation_source']}
+                combined['participation_attempted_at'] = {**older.get('participation_attempted_at',{}), **newer.get('participation_attempted_at',{})}
             merged[key] = combined
         else:
             merged[key] = m

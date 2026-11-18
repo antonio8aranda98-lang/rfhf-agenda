@@ -149,16 +149,23 @@ def load_valencia(client, player):
                 home_team_id=str(m['cod_equipo_local']), away_team_id=str(m['cod_equipo_visitante']), venue=m.get('campo') or None,
                 home_logo=urljoin(FILES, m.get('escudo_local') or ''), away_logo=urljoin(FILES, m.get('escudo_visitante') or ''),
                 score_home=int(score[1]) if finished else None, score_away=int(score[2]) if finished else None)
-            if finished and not player.get('_calendar_only'):
-                try:
-                    game = api.get('partidos/ficha_partido_ajax.php', cod_partido=m['codacta'])
-                    stats = act_participation(game, player, scope)
-                    if stats is not None:
-                        match['participation'][player['id']] = stats
-                except Exception:
-                    pass
             matches.append(match)
     if len(matches) < len(rounds) - 3:
         raise ValueError('El calendario FFCV está incompleto; se conserva el último válido')
+    # Finish the calendar before spending the source's quota on older reports.
+    # The retry plan persists evidence and rotates gaps instead of rereading all.
+    if not player.get('_calendar_only'):
+        from report_refresh import report_plan, checked
+        selected = report_plan(matches, player, player.get('_previous', []))
+        for match in matches:
+            if match['id'] not in selected:continue
+            try:
+                game = api.get('partidos/ficha_partido_ajax.php', cod_partido=match['id'].removeprefix('valencia-'))
+                stats = act_participation(game, player, scope)
+                if stats is not None:
+                    match['participation'][player['id']] = stats
+                    checked(match, player['id'])
+            except Exception:
+                pass
     return {'matches': matches, 'stats': new_stats(), 'logo': urljoin(FILES, scope.get('escudo_equipo') or ''),
             'stats_note': 'Estadísticas calculadas con las actas de este equipo y competición. No se mezclan otras participaciones del jugador en equipos A/B. Minutos reglamentarios sin añadido.'}

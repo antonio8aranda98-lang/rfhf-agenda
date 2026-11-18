@@ -34,7 +34,7 @@ def absent():
 
 
 def summarize(matches, player_id, published=None):
-    """Only sum complete act coverage; never label a partial sum as a total."""
+    """Keep season totals separate from field-by-field confirmed partial sums."""
     completed = [m for m in matches if m.get('status') == 'finished']
     records = [m.get('participation', {}).get(player_id) for m in completed]
     stats = dict(published or {})
@@ -42,6 +42,12 @@ def summarize(matches, player_id, published=None):
     coverage = {'team_played': len(completed), 'acts_checked': sum(r is not None for r in records),
                 'minutes_checked': sum(r is not None and r.get('minutes') is not None for r in records),
                 'minutes_method': 'Tiempo reglamentario según acta; no incluye añadido.'}
+    coverage['confirmed'] = {}
+    coverage['field_checked'] = {}
+    for key in ('called_up', 'starts', 'bench', 'played', 'minutes', 'goals'):
+        values = [r[key] for r in records if r is not None and r.get(key) is not None]
+        coverage['field_checked'][key] = len(values)
+        coverage['confirmed'][key] = sum(values) if values else None
     if all(r is not None for r in records):
         for key in ('called_up', 'starts', 'bench', 'played', 'minutes', 'goals'):
             if all(r.get(key) is not None for r in records):
