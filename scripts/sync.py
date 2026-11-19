@@ -385,7 +385,9 @@ def parse_murcia(html, player, source):
 def murcia(client, player):
     from murcia_recovery import previous_calendar, transient, report_url, validate_report
     previous=previous_calendar(player)
+    known_reports={m['id']:report_url(m.get('participation_source',{}).get(player['id'])) or report_url(m.get('source')) for m in previous}
     warnings=[];team=None;retained=False
+    print('murcia: '+player.get('name',player['official_name'])+' · comprobando datos deportivos',flush=True)
     team_url = 'https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?' + urllib.parse.urlencode({'Codigo_Equipo':player['team_id'], 'cod_primaria':'3001860'})
     try:team = BeautifulSoup(client.get(team_url), 'html.parser')
     except Exception as error:
@@ -425,7 +427,7 @@ def murcia(client, player):
         if match['status'] != 'finished' and (not match.get('date') or abs((datetime.fromisoformat(match['date']).date() - datetime.now(MADRID).date()).days) > 7):
             continue
         try:
-            direct=report_url(match.get('source'))
+            direct=report_url(match.get('source')) or known_reports.get(match['id'])
             report = {'url':direct,'alternate_url':direct} if direct else murcia_round(client, player, match['round'])
             candidate_source=report['url']
             try:

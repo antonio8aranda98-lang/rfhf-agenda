@@ -24,7 +24,9 @@ class FakeClient:
             if self.failed=='identity':return '<td>OTRA PERSONA</td>'
             if self.failed=='forbidden':raise urllib.error.HTTPError(url,403,'Forbidden',{},None)
             return TEAM
-        if 'NFG_VisCalendario_Vis' in url:raise ValueError('La fuente ha devuelto una respuesta vacía')
+        if 'NFG_VisCalendario_Vis' in url:
+            if self.failed=='none':return '<calendar/>'
+            raise ValueError('La fuente ha devuelto una respuesta vacía')
         if 'NFG_CmpPartido' in url:return self.report
         raise AssertionError('Unexpected URL '+url)
 
@@ -43,6 +45,12 @@ class MurciaRecoveryTests(unittest.TestCase):
         c=FakeClient('team');result=murcia(c,{**PLAYER,'_previous':[MATCH]})
         self.assertEqual(result['matches'][0]['participation']['p']['minutes'],90)
         self.assertFalse(any('Calendario' in u for u in c.calls))
+    def test_a_fresh_calendar_still_reuses_its_previously_verified_direct_report(self):
+        game={**copy.deepcopy(MATCH),'source':'https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis'}
+        with patch('sync.parse_murcia_calendar',return_value=[game]),patch('sync.murcia_round',side_effect=AssertionError('Existing report link should be reused')):
+            result=murcia(FakeClient('none'),{**PLAYER,'_previous':[MATCH]})
+        self.assertEqual(result['matches'][0]['participation']['p']['minutes'],90)
+        self.assertNotIn('source_warning',result)
     def test_recovery_remains_bounded_to_three_missing_reports(self):
         games=[{**copy.deepcopy(MATCH),'id':'murcia-7-'+str(i),'round':i,'source':REPORT.replace('42',str(i))} for i in range(1,9)]
         c=FakeClient()
