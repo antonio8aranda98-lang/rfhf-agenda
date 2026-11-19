@@ -707,10 +707,19 @@ def apply_roster(feed, roster):
             combined = copy.deepcopy(preferred)
             combined['player_ids'] = sorted(set(old['player_ids'] + m['player_ids']))
             if (older.get('status'), older.get('score_home'), older.get('score_away')) == (newer.get('status'), newer.get('score_home'), newer.get('score_away')):
-                combined['participation'] = {**older['participation'], **newer['participation']}
-                combined['participation_checked_at'] = {**older['participation_checked_at'], **newer['participation_checked_at']}
-                combined['participation_source'] = {**older['participation_source'], **newer['participation_source']}
-                combined['participation_attempted_at'] = {**older.get('participation_attempted_at',{}), **newer.get('participation_attempted_at',{})}
+                # Calendar freshness and report freshness are independent. A
+                # teammate's retained fixture must not replace a newer report.
+                for field in ('participation','participation_checked_at','participation_source','participation_attempted_at'):combined[field]={}
+                for pid in set(older['participation']) | set(newer['participation']):
+                    candidates=[g for g in (older,newer) if pid in g['participation']]
+                    chosen=max(candidates,key=lambda g:g.get('participation_checked_at',{}).get(pid) or g.get('updated_at') or '')
+                    combined['participation'][pid]=copy.deepcopy(chosen['participation'][pid])
+                    for field in ('participation_checked_at','participation_source'):
+                        if pid in chosen.get(field,{}):combined[field][pid]=chosen[field][pid]
+                for field in ('participation_checked_at','participation_attempted_at'):
+                    for pid in set(older.get(field,{})) | set(newer.get(field,{})):
+                        stamp=max(older.get(field,{}).get(pid,'') or '',newer.get(field,{}).get(pid,'') or '')
+                        if stamp:combined[field][pid]=stamp
             merged[key] = combined
         else:
             merged[key] = m

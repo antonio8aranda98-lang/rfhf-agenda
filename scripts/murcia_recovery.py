@@ -16,13 +16,18 @@ def transient(error):
 
 def previous_calendar(player):
     """Only this verified player's exact team, competition and season qualify."""
-    return [copy.deepcopy(m) for m in player.get('_previous',[]) if
+    matches=[copy.deepcopy(m) for m in player.get('_previous',[]) if
             player['id'] in m.get('player_ids',[]) and m.get('federation')=='murcia' and
             m.get('season')==player.get('season') and
             str(m.get('competition_id'))==str(player.get('competition_id')) and
             str(m.get('group_id'))==str(player.get('group_id')) and
             player['team_id'] in (m.get('home_team_id'),m.get('away_team_id')) and
             type(m.get('round')) is int and m['round']>0]
+    for match in matches:
+        match['player_ids']=[player['id']]
+        for field in ('participation','participation_checked_at','participation_attempted_at','participation_source'):
+            match[field]={pid:value for pid,value in match.get(field,{}).items() if pid==player['id']}
+    return matches
 
 
 def report_url(value):

@@ -3,6 +3,7 @@ from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from sync import murcia
+from sync import apply_roster
 from murcia_recovery import previous_calendar,report_url,validate_report
 from intake_priority import IntakeWatch,IntakeYield
 
@@ -60,6 +61,19 @@ class MurciaRecoveryTests(unittest.TestCase):
     def test_other_teams_seasons_competitions_and_players_cannot_supply_recovery_history(self):
         for changed in [dict(season='2025-2026'),dict(group_id='other'),dict(competition_id='other'),dict(home_team_id='other'),dict(player_ids=['other']),dict(federation='madrid')]:
             with self.subTest(changed=changed):self.assertEqual(previous_calendar({**PLAYER,'_previous':[{**MATCH,**changed}]}),[])
+    def test_retained_shared_calendar_does_not_claim_a_teammates_old_participation(self):
+        match={**copy.deepcopy(MATCH),'player_ids':['p','teammate'],'participation':{'p':{'minutes':27},'teammate':{'minutes':90}}}
+        own=previous_calendar({**PLAYER,'_previous':[match]})[0]
+        self.assertEqual(own['player_ids'],['p']);self.assertEqual(own['participation'],{'p':{'minutes':27}})
+        self.assertEqual(match['player_ids'],['p','teammate'])
+    def test_a_retained_teammate_cannot_overwrite_newly_recovered_participation(self):
+        fresh={**copy.deepcopy(MATCH),'participation':{'p':{'minutes':27}},'participation_checked_at':{'p':'2026-11-19T10:00:00+00:00'},'participation_source':{'p':REPORT}}
+        stale={**copy.deepcopy(MATCH),'player_ids':['p','teammate'],'participation':{'p':{'minutes':10},'teammate':{'minutes':90}},'participation_checked_at':{'p':'2026-11-18T10:00:00+00:00'}}
+        feed={'players':[PLAYER,{**PLAYER,'id':'teammate'}],'matches':[fresh,stale]}
+        apply_roster(feed,{'players':feed['players']})
+        self.assertEqual(len(feed['matches']),1)
+        self.assertEqual(feed['matches'][0]['participation'],{'p':{'minutes':27},'teammate':{'minutes':90}})
+        self.assertEqual(feed['matches'][0]['participation_checked_at']['p'],'2026-11-19T10:00:00+00:00')
     def test_wrong_report_does_not_turn_into_a_confirmed_absence(self):
         for changed in [dict(season='2025-2026'),dict(rnd=2),dict(date='13-09-2026'),dict(home='OTRO'),dict(score='2 - 1')]:
             with self.subTest(changed=changed),self.assertRaises(ValueError):validate_report(act(**changed),PLAYER,MATCH)
