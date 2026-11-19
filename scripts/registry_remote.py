@@ -121,7 +121,7 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None, select
         except IntakeYield:
             stop_network=True
             results.append({**previous_rows.get(id,{}),'id':id,'state':'pending','waiting_priority':True,
-                            'message':'Una nueva alta tiene prioridad. Esta comprobación continuará automáticamente.'})
+                            'message':'Esta comprobación continuará automáticamente en la siguiente ejecución.'})
         except Exception as error:
             message = str(error)[:350] if isinstance(error, ValueError) else 'La fuente oficial no está disponible. Volveremos a intentarlo automáticamente.'
             results.append({'id':id,'state':'pending','message':message,'checked_at':now(),'control_fingerprint':fingerprint(entry)})

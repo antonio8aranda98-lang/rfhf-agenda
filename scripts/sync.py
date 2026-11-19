@@ -19,7 +19,7 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from player_stats import participation, absent, summarize, STAT_FIELDS
 from report_refresh import report_plan, checked as report_checked
-from intake_priority import IntakeYield, IntakeWatch
+from intake_priority import IntakeYield, IntakeWatch, execution_deadline
 from federation_acts import murcia_round, parse_murcia_act, parse_catalunya_act, parse_murcia_calendar
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -383,16 +383,31 @@ def parse_murcia(html, player, source):
 
 
 def murcia(client, player):
+    from murcia_recovery import previous_calendar, transient, report_url, validate_report
+    previous=previous_calendar(player)
+    warnings=[];team=None;retained=False
     team_url = 'https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?' + urllib.parse.urlencode({'Codigo_Equipo':player['team_id'], 'cod_primaria':'3001860'})
-    team = BeautifulSoup(client.get(team_url), 'html.parser')
-    if normalized(player['official_name']) not in normalized(team.get_text(' ', strip=True)):
+    try:team = BeautifulSoup(client.get(team_url), 'html.parser')
+    except Exception as error:
+        if not transient(error) or not previous or player.get('_calendar_only'):raise
+        warnings.append('La plantilla no ha respondido; se conserva el calendario anterior.')
+        retained=True
+    if team is not None and normalized(player['official_name']) not in normalized(team.get_text(' ', strip=True)):
         raise ValueError('El jugador ya no figura en la plantilla configurada; revisar asignación')
     # Keep the public calendar form's season and journey filters. Without
     # CodJornada this portal can return an empty HTTP 200 for a new group.
     url = 'https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?' + urllib.parse.urlencode({'cod_primaria':'1000120','codtemporada':player['season_id'],'codcompeticion':player['competition_id'],'codgrupo':player['group_id'],'CodJornada':'1','CDetalle':'1'})
-    matches = parse_murcia_calendar(client.get(url), player, url)
-    image = team.select_one('img[src*="/Clubes/"]')
+    if retained:matches=previous
+    else:
+        try:matches = parse_murcia_calendar(client.get(url), player, url)
+        except Exception as error:
+            if not transient(error) or not previous or player.get('_calendar_only'):raise
+            matches=previous;retained=True
+            warnings.append('El calendario no ha respondido; se conserva su última lectura.')
+    image = team.select_one('img[src*="/Clubes/"]') if team is not None else None
     logo = urllib.parse.urljoin(player['source'], image['src']) if image else None
+    if not logo and retained:
+        logo=next((m.get('home_logo') if m.get('home_team_id')==player['team_id'] else m.get('away_logo') for m in previous if m.get('home_logo') or m.get('away_logo')),None)
     if logo:
         for match in matches:
             if normalized(match['home']) == normalized(player['team']):
@@ -406,22 +421,29 @@ def murcia(client, player):
             continue
         if match['status']=='finished' and match['id'] not in selected_reports:
             continue
+        if retained and match['status']!='finished':continue
         if match['status'] != 'finished' and (not match.get('date') or abs((datetime.fromisoformat(match['date']).date() - datetime.now(MADRID).date()).days) > 7):
             continue
         try:
-            report = murcia_round(client, player, match['round'])
-            match.update({k: v for k, v in report.items() if k not in ('url','alternate_url') and v})
-            match['source'] = report['url']
+            direct=report_url(match.get('source'))
+            report = {'url':direct,'alternate_url':direct} if direct else murcia_round(client, player, match['round'])
+            candidate_source=report['url']
             try:
                 html = client.get(report['url'])
             except ValueError as error:
                 if 'respuesta vacía' not in str(error) or report['alternate_url']==report['url']:
                     raise
                 html = client.get(report['alternate_url'])
-                match['source'] = report['alternate_url']
+                candidate_source=report['alternate_url']
             if match['status'] == 'finished':
-                match['participation'][player['id']] = parse_murcia_act(html, player)
+                validate_report(html,player,match)
+                record=parse_murcia_act(html, player)
+            match.update({k: v for k, v in report.items() if k not in ('url','alternate_url') and v})
+            match['source']=candidate_source
+            if match['status']=='finished':
+                match['participation'][player['id']] = record
                 report_checked(match, player['id'])
+                match.setdefault('participation_source',{})[player['id']]=match['source']
             soup = BeautifulSoup(html, 'html.parser')
             field = soup.find(string=re.compile(r'^\s*Estadio:'))
             if field:
@@ -436,9 +458,15 @@ def murcia(client, player):
                 if locality and len(locality) <= 100:
                     match['locality'] = locality
         except Exception as error:
+            warnings.append('Acta J'+str(match['round'])+': '+str(error)[:120])
             print('::warning::Murcia acta J' + str(match['round']) + ': ' + type(error).__name__ + ': ' + str(error)[:160])
-    return {'matches': matches, 'stats': new_stats(), 'logo': logo,
+    result={'matches': matches, 'stats': new_stats(), 'logo': logo,
             'stats_note': 'Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.'}
+    if warnings:result['source_warning']=' '.join(warnings)
+    if retained:
+        result['checked_at']=max((m.get('updated_at') or '' for m in previous),default='') or None
+        result['stats_note']+=' Calendario conservado de la última lectura válida; las actas se comprueban por separado.'
+    return result
 
 
 def valencia(client, player):
@@ -490,7 +518,7 @@ def retain_participation(match, previous, player_id, allow_secondary=True):
         if old_source: match.setdefault('participation_source', {})[player_id] = old_source
 
 
-def _sync(browser=False, registry_changes=False, intake=False):
+def _sync(browser=False, registry_changes=False, intake=False, federation=None):
     roster = json.loads((ROOT / 'data/roster.json').read_text())
     path = ROOT / 'docs/data/feed.json'
     previous = json.loads(path.read_text()) if path.exists() else {}
@@ -504,6 +532,9 @@ def _sync(browser=False, registry_changes=False, intake=False):
         with_matches={id for m in previous.get('matches',[]) for id in m['player_ids']}
         focus = {p['id'] for p in roster['players'] if p.get('active',True) and (p['id'] not in old_players or not old_players[p['id']].get('updated_at') or p['id'] not in with_matches or any(p.get(k) != old_players[p['id']].get(k) for k in identity_fields))}
     if intake:focus=set(status.get('intake_ids',[]))
+    if federation:
+        regional={p['id'] for p in roster['players'] if p['federation']==federation}
+        focus=regional if focus is None else focus & regional
     if browser:
         run = subprocess.run(['node', 'scripts/valencia.mjs'], cwd=ROOT, timeout=360, check=False)
         if run.returncode:
@@ -519,6 +550,13 @@ def _sync(browser=False, registry_changes=False, intake=False):
         if fid == 'valencia':
             dates = {p['id']: p.get('updated_at') or '' for p in previous.get('players', [])}
             configs.sort(key=lambda p: dates.get(p['id'], ''))
+        if fid == 'murcia':
+            def recovery_priority(p):
+                own=[m for m in old_matches if p['id'] in m['player_ids']]
+                has_report=any(p['id'] in m.get('participation',{}) for m in own)
+                attempted=max((m.get('participation_attempted_at',{}).get(p['id'],'') for m in own),default='')
+                return has_report,attempted or old_players.get(p['id'],{}).get('updated_at','')
+            configs.sort(key=recovery_priority)
         # Normal public landing establishes the same public session as website navigation.
         try:
             if not preempted and fid not in ('valencia', 'murcia') and (focus is None or any(p['id'] in focus for p in configs)):
@@ -614,22 +652,29 @@ def _sync(browser=False, registry_changes=False, intake=False):
         status['intake_mode']='processed'
         status_path.write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n')
     print(f'Actualizadas {total_success}/{sum(p.get("active", True) for p in roster["players"])} fichas; {len(feed["matches"])} partidos publicados.')
-    if preempted:print('Avance guardado. Se cede el turno a las nuevas altas de Antonio.')
+    if preempted:print('Avance guardado. La siguiente sincronización continuará el trabajo pendiente.')
     if not total_success and not preempted and feed['players'] and (focus is None or focus):
         raise SystemExit(1)
 
 
-def sync(browser=False, registry_changes=False, intake=False, watch_intake=False):
+def sync(browser=False, registry_changes=False, intake=False, watch_intake=False, federation=None):
     global REQUEST_GUARD
     original=REQUEST_GUARD
+    watch=None
     if watch_intake:
         from registry_remote import fetch_registry
         roster=json.loads((ROOT/'data/roster.json').read_text())
-        REQUEST_GUARD=IntakeWatch(fetch_registry,roster.get('registry_revision',0))
+        watch=IntakeWatch(fetch_registry,roster.get('registry_revision',0))
         status_path=ROOT/'docs/data/registry-status.json'
         status=json.loads(status_path.read_text()) if status_path.exists() else {}
-        intake=intake or status.get('intake_mode') in ('priority','controls')
-    try:return _sync(browser,registry_changes,intake)
+        intake=intake or (not federation and status.get('intake_mode') in ('priority','controls'))
+    deadline=execution_deadline()
+    def checkpoint():
+        if time.monotonic()>=deadline:raise IntakeYield('Se guarda el avance antes del límite de ejecución')
+        if watch:watch()
+        elif original:original()
+    REQUEST_GUARD=checkpoint
+    try:return _sync(browser,registry_changes,intake,federation)
     finally:REQUEST_GUARD=original
 
 
@@ -696,5 +741,6 @@ if __name__ == '__main__':
     parser.add_argument('--registry-changes', action='store_true', help='Actualizar solo altas y cambios de fuentes, conservando fechas de las demás fichas')
     parser.add_argument('--intake',action='store_true',help='Publicar primero calendarios de altas y tandas pequeñas de pendientes')
     parser.add_argument('--watch-intake',action='store_true',help='Guardar el avance y ceder el turno si Antonio registra un cambio nuevo')
+    parser.add_argument('--federation',choices=tuple(FEDERATIONS),help='Actualizar una federación conservando los datos de las demás')
     args = parser.parse_args()
-    sync(args.browser, args.registry_changes,args.intake,args.watch_intake)
+    sync(args.browser, args.registry_changes,args.intake,args.watch_intake,args.federation)

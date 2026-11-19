@@ -12,6 +12,11 @@ on:
         required: false
         type: boolean
         default: false
+      refresh_murcia:
+        description: Recuperar actas pendientes de Murcia
+        required: false
+        type: boolean
+        default: false
   schedule:
     - cron: '*/5 * * * *'
 permissions:
@@ -55,6 +60,8 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - name: Reservar tiempo para guardar y publicar el avance
+        run: echo "RFHF_WORK_DEADLINE=$(( $(date +%s) + 1500 ))" >> "$GITHUB_ENV"
       - name: Validar cambios de cartera
         if: inputs.publish_only != true
         run: python scripts/registry_remote.py --priority --watch-intake
@@ -65,6 +72,7 @@ jobs:
       - name: Actualizar sumas parciales confirmadas
         env:
           RFHF_REFRESH_EVIDENCE: ${{ inputs.refresh_evidence }}
+          RFHF_REFRESH_MURCIA: ${{ inputs.refresh_murcia }}
         run: python scripts/improve_data.py
       - name: Guardar registro y datos publicados
         run: |

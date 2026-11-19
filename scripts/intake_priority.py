@@ -2,11 +2,21 @@
 import hashlib
 import json
 import time
+import os
 from datetime import datetime, timezone, timedelta
 
 
 class IntakeYield(BaseException):
     """Not a source failure: stop at a safe checkpoint for a newer owner change."""
+
+
+def execution_deadline(clock=time.monotonic):
+    remaining=25*60
+    try:
+        if os.environ.get('RFHF_WORK_DEADLINE'):
+            remaining=min(remaining,max(0,float(os.environ['RFHF_WORK_DEADLINE'])-time.time()))
+    except ValueError:pass
+    return clock()+remaining
 
 
 def fingerprint(entry):
@@ -65,10 +75,12 @@ def plan(desired,status,feed,settings=None,at=None):
 class IntakeWatch:
     def __init__(self,fetch,revision,interval=30,clock=time.monotonic):
         self.fetch=fetch;self.revision=revision;self.interval=interval;self.clock=clock;self.last=None;self.yielded=False
+        self.deadline=execution_deadline(clock)
 
     def __call__(self):
         if self.yielded:raise IntakeYield('Se cede el turno a un cambio nuevo de Antonio')
         current=self.clock()
+        if current>=self.deadline:raise IntakeYield('Se guarda el avance antes del límite de ejecución')
         if self.last is not None and current-self.last<self.interval:return
         self.last=current
         try:new=self.fetch()

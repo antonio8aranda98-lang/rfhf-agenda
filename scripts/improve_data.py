@@ -44,8 +44,12 @@ def refresh_one(feed, roster, desired):
     return True
 
 
-def main(refresh=False):
+def main(refresh=False, refresh_murcia=False):
     path=ROOT/'docs/data/feed.json';feed=json.loads(path.read_text())
+    if refresh_murcia:
+        from sync import sync
+        sync(federation='murcia',watch_intake=True)
+        feed=json.loads(path.read_text())
     if refresh:
         from registry_remote import fetch_registry
         roster=json.loads((ROOT/'data/roster.json').read_text())
@@ -58,5 +62,5 @@ def main(refresh=False):
 
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--refresh-one',action='store_true');args=parser.parse_args()
-    main(args.refresh_one or os.environ.get('RFHF_REFRESH_EVIDENCE')=='true')
+    parser=argparse.ArgumentParser();parser.add_argument('--refresh-one',action='store_true');parser.add_argument('--refresh-murcia',action='store_true');args=parser.parse_args()
+    main(args.refresh_one or os.environ.get('RFHF_REFRESH_EVIDENCE')=='true',args.refresh_murcia or os.environ.get('RFHF_REFRESH_MURCIA')=='true')
