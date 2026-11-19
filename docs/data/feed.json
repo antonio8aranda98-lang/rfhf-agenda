@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-19T09:13:01+00:00",
+  "generated_at": "2026-11-19T10:38:31+00:00",
   "season": "2026-2027",
   "registry_revision": 19,
   "federations": [
@@ -58,7 +58,7 @@
       "acronym": "FFCV",
       "source": "https://ffcv.es/competiciones/",
       "status": "partial",
-      "checked_at": "2026-11-19T09:13:00+00:00",
+      "checked_at": "2026-11-19T10:38:46+00:00",
       "last_success": "2026-11-18T11:30:01+00:00",
       "message": "Consulta automática completada",
       "failed_players": [],
@@ -5064,60 +5064,6 @@
       "calendar_complete": true
     },
     {
-      "id": "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624",
-      "name": "Salvador Marin Moya",
-      "federation": "murcia",
-      "collaborator": "Iván Macià",
-      "team": "UCAM UNIVERSIDAD CATOLICA DE MURCIA C.F.",
-      "competition_label": "LIGA NACIONAL JUVENIL · GRUPO X",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14448990&cod_primaria=3001860",
-      "provider": "federation",
-      "team_id": "14448990",
-      "competition_id": "24144503",
-      "group_id": "24144520",
-      "age_category": "juvenil",
-      "team_age_category": "juvenil",
-      "stats": {
-        "team_played": 10,
-        "called_up": null,
-        "starts": null,
-        "bench": null,
-        "minutes": null,
-        "goals": null,
-        "played": null,
-        "assists": null,
-        "yellow": null,
-        "red": null
-      },
-      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128724_escudo.jpg",
-      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
-      "calendar_complete": true,
-      "updated_at": "2026-11-19T09:14:14+00:00",
-      "coverage": {
-        "team_played": 10,
-        "acts_checked": 3,
-        "minutes_checked": 3,
-        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
-        "confirmed": {
-          "called_up": 3,
-          "starts": 1,
-          "bench": 2,
-          "played": 3,
-          "minutes": 140,
-          "goals": 0
-        },
-        "field_checked": {
-          "called_up": 3,
-          "starts": 3,
-          "bench": 3,
-          "played": 3,
-          "minutes": 3,
-          "goals": 3
-        },
-        "calendar_complete": true
-      }
-    },
-    {
       "id": "p-b2dd7482-24e2-4895-b761-d6e63264da85",
       "name": "Milton Molina Gonzales",
       "federation": "murcia",
@@ -5145,7 +5091,6 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000742753_Escudo_escuela.jpg",
       "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
-      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:54+00:00",
       "coverage": {
         "team_played": 10,
@@ -5169,7 +5114,8 @@
           "goals": 0
         },
         "calendar_complete": true
-      }
+      },
+      "calendar_complete": true
     },
     {
       "id": "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814",
@@ -5199,7 +5145,6 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128674_escudo.jpg",
       "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
-      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:53+00:00",
       "coverage": {
         "team_played": 10,
@@ -5223,7 +5168,8 @@
           "goals": 0
         },
         "calendar_complete": true
-      }
+      },
+      "calendar_complete": true
     },
     {
       "id": "p-787af8bf-494e-43a7-8f50-97c240e4efd6",
@@ -5253,7 +5199,6 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000742753_Escudo_escuela.jpg",
       "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
-      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:54+00:00",
       "coverage": {
         "team_played": 10,
@@ -5277,7 +5222,8 @@
           "goals": 0
         },
         "calendar_complete": true
-      }
+      },
+      "calendar_complete": true
     },
     {
       "id": "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5",
@@ -5307,7 +5253,6 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000640024_descarga__1_.png",
       "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
-      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:55+00:00",
       "coverage": {
         "team_played": 6,
@@ -5331,169 +5276,8 @@
           "goals": 0
         },
         "calendar_complete": true
-      }
-    },
-    {
-      "id": "p-1a5c323c-3034-463b-b521-cc92f2681b37",
-      "name": "Antonio Sanchez Serrano",
-      "federation": "murcia",
-      "collaborator": "Iván Macià",
-      "team": "CD PUEBLA DE SOTO",
-      "competition_label": "LIGA AUTONÓMICA JUVENIL · GRUPO SEGUNDO",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14454755&cod_primaria=3001860",
-      "provider": "federation",
-      "team_id": "14454755",
-      "competition_id": "24032666",
-      "group_id": "24032668",
-      "age_category": "juvenil",
-      "team_age_category": "juvenil",
-      "stats": {
-        "team_played": 10,
-        "called_up": null,
-        "starts": null,
-        "bench": null,
-        "minutes": null,
-        "goals": null,
-        "played": null,
-        "assists": null,
-        "yellow": null,
-        "red": null
       },
-      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
-      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
-      "calendar_complete": true,
-      "updated_at": "2026-11-18T19:48:56+00:00",
-      "coverage": {
-        "team_played": 10,
-        "acts_checked": 2,
-        "minutes_checked": 2,
-        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
-        "confirmed": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 36,
-          "goals": 0
-        },
-        "field_checked": {
-          "called_up": 2,
-          "starts": 2,
-          "bench": 2,
-          "played": 2,
-          "minutes": 2,
-          "goals": 2
-        },
-        "calendar_complete": true
-      }
-    },
-    {
-      "id": "p-093e1f03-53b8-4c04-8315-c64a44760528",
-      "name": "Jhosmer Ramirez Quispe",
-      "federation": "murcia",
-      "collaborator": "Iván Macià",
-      "team": "CD PUEBLA DE SOTO",
-      "competition_label": "SEGUNDA JUVENIL · GRUPO CUARTO",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=34067&cod_primaria=3001860",
-      "provider": "federation",
-      "team_id": "34067",
-      "competition_id": "24032757",
-      "group_id": "24032761",
-      "age_category": "juvenil",
-      "team_age_category": "juvenil",
-      "stats": {
-        "team_played": 5,
-        "called_up": null,
-        "starts": null,
-        "bench": null,
-        "minutes": null,
-        "goals": null,
-        "played": null,
-        "assists": null,
-        "yellow": null,
-        "red": null
-      },
-      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
-      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
-      "calendar_complete": true,
-      "updated_at": "2026-11-19T09:21:26+00:00",
-      "coverage": {
-        "team_played": 5,
-        "acts_checked": 2,
-        "minutes_checked": 2,
-        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
-        "confirmed": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 45,
-          "goals": 0
-        },
-        "field_checked": {
-          "called_up": 2,
-          "starts": 2,
-          "bench": 2,
-          "played": 2,
-          "minutes": 2,
-          "goals": 2
-        },
-        "calendar_complete": true
-      }
-    },
-    {
-      "id": "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4",
-      "name": "Angel David Ramirez Quispe",
-      "federation": "murcia",
-      "collaborator": "Iván Macià",
-      "team": "CD PUEBLA DE SOTO",
-      "competition_label": "SEGUNDA JUVENIL · GRUPO CUARTO",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=34067&cod_primaria=3001860",
-      "provider": "federation",
-      "team_id": "34067",
-      "competition_id": "24032757",
-      "group_id": "24032761",
-      "age_category": "juvenil",
-      "team_age_category": "juvenil",
-      "stats": {
-        "team_played": 5,
-        "called_up": null,
-        "starts": null,
-        "bench": null,
-        "minutes": null,
-        "goals": null,
-        "played": null,
-        "assists": null,
-        "yellow": null,
-        "red": null
-      },
-      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
-      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
-      "calendar_complete": true,
-      "updated_at": "2026-11-19T09:21:58+00:00",
-      "coverage": {
-        "team_played": 5,
-        "acts_checked": 2,
-        "minutes_checked": 2,
-        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
-        "confirmed": {
-          "called_up": 2,
-          "starts": 0,
-          "bench": 2,
-          "played": 1,
-          "minutes": 45,
-          "goals": 0
-        },
-        "field_checked": {
-          "called_up": 2,
-          "starts": 2,
-          "bench": 2,
-          "played": 2,
-          "minutes": 2,
-          "goals": 2
-        },
-        "calendar_complete": true
-      }
+      "calendar_complete": true
     },
     {
       "id": "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83",
@@ -5523,7 +5307,6 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
-      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:58+00:00",
       "coverage": {
         "team_played": 9,
@@ -5547,7 +5330,8 @@
           "goals": 0
         },
         "calendar_complete": true
-      }
+      },
+      "calendar_complete": true
     },
     {
       "id": "p-a7f65893-119e-475d-87f0-28a139edc33d",
@@ -5577,7 +5361,6 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128713_escudo.jpg",
       "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
-      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:59+00:00",
       "coverage": {
         "team_played": 9,
@@ -5601,7 +5384,224 @@
           "goals": 0
         },
         "calendar_complete": true
-      }
+      },
+      "calendar_complete": true
+    },
+    {
+      "id": "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624",
+      "name": "Salvador Marin Moya",
+      "federation": "murcia",
+      "collaborator": "Iván Macià",
+      "team": "UCAM UNIVERSIDAD CATOLICA DE MURCIA C.F.",
+      "competition_label": "LIGA NACIONAL JUVENIL · GRUPO X",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14448990&cod_primaria=3001860",
+      "provider": "federation",
+      "team_id": "14448990",
+      "competition_id": "24144503",
+      "group_id": "24144520",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "stats": {
+        "team_played": 10,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128724_escudo.jpg",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "coverage": {
+        "team_played": 10,
+        "acts_checked": 3,
+        "minutes_checked": 3,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
+        "confirmed": {
+          "called_up": 3,
+          "starts": 1,
+          "bench": 2,
+          "played": 3,
+          "minutes": 140,
+          "goals": 0
+        },
+        "field_checked": {
+          "called_up": 3,
+          "starts": 3,
+          "bench": 3,
+          "played": 3,
+          "minutes": 3,
+          "goals": 3
+        },
+        "calendar_complete": true
+      },
+      "calendar_complete": true
+    },
+    {
+      "id": "p-1a5c323c-3034-463b-b521-cc92f2681b37",
+      "name": "Antonio Sanchez Serrano",
+      "federation": "murcia",
+      "collaborator": "Iván Macià",
+      "team": "CD PUEBLA DE SOTO",
+      "competition_label": "LIGA AUTONÓMICA JUVENIL · GRUPO SEGUNDO",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14454755&cod_primaria=3001860",
+      "provider": "federation",
+      "team_id": "14454755",
+      "competition_id": "24032666",
+      "group_id": "24032668",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "stats": {
+        "team_played": 10,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
+      "updated_at": "2026-11-18T19:48:56+00:00",
+      "coverage": {
+        "team_played": 10,
+        "acts_checked": 2,
+        "minutes_checked": 2,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
+        "confirmed": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 36,
+          "goals": 0
+        },
+        "field_checked": {
+          "called_up": 2,
+          "starts": 2,
+          "bench": 2,
+          "played": 2,
+          "minutes": 2,
+          "goals": 2
+        },
+        "calendar_complete": true
+      },
+      "calendar_complete": true
+    },
+    {
+      "id": "p-093e1f03-53b8-4c04-8315-c64a44760528",
+      "name": "Jhosmer Ramirez Quispe",
+      "federation": "murcia",
+      "collaborator": "Iván Macià",
+      "team": "CD PUEBLA DE SOTO",
+      "competition_label": "SEGUNDA JUVENIL · GRUPO CUARTO",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=34067&cod_primaria=3001860",
+      "provider": "federation",
+      "team_id": "34067",
+      "competition_id": "24032757",
+      "group_id": "24032761",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "stats": {
+        "team_played": 5,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
+      "updated_at": "2026-11-19T09:21:26+00:00",
+      "coverage": {
+        "team_played": 5,
+        "acts_checked": 2,
+        "minutes_checked": 2,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
+        "confirmed": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 45,
+          "goals": 0
+        },
+        "field_checked": {
+          "called_up": 2,
+          "starts": 2,
+          "bench": 2,
+          "played": 2,
+          "minutes": 2,
+          "goals": 2
+        },
+        "calendar_complete": true
+      },
+      "calendar_complete": true
+    },
+    {
+      "id": "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4",
+      "name": "Angel David Ramirez Quispe",
+      "federation": "murcia",
+      "collaborator": "Iván Macià",
+      "team": "CD PUEBLA DE SOTO",
+      "competition_label": "SEGUNDA JUVENIL · GRUPO CUARTO",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=34067&cod_primaria=3001860",
+      "provider": "federation",
+      "team_id": "34067",
+      "competition_id": "24032757",
+      "group_id": "24032761",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "stats": {
+        "team_played": 5,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "coverage": {
+        "team_played": 5,
+        "acts_checked": 2,
+        "minutes_checked": 2,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
+        "confirmed": {
+          "called_up": 2,
+          "starts": 0,
+          "bench": 2,
+          "played": 1,
+          "minutes": 45,
+          "goals": 0
+        },
+        "field_checked": {
+          "called_up": 2,
+          "starts": 2,
+          "bench": 2,
+          "played": 2,
+          "minutes": 2,
+          "goals": 2
+        },
+        "calendar_complete": true
+      },
+      "calendar_complete": true
     },
     {
       "id": "iker-piqueras-mora",
@@ -5630,7 +5630,6 @@
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
-      "calendar_complete": true,
       "updated_at": "2026-11-19T02:03:07+00:00",
       "coverage": {
         "team_played": 8,
@@ -5654,6 +5653,62 @@
           "goals": 8
         },
         "calendar_complete": true
+      },
+      "calendar_complete": true
+    },
+    {
+      "id": "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a",
+      "name": "Amr Chelli El Hadri",
+      "federation": "valencia",
+      "collaborator": "Carlos Baena",
+      "team": "Primer Toque C.F. 'A'",
+      "competition_label": "Lliga Comunitat Juvenil · Nord",
+      "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=19591",
+      "provider": "federation",
+      "team_id": "19591",
+      "competition_id": "905431546",
+      "group_id": "905431547",
+      "age_category": "juvenil",
+      "team_age_category": "juvenil",
+      "stats": {
+        "team_played": null,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074481054_PRIMER_TOQUE_CF_ESCUDO.jpg",
+      "stats_note": "Calendario inicial de próximas jornadas. El histórico y las estadísticas se completan en las actualizaciones deportivas.",
+      "calendar_complete": false,
+      "updated_at": "2026-11-19T10:38:46+00:00",
+      "coverage": {
+        "team_played": 1,
+        "acts_checked": 0,
+        "minutes_checked": 0,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
+        "confirmed": {
+          "called_up": null,
+          "starts": null,
+          "bench": null,
+          "played": null,
+          "minutes": null,
+          "goals": null,
+          "team_played": 1
+        },
+        "field_checked": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
+        "calendar_complete": false
       }
     },
     {
@@ -7480,20 +7535,20 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 46,
-          "goals": 0
-        },
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
           "played": 1,
           "minutes": 63,
+          "goals": 0
+        },
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         },
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
@@ -7504,22 +7559,22 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
-          "called_up": 0,
-          "starts": 0,
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
+          "called_up": 1,
+          "starts": 1,
           "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "played": 1,
+          "minutes": 46,
           "goals": 0
         }
       },
       "home_team_id": "21492710",
       "away_team_id": "15294614",
       "participation_checked_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-18T11:19:11+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00"
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00"
       },
       "updated_at": "2026-11-19T01:55:48+00:00",
       "participation_attempted_at": {},
@@ -7824,13 +7879,13 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
-          "called_up": 1,
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
+          "called_up": 0,
           "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 36,
-          "goals": 1
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         },
         "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": {
           "called_up": 1,
@@ -7840,21 +7895,21 @@
           "minutes": 20,
           "goals": 1
         },
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
-          "called_up": 0,
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
+          "called_up": 1,
           "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
+          "bench": 1,
+          "played": 1,
+          "minutes": 36,
+          "goals": 1
         }
       },
       "home_team_id": "2128",
       "away_team_id": "107",
       "participation_checked_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00",
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00",
         "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-18T11:21:14+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00"
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_attempted_at": {},
@@ -8198,7 +8253,7 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -8206,12 +8261,12 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
-          "called_up": 0,
-          "starts": 0,
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 1,
           "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "played": 1,
+          "minutes": 90,
           "goals": 0
         },
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
@@ -8222,22 +8277,22 @@
           "minutes": 90,
           "goals": 0
         },
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
-          "called_up": 1,
-          "starts": 1,
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+          "called_up": 0,
+          "starts": 0,
           "bench": 0,
-          "played": 1,
-          "minutes": 90,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         }
       },
       "home_team_id": "12325489",
       "away_team_id": "4926357",
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_attempted_at": {},
@@ -8575,8 +8630,8 @@
       ],
       "is_internal_matchup": false,
       "participation_attempted_at": {
-        "p-b2dd7482-24e2-4895-b761-d6e63264da85": "2026-11-19T09:15:26+00:00",
-        "p-787af8bf-494e-43a7-8f50-97c240e4efd6": "2026-11-19T09:17:18+00:00"
+        "p-787af8bf-494e-43a7-8f50-97c240e4efd6": "2026-11-19T09:17:18+00:00",
+        "p-b2dd7482-24e2-4895-b761-d6e63264da85": "2026-11-19T09:15:26+00:00"
       }
     },
     {
@@ -8814,14 +8869,6 @@
           "minutes": 90,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 45,
-          "goals": 0
-        },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
           "called_up": 1,
           "starts": 0,
@@ -8837,15 +8884,23 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 45,
+          "goals": 0
         }
       },
       "home_team_id": "626",
       "away_team_id": "47",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-18T11:19:42+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-18T11:20:39+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00"
       },
       "updated_at": "2026-11-19T01:55:47+00:00",
       "participation_attempted_at": {},
@@ -9984,14 +10039,6 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": {
           "called_up": 1,
           "starts": 0,
@@ -9999,13 +10046,21 @@
           "played": 1,
           "minutes": 12,
           "goals": 0
+        },
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "3353735",
       "away_team_id": "283",
       "participation_checked_at": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-18T16:26:09+00:00",
-        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-18T16:26:11+00:00"
+        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-18T16:26:11+00:00",
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-18T16:26:09+00:00"
       },
       "updated_at": "2026-11-19T01:59:34+00:00",
       "participation_attempted_at": {},
@@ -10249,6 +10304,14 @@
           "minutes": 90,
           "goals": 0
         },
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
         "p-32d2dfc7-11bf-4956-a267-59fda04aae64": {
           "called_up": 0,
           "starts": 0,
@@ -10264,23 +10327,15 @@
           "played": 1,
           "minutes": 90,
           "goals": 0
-        },
-        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
         }
       },
       "home_team_id": "1594",
       "away_team_id": "73",
       "participation_checked_at": {
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-18T11:21:31+00:00",
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00",
         "p-32d2dfc7-11bf-4956-a267-59fda04aae64": "2026-11-18T11:22:09+00:00",
-        "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": "2026-11-18T11:22:10+00:00",
-        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00"
+        "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": "2026-11-18T11:22:10+00:00"
       },
       "updated_at": "2026-11-19T01:56:17+00:00",
       "participation_attempted_at": {},
@@ -11244,20 +11299,20 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
           "played": 1,
           "minutes": 62,
+          "goals": 0
+        },
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         },
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
@@ -11268,7 +11323,7 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -11280,10 +11335,10 @@
       "home_team_id": "2453",
       "away_team_id": "21492710",
       "participation_checked_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-18T11:19:11+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00"
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00"
       },
       "updated_at": "2026-11-19T01:55:48+00:00",
       "participation_attempted_at": {},
@@ -11383,14 +11438,6 @@
           "minutes": 46,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
           "called_up": 1,
           "starts": 0,
@@ -11406,15 +11453,23 @@
           "played": 1,
           "minutes": 25,
           "goals": 0
+        },
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "47",
       "away_team_id": "2348",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-18T11:19:42+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-18T11:20:39+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00"
       },
       "updated_at": "2026-11-19T01:55:47+00:00",
       "participation_attempted_at": {},
@@ -11604,14 +11659,6 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 25,
-          "goals": 0
-        },
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
           "called_up": 1,
           "starts": 0,
@@ -11619,13 +11666,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 25,
+          "goals": 0
         }
       },
       "home_team_id": "107",
       "away_team_id": "295",
       "participation_checked_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00"
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00",
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_attempted_at": {},
@@ -11836,8 +11891,8 @@
       "away_player_ids": [],
       "is_internal_matchup": false,
       "participation_attempted_at": {
-        "p-b2dd7482-24e2-4895-b761-d6e63264da85": "2026-11-19T09:15:26+00:00",
-        "p-787af8bf-494e-43a7-8f50-97c240e4efd6": "2026-11-19T09:17:18+00:00"
+        "p-787af8bf-494e-43a7-8f50-97c240e4efd6": "2026-11-19T09:17:18+00:00",
+        "p-b2dd7482-24e2-4895-b761-d6e63264da85": "2026-11-19T09:15:26+00:00"
       }
     },
     {
@@ -12576,14 +12631,6 @@
       "group_id": "26737705",
       "season": "2026-2027",
       "participation": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-5caca805-bf45-40ee-8c28-624512fe640c": {
           "called_up": 1,
           "starts": 0,
@@ -12591,13 +12638,21 @@
           "played": 1,
           "minutes": 11,
           "goals": 0
+        },
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "21493799",
       "away_team_id": "2278108",
       "participation_checked_at": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00",
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00"
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00",
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00"
       },
       "updated_at": "2026-11-19T01:59:19+00:00",
       "participation_attempted_at": {},
@@ -13027,14 +13082,6 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 54,
-          "goals": 0
-        },
         "p-074fd601-5fdb-412c-b493-564bb61f64d0": {
           "called_up": 0,
           "starts": 0,
@@ -13042,13 +13089,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 54,
+          "goals": 0
         }
       },
       "home_team_id": "2739612",
       "away_team_id": "680799",
       "participation_checked_at": {
-        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": "2026-11-18T11:16:29+00:00",
-        "p-074fd601-5fdb-412c-b493-564bb61f64d0": "2026-11-18T11:24:49+00:00"
+        "p-074fd601-5fdb-412c-b493-564bb61f64d0": "2026-11-18T11:24:49+00:00",
+        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": "2026-11-18T11:16:29+00:00"
       },
       "updated_at": "2026-11-19T01:57:24+00:00",
       "participation_attempted_at": {},
@@ -13188,20 +13243,20 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 57,
-          "goals": 0
-        },
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
           "played": 0,
           "minutes": 0,
+          "goals": 0
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
           "goals": 0
         },
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
@@ -13212,22 +13267,22 @@
           "minutes": 86,
           "goals": 1
         },
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
           "called_up": 1,
-          "starts": 1,
-          "bench": 0,
+          "starts": 0,
+          "bench": 1,
           "played": 1,
-          "minutes": 90,
+          "minutes": 57,
           "goals": 0
         }
       },
       "home_team_id": "1668",
       "away_team_id": "12325489",
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_attempted_at": {},
@@ -14542,18 +14597,18 @@
       "group_id": "58161940",
       "season": "2026-2027",
       "participation": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": null,
-          "minutes": null,
-          "goals": 0
-        },
         "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
+          "played": null,
+          "minutes": null,
+          "goals": 0
+        },
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
           "played": null,
           "minutes": null,
           "goals": 0
@@ -14562,12 +14617,12 @@
       "home_team_id": "28484298",
       "away_team_id": "38991",
       "participation_checked_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:32+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:33+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:33+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:32+00:00"
       },
       "participation_attempted_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:31+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:33+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:33+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:31+00:00"
       },
       "updated_at": "2026-11-19T02:01:34+00:00",
       "participation_source": {},
@@ -14605,18 +14660,18 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
           "played": 0,
           "minutes": 0,
           "goals": 0
@@ -14625,8 +14680,8 @@
       "home_team_id": "563",
       "away_team_id": "107",
       "participation_checked_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00"
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00",
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_attempted_at": {},
@@ -14935,8 +14990,8 @@
       ],
       "is_internal_matchup": false,
       "participation_attempted_at": {
-        "p-b2dd7482-24e2-4895-b761-d6e63264da85": "2026-11-19T09:15:26+00:00",
-        "p-787af8bf-494e-43a7-8f50-97c240e4efd6": "2026-11-19T09:17:18+00:00"
+        "p-787af8bf-494e-43a7-8f50-97c240e4efd6": "2026-11-19T09:17:18+00:00",
+        "p-b2dd7482-24e2-4895-b761-d6e63264da85": "2026-11-19T09:15:26+00:00"
       }
     },
     {
@@ -15065,7 +15120,7 @@
       "group_id": "26737750",
       "season": "2026-2027",
       "participation": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
@@ -15073,7 +15128,7 @@
           "minutes": null,
           "goals": 0
         },
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
@@ -15085,12 +15140,12 @@
       "home_team_id": "3346547",
       "away_team_id": "850571",
       "participation_checked_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:09+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:11+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:11+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:09+00:00"
       },
       "participation_attempted_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:06+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:10+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:10+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:06+00:00"
       },
       "updated_at": "2026-11-19T02:01:11+00:00",
       "participation_source": {},
@@ -15182,14 +15237,6 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 73,
-          "goals": 0
-        },
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
           "called_up": 1,
           "starts": 1,
@@ -15198,7 +15245,7 @@
           "minutes": 75,
           "goals": 0
         },
-        "p-8f643924-4932-457d-839f-dd3b87cd5722": {
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -15214,7 +15261,15 @@
           "minutes": 90,
           "goals": 0
         },
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 73,
+          "goals": 0
+        },
+        "p-8f643924-4932-457d-839f-dd3b87cd5722": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -15226,11 +15281,11 @@
       "home_team_id": "21492710",
       "away_team_id": "1175",
       "participation_checked_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-18T11:19:11+00:00",
-        "p-8f643924-4932-457d-839f-dd3b87cd5722": "2026-11-18T11:19:54+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00"
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
+        "p-8f643924-4932-457d-839f-dd3b87cd5722": "2026-11-18T11:19:54+00:00"
       },
       "updated_at": "2026-11-19T01:55:48+00:00",
       "participation_attempted_at": {},
@@ -16335,28 +16390,12 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 20,
-          "goals": 0
-        },
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
           "played": 0,
           "minutes": 0,
-          "goals": 0
-        },
-        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 90,
           "goals": 0
         },
         "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
@@ -16366,6 +16405,22 @@
           "played": 1,
           "minutes": 90,
           "goals": 2
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
+        },
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 20,
+          "goals": 0
         }
       },
       "home_team_id": "12325489",
@@ -16375,10 +16430,10 @@
         "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00"
       },
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-19T02:01:14+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_source": {},
@@ -16618,14 +16673,6 @@
       "group_id": "26737700",
       "season": "2026-2027",
       "participation": {
-        "p-d6faacef-21ed-421e-a5bb-93e15b1afbf8": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-65971a4f-9d48-44c7-aa06-8273b332add7": {
           "called_up": 1,
           "starts": 1,
@@ -16633,13 +16680,21 @@
           "played": 1,
           "minutes": 90,
           "goals": 0
+        },
+        "p-d6faacef-21ed-421e-a5bb-93e15b1afbf8": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "193",
       "away_team_id": "466770",
       "participation_checked_at": {
-        "p-d6faacef-21ed-421e-a5bb-93e15b1afbf8": "2026-11-18T11:15:14+00:00",
-        "p-65971a4f-9d48-44c7-aa06-8273b332add7": "2026-11-18T11:16:01+00:00"
+        "p-65971a4f-9d48-44c7-aa06-8273b332add7": "2026-11-18T11:16:01+00:00",
+        "p-d6faacef-21ed-421e-a5bb-93e15b1afbf8": "2026-11-18T11:15:14+00:00"
       },
       "updated_at": "2026-11-19T01:53:05+00:00",
       "participation_attempted_at": {},
@@ -17859,14 +17914,6 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 19,
-          "goals": 0
-        },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
           "called_up": 1,
           "starts": 1,
@@ -17882,15 +17929,23 @@
           "played": 1,
           "minutes": 19,
           "goals": 0
+        },
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 19,
+          "goals": 0
         }
       },
       "home_team_id": "13613753",
       "away_team_id": "47",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-18T11:19:42+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-18T11:20:39+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00"
       },
       "updated_at": "2026-11-19T01:55:47+00:00",
       "participation_attempted_at": {},
@@ -18078,7 +18133,7 @@
       "group_id": "26737705",
       "season": "2026-2027",
       "participation": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -18086,7 +18141,7 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": {
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -18098,8 +18153,8 @@
       "home_team_id": "2278108",
       "away_team_id": "2728556",
       "participation_checked_at": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00",
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00"
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00",
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00"
       },
       "updated_at": "2026-11-19T01:59:19+00:00",
       "participation_attempted_at": {},
@@ -18927,14 +18982,6 @@
       "group_id": "26737750",
       "season": "2026-2027",
       "participation": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
           "called_up": 1,
           "starts": 1,
@@ -18942,13 +18989,21 @@
           "played": 1,
           "minutes": null,
           "goals": 0
+        },
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "850571",
       "away_team_id": "6805711",
       "participation_checked_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:11+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:11+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00"
       },
       "participation_attempted_at": {
         "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:10+00:00"
@@ -19542,14 +19597,6 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 84,
-          "goals": 0
-        },
         "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": {
           "called_up": 0,
           "starts": 0,
@@ -19557,17 +19604,25 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 84,
+          "goals": 0
         }
       },
       "home_team_id": "346995",
       "away_team_id": "3353735",
       "participation_attempted_at": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:30+00:00",
-        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00"
+        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00",
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:30+00:00"
       },
       "participation_checked_at": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:33+00:00",
-        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00"
+        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00",
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:33+00:00"
       },
       "updated_at": "2026-11-19T01:59:34+00:00",
       "participation_source": {},
@@ -20221,14 +20276,6 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 16,
-          "goals": 0
-        },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
           "called_up": 1,
           "starts": 0,
@@ -20244,15 +20291,23 @@
           "played": 1,
           "minutes": 16,
           "goals": 0
+        },
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 16,
+          "goals": 0
         }
       },
       "home_team_id": "47",
       "away_team_id": "1343",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-18T11:19:42+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-18T11:20:39+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00"
       },
       "updated_at": "2026-11-19T01:55:47+00:00",
       "participation_attempted_at": {},
@@ -20382,12 +20437,12 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f": {
+        "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": {
           "called_up": 1,
-          "starts": 0,
-          "bench": 1,
+          "starts": 1,
+          "bench": 0,
           "played": 1,
-          "minutes": 20,
+          "minutes": 90,
           "goals": 0
         },
         "p-32d2dfc7-11bf-4956-a267-59fda04aae64": {
@@ -20398,12 +20453,12 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": {
+        "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f": {
           "called_up": 1,
-          "starts": 1,
-          "bench": 0,
+          "starts": 0,
+          "bench": 1,
           "played": 1,
-          "minutes": 90,
+          "minutes": 20,
           "goals": 0
         },
         "p-85788fbf-28ec-422a-bb16-b627987f3fb4": {
@@ -20418,9 +20473,9 @@
       "home_team_id": "73",
       "away_team_id": "2365",
       "participation_checked_at": {
-        "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f": "2026-11-18T11:20:56+00:00",
-        "p-32d2dfc7-11bf-4956-a267-59fda04aae64": "2026-11-18T11:22:09+00:00",
         "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": "2026-11-18T11:22:10+00:00",
+        "p-32d2dfc7-11bf-4956-a267-59fda04aae64": "2026-11-18T11:22:09+00:00",
+        "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f": "2026-11-18T11:20:56+00:00",
         "p-85788fbf-28ec-422a-bb16-b627987f3fb4": "2026-11-18T16:27:38+00:00"
       },
       "updated_at": "2026-11-19T01:59:47+00:00",
@@ -20465,20 +20520,20 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
           "played": 1,
           "minutes": 26,
+          "goals": 0
+        },
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         },
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
@@ -20489,7 +20544,7 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -20501,10 +20556,10 @@
       "home_team_id": "1402",
       "away_team_id": "21492710",
       "participation_checked_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-18T11:19:11+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00"
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00"
       },
       "updated_at": "2026-11-19T01:55:48+00:00",
       "participation_attempted_at": {},
@@ -21159,14 +21214,6 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 72,
-          "goals": 0
-        },
         "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": {
           "called_up": 1,
           "starts": 0,
@@ -21174,13 +21221,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 72,
+          "goals": 0
         }
       },
       "home_team_id": "2739612",
       "away_team_id": "1630",
       "participation_checked_at": {
-        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": "2026-11-18T11:16:29+00:00",
-        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": "2026-11-18T11:20:10+00:00"
+        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": "2026-11-18T11:20:10+00:00",
+        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": "2026-11-18T11:16:29+00:00"
       },
       "updated_at": "2026-11-19T01:55:02+00:00",
       "participation_attempted_at": {},
@@ -21849,18 +21904,18 @@
       "group_id": "58161940",
       "season": "2026-2027",
       "participation": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": null,
-          "minutes": null,
-          "goals": 0
-        },
         "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
+          "played": null,
+          "minutes": null,
+          "goals": 0
+        },
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
           "played": null,
           "minutes": null,
           "goals": 0
@@ -21869,12 +21924,12 @@
       "home_team_id": "36104",
       "away_team_id": "28484298",
       "participation_checked_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:33+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:34+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:34+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:33+00:00"
       },
       "participation_attempted_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:31+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:33+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:33+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:31+00:00"
       },
       "updated_at": "2026-11-19T02:01:34+00:00",
       "participation_source": {},
@@ -22228,14 +22283,6 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 44,
-          "goals": 0
-        },
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
           "called_up": 0,
           "starts": 0,
@@ -22243,13 +22290,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 44,
+          "goals": 0
         }
       },
       "home_team_id": "107",
       "away_team_id": "2173",
       "participation_checked_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00"
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00",
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_attempted_at": {},
@@ -22290,20 +22345,20 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 30,
-          "goals": 0
-        },
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
           "played": 0,
           "minutes": 0,
+          "goals": 0
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 60,
           "goals": 0
         },
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
@@ -22314,22 +22369,22 @@
           "minutes": 90,
           "goals": 0
         },
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
           "called_up": 1,
-          "starts": 1,
-          "bench": 0,
+          "starts": 0,
+          "bench": 1,
           "played": 1,
-          "minutes": 60,
+          "minutes": 30,
           "goals": 0
         }
       },
       "home_team_id": "1618",
       "away_team_id": "12325489",
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_attempted_at": {},
@@ -22517,18 +22572,18 @@
           "minutes": 90,
           "goals": 0
         },
-        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
+        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
           "played": 0,
           "minutes": 0,
           "goals": 0
@@ -22538,8 +22593,8 @@
       "away_team_id": "60",
       "participation_checked_at": {
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-18T11:21:31+00:00",
-        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": "2026-11-18T11:22:42+00:00",
-        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00"
+        "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00",
+        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": "2026-11-18T11:22:42+00:00"
       },
       "updated_at": "2026-11-19T01:56:17+00:00",
       "participation_attempted_at": {},
@@ -22903,14 +22958,6 @@
       "group_id": "26737705",
       "season": "2026-2027",
       "participation": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 22,
-          "goals": 0
-        },
         "p-5caca805-bf45-40ee-8c28-624512fe640c": {
           "called_up": 0,
           "starts": 0,
@@ -22918,13 +22965,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 22,
+          "goals": 0
         }
       },
       "home_team_id": "763",
       "away_team_id": "2278108",
       "participation_checked_at": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00",
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00"
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00",
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00"
       },
       "updated_at": "2026-11-19T01:59:19+00:00",
       "participation_attempted_at": {},
@@ -23199,7 +23254,7 @@
       "group_id": "26737750",
       "season": "2026-2027",
       "participation": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
@@ -23207,7 +23262,7 @@
           "minutes": null,
           "goals": 0
         },
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
@@ -23219,12 +23274,12 @@
       "home_team_id": "285",
       "away_team_id": "850571",
       "participation_checked_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:08+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:10+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:10+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:08+00:00"
       },
       "participation_attempted_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:06+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:10+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-19T02:01:10+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:06+00:00"
       },
       "updated_at": "2026-11-19T02:01:11+00:00",
       "participation_source": {},
@@ -23508,7 +23563,7 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -23516,12 +23571,12 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
-          "called_up": 0,
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
           "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 34,
           "goals": 0
         },
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
@@ -23532,22 +23587,22 @@
           "minutes": 75,
           "goals": 1
         },
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
-          "called_up": 1,
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+          "called_up": 0,
           "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 34,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         }
       },
       "home_team_id": "1148",
       "away_team_id": "12325489",
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_attempted_at": {},
@@ -23735,7 +23790,7 @@
       "group_id": "58161940",
       "season": "2026-2027",
       "participation": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
@@ -23743,7 +23798,7 @@
           "minutes": null,
           "goals": 0
         },
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
@@ -23755,12 +23810,12 @@
       "home_team_id": "28484298",
       "away_team_id": "37379",
       "participation_checked_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:33+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:34+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:34+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:33+00:00"
       },
       "participation_attempted_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:31+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:33+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-19T02:01:33+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-19T02:01:31+00:00"
       },
       "updated_at": "2026-11-19T02:01:34+00:00",
       "participation_source": {},
@@ -24151,14 +24206,6 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 72,
-          "goals": 3
-        },
         "p-95d2dae8-8136-41cc-af8a-60447bb2281a": {
           "called_up": 1,
           "starts": 1,
@@ -24166,13 +24213,21 @@
           "played": 1,
           "minutes": 90,
           "goals": 0
+        },
+        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 72,
+          "goals": 3
         }
       },
       "home_team_id": "1246",
       "away_team_id": "2739612",
       "participation_checked_at": {
-        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": "2026-11-18T11:16:29+00:00",
-        "p-95d2dae8-8136-41cc-af8a-60447bb2281a": "2026-11-18T11:24:58+00:00"
+        "p-95d2dae8-8136-41cc-af8a-60447bb2281a": "2026-11-18T11:24:58+00:00",
+        "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f": "2026-11-18T11:16:29+00:00"
       },
       "updated_at": "2026-11-19T01:57:26+00:00",
       "participation_attempted_at": {},
@@ -24367,14 +24422,6 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 90,
-          "goals": 0
-        },
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
           "called_up": 1,
           "starts": 1,
@@ -24382,6 +24429,14 @@
           "played": 1,
           "minutes": 90,
           "goals": 2
+        },
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 19,
+          "goals": 0
         },
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
           "called_up": 1,
@@ -24391,12 +24446,12 @@
           "minutes": 90,
           "goals": 0
         },
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
           "called_up": 1,
-          "starts": 0,
-          "bench": 1,
+          "starts": 1,
+          "bench": 0,
           "played": 1,
-          "minutes": 19,
+          "minutes": 90,
           "goals": 0
         },
         "p-89e40494-578f-4315-bb91-4100ba2f6929": {
@@ -24411,10 +24466,10 @@
       "home_team_id": "21492710",
       "away_team_id": "3347198",
       "participation_checked_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-18T11:19:11+00:00",
-        "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
         "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00",
+        "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
         "p-89e40494-578f-4315-bb91-4100ba2f6929": "2026-11-18T11:25:47+00:00"
       },
       "updated_at": "2026-11-19T01:57:47+00:00",
@@ -24985,14 +25040,6 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 72,
-          "goals": 0
-        },
         "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": {
           "called_up": 0,
           "starts": 0,
@@ -25000,13 +25047,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 72,
+          "goals": 0
         }
       },
       "home_team_id": "3353735",
       "away_team_id": "368",
       "participation_checked_at": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-18T16:26:09+00:00",
-        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-18T16:26:11+00:00"
+        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-18T16:26:11+00:00",
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-18T16:26:09+00:00"
       },
       "updated_at": "2026-11-19T01:59:34+00:00",
       "participation_attempted_at": {},
@@ -25476,14 +25531,6 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 11,
-          "goals": 0
-        },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
           "called_up": 1,
           "starts": 1,
@@ -25499,15 +25546,23 @@
           "played": 1,
           "minutes": 11,
           "goals": 0
+        },
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 11,
+          "goals": 0
         }
       },
       "home_team_id": "6803043",
       "away_team_id": "47",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-18T11:19:42+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-18T11:20:39+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00"
       },
       "updated_at": "2026-11-19T01:55:47+00:00",
       "participation_attempted_at": {},
@@ -26446,14 +26501,6 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 90,
-          "goals": 1
-        },
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
           "called_up": 1,
           "starts": 0,
@@ -26461,13 +26508,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 1
         }
       },
       "home_team_id": "107",
       "away_team_id": "96",
       "participation_checked_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00"
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00",
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_attempted_at": {},
@@ -27199,14 +27254,6 @@
       "group_id": "26737705",
       "season": "2026-2027",
       "participation": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 20,
-          "goals": 0
-        },
         "p-5caca805-bf45-40ee-8c28-624512fe640c": {
           "called_up": 0,
           "starts": 0,
@@ -27214,13 +27261,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 20,
+          "goals": 0
         }
       },
       "home_team_id": "2278108",
       "away_team_id": "1526",
       "participation_checked_at": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00",
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00"
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00",
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00"
       },
       "updated_at": "2026-11-19T01:59:19+00:00",
       "participation_attempted_at": {},
@@ -27350,20 +27405,20 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 45,
-          "goals": 0
-        },
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
           "played": 1,
           "minutes": 90,
+          "goals": 0
+        },
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         },
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
@@ -27374,22 +27429,22 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
-          "called_up": 0,
-          "starts": 0,
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
+          "called_up": 1,
+          "starts": 1,
           "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "played": 1,
+          "minutes": 45,
           "goals": 0
         }
       },
       "home_team_id": "6",
       "away_team_id": "21492710",
       "participation_checked_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-18T11:19:11+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00"
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00"
       },
       "updated_at": "2026-11-19T01:55:48+00:00",
       "participation_attempted_at": {},
@@ -27898,14 +27953,6 @@
       "group_id": "26737750",
       "season": "2026-2027",
       "participation": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": null,
-          "goals": 0
-        },
         "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
           "called_up": 1,
           "starts": 0,
@@ -27913,13 +27960,21 @@
           "played": 0,
           "minutes": null,
           "goals": 0
+        },
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": null,
+          "goals": 0
         }
       },
       "home_team_id": "850571",
       "away_team_id": "428",
       "participation_checked_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:07+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-19T02:01:07+00:00"
       },
       "updated_at": "2026-11-19T02:01:11+00:00",
       "participation_attempted_at": {
@@ -28821,14 +28876,6 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 90,
-          "goals": 0
-        },
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
           "called_up": 0,
           "starts": 0,
@@ -28836,13 +28883,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
         }
       },
       "home_team_id": "21",
       "away_team_id": "107",
       "participation_checked_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00"
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00",
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_attempted_at": {},
@@ -29284,15 +29339,15 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
-          "called_up": 1,
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
+          "called_up": 0,
           "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 18,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         },
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -29308,22 +29363,22 @@
           "minutes": 72,
           "goals": 0
         },
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
-          "called_up": 0,
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+          "called_up": 1,
           "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 18,
           "goals": 0
         }
       },
       "home_team_id": "12325489",
       "away_team_id": "10654858",
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_attempted_at": {},
@@ -29374,14 +29429,6 @@
           "minutes": 22,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
           "called_up": 0,
           "starts": 0,
@@ -29397,15 +29444,23 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "47",
       "away_team_id": "1031415",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-18T11:19:42+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-18T11:20:39+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00"
       },
       "updated_at": "2026-11-19T01:55:47+00:00",
       "participation_attempted_at": {},
@@ -29549,20 +29604,20 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-074fd601-5fdb-412c-b493-564bb61f64d0": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 10,
-          "goals": 0
-        },
         "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
           "played": 1,
           "minutes": 30,
+          "goals": 0
+        },
+        "p-074fd601-5fdb-412c-b493-564bb61f64d0": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 10,
           "goals": 0
         },
         "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": {
@@ -29577,8 +29632,8 @@
       "home_team_id": "680799",
       "away_team_id": "3353735",
       "participation_checked_at": {
-        "p-074fd601-5fdb-412c-b493-564bb61f64d0": "2026-11-18T11:24:49+00:00",
         "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-18T16:26:09+00:00",
+        "p-074fd601-5fdb-412c-b493-564bb61f64d0": "2026-11-18T11:24:49+00:00",
         "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-18T16:26:11+00:00"
       },
       "updated_at": "2026-11-19T01:59:34+00:00",
@@ -29622,14 +29677,6 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 24,
-          "goals": 0
-        },
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": {
           "called_up": 1,
           "starts": 1,
@@ -29646,6 +29693,14 @@
           "minutes": 0,
           "goals": 0
         },
+        "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 24,
+          "goals": 0
+        },
         "p-85788fbf-28ec-422a-bb16-b627987f3fb4": {
           "called_up": 1,
           "starts": 1,
@@ -29658,9 +29713,9 @@
       "home_team_id": "1594",
       "away_team_id": "2365",
       "participation_checked_at": {
-        "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f": "2026-11-18T11:20:56+00:00",
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-18T11:21:31+00:00",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-18T11:22:43+00:00",
+        "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f": "2026-11-18T11:20:56+00:00",
         "p-85788fbf-28ec-422a-bb16-b627987f3fb4": "2026-11-18T16:27:38+00:00"
       },
       "updated_at": "2026-11-19T01:59:47+00:00",
@@ -30658,14 +30713,6 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "jorge-martin-andres": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 90,
-          "goals": 0
-        },
         "p-cc73b2c6-de51-4596-882d-434c906d5b40": {
           "called_up": 1,
           "starts": 0,
@@ -30673,13 +30720,21 @@
           "played": 1,
           "minutes": 11,
           "goals": 0
+        },
+        "jorge-martin-andres": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
         }
       },
       "home_team_id": "466507",
       "away_team_id": "2023",
       "participation_checked_at": {
-        "jorge-martin-andres": "2026-11-18T10:24:07+00:00",
-        "p-cc73b2c6-de51-4596-882d-434c906d5b40": "2026-11-18T11:17:30+00:00"
+        "p-cc73b2c6-de51-4596-882d-434c906d5b40": "2026-11-18T11:17:30+00:00",
+        "jorge-martin-andres": "2026-11-18T10:24:07+00:00"
       },
       "updated_at": "2026-11-19T01:53:43+00:00",
       "participation_attempted_at": {},
@@ -31262,7 +31317,7 @@
       "group_id": "26737705",
       "season": "2026-2027",
       "participation": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -31270,7 +31325,7 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": {
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -31282,8 +31337,8 @@
       "home_team_id": "421",
       "away_team_id": "2278108",
       "participation_checked_at": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00",
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00"
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00",
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00"
       },
       "updated_at": "2026-11-19T01:59:19+00:00",
       "participation_attempted_at": {},
@@ -31629,7 +31684,7 @@
       "group_id": "58161940",
       "season": "2026-2027",
       "participation": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
@@ -31637,7 +31692,7 @@
           "minutes": null,
           "goals": 0
         },
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
@@ -31649,8 +31704,8 @@
       "home_team_id": "7001035",
       "away_team_id": "28484298",
       "participation_checked_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00"
       },
       "updated_at": "2026-11-19T02:01:34+00:00",
       "participation_attempted_at": {},
@@ -32057,14 +32112,6 @@
       "group_id": "26737750",
       "season": "2026-2027",
       "participation": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 0,
-          "minutes": null,
-          "goals": 0
-        },
         "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
           "called_up": 1,
           "starts": 1,
@@ -32072,13 +32119,21 @@
           "played": 1,
           "minutes": null,
           "goals": 0
+        },
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": null,
+          "goals": 0
         }
       },
       "home_team_id": "21493805",
       "away_team_id": "850571",
       "participation_checked_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00"
       },
       "updated_at": "2026-11-19T02:01:11+00:00",
       "participation_attempted_at": {},
@@ -32419,14 +32474,6 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": {
           "called_up": 1,
           "starts": 0,
@@ -32434,13 +32481,21 @@
           "played": 1,
           "minutes": 9,
           "goals": 0
+        },
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "4938466",
       "away_team_id": "3353735",
       "participation_checked_at": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-18T16:26:09+00:00",
-        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-18T16:26:11+00:00"
+        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-18T16:26:11+00:00",
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-18T16:26:09+00:00"
       },
       "updated_at": "2026-11-19T01:59:34+00:00",
       "participation_attempted_at": {},
@@ -32668,18 +32723,18 @@
       "group_id": "58161940",
       "season": "2026-2027",
       "participation": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": null,
-          "minutes": null,
-          "goals": 0
-        },
         "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
+          "played": null,
+          "minutes": null,
+          "goals": 0
+        },
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
           "played": null,
           "minutes": null,
           "goals": 0
@@ -32688,8 +32743,8 @@
       "home_team_id": "28484298",
       "away_team_id": "37756",
       "participation_checked_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00"
       },
       "updated_at": "2026-11-19T02:01:34+00:00",
       "participation_attempted_at": {},
@@ -32786,7 +32841,7 @@
           "minutes": 37,
           "goals": 0
         },
-        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": {
+        "p-85788fbf-28ec-422a-bb16-b627987f3fb4": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
@@ -32794,7 +32849,7 @@
           "minutes": 90,
           "goals": 0
         },
-        "p-85788fbf-28ec-422a-bb16-b627987f3fb4": {
+        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
@@ -32807,8 +32862,8 @@
       "away_team_id": "60",
       "participation_checked_at": {
         "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f": "2026-11-18T11:20:56+00:00",
-        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": "2026-11-18T11:22:42+00:00",
-        "p-85788fbf-28ec-422a-bb16-b627987f3fb4": "2026-11-18T16:27:38+00:00"
+        "p-85788fbf-28ec-422a-bb16-b627987f3fb4": "2026-11-18T16:27:38+00:00",
+        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": "2026-11-18T11:22:42+00:00"
       },
       "updated_at": "2026-11-19T01:59:47+00:00",
       "participation_attempted_at": {},
@@ -32849,18 +32904,18 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-074fd601-5fdb-412c-b493-564bb61f64d0": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
+        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
           "played": 0,
           "minutes": 0,
           "goals": 0
@@ -32869,8 +32924,8 @@
       "home_team_id": "1630",
       "away_team_id": "680799",
       "participation_checked_at": {
-        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": "2026-11-18T11:20:10+00:00",
-        "p-074fd601-5fdb-412c-b493-564bb61f64d0": "2026-11-18T11:24:49+00:00"
+        "p-074fd601-5fdb-412c-b493-564bb61f64d0": "2026-11-18T11:24:49+00:00",
+        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": "2026-11-18T11:20:10+00:00"
       },
       "updated_at": "2026-11-19T01:57:24+00:00",
       "participation_attempted_at": {},
@@ -32911,20 +32966,20 @@
       "group_id": null,
       "season": "2026-2027",
       "participation": {
-        "p-9258719a-7296-44bf-9a09-41eb00107cda": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 68,
-          "goals": 0
-        },
         "p-ee275004-f785-42ef-99df-be2df81d225e": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
           "played": 1,
           "minutes": 22,
+          "goals": 0
+        },
+        "p-9258719a-7296-44bf-9a09-41eb00107cda": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 68,
           "goals": 0
         },
         "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68": {
@@ -32940,8 +32995,8 @@
       "date_precision": "match",
       "away_team_id": "rfef-23289693",
       "participation_checked_at": {
-        "p-9258719a-7296-44bf-9a09-41eb00107cda": "2026-11-18T13:18:01+00:00",
         "p-ee275004-f785-42ef-99df-be2df81d225e": "2026-11-18T13:18:02+00:00",
+        "p-9258719a-7296-44bf-9a09-41eb00107cda": "2026-11-18T13:18:01+00:00",
         "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68": "2026-11-18T13:18:02+00:00"
       },
       "updated_at": "2026-11-19T01:58:13+00:00",
@@ -33310,23 +33365,7 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 77,
-          "goals": 0
-        },
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 90,
-          "goals": 0
-        },
-        "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
@@ -33341,15 +33380,31 @@
           "played": 1,
           "minutes": 30,
           "goals": 0
+        },
+        "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
+        },
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 77,
+          "goals": 0
         }
       },
       "home_team_id": "21492710",
       "away_team_id": "75",
       "participation_checked_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-18T11:19:11+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00"
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00"
       },
       "updated_at": "2026-11-19T01:55:48+00:00",
       "participation_attempted_at": {},
@@ -33450,12 +33505,12 @@
           "minutes": 28,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 0,
-          "starts": 0,
+        "p-b5b862b3-35b6-4a3b-87bc-602409f340f8": {
+          "called_up": 1,
+          "starts": 1,
           "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "played": 1,
+          "minutes": 66,
           "goals": 0
         },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
@@ -33474,12 +33529,12 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-b5b862b3-35b6-4a3b-87bc-602409f340f8": {
-          "called_up": 1,
-          "starts": 1,
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 0,
+          "starts": 0,
           "bench": 0,
-          "played": 1,
-          "minutes": 66,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         }
       },
@@ -33487,10 +33542,10 @@
       "away_team_id": "2728963",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-18T11:19:42+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00",
+        "p-b5b862b3-35b6-4a3b-87bc-602409f340f8": "2026-11-18T16:31:42+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-18T11:20:39+00:00",
         "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00",
-        "p-b5b862b3-35b6-4a3b-87bc-602409f340f8": "2026-11-18T16:31:42+00:00"
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00"
       },
       "updated_at": "2026-11-19T02:01:00+00:00",
       "participation_attempted_at": {},
@@ -33748,20 +33803,20 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 46,
-          "goals": 0
-        },
         "p-32d2dfc7-11bf-4956-a267-59fda04aae64": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
           "played": 0,
           "minutes": 0,
+          "goals": 0
+        },
+        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 46,
           "goals": 0
         },
         "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": {
@@ -33776,8 +33831,8 @@
       "home_team_id": "2128",
       "away_team_id": "73",
       "participation_checked_at": {
-        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-18T11:21:14+00:00",
         "p-32d2dfc7-11bf-4956-a267-59fda04aae64": "2026-11-18T11:22:09+00:00",
+        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-18T11:21:14+00:00",
         "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": "2026-11-18T11:22:10+00:00"
       },
       "updated_at": "2026-11-19T01:55:53+00:00",
@@ -35216,7 +35271,7 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -35224,12 +35279,12 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
-          "called_up": 0,
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
           "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 33,
           "goals": 0
         },
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
@@ -35240,22 +35295,22 @@
           "minutes": 90,
           "goals": 2
         },
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
-          "called_up": 1,
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+          "called_up": 0,
           "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 33,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         }
       },
       "home_team_id": "10677658",
       "away_team_id": "12325489",
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_attempted_at": {},
@@ -35918,14 +35973,6 @@
       "group_id": "26737705",
       "season": "2026-2027",
       "participation": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 27,
-          "goals": 0
-        },
         "p-5caca805-bf45-40ee-8c28-624512fe640c": {
           "called_up": 0,
           "starts": 0,
@@ -35933,13 +35980,21 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 27,
+          "goals": 0
         }
       },
       "home_team_id": "2278108",
       "away_team_id": "334384",
       "participation_checked_at": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00",
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00"
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00",
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00"
       },
       "updated_at": "2026-11-19T01:59:19+00:00",
       "participation_attempted_at": {},
@@ -36125,18 +36180,18 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
           "played": 0,
           "minutes": 0,
           "goals": 0
@@ -36145,8 +36200,8 @@
       "home_team_id": "107",
       "away_team_id": "846484",
       "participation_checked_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00"
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00",
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_attempted_at": {},
@@ -36985,14 +37040,6 @@
       "group_id": "26737750",
       "season": "2026-2027",
       "participation": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
           "called_up": 1,
           "starts": 1,
@@ -37000,13 +37047,21 @@
           "played": 1,
           "minutes": null,
           "goals": 0
+        },
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "850571",
       "away_team_id": "2280488",
       "participation_checked_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00"
       },
       "updated_at": "2026-11-19T02:01:11+00:00",
       "participation_attempted_at": {},
@@ -37606,14 +37661,6 @@
       "group_id": "58161940",
       "season": "2026-2027",
       "participation": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": null,
-          "minutes": null,
-          "goals": 1
-        },
         "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
           "called_up": 1,
           "starts": 0,
@@ -37621,13 +37668,21 @@
           "played": null,
           "minutes": null,
           "goals": 0
+        },
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": null,
+          "minutes": null,
+          "goals": 1
         }
       },
       "home_team_id": "35727",
       "away_team_id": "28484298",
       "participation_checked_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00"
       },
       "updated_at": "2026-11-19T02:01:34+00:00",
       "participation_attempted_at": {},
@@ -38067,14 +38122,6 @@
           "minutes": 70,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
           "called_up": 0,
           "starts": 0,
@@ -38090,15 +38137,23 @@
           "played": 1,
           "minutes": 90,
           "goals": 0
+        },
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "2011",
       "away_team_id": "47",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-18T11:19:42+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-18T11:20:39+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-18T11:21:58+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-18T11:19:55+00:00"
       },
       "updated_at": "2026-11-19T01:55:47+00:00",
       "participation_attempted_at": {},
@@ -38529,14 +38584,6 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
           "called_up": 1,
           "starts": 1,
@@ -38544,13 +38591,21 @@
           "played": 1,
           "minutes": 90,
           "goals": 0
+        },
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "282",
       "away_team_id": "107",
       "participation_checked_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00"
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-18T11:22:43+00:00",
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-18T11:17:15+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_attempted_at": {},
@@ -38651,7 +38706,7 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -38659,12 +38714,12 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
-          "called_up": 0,
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
           "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 50,
           "goals": 0
         },
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
@@ -38675,22 +38730,22 @@
           "minutes": 75,
           "goals": 0
         },
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
-          "called_up": 1,
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+          "called_up": 0,
           "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 50,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
           "goals": 0
         }
       },
       "home_team_id": "12325489",
       "away_team_id": "13523515",
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-18T16:25:19+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-18T16:38:58+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-18T16:39:01+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-18T16:25:18+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_attempted_at": {},
@@ -39221,14 +39276,6 @@
       "group_id": "26737705",
       "season": "2026-2027",
       "participation": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-5caca805-bf45-40ee-8c28-624512fe640c": {
           "called_up": 1,
           "starts": 0,
@@ -39236,13 +39283,21 @@
           "played": 1,
           "minutes": 22,
           "goals": 0
+        },
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "1245",
       "away_team_id": "2278108",
       "participation_checked_at": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00",
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00"
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-18T16:24:30+00:00",
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-18T11:16:48+00:00"
       },
       "updated_at": "2026-11-19T01:59:19+00:00",
       "participation_attempted_at": {},
@@ -39703,8 +39758,8 @@
       "home_team_id": "3353735",
       "away_team_id": "1630",
       "participation_attempted_at": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:30+00:00",
-        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00"
+        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00",
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:30+00:00"
       },
       "participation_checked_at": {
         "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": "2026-11-18T11:20:10+00:00",
@@ -39850,6 +39905,30 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
+        "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 73,
+          "goals": 0
+        },
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 17,
+          "goals": 0
+        },
+        "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
+        },
         "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
           "called_up": 1,
           "starts": 0,
@@ -39865,40 +39944,16 @@
           "played": 1,
           "minutes": 3,
           "goals": 0
-        },
-        "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 73,
-          "goals": 0
-        },
-        "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 90,
-          "goals": 0
-        },
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 17,
-          "goals": 0
         }
       },
       "home_team_id": "1312",
       "away_team_id": "21492710",
       "participation_checked_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
-        "p-1255ccf7-2c7b-4cfe-92cc-661106c088ee": "2026-11-18T11:19:10+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-18T11:19:11+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00"
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
+        "p-1255ccf7-2c7b-4cfe-92cc-661106c088ee": "2026-11-18T11:19:10+00:00"
       },
       "updated_at": "2026-11-19T01:55:48+00:00",
       "participation_attempted_at": {},
@@ -41953,7 +42008,7 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": {
+        "p-e4dd0824-491d-4f64-80e4-1c355db22405": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -41961,7 +42016,7 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-e4dd0824-491d-4f64-80e4-1c355db22405": {
+        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": {
           "called_up": 0,
           "starts": 0,
           "bench": 0,
@@ -41981,13 +42036,13 @@
       "home_team_id": "2128",
       "away_team_id": "1594",
       "participation_checked_at": {
-        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-19T01:55:28+00:00",
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-19T01:55:31+00:00",
+        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-19T01:55:28+00:00",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-19T01:56:17+00:00"
       },
       "participation_attempted_at": {
-        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-19T01:55:26+00:00",
         "p-e4dd0824-491d-4f64-80e4-1c355db22405": "2026-11-19T01:55:30+00:00",
+        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-19T01:55:26+00:00",
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-19T01:56:17+00:00"
       },
       "updated_at": "2026-11-19T01:56:17+00:00",
@@ -42118,14 +42173,6 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 29,
-          "goals": 0
-        },
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
           "called_up": 0,
           "starts": 0,
@@ -42133,17 +42180,25 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 29,
+          "goals": 0
         }
       },
       "home_team_id": "107",
       "away_team_id": "5",
       "participation_checked_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-19T01:53:37+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-19T01:56:14+00:00"
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-19T01:56:14+00:00",
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-19T01:53:37+00:00"
       },
       "participation_attempted_at": {
-        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-19T01:53:36+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-19T01:56:14+00:00"
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-19T01:56:14+00:00",
+        "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-19T01:53:36+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_source": {},
@@ -42615,7 +42670,7 @@
       "group_id": "58161940",
       "season": "2026-2027",
       "participation": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
@@ -42623,7 +42678,7 @@
           "minutes": null,
           "goals": 0
         },
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
@@ -42635,8 +42690,8 @@
       "home_team_id": "28484298",
       "away_team_id": "54317019",
       "participation_checked_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00"
       },
       "updated_at": "2026-11-19T02:01:34+00:00",
       "participation_attempted_at": {},
@@ -42677,20 +42732,20 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 70,
-          "goals": 0
-        },
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
           "played": 1,
           "minutes": 90,
+          "goals": 0
+        },
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 75,
           "goals": 0
         },
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
@@ -42701,28 +42756,28 @@
           "minutes": 0,
           "goals": 0
         },
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
           "played": 1,
-          "minutes": 75,
+          "minutes": 70,
           "goals": 0
         }
       },
       "home_team_id": "21492710",
       "away_team_id": "410",
       "participation_checked_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-18T11:19:11+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-18T11:21:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-18T11:21:59+00:00"
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-18T11:18:56+00:00"
       },
       "participation_attempted_at": {
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-19T01:54:25+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-19T01:54:33+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-19T01:55:48+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-19T01:55:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-19T01:55:48+00:00"
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-19T01:54:25+00:00"
       },
       "updated_at": "2026-11-19T01:55:48+00:00",
       "participation_source": {},
@@ -43185,14 +43240,6 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
           "called_up": 1,
           "starts": 0,
@@ -43200,6 +43247,14 @@
           "played": 1,
           "minutes": 13,
           "goals": 0
+        },
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 20,
+          "goals": 1
         },
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
           "called_up": 1,
@@ -43209,28 +43264,28 @@
           "minutes": 90,
           "goals": 1
         },
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
-          "called_up": 1,
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+          "called_up": 0,
           "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 20,
-          "goals": 1
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "627",
       "away_team_id": "12325489",
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-19T01:59:27+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-19T01:59:28+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-19T02:01:13+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-19T01:59:27+00:00"
       },
       "participation_attempted_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-19T01:59:25+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-19T01:59:28+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-19T02:01:13+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-19T01:59:25+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_source": {},
@@ -43423,14 +43478,6 @@
       "group_id": "26737750",
       "season": "2026-2027",
       "participation": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": null,
-          "goals": 0
-        },
         "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
           "called_up": 1,
           "starts": 0,
@@ -43438,13 +43485,21 @@
           "played": 0,
           "minutes": null,
           "goals": 0
+        },
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": null,
+          "goals": 0
         }
       },
       "home_team_id": "4944990",
       "away_team_id": "850571",
       "participation_checked_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00"
       },
       "updated_at": "2026-11-19T02:01:11+00:00",
       "participation_attempted_at": {},
@@ -43493,14 +43548,6 @@
           "minutes": 62,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
           "called_up": 1,
           "starts": 0,
@@ -43516,21 +43563,29 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "47",
       "away_team_id": "705",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-19T01:54:51+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-19T01:54:56+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-19T01:55:19+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-19T01:55:47+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-19T01:55:47+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-19T01:54:56+00:00"
       },
       "participation_attempted_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-19T01:54:48+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-19T01:54:56+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-19T01:55:19+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-19T01:55:47+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-19T01:55:47+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-19T01:54:56+00:00"
       },
       "updated_at": "2026-11-19T01:55:47+00:00",
       "participation_source": {},
@@ -46172,14 +46227,6 @@
       "group_id": "26737750",
       "season": "2026-2027",
       "participation": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 0,
-          "minutes": null,
-          "goals": 1
-        },
         "p-ba3838cf-b999-4764-b449-d9d73912bb02": {
           "called_up": 1,
           "starts": 0,
@@ -46187,13 +46234,21 @@
           "played": 0,
           "minutes": null,
           "goals": 0
+        },
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": null,
+          "goals": 1
         }
       },
       "home_team_id": "850571",
       "away_team_id": "1031695",
       "participation_checked_at": {
-        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00",
-        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00"
+        "p-ba3838cf-b999-4764-b449-d9d73912bb02": "2026-11-18T16:32:13+00:00",
+        "p-605583af-e24e-4b4c-a1ef-df4d57883159": "2026-11-18T16:32:11+00:00"
       },
       "updated_at": "2026-11-19T02:01:11+00:00",
       "participation_attempted_at": {},
@@ -46346,14 +46401,6 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-95d2dae8-8136-41cc-af8a-60447bb2281a": {
           "called_up": 1,
           "starts": 1,
@@ -46361,17 +46408,25 @@
           "played": 1,
           "minutes": 68,
           "goals": 0
+        },
+        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "1630",
       "away_team_id": "1246",
       "participation_checked_at": {
-        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": "2026-11-19T01:55:01+00:00",
-        "p-95d2dae8-8136-41cc-af8a-60447bb2281a": "2026-11-19T01:57:25+00:00"
+        "p-95d2dae8-8136-41cc-af8a-60447bb2281a": "2026-11-19T01:57:25+00:00",
+        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": "2026-11-19T01:55:01+00:00"
       },
       "participation_attempted_at": {
-        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": "2026-11-19T01:55:00+00:00",
-        "p-95d2dae8-8136-41cc-af8a-60447bb2281a": "2026-11-19T01:57:25+00:00"
+        "p-95d2dae8-8136-41cc-af8a-60447bb2281a": "2026-11-19T01:57:25+00:00",
+        "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491": "2026-11-19T01:55:00+00:00"
       },
       "updated_at": "2026-11-19T01:57:26+00:00",
       "participation_source": {},
@@ -46588,7 +46643,7 @@
       "group_id": "58161940",
       "season": "2026-2027",
       "participation": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
@@ -46596,7 +46651,7 @@
           "minutes": null,
           "goals": 0
         },
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": {
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": {
           "called_up": 1,
           "starts": 0,
           "bench": 1,
@@ -46608,8 +46663,8 @@
       "home_team_id": "33851",
       "away_team_id": "28484298",
       "participation_checked_at": {
-        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00",
-        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00"
+        "p-aff68b7c-2a35-4445-b3d4-359e57a188d8": "2026-11-18T12:11:17+00:00",
+        "p-35cdca9c-9d52-4235-94c0-1a2db1005ae3": "2026-11-18T12:11:16+00:00"
       },
       "updated_at": "2026-11-19T02:01:34+00:00",
       "participation_attempted_at": {},
@@ -46994,28 +47049,12 @@
       "group_id": "26737722",
       "season": "2026-2027",
       "participation": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": {
           "called_up": 1,
           "starts": 1,
           "bench": 0,
           "played": 1,
           "minutes": 58,
-          "goals": 0
-        },
-        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
-          "called_up": 1,
-          "starts": 1,
-          "bench": 0,
-          "played": 1,
-          "minutes": 87,
           "goals": 0
         },
         "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": {
@@ -47025,21 +47064,37 @@
           "played": 1,
           "minutes": 66,
           "goals": 1
+        },
+        "p-29d8881d-ecf7-4778-ae88-e6f27572450c": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 87,
+          "goals": 0
+        },
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "12325489",
       "away_team_id": "334202",
       "participation_checked_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-19T01:59:26+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-19T01:59:28+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-19T02:01:13+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-19T01:59:26+00:00"
       },
       "participation_attempted_at": {
-        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-19T01:59:25+00:00",
         "p-93ad6552-db56-4c11-97e0-54f274b6cb7b": "2026-11-19T01:59:28+00:00",
+        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00",
         "p-29d8881d-ecf7-4778-ae88-e6f27572450c": "2026-11-19T02:01:13+00:00",
-        "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3": "2026-11-19T02:01:16+00:00"
+        "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f": "2026-11-19T01:59:25+00:00"
       },
       "updated_at": "2026-11-19T02:01:16+00:00",
       "participation_source": {},
@@ -47251,6 +47306,44 @@
       "is_internal_matchup": false
     },
     {
+      "id": "valencia-26475397",
+      "federation": "valencia",
+      "player_ids": [
+        "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
+      ],
+      "home": "Villarreal C.F. 'C'",
+      "away": "Primer Toque C.F. 'A'",
+      "date": "2026-11-14",
+      "time": "18:00",
+      "status": "finished",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26475397",
+      "venue": "Ciudad Dptva. José Manuel Llaneza F-11 Vila-real Campo 5",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074501398_Villarreal_CF.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074481054_PRIMER_TOQUE_CF_ESCUDO.jpg",
+      "score_home": 3,
+      "score_away": 1,
+      "round": 10,
+      "competition_id": "905431546",
+      "group_id": "905431547",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "23909",
+      "away_team_id": "19591",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-19T10:38:46+00:00",
+      "participation_attempted_at": {},
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5578388",
       "federation": "madrid",
       "player_ids": [
@@ -47442,14 +47535,6 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
-        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 24,
-          "goals": 0
-        },
         "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": {
           "called_up": 1,
           "starts": 0,
@@ -47457,17 +47542,25 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 24,
+          "goals": 0
         }
       },
       "home_team_id": "60",
       "away_team_id": "2128",
       "participation_checked_at": {
-        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-19T01:55:27+00:00",
-        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": "2026-11-19T01:56:12+00:00"
+        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": "2026-11-19T01:56:12+00:00",
+        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-19T01:55:27+00:00"
       },
       "participation_attempted_at": {
-        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-19T01:55:26+00:00",
-        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": "2026-11-19T01:56:12+00:00"
+        "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f": "2026-11-19T01:56:12+00:00",
+        "p-2fb0301e-10cd-4e1d-9e61-4671ba184626": "2026-11-19T01:55:26+00:00"
       },
       "updated_at": "2026-11-19T01:56:13+00:00",
       "participation_source": {},
@@ -47652,6 +47745,14 @@
       "group_id": "26738131",
       "season": "2026-2027",
       "participation": {
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
         "p-3a3f813a-e798-41d3-af09-98ced829fef4": {
           "called_up": 1,
           "starts": 1,
@@ -47675,29 +47776,21 @@
           "played": 1,
           "minutes": 90,
           "goals": 0
-        },
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
         }
       },
       "home_team_id": "73",
       "away_team_id": "107",
       "participation_checked_at": {
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-19T01:56:14+00:00",
         "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-19T01:53:36+00:00",
         "p-32d2dfc7-11bf-4956-a267-59fda04aae64": "2026-11-19T01:55:51+00:00",
-        "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": "2026-11-19T01:55:53+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-19T01:56:14+00:00"
+        "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": "2026-11-19T01:55:53+00:00"
       },
       "participation_attempted_at": {
+        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-19T01:56:14+00:00",
         "p-3a3f813a-e798-41d3-af09-98ced829fef4": "2026-11-19T01:53:36+00:00",
         "p-32d2dfc7-11bf-4956-a267-59fda04aae64": "2026-11-19T01:55:51+00:00",
-        "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": "2026-11-19T01:55:53+00:00",
-        "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b": "2026-11-19T01:56:14+00:00"
+        "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd": "2026-11-19T01:55:53+00:00"
       },
       "updated_at": "2026-11-19T01:56:14+00:00",
       "participation_source": {},
@@ -47850,14 +47943,6 @@
           "minutes": 20,
           "goals": 0
         },
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": {
           "called_up": 1,
           "starts": 1,
@@ -47873,21 +47958,29 @@
           "played": 1,
           "minutes": 90,
           "goals": 0
+        },
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
         }
       },
       "home_team_id": "300243",
       "away_team_id": "47",
       "participation_checked_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-19T01:54:49+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-19T01:54:56+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-19T01:55:19+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-19T01:55:47+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-19T01:55:47+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-19T01:54:56+00:00"
       },
       "participation_attempted_at": {
         "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d": "2026-11-19T01:54:48+00:00",
-        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-19T01:54:56+00:00",
         "p-c3f8744b-e903-474d-bd75-020ef59745a3": "2026-11-19T01:55:19+00:00",
-        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-19T01:55:47+00:00"
+        "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b": "2026-11-19T01:55:47+00:00",
+        "p-175248e0-3648-49fb-9f69-aa3b1765bbcd": "2026-11-19T01:54:56+00:00"
       },
       "updated_at": "2026-11-19T01:55:47+00:00",
       "participation_source": {},
@@ -48284,14 +48377,6 @@
       "group_id": "26737705",
       "season": "2026-2027",
       "participation": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 22,
-          "goals": 0
-        },
         "p-5caca805-bf45-40ee-8c28-624512fe640c": {
           "called_up": 1,
           "starts": 1,
@@ -48299,17 +48384,25 @@
           "played": 1,
           "minutes": 69,
           "goals": 0
+        },
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 22,
+          "goals": 0
         }
       },
       "home_team_id": "1493",
       "away_team_id": "2278108",
       "participation_checked_at": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-19T01:53:27+00:00",
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-19T01:59:15+00:00"
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-19T01:59:15+00:00",
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-19T01:53:27+00:00"
       },
       "participation_attempted_at": {
-        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-19T01:53:26+00:00",
-        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-19T01:59:15+00:00"
+        "p-5caca805-bf45-40ee-8c28-624512fe640c": "2026-11-19T01:59:15+00:00",
+        "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592": "2026-11-19T01:53:26+00:00"
       },
       "updated_at": "2026-11-19T01:59:19+00:00",
       "participation_source": {},
@@ -48755,6 +48848,30 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
+        "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 34,
+          "goals": 0
+        },
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
+        "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
         "p-cc73b2c6-de51-4596-882d-434c906d5b40": {
           "called_up": 1,
           "starts": 0,
@@ -48770,47 +48887,23 @@
           "played": 1,
           "minutes": 34,
           "goals": 0
-        },
-        "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 34,
-          "goals": 0
-        },
-        "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
-        },
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
-          "goals": 0
         }
       },
       "home_team_id": "466507",
       "away_team_id": "21492710",
       "participation_checked_at": {
-        "p-cc73b2c6-de51-4596-882d-434c906d5b40": "2026-11-19T01:53:42+00:00",
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-19T01:54:25+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-19T01:54:33+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-19T01:55:48+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-19T01:55:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-19T01:55:48+00:00"
+        "p-cc73b2c6-de51-4596-882d-434c906d5b40": "2026-11-19T01:53:42+00:00",
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-19T01:54:25+00:00"
       },
       "participation_attempted_at": {
-        "p-cc73b2c6-de51-4596-882d-434c906d5b40": "2026-11-19T01:53:41+00:00",
-        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-19T01:54:25+00:00",
         "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be": "2026-11-19T01:54:33+00:00",
+        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-19T01:55:48+00:00",
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3": "2026-11-19T01:55:32+00:00",
-        "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d": "2026-11-19T01:55:48+00:00"
+        "p-cc73b2c6-de51-4596-882d-434c906d5b40": "2026-11-19T01:53:41+00:00",
+        "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b": "2026-11-19T01:54:25+00:00"
       },
       "updated_at": "2026-11-19T01:55:48+00:00",
       "participation_source": {},
@@ -49003,14 +49096,6 @@
       "group_id": "26737716",
       "season": "2026-2027",
       "participation": {
-        "p-8f643924-4932-457d-839f-dd3b87cd5722": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 10,
-          "goals": 0
-        },
         "p-89e40494-578f-4315-bb91-4100ba2f6929": {
           "called_up": 0,
           "starts": 0,
@@ -49018,17 +49103,25 @@
           "played": 0,
           "minutes": 0,
           "goals": 0
+        },
+        "p-8f643924-4932-457d-839f-dd3b87cd5722": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 10,
+          "goals": 0
         }
       },
       "home_team_id": "3347198",
       "away_team_id": "1175",
       "participation_checked_at": {
-        "p-8f643924-4932-457d-839f-dd3b87cd5722": "2026-11-19T01:54:53+00:00",
-        "p-89e40494-578f-4315-bb91-4100ba2f6929": "2026-11-19T01:57:46+00:00"
+        "p-89e40494-578f-4315-bb91-4100ba2f6929": "2026-11-19T01:57:46+00:00",
+        "p-8f643924-4932-457d-839f-dd3b87cd5722": "2026-11-19T01:54:53+00:00"
       },
       "participation_attempted_at": {
-        "p-8f643924-4932-457d-839f-dd3b87cd5722": "2026-11-19T01:54:52+00:00",
-        "p-89e40494-578f-4315-bb91-4100ba2f6929": "2026-11-19T01:57:46+00:00"
+        "p-89e40494-578f-4315-bb91-4100ba2f6929": "2026-11-19T01:57:46+00:00",
+        "p-8f643924-4932-457d-839f-dd3b87cd5722": "2026-11-19T01:54:52+00:00"
       },
       "updated_at": "2026-11-19T01:57:47+00:00",
       "participation_source": {},
@@ -49792,14 +49885,6 @@
       "group_id": "26834942",
       "season": "2026-2027",
       "participation": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
-          "called_up": 1,
-          "starts": 0,
-          "bench": 1,
-          "played": 1,
-          "minutes": 32,
-          "goals": 0
-        },
         "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": {
           "called_up": 1,
           "starts": 1,
@@ -49807,17 +49892,25 @@
           "played": 1,
           "minutes": 90,
           "goals": 0
+        },
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 32,
+          "goals": 0
         }
       },
       "home_team_id": "3353735",
       "away_team_id": "680241",
       "participation_checked_at": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:31+00:00",
-        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00"
+        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00",
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:31+00:00"
       },
       "participation_attempted_at": {
-        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:30+00:00",
-        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00"
+        "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8": "2026-11-19T01:59:34+00:00",
+        "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08": "2026-11-19T01:59:30+00:00"
       },
       "updated_at": "2026-11-19T01:59:34+00:00",
       "participation_source": {},
@@ -50699,6 +50792,44 @@
       "participation_source": {},
       "home_player_ids": [
         "p-30526fbe-539f-4f16-8ac4-d0411f729499"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
+      "id": "valencia-26475405",
+      "federation": "valencia",
+      "player_ids": [
+        "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
+      ],
+      "home": "Primer Toque C.F. 'A'",
+      "away": "Paterna C.F. 'A'",
+      "date": "2026-11-21",
+      "time": "15:00",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26475405",
+      "venue": "Ciudad Dptva. Chencho Campo A F-11 Castellón ",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074481054_PRIMER_TOQUE_CF_ESCUDO.jpg",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074534367_ESCUDO_S.FONDO.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 11,
+      "competition_id": "905431546",
+      "group_id": "905431547",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "19591",
+      "away_team_id": "14807",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-19T10:38:46+00:00",
+      "participation_attempted_at": {},
+      "participation_source": {},
+      "home_player_ids": [
+        "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
@@ -54547,6 +54678,44 @@
       ],
       "is_internal_matchup": false,
       "participation_attempted_at": {}
+    },
+    {
+      "id": "valencia-26475414",
+      "federation": "valencia",
+      "player_ids": [
+        "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
+      ],
+      "home": "Patacona C.F. 'B'",
+      "away": "Primer Toque C.F. 'A'",
+      "date": "2026-11-28",
+      "time": "17:00",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26475414",
+      "venue": "Campo Mpal. de la Patacona F-11",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074568747_Patacona_CF.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074481054_PRIMER_TOQUE_CF_ESCUDO.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 12,
+      "competition_id": "905431546",
+      "group_id": "905431547",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "23975",
+      "away_team_id": "19591",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-19T10:38:46+00:00",
+      "participation_attempted_at": {},
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
+      ],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584395",
