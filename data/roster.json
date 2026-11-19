@@ -2779,7 +2779,26 @@
       "match_duration": 80,
       "active": true,
       "age_category": "cadete"
+    },
+    {
+      "team_id": "28145",
+      "team": "C.F. Garra Ilicitana 'B'",
+      "player_id": "28555035",
+      "official_name": "MOTOS FERNANDEZ, RAFAEL",
+      "competition_id": "905431892",
+      "group_id": "905431904",
+      "season_id": "22",
+      "competition_label": "Primera Cadet · Grup - 12",
+      "team_age_category": "cadete",
+      "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=28145",
+      "id": "p-64bc282c-d75d-4b3b-8a72-8e7128216373",
+      "name": "Rafael Motos Fernández",
+      "federation": "valencia",
+      "collaborator": "JOSEJA",
+      "match_duration": 80,
+      "active": true,
+      "age_category": "cadete"
     }
   ],
-  "registry_revision": 17
+  "registry_revision": 19
 }

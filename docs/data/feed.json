@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-19T02:29:33+00:00",
+  "generated_at": "2026-11-19T09:13:01+00:00",
   "season": "2026-2027",
-  "registry_revision": 17,
+  "registry_revision": 19,
   "federations": [
     {
       "id": "madrid",
@@ -35,7 +35,7 @@
       "acronym": "FFRM",
       "source": "https://www.ffrm.es/pnfg/",
       "status": "partial",
-      "checked_at": "2026-11-19T02:05:30+00:00",
+      "checked_at": "2026-11-19T09:24:14+00:00",
       "last_success": "2026-11-18T11:29:31+00:00",
       "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
       "failed_players": [
@@ -48,7 +48,8 @@
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4",
         "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83",
-        "p-a7f65893-119e-475d-87f0-28a139edc33d"
+        "p-a7f65893-119e-475d-87f0-28a139edc33d",
+        "iker-piqueras-mora"
       ]
     },
     {
@@ -57,43 +58,10 @@
       "acronym": "FFCV",
       "source": "https://ffcv.es/competiciones/",
       "status": "partial",
-      "checked_at": "2026-11-19T02:15:33+00:00",
+      "checked_at": "2026-11-19T09:13:00+00:00",
       "last_success": "2026-11-18T11:30:01+00:00",
-      "message": "No se pudo completar la consulta. Se conserva el último dato válido.",
-      "failed_players": [
-        "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad",
-        "p-7a5540e3-e152-4958-abff-a4afc28a3312",
-        "p-85e4ec27-a204-4f0c-b8d6-2a406a976be1",
-        "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e",
-        "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e",
-        "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7",
-        "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0",
-        "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026",
-        "p-ee685f02-2c5a-4cac-966f-764f2f32c108",
-        "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279",
-        "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5",
-        "p-173f9809-d590-4818-9f53-8156605bc3c5",
-        "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a",
-        "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952",
-        "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
-        "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a",
-        "p-49513978-5e9a-460f-941a-fbca921333c7",
-        "p-7dc51770-5927-40f9-befc-2363e018466e",
-        "p-2e23b123-ae10-4212-b2f8-d8627a97b6b9",
-        "p-a8f2c383-0c07-4afd-9402-926a2a17e524",
-        "p-857a7e7d-5b48-4b68-bd28-756a8134827b",
-        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
-        "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea",
-        "p-5fc13294-34e2-440c-aabf-c8a7881268ac",
-        "p-5de13299-c87f-4714-9b5b-30446d39a579",
-        "daniel-otero-serrano",
-        "p-14fe2d86-4679-4291-b2b2-ea2219f875bd",
-        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
-        "p-46a95a14-de56-43c3-b119-3d0f567ef0f5",
-        "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08",
-        "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b",
-        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860"
-      ],
+      "message": "Consulta automática completada",
+      "failed_players": [],
       "retry_after": "2026-11-19T03:05:33+00:00"
     }
   ],
@@ -5096,59 +5064,6 @@
       "calendar_complete": true
     },
     {
-      "id": "iker-piqueras-mora",
-      "name": "Iker Piqueras Mora",
-      "federation": "murcia",
-      "collaborator": "Iván Macià",
-      "team": "UNION MOLINENSE C.F.",
-      "competition_label": "Primera Cadete · Grupo 2",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=24069902&cod_primaria=3001860",
-      "provider": "federation",
-      "team_id": "24069902",
-      "competition_id": "24032708",
-      "group_id": "24032710",
-      "age_category": "cadete",
-      "stats": {
-        "team_played": 8,
-        "called_up": 7,
-        "starts": 6,
-        "bench": 1,
-        "minutes": 405,
-        "goals": 0,
-        "played": 7,
-        "assists": null,
-        "yellow": null,
-        "red": null
-      },
-      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
-      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
-      "updated_at": "2026-11-19T02:03:07+00:00",
-      "coverage": {
-        "team_played": 8,
-        "acts_checked": 8,
-        "minutes_checked": 8,
-        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
-        "confirmed": {
-          "called_up": 7,
-          "starts": 6,
-          "bench": 1,
-          "played": 7,
-          "minutes": 405,
-          "goals": 0
-        },
-        "field_checked": {
-          "called_up": 8,
-          "starts": 8,
-          "bench": 8,
-          "played": 8,
-          "minutes": 8,
-          "goals": 8
-        },
-        "calendar_complete": true
-      },
-      "calendar_complete": true
-    },
-    {
       "id": "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624",
       "name": "Salvador Marin Moya",
       "federation": "murcia",
@@ -5175,33 +5090,32 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128724_escudo.jpg",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
+      "calendar_complete": true,
+      "updated_at": "2026-11-19T09:14:14+00:00",
       "coverage": {
         "team_played": 10,
-        "acts_checked": 0,
-        "minutes_checked": 0,
+        "acts_checked": 3,
+        "minutes_checked": 3,
         "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
         "confirmed": {
-          "called_up": null,
-          "starts": null,
-          "bench": null,
-          "played": null,
-          "minutes": null,
-          "goals": null
-        },
-        "field_checked": {
-          "called_up": 0,
-          "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "called_up": 3,
+          "starts": 1,
+          "bench": 2,
+          "played": 3,
+          "minutes": 140,
           "goals": 0
         },
+        "field_checked": {
+          "called_up": 3,
+          "starts": 3,
+          "bench": 3,
+          "played": 3,
+          "minutes": 3,
+          "goals": 3
+        },
         "calendar_complete": true
-      },
-      "secondary_stats": null,
-      "calendar_complete": null
+      }
     },
     {
       "id": "p-b2dd7482-24e2-4895-b761-d6e63264da85",
@@ -5230,8 +5144,9 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000742753_Escudo_escuela.jpg",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
-      "updated_at": "2026-11-18T19:48:53+00:00",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
+      "calendar_complete": true,
+      "updated_at": "2026-11-18T19:48:54+00:00",
       "coverage": {
         "team_played": 10,
         "acts_checked": 0,
@@ -5254,9 +5169,7 @@
           "goals": 0
         },
         "calendar_complete": true
-      },
-      "secondary_stats": null,
-      "calendar_complete": null
+      }
     },
     {
       "id": "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814",
@@ -5285,7 +5198,8 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128674_escudo.jpg",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
+      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:53+00:00",
       "coverage": {
         "team_played": 10,
@@ -5309,9 +5223,7 @@
           "goals": 0
         },
         "calendar_complete": true
-      },
-      "secondary_stats": null,
-      "calendar_complete": null
+      }
     },
     {
       "id": "p-787af8bf-494e-43a7-8f50-97c240e4efd6",
@@ -5340,7 +5252,8 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000742753_Escudo_escuela.jpg",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
+      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:54+00:00",
       "coverage": {
         "team_played": 10,
@@ -5364,9 +5277,7 @@
           "goals": 0
         },
         "calendar_complete": true
-      },
-      "secondary_stats": null,
-      "calendar_complete": null
+      }
     },
     {
       "id": "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5",
@@ -5395,7 +5306,8 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000640024_descarga__1_.png",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
+      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:55+00:00",
       "coverage": {
         "team_played": 6,
@@ -5419,9 +5331,7 @@
           "goals": 0
         },
         "calendar_complete": true
-      },
-      "secondary_stats": null,
-      "calendar_complete": null
+      }
     },
     {
       "id": "p-1a5c323c-3034-463b-b521-cc92f2681b37",
@@ -5450,33 +5360,32 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
+      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:56+00:00",
       "coverage": {
         "team_played": 10,
-        "acts_checked": 0,
-        "minutes_checked": 0,
+        "acts_checked": 2,
+        "minutes_checked": 2,
         "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
         "confirmed": {
-          "called_up": null,
-          "starts": null,
-          "bench": null,
-          "played": null,
-          "minutes": null,
-          "goals": null
-        },
-        "field_checked": {
-          "called_up": 0,
-          "starts": 0,
+          "called_up": 1,
+          "starts": 1,
           "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "played": 1,
+          "minutes": 36,
           "goals": 0
         },
+        "field_checked": {
+          "called_up": 2,
+          "starts": 2,
+          "bench": 2,
+          "played": 2,
+          "minutes": 2,
+          "goals": 2
+        },
         "calendar_complete": true
-      },
-      "secondary_stats": null,
-      "calendar_complete": null
+      }
     },
     {
       "id": "p-093e1f03-53b8-4c04-8315-c64a44760528",
@@ -5505,33 +5414,32 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
+      "calendar_complete": true,
+      "updated_at": "2026-11-19T09:21:26+00:00",
       "coverage": {
         "team_played": 5,
-        "acts_checked": 0,
-        "minutes_checked": 0,
+        "acts_checked": 2,
+        "minutes_checked": 2,
         "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
         "confirmed": {
-          "called_up": null,
-          "starts": null,
-          "bench": null,
-          "played": null,
-          "minutes": null,
-          "goals": null
-        },
-        "field_checked": {
-          "called_up": 0,
+          "called_up": 1,
           "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 45,
           "goals": 0
         },
+        "field_checked": {
+          "called_up": 2,
+          "starts": 2,
+          "bench": 2,
+          "played": 2,
+          "minutes": 2,
+          "goals": 2
+        },
         "calendar_complete": true
-      },
-      "secondary_stats": null,
-      "calendar_complete": null
+      }
     },
     {
       "id": "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4",
@@ -5560,33 +5468,32 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido.",
+      "calendar_complete": true,
+      "updated_at": "2026-11-19T09:21:58+00:00",
       "coverage": {
         "team_played": 5,
-        "acts_checked": 0,
-        "minutes_checked": 0,
+        "acts_checked": 2,
+        "minutes_checked": 2,
         "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
         "confirmed": {
-          "called_up": null,
-          "starts": null,
-          "bench": null,
-          "played": null,
-          "minutes": null,
-          "goals": null
-        },
-        "field_checked": {
-          "called_up": 0,
+          "called_up": 2,
           "starts": 0,
-          "bench": 0,
-          "played": 0,
-          "minutes": 0,
+          "bench": 2,
+          "played": 1,
+          "minutes": 45,
           "goals": 0
         },
+        "field_checked": {
+          "called_up": 2,
+          "starts": 2,
+          "bench": 2,
+          "played": 2,
+          "minutes": 2,
+          "goals": 2
+        },
         "calendar_complete": true
-      },
-      "secondary_stats": null,
-      "calendar_complete": null
+      }
     },
     {
       "id": "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83",
@@ -5615,7 +5522,8 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
+      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:58+00:00",
       "coverage": {
         "team_played": 9,
@@ -5639,9 +5547,7 @@
           "goals": 0
         },
         "calendar_complete": true
-      },
-      "secondary_stats": null,
-      "calendar_complete": null
+      }
     },
     {
       "id": "p-a7f65893-119e-475d-87f0-28a139edc33d",
@@ -5670,7 +5576,8 @@
         "red": null
       },
       "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128713_escudo.jpg",
-      "stats_note": "Calendario oficial verificado. Participación y estadísticas pendientes de la lectura automática de actas.",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
+      "calendar_complete": true,
       "updated_at": "2026-11-18T19:48:59+00:00",
       "coverage": {
         "team_played": 9,
@@ -5694,9 +5601,60 @@
           "goals": 0
         },
         "calendar_complete": true
+      }
+    },
+    {
+      "id": "iker-piqueras-mora",
+      "name": "Iker Piqueras Mora",
+      "federation": "murcia",
+      "collaborator": "Iván Macià",
+      "team": "UNION MOLINENSE C.F.",
+      "competition_label": "Primera Cadete · Grupo 2",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=24069902&cod_primaria=3001860",
+      "provider": "federation",
+      "team_id": "24069902",
+      "competition_id": "24032708",
+      "group_id": "24032710",
+      "age_category": "cadete",
+      "stats": {
+        "team_played": 8,
+        "called_up": 7,
+        "starts": 6,
+        "bench": 1,
+        "minutes": 405,
+        "goals": 0,
+        "played": 7,
+        "assists": null,
+        "yellow": null,
+        "red": null
       },
-      "secondary_stats": null,
-      "calendar_complete": null
+      "logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
+      "stats_note": "Convocatorias y participación según actas. Minutos calculados con la duración reglamentaria de la categoría, sin añadido. Calendario conservado de la última lectura válida; las actas se comprueban por separado.",
+      "calendar_complete": true,
+      "updated_at": "2026-11-19T02:03:07+00:00",
+      "coverage": {
+        "team_played": 8,
+        "acts_checked": 8,
+        "minutes_checked": 8,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
+        "confirmed": {
+          "called_up": 7,
+          "starts": 6,
+          "bench": 1,
+          "played": 7,
+          "minutes": 405,
+          "goals": 0
+        },
+        "field_checked": {
+          "called_up": 8,
+          "starts": 8,
+          "bench": 8,
+          "played": 8,
+          "minutes": 8,
+          "goals": 8
+        },
+        "calendar_complete": true
+      }
     },
     {
       "id": "daniel-otero-serrano",
@@ -6567,6 +6525,61 @@
         "calendar_complete": true
       },
       "calendar_complete": true
+    },
+    {
+      "id": "p-64bc282c-d75d-4b3b-8a72-8e7128216373",
+      "name": "Rafael Motos Fernández",
+      "federation": "valencia",
+      "collaborator": "JOSEJA",
+      "team": "C.F. Garra Ilicitana 'B'",
+      "competition_label": "Primera Cadet · Grup - 12",
+      "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=28145",
+      "provider": "federation",
+      "team_id": "28145",
+      "competition_id": "905431892",
+      "group_id": "905431904",
+      "age_category": "cadete",
+      "team_age_category": "cadete",
+      "stats": {
+        "team_played": null,
+        "called_up": null,
+        "starts": null,
+        "bench": null,
+        "minutes": null,
+        "goals": null,
+        "played": null,
+        "assists": null,
+        "yellow": null,
+        "red": null
+      },
+      "logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074529888_ESCUDO_GARRA.png",
+      "stats_note": "Calendario inicial de próximas jornadas. El histórico y las estadísticas se completan en las actualizaciones deportivas.",
+      "updated_at": "2026-11-19T09:13:00+00:00",
+      "coverage": {
+        "team_played": 1,
+        "acts_checked": 0,
+        "minutes_checked": 0,
+        "minutes_method": "Tiempo reglamentario según acta; no incluye añadido.",
+        "confirmed": {
+          "called_up": null,
+          "starts": null,
+          "bench": null,
+          "played": null,
+          "minutes": null,
+          "goals": null,
+          "team_played": 1
+        },
+        "field_checked": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
+        "calendar_complete": false
+      },
+      "calendar_complete": false
     }
   ],
   "matches": [
@@ -7915,32 +7928,47 @@
       "date": "2026-09-12",
       "time": "18:30",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=22&codcompeticion=24144503&codgrupo=24144520&CodJornada=1&CDetalle=1",
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=589795&cod_acta=589795",
       "venue": "POLIDEPORTIVO MPAL. C.D. MEDITERRANEO",
-      "locality": null,
+      "locality": "Cartagena",
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
-      "away_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128724_escudo.jpg",
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000647078_CDM.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128724_escudo.jpg",
       "score_home": 1,
       "score_away": 4,
       "round": 1,
       "competition_id": "24144503",
       "group_id": "24144520",
       "season": "2026-2027",
-      "participation": {},
-      "home_team_id": null,
+      "participation": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 22,
+          "goals": 0
+        }
+      },
+      "home_team_id": "55189",
       "away_team_id": "14448990",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
-      "participation_source": {},
+      "participation_attempted_at": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": "2026-11-19T09:13:11+00:00"
+      },
+      "participation_checked_at": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": "2026-11-19T09:13:26+00:00"
+      },
+      "participation_source": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=589795&cod_acta=589795"
+      },
+      "updated_at": "2026-11-19T09:14:14+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584296",
@@ -8504,7 +8532,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-1a5c323c-3034-463b-b521-cc92f2681b37": "2026-11-19T09:19:10+00:00"
+      }
     },
     {
       "id": "murcia-14472340-1",
@@ -8544,7 +8574,10 @@
         "p-787af8bf-494e-43a7-8f50-97c240e4efd6"
       ],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-b2dd7482-24e2-4895-b761-d6e63264da85": "2026-11-19T09:15:26+00:00",
+        "p-787af8bf-494e-43a7-8f50-97c240e4efd6": "2026-11-19T09:17:18+00:00"
+      }
     },
     {
       "id": "madrid-5589431",
@@ -10118,7 +10151,9 @@
         "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814"
       ],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814": "2026-11-19T09:16:22+00:00"
+      }
     },
     {
       "id": "valencia-26475332",
@@ -10422,32 +10457,47 @@
       "date": "2026-09-19",
       "time": "12:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=22&codcompeticion=24032666&codgrupo=24032668&CodJornada=1&CDetalle=1",
-      "venue": "C.D FCO. FDEZ. TORRALBA (CEA)",
-      "locality": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=591071&cod_acta=591071",
+      "venue": "C.D FCO. FDEZ. TORRALBA",
+      "locality": "Caravaca De La Cruz",
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
-      "away_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128752_escudo.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
       "score_home": 6,
       "score_away": 2,
       "round": 2,
       "competition_id": "24032666",
       "group_id": "24032668",
       "season": "2026-2027",
-      "participation": {},
-      "home_team_id": null,
+      "participation": {
+        "p-1a5c323c-3034-463b-b521-cc92f2681b37": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 36,
+          "goals": 0
+        }
+      },
+      "home_team_id": "14475708",
       "away_team_id": "14454755",
-      "participation_checked_at": {},
+      "participation_checked_at": {
+        "p-1a5c323c-3034-463b-b521-cc92f2681b37": "2026-11-19T09:19:42+00:00"
+      },
       "updated_at": "2026-11-18T19:48:56+00:00",
-      "participation_source": {},
+      "participation_source": {
+        "p-1a5c323c-3034-463b-b521-cc92f2681b37": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=591071&cod_acta=591071"
+      },
       "home_player_ids": [],
       "away_player_ids": [
         "p-1a5c323c-3034-463b-b521-cc92f2681b37"
       ],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-1a5c323c-3034-463b-b521-cc92f2681b37": "2026-11-19T09:19:10+00:00"
+      }
     },
     {
       "id": "madrid-rfcylf-24218935-2-C-D-ISOBA-C-D-I-DE-LA-AMISTAD",
@@ -10801,32 +10851,47 @@
       "date": "2026-09-19",
       "time": "16:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=22&codcompeticion=24144503&codgrupo=24144520&CodJornada=1&CDetalle=1",
-      "venue": "30 POLIDEPORTIVO MPAL. SANTIAGO EL MAYOR (CEA)",
-      "locality": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=589804&cod_acta=589804",
+      "venue": "30 POLIDEPORTIVO MPAL. SANTIAGO EL MAYOR",
+      "locality": "Murcia",
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128724_escudo.jpg",
-      "away_logo": null,
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128724_escudo.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128701_escudo.jpg",
       "score_home": 1,
       "score_away": 0,
       "round": 2,
       "competition_id": "24144503",
       "group_id": "24144520",
       "season": "2026-2027",
-      "participation": {},
+      "participation": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 28,
+          "goals": 0
+        }
+      },
       "home_team_id": "14448990",
-      "away_team_id": null,
-      "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
-      "participation_source": {},
+      "away_team_id": "14451745",
+      "participation_attempted_at": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": "2026-11-19T09:13:11+00:00"
+      },
+      "participation_checked_at": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": "2026-11-19T09:13:42+00:00"
+      },
+      "participation_source": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=589804&cod_acta=589804"
+      },
+      "updated_at": "2026-11-19T09:14:14+00:00",
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584611",
@@ -11770,7 +11835,10 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-b2dd7482-24e2-4895-b761-d6e63264da85": "2026-11-19T09:15:26+00:00",
+        "p-787af8bf-494e-43a7-8f50-97c240e4efd6": "2026-11-19T09:17:18+00:00"
+      }
     },
     {
       "id": "madrid-5582165",
@@ -13553,7 +13621,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-a7f65893-119e-475d-87f0-28a139edc33d": "2026-11-19T09:23:02+00:00"
+      }
     },
     {
       "id": "murcia-56738-1",
@@ -13591,7 +13661,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83": "2026-11-19T09:22:06+00:00"
+      }
     },
     {
       "id": "valencia-26479914",
@@ -13840,7 +13912,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814": "2026-11-19T09:16:22+00:00"
+      }
     },
     {
       "id": "valencia-26480156",
@@ -14860,7 +14934,10 @@
         "p-787af8bf-494e-43a7-8f50-97c240e4efd6"
       ],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-b2dd7482-24e2-4895-b761-d6e63264da85": "2026-11-19T09:15:26+00:00",
+        "p-787af8bf-494e-43a7-8f50-97c240e4efd6": "2026-11-19T09:17:18+00:00"
+      }
     },
     {
       "id": "madrid-5574771",
@@ -15241,32 +15318,47 @@
       "date": "2026-09-26",
       "time": "17:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=22&codcompeticion=24144503&codgrupo=24144520&CodJornada=1&CDetalle=1",
-      "venue": "CIUDAD DEPORTIVA GOMEZ MESEGUER (Cesped) (CES)",
-      "locality": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=589812&cod_acta=589812",
+      "venue": "CIUDAD DEPORTIVA GOMEZ MESEGUER (Cesped)",
+      "locality": "Cartagena",
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
-      "away_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128724_escudo.jpg",
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128511_escudo.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128724_escudo.jpg",
       "score_home": 1,
       "score_away": 1,
       "round": 3,
       "competition_id": "24144503",
       "group_id": "24144520",
       "season": "2026-2027",
-      "participation": {},
-      "home_team_id": null,
+      "participation": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": {
+          "called_up": 1,
+          "starts": 1,
+          "bench": 0,
+          "played": 1,
+          "minutes": 90,
+          "goals": 0
+        }
+      },
+      "home_team_id": "56236",
       "away_team_id": "14448990",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
-      "participation_source": {},
+      "participation_attempted_at": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": "2026-11-19T09:13:11+00:00"
+      },
+      "participation_checked_at": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": "2026-11-19T09:13:58+00:00"
+      },
+      "participation_source": {
+        "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=589812&cod_acta=589812"
+      },
+      "updated_at": "2026-11-19T09:14:14+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584010",
@@ -15912,7 +16004,9 @@
         "p-a7f65893-119e-475d-87f0-28a139edc33d"
       ],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-a7f65893-119e-475d-87f0-28a139edc33d": "2026-11-19T09:23:02+00:00"
+      }
     },
     {
       "id": "murcia-14454755-3",
@@ -15926,26 +16020,39 @@
       "date": "2026-09-26",
       "time": "18:30",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=22&codcompeticion=24032666&codgrupo=24032668&CodJornada=1&CDetalle=1",
-      "venue": "30 CAMPO MPAL. DE PUEBLA DE SOTO (CEA)",
-      "locality": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=591079&cod_acta=591079",
+      "venue": "30 CAMPO MPAL. DE PUEBLA DE SOTO",
+      "locality": "Murcia",
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
-      "away_logo": null,
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128674_escudo.jpg",
       "score_home": 3,
       "score_away": 1,
       "round": 3,
       "competition_id": "24032666",
       "group_id": "24032668",
       "season": "2026-2027",
-      "participation": {},
+      "participation": {
+        "p-1a5c323c-3034-463b-b521-cc92f2681b37": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        }
+      },
       "home_team_id": "14454755",
-      "away_team_id": null,
-      "participation_checked_at": {},
+      "away_team_id": "56859",
+      "participation_checked_at": {
+        "p-1a5c323c-3034-463b-b521-cc92f2681b37": "2026-11-19T09:19:58+00:00"
+      },
       "updated_at": "2026-11-18T19:48:56+00:00",
-      "participation_source": {},
+      "participation_source": {
+        "p-1a5c323c-3034-463b-b521-cc92f2681b37": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=591079&cod_acta=591079"
+      },
       "home_player_ids": [
         "p-1a5c323c-3034-463b-b521-cc92f2681b37"
       ],
@@ -15953,7 +16060,9 @@
         "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814"
       ],
       "is_internal_matchup": true,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-1a5c323c-3034-463b-b521-cc92f2681b37": "2026-11-19T09:19:10+00:00"
+      }
     },
     {
       "id": "murcia-56738-2",
@@ -15991,7 +16100,9 @@
         "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83"
       ],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83": "2026-11-19T09:22:06+00:00"
+      }
     },
     {
       "id": "madrid-5584314",
@@ -18486,7 +18597,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83": "2026-11-19T09:22:06+00:00"
+      }
     },
     {
       "id": "madrid-5605871",
@@ -19074,14 +19187,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-2",
@@ -19119,7 +19232,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5": "2026-11-19T09:18:14+00:00"
+      }
     },
     {
       "id": "valencia-26479929",
@@ -19864,33 +19979,59 @@
       "date": "2026-10-03",
       "time": "19:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=22&codcompeticion=24032757&codgrupo=24032761&CodJornada=1&CDetalle=1",
-      "venue": "30 CAMPO MPAL. DE PUEBLA DE SOTO (CEA)",
-      "locality": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=613982&cod_acta=613982",
+      "venue": "30 CAMPO MPAL. DE PUEBLA DE SOTO",
+      "locality": "Murcia",
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
-      "away_logo": null,
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000707703_WhatsApp_Image_2025_08_25_at_08.53.40.jpeg",
       "score_home": 2,
       "score_away": 4,
       "round": 1,
       "competition_id": "24032757",
       "group_id": "24032761",
       "season": "2026-2027",
-      "participation": {},
+      "participation": {
+        "p-093e1f03-53b8-4c04-8315-c64a44760528": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 45,
+          "goals": 0
+        },
+        "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 1,
+          "minutes": 45,
+          "goals": 0
+        }
+      },
       "home_team_id": "34067",
-      "away_team_id": null,
-      "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
-      "participation_source": {},
+      "away_team_id": "5783704",
+      "participation_attempted_at": {
+        "p-093e1f03-53b8-4c04-8315-c64a44760528": "2026-11-19T09:20:15+00:00",
+        "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4": "2026-11-19T09:21:26+00:00"
+      },
+      "participation_checked_at": {
+        "p-093e1f03-53b8-4c04-8315-c64a44760528": "2026-11-19T09:20:30+00:00",
+        "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4": "2026-11-19T09:21:26+00:00"
+      },
+      "participation_source": {
+        "p-093e1f03-53b8-4c04-8315-c64a44760528": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=613982&cod_acta=613982",
+        "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=613982&cod_acta=613982"
+      },
+      "updated_at": "2026-11-19T09:21:58+00:00",
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26479934",
@@ -21628,7 +21769,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-a7f65893-119e-475d-87f0-28a139edc33d": "2026-11-19T09:23:02+00:00"
+      }
     },
     {
       "id": "madrid-5582182",
@@ -22582,7 +22725,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814": "2026-11-19T09:16:22+00:00"
+      }
     },
     {
       "id": "valencia-26481487",
@@ -24348,33 +24493,59 @@
       "date": "2026-10-10",
       "time": "17:00",
       "status": "finished",
-      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codtemporada=22&codcompeticion=24032757&codgrupo=24032761&CodJornada=1&CDetalle=1",
-      "venue": "C.D FCO. FDEZ. TORRALBA (CEA)",
-      "locality": null,
+      "source": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=613990&cod_acta=613990",
+      "venue": "C.D FCO. FDEZ. TORRALBA",
+      "locality": "Caravaca De La Cruz",
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": null,
-      "away_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
+      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128752_escudo.jpg",
+      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128761_escudo.jpg",
       "score_home": 0,
       "score_away": 0,
       "round": 2,
       "competition_id": "24032757",
       "group_id": "24032761",
       "season": "2026-2027",
-      "participation": {},
-      "home_team_id": null,
+      "participation": {
+        "p-093e1f03-53b8-4c04-8315-c64a44760528": {
+          "called_up": 0,
+          "starts": 0,
+          "bench": 0,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        },
+        "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4": {
+          "called_up": 1,
+          "starts": 0,
+          "bench": 1,
+          "played": 0,
+          "minutes": 0,
+          "goals": 0
+        }
+      },
+      "home_team_id": "55873",
       "away_team_id": "34067",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
-      "participation_source": {},
+      "participation_attempted_at": {
+        "p-093e1f03-53b8-4c04-8315-c64a44760528": "2026-11-19T09:20:15+00:00",
+        "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4": "2026-11-19T09:21:26+00:00"
+      },
+      "participation_checked_at": {
+        "p-093e1f03-53b8-4c04-8315-c64a44760528": "2026-11-19T09:20:46+00:00",
+        "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4": "2026-11-19T09:21:27+00:00"
+      },
+      "participation_source": {
+        "p-093e1f03-53b8-4c04-8315-c64a44760528": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=613990&cod_acta=613990",
+        "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4": "https://www.ffrm.es/pnfg/NPcd/NFG_CmpPartido?cod_primaria=1000120&CodActa=613990&cod_acta=613990"
+      },
+      "updated_at": "2026-11-19T09:21:58+00:00",
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5594645",
@@ -24876,14 +25047,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5616982",
@@ -25117,7 +25288,9 @@
         "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5"
       ],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5": "2026-11-19T09:18:14+00:00"
+      }
     },
     {
       "id": "madrid-5581885",
@@ -28211,14 +28384,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584645",
@@ -30139,16 +30312,19 @@
       "participation": {},
       "home_team_id": "34067",
       "away_team_id": null,
+      "participation_attempted_at": {
+        "p-093e1f03-53b8-4c04-8315-c64a44760528": "2026-11-19T09:20:15+00:00",
+        "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4": "2026-11-19T09:21:26+00:00"
+      },
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584338",
@@ -32809,14 +32985,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "catalunya-4194666",
@@ -34132,7 +34308,9 @@
         "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5"
       ],
       "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "participation_attempted_at": {
+        "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5": "2026-11-19T09:18:14+00:00"
+      }
     },
     {
       "id": "madrid-5589480",
@@ -35703,15 +35881,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5646363",
@@ -36494,7 +36672,7 @@
       "latitude": null,
       "longitude": null,
       "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000898900_Escudo_Oficial..png",
-      "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
+      "away_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "score_home": 7,
       "score_away": 1,
       "round": 7,
@@ -39999,14 +40177,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-frf-21959329-9-ALFARO-COMILLAS",
@@ -40972,7 +41150,7 @@
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
+      "home_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128596_escudo.jpg",
       "score_home": 1,
       "score_away": 2,
@@ -40993,7 +41171,7 @@
       "home_team_id": "24069902",
       "away_team_id": "5778474",
       "participation_attempted_at": {
-        "iker-piqueras-mora": "2026-11-19T02:02:04+00:00"
+        "iker-piqueras-mora": "2026-11-19T09:23:58+00:00"
       },
       "participation_checked_at": {
         "iker-piqueras-mora": "2026-11-19T02:02:35+00:00"
@@ -44536,14 +44714,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26474179",
@@ -45453,7 +45631,7 @@
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
+      "home_logo": "https://www.ffrm.es/pnfg/pimg/Clubes/00100_0000128693_escudo.jpg",
       "away_logo": "https://ffrm.filesnovanet.es/pnfg/pimg/Clubes/00100_0000128771_escudo.jpg",
       "score_home": 6,
       "score_away": 0,
@@ -45477,7 +45655,7 @@
         "iker-piqueras-mora": "2026-11-19T02:02:51+00:00"
       },
       "participation_attempted_at": {
-        "iker-piqueras-mora": "2026-11-19T02:02:04+00:00"
+        "iker-piqueras-mora": "2026-11-19T09:23:58+00:00"
       },
       "updated_at": "2026-11-19T02:03:07+00:00",
       "participation_source": {},
@@ -45588,6 +45766,44 @@
       "participation_attempted_at": {}
     },
     {
+      "id": "valencia-26523620",
+      "federation": "valencia",
+      "player_ids": [
+        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
+      ],
+      "home": "C.F. Garra Ilicitana 'B'",
+      "away": "Celtic Elche C.F. 'C'",
+      "date": "2026-11-14",
+      "time": "11:30",
+      "status": "finished",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26523620",
+      "venue": "Polideportivo Mpal. Altabix Emilio Esteban F-11",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074529888_ESCUDO_GARRA.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074602439_CELTIC_ELCHE_VERDE_TOMAS.png",
+      "score_home": 4,
+      "score_away": 0,
+      "round": 7,
+      "competition_id": "905431892",
+      "group_id": "905431904",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "28145",
+      "away_team_id": "16863",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-19T09:13:00+00:00",
+      "participation_attempted_at": {},
+      "participation_source": {},
+      "home_player_ids": [
+        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
+    },
+    {
       "id": "murcia-14448990-10",
       "federation": "murcia",
       "player_ids": [
@@ -45616,14 +45832,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14452280-9",
@@ -48499,15 +48715,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584377",
@@ -52268,6 +52484,44 @@
       "is_internal_matchup": false
     },
     {
+      "id": "valencia-26512687",
+      "federation": "valencia",
+      "player_ids": [
+        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
+      ],
+      "home": "Catral-Castrum C.F. 'B'",
+      "away": "C.F. Garra Ilicitana 'B'",
+      "date": "2026-11-22",
+      "time": "11:00",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26512687",
+      "venue": "Campo Mpal. de Catral F-11",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074601293_ESCUDO_NUEVO_CATRAL_CASTRUM_CF.jpeg",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074529888_ESCUDO_GARRA.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 8,
+      "competition_id": "905431892",
+      "group_id": "905431904",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "900440506",
+      "away_team_id": "28145",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-19T09:13:00+00:00",
+      "participation_attempted_at": {},
+      "participation_source": {},
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
+      ],
+      "is_internal_matchup": false
+    },
+    {
       "id": "madrid-5578702",
       "federation": "madrid",
       "player_ids": [
@@ -53145,14 +53399,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-frf-21959329-12-CENICERO-ALFARO",
@@ -53540,15 +53794,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-5584692",
@@ -53822,6 +54076,44 @@
       ],
       "is_internal_matchup": false,
       "participation_attempted_at": {}
+    },
+    {
+      "id": "valencia-26512702",
+      "federation": "valencia",
+      "player_ids": [
+        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
+      ],
+      "home": "C.F. Garra Ilicitana 'B'",
+      "away": "Club Costa City 'B'",
+      "date": "2026-11-28",
+      "time": "09:45",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26512702",
+      "venue": "Polideportivo Mpal. Altabix Emilio Esteban F-11",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074529888_ESCUDO_GARRA.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074565729_CCC_ESCUDO_2.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 9,
+      "competition_id": "905431892",
+      "group_id": "905431904",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "28145",
+      "away_team_id": "22762",
+      "participation_checked_at": {},
+      "updated_at": "2026-11-19T09:13:00+00:00",
+      "participation_attempted_at": {},
+      "participation_source": {},
+      "home_player_ids": [
+        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-rfef-33836121-11-ALBACETE-BALOMPIE-AD-SPORTING-HORTALEZA",
@@ -57089,14 +57381,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-9",
@@ -57323,15 +57615,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-11",
@@ -58064,14 +58356,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "madrid-ffcm-22916200-1-U-B-CONQUENSE-C-D-ALAMEDA-DE-LA-SAGRA-E-M-F",
@@ -61415,14 +61707,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-10",
@@ -61646,15 +61938,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-12",
@@ -65218,14 +65510,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14452280-13",
@@ -65376,15 +65668,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-13",
@@ -66741,14 +67033,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-12",
@@ -66972,15 +67264,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-14",
@@ -70276,14 +70568,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-13",
@@ -70507,15 +70799,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-15",
@@ -73926,14 +74218,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-14",
@@ -74157,15 +74449,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-16",
@@ -77452,14 +77744,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-15",
@@ -77610,15 +77902,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "valencia-26541804",
@@ -80540,14 +80832,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14452280-17",
@@ -80733,15 +81025,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-17",
@@ -87354,14 +87646,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-17",
@@ -87585,15 +87877,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-18",
@@ -90936,14 +91228,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-18",
@@ -91129,15 +91421,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-19",
@@ -94464,14 +94756,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-19",
@@ -97962,14 +98254,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-20",
@@ -98193,15 +98485,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-20",
@@ -100995,14 +101287,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-21",
@@ -101226,15 +101518,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-21",
@@ -104809,14 +105101,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-22",
@@ -108232,14 +108524,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-23",
@@ -108463,15 +108755,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-23",
@@ -111821,14 +112113,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-24",
@@ -112014,15 +112306,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-24",
@@ -115432,14 +115724,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-25",
@@ -115666,15 +115958,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-25",
@@ -119007,14 +119299,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14452280-26",
@@ -119200,15 +119492,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-26",
@@ -122504,14 +122796,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-27",
@@ -122700,15 +122992,15 @@
       "home_team_id": null,
       "away_team_id": "34067",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-27",
@@ -125753,14 +126045,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-28",
@@ -125984,15 +126276,15 @@
       "home_team_id": "34067",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:57+00:00",
+      "updated_at": "2026-11-19T09:21:58+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-093e1f03-53b8-4c04-8315-c64a44760528",
         "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-56738-28",
@@ -128546,14 +128838,14 @@
       "home_team_id": "14448990",
       "away_team_id": null,
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-29",
@@ -130453,14 +130745,14 @@
       "home_team_id": null,
       "away_team_id": "14448990",
       "participation_checked_at": {},
-      "updated_at": "2026-11-18T19:48:52+00:00",
+      "updated_at": "2026-11-19T09:14:14+00:00",
+      "participation_attempted_at": {},
       "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
-      "is_internal_matchup": false,
-      "participation_attempted_at": {}
+      "is_internal_matchup": false
     },
     {
       "id": "murcia-14449902-30",
