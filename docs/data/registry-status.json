@@ -2,21 +2,21 @@
   "schema_version": 1,
   "resolver_version": 11,
   "revision": 19,
-  "checked_at": "2026-11-21T12:47:52+00:00",
+  "checked_at": "2026-11-21T18:17:36+00:00",
   "players": [
     {
-      "id": "p-b26a4868-f958-4714-b575-feeeadd6de2b",
+      "id": "p-660db819-7d2f-43b2-8c7c-1cfc148c322d",
       "state": "pending",
       "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
-      "checked_at": "2026-11-21T12:47:51+00:00",
-      "control_fingerprint": "8c9f546ff84a0fd067909f24f7438f3950450865e9f372315bc696c011f2dce0"
+      "checked_at": "2026-11-21T18:17:34+00:00",
+      "control_fingerprint": "952ae0deadd0494a09541cc53df612ce2d03849f5406c46059c98302da5434f4"
     },
     {
-      "id": "p-57ec6fd7-afeb-4124-bf0f-9b04d09a6629",
+      "id": "p-88cbc730-9eb2-4db3-a8c0-704eb44834fc",
       "state": "pending",
-      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
-      "checked_at": "2026-11-21T12:47:52+00:00",
-      "control_fingerprint": "4c04414587cb7d31a29caa91cf7034938878f555fb96f774c3b4512b74315969"
+      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo",
+      "checked_at": "2026-11-21T18:17:36+00:00",
+      "control_fingerprint": "2a22af72b5f8a26d5ab5424b90c879bfd0d4ee2ddc88e48db68e9c17909547bd"
     },
     {
       "id": "jorge-martin-andres",
@@ -349,6 +349,13 @@
       "state": "verified"
     },
     {
+      "id": "p-b26a4868-f958-4714-b575-feeeadd6de2b",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
+      "checked_at": "2026-11-21T12:47:51+00:00",
+      "control_fingerprint": "8c9f546ff84a0fd067909f24f7438f3950450865e9f372315bc696c011f2dce0"
+    },
+    {
       "id": "p-72d92a3a-e17a-4855-81e9-1a68effac7d5",
       "state": "verified"
     },
@@ -363,13 +370,6 @@
     {
       "id": "p-4fb1ed37-b9b6-4449-b6c9-38e8c743c5e7",
       "state": "verified"
-    },
-    {
-      "id": "p-660db819-7d2f-43b2-8c7c-1cfc148c322d",
-      "state": "pending",
-      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
-      "checked_at": "2026-11-21T03:53:20+00:00",
-      "control_fingerprint": "952ae0deadd0494a09541cc53df612ce2d03849f5406c46059c98302da5434f4"
     },
     {
       "id": "p-dd36db37-f4e0-4936-98b9-0dcdff256637",
@@ -399,11 +399,11 @@
       "state": "verified"
     },
     {
-      "id": "p-88cbc730-9eb2-4db3-a8c0-704eb44834fc",
+      "id": "p-57ec6fd7-afeb-4124-bf0f-9b04d09a6629",
       "state": "pending",
-      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo",
-      "checked_at": "2026-11-21T03:53:22+00:00",
-      "control_fingerprint": "2a22af72b5f8a26d5ab5424b90c879bfd0d4ee2ddc88e48db68e9c17909547bd"
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
+      "checked_at": "2026-11-21T12:47:52+00:00",
+      "control_fingerprint": "4c04414587cb7d31a29caa91cf7034938878f555fb96f774c3b4512b74315969"
     },
     {
       "id": "p-13f88727-f0e1-4050-a4d9-36b1bc6e5527",
@@ -647,6 +647,6 @@
       "calendar_attempted_at": "2026-11-19T09:12:45+00:00"
     }
   ],
-  "intake_mode": "backfill",
+  "intake_mode": "processed",
   "intake_ids": []
 }
