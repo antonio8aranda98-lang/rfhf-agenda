@@ -2483,7 +2483,7 @@
       "federation": "valencia",
       "collaborator": "JOSEJA",
       "match_duration": 90,
-      "active": true,
+      "active": false,
       "age_category": "juvenil"
     },
     {
@@ -2705,7 +2705,7 @@
       "federation": "murcia",
       "collaborator": "Iván Macià",
       "match_duration": 90,
-      "active": true,
+      "active": false,
       "age_category": "juvenil"
     },
     {
@@ -2800,5 +2800,5 @@
       "age_category": "cadete"
     }
   ],
-  "registry_revision": 19
+  "registry_revision": 21
 }

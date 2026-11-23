@@ -1,23 +1,9 @@
 {
   "schema_version": 1,
   "resolver_version": 11,
-  "revision": 19,
-  "checked_at": "2026-11-23T14:21:18+00:00",
+  "revision": 21,
+  "checked_at": "2026-11-23T20:10:30+00:00",
   "players": [
-    {
-      "id": "p-c263c5a6-b2b8-446a-b380-55d530629551",
-      "state": "pending",
-      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
-      "checked_at": "2026-11-23T14:21:16+00:00",
-      "control_fingerprint": "4d63e78cbacccc007bfb80e7c8537587c81b962dbe88bc04347a06d66830753c"
-    },
-    {
-      "id": "p-caa0133b-9b5f-4165-961a-2349bf6e02e5",
-      "state": "pending",
-      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo",
-      "checked_at": "2026-11-23T14:21:18+00:00",
-      "control_fingerprint": "cbde882a1339543f4edf0bd240061dd736aa5dc74f92778245f3de5c45c95afe"
-    },
     {
       "id": "jorge-martin-andres",
       "state": "verified"
@@ -93,6 +79,13 @@
     {
       "id": "p-a53947ba-45d7-4e5a-962f-26696e074f29",
       "state": "verified"
+    },
+    {
+      "id": "p-c263c5a6-b2b8-446a-b380-55d530629551",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
+      "checked_at": "2026-11-23T14:21:16+00:00",
+      "control_fingerprint": "4d63e78cbacccc007bfb80e7c8537587c81b962dbe88bc04347a06d66830753c"
     },
     {
       "id": "p-01ac3a21-0ef4-4ec6-a54d-f7e88384342c",
@@ -421,6 +414,13 @@
       "state": "verified"
     },
     {
+      "id": "p-caa0133b-9b5f-4165-961a-2349bf6e02e5",
+      "state": "pending",
+      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo",
+      "checked_at": "2026-11-23T14:21:18+00:00",
+      "control_fingerprint": "cbde882a1339543f4edf0bd240061dd736aa5dc74f92778245f3de5c45c95afe"
+    },
+    {
       "id": "p-b6864476-e8c9-4d54-a220-e80ffa5a5361",
       "state": "verified"
     },
@@ -568,9 +568,7 @@
     },
     {
       "id": "p-2e23b123-ae10-4212-b2f8-d8627a97b6b9",
-      "state": "verified",
-      "calendar_attempted_at": "2026-11-20T17:27:33+00:00",
-      "priority_calendar": false
+      "state": "inactive"
     },
     {
       "id": "p-a8f2c383-0c07-4afd-9402-926a2a17e524",
@@ -620,7 +618,7 @@
     },
     {
       "id": "p-1a5c323c-3034-463b-b521-cc92f2681b37",
-      "state": "verified"
+      "state": "inactive"
     },
     {
       "id": "p-093e1f03-53b8-4c04-8315-c64a44760528",
