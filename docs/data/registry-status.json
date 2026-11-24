@@ -2,8 +2,22 @@
   "schema_version": 1,
   "resolver_version": 11,
   "revision": 21,
-  "checked_at": "2026-11-23T20:10:30+00:00",
+  "checked_at": "2026-11-24T01:43:47+00:00",
   "players": [
+    {
+      "id": "p-f2a6ecbf-8bbe-4936-8d7f-c7b48388ac0e",
+      "state": "pending",
+      "message": "La ficha no identifica una única competición para ese equipo",
+      "checked_at": "2026-11-24T01:43:45+00:00",
+      "control_fingerprint": "4716d5d22211deff9d213911079d16f64fb20d421fb21eef8d200c23ebd02d9d"
+    },
+    {
+      "id": "p-47bbeba1-c04c-42b3-be12-9c4834885cbd",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
+      "checked_at": "2026-11-24T01:43:47+00:00",
+      "control_fingerprint": "c21ec8c63b7c1c8e268e68755f8f966c7124e947ce715911d9a901ed896d392a"
+    },
     {
       "id": "jorge-martin-andres",
       "state": "verified"
@@ -284,13 +298,6 @@
       "state": "verified"
     },
     {
-      "id": "p-f2a6ecbf-8bbe-4936-8d7f-c7b48388ac0e",
-      "state": "pending",
-      "message": "La ficha no identifica una única competición para ese equipo",
-      "checked_at": "2026-11-22T23:48:13+00:00",
-      "control_fingerprint": "4716d5d22211deff9d213911079d16f64fb20d421fb21eef8d200c23ebd02d9d"
-    },
-    {
       "id": "p-074fd601-5fdb-412c-b493-564bb61f64d0",
       "state": "verified"
     },
@@ -379,13 +386,6 @@
     {
       "id": "p-03234e3c-6d9f-4b31-9419-37a847dbb87f",
       "state": "verified"
-    },
-    {
-      "id": "p-47bbeba1-c04c-42b3-be12-9c4834885cbd",
-      "state": "pending",
-      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
-      "checked_at": "2026-11-22T23:48:15+00:00",
-      "control_fingerprint": "c21ec8c63b7c1c8e268e68755f8f966c7124e947ce715911d9a901ed896d392a"
     },
     {
       "id": "p-241a5873-e1ac-4408-ac98-e2d44219156a",
