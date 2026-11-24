@@ -1,22 +1,16 @@
 {
   "schema_version": 1,
   "resolver_version": 11,
-  "revision": 21,
-  "checked_at": "2026-11-24T11:38:09+00:00",
+  "revision": 23,
+  "checked_at": "2026-11-24T19:29:34+00:00",
   "players": [
     {
-      "id": "p-660db819-7d2f-43b2-8c7c-1cfc148c322d",
-      "state": "pending",
-      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
-      "checked_at": "2026-11-24T11:38:08+00:00",
-      "control_fingerprint": "952ae0deadd0494a09541cc53df612ce2d03849f5406c46059c98302da5434f4"
-    },
-    {
-      "id": "p-88cbc730-9eb2-4db3-a8c0-704eb44834fc",
-      "state": "pending",
-      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo",
-      "checked_at": "2026-11-24T11:38:09+00:00",
-      "control_fingerprint": "2a22af72b5f8a26d5ab5424b90c879bfd0d4ee2ddc88e48db68e9c17909547bd"
+      "id": "p-5ad0a64a-a890-4ad4-b377-e13eb992ddb9",
+      "state": "verified",
+      "checked_at": "2026-11-24T19:29:34+00:00",
+      "control_fingerprint": "b4afac62f4e4cc28639e7cc77a213ab4240f13f38707478999eed5b5ae5f407a",
+      "priority_calendar": false,
+      "calendar_attempted_at": "2026-11-24T19:29:36+00:00"
     },
     {
       "id": "jorge-martin-andres",
@@ -372,6 +366,10 @@
       "state": "verified"
     },
     {
+      "id": "p-660db819-7d2f-43b2-8c7c-1cfc148c322d",
+      "state": "inactive"
+    },
+    {
       "id": "p-dd36db37-f4e0-4936-98b9-0dcdff256637",
       "state": "verified"
     },
@@ -404,6 +402,13 @@
       "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
       "checked_at": "2026-11-24T04:45:33+00:00",
       "control_fingerprint": "4c04414587cb7d31a29caa91cf7034938878f555fb96f774c3b4512b74315969"
+    },
+    {
+      "id": "p-88cbc730-9eb2-4db3-a8c0-704eb44834fc",
+      "state": "pending",
+      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo",
+      "checked_at": "2026-11-24T11:38:09+00:00",
+      "control_fingerprint": "2a22af72b5f8a26d5ab5424b90c879bfd0d4ee2ddc88e48db68e9c17909547bd"
     },
     {
       "id": "p-13f88727-f0e1-4050-a4d9-36b1bc6e5527",
@@ -646,5 +651,7 @@
     }
   ],
   "intake_mode": "processed",
-  "intake_ids": []
+  "intake_ids": [
+    "p-5ad0a64a-a890-4ad4-b377-e13eb992ddb9"
+  ]
 }
