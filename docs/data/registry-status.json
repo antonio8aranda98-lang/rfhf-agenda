@@ -2,23 +2,14 @@
   "schema_version": 1,
   "resolver_version": 11,
   "revision": 27,
-  "checked_at": "2026-11-25T14:51:47+00:00",
+  "checked_at": "2026-11-25T23:23:02+00:00",
   "players": [
     {
-      "id": "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad",
-      "state": "verified",
-      "checked_at": "2026-11-25T14:51:30+00:00",
-      "control_fingerprint": "e7485923455fecae7c02a0aac1f842d57234fbf6f613e43d6cad06336f82f919",
-      "priority_calendar": false,
-      "calendar_attempted_at": "2026-11-25T14:52:14+00:00"
-    },
-    {
-      "id": "p-a7f65893-119e-475d-87f0-28a139edc33d",
-      "state": "verified",
-      "checked_at": "2026-11-25T14:51:47+00:00",
-      "control_fingerprint": "97c9338d43500c8e1724895908ac6d60b14730d8e0c4032662bfd4fbc628171d",
-      "priority_calendar": false,
-      "calendar_attempted_at": "2026-11-25T14:51:48+00:00"
+      "id": "p-8f5b0309-8c77-4269-a3bc-644f1c3228e1",
+      "state": "pending",
+      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
+      "checked_at": "2026-11-25T23:23:02+00:00",
+      "control_fingerprint": "0296104fb699100e1a82105538c4dd874c2f213687f47b7d84a984c3c4660bcf"
     },
     {
       "id": "jorge-martin-andres",
@@ -490,16 +481,16 @@
       "state": "verified"
     },
     {
-      "id": "p-8f5b0309-8c77-4269-a3bc-644f1c3228e1",
-      "state": "pending",
-      "message": "No se identifica un único jugador con ese nombre completo en la plantilla. Revisa apellidos y equipo; el alta queda pendiente.",
-      "checked_at": "2026-11-25T14:47:45+00:00",
-      "control_fingerprint": "0296104fb699100e1a82105538c4dd874c2f213687f47b7d84a984c3c4660bcf",
-      "waiting_priority": true
-    },
-    {
       "id": "p-d293de07-f3e2-4508-8fc8-a32c0164a831",
       "state": "verified"
+    },
+    {
+      "id": "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad",
+      "state": "verified",
+      "checked_at": "2026-11-25T14:51:30+00:00",
+      "control_fingerprint": "e7485923455fecae7c02a0aac1f842d57234fbf6f613e43d6cad06336f82f919",
+      "priority_calendar": false,
+      "calendar_attempted_at": "2026-11-25T14:52:14+00:00"
     },
     {
       "id": "p-7a5540e3-e152-4958-abff-a4afc28a3312",
@@ -646,6 +637,14 @@
       "state": "verified"
     },
     {
+      "id": "p-a7f65893-119e-475d-87f0-28a139edc33d",
+      "state": "verified",
+      "checked_at": "2026-11-25T14:51:47+00:00",
+      "control_fingerprint": "97c9338d43500c8e1724895908ac6d60b14730d8e0c4032662bfd4fbc628171d",
+      "priority_calendar": false,
+      "calendar_attempted_at": "2026-11-25T14:51:48+00:00"
+    },
+    {
       "id": "p-64bc282c-d75d-4b3b-8a72-8e7128216373",
       "state": "verified",
       "checked_at": "2026-11-19T09:12:44+00:00",
@@ -670,10 +669,6 @@
       "calendar_attempted_at": "2026-11-25T14:49:19+00:00"
     }
   ],
-  "valencia_retry_after": "2026-11-19T03:05:33+00:00",
   "intake_mode": "processed",
-  "intake_ids": [
-    "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad",
-    "p-a7f65893-119e-475d-87f0-28a139edc33d"
-  ]
+  "intake_ids": []
 }
