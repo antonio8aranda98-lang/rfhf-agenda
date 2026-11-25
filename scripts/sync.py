@@ -394,7 +394,7 @@ def murcia(client, player):
         if not transient(error) or not previous or player.get('_calendar_only'):raise
         warnings.append('La plantilla no ha respondido; se conserva el calendario anterior.')
         retained=True
-    if team is not None and normalized(player['official_name']) not in normalized(team.get_text(' ', strip=True)):
+    if team is not None and not player.get('_additional_scope') and normalized(player['official_name']) not in normalized(team.get_text(' ', strip=True)):
         raise ValueError('El jugador ya no figura en la plantilla configurada; revisar asignación')
     # Keep the public calendar form's season and journey filters. Without
     # CodJornada this portal can return an empty HTTP 200 for a new group.
@@ -488,6 +488,9 @@ def collect_player(client, secondary_client, player, previous=()):
     if player.get('provider') == 'besoccer':
         return adapter(api, player, previous)
     result = ADAPTERS[player['federation']](client, {**player, '_previous':previous})
+    if player['federation'] in ('valencia','murcia') and player.get('additional_teams'):
+        from additional_teams import collect
+        result=collect(client,{**player,'_previous':previous},result,ADAPTERS[player['federation']])
     if player.get('besoccer_team_source') and not player.get('_calendar_only'):
         try:
             secondary = adapter(api, player)
@@ -645,7 +648,7 @@ def _sync(browser=False, registry_changes=False, intake=False, federation=None):
             primary=team_matches(own,player) if player.get('additional_teams') else own
             player['stats'], player['coverage'] = summarize(primary, player['id'], player.get('stats'),calendar_complete=player.get('calendar_complete') is not False)
             for scope in (player.get('additional_teams') or []):
-                scope['stats'],scope['coverage']=summarize(team_matches(own,scope),player['id'])
+                scope['stats'],scope['coverage']=summarize(team_matches(own,scope),player['id'],calendar_complete=scope.get('calendar_complete') is not False)
     path.parent.mkdir(exist_ok=True, parents=True)
     temp = path.with_suffix('.tmp')
     temp.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + '\n')

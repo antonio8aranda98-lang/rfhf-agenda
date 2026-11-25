@@ -116,6 +116,15 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None, select
                 if entry.get('_identity_revision'):verified['identity_revision']=entry['_identity_revision']
                 updated['players'].append(verified)
                 known[id] = verified
+            resolved=known.get(id)
+            if resolved and (entry.get('additional_team_sources',[])!=resolved.get('additional_team_sources',[]) or (entry.get('additional_team_sources') and not resolved.get('additional_teams'))):
+                from additional_teams import resolve as resolve_additional
+                sources=entry.get('additional_team_sources',[])
+                fid=resolved['federation']
+                if fid not in clients:clients[fid]=Client(FEDERATIONS[fid][2])
+                extra=resolve_additional(clients[fid],resolved,sources,current['season']) if sources else []
+                resolved['additional_teams']=extra
+                resolved['additional_team_sources']=copy.deepcopy(sources)
             results.append({'id':id,'state':'verified','checked_at':now(),'control_fingerprint':fingerprint(entry),
                             'priority_calendar':bool(before.get('priority_calendar')) or (selected_ids is not None and id in selected_ids)})
         except IntakeYield:

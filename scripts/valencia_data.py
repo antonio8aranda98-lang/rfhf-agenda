@@ -118,7 +118,7 @@ def load_valencia(client, player):
     from sync import fixture, integer, iso_date, http_time, normalized, new_stats
     api = PublicFFCV(client)
     roster = api.get('equipos/plantilla_home.php', cod_equipo=player['team_id'])
-    if not any(str(p.get('cod_jugador') or p.get('codjugador') or p.get('codigo_jugador')) == player['player_id'] for p in roster.get('jugadores_equipo', [])):
+    if not player.get('_additional_scope') and not any(str(p.get('cod_jugador') or p.get('codjugador') or p.get('codigo_jugador')) == player['player_id'] for p in roster.get('jugadores_equipo', [])):
         raise ValueError('El jugador ya no figura en la plantilla configurada')
     pdata = api.get('jugadores/jugador_api.php', codigo=player['player_id'], cod_temporada=player['season_id'])
     if normalized(pdata.get('nombre_jugador')) != normalized(player['official_name']):

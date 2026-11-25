@@ -23,6 +23,7 @@ def fingerprint(entry):
     keys=('name','federation','source','player_source','competition_source','age_category','match_duration',
           'besoccer_team_source','besoccer_player_source','_identity_revision','_activation_revision')
     value={k:entry.get(k) for k in keys}
+    if entry.get('additional_team_sources'):value['additional_team_sources']=entry['additional_team_sources']
     return hashlib.sha256(json.dumps(value,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
 
 
