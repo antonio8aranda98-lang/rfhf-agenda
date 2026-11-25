@@ -2140,7 +2140,26 @@
       "collaborator": "Carlos Baena",
       "match_duration": 90,
       "active": true,
-      "age_category": "juvenil"
+      "age_category": "juvenil",
+      "additional_teams": [
+        {
+          "team_id": "26675",
+          "team": "C.D.F. Canet 'A'",
+          "competition_id": "905431546",
+          "group_id": "905431547",
+          "season_id": "22",
+          "competition_label": "Lliga Comunitat Juvenil · Nord",
+          "team_source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=26675",
+          "participation_evidence": "official-player-scope",
+          "team_age_category": "juvenil",
+          "match_duration": 90,
+          "role": "additional",
+          "owner_selected": true
+        }
+      ],
+      "additional_team_sources": [
+        "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=26675"
+      ]
     },
     {
       "team_id": "16859",
@@ -2778,7 +2797,26 @@
       "collaborator": "Iván Macià",
       "match_duration": 80,
       "active": true,
-      "age_category": "cadete"
+      "age_category": "cadete",
+      "additional_teams": [
+        {
+          "competition_id": "24032671",
+          "group_id": "24032672",
+          "season_id": "22",
+          "competition_label": "SUPERLIGA CADETE · GRUPO UNICO",
+          "team_id": "14452266",
+          "team": "E. F. MURCIA PROMESAS",
+          "team_source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14452266&cod_primaria=3001860",
+          "participation_evidence": "owner-confirmed",
+          "team_age_category": "cadete",
+          "match_duration": 80,
+          "role": "additional",
+          "owner_selected": true
+        }
+      ],
+      "additional_team_sources": [
+        "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14452266&cod_primaria=3001860"
+      ]
     },
     {
       "team_id": "28145",
