@@ -52,7 +52,8 @@ def plan(desired,status,feed,settings=None,at=None):
         previous=rows.get(p['id'])
         fresh=(previous is None or previous.get('waiting_priority') or
                (previous.get('control_fingerprint') and previous['control_fingerprint']!=fingerprint(p)) or
-               max(p.get('_identity_revision',0),p.get('_activation_revision',0))>status.get('revision',0))
+               (p.get('additional_team_sources') and not previous.get('control_fingerprint')) or
+               max(p.get('_identity_revision',0),p.get('_activation_revision',0),p.get('_verification_revision',0))>status.get('revision',0))
         first_calendar=previous and previous.get('priority_calendar') and p['id'] not in published
         if (fresh or first_calendar) and source_ready(p,feed,settings,at):urgent.append(p['id'])
     if urgent:return {'mode':'priority','resolve_ids':urgent,'calendar_ids':urgent}

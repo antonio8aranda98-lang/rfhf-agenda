@@ -12,6 +12,14 @@ def entry(id,fed='madrid'):
     return dict(id=id,name='Jugador '+id,federation=fed,collaborator='Antonio',source='https://www.rffm.es/fichaequipo/1',active=True)
 
 class IntakePlanTests(unittest.TestCase):
+    def test_secondary_team_change_of_a_legacy_verified_row_is_prioritized(self):
+        p={**entry('one','valencia'),'additional_team_sources':['https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=2'],'_verification_revision':25}
+        other=entry('untouched')
+        for revision in (23,27):
+            result=plan({'revision':27,'players':[p,other]},{'revision':revision,'players':[{'id':'one','state':'verified'},{'id':'untouched','state':'verified'}]}, {'players':[{'id':'one','updated_at':'today'},{'id':'untouched','updated_at':'today'}]},at=AT)
+            self.assertEqual(result['resolve_ids'],['one'])
+        row={'id':'one','state':'verified','control_fingerprint':fingerprint(p)}
+        self.assertEqual(plan({'revision':27,'players':[p]},{'revision':27,'players':[row]},{'players':[{'id':'one','updated_at':'today'}]},at=AT)['resolve_ids'],[])
     def test_new_registration_precedes_a_large_old_pending_backlog(self):
         old=[entry(str(i)) for i in range(50)]
         status={'revision':1,'checked_at':(AT-timedelta(hours=1)).isoformat(),'players':[{'id':p['id'],'state':'pending'} for p in old]}
@@ -44,6 +52,10 @@ class IntakePlanTests(unittest.TestCase):
         self.assertEqual(plan(desired,status,{'players':[{'id':'one','updated_at':'today'}]},at=AT)['calendar_ids'],[])
 
 class PriorityReconcileTests(unittest.TestCase):
+    def test_deferred_sporting_change_keeps_old_calendar_but_waits_for_verification(self):
+        p={**entry('one'),'official_name':'ONE'};d={**entry('one'),'_verification_revision':2}
+        updated,status=reconcile({'season':'2026-2027','players':[p]},{'season':'2026-2027','revision':2,'players':[d]},selected_ids=set(),previous_status={'revision':1,'players':[{'id':'one','state':'verified'}]})
+        self.assertTrue(updated['players'][0]['active']);self.assertEqual(status['players'][0]['state'],'pending');self.assertTrue(status['players'][0]['waiting_priority'])
     def test_deferred_failed_enrichment_keeps_its_retry_status(self):
         p={**entry('old'),'official_name':'Jugador old'}
         previous={'revision':1,'players':[{'id':'old','state':'pending','message':'Fuente no disponible'}]}

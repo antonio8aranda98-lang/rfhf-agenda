@@ -56,9 +56,11 @@ def reconcile(current, desired, resolver=resolve_player, revalidate=None, select
                     if entry.get('age_category'):existing['age_category']=entry['age_category']
                 state='verified' if existing and existing.get('active',True) and not corrected else 'pending'
                 if before.get('state')=='pending':state='pending'
+                pending_control=entry.get('_verification_revision',0)>(previous_status or {}).get('revision',0)
+                if pending_control:state='pending'
                 row={**before,'id':id,'state':state}
                 if state=='pending':row.setdefault('message','Comprobación automática pendiente; se procesan primero las altas nuevas.')
-                if not before or corrected or entry.get('_activation_revision',0)>(previous_status or {}).get('revision',0):row['waiting_priority']=True
+                if not before or corrected or pending_control or entry.get('_activation_revision',0)>(previous_status or {}).get('revision',0):row['waiting_priority']=True
                 if before.get('state')=='pending' and not row.get('checked_at'):
                     row['checked_at']=(previous_status or {}).get('checked_at')
                 results.append(row)
