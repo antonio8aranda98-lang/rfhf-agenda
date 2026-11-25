@@ -7481,12 +7481,13 @@
           "updated_at": "2026-11-25T14:52:41+00:00",
           "calendar_complete": false,
           "stats": {
-            "team_played": 4,
+            "team_played": null,
             "called_up": null,
             "starts": null,
             "bench": null,
             "minutes": null,
-            "goals": null
+            "goals": null,
+            "played": null
           },
           "coverage": {
             "team_played": 4,
@@ -7499,7 +7500,8 @@
               "bench": null,
               "played": null,
               "minutes": null,
-              "goals": null
+              "goals": null,
+              "team_played": 4
             },
             "field_checked": {
               "called_up": 0,
@@ -7509,7 +7511,7 @@
               "minutes": 0,
               "goals": 0
             },
-            "calendar_complete": true
+            "calendar_complete": false
           }
         }
       ],
