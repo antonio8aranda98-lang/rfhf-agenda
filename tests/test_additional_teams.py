@@ -19,6 +19,14 @@ class API:
 
 
 class AdditionalTeamsTests(unittest.TestCase):
+    def test_evidence_recompute_preserves_incomplete_secondary_calendar(self):
+        from improve_data import recompute
+        player={**PLAYER,'additional_teams':[dict(team_id='2',group_id='11',calendar_complete=False)]}
+        game=dict(id='m',player_ids=['p'],home_team_id='2',away_team_id='9',group_id='11',status='finished',participation={})
+        result=recompute(dict(players=[player],matches=[game]))
+        secondary=result['players'][0]['additional_teams'][0]
+        self.assertFalse(secondary['coverage']['calendar_complete'])
+        self.assertIsNone(secondary['stats']['team_played'])
     def test_ffcv_second_team_uses_individual_competition_without_second_registration(self):
         with patch('valencia_data.PublicFFCV',return_value=API()):
             extra=resolve(None,PLAYER,[SOURCE],'2026-2027')

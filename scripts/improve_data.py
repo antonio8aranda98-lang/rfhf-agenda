@@ -12,7 +12,7 @@ def recompute(feed):
         primary = team_matches(own,player) if player.get('additional_teams') else own
         player['stats'],player['coverage'] = summarize(primary,player['id'],player.get('stats'),calendar_complete=player.get('calendar_complete') is not False)
         for scope in player.get('additional_teams') or []:
-            scope['stats'],scope['coverage'] = summarize(team_matches(own,scope),player['id'])
+            scope['stats'],scope['coverage'] = summarize(team_matches(own,scope),player['id'],calendar_complete=scope.get('calendar_complete') is not False)
     return feed
 
 
