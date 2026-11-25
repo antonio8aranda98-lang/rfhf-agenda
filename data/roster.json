@@ -2101,7 +2101,7 @@
       "federation": "valencia",
       "collaborator": "Carlos Baena",
       "match_duration": 90,
-      "active": true,
+      "active": false,
       "age_category": "juvenil"
     },
     {
@@ -2816,7 +2816,25 @@
       "collaborator": "Jesús Sánchez",
       "match_duration": 90,
       "active": true
+    },
+    {
+      "team_id": "22982",
+      "team": "U.E. Gimnàstic Sant Vicent C.F. 'B'",
+      "player_id": "9826578",
+      "official_name": "PASTOR ROMAN, ANTONIO JOSE",
+      "competition_id": "905431636",
+      "group_id": "905431643",
+      "season_id": "22",
+      "competition_label": "Segona FFCV Juvenil · Grup - 7",
+      "team_age_category": "juvenil",
+      "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=22982",
+      "id": "p-a8bea594-70c1-4ce7-9536-9e28e70d3f7d",
+      "name": "Antonio Jose Pastor Roman",
+      "federation": "valencia",
+      "collaborator": "JOSEJA",
+      "match_duration": 90,
+      "active": true
     }
   ],
-  "registry_revision": 23
+  "registry_revision": 27
 }
