@@ -51,7 +51,7 @@ function render() {
   if(region==='valencia'&&fed.fixtures_checked_at){
     const label=fed.fixtures_status==='ok'?'Horarios próximos revisados':fed.fixtures_status==='partial'?'Horarios próximos: revisión parcial':'No se pudieron revisar los horarios próximos';
     const history=fed.status==='ok'&&!stale?'Histórico y estadísticas actualizados el '+timestamp(fed.last_success)+'.':'El histórico y las estadísticas se completan por separado.';
-    sourceText=cooling?sourceText:`${label} · ${timestamp(fed.fixtures_updated_at||fed.fixtures_checked_at)}. ${history}`;
+    sourceText=cooling?sourceText:`${label} · ${timestamp(fed.fixtures_checked_at)}. ${history}`;
   }
   if(waiting)sourceText+=` ${waiting} ${waiting===1?'jugador de tu cartera está pendiente':'jugadores de tu cartera están pendientes'} de ficha deportiva publicada.`;
   $('#source-status').classList.toggle('warning',!!cooling||!!waiting||!!people.length&&(fed.status!=='ok'||stale||!!partialStats.length));
