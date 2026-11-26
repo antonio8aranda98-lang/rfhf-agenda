@@ -640,6 +640,7 @@ def _sync(browser=False, registry_changes=False, intake=False, federation=None):
         elif focus is not None and any(p['id'] not in focus for p in configs):
             meta['last_success'] = old_fed.get('last_success')
             if old_fed.get('status') not in ('ok','empty') and meta['status']=='ok':meta['status']='partial'
+        if fid=='valencia':meta.update({k:v for k,v in old_fed.items() if k.startswith('fixtures_')})
         feed['federations'].append(meta)
     feed = apply_roster(feed, roster)
     for player in feed['players']:

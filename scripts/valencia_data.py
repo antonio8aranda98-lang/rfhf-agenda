@@ -114,6 +114,29 @@ def resolve_ffcv(api, request, season, name_key):
             **({'official_display_name': ' '.join(reversed(official_name.split(',', 1))).strip().title()} if alias else {})}
 
 
+def round_matches(data, rnd, player):
+    """Normalize one public round for a verified team, including rescheduled dates."""
+    from sync import fixture, integer, iso_date, http_time
+    if str(data.get('jornada')) not in ('None', str(rnd['codjornada'])):
+        raise ValueError('La FFCV ha devuelto otra jornada')
+    matches=[]
+    for m in data.get('partidos', []):
+        if player['team_id'] not in (str(m.get('cod_equipo_local')), str(m.get('cod_equipo_visitante'))):
+            continue
+        score = re.fullmatch(r'\s*(\d+)\s*-\s*(\d+)\s*', str(m.get('resultado', '')))
+        finished = bool(score and str(m.get('resultado_provisional', '0')) == '0')
+        hour = http_time(m.get('hora'))
+        reason = str(m.get('motivo_estado') or '').lower()
+        status = 'finished' if finished else 'postponed' if 'aplaz' in reason or str(m.get('estado')) == '3' else 'cancelled' if 'suspend' in reason else 'scheduled' if hour else 'time_pending'
+        match = fixture('valencia', player, m['codacta'], m['local'], m['visitante'], iso_date(m.get('fecha')), hour,
+            BASE + 'partidos/partido.php?cod_partido=' + str(m['codacta']), round=integer(rnd['codjornada']), status=status,
+            home_team_id=str(m['cod_equipo_local']), away_team_id=str(m['cod_equipo_visitante']), venue=m.get('campo') or None,
+            home_logo=urljoin(FILES, m.get('escudo_local') or ''), away_logo=urljoin(FILES, m.get('escudo_visitante') or ''),
+            score_home=int(score[1]) if finished else None, score_away=int(score[2]) if finished else None)
+        matches.append(match)
+    return matches
+
+
 def load_valencia(client, player):
     from sync import fixture, integer, iso_date, http_time, normalized, new_stats
     api = PublicFFCV(client)
@@ -147,20 +170,7 @@ def load_valencia(client, player):
     matches = []
     for rnd in rounds:
         data = api.get('partidos/resultados_por_grupo_jornada_data.php', cod_temporada=player['season_id'], cod_competicion=player['competition_id'], cod_grupo=player['group_id'], cod_jornada=rnd['codjornada'])
-        for m in data.get('partidos', []):
-            if player['team_id'] not in (str(m.get('cod_equipo_local')), str(m.get('cod_equipo_visitante'))):
-                continue
-            score = re.fullmatch(r'\s*(\d+)\s*-\s*(\d+)\s*', str(m.get('resultado', '')))
-            finished = bool(score and str(m.get('resultado_provisional', '0')) == '0')
-            hour = http_time(m.get('hora'))
-            reason = str(m.get('motivo_estado') or '').lower()
-            status = 'finished' if finished else 'postponed' if 'aplaz' in reason or str(m.get('estado')) == '3' else 'cancelled' if 'suspend' in reason else 'scheduled' if hour else 'time_pending'
-            match = fixture('valencia', player, m['codacta'], m['local'], m['visitante'], iso_date(m.get('fecha')), hour,
-                BASE + 'partidos/partido.php?cod_partido=' + str(m['codacta']), round=integer(rnd['codjornada']), status=status,
-                home_team_id=str(m['cod_equipo_local']), away_team_id=str(m['cod_equipo_visitante']), venue=m.get('campo') or None,
-                home_logo=urljoin(FILES, m.get('escudo_local') or ''), away_logo=urljoin(FILES, m.get('escudo_visitante') or ''),
-                score_home=int(score[1]) if finished else None, score_away=int(score[2]) if finished else None)
-            matches.append(match)
+        matches.extend(round_matches(data,rnd,player))
     if len(matches) < len(rounds) - 3:
         raise ValueError('El calendario FFCV está incompleto; se conserva el último válido')
     # Finish the calendar before spending the source's quota on older reports.

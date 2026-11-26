@@ -76,3 +76,9 @@ test('a first calendar cannot present a few known games as a season total',async
   const player={calendar_complete:false,stats:{team_played:1},coverage:{confirmed:{team_played:1},field_checked:{},team_played:1}};
   assert.deepEqual(statEvidence(player,'team_played'),{value:1,partial:true,calendarIncomplete:true});
 });
+
+test('unconfirmed old fixture times are not exported or used for overlaps',()=>{
+ const m={id:'a',date:'2026-11-28',time:'16:00',status:'scheduled',schedule_status:'unconfirmed',home:'A',away:'B'};
+ assert.equal(overlaps(m,{...m,id:'b',schedule_status:'ok'}),false);
+ assert.equal(calendarICS([m],new Date('2026-11-26T12:00:00Z')).includes('BEGIN:VEVENT'),false);
+});
