@@ -50,7 +50,8 @@ function render() {
   let sourceText=cooling?`Consultas a la FFCV pausadas hasta ${timestamp(pause)} para respetar su límite. Las consultas se retomarán automáticamente después; se conserva el último dato válido.`:!people.length?'No hay jugadores publicados con este filtro.':fed.status==='ok'&&!stale?`Calendario de ${providers} · Actualizado el ${timestamp(fed.last_success)}${partialStats.length?' · '+detail:''}`:`${fed.status==='ok'?'Datos antiguos':'Consulta automática incompleta'} · Último dato válido: ${timestamp(fed.last_success)}. Comprueba la fuente.`;
   if(region==='valencia'&&fed.fixtures_checked_at){
     const label=fed.fixtures_status==='ok'?'Horarios próximos revisados':fed.fixtures_status==='partial'?'Horarios próximos: revisión parcial':'No se pudieron revisar los horarios próximos';
-    sourceText=`${label} · ${timestamp(fed.fixtures_updated_at||fed.fixtures_checked_at)}. `+sourceText;
+    const history=fed.status==='ok'&&!stale?'Histórico y estadísticas actualizados el '+timestamp(fed.last_success)+'.':'El histórico y las estadísticas se completan por separado.';
+    sourceText=cooling?sourceText:`${label} · ${timestamp(fed.fixtures_updated_at||fed.fixtures_checked_at)}. ${history}`;
   }
   if(waiting)sourceText+=` ${waiting} ${waiting===1?'jugador de tu cartera está pendiente':'jugadores de tu cartera están pendientes'} de ficha deportiva publicada.`;
   $('#source-status').classList.toggle('warning',!!cooling||!!waiting||!!people.length&&(fed.status!=='ok'||stale||!!partialStats.length));
