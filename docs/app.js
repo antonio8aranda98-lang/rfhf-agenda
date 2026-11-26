@@ -133,7 +133,7 @@ $('#next-week').addEventListener('click',()=>{offset++;render()});
 $('#this-week').addEventListener('click',()=>{offset=0;render()});
 $('#plan-filter').addEventListener('click',()=>{planOnly=!planOnly;render()});
 $('#export').addEventListener('click',()=>{
-  const games=matches(weekend(madridToday(),offset));const eligible=games.filter(m=>m.time&&m.status==='scheduled');
+  const games=matches(weekend(madridToday(),offset));const eligible=games.filter(m=>m.time&&m.status==='scheduled'&&m.schedule_status!=='unconfirmed');
   if(!eligible.length){toast('No hay partidos con horario confirmado para exportar.');return}
   const url=URL.createObjectURL(new Blob([calendarICS(eligible)],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='rfhf-fin-de-semana.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   if(eligible.length<games.length)toast('Calendario exportado. Se han omitido partidos sin horario o ya finalizados.');
