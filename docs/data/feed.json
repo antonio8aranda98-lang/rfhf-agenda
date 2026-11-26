@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T15:09:19+00:00",
+  "generated_at": "2026-11-26T16:43:33+00:00",
   "season": "2026-2027",
   "registry_revision": 27,
   "federations": [
@@ -73,7 +73,14 @@
       "failed_players": [
         "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
-      "retry_after": "2026-11-19T03:05:33+00:00"
+      "retry_after": "2026-11-19T03:05:33+00:00",
+      "fixtures_checked_at": "2026-11-26T16:43:33+00:00",
+      "fixtures_status": "ok",
+      "fixtures_failed_groups": [],
+      "fixtures_groups_checked": 24,
+      "fixtures_groups_total": 24,
+      "fixtures_updated_at": "2026-11-26T16:43:33+00:00",
+      "fixtures_last_success": "2026-11-26T16:43:33+00:00"
     }
   ],
   "players": [
@@ -5779,7 +5786,8 @@
         "calendar_complete": true
       },
       "secondary_stats": null,
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:05+00:00"
     },
     {
       "id": "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
@@ -5833,7 +5841,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:49+00:00"
     },
     {
       "id": "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a",
@@ -5887,7 +5896,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:43:09+00:00"
     },
     {
       "id": "p-49513978-5e9a-460f-941a-fbca921333c7",
@@ -5942,7 +5952,8 @@
         },
         "calendar_complete": false
       },
-      "calendar_complete": false
+      "calendar_complete": false,
+      "fixtures_checked_at": "2026-11-26T16:41:19+00:00"
     },
     {
       "id": "p-7dc51770-5927-40f9-befc-2363e018466e",
@@ -5996,7 +6007,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:43:15+00:00"
     },
     {
       "id": "p-a8f2c383-0c07-4afd-9402-926a2a17e524",
@@ -6050,7 +6062,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:43:21+00:00"
     },
     {
       "id": "p-857a7e7d-5b48-4b68-bd28-756a8134827b",
@@ -6104,7 +6117,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:13+00:00"
     },
     {
       "id": "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea",
@@ -6158,7 +6172,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:19+00:00"
     },
     {
       "id": "p-5fc13294-34e2-440c-aabf-c8a7881268ac",
@@ -6212,7 +6227,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:43:27+00:00"
     },
     {
       "id": "p-5de13299-c87f-4714-9b5b-30446d39a579",
@@ -6266,7 +6282,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:49+00:00"
     },
     {
       "id": "daniel-otero-serrano",
@@ -6319,7 +6336,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:05+00:00"
     },
     {
       "id": "p-14fe2d86-4679-4291-b2b2-ea2219f875bd",
@@ -6373,7 +6391,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:11+00:00"
     },
     {
       "id": "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
@@ -6427,7 +6446,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:19+00:00"
     },
     {
       "id": "p-46a95a14-de56-43c3-b119-3d0f567ef0f5",
@@ -6481,7 +6501,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:25+00:00"
     },
     {
       "id": "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08",
@@ -6535,7 +6556,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:33+00:00"
     },
     {
       "id": "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b",
@@ -6589,7 +6611,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:41+00:00"
     },
     {
       "id": "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
@@ -6643,7 +6666,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:49+00:00"
     },
     {
       "id": "p-d1691aca-5ba3-48d7-b3c2-86a72f1ca7a2",
@@ -6697,7 +6721,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:55+00:00"
     },
     {
       "id": "p-17c0205a-e138-40a1-bd73-de4bbfa284b5",
@@ -6751,7 +6776,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:01+00:00"
     },
     {
       "id": "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81",
@@ -6805,7 +6831,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:07+00:00"
     },
     {
       "id": "p-2e054d93-4996-4773-9233-841b558819ee",
@@ -6859,7 +6886,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:41+00:00"
     },
     {
       "id": "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36",
@@ -6913,7 +6941,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:13+00:00"
     },
     {
       "id": "p-7c257627-9142-4627-91ff-676d4c0d9540",
@@ -6967,7 +6996,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:19+00:00"
     },
     {
       "id": "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2",
@@ -7021,7 +7051,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:05+00:00"
     },
     {
       "id": "p-d293de07-f3e2-4508-8fc8-a32c0164a831",
@@ -7075,7 +7106,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:41+00:00"
     },
     {
       "id": "p-64bc282c-d75d-4b3b-8a72-8e7128216373",
@@ -7129,7 +7161,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:43:33+00:00"
     },
     {
       "id": "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a",
@@ -7183,7 +7216,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:19+00:00"
     },
     {
       "id": "p-7a5540e3-e152-4958-abff-a4afc28a3312",
@@ -7237,7 +7271,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:33+00:00"
     },
     {
       "id": "p-85e4ec27-a204-4f0c-b8d6-2a406a976be1",
@@ -7291,7 +7326,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:19+00:00"
     },
     {
       "id": "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e",
@@ -7345,7 +7381,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:33+00:00"
     },
     {
       "id": "p-173f9809-d590-4818-9f53-8156605bc3c5",
@@ -7399,7 +7436,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:19+00:00"
     },
     {
       "id": "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e",
@@ -7453,7 +7491,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:39+00:00"
     },
     {
       "id": "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7",
@@ -7507,7 +7546,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:11+00:00"
     },
     {
       "id": "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952",
@@ -7561,7 +7601,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:43:03+00:00"
     },
     {
       "id": "p-a8bea594-70c1-4ce7-9536-9e28e70d3f7d",
@@ -7615,7 +7656,8 @@
         },
         "calendar_complete": false
       },
-      "calendar_complete": false
+      "calendar_complete": false,
+      "fixtures_checked_at": "2026-11-26T16:42:51+00:00"
     },
     {
       "id": "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad",
@@ -7722,7 +7764,8 @@
         },
         "calendar_complete": false
       },
-      "calendar_complete": false
+      "calendar_complete": false,
+      "fixtures_checked_at": "2026-11-26T16:42:25+00:00"
     },
     {
       "id": "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0",
@@ -7776,7 +7819,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:45+00:00"
     },
     {
       "id": "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026",
@@ -7831,7 +7875,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:51+00:00"
     },
     {
       "id": "p-ee685f02-2c5a-4cac-966f-764f2f32c108",
@@ -7885,7 +7930,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:33+00:00"
     },
     {
       "id": "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
@@ -7939,7 +7985,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:41:49+00:00"
     },
     {
       "id": "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279",
@@ -7993,7 +8040,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-26T16:42:57+00:00"
     }
   ],
   "matches": [
@@ -44255,19 +44303,20 @@
       },
       "home_team_id": "16590",
       "away_team_id": "297203",
-      "participation_attempted_at": {
-        "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e": "2026-11-25T14:37:13+00:00"
-      },
-      "participation_checked_at": {
-        "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e": "2026-11-25T14:37:19+00:00"
-      },
-      "updated_at": "2026-11-25T14:37:19+00:00",
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "participation_checked_at": {
+        "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e": "2026-11-25T14:37:19+00:00"
+      },
+      "participation_attempted_at": {
+        "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e": "2026-11-25T14:37:13+00:00"
+      },
+      "schedule_checked_at": "2026-11-26T16:42:30+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:30+00:00"
     },
     {
       "id": "catalunya-4153219",
@@ -58918,15 +58967,14 @@
       "participation": {},
       "home_team_id": "24641",
       "away_team_id": "900436319",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:38:42+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:37+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:37+00:00"
     },
     {
       "id": "madrid-rfef-33836121-10-REAL-MADRID-CF-CF-TRIVAL-VALDERAS-ALCORCON",
@@ -59061,21 +59109,22 @@
       },
       "home_team_id": "28347",
       "away_team_id": "19668",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
+        "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
+        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860"
+      ],
+      "is_internal_matchup": false,
       "participation_checked_at": {
         "p-fb80c8cc-c288-4c04-bdb9-b513de81b860": "2026-11-22T08:33:09+00:00"
       },
-      "updated_at": "2026-11-26T14:14:06+00:00",
       "participation_attempted_at": {
         "p-fb80c8cc-c288-4c04-bdb9-b513de81b860": "2026-11-22T08:33:05+00:00"
       },
-      "participation_source": {},
-      "home_player_ids": [],
-      "away_player_ids": [
-        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
-        "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
-        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1"
-      ],
-      "is_internal_matchup": false
+      "schedule_checked_at": "2026-11-26T16:41:45+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:45+00:00"
     },
     {
       "id": "murcia-24069902-10",
@@ -59167,19 +59216,20 @@
       },
       "home_team_id": "18243",
       "away_team_id": "14887",
-      "participation_attempted_at": {
-        "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08": "2026-11-22T08:30:25+00:00"
-      },
-      "participation_checked_at": {
-        "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08": "2026-11-22T08:30:29+00:00"
-      },
-      "updated_at": "2026-11-22T08:30:29+00:00",
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "participation_checked_at": {
+        "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08": "2026-11-22T08:30:29+00:00"
+      },
+      "participation_attempted_at": {
+        "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08": "2026-11-22T08:30:25+00:00"
+      },
+      "schedule_checked_at": "2026-11-26T16:41:29+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:29+00:00"
     },
     {
       "id": "valencia-26510290",
@@ -59190,8 +59240,8 @@
       "home": "Torrent C.F. 'C'",
       "away": "Paterna C.F. 'B'",
       "date": "2026-11-21",
-      "time": "11:30",
-      "status": "scheduled",
+      "time": "11:35",
+      "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26510290",
       "venue": "Campo de Futbol Mpal. San Gregorio F-11 Campo A",
       "locality": null,
@@ -59200,8 +59250,8 @@
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074522735_Torrent_CF.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074534367_ESCUDO_S.FONDO.png",
-      "score_home": null,
-      "score_away": null,
+      "score_home": 7,
+      "score_away": 0,
       "round": 8,
       "competition_id": "905431892",
       "group_id": "905431896",
@@ -59209,15 +59259,14 @@
       "participation": {},
       "home_team_id": "22473",
       "away_team_id": "14815",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T04:25:23+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-5fc13294-34e2-440c-aabf-c8a7881268ac"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:25+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:25+00:00"
     },
     {
       "id": "catalunya-4154441",
@@ -59409,19 +59458,20 @@
       },
       "home_team_id": "14488",
       "away_team_id": "14347",
-      "participation_attempted_at": {
-        "daniel-otero-serrano": "2026-11-21T20:29:51+00:00"
-      },
-      "participation_checked_at": {
-        "daniel-otero-serrano": "2026-11-21T20:29:56+00:00"
-      },
-      "updated_at": "2026-11-21T20:29:56+00:00",
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "daniel-otero-serrano"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "participation_checked_at": {
+        "daniel-otero-serrano": "2026-11-21T20:29:56+00:00"
+      },
+      "participation_attempted_at": {
+        "daniel-otero-serrano": "2026-11-21T20:29:51+00:00"
+      },
+      "schedule_checked_at": "2026-11-26T16:41:03+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:03+00:00"
     },
     {
       "id": "valencia-26478728",
@@ -59433,7 +59483,7 @@
       "away": "C.F. Torre Levante 'A'",
       "date": "2026-11-21",
       "time": "12:30",
-      "status": "scheduled",
+      "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26478728",
       "venue": "Ciudad Dptva. José Manuel Llaneza F-11 Vila-real Campo 5",
       "locality": null,
@@ -59442,8 +59492,8 @@
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074816588_CDRoda_Logo_2023_Negro_HQ.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/anterior/1213/DOCS/20136/26/466c2e6dc4c03166fca4274704fdfa38_glz2XH8R.jpg",
-      "score_home": null,
-      "score_away": null,
+      "score_home": 2,
+      "score_away": 2,
       "round": 12,
       "competition_id": "905431885",
       "group_id": "905431886",
@@ -59451,15 +59501,14 @@
       "participation": {},
       "home_team_id": "17997",
       "away_team_id": "16278",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T04:26:45+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-5de13299-c87f-4714-9b5b-30446d39a579"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:45+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:45+00:00"
     },
     {
       "id": "murcia-14452266-10",
@@ -59531,26 +59580,26 @@
           "starts": 1,
           "bench": 0,
           "played": 1,
-          "minutes": null,
           "goals": 0
         }
       },
       "home_team_id": "903764694",
       "away_team_id": "903649481",
-      "participation_attempted_at": {
-        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36": "2026-11-23T04:05:07+00:00"
-      },
+      "home_player_ids": [
+        "p-857a7e7d-5b48-4b68-bd28-756a8134827b",
+        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
       "participation_checked_at": {
         "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36": "2026-11-23T04:05:14+00:00"
       },
-      "updated_at": "2026-11-23T04:05:14+00:00",
-      "participation_source": {},
-      "home_player_ids": [
-        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36",
-        "p-857a7e7d-5b48-4b68-bd28-756a8134827b"
-      ],
-      "away_player_ids": [],
-      "is_internal_matchup": false
+      "participation_attempted_at": {
+        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36": "2026-11-23T04:05:07+00:00"
+      },
+      "schedule_checked_at": "2026-11-26T16:42:11+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:11+00:00"
     },
     {
       "id": "madrid-rfcylf-24218935-11-C-D-ISOBA-C-D-PARQUESOL",
@@ -59684,15 +59733,14 @@
       "participation": {},
       "home_team_id": "19591",
       "away_team_id": "14807",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-24T05:09:03+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:17+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:17+00:00"
     },
     {
       "id": "catalunya-4194210",
@@ -60403,19 +60451,20 @@
       },
       "home_team_id": "18811",
       "away_team_id": "14782",
-      "participation_attempted_at": {
-        "p-14fe2d86-4679-4291-b2b2-ea2219f875bd": "2026-11-21T20:31:03+00:00"
-      },
-      "participation_checked_at": {
-        "p-14fe2d86-4679-4291-b2b2-ea2219f875bd": "2026-11-21T20:31:08+00:00"
-      },
-      "updated_at": "2026-11-21T20:31:08+00:00",
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-14fe2d86-4679-4291-b2b2-ea2219f875bd"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "participation_checked_at": {
+        "p-14fe2d86-4679-4291-b2b2-ea2219f875bd": "2026-11-21T20:31:08+00:00"
+      },
+      "participation_attempted_at": {
+        "p-14fe2d86-4679-4291-b2b2-ea2219f875bd": "2026-11-21T20:31:03+00:00"
+      },
+      "schedule_checked_at": "2026-11-26T16:41:09+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:09+00:00"
     },
     {
       "id": "madrid-5578398",
@@ -60613,16 +60662,15 @@
       "participation": {},
       "home_team_id": "16859",
       "away_team_id": "22298",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T00:41:52+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-7a5540e3-e152-4958-abff-a4afc28a3312",
         "p-ee685f02-2c5a-4cac-966f-764f2f32c108"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:31+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:31+00:00"
     },
     {
       "id": "valencia-26512209",
@@ -60634,7 +60682,7 @@
       "away": "Celtic Elche C.F. 'B'",
       "date": "2026-11-21",
       "time": "16:30",
-      "status": "scheduled",
+      "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26512209",
       "venue": "Ciudad Dptva. Elche Campo 6 José Ant. Morante \"Lico\" F-11",
       "locality": null,
@@ -60643,8 +60691,8 @@
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074480263_Escudo_Pe_a_Raval.jpg",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074602439_CELTIC_ELCHE_VERDE_TOMAS.png",
-      "score_home": null,
-      "score_away": null,
+      "score_home": 2,
+      "score_away": 2,
       "round": 8,
       "competition_id": "905431892",
       "group_id": "905431903",
@@ -60652,15 +60700,14 @@
       "participation": {},
       "home_team_id": "900440679",
       "away_team_id": "16862",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T04:21:49+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-a8f2c383-0c07-4afd-9402-926a2a17e524"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:19+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:19+00:00"
     },
     {
       "id": "catalunya-4151032",
@@ -60887,15 +60934,14 @@
       "participation": {},
       "home_team_id": "26675",
       "away_team_id": "15621",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:52:41+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:17+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:17+00:00"
     },
     {
       "id": "valencia-26515378",
@@ -60907,7 +60953,7 @@
       "away": "C.D. Alcoyano B",
       "date": "2026-11-21",
       "time": "17:00",
-      "status": "scheduled",
+      "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26515378",
       "venue": "Campo Futbol Mpal. Roberto Gil F-11 Riba-roja ",
       "locality": null,
@@ -60916,8 +60962,8 @@
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074812130_Imagen_1.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074572237_Escudo_CD_Alcoyano.png",
-      "score_home": null,
-      "score_away": null,
+      "score_home": 2,
+      "score_away": 0,
       "round": 9,
       "competition_id": "905431611",
       "group_id": "905431614",
@@ -60925,15 +60971,14 @@
       "participation": {},
       "home_team_id": "905444655",
       "away_team_id": "29616644",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-20T23:35:09+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:07+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:07+00:00"
     },
     {
       "id": "valencia-26486512",
@@ -60963,15 +61008,14 @@
       "participation": {},
       "home_team_id": "22982",
       "away_team_id": "17677",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:49:34+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-a8bea594-70c1-4ce7-9536-9e28e70d3f7d"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:49+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:49+00:00"
     },
     {
       "id": "catalunya-4153245",
@@ -61308,15 +61352,14 @@
       "participation": {},
       "home_team_id": "27182",
       "away_team_id": "19296",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T14:15:19+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:55+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:55+00:00"
     },
     {
       "id": "madrid-5595648",
@@ -61510,7 +61553,7 @@
       "away": "C.D.F. Jávea 'B'",
       "date": "2026-11-21",
       "time": "18:30",
-      "status": "scheduled",
+      "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26502919",
       "venue": "Ciudad Dptva. \"Guillermo Amor\" F-11 Benidorm Campo Futbol Miguel Martinez Munuera ",
       "locality": null,
@@ -61519,8 +61562,8 @@
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074606330_2b705628_45ba_4956_86fb_d0d6880d577f.JPG",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074600941_CD_J__vea_logo.png",
-      "score_home": null,
-      "score_away": null,
+      "score_home": 3,
+      "score_away": 1,
       "round": 9,
       "competition_id": "905431573",
       "group_id": "905431591",
@@ -61528,15 +61571,14 @@
       "participation": {},
       "home_team_id": "29771343",
       "away_team_id": "17123",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T04:20:35+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-7dc51770-5927-40f9-befc-2363e018466e"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:13+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:13+00:00"
     },
     {
       "id": "valencia-26475643",
@@ -61566,15 +61608,14 @@
       "participation": {},
       "home_team_id": "22717",
       "away_team_id": "10549",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:39:56+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:09+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:09+00:00"
     },
     {
       "id": "madrid-5676301",
@@ -61664,19 +61705,20 @@
       },
       "home_team_id": "10706",
       "away_team_id": "17995",
-      "participation_attempted_at": {
-        "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b": "2026-11-22T08:31:44+00:00"
-      },
-      "participation_checked_at": {
-        "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b": "2026-11-22T08:31:50+00:00"
-      },
-      "updated_at": "2026-11-22T08:31:50+00:00",
-      "participation_source": {},
       "home_player_ids": [
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "participation_checked_at": {
+        "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b": "2026-11-22T08:31:50+00:00"
+      },
+      "participation_attempted_at": {
+        "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b": "2026-11-22T08:31:44+00:00"
+      },
+      "schedule_checked_at": "2026-11-26T16:41:37+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:37+00:00"
     },
     {
       "id": "madrid-5584082",
@@ -62210,7 +62252,7 @@
       "away": "C.D. Castellón 'B'",
       "date": "2026-11-22",
       "time": "10:15",
-      "status": "scheduled",
+      "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26481538",
       "venue": "Ciudad Dptva. Chencho Campo C F-11 Castellón ",
       "locality": null,
@@ -62219,8 +62261,8 @@
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074481054_PRIMER_TOQUE_CF_ESCUDO.jpg",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074501622_CD_Castell_n.png",
-      "score_home": null,
-      "score_away": null,
+      "score_home": 1,
+      "score_away": 1,
       "round": 8,
       "competition_id": "905431887",
       "group_id": "905431888",
@@ -62228,15 +62270,14 @@
       "participation": {},
       "home_team_id": "19758",
       "away_team_id": "17229",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T20:33:32+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-46a95a14-de56-43c3-b119-3d0f567ef0f5"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:23+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:23+00:00"
     },
     {
       "id": "madrid-5584385",
@@ -62419,15 +62460,14 @@
       "participation": {},
       "home_team_id": "900440506",
       "away_team_id": "28145",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-23T07:54:40+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:31+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:31+00:00"
     },
     {
       "id": "valencia-26480813",
@@ -62466,19 +62506,20 @@
       },
       "home_team_id": "17418",
       "away_team_id": "23130",
-      "participation_attempted_at": {
-        "p-17c0205a-e138-40a1-bd73-de4bbfa284b5": "2026-11-22T22:54:18+00:00"
-      },
-      "participation_checked_at": {
-        "p-17c0205a-e138-40a1-bd73-de4bbfa284b5": "2026-11-22T22:54:25+00:00"
-      },
-      "updated_at": "2026-11-22T22:54:25+00:00",
-      "participation_source": {},
       "home_player_ids": [
         "p-17c0205a-e138-40a1-bd73-de4bbfa284b5"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "participation_checked_at": {
+        "p-17c0205a-e138-40a1-bd73-de4bbfa284b5": "2026-11-22T22:54:25+00:00"
+      },
+      "participation_attempted_at": {
+        "p-17c0205a-e138-40a1-bd73-de4bbfa284b5": "2026-11-22T22:54:18+00:00"
+      },
+      "schedule_checked_at": "2026-11-26T16:41:59+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:59+00:00"
     },
     {
       "id": "madrid-5578702",
@@ -62695,7 +62736,7 @@
       "away": "Villajoyosa C.F.",
       "date": "2026-11-22",
       "time": "11:30",
-      "status": "scheduled",
+      "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26474918",
       "venue": "Campo Mpal. Luis Rocamora F-11 Benferri ",
       "locality": null,
@@ -62704,8 +62745,8 @@
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074602123_Logo_Benferri_C.F.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074503370_Villajoyosa_CF.png",
-      "score_home": null,
-      "score_away": null,
+      "score_home": 0,
+      "score_away": 2,
       "round": 11,
       "competition_id": "905431606",
       "group_id": "905431610",
@@ -62713,16 +62754,15 @@
       "participation": {},
       "home_team_id": "17737",
       "away_team_id": "17295",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T20:32:20+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
-        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
-        "p-49513978-5e9a-460f-941a-fbca921333c7"
+        "p-49513978-5e9a-460f-941a-fbca921333c7",
+        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:17+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:17+00:00"
     },
     {
       "id": "madrid-5578706",
@@ -63043,15 +63083,14 @@
       "participation": {},
       "home_team_id": "22863",
       "away_team_id": "27839",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T00:39:24+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:43+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:43+00:00"
     },
     {
       "id": "valencia-26486756",
@@ -63081,15 +63120,14 @@
       "participation": {},
       "home_team_id": "16835",
       "away_team_id": "297203",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:37:19+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:31+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:31+00:00"
     },
     {
       "id": "catalunya-4153243",
@@ -63323,15 +63361,14 @@
       "participation": {},
       "home_team_id": "14352",
       "away_team_id": "14107",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-23T04:07:42+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:03+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:03+00:00"
     },
     {
       "id": "valencia-26499800",
@@ -63361,15 +63398,14 @@
       "participation": {},
       "home_team_id": "14647",
       "away_team_id": "297465",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:52:41+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:23+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:23+00:00"
     },
     {
       "id": "valencia-26474195",
@@ -63399,15 +63435,14 @@
       "participation": {},
       "home_team_id": "19609",
       "away_team_id": "25849",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-22T22:53:19+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-d1691aca-5ba3-48d7-b3c2-86a72f1ca7a2"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:53+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:53+00:00"
     },
     {
       "id": "madrid-5584383",
@@ -63808,15 +63843,14 @@
       "participation": {},
       "home_team_id": "17876",
       "away_team_id": "21683463",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T00:40:37+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:49+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:49+00:00"
     },
     {
       "id": "madrid-frf-21959329-12-CENICERO-ALFARO",
@@ -63965,16 +63999,15 @@
       "participation": {},
       "home_team_id": "14196",
       "away_team_id": "28403",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-23T04:10:18+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-2e054d93-4996-4773-9233-841b558819ee",
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:37+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:37+00:00"
     },
     {
       "id": "valencia-26479980",
@@ -63986,7 +64019,7 @@
       "away": "Col. Salgui E.D.E. 'B'",
       "date": "2026-11-22",
       "time": "17:00",
-      "status": "scheduled",
+      "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479980",
       "venue": "Estadio Mpal. La Celadilla F-11 Utiel ",
       "locality": null,
@@ -63995,8 +64028,8 @@
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074811932_Escudo_CDUTIEL_Vector_page_0001.jpg",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074600357_escudo.png",
-      "score_home": null,
-      "score_away": null,
+      "score_home": 1,
+      "score_away": 0,
       "round": 9,
       "competition_id": "905431880",
       "group_id": "905431882",
@@ -64004,15 +64037,14 @@
       "participation": {},
       "home_team_id": "15024",
       "away_team_id": "22701",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-20T23:32:33+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:03+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:03+00:00"
     },
     {
       "id": "valencia-26496840",
@@ -64042,15 +64074,14 @@
       "participation": {},
       "home_team_id": "17216",
       "away_team_id": "26553",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:41:09+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:01+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:01+00:00"
     },
     {
       "id": "valencia-26480224",
@@ -64080,15 +64111,14 @@
       "participation": {},
       "home_team_id": "22036",
       "away_team_id": "16223",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-22T22:55:39+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:05+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:05+00:00"
     },
     {
       "id": "madrid-5589522",
@@ -64172,18 +64202,17 @@
       "participation": {},
       "home_team_id": "14844",
       "away_team_id": "10676",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:37:27+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
+        "p-173f9809-d590-4818-9f53-8156605bc3c5",
         "p-7c257627-9142-4627-91ff-676d4c0d9540",
         "p-85e4ec27-a204-4f0c-b8d6-2a406a976be1",
-        "p-173f9809-d590-4818-9f53-8156605bc3c5",
         "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:17+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:17+00:00"
     },
     {
       "id": "catalunya-4194933",
@@ -64733,7 +64762,7 @@
       "away": "Benferri C.F. 'A'",
       "date": "2026-11-25",
       "time": "20:30",
-      "status": "scheduled",
+      "status": "finished",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26578405",
       "venue": "Campo Mpal. de Torrellano F-11",
       "locality": null,
@@ -64742,8 +64771,8 @@
       "longitude": null,
       "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074565729_CCC_ESCUDO_2.png",
       "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074602123_Logo_Benferri_C.F.png",
-      "score_home": null,
-      "score_away": null,
+      "score_home": 4,
+      "score_away": 0,
       "round": 8,
       "competition_id": "905431606",
       "group_id": "905431610",
@@ -64751,16 +64780,15 @@
       "participation": {},
       "home_team_id": "26836",
       "away_team_id": "17737",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T20:32:20+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
-        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
-        "p-49513978-5e9a-460f-941a-fbca921333c7"
+        "p-49513978-5e9a-460f-941a-fbca921333c7",
+        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:15+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:15+00:00"
     },
     {
       "id": "murcia-14452280-11",
@@ -64798,44 +64826,6 @@
       "away_player_ids": [
         "p-a7f65893-119e-475d-87f0-28a139edc33d"
       ],
-      "is_internal_matchup": false
-    },
-    {
-      "id": "valencia-26512702",
-      "federation": "valencia",
-      "player_ids": [
-        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
-      ],
-      "home": "C.F. Garra Ilicitana 'B'",
-      "away": "Club Costa City 'B'",
-      "date": "2026-11-28",
-      "time": "09:45",
-      "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26512702",
-      "venue": "Polideportivo Mpal. Altabix Emilio Esteban F-11",
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074529888_ESCUDO_GARRA.png",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074565729_CCC_ESCUDO_2.png",
-      "score_home": null,
-      "score_away": null,
-      "round": 9,
-      "competition_id": "905431892",
-      "group_id": "905431904",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "28145",
-      "away_team_id": "22762",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-23T07:54:40+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [
-        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
-      ],
-      "away_player_ids": [],
       "is_internal_matchup": false
     },
     {
@@ -64879,6 +64869,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "valencia-26510297",
+      "federation": "valencia",
+      "player_ids": [
+        "p-5fc13294-34e2-440c-aabf-c8a7881268ac"
+      ],
+      "home": "F.B.U.E. Atlètic Amistat 'B'",
+      "away": "Torrent C.F. 'C'",
+      "date": "2026-11-28",
+      "time": "10:15",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26510297",
+      "venue": "Polideportivo Mpal. Quatre Carreres F-11",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074500865_escudoFB.jpg",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074522735_Torrent_CF.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 9,
+      "competition_id": "905431892",
+      "group_id": "905431896",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "17080",
+      "away_team_id": "22473",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-5fc13294-34e2-440c-aabf-c8a7881268ac"
+      ],
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:27+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:27+00:00"
+    },
+    {
       "id": "valencia-26512217",
       "federation": "valencia",
       "player_ids": [
@@ -64887,7 +64914,7 @@
       "home": "Celtic Elche C.F. 'B'",
       "away": "Aspe U.D. 'A'",
       "date": "2026-11-28",
-      "time": "11:00",
+      "time": "11:15",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26512217",
       "venue": "Ciudad Dptva. Elche Campo 5 Palmeral D'Elx F-11",
@@ -64906,15 +64933,14 @@
       "participation": {},
       "home_team_id": "16862",
       "away_team_id": "27962",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T04:21:49+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-a8f2c383-0c07-4afd-9402-926a2a17e524"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:21+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:21+00:00"
     },
     {
       "id": "valencia-26474204",
@@ -64944,15 +64970,14 @@
       "participation": {},
       "home_team_id": "16886",
       "away_team_id": "19609",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-22T22:53:19+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-d1691aca-5ba3-48d7-b3c2-86a72f1ca7a2"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:55+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:55+00:00"
     },
     {
       "id": "madrid-rfef-33836121-11-ALBACETE-BALOMPIE-AD-SPORTING-HORTALEZA",
@@ -64996,6 +65021,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "valencia-26512702",
+      "federation": "valencia",
+      "player_ids": [
+        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
+      ],
+      "home": "C.F. Garra Ilicitana 'B'",
+      "away": "Club Costa City 'B'",
+      "date": "2026-11-28",
+      "time": "13:00",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26512702",
+      "venue": "Ciudad Dptva. Elche Campo 1 José Pastor F-11 ",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074529888_ESCUDO_GARRA.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074565729_CCC_ESCUDO_2.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 9,
+      "competition_id": "905431892",
+      "group_id": "905431904",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "28145",
+      "away_team_id": "22762",
+      "home_player_ids": [
+        "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:33+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:33+00:00"
+    },
+    {
       "id": "valencia-26541765",
       "federation": "valencia",
       "player_ids": [
@@ -65005,10 +65067,10 @@
       "home": "Racing Mar D`Alacant Club Deportivo",
       "away": "C.F. Inprosports San Vicente",
       "date": "2026-11-28",
-      "time": "12:30",
+      "time": "13:00",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26541765",
-      "venue": "Campo Mpal. Cabo Las Huertas F-11",
+      "venue": "Campo Mpal. Tombola F-11 Alicante ",
       "locality": null,
       "address": null,
       "latitude": null,
@@ -65024,54 +65086,15 @@
       "participation": {},
       "home_team_id": "30698259",
       "away_team_id": "903764694",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-23T04:05:14+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
-        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36",
-        "p-857a7e7d-5b48-4b68-bd28-756a8134827b"
+        "p-857a7e7d-5b48-4b68-bd28-756a8134827b",
+        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36"
       ],
-      "is_internal_matchup": false
-    },
-    {
-      "id": "valencia-26478737",
-      "federation": "valencia",
-      "player_ids": [
-        "p-5de13299-c87f-4714-9b5b-30446d39a579"
-      ],
-      "home": "C.F. Torre Levante 'A'",
-      "away": "S.C.D. Intangco 'A'",
-      "date": "2026-11-28",
-      "time": "13:00",
-      "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26478737",
-      "venue": "Campo Torre Levante-Orriols F-11",
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/anterior/1213/DOCS/20136/26/466c2e6dc4c03166fca4274704fdfa38_glz2XH8R.jpg",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074854632_IMG_20260825_WA0002.jpg",
-      "score_home": null,
-      "score_away": null,
-      "round": 13,
-      "competition_id": "905431885",
-      "group_id": "905431886",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "16278",
-      "away_team_id": "28347",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T04:26:45+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [
-        "p-5de13299-c87f-4714-9b5b-30446d39a579"
-      ],
-      "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:13+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:13+00:00"
     },
     {
       "id": "valencia-26479045",
@@ -65082,7 +65105,7 @@
       "home": "C.F. Inter San José Valencia 'A'",
       "away": "C.F. La Nucía 'A'",
       "date": "2026-11-28",
-      "time": "13:00",
+      "time": "13:30",
       "status": "scheduled",
       "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479045",
       "venue": "Campo de Fútbol Mpal. de Beniferri F-11",
@@ -65101,15 +65124,51 @@
       "participation": {},
       "home_team_id": "14887",
       "away_team_id": "17308",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-22T08:30:29+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:31+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:31+00:00"
+    },
+    {
+      "id": "valencia-26478737",
+      "federation": "valencia",
+      "player_ids": [
+        "p-5de13299-c87f-4714-9b5b-30446d39a579"
+      ],
+      "home": "C.F. Torre Levante 'A'",
+      "away": "S.C.D. Intangco 'A'",
+      "date": "2026-11-28",
+      "time": "13:45",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26478737",
+      "venue": "Instalaciones Dptvas. El Planter F-11",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/anterior/1213/DOCS/20136/26/466c2e6dc4c03166fca4274704fdfa38_glz2XH8R.jpg",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074854632_IMG_20260825_WA0002.jpg",
+      "score_home": null,
+      "score_away": null,
+      "round": 13,
+      "competition_id": "905431885",
+      "group_id": "905431886",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "16278",
+      "away_team_id": "28347",
+      "home_player_ids": [
+        "p-5de13299-c87f-4714-9b5b-30446d39a579"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:47+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:47+00:00"
     },
     {
       "id": "catalunya-4194706",
@@ -65150,6 +65209,46 @@
       "is_internal_matchup": false
     },
     {
+      "id": "valencia-26479988",
+      "federation": "valencia",
+      "player_ids": [
+        "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5",
+        "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
+      ],
+      "home": "Col. Salgui E.D.E. 'B'",
+      "away": "C.F. At. Bº La Luz - Xirivella 'A'",
+      "date": "2026-11-28",
+      "time": "15:00",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479988",
+      "venue": "Campo Futbol San Marcelino F-11",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074600357_escudo.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074697105_Escudo_Barrio_granate_removebg_preview.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 10,
+      "competition_id": "905431880",
+      "group_id": "905431882",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "22701",
+      "away_team_id": "14352",
+      "home_player_ids": [
+        "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
+      ],
+      "away_player_ids": [
+        "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
+      ],
+      "is_internal_matchup": true,
+      "schedule_checked_at": "2026-11-26T16:41:05+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:05+00:00"
+    },
+    {
       "id": "valencia-26486518",
       "federation": "valencia",
       "player_ids": [
@@ -65177,15 +65276,14 @@
       "participation": {},
       "home_team_id": "20623",
       "away_team_id": "17876",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T00:40:37+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:51+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:51+00:00"
     },
     {
       "id": "madrid-5594694",
@@ -65372,15 +65470,14 @@
       "participation": {},
       "home_team_id": "23909",
       "away_team_id": "26675",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:52:41+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:19+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:19+00:00"
     },
     {
       "id": "madrid-5584696",
@@ -65769,44 +65866,41 @@
       "is_internal_matchup": false
     },
     {
-      "id": "valencia-26474927",
+      "id": "valencia-26480232",
       "federation": "valencia",
       "player_ids": [
-        "p-49513978-5e9a-460f-941a-fbca921333c7",
-        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0"
+        "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81"
       ],
-      "home": "C.D. Betis Florida",
-      "away": "Benferri C.F. 'A'",
+      "home": "C.D. Llosa 'A'",
+      "away": "U.D. Portuarios - Disarp 'A'",
       "date": "2026-11-28",
       "time": "17:00",
       "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26474927",
-      "venue": "Campo Mpal. Florida Babel F-11 Alicante ",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480232",
+      "venue": "Camp Mpal. El Sequiol F-11",
       "locality": null,
       "address": null,
       "latitude": null,
       "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/anterior/1314/DOCS/20141/14/e4e430d57f19b4ce6206edd922056e87_9wBMI3Rb.jpg",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074602123_Logo_Benferri_C.F.png",
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/anterior/1314/DOCS/201312/13/503865072e8ef4acceafaa7f5e38a335_R9dfMftL.jpg",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074484385_escudo.jpg",
       "score_home": null,
       "score_away": null,
-      "round": 12,
-      "competition_id": "905431606",
-      "group_id": "905431610",
+      "round": 10,
+      "competition_id": "905431880",
+      "group_id": "905431883",
       "season": "2026-2027",
       "participation": {},
-      "home_team_id": "17676",
-      "away_team_id": "17737",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T20:32:20+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [],
-      "away_player_ids": [
-        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
-        "p-49513978-5e9a-460f-941a-fbca921333c7"
+      "home_team_id": "16223",
+      "away_team_id": "16230",
+      "home_player_ids": [
+        "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81"
       ],
-      "is_internal_matchup": false
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:07+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:07+00:00"
     },
     {
       "id": "valencia-26480466",
@@ -65836,15 +65930,14 @@
       "participation": {},
       "home_team_id": "27839",
       "away_team_id": "18376",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T00:39:24+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:45+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:45+00:00"
     },
     {
       "id": "valencia-26486521",
@@ -65874,15 +65967,14 @@
       "participation": {},
       "home_team_id": "17487",
       "away_team_id": "22982",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:49:34+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-a8bea594-70c1-4ce7-9536-9e28e70d3f7d"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:51+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:51+00:00"
     },
     {
       "id": "valencia-26496849",
@@ -65912,15 +66004,14 @@
       "participation": {},
       "home_team_id": "16755",
       "away_team_id": "17216",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:41:09+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:03+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:03+00:00"
     },
     {
       "id": "madrid-5584395",
@@ -65959,6 +66050,45 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false
+    },
+    {
+      "id": "valencia-26474927",
+      "federation": "valencia",
+      "player_ids": [
+        "p-49513978-5e9a-460f-941a-fbca921333c7",
+        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0"
+      ],
+      "home": "C.D. Betis Florida",
+      "away": "Benferri C.F. 'A'",
+      "date": "2026-11-28",
+      "time": "17:15",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26474927",
+      "venue": "Campo Mpal. Florida Babel F-11 Alicante ",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/anterior/1314/DOCS/20141/14/e4e430d57f19b4ce6206edd922056e87_9wBMI3Rb.jpg",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074602123_Logo_Benferri_C.F.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 12,
+      "competition_id": "905431606",
+      "group_id": "905431610",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "17676",
+      "away_team_id": "17737",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-49513978-5e9a-460f-941a-fbca921333c7",
+        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0"
+      ],
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:19+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:19+00:00"
     },
     {
       "id": "madrid-5572804",
@@ -66066,10 +66196,6 @@
       "participation": {},
       "home_team_id": "28403",
       "away_team_id": "10706",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-23T04:10:18+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-2e054d93-4996-4773-9233-841b558819ee",
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
@@ -66077,7 +66203,10 @@
       "away_player_ids": [
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b"
       ],
-      "is_internal_matchup": true
+      "is_internal_matchup": true,
+      "schedule_checked_at": "2026-11-26T16:41:39+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:39+00:00"
     },
     {
       "id": "madrid-5656134",
@@ -66190,44 +66319,6 @@
       "home_player_ids": [],
       "away_player_ids": [
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
-      ],
-      "is_internal_matchup": false
-    },
-    {
-      "id": "valencia-26502928",
-      "federation": "valencia",
-      "player_ids": [
-        "p-7dc51770-5927-40f9-befc-2363e018466e"
-      ],
-      "home": "U.D. Altea 'A'",
-      "away": "Sporting Benidorm 'A'",
-      "date": "2026-11-28",
-      "time": "18:00",
-      "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26502928",
-      "venue": "Campo Mpal. Garganes Altea F-11 Campo B",
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074600410_escudo_UD_ALTEA.jpg",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074606330_2b705628_45ba_4956_86fb_d0d6880d577f.JPG",
-      "score_home": null,
-      "score_away": null,
-      "round": 10,
-      "competition_id": "905431573",
-      "group_id": "905431591",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "16950",
-      "away_team_id": "29771343",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T04:20:35+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [],
-      "away_player_ids": [
-        "p-7dc51770-5927-40f9-befc-2363e018466e"
       ],
       "is_internal_matchup": false
     },
@@ -66419,53 +66510,14 @@
       "participation": {},
       "home_team_id": "14347",
       "away_team_id": "14593",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T20:29:56+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "daniel-otero-serrano"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
-    },
-    {
-      "id": "valencia-26480232",
-      "federation": "valencia",
-      "player_ids": [
-        "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81"
-      ],
-      "home": "C.D. Llosa 'A'",
-      "away": "U.D. Portuarios - Disarp 'A'",
-      "date": "2026-11-28",
-      "time": "19:00",
-      "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480232",
-      "venue": "Camp Mpal. El Sequiol F-11",
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/var/docs/anterior/1314/DOCS/201312/13/503865072e8ef4acceafaa7f5e38a335_R9dfMftL.jpg",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074484385_escudo.jpg",
-      "score_home": null,
-      "score_away": null,
-      "round": 10,
-      "competition_id": "905431880",
-      "group_id": "905431883",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "16223",
-      "away_team_id": "16230",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-22T22:55:39+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [
-        "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81"
-      ],
-      "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:05+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:05+00:00"
     },
     {
       "id": "catalunya-4194219",
@@ -66888,6 +66940,43 @@
       "is_internal_matchup": false
     },
     {
+      "id": "valencia-26481546",
+      "federation": "valencia",
+      "player_ids": [
+        "p-46a95a14-de56-43c3-b119-3d0f567ef0f5"
+      ],
+      "home": "C.D. Castellón 'B'",
+      "away": "Alboraya U.D. 'B'",
+      "date": "2026-11-29",
+      "time": "10:15",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26481546",
+      "venue": "Campos Gaeta Huguet Castellón F-11 Campo B ",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074501622_CD_Castell_n.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074501630_Alboraya_UD.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 9,
+      "competition_id": "905431887",
+      "group_id": "905431888",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "17229",
+      "away_team_id": "14199",
+      "home_player_ids": [
+        "p-46a95a14-de56-43c3-b119-3d0f567ef0f5"
+      ],
+      "away_player_ids": [],
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:25+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:25+00:00"
+    },
+    {
       "id": "valencia-26475416",
       "federation": "valencia",
       "player_ids": [
@@ -66918,18 +67007,17 @@
       "participation": {},
       "home_team_id": "10676",
       "away_team_id": "10709",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:37:27+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
+        "p-173f9809-d590-4818-9f53-8156605bc3c5",
         "p-7c257627-9142-4627-91ff-676d4c0d9540",
         "p-85e4ec27-a204-4f0c-b8d6-2a406a976be1",
-        "p-173f9809-d590-4818-9f53-8156605bc3c5",
         "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:19+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:19+00:00"
     },
     {
       "id": "valencia-26478738",
@@ -66961,17 +67049,16 @@
       "participation": {},
       "home_team_id": "19668",
       "away_team_id": "18824",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T14:14:06+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
-        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
+        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
         "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
-        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1"
+        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:47+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:47+00:00"
     },
     {
       "id": "madrid-5589531",
@@ -67077,15 +67164,14 @@
       "participation": {},
       "home_team_id": "297203",
       "away_team_id": "17137",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:37:19+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:33+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:33+00:00"
     },
     {
       "id": "madrid-5581028",
@@ -67355,82 +67441,6 @@
       "is_internal_matchup": false
     },
     {
-      "id": "valencia-26480819",
-      "federation": "valencia",
-      "player_ids": [
-        "p-17c0205a-e138-40a1-bd73-de4bbfa284b5"
-      ],
-      "home": "C.F. Joventut Almassora 'A'",
-      "away": "Villarreal C.F. 'D'",
-      "date": "2026-11-29",
-      "time": "12:00",
-      "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480819",
-      "venue": "Campo Mpal. Las Boqueras F-11 Almassora ",
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074531248_Escudo_Sin_fondo_alta_definicion.png",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074501398_Villarreal_CF.png",
-      "score_home": null,
-      "score_away": null,
-      "round": 7,
-      "competition_id": "905431925",
-      "group_id": "905431926",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "20032",
-      "away_team_id": "17418",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-22T22:54:25+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [],
-      "away_player_ids": [
-        "p-17c0205a-e138-40a1-bd73-de4bbfa284b5"
-      ],
-      "is_internal_matchup": false
-    },
-    {
-      "id": "valencia-26481546",
-      "federation": "valencia",
-      "player_ids": [
-        "p-46a95a14-de56-43c3-b119-3d0f567ef0f5"
-      ],
-      "home": "C.D. Castellón 'B'",
-      "away": "Alboraya U.D. 'B'",
-      "date": "2026-11-29",
-      "time": "12:00",
-      "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26481546",
-      "venue": "Ciudad Dptva. Chencho Campo A F-11 Castellón ",
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074501622_CD_Castell_n.png",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074501630_Alboraya_UD.png",
-      "score_home": null,
-      "score_away": null,
-      "round": 9,
-      "competition_id": "905431887",
-      "group_id": "905431888",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "17229",
-      "away_team_id": "14199",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T20:33:32+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [
-        "p-46a95a14-de56-43c3-b119-3d0f567ef0f5"
-      ],
-      "away_player_ids": [],
-      "is_internal_matchup": false
-    },
-    {
       "id": "valencia-26486758",
       "federation": "valencia",
       "player_ids": [
@@ -67459,16 +67469,15 @@
       "participation": {},
       "home_team_id": "21835796",
       "away_team_id": "16859",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T00:41:52+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-7a5540e3-e152-4958-abff-a4afc28a3312",
         "p-ee685f02-2c5a-4cac-966f-764f2f32c108"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:33+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:33+00:00"
     },
     {
       "id": "madrid-rfef-33836121-11-RAYO-VALLECANO-DE-MADRID-CF-TRIVAL-VALDERAS-ALCORCON",
@@ -67537,15 +67546,14 @@
       "participation": {},
       "home_team_id": "19296",
       "away_team_id": "13966",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T14:15:19+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:57+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:57+00:00"
     },
     {
       "id": "madrid-5587387",
@@ -67659,44 +67667,6 @@
         "p-62526250-46ee-4948-ac5f-35fc000dd68f"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
-    },
-    {
-      "id": "valencia-26510297",
-      "federation": "valencia",
-      "player_ids": [
-        "p-5fc13294-34e2-440c-aabf-c8a7881268ac"
-      ],
-      "home": "F.B.U.E. Atlètic Amistat 'B'",
-      "away": "Torrent C.F. 'C'",
-      "date": "2026-11-29",
-      "time": "13:00",
-      "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26510297",
-      "venue": "Polideportivo Mpal. Quatre Carreres F-11",
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074500865_escudoFB.jpg",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074522735_Torrent_CF.png",
-      "score_home": null,
-      "score_away": null,
-      "round": 9,
-      "competition_id": "905431892",
-      "group_id": "905431896",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "17080",
-      "away_team_id": "22473",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T04:25:23+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [],
-      "away_player_ids": [
-        "p-5fc13294-34e2-440c-aabf-c8a7881268ac"
-      ],
       "is_internal_matchup": false
     },
     {
@@ -67900,44 +67870,6 @@
       "is_internal_matchup": false
     },
     {
-      "id": "valencia-26484034",
-      "federation": "valencia",
-      "player_ids": [
-        "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a"
-      ],
-      "home": "Global Náquera C.F.",
-      "away": "Ribarroja C.F. 'B'",
-      "date": "2026-11-29",
-      "time": "16:00",
-      "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26484034",
-      "venue": "Campo Mpal. de Naquera F-11",
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074508106_Global_Naquera__escudo.jpg",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074812130_Imagen_1.png",
-      "score_home": null,
-      "score_away": null,
-      "round": 10,
-      "competition_id": "905431611",
-      "group_id": "905431614",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "21937969",
-      "away_team_id": "905444655",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-20T23:35:09+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [],
-      "away_player_ids": [
-        "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a"
-      ],
-      "is_internal_matchup": false
-    },
-    {
       "id": "murcia-14472340-12",
       "federation": "murcia",
       "player_ids": [
@@ -68084,15 +68016,14 @@
       "participation": {},
       "home_team_id": "23975",
       "away_team_id": "19591",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-24T05:09:03+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:19+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:19+00:00"
     },
     {
       "id": "valencia-26475652",
@@ -68123,58 +68054,16 @@
       "participation": {},
       "home_team_id": "14782",
       "away_team_id": "22717",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:39:56+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-14fe2d86-4679-4291-b2b2-ea2219f875bd"
       ],
       "away_player_ids": [
         "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7"
       ],
-      "is_internal_matchup": true
-    },
-    {
-      "id": "valencia-26479988",
-      "federation": "valencia",
-      "player_ids": [
-        "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5",
-        "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
-      ],
-      "home": "Col. Salgui E.D.E. 'B'",
-      "away": "C.F. At. Bº La Luz - Xirivella 'A'",
-      "date": "2026-11-29",
-      "time": "17:00",
-      "status": "scheduled",
-      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26479988",
-      "venue": "Campo Futbol San Marcelino F-11",
-      "locality": null,
-      "address": null,
-      "latitude": null,
-      "longitude": null,
-      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074600357_escudo.png",
-      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074697105_Escudo_Barrio_granate_removebg_preview.png",
-      "score_home": null,
-      "score_away": null,
-      "round": 10,
-      "competition_id": "905431880",
-      "group_id": "905431882",
-      "season": "2026-2027",
-      "participation": {},
-      "home_team_id": "22701",
-      "away_team_id": "14352",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-23T04:07:42+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
-      "home_player_ids": [
-        "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
-      ],
-      "away_player_ids": [
-        "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
-      ],
-      "is_internal_matchup": true
+      "is_internal_matchup": true,
+      "schedule_checked_at": "2026-11-26T16:41:11+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:11+00:00"
     },
     {
       "id": "valencia-26499808",
@@ -68204,15 +68093,51 @@
       "participation": {},
       "home_team_id": "297465",
       "away_team_id": "29584640",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:52:41+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:25+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:25+00:00"
+    },
+    {
+      "id": "valencia-26502928",
+      "federation": "valencia",
+      "player_ids": [
+        "p-7dc51770-5927-40f9-befc-2363e018466e"
+      ],
+      "home": "U.D. Altea 'A'",
+      "away": "Sporting Benidorm 'A'",
+      "date": "2026-11-29",
+      "time": "17:00",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26502928",
+      "venue": "Campo Mpal. Garganes Altea F-11 Campo B",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074600410_escudo_UD_ALTEA.jpg",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074606330_2b705628_45ba_4956_86fb_d0d6880d577f.JPG",
+      "score_home": null,
+      "score_away": null,
+      "round": 10,
+      "competition_id": "905431573",
+      "group_id": "905431591",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "16950",
+      "away_team_id": "29771343",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-7dc51770-5927-40f9-befc-2363e018466e"
+      ],
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:15+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:15+00:00"
     },
     {
       "id": "catalunya-4193728",
@@ -68528,6 +68453,80 @@
         "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b"
       ],
       "is_internal_matchup": false
+    },
+    {
+      "id": "valencia-26480819",
+      "federation": "valencia",
+      "player_ids": [
+        "p-17c0205a-e138-40a1-bd73-de4bbfa284b5"
+      ],
+      "home": "C.F. Joventut Almassora 'A'",
+      "away": "Villarreal C.F. 'D'",
+      "date": "2026-11-29",
+      "time": "19:00",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26480819",
+      "venue": "Campo Mpal. Las Boqueras F-11 Almassora ",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074531248_Escudo_Sin_fondo_alta_definicion.png",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074501398_Villarreal_CF.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 7,
+      "competition_id": "905431925",
+      "group_id": "905431926",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "20032",
+      "away_team_id": "17418",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-17c0205a-e138-40a1-bd73-de4bbfa284b5"
+      ],
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:01+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:01+00:00"
+    },
+    {
+      "id": "valencia-26484034",
+      "federation": "valencia",
+      "player_ids": [
+        "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a"
+      ],
+      "home": "Global Náquera C.F.",
+      "away": "Ribarroja C.F. 'B'",
+      "date": "2026-11-29",
+      "time": "19:00",
+      "status": "scheduled",
+      "source": "https://ffcv.es/competiciones/partidos/partido.php?cod_partido=26484034",
+      "venue": "Polidep. Mpal. David Casinos Ricardo Alos F-11 Moncada Campo 1",
+      "locality": null,
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "home_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074508106_Global_Naquera__escudo.jpg",
+      "away_logo": "https://appwebffcv.novanet.es/pnfg/pimg/Clubes/00100_0074812130_Imagen_1.png",
+      "score_home": null,
+      "score_away": null,
+      "round": 10,
+      "competition_id": "905431611",
+      "group_id": "905431614",
+      "season": "2026-2027",
+      "participation": {},
+      "home_team_id": "21937969",
+      "away_team_id": "905444655",
+      "home_player_ids": [],
+      "away_player_ids": [
+        "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a"
+      ],
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:43:09+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:43:09+00:00"
     },
     {
       "id": "madrid-5589527",
@@ -68912,15 +68911,14 @@
       "participation": {},
       "home_team_id": "900436319",
       "away_team_id": "22930",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-25T14:38:42+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:39+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:39+00:00"
     },
     {
       "id": "madrid-5722081",
@@ -69140,15 +69138,14 @@
       "participation": {},
       "home_team_id": "26539",
       "away_team_id": "14887",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-22T08:30:29+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:33+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:33+00:00"
     },
     {
       "id": "valencia-26578466",
@@ -69179,16 +69176,15 @@
       "participation": {},
       "home_team_id": "16859",
       "away_team_id": "18216",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T00:41:52+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-7a5540e3-e152-4958-abff-a4afc28a3312",
         "p-ee685f02-2c5a-4cac-966f-764f2f32c108"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:42:30+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:42:30+00:00"
     },
     {
       "id": "madrid-frf-21959329-14-LA-CALZADA-CALASANCIO",
@@ -69300,17 +69296,16 @@
       "participation": {},
       "home_team_id": "17307",
       "away_team_id": "19668",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-26T14:14:06+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
-        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
+        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
         "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
-        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1"
+        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:49+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:49+00:00"
     },
     {
       "id": "valencia-26478747",
@@ -69340,15 +69335,14 @@
       "participation": {},
       "home_team_id": "18824",
       "away_team_id": "16278",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-21T04:26:45+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-5de13299-c87f-4714-9b5b-30446d39a579"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:49+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:49+00:00"
     },
     {
       "id": "madrid-rfef-33836121-12-AD-SPORTING-HORTALEZA-C-D-LEGANES",
@@ -69420,16 +69414,15 @@
       "participation": {},
       "home_team_id": "17995",
       "away_team_id": "28403",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-23T04:10:18+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [],
       "away_player_ids": [
         "p-2e054d93-4996-4773-9233-841b558819ee",
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
       ],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:41+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:41+00:00"
     },
     {
       "id": "madrid-rfef-33836121-12-CF-TRIVAL-VALDERAS-ALCORCON-LAS-ROZAS-CF",
@@ -69498,15 +69491,14 @@
       "participation": {},
       "home_team_id": "10706",
       "away_team_id": "17459",
-      "participation_checked_at": {},
-      "updated_at": "2026-11-22T08:31:50+00:00",
-      "participation_attempted_at": {},
-      "participation_source": {},
       "home_player_ids": [
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b"
       ],
       "away_player_ids": [],
-      "is_internal_matchup": false
+      "is_internal_matchup": false,
+      "schedule_checked_at": "2026-11-26T16:41:41+00:00",
+      "schedule_status": "ok",
+      "updated_at": "2026-11-26T16:41:41+00:00"
     },
     {
       "id": "madrid-5671656",
