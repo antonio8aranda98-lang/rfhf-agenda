@@ -2,21 +2,14 @@
   "schema_version": 1,
   "resolver_version": 11,
   "revision": 27,
-  "checked_at": "2026-11-27T15:23:49+00:00",
+  "checked_at": "2026-11-27T19:08:16+00:00",
   "players": [
     {
-      "id": "p-47bbeba1-c04c-42b3-be12-9c4834885cbd",
+      "id": "p-8f5b0309-8c77-4269-a3bc-644f1c3228e1",
       "state": "pending",
-      "message": "La fuente oficial no está disponible. Volveremos a intentarlo automáticamente.",
-      "checked_at": "2026-11-27T15:23:47+00:00",
-      "control_fingerprint": "c21ec8c63b7c1c8e268e68755f8f966c7124e947ce715911d9a901ed896d392a"
-    },
-    {
-      "id": "p-caa0133b-9b5f-4165-961a-2349bf6e02e5",
-      "state": "pending",
-      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo",
-      "checked_at": "2026-11-27T15:23:49+00:00",
-      "control_fingerprint": "cbde882a1339543f4edf0bd240061dd736aa5dc74f92778245f3de5c45c95afe"
+      "message": "No se verifica una única competición del equipo en esta temporada",
+      "checked_at": "2026-11-27T19:08:16+00:00",
+      "control_fingerprint": "0296104fb699100e1a82105538c4dd874c2f213687f47b7d84a984c3c4660bcf"
     },
     {
       "id": "jorge-martin-andres",
@@ -392,6 +385,13 @@
       "state": "verified"
     },
     {
+      "id": "p-47bbeba1-c04c-42b3-be12-9c4834885cbd",
+      "state": "pending",
+      "message": "La fuente oficial no está disponible. Volveremos a intentarlo automáticamente.",
+      "checked_at": "2026-11-27T15:23:47+00:00",
+      "control_fingerprint": "c21ec8c63b7c1c8e268e68755f8f966c7124e947ce715911d9a901ed896d392a"
+    },
+    {
       "id": "p-241a5873-e1ac-4408-ac98-e2d44219156a",
       "state": "verified"
     },
@@ -416,6 +416,13 @@
     {
       "id": "p-6326a3bb-e873-41f8-8f01-d6e5e810d15d",
       "state": "verified"
+    },
+    {
+      "id": "p-caa0133b-9b5f-4165-961a-2349bf6e02e5",
+      "state": "pending",
+      "message": "No se identifica un único jugador en la plantilla oficial; revisa nombre completo y equipo",
+      "checked_at": "2026-11-27T15:23:49+00:00",
+      "control_fingerprint": "cbde882a1339543f4edf0bd240061dd736aa5dc74f92778245f3de5c45c95afe"
     },
     {
       "id": "p-b6864476-e8c9-4d54-a220-e80ffa5a5361",
@@ -472,14 +479,6 @@
     {
       "id": "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2",
       "state": "verified"
-    },
-    {
-      "id": "p-8f5b0309-8c77-4269-a3bc-644f1c3228e1",
-      "state": "pending",
-      "message": "No se verifica una única competición del equipo en esta temporada",
-      "checked_at": "2026-11-27T08:47:51+00:00",
-      "control_fingerprint": "0296104fb699100e1a82105538c4dd874c2f213687f47b7d84a984c3c4660bcf",
-      "waiting_priority": true
     },
     {
       "id": "p-d293de07-f3e2-4508-8fc8-a32c0164a831",
@@ -670,6 +669,6 @@
       "calendar_attempted_at": "2026-11-25T14:49:19+00:00"
     }
   ],
-  "intake_mode": "processed",
+  "intake_mode": "priority",
   "intake_ids": []
 }
