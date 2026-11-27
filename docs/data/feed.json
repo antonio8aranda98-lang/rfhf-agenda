@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T18:35:31+00:00",
+  "generated_at": "2026-11-27T18:50:35+00:00",
   "season": "2026-2027",
   "registry_revision": 27,
   "federations": [
@@ -16,14 +16,14 @@
       "failed_players": [
         "p-6326a3bb-e873-41f8-8f01-d6e5e810d15d"
       ],
-      "fixtures_checked_at": "2026-11-27T18:32:48+00:00",
+      "fixtures_checked_at": "2026-11-27T18:47:30+00:00",
       "fixtures_status": "ok",
       "fixtures_groups_checked": 64,
       "fixtures_groups_total": 64,
       "fixtures_failed_groups": [],
       "fixtures_errors": [],
-      "fixtures_updated_at": "2026-11-27T18:32:48+00:00",
-      "fixtures_last_success": "2026-11-27T18:32:48+00:00"
+      "fixtures_updated_at": "2026-11-27T18:47:30+00:00",
+      "fixtures_last_success": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "catalunya",
@@ -46,7 +46,7 @@
         "p-03234e3c-6d9f-4b31-9419-37a847dbb87f",
         "p-241a5873-e1ac-4408-ac98-e2d44219156a"
       ],
-      "fixtures_checked_at": "2026-11-27T18:32:58+00:00",
+      "fixtures_checked_at": "2026-11-27T18:48:02+00:00",
       "fixtures_status": "error",
       "fixtures_groups_checked": 0,
       "fixtures_groups_total": 9,
@@ -121,14 +121,14 @@
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624",
         "p-a7f65893-119e-475d-87f0-28a139edc33d"
       ],
-      "fixtures_checked_at": "2026-11-27T18:32:00+00:00",
+      "fixtures_checked_at": "2026-11-27T18:46:49+00:00",
       "fixtures_status": "ok",
       "fixtures_groups_checked": 9,
       "fixtures_groups_total": 9,
       "fixtures_failed_groups": [],
       "fixtures_errors": [],
-      "fixtures_updated_at": "2026-11-27T18:32:00+00:00",
-      "fixtures_last_success": "2026-11-27T18:32:00+00:00"
+      "fixtures_updated_at": "2026-11-27T18:46:49+00:00",
+      "fixtures_last_success": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "valencia",
@@ -143,13 +143,13 @@
         "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
       "retry_after": "2026-11-19T03:05:33+00:00",
-      "fixtures_checked_at": "2026-11-27T18:35:31+00:00",
+      "fixtures_checked_at": "2026-11-27T18:50:35+00:00",
       "fixtures_status": "ok",
       "fixtures_failed_groups": [],
       "fixtures_groups_checked": 24,
       "fixtures_groups_total": 24,
-      "fixtures_updated_at": "2026-11-27T18:35:31+00:00",
-      "fixtures_last_success": "2026-11-27T18:35:31+00:00"
+      "fixtures_updated_at": "2026-11-27T18:50:35+00:00",
+      "fixtures_last_success": "2026-11-27T18:50:35+00:00"
     }
   ],
   "players": [
@@ -205,7 +205,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:01+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:50+00:00"
     },
     {
       "id": "p-77a08f82-34fb-41ad-b85f-9352b3d85c33",
@@ -260,7 +260,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:02+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:52+00:00"
     },
     {
       "id": "p-8acf6ddf-05eb-4793-bb03-cba682fff94a",
@@ -315,7 +315,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:02+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:52+00:00"
     },
     {
       "id": "p-d6faacef-21ed-421e-a5bb-93e15b1afbf8",
@@ -370,7 +370,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:04+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:53+00:00"
     },
     {
       "id": "p-e7620d39-386d-43eb-b30e-e829a98186ca",
@@ -425,7 +425,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:05+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:55+00:00"
     },
     {
       "id": "p-65971a4f-9d48-44c7-aa06-8273b332add7",
@@ -480,7 +480,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:05+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:55+00:00"
     },
     {
       "id": "p-17fcaae5-2cd1-42dc-86cc-c522343ebd2f",
@@ -535,7 +535,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:08+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:55+00:00"
     },
     {
       "id": "p-c0bd3ebe-c26b-465b-af61-f8d8e2e8c592",
@@ -590,7 +590,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:08+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:55+00:00"
     },
     {
       "id": "p-3a3f813a-e798-41d3-af09-98ced829fef4",
@@ -645,7 +645,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:10+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:57+00:00"
     },
     {
       "id": "p-cc73b2c6-de51-4596-882d-434c906d5b40",
@@ -700,7 +700,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:10+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:57+00:00"
     },
     {
       "id": "p-4eb8c0b4-9a99-48de-adf7-175894e34b52",
@@ -755,7 +755,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:12+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:58+00:00"
     },
     {
       "id": "p-f083c4a1-1267-41ee-a0be-c55b97288c2d",
@@ -810,7 +810,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:14+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:59+00:00"
     },
     {
       "id": "p-01ac3a21-0ef4-4ec6-a54d-f7e88384342c",
@@ -865,7 +865,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:16+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:00+00:00"
     },
     {
       "id": "p-8f2d1571-1b6d-4682-8b0a-3e726e53f28b",
@@ -920,7 +920,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:16+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:00+00:00"
     },
     {
       "id": "p-1255ccf7-2c7b-4cfe-92cc-661106c088ee",
@@ -975,7 +975,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:16+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:00+00:00"
     },
     {
       "id": "p-503ca4d5-034e-4e88-aa1a-c8a1cd79b4be",
@@ -1030,7 +1030,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:16+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:00+00:00"
     },
     {
       "id": "p-3b53f8a0-f6e4-4a0e-b23c-3e0d8538c882",
@@ -1085,7 +1085,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:17+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:01+00:00"
     },
     {
       "id": "p-9ea90a43-7cbd-4983-ab53-08bf0eaa584d",
@@ -1140,7 +1140,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:18+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:02+00:00"
     },
     {
       "id": "p-8f643924-4932-457d-839f-dd3b87cd5722",
@@ -1195,7 +1195,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:18+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:02+00:00"
     },
     {
       "id": "p-175248e0-3648-49fb-9f69-aa3b1765bbcd",
@@ -1250,7 +1250,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:18+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:02+00:00"
     },
     {
       "id": "p-3b744ab9-4dc8-4dde-be1a-a737ffd2a491",
@@ -1305,7 +1305,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:18+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:02+00:00"
     },
     {
       "id": "p-62526250-46ee-4948-ac5f-35fc000dd68f",
@@ -1360,7 +1360,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:19+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:03+00:00"
     },
     {
       "id": "p-c3f8744b-e903-474d-bd75-020ef59745a3",
@@ -1415,7 +1415,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:18+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:02+00:00"
     },
     {
       "id": "p-c2eb47ce-6a16-434f-94b4-c432dc04a39f",
@@ -1470,7 +1470,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:19+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:03+00:00"
     },
     {
       "id": "p-2fb0301e-10cd-4e1d-9e61-4671ba184626",
@@ -1525,7 +1525,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:19+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:03+00:00"
     },
     {
       "id": "p-e4dd0824-491d-4f64-80e4-1c355db22405",
@@ -1580,7 +1580,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:19+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:03+00:00"
     },
     {
       "id": "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3",
@@ -1635,7 +1635,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:16+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:00+00:00"
     },
     {
       "id": "p-327c7b24-937c-4dd7-919d-5cf271aea7ef",
@@ -1690,7 +1690,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:20+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:04+00:00"
     },
     {
       "id": "p-8331d66f-11f8-46a2-ba70-e1b577dfb24b",
@@ -1745,7 +1745,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:18+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:02+00:00"
     },
     {
       "id": "p-601a0f8c-fdf4-4d84-b97d-06ac66e3c83d",
@@ -1800,7 +1800,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:16+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:00+00:00"
     },
     {
       "id": "p-32d2dfc7-11bf-4956-a267-59fda04aae64",
@@ -1855,7 +1855,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:20+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:04+00:00"
     },
     {
       "id": "p-c5003565-9f7d-4408-af9d-bd9a3b2bd5cd",
@@ -1910,7 +1910,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:20+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:04+00:00"
     },
     {
       "id": "p-0add7609-8c81-415e-950f-0c75cb5eadb1",
@@ -1965,7 +1965,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:20+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:04+00:00"
     },
     {
       "id": "p-566b1ac5-7f6f-4df3-bcea-8d0e00ec892f",
@@ -2020,7 +2020,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:20+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:04+00:00"
     },
     {
       "id": "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b",
@@ -2075,7 +2075,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:10+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:57+00:00"
     },
     {
       "id": "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2",
@@ -2130,7 +2130,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:19+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:03+00:00"
     },
     {
       "id": "p-c4f6e06a-8aa5-4de8-af1b-1c3422bdf226",
@@ -2185,7 +2185,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:20+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:04+00:00"
     },
     {
       "id": "p-d00b693d-cc6d-4fe3-9bc9-8c20db3c6f0c",
@@ -2240,7 +2240,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:21+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:05+00:00"
     },
     {
       "id": "p-61e89fc6-9ca1-492e-9e6f-f8eece8acc8f",
@@ -2295,7 +2295,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:22+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:06+00:00"
     },
     {
       "id": "p-23a8ba0a-896b-4390-9573-76a4d215ac4e",
@@ -2350,7 +2350,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:23+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:07+00:00"
     },
     {
       "id": "p-656e6179-91f8-4da3-93fb-a37034ed52d6",
@@ -2405,7 +2405,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:24+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:08+00:00"
     },
     {
       "id": "p-e3e6662d-a256-47f4-b837-48158d44512f",
@@ -2460,7 +2460,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:25+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:09+00:00"
     },
     {
       "id": "p-074fd601-5fdb-412c-b493-564bb61f64d0",
@@ -2515,7 +2515,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:25+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:09+00:00"
     },
     {
       "id": "p-95d2dae8-8136-41cc-af8a-60447bb2281a",
@@ -2570,7 +2570,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:25+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:09+00:00"
     },
     {
       "id": "p-11f72ff7-a013-4711-b466-df8127bec80d",
@@ -2625,7 +2625,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:26+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:09+00:00"
     },
     {
       "id": "p-632261c9-319a-4e34-ad8e-3b293b900f19",
@@ -2680,7 +2680,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:27+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:10+00:00"
     },
     {
       "id": "p-89e40494-578f-4315-bb91-4100ba2f6929",
@@ -2735,7 +2735,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:27+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:10+00:00"
     },
     {
       "id": "p-a1bb9309-65b3-451b-96ee-080aa8537660",
@@ -2790,7 +2790,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:29+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:12+00:00"
     },
     {
       "id": "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b",
@@ -2845,7 +2845,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:32+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:14+00:00"
     },
     {
       "id": "p-9258719a-7296-44bf-9a09-41eb00107cda",
@@ -2900,7 +2900,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:34+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:16+00:00"
     },
     {
       "id": "p-ee275004-f785-42ef-99df-be2df81d225e",
@@ -2955,7 +2955,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:34+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:16+00:00"
     },
     {
       "id": "p-de77b47c-d2ae-4cb9-ab18-373a4dc26a68",
@@ -3010,7 +3010,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:34+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:16+00:00"
     },
     {
       "id": "p-4756c9a7-0982-40ff-b10f-f4cc5d1511ed",
@@ -3065,7 +3065,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:29+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:12+00:00"
     },
     {
       "id": "p-5ae2cf0b-fdcb-4ab3-91cd-8ee188983405",
@@ -3120,7 +3120,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:36+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:17+00:00"
     },
     {
       "id": "p-a53947ba-45d7-4e5a-962f-26696e074f29",
@@ -3175,7 +3175,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:36+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:18+00:00"
     },
     {
       "id": "p-d31e3297-f329-4af6-a3ef-04b33c70887e",
@@ -3230,7 +3230,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:36+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:18+00:00"
     },
     {
       "id": "p-13f88727-f0e1-4050-a4d9-36b1bc6e5527",
@@ -3285,7 +3285,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:38+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:20+00:00"
     },
     {
       "id": "p-b6864476-e8c9-4d54-a220-e80ffa5a5361",
@@ -3340,7 +3340,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:38+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:20+00:00"
     },
     {
       "id": "p-6326a3bb-e873-41f8-8f01-d6e5e810d15d",
@@ -3396,7 +3396,7 @@
       },
       "secondary_stats": null,
       "calendar_complete": null,
-      "fixtures_checked_at": "2026-11-27T18:32:40+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:22+00:00"
     },
     {
       "id": "p-3f37360a-53c2-4b7b-8e13-e012a8a6773c",
@@ -3451,7 +3451,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:40+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:22+00:00"
     },
     {
       "id": "p-c62c99d8-afe4-4010-a0ef-53fc084ed921",
@@ -3506,7 +3506,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:41+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:23+00:00"
     },
     {
       "id": "p-5caca805-bf45-40ee-8c28-624512fe640c",
@@ -3613,7 +3613,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:41+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:23+00:00"
     },
     {
       "id": "p-70fa852e-337e-4ca1-84c9-02b0d72fa80f",
@@ -3668,7 +3668,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:42+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:23+00:00"
     },
     {
       "id": "p-93ad6552-db56-4c11-97e0-54f274b6cb7b",
@@ -3726,7 +3726,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:42+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:23+00:00"
     },
     {
       "id": "p-55f262d8-87f8-49eb-b9f1-af9bf0dbfe08",
@@ -3781,7 +3781,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:42+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:23+00:00"
     },
     {
       "id": "p-80198f0d-fea2-4b9a-9c4f-37ca431204b8",
@@ -3836,7 +3836,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:42+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:23+00:00"
     },
     {
       "id": "p-7d9db757-0ff4-4832-8e47-1861287d0b0f",
@@ -3891,7 +3891,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:42+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:23+00:00"
     },
     {
       "id": "p-85788fbf-28ec-422a-bb16-b627987f3fb4",
@@ -3998,7 +3998,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:43+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:24+00:00"
     },
     {
       "id": "p-403930cf-154c-4985-a680-97a768fbd595",
@@ -4104,7 +4104,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:44+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:25+00:00"
     },
     {
       "id": "p-882f5095-1c86-47c9-b30f-070a59fb5964",
@@ -4159,7 +4159,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:44+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:25+00:00"
     },
     {
       "id": "p-30526fbe-539f-4f16-8ac4-d0411f729499",
@@ -4266,7 +4266,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:45+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:27+00:00"
     },
     {
       "id": "p-4cdaa4af-82f2-4025-b34e-574c80a10f9f",
@@ -4321,7 +4321,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:45+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:27+00:00"
     },
     {
       "id": "p-14f0efbb-4d12-45c2-98b6-b11bed4f8405",
@@ -4376,7 +4376,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:46+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:28+00:00"
     },
     {
       "id": "p-b5b862b3-35b6-4a3b-87bc-602409f340f8",
@@ -4431,7 +4431,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:46+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:28+00:00"
     },
     {
       "id": "p-605583af-e24e-4b4c-a1ef-df4d57883159",
@@ -4486,7 +4486,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:47+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:29+00:00"
     },
     {
       "id": "p-ba3838cf-b999-4764-b449-d9d73912bb02",
@@ -4541,7 +4541,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:47+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:29+00:00"
     },
     {
       "id": "p-29d8881d-ecf7-4778-ae88-e6f27572450c",
@@ -4596,7 +4596,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:42+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:23+00:00"
     },
     {
       "id": "p-ade24668-72a8-448d-8747-3cfe2cdbf8e3",
@@ -4651,7 +4651,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:42+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:23+00:00"
     },
     {
       "id": "p-b2f9fc89-652e-4862-8d30-f973dcec5215",
@@ -4706,7 +4706,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:48+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "p-5ad0a64a-a890-4ad4-b377-e13eb992ddb9",
@@ -4760,7 +4760,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:19+00:00"
+      "fixtures_checked_at": "2026-11-27T18:47:03+00:00"
     },
     {
       "id": "aleix-camarasa-oros",
@@ -5344,7 +5344,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:31:05+00:00"
+      "fixtures_checked_at": "2026-11-27T18:45:54+00:00"
     },
     {
       "id": "p-093e1f03-53b8-4c04-8315-c64a44760528",
@@ -5399,7 +5399,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:31:36+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:25+00:00"
     },
     {
       "id": "p-b2dd7482-24e2-4895-b761-d6e63264da85",
@@ -5454,7 +5454,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:31:20+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:09+00:00"
     },
     {
       "id": "p-34d1ab4d-76f4-4a20-ac2e-9f1503e1c7b4",
@@ -5509,7 +5509,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:31:36+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:25+00:00"
     },
     {
       "id": "p-7ea22551-e0c5-40aa-83d3-5cbc7b30ac83",
@@ -5564,7 +5564,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:31:44+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:33+00:00"
     },
     {
       "id": "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5",
@@ -5619,7 +5619,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:31:28+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:17+00:00"
     },
     {
       "id": "p-15a79cbf-3b9b-42f0-9f3e-8916c071f814",
@@ -5674,7 +5674,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:31:20+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:09+00:00"
     },
     {
       "id": "p-787af8bf-494e-43a7-8f50-97c240e4efd6",
@@ -5729,7 +5729,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:31:20+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:09+00:00"
     },
     {
       "id": "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624",
@@ -5784,7 +5784,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:31:12+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:01+00:00"
     },
     {
       "id": "p-a7f65893-119e-475d-87f0-28a139edc33d",
@@ -5889,7 +5889,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:32:00+00:00"
+      "fixtures_checked_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5",
@@ -5946,7 +5946,7 @@
       },
       "secondary_stats": null,
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:05+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:09+00:00"
     },
     {
       "id": "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
@@ -6001,7 +6001,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:47+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:51+00:00"
     },
     {
       "id": "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a",
@@ -6056,7 +6056,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:35:07+00:00"
+      "fixtures_checked_at": "2026-11-27T18:50:11+00:00"
     },
     {
       "id": "p-49513978-5e9a-460f-941a-fbca921333c7",
@@ -6112,7 +6112,7 @@
         "calendar_complete": false
       },
       "calendar_complete": false,
-      "fixtures_checked_at": "2026-11-27T18:33:17+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:21+00:00"
     },
     {
       "id": "p-7dc51770-5927-40f9-befc-2363e018466e",
@@ -6167,7 +6167,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:35:13+00:00"
+      "fixtures_checked_at": "2026-11-27T18:50:17+00:00"
     },
     {
       "id": "p-a8f2c383-0c07-4afd-9402-926a2a17e524",
@@ -6222,7 +6222,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:35:19+00:00"
+      "fixtures_checked_at": "2026-11-27T18:50:23+00:00"
     },
     {
       "id": "p-857a7e7d-5b48-4b68-bd28-756a8134827b",
@@ -6277,7 +6277,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:11+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:15+00:00"
     },
     {
       "id": "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea",
@@ -6332,7 +6332,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:17+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:21+00:00"
     },
     {
       "id": "p-5fc13294-34e2-440c-aabf-c8a7881268ac",
@@ -6387,7 +6387,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:35:25+00:00"
+      "fixtures_checked_at": "2026-11-27T18:50:29+00:00"
     },
     {
       "id": "p-5de13299-c87f-4714-9b5b-30446d39a579",
@@ -6442,7 +6442,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:47+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:51+00:00"
     },
     {
       "id": "daniel-otero-serrano",
@@ -6496,7 +6496,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:05+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:09+00:00"
     },
     {
       "id": "p-14fe2d86-4679-4291-b2b2-ea2219f875bd",
@@ -6551,7 +6551,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:11+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:15+00:00"
     },
     {
       "id": "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
@@ -6606,7 +6606,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:17+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:21+00:00"
     },
     {
       "id": "p-46a95a14-de56-43c3-b119-3d0f567ef0f5",
@@ -6661,7 +6661,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:23+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:27+00:00"
     },
     {
       "id": "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08",
@@ -6716,7 +6716,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:31+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:35+00:00"
     },
     {
       "id": "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b",
@@ -6771,7 +6771,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:39+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:43+00:00"
     },
     {
       "id": "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
@@ -6826,7 +6826,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:47+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:51+00:00"
     },
     {
       "id": "p-d1691aca-5ba3-48d7-b3c2-86a72f1ca7a2",
@@ -6881,7 +6881,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:53+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:57+00:00"
     },
     {
       "id": "p-17c0205a-e138-40a1-bd73-de4bbfa284b5",
@@ -6936,7 +6936,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:59+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:03+00:00"
     },
     {
       "id": "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81",
@@ -6991,7 +6991,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:05+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:09+00:00"
     },
     {
       "id": "p-2e054d93-4996-4773-9233-841b558819ee",
@@ -7046,7 +7046,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:39+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:43+00:00"
     },
     {
       "id": "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36",
@@ -7101,7 +7101,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:11+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:15+00:00"
     },
     {
       "id": "p-7c257627-9142-4627-91ff-676d4c0d9540",
@@ -7156,7 +7156,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:17+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:21+00:00"
     },
     {
       "id": "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2",
@@ -7211,7 +7211,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:05+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:09+00:00"
     },
     {
       "id": "p-d293de07-f3e2-4508-8fc8-a32c0164a831",
@@ -7266,7 +7266,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:39+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:43+00:00"
     },
     {
       "id": "p-64bc282c-d75d-4b3b-8a72-8e7128216373",
@@ -7321,7 +7321,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:35:31+00:00"
+      "fixtures_checked_at": "2026-11-27T18:50:35+00:00"
     },
     {
       "id": "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a",
@@ -7376,7 +7376,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:17+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:21+00:00"
     },
     {
       "id": "p-7a5540e3-e152-4958-abff-a4afc28a3312",
@@ -7431,7 +7431,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:31+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:35+00:00"
     },
     {
       "id": "p-85e4ec27-a204-4f0c-b8d6-2a406a976be1",
@@ -7486,7 +7486,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:17+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:21+00:00"
     },
     {
       "id": "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e",
@@ -7541,7 +7541,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:31+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:35+00:00"
     },
     {
       "id": "p-173f9809-d590-4818-9f53-8156605bc3c5",
@@ -7596,7 +7596,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:17+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:21+00:00"
     },
     {
       "id": "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e",
@@ -7651,7 +7651,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:37+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:41+00:00"
     },
     {
       "id": "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7",
@@ -7706,7 +7706,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:11+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:15+00:00"
     },
     {
       "id": "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952",
@@ -7761,7 +7761,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:35:01+00:00"
+      "fixtures_checked_at": "2026-11-27T18:50:05+00:00"
     },
     {
       "id": "p-a8bea594-70c1-4ce7-9536-9e28e70d3f7d",
@@ -7816,7 +7816,7 @@
         "calendar_complete": false
       },
       "calendar_complete": false,
-      "fixtures_checked_at": "2026-11-27T18:34:49+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:53+00:00"
     },
     {
       "id": "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad",
@@ -7924,7 +7924,7 @@
         "calendar_complete": false
       },
       "calendar_complete": false,
-      "fixtures_checked_at": "2026-11-27T18:34:23+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:27+00:00"
     },
     {
       "id": "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0",
@@ -7979,7 +7979,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:43+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:47+00:00"
     },
     {
       "id": "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026",
@@ -8035,7 +8035,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:49+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:53+00:00"
     },
     {
       "id": "p-ee685f02-2c5a-4cac-966f-764f2f32c108",
@@ -8090,7 +8090,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:31+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:35+00:00"
     },
     {
       "id": "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
@@ -8145,7 +8145,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:33:47+00:00"
+      "fixtures_checked_at": "2026-11-27T18:48:51+00:00"
     },
     {
       "id": "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279",
@@ -8200,7 +8200,7 @@
         "calendar_complete": true
       },
       "calendar_complete": true,
-      "fixtures_checked_at": "2026-11-27T18:34:55+00:00"
+      "fixtures_checked_at": "2026-11-27T18:49:59+00:00"
     }
   ],
   "matches": [
@@ -44473,9 +44473,9 @@
       "participation_attempted_at": {
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e": "2026-11-25T14:37:13+00:00"
       },
-      "schedule_checked_at": "2026-11-27T18:34:27+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:31+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:27+00:00"
+      "updated_at": "2026-11-27T18:49:31+00:00"
     },
     {
       "id": "catalunya-4153219",
@@ -59131,9 +59131,9 @@
         "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:35+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:39+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:35+00:00"
+      "updated_at": "2026-11-27T18:49:39+00:00"
     },
     {
       "id": "madrid-rfef-33836121-10-REAL-MADRID-CF-CF-TRIVAL-VALDERAS-ALCORCON",
@@ -59281,9 +59281,9 @@
       "participation_attempted_at": {
         "p-fb80c8cc-c288-4c04-bdb9-b513de81b860": "2026-11-22T08:33:05+00:00"
       },
-      "schedule_checked_at": "2026-11-27T18:33:43+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:47+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:43+00:00"
+      "updated_at": "2026-11-27T18:48:47+00:00"
     },
     {
       "id": "murcia-24069902-10",
@@ -59386,9 +59386,9 @@
       "participation_attempted_at": {
         "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08": "2026-11-22T08:30:25+00:00"
       },
-      "schedule_checked_at": "2026-11-27T18:33:27+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:31+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:27+00:00"
+      "updated_at": "2026-11-27T18:48:31+00:00"
     },
     {
       "id": "valencia-26510290",
@@ -59423,9 +59423,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:23+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:27+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:23+00:00"
+      "updated_at": "2026-11-27T18:50:27+00:00"
     },
     {
       "id": "catalunya-4154441",
@@ -59628,9 +59628,9 @@
       "participation_attempted_at": {
         "daniel-otero-serrano": "2026-11-21T20:29:51+00:00"
       },
-      "schedule_checked_at": "2026-11-27T18:33:03+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:07+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:03+00:00"
+      "updated_at": "2026-11-27T18:48:07+00:00"
     },
     {
       "id": "valencia-26478728",
@@ -59665,9 +59665,9 @@
         "p-5de13299-c87f-4714-9b5b-30446d39a579"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:43+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:47+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:43+00:00"
+      "updated_at": "2026-11-27T18:48:47+00:00"
     },
     {
       "id": "murcia-14452266-10",
@@ -59756,9 +59756,9 @@
       "participation_attempted_at": {
         "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36": "2026-11-23T04:05:07+00:00"
       },
-      "schedule_checked_at": "2026-11-27T18:34:09+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:09+00:00"
+      "updated_at": "2026-11-27T18:49:13+00:00"
     },
     {
       "id": "madrid-rfcylf-24218935-11-C-D-ISOBA-C-D-PARQUESOL",
@@ -59897,9 +59897,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:15+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:19+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:15+00:00"
+      "updated_at": "2026-11-27T18:49:19+00:00"
     },
     {
       "id": "catalunya-4194210",
@@ -60621,9 +60621,9 @@
       "participation_attempted_at": {
         "p-14fe2d86-4679-4291-b2b2-ea2219f875bd": "2026-11-21T20:31:03+00:00"
       },
-      "schedule_checked_at": "2026-11-27T18:33:09+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:09+00:00"
+      "updated_at": "2026-11-27T18:48:13+00:00"
     },
     {
       "id": "madrid-5578398",
@@ -60827,9 +60827,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:29+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:33+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:29+00:00"
+      "updated_at": "2026-11-27T18:49:33+00:00"
     },
     {
       "id": "valencia-26512209",
@@ -60864,9 +60864,9 @@
         "p-a8f2c383-0c07-4afd-9402-926a2a17e524"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:17+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:17+00:00"
+      "updated_at": "2026-11-27T18:50:21+00:00"
     },
     {
       "id": "catalunya-4151032",
@@ -61098,9 +61098,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:15+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:19+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:15+00:00"
+      "updated_at": "2026-11-27T18:49:19+00:00"
     },
     {
       "id": "valencia-26515378",
@@ -61135,9 +61135,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:05+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:05+00:00"
+      "updated_at": "2026-11-27T18:50:09+00:00"
     },
     {
       "id": "valencia-26486512",
@@ -61172,9 +61172,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:47+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:51+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:47+00:00"
+      "updated_at": "2026-11-27T18:49:51+00:00"
     },
     {
       "id": "catalunya-4153245",
@@ -61516,9 +61516,9 @@
         "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:53+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:57+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:53+00:00"
+      "updated_at": "2026-11-27T18:49:57+00:00"
     },
     {
       "id": "madrid-5595648",
@@ -61735,9 +61735,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:11+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:15+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:11+00:00"
+      "updated_at": "2026-11-27T18:50:15+00:00"
     },
     {
       "id": "valencia-26475643",
@@ -61772,9 +61772,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:09+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:09+00:00"
+      "updated_at": "2026-11-27T18:48:13+00:00"
     },
     {
       "id": "madrid-5676301",
@@ -61875,9 +61875,9 @@
       "participation_attempted_at": {
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b": "2026-11-22T08:31:44+00:00"
       },
-      "schedule_checked_at": "2026-11-27T18:33:35+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:39+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:35+00:00"
+      "updated_at": "2026-11-27T18:48:39+00:00"
     },
     {
       "id": "madrid-5584082",
@@ -62434,9 +62434,9 @@
         "p-46a95a14-de56-43c3-b119-3d0f567ef0f5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:21+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:21+00:00"
+      "updated_at": "2026-11-27T18:48:25+00:00"
     },
     {
       "id": "madrid-5584385",
@@ -62624,9 +62624,9 @@
         "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:29+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:33+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:29+00:00"
+      "updated_at": "2026-11-27T18:50:33+00:00"
     },
     {
       "id": "valencia-26480813",
@@ -62676,9 +62676,9 @@
       "participation_attempted_at": {
         "p-17c0205a-e138-40a1-bd73-de4bbfa284b5": "2026-11-22T22:54:18+00:00"
       },
-      "schedule_checked_at": "2026-11-27T18:33:57+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:01+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:57+00:00"
+      "updated_at": "2026-11-27T18:49:01+00:00"
     },
     {
       "id": "madrid-5578702",
@@ -62919,9 +62919,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:15+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:19+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:15+00:00"
+      "updated_at": "2026-11-27T18:48:19+00:00"
     },
     {
       "id": "madrid-5578706",
@@ -63247,9 +63247,9 @@
         "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:41+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:45+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:41+00:00"
+      "updated_at": "2026-11-27T18:49:45+00:00"
     },
     {
       "id": "valencia-26486756",
@@ -63284,9 +63284,9 @@
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:29+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:33+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:29+00:00"
+      "updated_at": "2026-11-27T18:49:33+00:00"
     },
     {
       "id": "catalunya-4153243",
@@ -63525,9 +63525,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:03+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:07+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:03+00:00"
+      "updated_at": "2026-11-27T18:48:07+00:00"
     },
     {
       "id": "valencia-26499800",
@@ -63562,9 +63562,9 @@
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:21+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:21+00:00"
+      "updated_at": "2026-11-27T18:49:25+00:00"
     },
     {
       "id": "valencia-26474195",
@@ -63599,9 +63599,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:51+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:55+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:51+00:00"
+      "updated_at": "2026-11-27T18:48:55+00:00"
     },
     {
       "id": "madrid-5584383",
@@ -64007,9 +64007,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:47+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:51+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:47+00:00"
+      "updated_at": "2026-11-27T18:49:51+00:00"
     },
     {
       "id": "madrid-frf-21959329-12-CENICERO-ALFARO",
@@ -64164,9 +64164,9 @@
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:35+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:39+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:35+00:00"
+      "updated_at": "2026-11-27T18:48:39+00:00"
     },
     {
       "id": "valencia-26479980",
@@ -64201,9 +64201,9 @@
         "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:03+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:07+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:03+00:00"
+      "updated_at": "2026-11-27T18:48:07+00:00"
     },
     {
       "id": "valencia-26496840",
@@ -64238,9 +64238,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:59+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:03+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:59+00:00"
+      "updated_at": "2026-11-27T18:50:03+00:00"
     },
     {
       "id": "valencia-26480224",
@@ -64275,9 +64275,9 @@
         "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:03+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:07+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:03+00:00"
+      "updated_at": "2026-11-27T18:49:07+00:00"
     },
     {
       "id": "madrid-5589522",
@@ -64369,9 +64369,9 @@
         "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:15+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:19+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:15+00:00"
+      "updated_at": "2026-11-27T18:49:19+00:00"
     },
     {
       "id": "catalunya-4194933",
@@ -64831,9 +64831,9 @@
         "p-a280f9ac-2ccf-4eda-a4f8-14346139aad2": "2026-11-26T13:57:17+00:00",
         "p-5ad0a64a-a890-4ad4-b377-e13eb992ddb9": "2026-11-26T14:03:55+00:00"
       },
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "catalunya-4154411",
@@ -64986,9 +64986,9 @@
         "p-a7f65893-119e-475d-87f0-28a139edc33d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "madrid-5595656",
@@ -65025,9 +65025,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26510297",
@@ -65062,9 +65062,9 @@
         "p-5fc13294-34e2-440c-aabf-c8a7881268ac"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:25+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:29+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:25+00:00"
+      "updated_at": "2026-11-27T18:50:29+00:00"
     },
     {
       "id": "valencia-26512217",
@@ -65099,9 +65099,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:19+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:23+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:19+00:00"
+      "updated_at": "2026-11-27T18:50:23+00:00"
     },
     {
       "id": "valencia-26474204",
@@ -65136,9 +65136,9 @@
         "p-d1691aca-5ba3-48d7-b3c2-86a72f1ca7a2"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:53+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:57+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:53+00:00"
+      "updated_at": "2026-11-27T18:48:57+00:00"
     },
     {
       "id": "madrid-rfef-33836121-11-ALBACETE-BALOMPIE-AD-SPORTING-HORTALEZA",
@@ -65177,9 +65177,9 @@
         "p-ee275004-f785-42ef-99df-be2df81d225e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26512702",
@@ -65214,9 +65214,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:31+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:35+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:31+00:00"
+      "updated_at": "2026-11-27T18:50:35+00:00"
     },
     {
       "id": "valencia-26541765",
@@ -65253,9 +65253,9 @@
         "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:11+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:15+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:11+00:00"
+      "updated_at": "2026-11-27T18:49:15+00:00"
     },
     {
       "id": "valencia-26479045",
@@ -65290,9 +65290,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:29+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:33+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:29+00:00"
+      "updated_at": "2026-11-27T18:48:33+00:00"
     },
     {
       "id": "valencia-26478737",
@@ -65327,9 +65327,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:45+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:45+00:00"
+      "updated_at": "2026-11-27T18:48:49+00:00"
     },
     {
       "id": "catalunya-4194706",
@@ -65406,9 +65406,9 @@
         "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-27T18:33:05+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:05+00:00"
+      "updated_at": "2026-11-27T18:48:09+00:00"
     },
     {
       "id": "valencia-26486518",
@@ -65443,9 +65443,9 @@
         "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:49+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:53+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:49+00:00"
+      "updated_at": "2026-11-27T18:49:53+00:00"
     },
     {
       "id": "madrid-5594694",
@@ -65480,9 +65480,9 @@
         "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-ffcm-22916203-12-ACADEMIA-ALBICELESTE-C-D-GUADALAJARA-B",
@@ -65519,9 +65519,9 @@
         "p-6326a3bb-e873-41f8-8f01-d6e5e810d15d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-frf-21959329-13-AGONCILLO-LA-CALZADA",
@@ -65558,9 +65558,9 @@
         "p-a53947ba-45d7-4e5a-962f-26696e074f29"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-frf-21959329-13-ALFARO-SAN-MARCIAL",
@@ -65599,9 +65599,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-rfcylf-24218935-12-U-D-SUR-C-D-ISOBA",
@@ -65638,9 +65638,9 @@
         "p-5ae2cf0b-fdcb-4ab3-91cd-8ee188983405"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26475412",
@@ -65675,9 +65675,9 @@
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:17+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:17+00:00"
+      "updated_at": "2026-11-27T18:49:21+00:00"
     },
     {
       "id": "madrid-5584696",
@@ -65712,9 +65712,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "catalunya-4151039",
@@ -65793,9 +65793,9 @@
         "p-2fb0301e-10cd-4e1d-9e61-4671ba184626"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5582250",
@@ -65830,9 +65830,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584700",
@@ -65867,9 +65867,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584702",
@@ -65904,9 +65904,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5572803",
@@ -65941,9 +65941,9 @@
         "p-3b53f8a0-f6e4-4a0e-b23c-3e0d8538c882"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584703",
@@ -65978,9 +65978,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5676310",
@@ -66015,9 +66015,9 @@
         "p-403930cf-154c-4985-a680-97a768fbd595"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-ffcm-22916200-13-C-D-AZUQUECA-SAD-C-D-ILLESCAS",
@@ -66054,9 +66054,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26480232",
@@ -66091,9 +66091,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:05+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:05+00:00"
+      "updated_at": "2026-11-27T18:49:09+00:00"
     },
     {
       "id": "valencia-26480466",
@@ -66128,9 +66128,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:43+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:47+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:43+00:00"
+      "updated_at": "2026-11-27T18:49:47+00:00"
     },
     {
       "id": "valencia-26486521",
@@ -66165,9 +66165,9 @@
         "p-a8bea594-70c1-4ce7-9536-9e28e70d3f7d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:49+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:53+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:49+00:00"
+      "updated_at": "2026-11-27T18:49:53+00:00"
     },
     {
       "id": "valencia-26496849",
@@ -66202,9 +66202,9 @@
         "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:01+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:05+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:01+00:00"
+      "updated_at": "2026-11-27T18:50:05+00:00"
     },
     {
       "id": "madrid-5584395",
@@ -66239,9 +66239,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26474927",
@@ -66278,9 +66278,9 @@
         "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:17+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:17+00:00"
+      "updated_at": "2026-11-27T18:48:21+00:00"
     },
     {
       "id": "madrid-5572804",
@@ -66315,9 +66315,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584391",
@@ -66352,9 +66352,9 @@
         "p-8f643924-4932-457d-839f-dd3b87cd5722"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26476417",
@@ -66394,9 +66394,9 @@
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-27T18:33:37+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:41+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:37+00:00"
+      "updated_at": "2026-11-27T18:48:41+00:00"
     },
     {
       "id": "madrid-5656134",
@@ -66431,9 +66431,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5612148",
@@ -66468,9 +66468,9 @@
         "p-656e6179-91f8-4da3-93fb-a37034ed52d6"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "murcia-14448990-12",
@@ -66505,9 +66505,9 @@
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "catalunya-4153253",
@@ -66583,9 +66583,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "madrid-5583476",
@@ -66626,9 +66626,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584394",
@@ -66663,9 +66663,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26479991",
@@ -66700,9 +66700,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:05+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:05+00:00"
+      "updated_at": "2026-11-27T18:48:09+00:00"
     },
     {
       "id": "catalunya-4194219",
@@ -66778,9 +66778,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584083",
@@ -66815,9 +66815,9 @@
         "p-11f72ff7-a013-4711-b466-df8127bec80d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5581945",
@@ -66852,9 +66852,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5585002",
@@ -66889,9 +66889,9 @@
         "p-f083c4a1-1267-41ee-a0be-c55b97288c2d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5634517",
@@ -66926,9 +66926,9 @@
         "p-61e89fc6-9ca1-492e-9e6f-f8eece8acc8f"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5585309",
@@ -66963,9 +66963,9 @@
         "p-b5b862b3-35b6-4a3b-87bc-602409f340f8"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5605935",
@@ -67000,9 +67000,9 @@
         "p-30526fbe-539f-4f16-8ac4-d0411f729499"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "catalunya-4154449",
@@ -67076,9 +67076,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5578707",
@@ -67113,9 +67113,9 @@
         "p-65971a4f-9d48-44c7-aa06-8273b332add7"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "murcia-56738-11",
@@ -67150,9 +67150,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "valencia-26481546",
@@ -67187,9 +67187,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:23+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:27+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:23+00:00"
+      "updated_at": "2026-11-27T18:48:27+00:00"
     },
     {
       "id": "valencia-26475416",
@@ -67230,9 +67230,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:17+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:17+00:00"
+      "updated_at": "2026-11-27T18:49:21+00:00"
     },
     {
       "id": "valencia-26478738",
@@ -67271,9 +67271,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:45+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:45+00:00"
+      "updated_at": "2026-11-27T18:48:49+00:00"
     },
     {
       "id": "madrid-5589531",
@@ -67308,9 +67308,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5590444",
@@ -67345,9 +67345,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26486764",
@@ -67382,9 +67382,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:31+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:35+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:31+00:00"
+      "updated_at": "2026-11-27T18:49:35+00:00"
     },
     {
       "id": "madrid-5581028",
@@ -67419,9 +67419,9 @@
         "p-e7620d39-386d-43eb-b30e-e829a98186ca"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5574843",
@@ -67456,9 +67456,9 @@
         "p-30526fbe-539f-4f16-8ac4-d0411f729499"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5581029",
@@ -67493,9 +67493,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5590139",
@@ -67530,9 +67530,9 @@
         "p-d00b693d-cc6d-4fe3-9bc9-8c20db3c6f0c"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "catalunya-4107624",
@@ -67608,9 +67608,9 @@
         "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "murcia-24069902-11",
@@ -67645,9 +67645,9 @@
         "iker-piqueras-mora"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "valencia-26486758",
@@ -67684,9 +67684,9 @@
         "p-ee685f02-2c5a-4cac-966f-764f2f32c108"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:31+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:35+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:31+00:00"
+      "updated_at": "2026-11-27T18:49:35+00:00"
     },
     {
       "id": "madrid-rfef-33836121-11-RAYO-VALLECANO-DE-MADRID-CF-TRIVAL-VALDERAS-ALCORCON",
@@ -67723,9 +67723,9 @@
         "p-9258719a-7296-44bf-9a09-41eb00107cda"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26486037",
@@ -67760,9 +67760,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:55+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:59+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:55+00:00"
+      "updated_at": "2026-11-27T18:49:59+00:00"
     },
     {
       "id": "madrid-5587387",
@@ -67797,9 +67797,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584697",
@@ -67834,9 +67834,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5589223",
@@ -67871,9 +67871,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584396",
@@ -67914,9 +67914,9 @@
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584701",
@@ -67953,9 +67953,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5646404",
@@ -67992,9 +67992,9 @@
         "p-8acf6ddf-05eb-4793-bb03-cba682fff94a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5617049",
@@ -68029,9 +68029,9 @@
         "p-14f0efbb-4d12-45c2-98b6-b11bed4f8405"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "catalunya-4194942",
@@ -68110,9 +68110,9 @@
         "p-b2dd7482-24e2-4895-b761-d6e63264da85"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "madrid-5578711",
@@ -68147,9 +68147,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584389",
@@ -68184,9 +68184,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "murcia-14449902-9",
@@ -68221,9 +68221,9 @@
         "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "valencia-26475414",
@@ -68258,9 +68258,9 @@
         "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:17+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:17+00:00"
+      "updated_at": "2026-11-27T18:49:21+00:00"
     },
     {
       "id": "valencia-26475652",
@@ -68298,9 +68298,9 @@
         "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-27T18:33:11+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:15+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:11+00:00"
+      "updated_at": "2026-11-27T18:48:15+00:00"
     },
     {
       "id": "valencia-26499808",
@@ -68335,9 +68335,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:23+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:27+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:23+00:00"
+      "updated_at": "2026-11-27T18:49:27+00:00"
     },
     {
       "id": "valencia-26502928",
@@ -68372,9 +68372,9 @@
         "p-7dc51770-5927-40f9-befc-2363e018466e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:13+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:17+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:13+00:00"
+      "updated_at": "2026-11-27T18:50:17+00:00"
     },
     {
       "id": "catalunya-4193728",
@@ -68450,9 +68450,9 @@
         "p-85788fbf-28ec-422a-bb16-b627987f3fb4"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5630788",
@@ -68490,9 +68490,9 @@
         "p-c62c99d8-afe4-4010-a0ef-53fc084ed921"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "murcia-14452266-11",
@@ -68527,9 +68527,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "madrid-5646408",
@@ -68564,9 +68564,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5581943",
@@ -68601,9 +68601,9 @@
         "p-b6864476-e8c9-4d54-a220-e80ffa5a5361"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5583167",
@@ -68638,9 +68638,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5585310",
@@ -68681,9 +68681,9 @@
         "p-c3f8744b-e903-474d-bd75-020ef59745a3"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26480819",
@@ -68718,9 +68718,9 @@
         "p-17c0205a-e138-40a1-bd73-de4bbfa284b5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:59+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:03+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:59+00:00"
+      "updated_at": "2026-11-27T18:49:03+00:00"
     },
     {
       "id": "valencia-26484034",
@@ -68755,9 +68755,9 @@
         "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:35:07+00:00",
+      "schedule_checked_at": "2026-11-27T18:50:11+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:35:07+00:00"
+      "updated_at": "2026-11-27T18:50:11+00:00"
     },
     {
       "id": "madrid-5589527",
@@ -68792,9 +68792,9 @@
         "p-3f37360a-53c2-4b7b-8e13-e012a8a6773c"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5578405",
@@ -68838,9 +68838,9 @@
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5584392",
@@ -68875,9 +68875,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5612153",
@@ -68912,9 +68912,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5646410",
@@ -68951,9 +68951,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-ffcm-23077218-9-C-D-GALAPAGOS-C-D-GUADALAJARA-C",
@@ -68990,9 +68990,9 @@
         "p-13f88727-f0e1-4050-a4d9-36b1bc6e5527"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26485798",
@@ -69027,9 +69027,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:37+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:41+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:37+00:00"
+      "updated_at": "2026-11-27T18:49:41+00:00"
     },
     {
       "id": "madrid-5722081",
@@ -69064,9 +69064,9 @@
         "p-95d2dae8-8136-41cc-af8a-60447bb2281a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "catalunya-4153250",
@@ -69140,9 +69140,9 @@
         "p-3b53f8a0-f6e4-4a0e-b23c-3e0d8538c882"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5671656",
@@ -69177,9 +69177,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5742224",
@@ -69214,9 +69214,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "murcia-24069902-5",
@@ -69251,9 +69251,9 @@
         "iker-piqueras-mora"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "valencia-26479055",
@@ -69288,9 +69288,9 @@
         "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:31+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:35+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:31+00:00"
+      "updated_at": "2026-11-27T18:48:35+00:00"
     },
     {
       "id": "valencia-26578466",
@@ -69327,9 +69327,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:34:27+00:00",
+      "schedule_checked_at": "2026-11-27T18:49:31+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:34:27+00:00"
+      "updated_at": "2026-11-27T18:49:31+00:00"
     },
     {
       "id": "madrid-frf-21959329-14-LA-CALZADA-CALASANCIO",
@@ -69366,9 +69366,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-frf-21959329-14-PRADEJON-ALFARO",
@@ -69407,9 +69407,9 @@
         "p-a1bb9309-65b3-451b-96ee-080aa8537660"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-rfcylf-24218935-13-C-D-ISOBA-C-D-COLEGIOS-DIOCESANOS",
@@ -69446,9 +69446,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26478748",
@@ -69487,9 +69487,9 @@
         "p-fb80c8cc-c288-4c04-bdb9-b513de81b860"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:47+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:51+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:47+00:00"
+      "updated_at": "2026-11-27T18:48:51+00:00"
     },
     {
       "id": "valencia-26478747",
@@ -69524,9 +69524,9 @@
         "p-5de13299-c87f-4714-9b5b-30446d39a579"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:47+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:51+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:47+00:00"
+      "updated_at": "2026-11-27T18:48:51+00:00"
     },
     {
       "id": "madrid-rfef-33836121-12-AD-SPORTING-HORTALEZA-C-D-LEGANES",
@@ -69565,9 +69565,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-ffcm-22916200-14-C-D-TOLEDO-SAD-B-C-D-AZUQUECA-SAD",
@@ -69604,9 +69604,9 @@
         "p-d31e3297-f329-4af6-a3ef-04b33c70887e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-rfef-33836121-12-CF-TRIVAL-VALDERAS-ALCORCON-LAS-ROZAS-CF",
@@ -69643,9 +69643,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26476427",
@@ -69682,9 +69682,9 @@
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:39+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:43+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:39+00:00"
+      "updated_at": "2026-11-27T18:48:43+00:00"
     },
     {
       "id": "valencia-26476426",
@@ -69719,9 +69719,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:33:39+00:00",
+      "schedule_checked_at": "2026-11-27T18:48:43+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:33:39+00:00"
+      "updated_at": "2026-11-27T18:48:43+00:00"
     },
     {
       "id": "madrid-ffcm-22916200-14-C-D-ALAMEDA-DE-LA-SAGRA-E-M-F-HELLIN-C-F",
@@ -69758,9 +69758,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-ffcm-22916203-13-C-D-GUADALAJARA-B-E-M-F-VILLALUENGA",
@@ -69797,9 +69797,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "murcia-14448990-13",
@@ -69834,9 +69834,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "murcia-14452266-5",
@@ -69871,9 +69871,9 @@
         "p-a7f65893-119e-475d-87f0-28a139edc33d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:00+00:00",
+      "schedule_checked_at": "2026-11-27T18:46:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:00+00:00"
+      "updated_at": "2026-11-27T18:46:49+00:00"
     },
     {
       "id": "madrid-ffcm-22916200-1-U-B-CONQUENSE-C-D-ALAMEDA-DE-LA-SAGRA-E-M-F",
@@ -69910,9 +69910,9 @@
         "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "madrid-5572796",
@@ -69947,9 +69947,9 @@
         "p-4cdaa4af-82f2-4025-b34e-574c80a10f9f"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "catalunya-4384709",
@@ -70028,9 +70028,9 @@
         "p-6326a3bb-e873-41f8-8f01-d6e5e810d15d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-27T18:32:48+00:00",
+      "schedule_checked_at": "2026-11-27T18:47:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-27T18:32:48+00:00"
+      "updated_at": "2026-11-27T18:47:30+00:00"
     },
     {
       "id": "valencia-26512226",
