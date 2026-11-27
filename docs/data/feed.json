@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T00:34:09+00:00",
+  "generated_at": "2026-11-27T01:01:51+00:00",
   "season": "2026-2027",
   "registry_revision": 27,
   "federations": [
@@ -74,13 +74,13 @@
         "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
       "retry_after": "2026-11-19T03:05:33+00:00",
-      "fixtures_checked_at": "2026-11-26T16:43:33+00:00",
+      "fixtures_checked_at": "2026-11-27T01:01:51+00:00",
       "fixtures_status": "ok",
       "fixtures_failed_groups": [],
       "fixtures_groups_checked": 24,
       "fixtures_groups_total": 24,
-      "fixtures_updated_at": "2026-11-26T16:43:33+00:00",
-      "fixtures_last_success": "2026-11-26T16:43:33+00:00"
+      "fixtures_updated_at": "2026-11-27T01:01:51+00:00",
+      "fixtures_last_success": "2026-11-27T01:01:51+00:00"
     }
   ],
   "players": [
@@ -5786,7 +5786,8 @@
         "calendar_complete": true
       },
       "secondary_stats": null,
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:25+00:00"
     },
     {
       "id": "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
@@ -5840,7 +5841,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:07+00:00"
     },
     {
       "id": "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a",
@@ -5894,7 +5896,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:01:27+00:00"
     },
     {
       "id": "p-49513978-5e9a-460f-941a-fbca921333c7",
@@ -5949,7 +5952,8 @@
         },
         "calendar_complete": false
       },
-      "calendar_complete": false
+      "calendar_complete": false,
+      "fixtures_checked_at": "2026-11-27T00:59:37+00:00"
     },
     {
       "id": "p-7dc51770-5927-40f9-befc-2363e018466e",
@@ -6003,7 +6007,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:01:33+00:00"
     },
     {
       "id": "p-a8f2c383-0c07-4afd-9402-926a2a17e524",
@@ -6057,7 +6062,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:01:39+00:00"
     },
     {
       "id": "p-857a7e7d-5b48-4b68-bd28-756a8134827b",
@@ -6111,7 +6117,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:31+00:00"
     },
     {
       "id": "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea",
@@ -6165,7 +6172,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:37+00:00"
     },
     {
       "id": "p-5fc13294-34e2-440c-aabf-c8a7881268ac",
@@ -6219,7 +6227,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:01:45+00:00"
     },
     {
       "id": "p-5de13299-c87f-4714-9b5b-30446d39a579",
@@ -6273,7 +6282,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:07+00:00"
     },
     {
       "id": "daniel-otero-serrano",
@@ -6326,7 +6336,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:25+00:00"
     },
     {
       "id": "p-14fe2d86-4679-4291-b2b2-ea2219f875bd",
@@ -6380,7 +6391,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:31+00:00"
     },
     {
       "id": "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
@@ -6434,7 +6446,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:37+00:00"
     },
     {
       "id": "p-46a95a14-de56-43c3-b119-3d0f567ef0f5",
@@ -6488,7 +6501,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:43+00:00"
     },
     {
       "id": "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08",
@@ -6542,7 +6556,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:51+00:00"
     },
     {
       "id": "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b",
@@ -6596,7 +6611,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:59+00:00"
     },
     {
       "id": "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
@@ -6650,7 +6666,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:07+00:00"
     },
     {
       "id": "p-d1691aca-5ba3-48d7-b3c2-86a72f1ca7a2",
@@ -6704,7 +6721,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:14+00:00"
     },
     {
       "id": "p-17c0205a-e138-40a1-bd73-de4bbfa284b5",
@@ -6758,7 +6776,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:19+00:00"
     },
     {
       "id": "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81",
@@ -6812,7 +6831,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:25+00:00"
     },
     {
       "id": "p-2e054d93-4996-4773-9233-841b558819ee",
@@ -6866,7 +6886,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:59+00:00"
     },
     {
       "id": "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36",
@@ -6920,7 +6941,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:31+00:00"
     },
     {
       "id": "p-7c257627-9142-4627-91ff-676d4c0d9540",
@@ -6974,7 +6996,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:37+00:00"
     },
     {
       "id": "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2",
@@ -7028,7 +7051,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:25+00:00"
     },
     {
       "id": "p-d293de07-f3e2-4508-8fc8-a32c0164a831",
@@ -7082,7 +7106,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:59+00:00"
     },
     {
       "id": "p-64bc282c-d75d-4b3b-8a72-8e7128216373",
@@ -7136,7 +7161,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:01:51+00:00"
     },
     {
       "id": "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a",
@@ -7190,7 +7216,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:37+00:00"
     },
     {
       "id": "p-7a5540e3-e152-4958-abff-a4afc28a3312",
@@ -7244,7 +7271,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:51+00:00"
     },
     {
       "id": "p-85e4ec27-a204-4f0c-b8d6-2a406a976be1",
@@ -7298,7 +7326,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:37+00:00"
     },
     {
       "id": "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e",
@@ -7352,7 +7381,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:51+00:00"
     },
     {
       "id": "p-173f9809-d590-4818-9f53-8156605bc3c5",
@@ -7406,7 +7436,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:37+00:00"
     },
     {
       "id": "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e",
@@ -7460,7 +7491,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:57+00:00"
     },
     {
       "id": "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7",
@@ -7514,7 +7546,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T00:59:31+00:00"
     },
     {
       "id": "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952",
@@ -7568,7 +7601,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:01:21+00:00"
     },
     {
       "id": "p-a8bea594-70c1-4ce7-9536-9e28e70d3f7d",
@@ -7622,7 +7656,8 @@
         },
         "calendar_complete": false
       },
-      "calendar_complete": false
+      "calendar_complete": false,
+      "fixtures_checked_at": "2026-11-27T01:01:09+00:00"
     },
     {
       "id": "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad",
@@ -7729,7 +7764,8 @@
         },
         "calendar_complete": false
       },
-      "calendar_complete": false
+      "calendar_complete": false,
+      "fixtures_checked_at": "2026-11-27T01:00:43+00:00"
     },
     {
       "id": "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0",
@@ -7783,7 +7819,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:01:03+00:00"
     },
     {
       "id": "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026",
@@ -7838,7 +7875,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:01:09+00:00"
     },
     {
       "id": "p-ee685f02-2c5a-4cac-966f-764f2f32c108",
@@ -7892,7 +7930,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:51+00:00"
     },
     {
       "id": "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
@@ -7946,7 +7985,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:00:07+00:00"
     },
     {
       "id": "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279",
@@ -8000,7 +8040,8 @@
         },
         "calendar_complete": true
       },
-      "calendar_complete": true
+      "calendar_complete": true,
+      "fixtures_checked_at": "2026-11-27T01:01:15+00:00"
     }
   ],
   "matches": [
@@ -44273,10 +44314,9 @@
       "participation_attempted_at": {
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e": "2026-11-25T14:37:13+00:00"
       },
-      "schedule_checked_at": "2026-11-26T16:42:30+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:47+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:30+00:00",
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:47+00:00"
     },
     {
       "id": "catalunya-4153219",
@@ -58932,12 +58972,9 @@
         "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:37+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:55+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:37+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:55+00:00"
     },
     {
       "id": "madrid-rfef-33836121-10-REAL-MADRID-CF-CF-TRIVAL-VALDERAS-ALCORCON",
@@ -59074,9 +59111,9 @@
       "away_team_id": "19668",
       "home_player_ids": [],
       "away_player_ids": [
-        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
+        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
         "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
-        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1"
+        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860"
       ],
       "is_internal_matchup": false,
       "participation_checked_at": {
@@ -59085,10 +59122,9 @@
       "participation_attempted_at": {
         "p-fb80c8cc-c288-4c04-bdb9-b513de81b860": "2026-11-22T08:33:05+00:00"
       },
-      "schedule_checked_at": "2026-11-26T16:41:45+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:03+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:45+00:00",
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:03+00:00"
     },
     {
       "id": "murcia-24069902-10",
@@ -59191,10 +59227,9 @@
       "participation_attempted_at": {
         "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08": "2026-11-22T08:30:25+00:00"
       },
-      "schedule_checked_at": "2026-11-26T16:41:29+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:47+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:29+00:00",
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:47+00:00"
     },
     {
       "id": "valencia-26510290",
@@ -59229,12 +59264,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:25+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:43+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:25+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:43+00:00"
     },
     {
       "id": "catalunya-4154441",
@@ -59437,10 +59469,9 @@
       "participation_attempted_at": {
         "daniel-otero-serrano": "2026-11-21T20:29:51+00:00"
       },
-      "schedule_checked_at": "2026-11-26T16:41:03+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:24+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:03+00:00",
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:24+00:00"
     },
     {
       "id": "valencia-26478728",
@@ -59475,12 +59506,9 @@
         "p-5de13299-c87f-4714-9b5b-30446d39a579"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:45+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:03+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:45+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:03+00:00"
     },
     {
       "id": "murcia-14452266-10",
@@ -59558,8 +59586,8 @@
       "home_team_id": "903764694",
       "away_team_id": "903649481",
       "home_player_ids": [
-        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36",
-        "p-857a7e7d-5b48-4b68-bd28-756a8134827b"
+        "p-857a7e7d-5b48-4b68-bd28-756a8134827b",
+        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
@@ -59569,10 +59597,9 @@
       "participation_attempted_at": {
         "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36": "2026-11-23T04:05:07+00:00"
       },
-      "schedule_checked_at": "2026-11-26T16:42:11+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:29+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:11+00:00",
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:29+00:00"
     },
     {
       "id": "madrid-rfcylf-24218935-11-C-D-ISOBA-C-D-PARQUESOL",
@@ -59711,12 +59738,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:17+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:35+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:17+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:35+00:00"
     },
     {
       "id": "catalunya-4194210",
@@ -60438,10 +60462,9 @@
       "participation_attempted_at": {
         "p-14fe2d86-4679-4291-b2b2-ea2219f875bd": "2026-11-21T20:31:03+00:00"
       },
-      "schedule_checked_at": "2026-11-26T16:41:09+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:29+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:09+00:00",
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:29+00:00"
     },
     {
       "id": "madrid-5578398",
@@ -60645,12 +60668,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:31+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:31+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:49+00:00"
     },
     {
       "id": "valencia-26512209",
@@ -60685,12 +60705,9 @@
         "p-a8f2c383-0c07-4afd-9402-926a2a17e524"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:19+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:37+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:19+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:37+00:00"
     },
     {
       "id": "catalunya-4151032",
@@ -60922,12 +60939,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:17+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:35+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:17+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:35+00:00"
     },
     {
       "id": "valencia-26515378",
@@ -60962,12 +60976,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:07+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:07+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:25+00:00"
     },
     {
       "id": "valencia-26486512",
@@ -61002,12 +61013,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:49+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:07+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:49+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:07+00:00"
     },
     {
       "id": "catalunya-4153245",
@@ -61349,12 +61357,9 @@
         "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:55+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:55+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:13+00:00"
     },
     {
       "id": "madrid-5595648",
@@ -61571,12 +61576,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:13+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:31+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:13+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:31+00:00"
     },
     {
       "id": "valencia-26475643",
@@ -61611,12 +61613,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:09+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:29+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:09+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:29+00:00"
     },
     {
       "id": "madrid-5676301",
@@ -61717,10 +61716,9 @@
       "participation_attempted_at": {
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b": "2026-11-22T08:31:44+00:00"
       },
-      "schedule_checked_at": "2026-11-26T16:41:37+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:55+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:37+00:00",
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:55+00:00"
     },
     {
       "id": "madrid-5584082",
@@ -62277,12 +62275,9 @@
         "p-46a95a14-de56-43c3-b119-3d0f567ef0f5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:23+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:41+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:23+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:41+00:00"
     },
     {
       "id": "madrid-5584385",
@@ -62470,12 +62465,9 @@
         "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:31+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:50+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:31+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:50+00:00"
     },
     {
       "id": "valencia-26480813",
@@ -62525,10 +62517,9 @@
       "participation_attempted_at": {
         "p-17c0205a-e138-40a1-bd73-de4bbfa284b5": "2026-11-22T22:54:18+00:00"
       },
-      "schedule_checked_at": "2026-11-26T16:41:59+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:17+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:59+00:00",
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:17+00:00"
     },
     {
       "id": "madrid-5578702",
@@ -62764,17 +62755,14 @@
       "home_team_id": "17737",
       "away_team_id": "17295",
       "home_player_ids": [
-        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
-        "p-49513978-5e9a-460f-941a-fbca921333c7"
+        "p-49513978-5e9a-460f-941a-fbca921333c7",
+        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:17+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:35+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:17+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:35+00:00"
     },
     {
       "id": "madrid-5578706",
@@ -63100,12 +63088,9 @@
         "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:43+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:02+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:43+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:02+00:00"
     },
     {
       "id": "valencia-26486756",
@@ -63140,12 +63125,9 @@
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:31+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:31+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:49+00:00"
     },
     {
       "id": "catalunya-4153243",
@@ -63384,12 +63366,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:03+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:24+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:03+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:24+00:00"
     },
     {
       "id": "valencia-26499800",
@@ -63424,12 +63403,9 @@
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:23+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:41+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:23+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:41+00:00"
     },
     {
       "id": "valencia-26474195",
@@ -63464,12 +63440,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:53+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:11+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:53+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:11+00:00"
     },
     {
       "id": "madrid-5584383",
@@ -63875,12 +63848,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:49+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:07+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:49+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:07+00:00"
     },
     {
       "id": "madrid-frf-21959329-12-CENICERO-ALFARO",
@@ -64035,12 +64005,9 @@
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:37+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:55+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:37+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:55+00:00"
     },
     {
       "id": "valencia-26479980",
@@ -64075,12 +64042,9 @@
         "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:03+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:24+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:03+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:24+00:00"
     },
     {
       "id": "valencia-26496840",
@@ -64115,12 +64079,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:01+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:19+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:01+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:19+00:00"
     },
     {
       "id": "valencia-26480224",
@@ -64155,12 +64116,9 @@
         "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:05+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:23+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:05+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:23+00:00"
     },
     {
       "id": "madrid-5589522",
@@ -64246,18 +64204,15 @@
       "away_team_id": "10676",
       "home_player_ids": [],
       "away_player_ids": [
+        "p-173f9809-d590-4818-9f53-8156605bc3c5",
         "p-7c257627-9142-4627-91ff-676d4c0d9540",
         "p-85e4ec27-a204-4f0c-b8d6-2a406a976be1",
-        "p-173f9809-d590-4818-9f53-8156605bc3c5",
         "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:17+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:35+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:17+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:35+00:00"
     },
     {
       "id": "catalunya-4194933",
@@ -64949,12 +64904,9 @@
         "p-5fc13294-34e2-440c-aabf-c8a7881268ac"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:27+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:45+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:27+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:45+00:00"
     },
     {
       "id": "valencia-26512217",
@@ -64989,12 +64941,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:21+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:39+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:21+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:39+00:00"
     },
     {
       "id": "valencia-26474204",
@@ -65029,12 +64978,9 @@
         "p-d1691aca-5ba3-48d7-b3c2-86a72f1ca7a2"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:55+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:55+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:14+00:00"
     },
     {
       "id": "madrid-rfef-33836121-11-ALBACETE-BALOMPIE-AD-SPORTING-HORTALEZA",
@@ -65110,12 +65056,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:33+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:51+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:33+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:51+00:00"
     },
     {
       "id": "valencia-26541765",
@@ -65148,16 +65091,13 @@
       "away_team_id": "903764694",
       "home_player_ids": [],
       "away_player_ids": [
-        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36",
-        "p-857a7e7d-5b48-4b68-bd28-756a8134827b"
+        "p-857a7e7d-5b48-4b68-bd28-756a8134827b",
+        "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:13+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:31+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:13+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:31+00:00"
     },
     {
       "id": "valencia-26479045",
@@ -65192,12 +65132,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:31+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:31+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:49+00:00"
     },
     {
       "id": "valencia-26478737",
@@ -65232,12 +65169,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:47+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:05+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:47+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:05+00:00"
     },
     {
       "id": "catalunya-4194706",
@@ -65313,12 +65247,9 @@
         "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-26T16:41:05+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:05+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:25+00:00"
     },
     {
       "id": "valencia-26486518",
@@ -65353,12 +65284,9 @@
         "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:51+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:51+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:09+00:00"
     },
     {
       "id": "madrid-5594694",
@@ -65550,12 +65478,9 @@
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:19+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:37+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:19+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:37+00:00"
     },
     {
       "id": "madrid-5584696",
@@ -65976,12 +65901,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:07+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:07+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:25+00:00"
     },
     {
       "id": "valencia-26480466",
@@ -66016,12 +65938,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:45+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:03+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:45+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:03+00:00"
     },
     {
       "id": "valencia-26486521",
@@ -66056,12 +65975,9 @@
         "p-a8bea594-70c1-4ce7-9536-9e28e70d3f7d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:51+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:51+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:09+00:00"
     },
     {
       "id": "valencia-26496849",
@@ -66096,12 +66012,9 @@
         "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:03+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:03+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:21+00:00"
     },
     {
       "id": "madrid-5584395",
@@ -66172,16 +66085,13 @@
       "away_team_id": "17737",
       "home_player_ids": [],
       "away_player_ids": [
-        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0",
-        "p-49513978-5e9a-460f-941a-fbca921333c7"
+        "p-49513978-5e9a-460f-941a-fbca921333c7",
+        "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:19+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:37+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:19+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:37+00:00"
     },
     {
       "id": "madrid-5572804",
@@ -66297,12 +66207,9 @@
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-26T16:41:39+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:57+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:39+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:57+00:00"
     },
     {
       "id": "madrid-5656134",
@@ -66611,12 +66518,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:05+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:05+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:25+00:00"
     },
     {
       "id": "catalunya-4194219",
@@ -67071,12 +66975,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:25+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:43+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:25+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:43+00:00"
     },
     {
       "id": "valencia-26475416",
@@ -67110,19 +67011,16 @@
       "home_team_id": "10676",
       "away_team_id": "10709",
       "home_player_ids": [
+        "p-173f9809-d590-4818-9f53-8156605bc3c5",
         "p-7c257627-9142-4627-91ff-676d4c0d9540",
         "p-85e4ec27-a204-4f0c-b8d6-2a406a976be1",
-        "p-173f9809-d590-4818-9f53-8156605bc3c5",
         "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:19+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:37+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:19+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:37+00:00"
     },
     {
       "id": "valencia-26478738",
@@ -67155,18 +67053,15 @@
       "home_team_id": "19668",
       "away_team_id": "18824",
       "home_player_ids": [
-        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
+        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
         "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
-        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1"
+        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860"
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:47+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:05+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:47+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:05+00:00"
     },
     {
       "id": "madrid-5589531",
@@ -67277,12 +67172,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:33+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:51+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:33+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:51+00:00"
     },
     {
       "id": "madrid-5581028",
@@ -67586,12 +67478,9 @@
         "p-ee685f02-2c5a-4cac-966f-764f2f32c108"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:33+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:51+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:33+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:51+00:00"
     },
     {
       "id": "madrid-rfef-33836121-11-RAYO-VALLECANO-DE-MADRID-CF-TRIVAL-VALDERAS-ALCORCON",
@@ -67665,12 +67554,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:57+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:15+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:57+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:15+00:00"
     },
     {
       "id": "madrid-5587387",
@@ -68138,12 +68024,9 @@
         "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:19+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:37+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:19+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:37+00:00"
     },
     {
       "id": "valencia-26475652",
@@ -68181,12 +68064,9 @@
         "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-26T16:41:11+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:31+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:11+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:31+00:00"
     },
     {
       "id": "valencia-26499808",
@@ -68221,12 +68101,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:25+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:43+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:25+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:43+00:00"
     },
     {
       "id": "valencia-26502928",
@@ -68261,12 +68138,9 @@
         "p-7dc51770-5927-40f9-befc-2363e018466e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:15+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:33+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:15+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:33+00:00"
     },
     {
       "id": "catalunya-4193728",
@@ -68616,12 +68490,9 @@
         "p-17c0205a-e138-40a1-bd73-de4bbfa284b5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:01+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:19+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:01+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:19+00:00"
     },
     {
       "id": "valencia-26484034",
@@ -68656,12 +68527,9 @@
         "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:43:09+00:00",
+      "schedule_checked_at": "2026-11-27T01:01:27+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:43:09+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:01:27+00:00"
     },
     {
       "id": "madrid-5589527",
@@ -69051,12 +68919,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:39+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:57+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:39+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:57+00:00"
     },
     {
       "id": "madrid-5722081",
@@ -69281,12 +69146,9 @@
         "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:33+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:51+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:33+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:51+00:00"
     },
     {
       "id": "valencia-26578466",
@@ -69323,12 +69185,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:42:30+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:47+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:42:30+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:47+00:00"
     },
     {
       "id": "madrid-frf-21959329-14-LA-CALZADA-CALASANCIO",
@@ -69442,17 +69301,14 @@
       "away_team_id": "19668",
       "home_player_ids": [],
       "away_player_ids": [
-        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860",
+        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1",
         "p-4d1daf0f-7b80-4178-8b45-297feb8fb8b9",
-        "p-48c27d09-7956-450d-aeeb-498e6fa5ffb1"
+        "p-fb80c8cc-c288-4c04-bdb9-b513de81b860"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:49+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:07+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:49+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:07+00:00"
     },
     {
       "id": "valencia-26478747",
@@ -69487,12 +69343,9 @@
         "p-5de13299-c87f-4714-9b5b-30446d39a579"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:49+00:00",
+      "schedule_checked_at": "2026-11-27T01:00:07+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:49+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T01:00:07+00:00"
     },
     {
       "id": "madrid-rfef-33836121-12-AD-SPORTING-HORTALEZA-C-D-LEGANES",
@@ -69570,12 +69423,9 @@
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:41+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:59+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:41+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:59+00:00"
     },
     {
       "id": "madrid-rfef-33836121-12-CF-TRIVAL-VALDERAS-ALCORCON-LAS-ROZAS-CF",
@@ -69649,12 +69499,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-26T16:41:41+00:00",
+      "schedule_checked_at": "2026-11-27T00:59:59+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-26T16:41:41+00:00",
-      "participation_checked_at": {},
-      "participation_attempted_at": {},
-      "participation_source": {}
+      "updated_at": "2026-11-27T00:59:59+00:00"
     },
     {
       "id": "madrid-5671656",
