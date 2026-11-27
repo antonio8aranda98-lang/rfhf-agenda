@@ -86,10 +86,19 @@ def refresh_region(feed,roster,desired,fid,client=None,reader=read_calendar,cloc
         try:
             matches=reader(client,p)
             if not matches:raise ValueError('Calendario vacío; se conserva el anterior')
-            scoped=[m for m in matches if start<=(m.get('date') or '')<=end]
+            for m in matches:
+                if fid=='murcia':m['id']=known.get(event(m),m['id'])
+            # A game moved beyond the window must replace its old weekend entry too.
+            scoped=[m for m in matches if start<=(m.get('date') or '')<=end or
+                    start<=(games.get(m['id'],{}).get('date') or '')<=end]
+            if any(not m.get('date') for m in scoped):raise ValueError('No se confirma la fecha del partido')
+            seen={m['id'] for m in matches}
+            for old in games.values():
+                if old['federation']==fid and start<=(old.get('date') or '')<=end and old['id'] not in seen and any(
+                        o['id'] in old.get('player_ids',[]) and str(o.get('group_id'))==str(old.get('group_id')) for o in owners):
+                    old['schedule_status']='unconfirmed'
             stamp=clock()
             for m in scoped:
-                if fid=='murcia':m['id']=known.get(event(m),m['id'])
                 m['player_ids']=[o['id'] for o in owners]
                 if m['id'] in fresh:m['player_ids']=sorted(set(m['player_ids']+fresh[m['id']]['player_ids']))
                 fresh[m['id']]=m

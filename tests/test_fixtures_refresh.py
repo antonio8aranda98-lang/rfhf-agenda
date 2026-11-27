@@ -50,6 +50,12 @@ class FixturesRefreshTests(unittest.TestCase):
     def test_wrong_season_is_not_used_for_madrid(self):
         c=type('Client',(),{'next_props':lambda self,url:{'calendar':{'temporada':'2025-2026'}}})()
         with self.assertRaises(ValueError):madrid_calendar(c,{**P,'season':'2026-2027'})
+    def test_game_moved_outside_the_fortnight_replaces_its_old_weekend_date(self):
+        result=refresh_region(F,R,R,'murcia',client=object(),reader=lambda *a:[{**M,'date':'2026-12-20','time':'17:00'}],clock=lambda:AT,today=date(2026,11,27))
+        self.assertEqual(result['matches'][0]['date'],'2026-12-20')
+    def test_disappeared_fixture_is_not_still_claimed_as_confirmed(self):
+        result=refresh_region(F,R,R,'murcia',client=object(),reader=lambda *a:[{**M,'id':'other','round':10,'date':'2026-12-13'}],clock=lambda:AT,today=date(2026,11,27))
+        self.assertEqual(result['matches'][0]['schedule_status'],'unconfirmed')
     def test_general_updates_controls_mode_cannot_silently_skip_the_whole_roster(self):
         for mode,ids,expected in [('controls',[],False),('priority',[],False),('priority',['p'],True)]:
             with self.subTest(mode=mode,ids=ids),tempfile.TemporaryDirectory() as folder:
