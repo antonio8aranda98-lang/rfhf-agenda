@@ -35,10 +35,13 @@ jobs:
           npm test
           python -m unittest discover -s tests
       - name: Reservar tiempo para guardar y publicar el avance
-        run: echo "RFHF_WORK_DEADLINE=$(( $(date +%s) + 1500 ))" >> "$GITHUB_ENV"
+        run: echo "RFHF_WORK_DEADLINE=$(( $(date +%s) + 900 ))" >> "$GITHUB_ENV"
       - name: Aplicar cartera guardada por Antonio
         continue-on-error: true
         run: python scripts/registry_remote.py --priority --watch-intake
+      - name: Priorizar horarios próximos de todas las federaciones
+        continue-on-error: true
+        run: python scripts/fixtures_refresh.py --watch-intake
       - name: Consultar federaciones
         id: sync
         continue-on-error: true

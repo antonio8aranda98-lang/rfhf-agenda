@@ -1,8 +1,8 @@
-name: Actualizar horarios de Valencia
+name: Actualizar horarios de todas las federaciones
 on:
   workflow_dispatch:
   schedule:
-    - cron: '8,38 * * * *'
+    - cron: '8,23,38,53 * * * *'
 permissions:
   contents: write
   pages: write
@@ -13,7 +13,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v6
         with:
@@ -21,19 +21,24 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests
       - name: Reservar tiempo para publicar el avance
-        run: echo "RFHF_WORK_DEADLINE=$(( $(date +%s) + 600 ))" >> "$GITHUB_ENV"
-      - name: Consultar solo próximas jornadas FFCV
-        run: python scripts/valencia_fixtures.py --watch-intake
+        run: echo "RFHF_WORK_DEADLINE=$(( $(date +%s) + 900 ))" >> "$GITHUB_ENV"
+      - name: Consultar calendarios próximos de las cuatro federaciones
+        run: python scripts/fixtures_refresh.py --watch-intake
       - name: Guardar horarios verificados
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/data/feed.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Actualizar horarios próximos de Valencia'
+            git commit -m 'Actualizar horarios próximos de todas las federaciones'
             git fetch origin main
             git rebase origin/main
             git push

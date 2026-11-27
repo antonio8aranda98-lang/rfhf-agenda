@@ -549,18 +549,23 @@ def _sync(browser=False, registry_changes=False, intake=False, federation=None):
     total_success = 0
     preempted = False
     secondary_client = Client('https://es.besoccer.com')
-    for fid, (label, acronym, base) in FEDERATIONS.items():
+    federation_order=list(FEDERATIONS.items())
+    if focus is None:
+        checked={f['id']:f.get('checked_at') or '' for f in previous.get('federations',[])}
+        federation_order.sort(key=lambda item:checked.get(item[0],''))
+    for fid, (label, acronym, base) in federation_order:
         client = Client(base)
         configs = [p for p in roster['players'] if p['federation'] == fid and p.get('active', True)]
+        configs.sort(key=lambda p:old_players.get(p['id'],{}).get('stats_attempted_at') or old_players.get(p['id'],{}).get('updated_at') or '')
         if fid == 'valencia':
-            dates = {p['id']: p.get('updated_at') or '' for p in previous.get('players', [])}
+            dates = {p['id']: p.get('stats_attempted_at') or p.get('updated_at') or '' for p in previous.get('players', [])}
             configs.sort(key=lambda p: dates.get(p['id'], ''))
         if fid == 'murcia':
             def recovery_priority(p):
                 own=[m for m in old_matches if p['id'] in m['player_ids']]
                 has_report=any(p['id'] in m.get('participation',{}) for m in own)
                 attempted=max((m.get('participation_attempted_at',{}).get(p['id'],'') for m in own),default='')
-                return has_report,attempted or old_players.get(p['id'],{}).get('updated_at','')
+                return has_report,old_players.get(p['id'],{}).get('stats_attempted_at') or attempted or old_players.get(p['id'],{}).get('updated_at','')
             configs.sort(key=recovery_priority)
         # Normal public landing establishes the same public session as website navigation.
         try:
@@ -578,6 +583,7 @@ def _sync(browser=False, registry_changes=False, intake=False, federation=None):
             old_player = next((p for p in previous.get('players', []) if p['id'] == config['id']), {})
             public = {k: config[k] for k in ('id', 'name', 'federation', 'collaborator', 'team', 'competition_label', 'source')}
             public['provider'] = config.get('provider', 'federation')
+            public.update({k:old_player[k] for k in ('stats_attempted_at','fixtures_checked_at') if old_player.get(k)})
             public.update({k:copy.deepcopy(config[k]) for k in ('team_id','competition_id','group_id','additional_teams') if config.get(k)})
             public.update({k:config[k] for k in ('age_category','team_age_category','source_acronym','official_adapter_version','official_display_name') if config.get(k)})
             public.update({k:config[k] for k in ('besoccer_team_source','besoccer_player_source','player_source','team_source','registration_team','participation_evidence') if config.get(k)})
@@ -590,6 +596,7 @@ def _sync(browser=False, registry_changes=False, intake=False, federation=None):
                 config.update(_calendar_only=True,_intake=True)
                 if config['id'] in status_rows:status_rows[config['id']]['calendar_attempted_at']=now()
             try:
+                public['stats_attempted_at']=now()
                 same_secondary = old_player.get('besoccer_player_source') == config.get('besoccer_player_source')
                 result = collect_player(client, secondary_client, config, old_matches if same_secondary else ())
                 if not result['matches']:
@@ -640,8 +647,9 @@ def _sync(browser=False, registry_changes=False, intake=False, federation=None):
         elif focus is not None and any(p['id'] not in focus for p in configs):
             meta['last_success'] = old_fed.get('last_success')
             if old_fed.get('status') not in ('ok','empty') and meta['status']=='ok':meta['status']='partial'
-        if fid=='valencia':meta.update({k:v for k,v in old_fed.items() if k.startswith('fixtures_')})
+        meta.update({k:v for k,v in old_fed.items() if k.startswith('fixtures_')})
         feed['federations'].append(meta)
+    feed['federations'].sort(key=lambda f:list(FEDERATIONS).index(f['id']))
     feed = apply_roster(feed, roster)
     for player in feed['players']:
         own = [m for m in feed['matches'] if player['id'] in m['player_ids']]
@@ -673,7 +681,7 @@ def sync(browser=False, registry_changes=False, intake=False, watch_intake=False
         watch=IntakeWatch(fetch_registry,roster.get('registry_revision',0))
         status_path=ROOT/'docs/data/registry-status.json'
         status=json.loads(status_path.read_text()) if status_path.exists() else {}
-        intake=intake or (not federation and status.get('intake_mode') in ('priority','controls'))
+        intake=intake or (not federation and status.get('intake_mode')=='priority' and bool(status.get('intake_ids')))
     deadline=execution_deadline()
     def checkpoint():
         if time.monotonic()>=deadline:raise IntakeYield('Se guarda el avance antes del límite de ejecución')

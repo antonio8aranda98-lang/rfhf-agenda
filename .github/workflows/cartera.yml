@@ -61,10 +61,14 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Reservar tiempo para guardar y publicar el avance
-        run: echo "RFHF_WORK_DEADLINE=$(( $(date +%s) + 1500 ))" >> "$GITHUB_ENV"
+        run: echo "RFHF_WORK_DEADLINE=$(( $(date +%s) + 900 ))" >> "$GITHUB_ENV"
       - name: Validar cambios de cartera
         if: inputs.publish_only != true
         run: python scripts/registry_remote.py --priority --watch-intake
+      - name: Revisar horarios próximos antes de las actas
+        if: inputs.publish_only != true
+        continue-on-error: true
+        run: python scripts/fixtures_refresh.py --watch-intake
       - name: Actualizar agenda
         if: inputs.publish_only != true
         continue-on-error: true
