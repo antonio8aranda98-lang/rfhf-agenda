@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-28T06:36:16+00:00",
+  "generated_at": "2026-11-28T06:51:20+00:00",
   "season": "2026-2027",
   "registry_revision": 27,
   "federations": [
@@ -18,14 +18,14 @@
         "p-13f88727-f0e1-4050-a4d9-36b1bc6e5527",
         "p-c62c99d8-afe4-4010-a0ef-53fc084ed921"
       ],
-      "fixtures_checked_at": "2026-11-28T06:33:00+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:14+00:00",
       "fixtures_status": "ok",
       "fixtures_groups_checked": 64,
       "fixtures_groups_total": 64,
       "fixtures_failed_groups": [],
       "fixtures_errors": [],
-      "fixtures_updated_at": "2026-11-28T06:33:00+00:00",
-      "fixtures_last_success": "2026-11-28T06:33:00+00:00"
+      "fixtures_updated_at": "2026-11-28T06:48:14+00:00",
+      "fixtures_last_success": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "catalunya",
@@ -48,7 +48,7 @@
         "p-03234e3c-6d9f-4b31-9419-37a847dbb87f",
         "p-241a5873-e1ac-4408-ac98-e2d44219156a"
       ],
-      "fixtures_checked_at": "2026-11-28T06:33:10+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:16+00:00",
       "fixtures_status": "error",
       "fixtures_groups_checked": 0,
       "fixtures_groups_total": 9,
@@ -123,14 +123,14 @@
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624",
         "p-a7f65893-119e-475d-87f0-28a139edc33d"
       ],
-      "fixtures_checked_at": "2026-11-28T06:32:02+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:09+00:00",
       "fixtures_status": "ok",
       "fixtures_groups_checked": 9,
       "fixtures_groups_total": 9,
       "fixtures_failed_groups": [],
       "fixtures_errors": [],
-      "fixtures_updated_at": "2026-11-28T06:32:02+00:00",
-      "fixtures_last_success": "2026-11-28T06:32:02+00:00"
+      "fixtures_updated_at": "2026-11-28T06:47:09+00:00",
+      "fixtures_last_success": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "valencia",
@@ -145,13 +145,13 @@
         "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
       "retry_after": "2026-11-19T03:05:33+00:00",
-      "fixtures_checked_at": "2026-11-28T06:36:16+00:00",
+      "fixtures_checked_at": "2026-11-28T06:51:20+00:00",
       "fixtures_status": "ok",
       "fixtures_failed_groups": [],
       "fixtures_groups_checked": 24,
       "fixtures_groups_total": 24,
-      "fixtures_updated_at": "2026-11-28T06:36:16+00:00",
-      "fixtures_last_success": "2026-11-28T06:36:16+00:00"
+      "fixtures_updated_at": "2026-11-28T06:51:20+00:00",
+      "fixtures_last_success": "2026-11-28T06:51:20+00:00"
     }
   ],
   "players": [
@@ -164,7 +164,7 @@
       "competition_label": "PREFERENTE AFICIONADO · Grupo 4",
       "source": "https://www.rffm.es/fichajugador/14602204",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:50+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:00+00:00",
       "team_id": "2278108",
       "competition_id": "26737701",
       "group_id": "26737705",
@@ -271,7 +271,7 @@
       "competition_label": "PREFERENTE JUVENIL · Grupo 4",
       "source": "https://www.rffm.es/fichajugador/27341426",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:51+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:02+00:00",
       "team_id": "12325489",
       "competition_id": "26737718",
       "group_id": "26737722",
@@ -326,7 +326,7 @@
       "competition_label": "PREFERENTE JUVENIL · Grupo 4",
       "source": "https://www.rffm.es/fichajugador/27492835",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:51+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:02+00:00",
       "team_id": "12325489",
       "competition_id": "26737718",
       "group_id": "26737722",
@@ -384,7 +384,7 @@
       "competition_label": "PRIMERA DIVISIÓN AUTONÓMICA JUVENIL · Grupo 3",
       "source": "https://www.rffm.es/fichajugador/16282204",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:51+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:02+00:00",
       "team_id": "3353735",
       "competition_id": "26737715",
       "group_id": "26834942",
@@ -439,7 +439,7 @@
       "competition_label": "PRIMERA DIVISIÓN AUTONÓMICA JUVENIL · Grupo 3",
       "source": "https://www.rffm.es/fichajugador/4641104",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:51+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:02+00:00",
       "team_id": "3353735",
       "competition_id": "26737715",
       "group_id": "26834942",
@@ -494,7 +494,7 @@
       "competition_label": "PREFERENTE AFICIONADO · Grupo 4",
       "source": "https://www.rffm.es/fichajugador/4527452",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:51+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:02+00:00",
       "team_id": "334388",
       "competition_id": "26737701",
       "group_id": "26737705",
@@ -549,7 +549,7 @@
       "competition_label": "NACIONAL JUVENIL · Grupo 12",
       "source": "https://www.rffm.es/fichajugador/19581798",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:52+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:03+00:00",
       "team_id": "2365",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -656,7 +656,7 @@
       "competition_label": "PRIMERA JUVENIL · Grupo 4",
       "source": "https://www.rffm.es/fichajugador/6473404",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:53+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:06+00:00",
       "team_id": "24016238",
       "competition_id": "26737724",
       "group_id": "26737728",
@@ -762,7 +762,7 @@
       "competition_label": "PRIMERA DIVISIÓN AUTONÓMICA JUVENIL · Grupo 3",
       "source": "https://www.rffm.es/fichajugador/19919662",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:53+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:06+00:00",
       "team_id": "2129",
       "competition_id": "26737715",
       "group_id": "26834942",
@@ -817,7 +817,7 @@
       "competition_label": "PRIMERA DIVISIÓN AUTONÓMICA INFANTIL · Grupo 2",
       "source": "https://www.rffm.es/fichajugador/16075870",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:56+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:08+00:00",
       "team_id": "2458",
       "competition_id": "26737814",
       "group_id": "26737816",
@@ -924,7 +924,7 @@
       "competition_label": "SUPERLIGA CADETE · Grupo Unico",
       "source": "https://www.rffm.es/fichajugador/9756185",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:56+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:08+00:00",
       "team_id": "1795",
       "competition_id": "26738047",
       "group_id": "26738048",
@@ -979,7 +979,7 @@
       "competition_label": "PRIMERA JUVENIL · Grupo 17",
       "source": "https://www.rffm.es/fichajugador/6681928",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:57+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:10+00:00",
       "team_id": "1231",
       "competition_id": "26737724",
       "group_id": "27173681",
@@ -1034,7 +1034,7 @@
       "competition_label": "PREFERENTE JUVENIL · Grupo 7",
       "source": "https://www.rffm.es/fichajugador/13166672",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:57+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:10+00:00",
       "team_id": "2728963",
       "competition_id": "26737718",
       "group_id": "26890632",
@@ -1089,7 +1089,7 @@
       "competition_label": "PREFERENTE CADETE · Grupo 8",
       "source": "https://www.rffm.es/fichajugador/14982948",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:58+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:12+00:00",
       "team_id": "850571",
       "competition_id": "26737742",
       "group_id": "26737750",
@@ -1144,7 +1144,7 @@
       "competition_label": "PREFERENTE CADETE · Grupo 8",
       "source": "https://www.rffm.es/fichajugador/9545778",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:58+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:12+00:00",
       "team_id": "850571",
       "competition_id": "26737742",
       "group_id": "26737750",
@@ -1199,7 +1199,7 @@
       "competition_label": "PREFERENTE JUVENIL · Grupo 4",
       "source": "https://www.rffm.es/fichajugador/5518110",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:51+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:02+00:00",
       "team_id": "12325489",
       "competition_id": "26737718",
       "group_id": "26737722",
@@ -1254,7 +1254,7 @@
       "competition_label": "PREFERENTE JUVENIL · Grupo 4",
       "source": "https://www.rffm.es/fichajugador/9649030",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:51+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:02+00:00",
       "team_id": "12325489",
       "competition_id": "26737718",
       "group_id": "26737722",
@@ -1309,7 +1309,7 @@
       "competition_label": "PREFERENTE CADETE · Grupo 4",
       "source": "https://www.rffm.es/fichajugador/14205619",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:33:00+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:13+00:00",
       "team_id": "689",
       "competition_id": "26737742",
       "group_id": "26737745",
@@ -1364,7 +1364,7 @@
       "competition_label": "NACIONAL JUVENIL · Grupo 12",
       "source": "https://www.rffm.es/fichajugador/6970556",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:32:34+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:45+00:00",
       "team_id": "1594",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -1419,7 +1419,7 @@
       "source": "https://www.ffcm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=22916201&codgrupo=22916203&codtemporada=22&CDetalle=1",
       "provider": "ffcm",
       "stats_attempted_at": "2026-11-27T19:12:56+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:17+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:26+00:00",
       "team_id": "ffcm-33266",
       "age_category": "juvenil",
       "team_age_category": "juvenil",
@@ -1475,7 +1475,7 @@
       "source": "https://www.rffm.es/fichajugador/7998819",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:13:07+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:19+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:28+00:00",
       "team_id": "2023",
       "competition_id": "26737715",
       "group_id": "26737716",
@@ -1530,7 +1530,7 @@
       "source": "https://www.rffm.es/fichajugador/1174423",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:13:31+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:20+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:29+00:00",
       "team_id": "3347325",
       "competition_id": "26737701",
       "group_id": "26737705",
@@ -1586,7 +1586,7 @@
       "source": "https://www.rffm.es/fichajugador/1174427",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:13:58+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:20+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:29+00:00",
       "team_id": "3347325",
       "competition_id": "26737701",
       "group_id": "26737705",
@@ -1642,7 +1642,7 @@
       "source": "https://www.rffm.es/fichajugador/4417981",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:14:00+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:22+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:31+00:00",
       "team_id": "466770",
       "competition_id": "26737698",
       "group_id": "26737700",
@@ -1698,7 +1698,7 @@
       "source": "https://www.rffm.es/fichajugador/8407440",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:14:21+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:23+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:32+00:00",
       "team_id": "748",
       "competition_id": "26737701",
       "group_id": "26737703",
@@ -1754,7 +1754,7 @@
       "source": "https://www.rffm.es/fichajugador/24477500",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:14:40+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:23+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:32+00:00",
       "team_id": "193",
       "competition_id": "26737698",
       "group_id": "26737700",
@@ -1810,7 +1810,7 @@
       "source": "https://www.rffm.es/fichajugador/20791859",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:14:54+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:25+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:34+00:00",
       "team_id": "2739612",
       "competition_id": "26737715",
       "group_id": "26834942",
@@ -1866,7 +1866,7 @@
       "source": "https://www.rffm.es/fichajugador/20839568",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:15:18+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:25+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:34+00:00",
       "team_id": "2278108",
       "competition_id": "26737701",
       "group_id": "26737705",
@@ -1922,7 +1922,7 @@
       "source": "https://www.rffm.es/fichajugador/12471846",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:15:30+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:26+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:36+00:00",
       "team_id": "107",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -1978,7 +1978,7 @@
       "source": "https://www.rffm.es/fichajugador/26276758",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:15:42+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:26+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:36+00:00",
       "team_id": "466507",
       "competition_id": "26737715",
       "group_id": "26737716",
@@ -2034,7 +2034,7 @@
       "source": "https://www.rffm.es/fichajugador/4396066",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:15:48+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:28+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:38+00:00",
       "team_id": "371",
       "competition_id": "26737718",
       "group_id": "26737723",
@@ -2090,7 +2090,7 @@
       "source": "https://www.rffm.es/fichajugador/16357807",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:16:06+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:29+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:39+00:00",
       "team_id": "668",
       "competition_id": "26737715",
       "group_id": "26834927",
@@ -2146,7 +2146,7 @@
       "source": "https://www.rffm.es/fichajugador/3001042",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:16:28+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:31+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:40+00:00",
       "team_id": "349789",
       "competition_id": "26737706",
       "group_id": "26737714",
@@ -2202,7 +2202,7 @@
       "source": "https://www.rffm.es/fichajugador/22500641",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:16:50+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:31+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:40+00:00",
       "team_id": "21492710",
       "competition_id": "26737715",
       "group_id": "26737716",
@@ -2258,7 +2258,7 @@
       "source": "https://www.rffm.es/fichajugador/11499819",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:16:52+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:31+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:40+00:00",
       "team_id": "1312",
       "competition_id": "26737715",
       "group_id": "26737716",
@@ -2314,7 +2314,7 @@
       "source": "https://www.rffm.es/fichajugador/15337816",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:16:59+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:31+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:40+00:00",
       "team_id": "21492710",
       "competition_id": "26737715",
       "group_id": "26737716",
@@ -2370,7 +2370,7 @@
       "source": "https://www.rffm.es/fichajugador/14351875",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:17:00+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:32+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:42+00:00",
       "team_id": "680102",
       "competition_id": "26738047",
       "group_id": "26738048",
@@ -2426,7 +2426,7 @@
       "source": "https://www.rffm.es/fichajugador/9053418",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:17:11+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:33+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:43+00:00",
       "team_id": "47",
       "competition_id": "26737718",
       "group_id": "26890632",
@@ -2482,7 +2482,7 @@
       "source": "https://www.rffm.es/fichajugador/3810873",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:17:21+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:33+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:43+00:00",
       "team_id": "1175",
       "competition_id": "26737715",
       "group_id": "26737716",
@@ -2538,7 +2538,7 @@
       "source": "https://www.rffm.es/fichajugador/8426900",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:17:26+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:33+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:43+00:00",
       "team_id": "47",
       "competition_id": "26737718",
       "group_id": "26890632",
@@ -2594,7 +2594,7 @@
       "source": "https://www.rffm.es/fichajugador/8415869",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:17:27+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:33+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:43+00:00",
       "team_id": "1630",
       "competition_id": "26737715",
       "group_id": "26834942",
@@ -2650,7 +2650,7 @@
       "source": "https://www.rffm.es/fichajugador/27643634",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:17:35+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:34+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:45+00:00",
       "team_id": "3349086",
       "competition_id": "26737701",
       "group_id": "26737702",
@@ -2706,7 +2706,7 @@
       "source": "https://www.rffm.es/fichajugador/14497318",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:17:54+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:33+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:43+00:00",
       "team_id": "47",
       "competition_id": "26737718",
       "group_id": "26890632",
@@ -2762,7 +2762,7 @@
       "source": "https://www.rffm.es/fichajugador/10737753",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:17:55+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:34+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:45+00:00",
       "team_id": "2365",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -2818,7 +2818,7 @@
       "source": "https://www.rffm.es/fichajugador/4488190",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:02+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:34+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:45+00:00",
       "team_id": "2128",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -2874,7 +2874,7 @@
       "source": "https://www.rffm.es/fichajugador/19582123",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:09+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:34+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:45+00:00",
       "team_id": "1594",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -2930,7 +2930,7 @@
       "source": "https://www.rffm.es/fichajugador/12989503",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:14+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:31+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:40+00:00",
       "team_id": "21492710",
       "competition_id": "26737715",
       "group_id": "26737716",
@@ -2986,7 +2986,7 @@
       "source": "https://www.rffm.es/fichajugador/23526744",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:15+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:36+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:47+00:00",
       "team_id": "24010138",
       "competition_id": "26737706",
       "group_id": "26737710",
@@ -3042,7 +3042,7 @@
       "source": "https://www.rffm.es/fichajugador/9901326",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:32+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:33+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:43+00:00",
       "team_id": "47",
       "competition_id": "26737718",
       "group_id": "26890632",
@@ -3098,7 +3098,7 @@
       "source": "https://www.rffm.es/fichajugador/21486322",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:34+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:31+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:40+00:00",
       "team_id": "21492710",
       "competition_id": "26737715",
       "group_id": "26737716",
@@ -3154,7 +3154,7 @@
       "source": "https://www.rffm.es/fichajugador/14284757",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:36+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:36+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:47+00:00",
       "team_id": "73",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -3210,7 +3210,7 @@
       "source": "https://www.rffm.es/fichajugador/9021963",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:40+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:36+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:47+00:00",
       "team_id": "73",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -3266,7 +3266,7 @@
       "source": "https://www.rffm.es/fichajugador/19694950",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:41+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:37+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:49+00:00",
       "team_id": "534532",
       "competition_id": "26737706",
       "group_id": "26737711",
@@ -3322,7 +3322,7 @@
       "source": "https://www.rffm.es/fichajugador/13161910",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:18:57+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:37+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:49+00:00",
       "team_id": "60",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -3378,7 +3378,7 @@
       "source": "https://www.rffm.es/fichajugador/7755408",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:19:01+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:26+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:36+00:00",
       "team_id": "107",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -3434,7 +3434,7 @@
       "source": "https://www.rffm.es/fichajugador/4195706",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:19:02+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:34+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:45+00:00",
       "team_id": "1594",
       "competition_id": "26738130",
       "group_id": "26738131",
@@ -3490,7 +3490,7 @@
       "source": "https://www.rffm.es/fichajugador/459649",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:19:04+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:37+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:49+00:00",
       "team_id": "2451",
       "competition_id": "26737701",
       "group_id": "26737703",
@@ -3546,7 +3546,7 @@
       "source": "https://www.rffm.es/fichajugador/27658854",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:19:17+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:39+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:50+00:00",
       "team_id": "4936105",
       "competition_id": "26737706",
       "group_id": "26737713",
@@ -3602,7 +3602,7 @@
       "source": "https://www.rffm.es/fichajugador/19287319",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:19:41+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:40+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:52+00:00",
       "team_id": "8959584",
       "competition_id": "26737887",
       "group_id": "26737889",
@@ -3658,7 +3658,7 @@
       "source": "https://www.rffm.es/fichajugador/15210635",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:20:01+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:42+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:53+00:00",
       "team_id": "818",
       "competition_id": "26737718",
       "group_id": "26737720",
@@ -3714,7 +3714,7 @@
       "source": "https://www.rffm.es/fichajugador/8472346",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:20:23+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:43+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:55+00:00",
       "team_id": "259",
       "competition_id": "26737724",
       "group_id": "26737728",
@@ -3770,7 +3770,7 @@
       "source": "https://www.rffm.es/fichajugador/12288234",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:20:49+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:45+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:56+00:00",
       "team_id": "466623",
       "competition_id": "26737768",
       "group_id": "26737801",
@@ -3827,7 +3827,7 @@
       "source": "https://www.rffm.es/fichajugador/8445759",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:20:56+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:45+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:56+00:00",
       "team_id": "680799",
       "competition_id": "26737715",
       "group_id": "26834942",
@@ -3883,7 +3883,7 @@
       "source": "https://www.rffm.es/fichajugador/21948896",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:21:05+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:45+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:56+00:00",
       "team_id": "1246",
       "competition_id": "26737715",
       "group_id": "26834942",
@@ -3939,7 +3939,7 @@
       "source": "https://www.rffm.es/fichajugador/21223177",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:21:12+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:47+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:57+00:00",
       "team_id": "467145",
       "competition_id": "26737715",
       "group_id": "26737717",
@@ -3995,7 +3995,7 @@
       "source": "https://www.rffm.es/fichajugador/6409275",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:21:24+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:49+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:59+00:00",
       "team_id": "17151894",
       "competition_id": "26737718",
       "group_id": "26737719",
@@ -4051,7 +4051,7 @@
       "source": "https://www.rffm.es/fichajugador/9194367",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:21:44+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:49+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:59+00:00",
       "team_id": "3347198",
       "competition_id": "26737715",
       "group_id": "26737716",
@@ -4107,7 +4107,7 @@
       "source": "https://www.frfutbol.com/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=21959328&codgrupo=21959329&codtemporada=22&CDetalle=1",
       "provider": "frf",
       "stats_attempted_at": "2026-11-27T19:21:49+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:05+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:13+00:00",
       "team_id": "frf-2007200301",
       "age_category": "senior",
       "team_age_category": "senior",
@@ -4163,7 +4163,7 @@
       "source": "https://www.ffcm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=22916199&codgrupo=22916200&codtemporada=22&CDetalle=1",
       "provider": "ffcm",
       "stats_attempted_at": "2026-11-27T19:21:58+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:07+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:16+00:00",
       "team_id": "ffcm-1857647",
       "age_category": "juvenil",
       "team_age_category": "juvenil",
@@ -4219,7 +4219,7 @@
       "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
       "provider": "rfef",
       "stats_attempted_at": "2026-11-27T19:22:05+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:09+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:19+00:00",
       "team_id": "rfef-23289692",
       "age_category": "juvenil",
       "team_age_category": "juvenil",
@@ -4275,7 +4275,7 @@
       "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
       "provider": "rfef",
       "stats_attempted_at": "2026-11-27T19:22:12+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:10+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:19+00:00",
       "team_id": "rfef-23289693",
       "age_category": "juvenil",
       "team_age_category": "juvenil",
@@ -4331,7 +4331,7 @@
       "source": "https://resultados.rfef.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=33836116&codgrupo=33836121&codtemporada=22&CDetalle=1",
       "provider": "rfef",
       "stats_attempted_at": "2026-11-27T19:22:13+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:10+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:19+00:00",
       "team_id": "rfef-23289693",
       "age_category": "juvenil",
       "team_age_category": "juvenil",
@@ -4387,7 +4387,7 @@
       "source": "https://www.frfutbol.com/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=21959328&codgrupo=21959329&codtemporada=22&CDetalle=1",
       "provider": "frf",
       "stats_attempted_at": "2026-11-27T19:22:13+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:05+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:13+00:00",
       "team_id": "frf-2007200301",
       "age_category": "senior",
       "team_age_category": "senior",
@@ -4443,7 +4443,7 @@
       "source": "https://www.rfcylf.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=24218934&codgrupo=24218935&codtemporada=22&CDetalle=1",
       "provider": "rfcylf",
       "stats_attempted_at": "2026-11-27T19:22:14+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:12+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:21+00:00",
       "team_id": "rfcylf-15245",
       "age_category": "juvenil",
       "team_age_category": "juvenil",
@@ -4499,7 +4499,7 @@
       "source": "https://www.frfutbol.com/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=21959328&codgrupo=21959329&codtemporada=22&CDetalle=1",
       "provider": "frf",
       "stats_attempted_at": "2026-11-27T19:22:22+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:13+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:22+00:00",
       "team_id": "frf-2007214201",
       "age_category": "senior",
       "team_age_category": "senior",
@@ -4555,7 +4555,7 @@
       "source": "https://www.ffcm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=22916199&codgrupo=22916200&codtemporada=22&CDetalle=1",
       "provider": "ffcm",
       "stats_attempted_at": "2026-11-27T19:22:25+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:13+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:22+00:00",
       "team_id": "ffcm-33272",
       "age_category": "juvenil",
       "team_age_category": "juvenil",
@@ -4611,7 +4611,7 @@
       "source": "https://www.ffcm.es/pnfg/NPcd/NFG_VisCalendario_Vis?cod_primaria=1000120&codcompeticion=22916222&codgrupo=23077218&codtemporada=22",
       "provider": "ffcm",
       "stats_attempted_at": "2026-11-27T19:22:27+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:15+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:25+00:00",
       "team_id": "ffcm-229284",
       "age_category": "juvenil",
       "team_age_category": "juvenil",
@@ -4668,7 +4668,7 @@
       "source": "https://www.rffm.es/fichajugador/22525302",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:22:30+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:49+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:59+00:00",
       "team_id": "1075",
       "competition_id": "26737718",
       "group_id": "26737720",
@@ -4724,7 +4724,7 @@
       "source": "https://www.rffm.es/fichajugador/28885128",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:22:41+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:49+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:59+00:00",
       "team_id": "12377643",
       "competition_id": "26737706",
       "group_id": "26737711",
@@ -4780,7 +4780,7 @@
       "source": "https://www.rffm.es/fichajugador/15094419",
       "provider": "federation",
       "stats_attempted_at": "2026-11-27T19:22:52+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:50+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:00+00:00",
       "team_id": "13562968",
       "competition_id": "26738300",
       "group_id": "26738312",
@@ -5377,7 +5377,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=24069902&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:11:29+00:00",
-      "fixtures_checked_at": "2026-11-28T06:31:08+00:00",
+      "fixtures_checked_at": "2026-11-28T06:46:15+00:00",
       "team_id": "24069902",
       "competition_id": "24032708",
       "group_id": "24032710",
@@ -5432,7 +5432,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=34067&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:12:26+00:00",
-      "fixtures_checked_at": "2026-11-28T06:31:38+00:00",
+      "fixtures_checked_at": "2026-11-28T06:46:45+00:00",
       "team_id": "34067",
       "competition_id": "24032757",
       "group_id": "24032761",
@@ -5488,7 +5488,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14472340&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:14:09+00:00",
-      "fixtures_checked_at": "2026-11-28T06:31:22+00:00",
+      "fixtures_checked_at": "2026-11-28T06:46:29+00:00",
       "team_id": "14472340",
       "competition_id": "24032666",
       "group_id": "24032668",
@@ -5544,7 +5544,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=34067&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:14:33+00:00",
-      "fixtures_checked_at": "2026-11-28T06:31:38+00:00",
+      "fixtures_checked_at": "2026-11-28T06:46:45+00:00",
       "team_id": "34067",
       "competition_id": "24032757",
       "group_id": "24032761",
@@ -5600,7 +5600,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=56738&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:14:57+00:00",
-      "fixtures_checked_at": "2026-11-28T06:31:46+00:00",
+      "fixtures_checked_at": "2026-11-28T06:46:53+00:00",
       "team_id": "56738",
       "competition_id": "24032705",
       "group_id": "24032707",
@@ -5656,7 +5656,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14449902&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:16:01+00:00",
-      "fixtures_checked_at": "2026-11-28T06:31:30+00:00",
+      "fixtures_checked_at": "2026-11-28T06:46:38+00:00",
       "team_id": "14449902",
       "competition_id": "24032796",
       "group_id": "24032797",
@@ -5712,7 +5712,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=56859&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:17:13+00:00",
-      "fixtures_checked_at": "2026-11-28T06:31:22+00:00",
+      "fixtures_checked_at": "2026-11-28T06:46:30+00:00",
       "team_id": "56859",
       "competition_id": "24032666",
       "group_id": "24032668",
@@ -5768,7 +5768,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14472340&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:17:37+00:00",
-      "fixtures_checked_at": "2026-11-28T06:31:22+00:00",
+      "fixtures_checked_at": "2026-11-28T06:46:29+00:00",
       "team_id": "14472340",
       "competition_id": "24032666",
       "group_id": "24032668",
@@ -5824,7 +5824,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14448990&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:18:02+00:00",
-      "fixtures_checked_at": "2026-11-28T06:31:14+00:00",
+      "fixtures_checked_at": "2026-11-28T06:46:22+00:00",
       "team_id": "14448990",
       "competition_id": "24144503",
       "group_id": "24144520",
@@ -5880,7 +5880,7 @@
       "source": "https://www.ffrm.es/pnfg/NPcd/NFG_VisEquipos?Codigo_Equipo=14452280&cod_primaria=3001860",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:18:50+00:00",
-      "fixtures_checked_at": "2026-11-28T06:32:02+00:00",
+      "fixtures_checked_at": "2026-11-28T06:47:09+00:00",
       "team_id": "14452280",
       "competition_id": "24032708",
       "group_id": "24032711",
@@ -5985,7 +5985,7 @@
       "competition_label": "Lliga Autonòmica Cadet · Grup - Únic",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=19668",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:12+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:17+00:00",
       "team_id": "19668",
       "competition_id": "905431885",
       "group_id": "905431886",
@@ -6040,7 +6040,7 @@
       "competition_label": "Segona FFCV  · Grup - 3",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=905444655",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:46+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:51+00:00",
       "team_id": "905444655",
       "competition_id": "905431611",
       "group_id": "905431614",
@@ -6095,7 +6095,7 @@
       "competition_label": "Primera FFCV · Grup - 4",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=17737",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:33:36+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:41+00:00",
       "team_id": "17737",
       "competition_id": "905431606",
       "group_id": "905431610",
@@ -6151,7 +6151,7 @@
       "competition_label": "Tercera FFCV Juvenil · Grup - 18",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=29771343",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:54+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:58+00:00",
       "team_id": "29771343",
       "competition_id": "905431573",
       "group_id": "905431591",
@@ -6206,7 +6206,7 @@
       "competition_label": "Primera Cadet · Grup - 11",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=16862",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:36:02+00:00",
+      "fixtures_checked_at": "2026-11-28T06:51:06+00:00",
       "team_id": "16862",
       "competition_id": "905431892",
       "group_id": "905431903",
@@ -6261,7 +6261,7 @@
       "competition_label": "Primera Cadet Caixa Popular Valenta · Grup - 3",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=903764694",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:40+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:44+00:00",
       "team_id": "903764694",
       "competition_id": "905432613",
       "group_id": "905432616",
@@ -6316,7 +6316,7 @@
       "competition_label": "Lliga Comunitat Juvenil · Nord",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=10676",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:48+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:52+00:00",
       "team_id": "10676",
       "competition_id": "905431546",
       "group_id": "905431547",
@@ -6371,7 +6371,7 @@
       "competition_label": "Primera Cadet · Grup - 4",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=22473",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:36:08+00:00",
+      "fixtures_checked_at": "2026-11-28T06:51:12+00:00",
       "team_id": "22473",
       "competition_id": "905431892",
       "group_id": "905431896",
@@ -6426,7 +6426,7 @@
       "competition_label": "Lliga Autonòmica Cadet · Grup - Únic",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=16278",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:12+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:17+00:00",
       "team_id": "16278",
       "competition_id": "905431885",
       "group_id": "905431886",
@@ -6481,7 +6481,7 @@
       "competition_label": "Primera FFCV Juvenil · Grupo 2",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=14347",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:33:20+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:25+00:00",
       "team_id": "14347",
       "competition_id": "905431880",
       "group_id": "905431882",
@@ -6535,7 +6535,7 @@
       "competition_label": "Lliga Comunitat Juvenil · Sud",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=14782",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:33:28+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:32+00:00",
       "team_id": "14782",
       "competition_id": "905431546",
       "group_id": "905431548",
@@ -6590,7 +6590,7 @@
       "competition_label": "Primera FFCV · Grup - 4",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=17737",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:33:36+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:41+00:00",
       "team_id": "17737",
       "competition_id": "905431606",
       "group_id": "905431610",
@@ -6645,7 +6645,7 @@
       "competition_label": "Lliga Preferent Cadet · Grup - 1",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=17229",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:33:42+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:47+00:00",
       "team_id": "17229",
       "competition_id": "905431887",
       "group_id": "905431888",
@@ -6700,7 +6700,7 @@
       "competition_label": "Lliga Autonòmica Infantil · Grup - Únic",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=14887",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:33:52+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:57+00:00",
       "team_id": "14887",
       "competition_id": "905431905",
       "group_id": "905431906",
@@ -6755,7 +6755,7 @@
       "competition_label": "Liga Nacional Juvenil · Grup - VIII",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=10706",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:02+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:06+00:00",
       "team_id": "10706",
       "competition_id": "905431878",
       "group_id": "905431879",
@@ -6810,7 +6810,7 @@
       "competition_label": "Lliga Autonòmica Cadet · Grup - Únic",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=19668",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:12+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:17+00:00",
       "team_id": "19668",
       "competition_id": "905431885",
       "group_id": "905431886",
@@ -6865,7 +6865,7 @@
       "competition_label": "Lliga Autonòmica Valenta · Grup - Únic",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=19609",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:18+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:22+00:00",
       "team_id": "19609",
       "competition_id": "905431876",
       "group_id": "905431877",
@@ -6920,7 +6920,7 @@
       "competition_label": "1ª Regional Valenta · Grup - 1",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=17418",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:26+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:30+00:00",
       "team_id": "17418",
       "competition_id": "905431925",
       "group_id": "905431926",
@@ -6975,7 +6975,7 @@
       "competition_label": "Primera FFCV Juvenil · Grup - 3",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=16223",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:34+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:38+00:00",
       "team_id": "16223",
       "competition_id": "905431880",
       "group_id": "905431883",
@@ -7030,7 +7030,7 @@
       "competition_label": "Liga Nacional Juvenil · Grup - VIII",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=28403",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:02+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:06+00:00",
       "team_id": "28403",
       "competition_id": "905431878",
       "group_id": "905431879",
@@ -7085,7 +7085,7 @@
       "competition_label": "Primera Cadet Caixa Popular Valenta · Grup - 3",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=903764694",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:40+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:44+00:00",
       "team_id": "903764694",
       "competition_id": "905432613",
       "group_id": "905432616",
@@ -7140,7 +7140,7 @@
       "competition_label": "Lliga Comunitat Juvenil · Nord",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=10676",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:48+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:52+00:00",
       "team_id": "10676",
       "competition_id": "905431546",
       "group_id": "905431547",
@@ -7195,7 +7195,7 @@
       "competition_label": "Primera FFCV Juvenil · Grup - 2",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=14352",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:33:20+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:25+00:00",
       "team_id": "14352",
       "competition_id": "905431880",
       "group_id": "905431882",
@@ -7250,7 +7250,7 @@
       "competition_label": "Liga Nacional Juvenil · Grup - VIII",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=28403",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:02+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:06+00:00",
       "team_id": "28403",
       "competition_id": "905431878",
       "group_id": "905431879",
@@ -7305,7 +7305,7 @@
       "competition_label": "Primera Cadet · Grup - 12",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=28145",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:36:16+00:00",
+      "fixtures_checked_at": "2026-11-28T06:51:20+00:00",
       "team_id": "28145",
       "competition_id": "905431892",
       "group_id": "905431904",
@@ -7360,7 +7360,7 @@
       "competition_label": "Lliga Comunitat Juvenil · Nord",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=19591",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:48+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:52+00:00",
       "team_id": "19591",
       "competition_id": "905431546",
       "group_id": "905431547",
@@ -7415,7 +7415,7 @@
       "competition_label": "Segona FFCV Juvenil · Grup - 8",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=16859",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:04+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:08+00:00",
       "team_id": "16859",
       "competition_id": "905431636",
       "group_id": "905431644",
@@ -7470,7 +7470,7 @@
       "competition_label": "Lliga Comunitat Juvenil · Nord",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=10676",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:48+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:52+00:00",
       "team_id": "10676",
       "competition_id": "905431546",
       "group_id": "905431547",
@@ -7525,7 +7525,7 @@
       "competition_label": "Segona FFCV Juvenil · Grup - 8",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=297203",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:04+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:08+00:00",
       "team_id": "297203",
       "competition_id": "905431636",
       "group_id": "905431644",
@@ -7580,7 +7580,7 @@
       "competition_label": "Lliga Comunitat Juvenil · Nord",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=10676",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:48+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:52+00:00",
       "team_id": "10676",
       "competition_id": "905431546",
       "group_id": "905431547",
@@ -7635,7 +7635,7 @@
       "competition_label": "Segona FFCV Juvenil · Grup - 2",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=900436319",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:12+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:17+00:00",
       "team_id": "900436319",
       "competition_id": "905431636",
       "group_id": "905431638",
@@ -7690,7 +7690,7 @@
       "competition_label": "Lliga Comunitat Juvenil · Sud",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=22717",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:33:28+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:32+00:00",
       "team_id": "22717",
       "competition_id": "905431546",
       "group_id": "905431548",
@@ -7745,7 +7745,7 @@
       "competition_label": "Tercera FFCV · Grup - 13",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=17216",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:40+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:45+00:00",
       "team_id": "17216",
       "competition_id": "905431620",
       "group_id": "905431633",
@@ -7800,7 +7800,7 @@
       "competition_label": "Segona FFCV Juvenil · Grup - 7",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=22982",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:26+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:30+00:00",
       "team_id": "22982",
       "competition_id": "905431636",
       "group_id": "905431643",
@@ -7855,7 +7855,7 @@
       "competition_label": "Tercera FFCV Juvenil · Grup - 5",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=297465",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:54+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:58+00:00",
       "team_id": "297465",
       "competition_id": "905431573",
       "group_id": "905431578",
@@ -7963,7 +7963,7 @@
       "competition_label": "Primera FFCV Juvenil · Grup - 4",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=27839",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:20+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:25+00:00",
       "team_id": "27839",
       "competition_id": "905431880",
       "group_id": "905431884",
@@ -8018,7 +8018,7 @@
       "competition_label": "Segona FFCV Juvenil · Grup - 7",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=17876",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:26+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:30+00:00",
       "team_id": "17876",
       "competition_id": "905431636",
       "group_id": "905431643",
@@ -8074,7 +8074,7 @@
       "competition_label": "Segona FFCV Juvenil · Grup - 8",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=16859",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:04+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:08+00:00",
       "team_id": "16859",
       "competition_id": "905431636",
       "group_id": "905431644",
@@ -8129,7 +8129,7 @@
       "competition_label": "Lliga Autonòmica Cadet · Grup - Únic",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=19668",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:34:12+00:00",
+      "fixtures_checked_at": "2026-11-28T06:49:17+00:00",
       "team_id": "19668",
       "competition_id": "905431885",
       "group_id": "905431886",
@@ -8184,7 +8184,7 @@
       "competition_label": "Segona FFCV Juvenil · Grup - 3",
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=19296",
       "provider": "federation",
-      "fixtures_checked_at": "2026-11-28T06:35:32+00:00",
+      "fixtures_checked_at": "2026-11-28T06:50:36+00:00",
       "team_id": "19296",
       "competition_id": "905431636",
       "group_id": "905431639",
@@ -8240,7 +8240,7 @@
       "source": "https://ffcv.es/competiciones/equipos/equipo.php?cod_equipo=22701",
       "provider": "federation",
       "stats_attempted_at": "2026-11-28T02:20:33+00:00",
-      "fixtures_checked_at": "2026-11-28T06:33:20+00:00",
+      "fixtures_checked_at": "2026-11-28T06:48:25+00:00",
       "team_id": "22701",
       "competition_id": "905431880",
       "group_id": "905431882",
@@ -44598,9 +44598,9 @@
       "participation_attempted_at": {
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e": "2026-11-25T14:37:13+00:00"
       },
-      "schedule_checked_at": "2026-11-28T06:34:58+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:02+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:58+00:00"
+      "updated_at": "2026-11-28T06:50:02+00:00"
     },
     {
       "id": "catalunya-4153219",
@@ -59260,9 +59260,9 @@
         "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:08+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:08+00:00"
+      "updated_at": "2026-11-28T06:50:13+00:00"
     },
     {
       "id": "madrid-rfef-33836121-10-REAL-MADRID-CF-CF-TRIVAL-VALDERAS-ALCORCON",
@@ -59410,9 +59410,9 @@
       "participation_attempted_at": {
         "p-fb80c8cc-c288-4c04-bdb9-b513de81b860": "2026-11-22T08:33:05+00:00"
       },
-      "schedule_checked_at": "2026-11-28T06:34:06+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:10+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:06+00:00"
+      "updated_at": "2026-11-28T06:49:10+00:00"
     },
     {
       "id": "murcia-24069902-10",
@@ -59515,9 +59515,9 @@
       "participation_attempted_at": {
         "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08": "2026-11-22T08:30:25+00:00"
       },
-      "schedule_checked_at": "2026-11-28T06:33:47+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:50+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:47+00:00"
+      "updated_at": "2026-11-28T06:48:50+00:00"
     },
     {
       "id": "valencia-26510290",
@@ -59552,9 +59552,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:36:06+00:00",
+      "schedule_checked_at": "2026-11-28T06:51:10+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:36:06+00:00"
+      "updated_at": "2026-11-28T06:51:10+00:00"
     },
     {
       "id": "catalunya-4154441",
@@ -59757,9 +59757,9 @@
       "participation_attempted_at": {
         "daniel-otero-serrano": "2026-11-21T20:29:51+00:00"
       },
-      "schedule_checked_at": "2026-11-28T06:33:16+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:16+00:00"
+      "updated_at": "2026-11-28T06:48:21+00:00"
     },
     {
       "id": "valencia-26478728",
@@ -59794,9 +59794,9 @@
         "p-5de13299-c87f-4714-9b5b-30446d39a579"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:06+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:10+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:06+00:00"
+      "updated_at": "2026-11-28T06:49:10+00:00"
     },
     {
       "id": "murcia-14452266-10",
@@ -59887,9 +59887,9 @@
       "participation_attempted_at": {
         "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36": "2026-11-23T04:05:07+00:00"
       },
-      "schedule_checked_at": "2026-11-28T06:34:38+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:43+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:38+00:00"
+      "updated_at": "2026-11-28T06:49:43+00:00"
     },
     {
       "id": "madrid-rfcylf-24218935-11-C-D-ISOBA-C-D-PARQUESOL",
@@ -60028,9 +60028,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:44+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:48+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:44+00:00"
+      "updated_at": "2026-11-28T06:49:48+00:00"
     },
     {
       "id": "catalunya-4194210",
@@ -60752,9 +60752,9 @@
       "participation_attempted_at": {
         "p-14fe2d86-4679-4291-b2b2-ea2219f875bd": "2026-11-21T20:31:03+00:00"
       },
-      "schedule_checked_at": "2026-11-28T06:33:24+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:29+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:24+00:00"
+      "updated_at": "2026-11-28T06:48:29+00:00"
     },
     {
       "id": "madrid-5578398",
@@ -60957,9 +60957,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:04+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:00+00:00"
+      "updated_at": "2026-11-28T06:50:04+00:00"
     },
     {
       "id": "valencia-26512209",
@@ -60994,9 +60994,9 @@
         "p-a8f2c383-0c07-4afd-9402-926a2a17e524"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:58+00:00",
+      "schedule_checked_at": "2026-11-28T06:51:03+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:58+00:00"
+      "updated_at": "2026-11-28T06:51:03+00:00"
     },
     {
       "id": "catalunya-4151032",
@@ -61228,9 +61228,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:44+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:48+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:44+00:00"
+      "updated_at": "2026-11-28T06:49:48+00:00"
     },
     {
       "id": "valencia-26515378",
@@ -61265,9 +61265,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:44+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:49+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:44+00:00"
+      "updated_at": "2026-11-28T06:50:49+00:00"
     },
     {
       "id": "valencia-26486512",
@@ -61302,9 +61302,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:24+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:28+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:24+00:00"
+      "updated_at": "2026-11-28T06:50:28+00:00"
     },
     {
       "id": "catalunya-4153245",
@@ -61646,9 +61646,9 @@
         "p-67ef70f2-b7f9-4c9c-96d8-a5b578e89279"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:30+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:35+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:30+00:00"
+      "updated_at": "2026-11-28T06:50:35+00:00"
     },
     {
       "id": "madrid-5595648",
@@ -61864,9 +61864,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:50+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:54+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:50+00:00"
+      "updated_at": "2026-11-28T06:50:54+00:00"
     },
     {
       "id": "valencia-26475643",
@@ -61901,9 +61901,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:24+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:29+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:24+00:00"
+      "updated_at": "2026-11-28T06:48:29+00:00"
     },
     {
       "id": "madrid-5676301",
@@ -62004,9 +62004,9 @@
       "participation_attempted_at": {
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b": "2026-11-22T08:31:44+00:00"
       },
-      "schedule_checked_at": "2026-11-28T06:33:56+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:00+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:56+00:00"
+      "updated_at": "2026-11-28T06:49:00+00:00"
     },
     {
       "id": "madrid-5584082",
@@ -62563,9 +62563,9 @@
         "p-46a95a14-de56-43c3-b119-3d0f567ef0f5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:40+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:45+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:40+00:00"
+      "updated_at": "2026-11-28T06:48:45+00:00"
     },
     {
       "id": "madrid-5584385",
@@ -62753,9 +62753,9 @@
         "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:36:12+00:00",
+      "schedule_checked_at": "2026-11-28T06:51:16+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:36:12+00:00"
+      "updated_at": "2026-11-28T06:51:16+00:00"
     },
     {
       "id": "valencia-26480813",
@@ -62805,9 +62805,9 @@
       "participation_attempted_at": {
         "p-17c0205a-e138-40a1-bd73-de4bbfa284b5": "2026-11-22T22:54:18+00:00"
       },
-      "schedule_checked_at": "2026-11-28T06:34:22+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:26+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:22+00:00"
+      "updated_at": "2026-11-28T06:49:26+00:00"
     },
     {
       "id": "madrid-5578702",
@@ -63048,9 +63048,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:32+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:37+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:32+00:00"
+      "updated_at": "2026-11-28T06:48:37+00:00"
     },
     {
       "id": "madrid-5578706",
@@ -63376,9 +63376,9 @@
         "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:16+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:16+00:00"
+      "updated_at": "2026-11-28T06:50:21+00:00"
     },
     {
       "id": "valencia-26486756",
@@ -63413,9 +63413,9 @@
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:04+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:00+00:00"
+      "updated_at": "2026-11-28T06:50:04+00:00"
     },
     {
       "id": "catalunya-4153243",
@@ -63654,9 +63654,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:16+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:16+00:00"
+      "updated_at": "2026-11-28T06:48:21+00:00"
     },
     {
       "id": "valencia-26499800",
@@ -63691,9 +63691,9 @@
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:52+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:56+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:52+00:00"
+      "updated_at": "2026-11-28T06:49:56+00:00"
     },
     {
       "id": "valencia-26474195",
@@ -63728,9 +63728,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:16+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:16+00:00"
+      "updated_at": "2026-11-28T06:49:21+00:00"
     },
     {
       "id": "madrid-5584383",
@@ -64136,9 +64136,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:24+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:28+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:24+00:00"
+      "updated_at": "2026-11-28T06:50:28+00:00"
     },
     {
       "id": "madrid-frf-21959329-12-CENICERO-ALFARO",
@@ -64293,9 +64293,9 @@
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:56+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:00+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:56+00:00"
+      "updated_at": "2026-11-28T06:49:00+00:00"
     },
     {
       "id": "valencia-26479980",
@@ -64330,9 +64330,9 @@
         "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:16+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:21+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:16+00:00"
+      "updated_at": "2026-11-28T06:48:21+00:00"
     },
     {
       "id": "valencia-26496840",
@@ -64367,9 +64367,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:36+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:40+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:36+00:00"
+      "updated_at": "2026-11-28T06:50:40+00:00"
     },
     {
       "id": "valencia-26480224",
@@ -64404,9 +64404,9 @@
         "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:30+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:34+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:30+00:00"
+      "updated_at": "2026-11-28T06:49:34+00:00"
     },
     {
       "id": "madrid-5589522",
@@ -64498,9 +64498,9 @@
         "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:44+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:48+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:44+00:00"
+      "updated_at": "2026-11-28T06:49:48+00:00"
     },
     {
       "id": "catalunya-4194933",
@@ -65119,9 +65119,9 @@
       "participation_attempted_at": {
         "p-a7f65893-119e-475d-87f0-28a139edc33d": "2026-11-28T02:19:06+00:00"
       },
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "madrid-5595656",
@@ -65158,9 +65158,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "valencia-26510297",
@@ -65195,9 +65195,9 @@
         "p-5fc13294-34e2-440c-aabf-c8a7881268ac"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:36:08+00:00",
+      "schedule_checked_at": "2026-11-28T06:51:12+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:36:08+00:00"
+      "updated_at": "2026-11-28T06:51:12+00:00"
     },
     {
       "id": "valencia-26512217",
@@ -65232,9 +65232,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:36:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:51:05+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:36:00+00:00"
+      "updated_at": "2026-11-28T06:51:05+00:00"
     },
     {
       "id": "valencia-26474204",
@@ -65269,9 +65269,9 @@
         "p-d1691aca-5ba3-48d7-b3c2-86a72f1ca7a2"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:18+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:22+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:18+00:00"
+      "updated_at": "2026-11-28T06:49:22+00:00"
     },
     {
       "id": "madrid-rfef-33836121-11-ALBACETE-BALOMPIE-AD-SPORTING-HORTALEZA",
@@ -65310,9 +65310,9 @@
         "p-ee275004-f785-42ef-99df-be2df81d225e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26512702",
@@ -65347,9 +65347,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:36:14+00:00",
+      "schedule_checked_at": "2026-11-28T06:51:18+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:36:14+00:00"
+      "updated_at": "2026-11-28T06:51:18+00:00"
     },
     {
       "id": "valencia-26541765",
@@ -65386,9 +65386,9 @@
         "p-9158a517-4bf4-4c01-a7c2-b05c5fb51c36"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:40+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:44+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:40+00:00"
+      "updated_at": "2026-11-28T06:49:44+00:00"
     },
     {
       "id": "valencia-26479045",
@@ -65423,9 +65423,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:48+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:52+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:48+00:00"
+      "updated_at": "2026-11-28T06:48:52+00:00"
     },
     {
       "id": "valencia-26478737",
@@ -65460,9 +65460,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:08+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:08+00:00"
+      "updated_at": "2026-11-28T06:49:13+00:00"
     },
     {
       "id": "catalunya-4194706",
@@ -65539,9 +65539,9 @@
         "p-e80d8f10-b326-4aef-8ebf-9a27dcaa4aa2"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-28T06:33:18+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:23+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:18+00:00"
+      "updated_at": "2026-11-28T06:48:23+00:00"
     },
     {
       "id": "valencia-26486518",
@@ -65576,9 +65576,9 @@
         "p-1ea87a98-2ea7-430d-8f89-1de47c8e8026"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:26+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:26+00:00"
+      "updated_at": "2026-11-28T06:50:30+00:00"
     },
     {
       "id": "madrid-5594694",
@@ -65613,9 +65613,9 @@
         "p-b2f9fc89-652e-4862-8d30-f973dcec5215"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-ffcm-22916203-12-ACADEMIA-ALBICELESTE-C-D-GUADALAJARA-B",
@@ -65652,9 +65652,9 @@
         "p-6326a3bb-e873-41f8-8f01-d6e5e810d15d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-frf-21959329-13-AGONCILLO-LA-CALZADA",
@@ -65691,9 +65691,9 @@
         "p-a53947ba-45d7-4e5a-962f-26696e074f29"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-frf-21959329-13-ALFARO-SAN-MARCIAL",
@@ -65732,9 +65732,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-rfcylf-24218935-12-U-D-SUR-C-D-ISOBA",
@@ -65771,9 +65771,9 @@
         "p-5ae2cf0b-fdcb-4ab3-91cd-8ee188983405"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26475412",
@@ -65808,9 +65808,9 @@
         "p-a3f77b24-e85e-4ddf-a16f-a1d8b8fbe7ad"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:46+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:50+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:46+00:00"
+      "updated_at": "2026-11-28T06:49:50+00:00"
     },
     {
       "id": "madrid-5584696",
@@ -65845,9 +65845,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "catalunya-4151039",
@@ -65926,9 +65926,9 @@
         "p-2fb0301e-10cd-4e1d-9e61-4671ba184626"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5582250",
@@ -65963,9 +65963,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5584700",
@@ -66000,9 +66000,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5584702",
@@ -66037,9 +66037,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5572803",
@@ -66074,9 +66074,9 @@
         "p-3b53f8a0-f6e4-4a0e-b23c-3e0d8538c882"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5584703",
@@ -66111,9 +66111,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5676310",
@@ -66148,9 +66148,9 @@
         "p-403930cf-154c-4985-a680-97a768fbd595"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-ffcm-22916200-13-C-D-AZUQUECA-SAD-C-D-ILLESCAS",
@@ -66187,9 +66187,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26480232",
@@ -66224,9 +66224,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:32+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:37+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:32+00:00"
+      "updated_at": "2026-11-28T06:49:37+00:00"
     },
     {
       "id": "valencia-26480466",
@@ -66261,9 +66261,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:18+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:23+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:18+00:00"
+      "updated_at": "2026-11-28T06:50:23+00:00"
     },
     {
       "id": "valencia-26486521",
@@ -66298,9 +66298,9 @@
         "p-a8bea594-70c1-4ce7-9536-9e28e70d3f7d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:26+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:26+00:00"
+      "updated_at": "2026-11-28T06:50:30+00:00"
     },
     {
       "id": "valencia-26496849",
@@ -66335,9 +66335,9 @@
         "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:38+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:43+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:38+00:00"
+      "updated_at": "2026-11-28T06:50:43+00:00"
     },
     {
       "id": "madrid-5584395",
@@ -66372,9 +66372,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26474927",
@@ -66411,9 +66411,9 @@
         "p-5ab7cf3b-e9d5-4ed0-8ad9-6c20d922b3d0"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:34+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:38+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:34+00:00"
+      "updated_at": "2026-11-28T06:48:38+00:00"
     },
     {
       "id": "madrid-5572804",
@@ -66448,9 +66448,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5584391",
@@ -66485,9 +66485,9 @@
         "p-8f643924-4932-457d-839f-dd3b87cd5722"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26476417",
@@ -66527,9 +66527,9 @@
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-28T06:33:58+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:03+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:58+00:00"
+      "updated_at": "2026-11-28T06:49:03+00:00"
     },
     {
       "id": "madrid-5656134",
@@ -66564,9 +66564,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5612148",
@@ -66601,9 +66601,9 @@
         "p-656e6179-91f8-4da3-93fb-a37034ed52d6"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "murcia-14448990-12",
@@ -66638,9 +66638,9 @@
         "p-8ac9c7af-8a26-4557-bb6a-b06d1839d624"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "catalunya-4153253",
@@ -66716,9 +66716,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "madrid-5583476",
@@ -66759,9 +66759,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5584394",
@@ -66796,9 +66796,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26479991",
@@ -66833,9 +66833,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:18+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:23+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:18+00:00"
+      "updated_at": "2026-11-28T06:48:23+00:00"
     },
     {
       "id": "catalunya-4194219",
@@ -66911,9 +66911,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5584083",
@@ -66948,9 +66948,9 @@
         "p-11f72ff7-a013-4711-b466-df8127bec80d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5581945",
@@ -66985,9 +66985,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5585002",
@@ -67022,9 +67022,9 @@
         "p-f083c4a1-1267-41ee-a0be-c55b97288c2d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5634517",
@@ -67059,9 +67059,9 @@
         "p-61e89fc6-9ca1-492e-9e6f-f8eece8acc8f"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5585309",
@@ -67096,9 +67096,9 @@
         "p-b5b862b3-35b6-4a3b-87bc-602409f340f8"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5605935",
@@ -67133,9 +67133,9 @@
         "p-30526fbe-539f-4f16-8ac4-d0411f729499"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "catalunya-4154449",
@@ -67209,9 +67209,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5578707",
@@ -67246,9 +67246,9 @@
         "p-65971a4f-9d48-44c7-aa06-8273b332add7"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "murcia-56738-11",
@@ -67283,9 +67283,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "valencia-26481546",
@@ -67320,9 +67320,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:42+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:47+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:42+00:00"
+      "updated_at": "2026-11-28T06:48:47+00:00"
     },
     {
       "id": "valencia-26475416",
@@ -67363,9 +67363,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:46+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:50+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:46+00:00"
+      "updated_at": "2026-11-28T06:49:50+00:00"
     },
     {
       "id": "valencia-26478738",
@@ -67404,9 +67404,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:08+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:08+00:00"
+      "updated_at": "2026-11-28T06:49:13+00:00"
     },
     {
       "id": "madrid-5589531",
@@ -67441,9 +67441,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5590444",
@@ -67478,9 +67478,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26486764",
@@ -67515,9 +67515,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:06+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:02+00:00"
+      "updated_at": "2026-11-28T06:50:06+00:00"
     },
     {
       "id": "madrid-5581028",
@@ -67552,9 +67552,9 @@
         "p-e7620d39-386d-43eb-b30e-e829a98186ca"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5574843",
@@ -67589,9 +67589,9 @@
         "p-30526fbe-539f-4f16-8ac4-d0411f729499"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5581029",
@@ -67626,9 +67626,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5590139",
@@ -67663,9 +67663,9 @@
         "p-d00b693d-cc6d-4fe3-9bc9-8c20db3c6f0c"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "catalunya-4107624",
@@ -67741,9 +67741,9 @@
         "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "murcia-24069902-11",
@@ -67778,9 +67778,9 @@
         "iker-piqueras-mora"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "valencia-26486758",
@@ -67817,9 +67817,9 @@
         "p-ee685f02-2c5a-4cac-966f-764f2f32c108"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:06+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:02+00:00"
+      "updated_at": "2026-11-28T06:50:06+00:00"
     },
     {
       "id": "madrid-rfef-33836121-11-RAYO-VALLECANO-DE-MADRID-CF-TRIVAL-VALDERAS-ALCORCON",
@@ -67856,9 +67856,9 @@
         "p-9258719a-7296-44bf-9a09-41eb00107cda"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26486037",
@@ -67893,9 +67893,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:32+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:36+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:32+00:00"
+      "updated_at": "2026-11-28T06:50:36+00:00"
     },
     {
       "id": "madrid-5587387",
@@ -67930,9 +67930,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5584697",
@@ -67967,9 +67967,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5589223",
@@ -68004,9 +68004,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5584396",
@@ -68047,9 +68047,9 @@
         "p-8f3b50b6-d663-4082-bb0e-93399f3bc5a3"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5584701",
@@ -68086,9 +68086,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5646404",
@@ -68125,9 +68125,9 @@
         "p-8acf6ddf-05eb-4793-bb03-cba682fff94a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5617049",
@@ -68162,9 +68162,9 @@
         "p-14f0efbb-4d12-45c2-98b6-b11bed4f8405"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "catalunya-4194942",
@@ -68243,9 +68243,9 @@
         "p-b2dd7482-24e2-4895-b761-d6e63264da85"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "madrid-5578711",
@@ -68280,9 +68280,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5584389",
@@ -68317,9 +68317,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "murcia-14449902-9",
@@ -68354,9 +68354,9 @@
         "p-1ec56ec6-4a97-47fa-8931-9f86e8d9aef5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "valencia-26475414",
@@ -68391,9 +68391,9 @@
         "p-08bb4899-6d49-4591-ad34-cfdb2daa4e1a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:46+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:50+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:46+00:00"
+      "updated_at": "2026-11-28T06:49:50+00:00"
     },
     {
       "id": "valencia-26475652",
@@ -68431,9 +68431,9 @@
         "p-f3e06e47-95f3-410b-ba9d-88a1fed205c7"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-28T06:33:26+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:26+00:00"
+      "updated_at": "2026-11-28T06:48:30+00:00"
     },
     {
       "id": "valencia-26499808",
@@ -68468,9 +68468,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:54+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:58+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:54+00:00"
+      "updated_at": "2026-11-28T06:49:58+00:00"
     },
     {
       "id": "valencia-26502928",
@@ -68505,9 +68505,9 @@
         "p-7dc51770-5927-40f9-befc-2363e018466e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:52+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:56+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:52+00:00"
+      "updated_at": "2026-11-28T06:50:56+00:00"
     },
     {
       "id": "catalunya-4193728",
@@ -68583,9 +68583,9 @@
         "p-85788fbf-28ec-422a-bb16-b627987f3fb4"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5630788",
@@ -68623,9 +68623,9 @@
         "p-c62c99d8-afe4-4010-a0ef-53fc084ed921"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "murcia-14452266-11",
@@ -68660,9 +68660,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "madrid-5646408",
@@ -68697,9 +68697,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5581943",
@@ -68734,9 +68734,9 @@
         "p-b6864476-e8c9-4d54-a220-e80ffa5a5361"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5583167",
@@ -68771,9 +68771,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5585310",
@@ -68814,9 +68814,9 @@
         "p-c3f8744b-e903-474d-bd75-020ef59745a3"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26480819",
@@ -68851,9 +68851,9 @@
         "p-17c0205a-e138-40a1-bd73-de4bbfa284b5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:24+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:28+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:24+00:00"
+      "updated_at": "2026-11-28T06:49:28+00:00"
     },
     {
       "id": "valencia-26484034",
@@ -68888,9 +68888,9 @@
         "p-fcb9bfbb-dc98-466c-9195-2c792d2c756a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:46+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:51+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:46+00:00"
+      "updated_at": "2026-11-28T06:50:51+00:00"
     },
     {
       "id": "madrid-5589527",
@@ -68925,9 +68925,9 @@
         "p-3f37360a-53c2-4b7b-8e13-e012a8a6773c"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5578405",
@@ -68971,9 +68971,9 @@
         "p-7cebfe80-fc4f-4537-a2cb-15f0d059fb0b"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5584392",
@@ -69008,9 +69008,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5612153",
@@ -69045,9 +69045,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5646410",
@@ -69084,9 +69084,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-ffcm-23077218-9-C-D-GALAPAGOS-C-D-GUADALAJARA-C",
@@ -69123,9 +69123,9 @@
         "p-13f88727-f0e1-4050-a4d9-36b1bc6e5527"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26485798",
@@ -69160,9 +69160,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:10+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:15+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:10+00:00"
+      "updated_at": "2026-11-28T06:50:15+00:00"
     },
     {
       "id": "madrid-5722081",
@@ -69197,9 +69197,9 @@
         "p-95d2dae8-8136-41cc-af8a-60447bb2281a"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "catalunya-4153250",
@@ -69273,9 +69273,9 @@
         "p-3b53f8a0-f6e4-4a0e-b23c-3e0d8538c882"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5671656",
@@ -69310,9 +69310,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5742224",
@@ -69347,9 +69347,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "murcia-24069902-5",
@@ -69384,9 +69384,9 @@
         "iker-piqueras-mora"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "valencia-26479055",
@@ -69421,9 +69421,9 @@
         "p-d0aa34a1-a4ab-44b7-87cb-6697eb195e08"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:50+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:55+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:50+00:00"
+      "updated_at": "2026-11-28T06:48:55+00:00"
     },
     {
       "id": "valencia-26578466",
@@ -69460,9 +69460,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:58+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:02+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:58+00:00"
+      "updated_at": "2026-11-28T06:50:02+00:00"
     },
     {
       "id": "madrid-frf-21959329-14-LA-CALZADA-CALASANCIO",
@@ -69499,9 +69499,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-frf-21959329-14-PRADEJON-ALFARO",
@@ -69540,9 +69540,9 @@
         "p-a1bb9309-65b3-451b-96ee-080aa8537660"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-rfcylf-24218935-13-C-D-ISOBA-C-D-COLEGIOS-DIOCESANOS",
@@ -69579,9 +69579,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26478748",
@@ -69620,9 +69620,9 @@
         "p-fb80c8cc-c288-4c04-bdb9-b513de81b860"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:10+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:10+00:00"
+      "updated_at": "2026-11-28T06:49:14+00:00"
     },
     {
       "id": "valencia-26478747",
@@ -69657,9 +69657,9 @@
         "p-5de13299-c87f-4714-9b5b-30446d39a579"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:10+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:10+00:00"
+      "updated_at": "2026-11-28T06:49:14+00:00"
     },
     {
       "id": "madrid-rfef-33836121-12-AD-SPORTING-HORTALEZA-C-D-LEGANES",
@@ -69698,9 +69698,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-ffcm-22916200-14-C-D-TOLEDO-SAD-B-C-D-AZUQUECA-SAD",
@@ -69737,9 +69737,9 @@
         "p-d31e3297-f329-4af6-a3ef-04b33c70887e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-rfef-33836121-12-CF-TRIVAL-VALDERAS-ALCORCON-LAS-ROZAS-CF",
@@ -69776,9 +69776,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26476427",
@@ -69815,9 +69815,9 @@
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:04+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:00+00:00"
+      "updated_at": "2026-11-28T06:49:04+00:00"
     },
     {
       "id": "valencia-26476426",
@@ -69852,9 +69852,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:04+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:00+00:00"
+      "updated_at": "2026-11-28T06:49:04+00:00"
     },
     {
       "id": "madrid-ffcm-22916200-14-C-D-ALAMEDA-DE-LA-SAGRA-E-M-F-HELLIN-C-F",
@@ -69891,9 +69891,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-ffcm-22916203-13-C-D-GUADALAJARA-B-E-M-F-VILLALUENGA",
@@ -69930,9 +69930,9 @@
       "away_team_id": null,
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "murcia-14448990-13",
@@ -69967,9 +69967,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "murcia-14452266-5",
@@ -70004,9 +70004,9 @@
         "p-a7f65893-119e-475d-87f0-28a139edc33d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:32:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:47:09+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:32:02+00:00"
+      "updated_at": "2026-11-28T06:47:09+00:00"
     },
     {
       "id": "madrid-ffcm-22916200-1-U-B-CONQUENSE-C-D-ALAMEDA-DE-LA-SAGRA-E-M-F",
@@ -70043,9 +70043,9 @@
         "p-0029c9b5-bf44-46c2-af2a-bb4afeac950b"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5572796",
@@ -70080,9 +70080,9 @@
         "p-4cdaa4af-82f2-4025-b34e-574c80a10f9f"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "catalunya-4384709",
@@ -70161,9 +70161,9 @@
         "p-6326a3bb-e873-41f8-8f01-d6e5e810d15d"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26512226",
@@ -70198,9 +70198,9 @@
         "p-a8f2c383-0c07-4afd-9402-926a2a17e524"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:36:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:51:06+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:36:02+00:00"
+      "updated_at": "2026-11-28T06:51:06+00:00"
     },
     {
       "id": "valencia-26478756",
@@ -70235,9 +70235,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:12+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:17+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:12+00:00"
+      "updated_at": "2026-11-28T06:49:17+00:00"
     },
     {
       "id": "valencia-26479064",
@@ -70272,9 +70272,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:52+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:57+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:52+00:00"
+      "updated_at": "2026-11-28T06:48:57+00:00"
     },
     {
       "id": "catalunya-4154458",
@@ -70348,9 +70348,9 @@
         "jorge-martin-andres"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-rfef-33836121-13-CF-RAYO-MAJADAHONDA-AD-SPORTING-HORTALEZA",
@@ -70389,9 +70389,9 @@
         "p-ee275004-f785-42ef-99df-be2df81d225e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26476434",
@@ -70426,9 +70426,9 @@
         "p-6f169c03-8d91-44f7-a5b5-44be2cddc55b"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:06+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:02+00:00"
+      "updated_at": "2026-11-28T06:49:06+00:00"
     },
     {
       "id": "valencia-26480826",
@@ -70463,9 +70463,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:26+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:30+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:26+00:00"
+      "updated_at": "2026-11-28T06:49:30+00:00"
     },
     {
       "id": "madrid-5582564",
@@ -70500,9 +70500,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5595663",
@@ -70539,9 +70539,9 @@
         "p-ba3838cf-b999-4764-b449-d9d73912bb02"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "catalunya-4151047",
@@ -70615,9 +70615,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:48+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:52+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:48+00:00"
+      "updated_at": "2026-11-28T06:49:52+00:00"
     },
     {
       "id": "valencia-26476436",
@@ -70654,9 +70654,9 @@
         "p-d293de07-f3e2-4508-8fc8-a32c0164a831"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:02+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:06+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:02+00:00"
+      "updated_at": "2026-11-28T06:49:06+00:00"
     },
     {
       "id": "valencia-26480473",
@@ -70691,9 +70691,9 @@
         "p-3a2eb2d2-f75a-44e9-ab0b-c9d4a12c40e0"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:20+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:20+00:00"
+      "updated_at": "2026-11-28T06:50:25+00:00"
     },
     {
       "id": "valencia-26486766",
@@ -70730,9 +70730,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:04+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:08+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:04+00:00"
+      "updated_at": "2026-11-28T06:50:08+00:00"
     },
     {
       "id": "valencia-26496857",
@@ -70767,9 +70767,9 @@
         "p-1d2ab361-c5de-4d8e-8e2e-988a42f1b952"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:40+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:45+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:40+00:00"
+      "updated_at": "2026-11-28T06:50:45+00:00"
     },
     {
       "id": "catalunya-4194227",
@@ -70845,9 +70845,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:36+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:41+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:36+00:00"
+      "updated_at": "2026-11-28T06:48:41+00:00"
     },
     {
       "id": "catalunya-4107625",
@@ -70927,9 +70927,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "valencia-26475659",
@@ -70964,9 +70964,9 @@
         "p-14fe2d86-4679-4291-b2b2-ea2219f875bd"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:28+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:32+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:28+00:00"
+      "updated_at": "2026-11-28T06:48:32+00:00"
     },
     {
       "id": "valencia-26486771",
@@ -71001,9 +71001,9 @@
         "p-9b412e7a-7e88-4fe1-8ae9-311ea6a6261e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:04+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:08+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:04+00:00"
+      "updated_at": "2026-11-28T06:50:08+00:00"
     },
     {
       "id": "valencia-26502936",
@@ -71038,9 +71038,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:54+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:58+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:54+00:00"
+      "updated_at": "2026-11-28T06:50:58+00:00"
     },
     {
       "id": "catalunya-4153262",
@@ -71114,9 +71114,9 @@
         "p-f6d34d3c-e46c-43e8-8224-97a2b67dac81"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:34+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:38+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:34+00:00"
+      "updated_at": "2026-11-28T06:49:38+00:00"
     },
     {
       "id": "valencia-26485805",
@@ -71151,9 +71151,9 @@
         "p-ac9fbbf9-2510-426f-b3ac-11fc08a0f56e"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:35:12+00:00",
+      "schedule_checked_at": "2026-11-28T06:50:17+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:35:12+00:00"
+      "updated_at": "2026-11-28T06:50:17+00:00"
     },
     {
       "id": "valencia-26512703",
@@ -71188,9 +71188,9 @@
         "p-64bc282c-d75d-4b3b-8a72-8e7128216373"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:36:16+00:00",
+      "schedule_checked_at": "2026-11-28T06:51:20+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:36:16+00:00"
+      "updated_at": "2026-11-28T06:51:20+00:00"
     },
     {
       "id": "valencia-26479998",
@@ -71225,9 +71225,9 @@
         "daniel-otero-serrano"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:20+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:20+00:00"
+      "updated_at": "2026-11-28T06:48:25+00:00"
     },
     {
       "id": "madrid-5572811",
@@ -71265,9 +71265,9 @@
         "p-4cdaa4af-82f2-4025-b34e-574c80a10f9f"
       ],
       "is_internal_matchup": true,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5574851",
@@ -71302,9 +71302,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5605943",
@@ -71339,9 +71339,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:14+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:14+00:00"
     },
     {
       "id": "madrid-5634525",
@@ -71376,9 +71376,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5656140",
@@ -71413,9 +71413,9 @@
         "p-e3e6662d-a256-47f4-b837-48158d44512f"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:00+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:13+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:00+00:00"
+      "updated_at": "2026-11-28T06:48:13+00:00"
     },
     {
       "id": "madrid-5594709",
@@ -71649,9 +71649,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:12+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:17+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:12+00:00"
+      "updated_at": "2026-11-28T06:49:17+00:00"
     },
     {
       "id": "valencia-26541772",
@@ -71994,9 +71994,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:28+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:32+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:28+00:00"
+      "updated_at": "2026-11-28T06:48:32+00:00"
     },
     {
       "id": "valencia-26479995",
@@ -72031,9 +72031,9 @@
         "p-d039581d-614d-4d77-bd6a-ce6e7b2f20d5"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:20+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:20+00:00"
+      "updated_at": "2026-11-28T06:48:25+00:00"
     },
     {
       "id": "valencia-26484042",
@@ -72183,9 +72183,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:48+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:52+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:48+00:00"
+      "updated_at": "2026-11-28T06:49:52+00:00"
     },
     {
       "id": "valencia-26475423",
@@ -72226,9 +72226,9 @@
         "p-b5b1ba72-3305-43f4-b49c-e88b13baf4ea"
       ],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:34:48+00:00",
+      "schedule_checked_at": "2026-11-28T06:49:52+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:34:48+00:00"
+      "updated_at": "2026-11-28T06:49:52+00:00"
     },
     {
       "id": "valencia-26479996",
@@ -72263,9 +72263,9 @@
       ],
       "away_player_ids": [],
       "is_internal_matchup": false,
-      "schedule_checked_at": "2026-11-28T06:33:20+00:00",
+      "schedule_checked_at": "2026-11-28T06:48:25+00:00",
       "schedule_status": "ok",
-      "updated_at": "2026-11-28T06:33:20+00:00"
+      "updated_at": "2026-11-28T06:48:25+00:00"
     },
     {
       "id": "madrid-5578411",
